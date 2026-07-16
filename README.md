@@ -2,12 +2,6 @@
 
 > 한국 정발 오토바이 기종 오픈소스 API
 
-[![CI](https://img.shields.io/github/actions/workflow/status/starhn87/moto-kr/ci.yml?style=flat-square&label=CI)](https://github.com/starhn87/moto-kr/actions)
-![Models](https://img.shields.io/badge/models-808-blue?style=flat-square)
-![Source](https://img.shields.io/badge/source-KENCIS_%EC%9D%B8%EC%A6%9D-green?style=flat-square)
-![Code](https://img.shields.io/badge/code-MIT-lightgrey?style=flat-square)
-![Data](https://img.shields.io/badge/data-CC_BY_4.0-lightgrey?style=flat-square)
-
 국내에 어떤 오토바이가 정식 발매됐는지 조회할 API가 없습니다. 공공 데이터는 등록 대수 통계 아니면 개별 차량 조회뿐이고 민간 DB는 API를 열지 않습니다. moto-kr가 그 빈자리를 채웁니다. 키 발급도 호출 제한도 서버 다운타임도 없는 정적 JSON API입니다.
 
 ## 🚀 API
@@ -97,7 +91,7 @@ const { names } = await fetch(
 - `@main`은 jsDelivr 캐시 때문에 갱신이 최대 12시간 늦을 수 있습니다. 버전을 고정하려면 `@main` 대신 커밋 해시나 태그를 쓰세요
 - 원하는 필드만 필요하면 응답을 받아 직접 거르면 됩니다. 서버가 없는 대신 전체 응답이 수백 KB 수준이라 부담이 없습니다
 
-## 🧩 어떻게 만드나
+## 🧩 어떻게 만들었나
 
 환경부 KENCIS [배출가스·소음 인증](https://www.data.go.kr/data/15000988/openapi.do)에서 출발합니다. 국내에서 이륜차를 팔려면 이 인증이 법정 의무라 인증 목록(2006~)이 곧 정발 기종의 공식 전수 목록입니다.
 
@@ -124,4 +118,3 @@ npm run validate   # 무결성 검증
 - 인증 원본(`data/raw/`): [공공데이터포털 15000988](https://www.data.go.kr/data/15000988/openapi.do) (환경부·국립환경과학원)
 - 매핑·정제 데이터: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ko), 출처(moto-kr)를 밝히고 자유롭게 쓸 수 있습니다
 
-> 이 API는 오토바이 라이더용 지도 앱 [모토맵](https://github.com/starhn87/ridemap)의 기종 자동완성을 만들다 시작됐습니다.
