@@ -1,0 +1,13 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/build.mjs && node scripts/validate.mjs
+      - name: ensure build output committed
+        run: git diff --exit-code data/

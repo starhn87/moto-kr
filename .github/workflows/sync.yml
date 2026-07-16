@@ -1,0 +1,33 @@
+# 주 1회 KENCIS 인증 데이터를 다시 수집해 신규 인증을 감지한다.
+# 변경이 있으면 PR 을 만들어 사람이 매핑(한글 표기) 확정 후 머지한다.
+name: sync-kencis
+on:
+  schedule:
+    - cron: '0 21 * * 0' # 매주 월요일 06:00 KST
+  workflow_dispatch:
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: fetch
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+        run: node scripts/fetch-kencis.mjs
+      - name: build
+        run: node scripts/build.mjs && node scripts/validate.mjs
+      - name: create PR if changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: sync/kencis
+          title: 'sync: 신규 KENCIS 인증 반영'
+          commit-message: 'sync: refresh KENCIS certification data'
+          body: |
+            주간 자동 수집으로 감지된 인증 데이터 변경입니다.
+            `data/unmapped.json` 에 새 차명이 늘었다면 `mapping/models.json` 에 한글 표기를 추가해 주세요.
