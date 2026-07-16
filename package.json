@@ -1,7 +1,7 @@
 {
   "name": "moto-kr",
   "version": "0.1.0",
-  "description": "한국 정발 오토바이 기종 데이터셋: 환경부 KENCIS 인증(법정 전수) 기반 + 사람 큐레이션",
+  "description": "한국 정발 오토바이 기종 오픈소스 API: 환경부 KENCIS 인증(법정 전수) 기반 + 사람 큐레이션, 키·호출 제한 없는 정적 JSON",
   "type": "module",
   "scripts": {
     "fetch": "node scripts/fetch-kencis.mjs",

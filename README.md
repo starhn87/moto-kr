@@ -1,6 +1,6 @@
 # 🏍️ moto-kr
 
-> 한국 정발 오토바이 기종 데이터셋
+> 한국 정발 오토바이 기종 오픈소스 API
 
 [![CI](https://img.shields.io/github/actions/workflow/status/starhn87/moto-kr/ci.yml?style=flat-square&label=CI)](https://github.com/starhn87/moto-kr/actions)
 ![Models](https://img.shields.io/badge/models-808-blue?style=flat-square)
@@ -8,7 +8,7 @@
 ![Code](https://img.shields.io/badge/code-MIT-lightgrey?style=flat-square)
 ![Data](https://img.shields.io/badge/data-CC_BY_4.0-lightgrey?style=flat-square)
 
-국내에 어떤 오토바이가 정식 발매됐는지 정리된 데이터가 없습니다. 공공 데이터는 등록 대수 통계 아니면 개별 차량 조회뿐이고, 민간 DB는 API를 열지 않습니다. moto-kr는 그 빈자리를 채우는 데이터셋입니다.
+국내에 어떤 오토바이가 정식 발매됐는지 조회할 API가 없습니다. 공공 데이터는 등록 대수 통계 아니면 개별 차량 조회뿐이고, 민간 DB는 API를 열지 않습니다. moto-kr는 그 빈자리를 채웁니다. 키 발급도, 호출 제한도, 서버 다운타임도 없는 정적 JSON API입니다.
 
 ## 🧩 어떻게 만드나
 
@@ -18,14 +18,24 @@
 | 정제 | 인증 데이터는 그대로 쓸 수 없습니다. 형식코드 표기(`GL1800`, `GSX1300BKA`), 연식별 중복, 병행수입 혼재를 사람이 관리하는 매핑(`mapping/`)으로 소비자 모델명과 한글 통용 표기로 정리합니다 |
 | 갱신 | GitHub Actions가 매주 인증 데이터를 다시 수집하고, 새 인증이 나타나면 PR을 만듭니다. 표기만 확정해 머지하면 데이터셋에 반영됩니다 |
 
-## 🚀 사용
+## 🚀 API
 
-빌드 산출물을 CDN으로 바로 가져다 쓸 수 있습니다.
+엔드포인트는 CDN이 서빙합니다. 키 없이 바로 호출하면 됩니다.
 
+| 엔드포인트 | 응답 |
+|---|---|
+| `https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main/data/models.min.json` | 자동완성용 한글 표기 배열 (경량) |
+| `https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main/data/models.json` | 풀 스키마, 기종별 인증 이력 포함 |
+| `https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main/data/unmapped.json` | 미매핑 인증 차명 (기여 대상) |
+
+```js
+const { names } = await fetch(
+  'https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main/data/models.min.json'
+).then((r) => r.json());
+// ['가와사키 닌자 H2', '가와사키 닌자 ZX-10R', ...]
 ```
-https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main/data/models.min.json   # 자동완성용 한글 표기 배열
-https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main/data/models.json       # 풀 스키마 (인증 이력 포함)
-```
+
+버전을 고정하고 싶으면 `@main` 대신 커밋 해시나 태그를 쓰면 됩니다.
 
 ### models.json 스키마
 
@@ -62,4 +72,4 @@ npm run validate   # 무결성 검증
 - 인증 원본(`data/raw/`): [공공데이터포털 15000988](https://www.data.go.kr/data/15000988/openapi.do) (환경부·국립환경과학원)
 - 매핑·정제 데이터: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ko), 출처(moto-kr)를 밝히고 자유롭게 쓸 수 있습니다
 
-> 이 데이터셋은 오토바이 라이더용 지도 앱 [모토맵](https://github.com/starhn87/ridemap)의 기종 자동완성을 만들다 시작됐습니다.
+> 이 API는 오토바이 라이더용 지도 앱 [모토맵](https://github.com/starhn87/ridemap)의 기종 자동완성을 만들다 시작됐습니다.
