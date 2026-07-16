@@ -26,6 +26,8 @@ const entries = seed.map((s) => {
     ...s,
     _token: token,
     _alpha: alphaTokens,
+    // 사람이 매핑한 인증 차명 — 정확 일치로 우선 매칭 (형식코드 ↔ 소비자명 연결)
+    _aliasNorm: new Set((s.aliases ?? []).map(norm).filter(Boolean)),
     aliases: new Set(s.aliases ?? []),
     certifications: [],
   };
@@ -39,6 +41,7 @@ rows.forEach((r, i) => {
     // 인증 차명이 모델 토큰을 포함하거나(예: CBR650RA ⊇ CBR650R),
     // 모델의 영숫자 토큰이 모두 차명에 있으면 매칭
     const hit =
+      e._aliasNorm.has(nm) ||
       (e._token.length >= 3 && nm.includes(e._token)) ||
       (e._alpha.length > 0 && e._alpha.every((t) => nm.includes(t)));
     if (hit) {

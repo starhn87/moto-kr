@@ -8,7 +8,9 @@ const seed = JSON.parse(readFileSync('mapping/models.json', 'utf8'));
 const seen = new Set();
 for (const s of seed) {
   if (!s.nameKo || !s.brand || !s.model) err(`필수 필드 누락: ${JSON.stringify(s)}`);
-  if (s.nameKo !== `${s.brand} ${s.model}`) err(`nameKo 불일치: ${s.nameKo}`);
+  // 단일어 상품(브랜드=제품명, 예: 플레타)은 nameKo === brand === model 을 허용
+  const single = s.nameKo === s.brand && s.model === s.brand;
+  if (!single && s.nameKo !== `${s.brand} ${s.model}`) err(`nameKo 불일치: ${s.nameKo}`);
   if (seen.has(s.nameKo)) err(`중복: ${s.nameKo}`);
   seen.add(s.nameKo);
 }

@@ -1,5 +1,4074 @@
 [
  {
+  "nameKo": "가브리엘 D1",
+  "brand": "가브리엘",
+  "model": "D1",
+  "aliases": [
+   "D1"
+  ]
+ },
+ {
+  "nameKo": "가브리엘 D2",
+  "brand": "가브리엘",
+  "model": "D2",
+  "aliases": [
+   "D2"
+  ]
+ },
+ {
+  "nameKo": "가브리엘 H6",
+  "brand": "가브리엘",
+  "model": "H6",
+  "aliases": [
+   "에이치6"
+  ]
+ },
+ {
+  "nameKo": "가브리엘 L1",
+  "brand": "가브리엘",
+  "model": "L1",
+  "aliases": [
+   "엘원"
+  ]
+ },
+ {
+  "nameKo": "가브리엘 M6",
+  "brand": "가브리엘",
+  "model": "M6",
+  "aliases": [
+   "엠6"
+  ]
+ },
+ {
+  "nameKo": "가와사키 닌자 H2",
+  "brand": "가와사키",
+  "model": "닌자 H2",
+  "aliases": [
+   "NINJA H2"
+  ]
+ },
+ {
+  "nameKo": "가와사키 닌자 H2 SX",
+  "brand": "가와사키",
+  "model": "닌자 H2 SX",
+  "aliases": [
+   "Ninja H2 SX SE",
+   "Ninja H2 SX",
+   "Ninja H2 SX SE +",
+   "Ninja H2 SX SE+",
+   "NINJA H2 SX SE"
+  ]
+ },
+ {
+  "nameKo": "가와사키 닌자 H2R",
+  "brand": "가와사키",
+  "model": "닌자 H2R"
+ },
+ {
+  "nameKo": "가와사키 닌자 ZX-10R",
+  "brand": "가와사키",
+  "model": "닌자 ZX-10R"
+ },
+ {
+  "nameKo": "가와사키 닌자 ZX-14R",
+  "brand": "가와사키",
+  "model": "닌자 ZX-14R"
+ },
+ {
+  "nameKo": "가와사키 닌자 ZX-4RR",
+  "brand": "가와사키",
+  "model": "닌자 ZX-4RR",
+  "aliases": [
+   "Ninja ZX-4R"
+  ]
+ },
+ {
+  "nameKo": "가와사키 닌자 ZX-6R",
+  "brand": "가와사키",
+  "model": "닌자 ZX-6R",
+  "aliases": [
+   "ZX600R"
+  ]
+ },
+ {
+  "nameKo": "가와사키 닌자1000SX",
+  "brand": "가와사키",
+  "model": "닌자1000SX"
+ },
+ {
+  "nameKo": "가와사키 닌자1100SX",
+  "brand": "가와사키",
+  "model": "닌자1100SX"
+ },
+ {
+  "nameKo": "가와사키 닌자300",
+  "brand": "가와사키",
+  "model": "닌자300"
+ },
+ {
+  "nameKo": "가와사키 닌자400",
+  "brand": "가와사키",
+  "model": "닌자400"
+ },
+ {
+  "nameKo": "가와사키 닌자500",
+  "brand": "가와사키",
+  "model": "닌자500"
+ },
+ {
+  "nameKo": "가와사키 닌자650",
+  "brand": "가와사키",
+  "model": "닌자650"
+ },
+ {
+  "nameKo": "가와사키 메구로 S1",
+  "brand": "가와사키",
+  "model": "메구로 S1",
+  "aliases": [
+   "Meguro S1"
+  ]
+ },
+ {
+  "nameKo": "가와사키 버시스1000",
+  "brand": "가와사키",
+  "model": "버시스1000"
+ },
+ {
+  "nameKo": "가와사키 버시스650",
+  "brand": "가와사키",
+  "model": "버시스650"
+ },
+ {
+  "nameKo": "가와사키 버시스X300",
+  "brand": "가와사키",
+  "model": "버시스X300"
+ },
+ {
+  "nameKo": "가와사키 벌칸S",
+  "brand": "가와사키",
+  "model": "벌칸S"
+ },
+ {
+  "nameKo": "가와사키 엘리미네이터",
+  "brand": "가와사키",
+  "model": "엘리미네이터",
+  "aliases": [
+   "ELIMINATOR"
+  ]
+ },
+ {
+  "nameKo": "가와사키 KLE500",
+  "brand": "가와사키",
+  "model": "KLE500"
+ },
+ {
+  "nameKo": "가와사키 W230",
+  "brand": "가와사키",
+  "model": "W230",
+  "aliases": [
+   "W230"
+  ]
+ },
+ {
+  "nameKo": "가와사키 W800",
+  "brand": "가와사키",
+  "model": "W800"
+ },
+ {
+  "nameKo": "가와사키 Z H2",
+  "brand": "가와사키",
+  "model": "Z H2"
+ },
+ {
+  "nameKo": "가와사키 Z1000",
+  "brand": "가와사키",
+  "model": "Z1000"
+ },
+ {
+  "nameKo": "가와사키 Z1100",
+  "brand": "가와사키",
+  "model": "Z1100"
+ },
+ {
+  "nameKo": "가와사키 Z400",
+  "brand": "가와사키",
+  "model": "Z400"
+ },
+ {
+  "nameKo": "가와사키 Z500",
+  "brand": "가와사키",
+  "model": "Z500"
+ },
+ {
+  "nameKo": "가와사키 Z650",
+  "brand": "가와사키",
+  "model": "Z650"
+ },
+ {
+  "nameKo": "가와사키 Z650RS",
+  "brand": "가와사키",
+  "model": "Z650RS"
+ },
+ {
+  "nameKo": "가와사키 Z900",
+  "brand": "가와사키",
+  "model": "Z900"
+ },
+ {
+  "nameKo": "가와사키 Z900RS",
+  "brand": "가와사키",
+  "model": "Z900RS"
+ },
+ {
+  "nameKo": "거상 리베르타S",
+  "brand": "거상",
+  "model": "리베르타S",
+  "aliases": [
+   "리베르타-에스"
+  ]
+ },
+ {
+  "nameKo": "고고로 2 유틸리티",
+  "brand": "고고로",
+  "model": "2 유틸리티",
+  "aliases": [
+   "gogoro2 utility"
+  ]
+ },
+ {
+  "nameKo": "고고로 2 플러스",
+  "brand": "고고로",
+  "model": "2 플러스",
+  "aliases": [
+   "gogoro2 plus",
+   "gogoro 2 plus",
+   "고고로2 플러스"
+  ]
+ },
+ {
+  "nameKo": "고고로 크로스오버 S",
+  "brand": "고고로",
+  "model": "크로스오버 S",
+  "aliases": [
+   "고고로 크로스오버 에스"
+  ]
+ },
+ {
+  "nameKo": "고고로 S2",
+  "brand": "고고로",
+  "model": "S2",
+  "aliases": [
+   "고고로 에스2"
+  ]
+ },
+ {
+  "nameKo": "그린모빌리티 바르시아",
+  "brand": "그린모빌리티",
+  "model": "바르시아",
+  "aliases": [
+   "VARCIA"
+  ]
+ },
+ {
+  "nameKo": "그린모빌리티 발렌시아",
+  "brand": "그린모빌리티",
+  "model": "발렌시아",
+  "aliases": [
+   "VALENCIA"
+  ]
+ },
+ {
+  "nameKo": "그린모빌리티 발렌시아 프로",
+  "brand": "그린모빌리티",
+  "model": "발렌시아 프로",
+  "aliases": [
+   "VALENCIA-PRO"
+  ]
+ },
+ {
+  "nameKo": "그린모빌리티 발렌시아2",
+  "brand": "그린모빌리티",
+  "model": "발렌시아2",
+  "aliases": [
+   "VALENCIA-II"
+  ]
+ },
+ {
+  "nameKo": "그린모빌리티 세비아",
+  "brand": "그린모빌리티",
+  "model": "세비아",
+  "aliases": [
+   "SEBIA"
+  ]
+ },
+ {
+  "nameKo": "그린모빌리티 세비아 프로E",
+  "brand": "그린모빌리티",
+  "model": "세비아 프로E",
+  "aliases": [
+   "세비아-프로E",
+   "SEBIA-PROE"
+  ]
+ },
+ {
+  "nameKo": "그린모빌리티 세비아2",
+  "brand": "그린모빌리티",
+  "model": "세비아2",
+  "aliases": [
+   "SEBIA-II"
+  ]
+ },
+ {
+  "nameKo": "그린모빌리티 GMT-V6",
+  "brand": "그린모빌리티",
+  "model": "GMT-V6",
+  "aliases": [
+   "GMT-V6"
+  ]
+ },
+ {
+  "nameKo": "그린모빌리티 GXT-CITY",
+  "brand": "그린모빌리티",
+  "model": "GXT-CITY",
+  "aliases": [
+   "GXT-CITY"
+  ]
+ },
+ {
+  "nameKo": "그린모빌리티 GXT-II",
+  "brand": "그린모빌리티",
+  "model": "GXT-II",
+  "aliases": [
+   "GXT-II"
+  ]
+ },
+ {
+  "nameKo": "그린모빌리티 GXT-PRO",
+  "brand": "그린모빌리티",
+  "model": "GXT-PRO",
+  "aliases": [
+   "GXT-PRO"
+  ]
+ },
+ {
+  "nameKo": "그린모빌리티 GXT-PROX",
+  "brand": "그린모빌리티",
+  "model": "GXT-PROX",
+  "aliases": [
+   "GXT-PROX"
+  ]
+ },
+ {
+  "nameKo": "뉴웨이 S1",
+  "brand": "뉴웨이",
+  "model": "S1",
+  "aliases": [
+   "뉴웨이 에스1"
+  ]
+ },
+ {
+  "nameKo": "니우 N카고",
+  "brand": "니우",
+  "model": "N카고",
+  "aliases": [
+   "NIU-NCARGO"
+  ]
+ },
+ {
+  "nameKo": "니우 NPro",
+  "brand": "니우",
+  "model": "NPro",
+  "aliases": [
+   "NIU-NPRO",
+   "NIU-NPROSHARINGB26",
+   "NIU-Npro"
+  ]
+ },
+ {
+  "nameKo": "니우 NQi GTS",
+  "brand": "니우",
+  "model": "NQi GTS",
+  "aliases": [
+   "NIU-NQiGTS"
+  ]
+ },
+ {
+  "nameKo": "니우 UPro",
+  "brand": "니우",
+  "model": "UPro",
+  "aliases": [
+   "NIU-UPRO"
+  ]
+ },
+ {
+  "nameKo": "닷스테이션 EV-C1",
+  "brand": "닷스테이션",
+  "model": "EV-C1",
+  "aliases": [
+   "이브이-씨1"
+  ]
+ },
+ {
+  "nameKo": "대동모빌리티 DDM1",
+  "brand": "대동모빌리티",
+  "model": "DDM1",
+  "aliases": [
+   "디디엠원"
+  ]
+ },
+ {
+  "nameKo": "대동모빌리티 GS140",
+  "brand": "대동모빌리티",
+  "model": "GS140",
+  "aliases": [
+   "지에스140"
+  ]
+ },
+ {
+  "nameKo": "대동모빌리티 GS143",
+  "brand": "대동모빌리티",
+  "model": "GS143",
+  "aliases": [
+   "지에스143"
+  ]
+ },
+ {
+  "nameKo": "대림 데이스타",
+  "brand": "대림",
+  "model": "데이스타"
+ },
+ {
+  "nameKo": "대림 델피노",
+  "brand": "대림",
+  "model": "델피노"
+ },
+ {
+  "nameKo": "대림 로드윈125",
+  "brand": "대림",
+  "model": "로드윈125"
+ },
+ {
+  "nameKo": "대림 로드윈250",
+  "brand": "대림",
+  "model": "로드윈250",
+  "aliases": [
+   "브이제이에프이백오십제트"
+  ]
+ },
+ {
+  "nameKo": "대림 베스비",
+  "brand": "대림",
+  "model": "베스비"
+ },
+ {
+  "nameKo": "대림 비글",
+  "brand": "대림",
+  "model": "비글",
+  "aliases": [
+   "TS50"
+  ]
+ },
+ {
+  "nameKo": "대림 시티100",
+  "brand": "대림",
+  "model": "시티100"
+ },
+ {
+  "nameKo": "대림 시티베스트",
+  "brand": "대림",
+  "model": "시티베스트",
+  "aliases": [
+   "CB115P",
+   "CB115PS",
+   "CB115PD",
+   "CB115D",
+   "CB115"
+  ]
+ },
+ {
+  "nameKo": "대림 시티에이스",
+  "brand": "대림",
+  "model": "시티에이스"
+ },
+ {
+  "nameKo": "대림 에디",
+  "brand": "대림",
+  "model": "에디",
+  "aliases": [
+   "ES50",
+   "ES50D"
+  ]
+ },
+ {
+  "nameKo": "대림 에이포",
+  "brand": "대림",
+  "model": "에이포",
+  "aliases": [
+   "SJ50R"
+  ]
+ },
+ {
+  "nameKo": "대림 위티50",
+  "brand": "대림",
+  "model": "위티50",
+  "aliases": [
+   "DS50F",
+   "DS50H",
+   "DS50"
+  ]
+ },
+ {
+  "nameKo": "대림 위티80",
+  "brand": "대림",
+  "model": "위티80",
+  "aliases": [
+   "DS80G",
+   "DS80K",
+   "DS80H",
+   "DS80"
+  ]
+ },
+ {
+  "nameKo": "대림 윌리",
+  "brand": "대림",
+  "model": "윌리",
+  "aliases": [
+   "ES80"
+  ]
+ },
+ {
+  "nameKo": "대림 커플",
+  "brand": "대림",
+  "model": "커플",
+  "aliases": [
+   "SW50"
+  ]
+ },
+ {
+  "nameKo": "대림 ATS50",
+  "brand": "대림",
+  "model": "ATS50",
+  "aliases": [
+   "AT50R"
+  ]
+ },
+ {
+  "nameKo": "대림 CA100",
+  "brand": "대림",
+  "model": "CA100"
+ },
+ {
+  "nameKo": "대림 e시티",
+  "brand": "대림",
+  "model": "e시티",
+  "aliases": [
+   "ED-1X",
+   "ED-1B",
+   "ED-1A"
+  ]
+ },
+ {
+  "nameKo": "대림 EM-1",
+  "brand": "대림",
+  "model": "EM-1",
+  "aliases": [
+   "EM-1S",
+   "EM-1D",
+   "EM-1"
+  ]
+ },
+ {
+  "nameKo": "대림 M보이",
+  "brand": "대림",
+  "model": "M보이"
+ },
+ {
+  "nameKo": "대림 Q3",
+  "brand": "대림",
+  "model": "Q3",
+  "aliases": [
+   "에스브이이백오십"
+  ]
+ },
+ {
+  "nameKo": "대림 UCR100",
+  "brand": "대림",
+  "model": "UCR100"
+ },
+ {
+  "nameKo": "대림 UH115",
+  "brand": "대림",
+  "model": "UH115",
+  "aliases": [
+   "UH115"
+  ]
+ },
+ {
+  "nameKo": "대림 UHR125",
+  "brand": "대림",
+  "model": "UHR125"
+ },
+ {
+  "nameKo": "대림 UHR150",
+  "brand": "대림",
+  "model": "UHR150"
+ },
+ {
+  "nameKo": "대림 VF100",
+  "brand": "대림",
+  "model": "VF100"
+ },
+ {
+  "nameKo": "대림 VX125",
+  "brand": "대림",
+  "model": "VX125"
+ },
+ {
+  "nameKo": "대림 XQ125",
+  "brand": "대림",
+  "model": "XQ125"
+ },
+ {
+  "nameKo": "대림 XQ250",
+  "brand": "대림",
+  "model": "XQ250"
+ },
+ {
+  "nameKo": "대림 XQ300",
+  "brand": "대림",
+  "model": "XQ300"
+ },
+ {
+  "nameKo": "두카티 1098",
+  "brand": "두카티",
+  "model": "1098",
+  "aliases": [
+   "1098S",
+   "1098",
+   "1098R"
+  ]
+ },
+ {
+  "nameKo": "두카티 1198",
+  "brand": "두카티",
+  "model": "1198",
+  "aliases": [
+   "1198SP",
+   "1198S CORSE",
+   "1198R CORSE",
+   "1198",
+   "1198S"
+  ]
+ },
+ {
+  "nameKo": "두카티 749",
+  "brand": "두카티",
+  "model": "749",
+  "aliases": [
+   "749R",
+   "749"
+  ]
+ },
+ {
+  "nameKo": "두카티 848",
+  "brand": "두카티",
+  "model": "848",
+  "aliases": [
+   "848 EVO CORSE SE",
+   "848EVO",
+   "848"
+  ]
+ },
+ {
+  "nameKo": "두카티 999",
+  "brand": "두카티",
+  "model": "999",
+  "aliases": [
+   "999S Monoposto",
+   "999R XEROX",
+   "999S MONOPOSTO"
+  ]
+ },
+ {
+  "nameKo": "두카티 데저트X",
+  "brand": "두카티",
+  "model": "데저트X",
+  "aliases": [
+   "Desert X",
+   "DesertX Rally"
+  ]
+ },
+ {
+  "nameKo": "두카티 디아벨1200",
+  "brand": "두카티",
+  "model": "디아벨1200",
+  "aliases": [
+   "Diavel Carbon",
+   "Diavel Diesel",
+   "Diavel",
+   "Diavel Titanium",
+   "DIAVEL",
+   "DIAVEL CARBON",
+   "DIAVEL STRADA"
+  ]
+ },
+ {
+  "nameKo": "두카티 디아벨1260",
+  "brand": "두카티",
+  "model": "디아벨1260"
+ },
+ {
+  "nameKo": "두카티 디아벨V4",
+  "brand": "두카티",
+  "model": "디아벨V4",
+  "aliases": [
+   "Diavel V4",
+   "Diavel for Bentley Mulliner"
+  ]
+ },
+ {
+  "nameKo": "두카티 멀티스트라다1200",
+  "brand": "두카티",
+  "model": "멀티스트라다1200"
+ },
+ {
+  "nameKo": "두카티 멀티스트라다1260",
+  "brand": "두카티",
+  "model": "멀티스트라다1260"
+ },
+ {
+  "nameKo": "두카티 멀티스트라다620",
+  "brand": "두카티",
+  "model": "멀티스트라다620",
+  "aliases": [
+   "MTS620"
+  ]
+ },
+ {
+  "nameKo": "두카티 멀티스트라다950",
+  "brand": "두카티",
+  "model": "멀티스트라다950"
+ },
+ {
+  "nameKo": "두카티 멀티스트라다V2",
+  "brand": "두카티",
+  "model": "멀티스트라다V2",
+  "aliases": [
+   "Multistrada V2",
+   "Multistrada V2 S"
+  ]
+ },
+ {
+  "nameKo": "두카티 멀티스트라다V4",
+  "brand": "두카티",
+  "model": "멀티스트라다V4",
+  "aliases": [
+   "Multistrada V4 Pikes Peak",
+   "Multistrada V4 S",
+   "Multistrada V4",
+   "Multistrada V4 S Grand Tour",
+   "MULTISTRADA V4 PIKES PEAK",
+   "MULTISTRADA V4 S",
+   "MULTISTRADA V4"
+  ]
+ },
+ {
+  "nameKo": "두카티 몬스터",
+  "brand": "두카티",
+  "model": "몬스터",
+  "aliases": [
+   "Monster",
+   "Monster+",
+   "Monster 30° Anniversario",
+   "Monster +",
+   "Monster SP",
+   "MONSTER",
+   "MONSTER PLUS"
+  ]
+ },
+ {
+  "nameKo": "두카티 몬스터1200",
+  "brand": "두카티",
+  "model": "몬스터1200"
+ },
+ {
+  "nameKo": "두카티 몬스터695",
+  "brand": "두카티",
+  "model": "몬스터695",
+  "aliases": [
+   "M695"
+  ]
+ },
+ {
+  "nameKo": "두카티 몬스터696",
+  "brand": "두카티",
+  "model": "몬스터696",
+  "aliases": [
+   "M696 PLUS ABS",
+   "M696 Plus",
+   "M696",
+   "M696 PLUS"
+  ]
+ },
+ {
+  "nameKo": "두카티 몬스터796",
+  "brand": "두카티",
+  "model": "몬스터796",
+  "aliases": [
+   "M796 ABS"
+  ]
+ },
+ {
+  "nameKo": "두카티 몬스터797",
+  "brand": "두카티",
+  "model": "몬스터797"
+ },
+ {
+  "nameKo": "두카티 몬스터821",
+  "brand": "두카티",
+  "model": "몬스터821"
+ },
+ {
+  "nameKo": "두카티 몬스터S4RS",
+  "brand": "두카티",
+  "model": "몬스터S4RS",
+  "aliases": [
+   "S4Rs"
+  ]
+ },
+ {
+  "nameKo": "두카티 슈퍼레제라V4",
+  "brand": "두카티",
+  "model": "슈퍼레제라V4",
+  "aliases": [
+   "Superleggera V4"
+  ]
+ },
+ {
+  "nameKo": "두카티 슈퍼스포츠",
+  "brand": "두카티",
+  "model": "슈퍼스포츠",
+  "aliases": [
+   "SuperSport S",
+   "SuperSport"
+  ]
+ },
+ {
+  "nameKo": "두카티 슈퍼스포츠950",
+  "brand": "두카티",
+  "model": "슈퍼스포츠950"
+ },
+ {
+  "nameKo": "두카티 스크램블러1100",
+  "brand": "두카티",
+  "model": "스크램블러1100"
+ },
+ {
+  "nameKo": "두카티 스크램블러나이트시프트",
+  "brand": "두카티",
+  "model": "스크램블러나이트시프트",
+  "aliases": [
+   "Scrambler Nightshift",
+   "SCRAMBLER NIGHTSHIFT"
+  ]
+ },
+ {
+  "nameKo": "두카티 스크램블러데저트슬레드",
+  "brand": "두카티",
+  "model": "스크램블러데저트슬레드",
+  "aliases": [
+   "SCRAMBLER FASTHOUSE",
+   "SCRAMBLER DS",
+   "Scrambler Desert Sled"
+  ]
+ },
+ {
+  "nameKo": "두카티 스크램블러식스티2",
+  "brand": "두카티",
+  "model": "스크램블러식스티2"
+ },
+ {
+  "nameKo": "두카티 스크램블러아이콘",
+  "brand": "두카티",
+  "model": "스크램블러아이콘",
+  "aliases": [
+   "Scrambler 10° Anniversario Rizoma Edition",
+   "Scrambler Icon",
+   "Scrambler Icon Dark",
+   "Scrambler",
+   "Scrambler  Icon",
+   "SCRAMBLER",
+   "SCRAMBLER ICON DARK",
+   "SCRAMBLER ICON BRIGHT",
+   "Scrambler Italia Independent"
+  ]
+ },
+ {
+  "nameKo": "두카티 스크램블러어반모타드",
+  "brand": "두카티",
+  "model": "스크램블러어반모타드",
+  "aliases": [
+   "SCRAMBLER URBAN MOTARD"
+  ]
+ },
+ {
+  "nameKo": "두카티 스크램블러어반엔듀로",
+  "brand": "두카티",
+  "model": "스크램블러어반엔듀로",
+  "aliases": [
+   "Scrambler Urban Enduro"
+  ]
+ },
+ {
+  "nameKo": "두카티 스크램블러카페레이서",
+  "brand": "두카티",
+  "model": "스크램블러카페레이서",
+  "aliases": [
+   "Scrambler Cafe Racer"
+  ]
+ },
+ {
+  "nameKo": "두카티 스크램블러클래식",
+  "brand": "두카티",
+  "model": "스크램블러클래식",
+  "aliases": [
+   "Scrambler Classic"
+  ]
+ },
+ {
+  "nameKo": "두카티 스크램블러풀스로틀",
+  "brand": "두카티",
+  "model": "스크램블러풀스로틀",
+  "aliases": [
+   "Scrambler Full Throttle",
+   "Scrambler Full throttle"
+  ]
+ },
+ {
+  "nameKo": "두카티 스크램블러플랫트랙프로",
+  "brand": "두카티",
+  "model": "스크램블러플랫트랙프로",
+  "aliases": [
+   "Scrambler Flat Track Pro"
+  ]
+ },
+ {
+  "nameKo": "두카티 스트리트파이터1098",
+  "brand": "두카티",
+  "model": "스트리트파이터1098",
+  "aliases": [
+   "STREETFIGHTER",
+   "STREETFIGHTER S"
+  ]
+ },
+ {
+  "nameKo": "두카티 스트리트파이터848",
+  "brand": "두카티",
+  "model": "스트리트파이터848",
+  "aliases": [
+   "STREETFIGHTER 848"
+  ]
+ },
+ {
+  "nameKo": "두카티 스트리트파이터V2",
+  "brand": "두카티",
+  "model": "스트리트파이터V2",
+  "aliases": [
+   "Streetfighter V2",
+   "Streetfighter V2 S"
+  ]
+ },
+ {
+  "nameKo": "두카티 스트리트파이터V4",
+  "brand": "두카티",
+  "model": "스트리트파이터V4",
+  "aliases": [
+   "Streetfighter V4",
+   "Streetfighter V4 S",
+   "Streetfighter V4 Lamborghini",
+   "Streetfighter V4 SP2",
+   "STREETFIGHTER V4 SP",
+   "STREETFIGHTER V4",
+   "STREETFIGHTER V4 S"
+  ]
+ },
+ {
+  "nameKo": "두카티 파니갈레1199",
+  "brand": "두카티",
+  "model": "파니갈레1199",
+  "aliases": [
+   "1199 PANIGALE NON ABS",
+   "1199 PANIGALE R",
+   "1199 PANIGALE",
+   "1199 PANIGALE S",
+   "1199 PANIGALE S TRICOLORE"
+  ]
+ },
+ {
+  "nameKo": "두카티 파니갈레1299",
+  "brand": "두카티",
+  "model": "파니갈레1299"
+ },
+ {
+  "nameKo": "두카티 파니갈레899",
+  "brand": "두카티",
+  "model": "파니갈레899",
+  "aliases": [
+   "899 PANIGALE"
+  ]
+ },
+ {
+  "nameKo": "두카티 파니갈레959",
+  "brand": "두카티",
+  "model": "파니갈레959"
+ },
+ {
+  "nameKo": "두카티 파니갈레R",
+  "brand": "두카티",
+  "model": "파니갈레R",
+  "aliases": [
+   "Panigale R"
+  ]
+ },
+ {
+  "nameKo": "두카티 파니갈레V2",
+  "brand": "두카티",
+  "model": "파니갈레V2",
+  "aliases": [
+   "Panigale V2 MM93",
+   "Panigale V2 FB63",
+   "Panigale V2",
+   "Panigale V2 S",
+   "PANIGALE V2",
+   "PANIGALE V2 BAYLISS"
+  ]
+ },
+ {
+  "nameKo": "두카티 파니갈레V4",
+  "brand": "두카티",
+  "model": "파니갈레V4",
+  "aliases": [
+   "Panigale V4",
+   "Panigale V4 S",
+   "Panigale V4 Tricolore",
+   "Panigale V4 Lamborghini",
+   "Panigale V4 SP2",
+   "Panigale V4 Bagnaia 2022",
+   "PANIGALE V4",
+   "PANIGALE V4 S",
+   "Panigale V4 S Corse",
+   "Panigale V4 Speciale"
+  ]
+ },
+ {
+  "nameKo": "두카티 파니갈레V4R",
+  "brand": "두카티",
+  "model": "파니갈레V4R"
+ },
+ {
+  "nameKo": "두카티 포뮬러73",
+  "brand": "두카티",
+  "model": "포뮬러73",
+  "aliases": [
+   "Formula 73"
+  ]
+ },
+ {
+  "nameKo": "두카티 하이퍼모타드698모노",
+  "brand": "두카티",
+  "model": "하이퍼모타드698모노"
+ },
+ {
+  "nameKo": "두카티 하이퍼모타드796",
+  "brand": "두카티",
+  "model": "하이퍼모타드796",
+  "aliases": [
+   "HYM796"
+  ]
+ },
+ {
+  "nameKo": "두카티 하이퍼모타드821",
+  "brand": "두카티",
+  "model": "하이퍼모타드821",
+  "aliases": [
+   "HYPERMOTARD",
+   "HYPERMOTARD SP"
+  ]
+ },
+ {
+  "nameKo": "두카티 하이퍼모타드939",
+  "brand": "두카티",
+  "model": "하이퍼모타드939"
+ },
+ {
+  "nameKo": "두카티 하이퍼모타드950",
+  "brand": "두카티",
+  "model": "하이퍼모타드950"
+ },
+ {
+  "nameKo": "두카티 하이퍼모타드V2",
+  "brand": "두카티",
+  "model": "하이퍼모타드V2",
+  "aliases": [
+   "Hypermotard V2",
+   "Hypermotard V2 SP"
+  ]
+ },
+ {
+  "nameKo": "두카티 하이퍼스트라다",
+  "brand": "두카티",
+  "model": "하이퍼스트라다",
+  "aliases": [
+   "HYPERSTRADA"
+  ]
+ },
+ {
+  "nameKo": "두카티 ST3",
+  "brand": "두카티",
+  "model": "ST3",
+  "aliases": [
+   "ST3SABS"
+  ]
+ },
+ {
+  "nameKo": "두카티 ST4S",
+  "brand": "두카티",
+  "model": "ST4S",
+  "aliases": [
+   "ST4S ABS"
+  ]
+ },
+ {
+  "nameKo": "두카티 X디아벨",
+  "brand": "두카티",
+  "model": "X디아벨",
+  "aliases": [
+   "XDIAVEL",
+   "XDIAVEL S",
+   "XDIAVEL DARK",
+   "XDIAVEL BLACK STAR",
+   "XDiavel",
+   "XDiavel S"
+  ]
+ },
+ {
+  "nameKo": "두카티 X디아벨V4",
+  "brand": "두카티",
+  "model": "X디아벨V4",
+  "aliases": [
+   "XDiavel V4"
+  ]
+ },
+ {
+  "nameKo": "로얄엔필드 게릴라450",
+  "brand": "로얄엔필드",
+  "model": "게릴라450"
+ },
+ {
+  "nameKo": "로얄엔필드 고안 클래식350",
+  "brand": "로얄엔필드",
+  "model": "고안 클래식350"
+ },
+ {
+  "nameKo": "로얄엔필드 메테오350",
+  "brand": "로얄엔필드",
+  "model": "메테오350"
+ },
+ {
+  "nameKo": "로얄엔필드 베어650",
+  "brand": "로얄엔필드",
+  "model": "베어650"
+ },
+ {
+  "nameKo": "로얄엔필드 뷸렛350",
+  "brand": "로얄엔필드",
+  "model": "뷸렛350"
+ },
+ {
+  "nameKo": "로얄엔필드 샷건650",
+  "brand": "로얄엔필드",
+  "model": "샷건650"
+ },
+ {
+  "nameKo": "로얄엔필드 슈퍼메테오650",
+  "brand": "로얄엔필드",
+  "model": "슈퍼메테오650"
+ },
+ {
+  "nameKo": "로얄엔필드 스크램411",
+  "brand": "로얄엔필드",
+  "model": "스크램411"
+ },
+ {
+  "nameKo": "로얄엔필드 인터셉터650",
+  "brand": "로얄엔필드",
+  "model": "인터셉터650"
+ },
+ {
+  "nameKo": "로얄엔필드 컨티넨탈GT650",
+  "brand": "로얄엔필드",
+  "model": "컨티넨탈GT650"
+ },
+ {
+  "nameKo": "로얄엔필드 클래식350",
+  "brand": "로얄엔필드",
+  "model": "클래식350"
+ },
+ {
+  "nameKo": "로얄엔필드 클래식650",
+  "brand": "로얄엔필드",
+  "model": "클래식650"
+ },
+ {
+  "nameKo": "로얄엔필드 헌터350",
+  "brand": "로얄엔필드",
+  "model": "헌터350"
+ },
+ {
+  "nameKo": "로얄엔필드 히말라얀",
+  "brand": "로얄엔필드",
+  "model": "히말라얀"
+ },
+ {
+  "nameKo": "로얄엔필드 히말라얀450",
+  "brand": "로얄엔필드",
+  "model": "히말라얀450"
+ },
+ {
+  "nameKo": "맥퀴엄",
+  "brand": "맥퀴엄",
+  "model": "맥퀴엄",
+  "aliases": [
+   "맥퀴엄"
+  ]
+ },
+ {
+  "nameKo": "모노모빌리티 MO-1",
+  "brand": "모노모빌리티",
+  "model": "MO-1",
+  "aliases": [
+   "엠오-1"
+  ]
+ },
+ {
+  "nameKo": "모터하이 KGM",
+  "brand": "모터하이",
+  "model": "KGM",
+  "aliases": [
+   "KGM"
+  ]
+ },
+ {
+  "nameKo": "모터하이 KGM2",
+  "brand": "모터하이",
+  "model": "KGM2",
+  "aliases": [
+   "케이지엠2"
+  ]
+ },
+ {
+  "nameKo": "모토구찌 V100만델로",
+  "brand": "모토구찌",
+  "model": "V100만델로"
+ },
+ {
+  "nameKo": "모토구찌 V7",
+  "brand": "모토구찌",
+  "model": "V7",
+  "aliases": [
+   "V7 850 SPECIAL",
+   "V7 850 STONE",
+   "V7III STONE",
+   "V7III RACER",
+   "V7III SPECIAL",
+   "V7III CARBON",
+   "V7III MILANO",
+   "V7III ROUGH"
+  ]
+ },
+ {
+  "nameKo": "모토구찌 V85TT",
+  "brand": "모토구찌",
+  "model": "V85TT"
+ },
+ {
+  "nameKo": "모토구찌 V9로머",
+  "brand": "모토구찌",
+  "model": "V9로머",
+  "aliases": [
+   "V9 ROAMER"
+  ]
+ },
+ {
+  "nameKo": "모토구찌 V9바버",
+  "brand": "모토구찌",
+  "model": "V9바버",
+  "aliases": [
+   "V9 BOBBER"
+  ]
+ },
+ {
+  "nameKo": "모토벨로 MV3",
+  "brand": "모토벨로",
+  "model": "MV3",
+  "aliases": [
+   "MV3"
+  ]
+ },
+ {
+  "nameKo": "모헤닉 UB46E",
+  "brand": "모헤닉",
+  "model": "UB46E",
+  "aliases": [
+   "UB46E"
+  ]
+ },
+ {
+  "nameKo": "모히또",
+  "brand": "모히또",
+  "model": "모히또",
+  "aliases": [
+   "mojito"
+  ]
+ },
+ {
+  "nameKo": "미소바이크",
+  "brand": "미소바이크",
+  "model": "미소바이크",
+  "aliases": [
+   "미소바이크"
+  ]
+ },
+ {
+  "nameKo": "베넬리 502C",
+  "brand": "베넬리",
+  "model": "502C"
+ },
+ {
+  "nameKo": "베넬리 레온치노125",
+  "brand": "베넬리",
+  "model": "레온치노125"
+ },
+ {
+  "nameKo": "베넬리 레온치노250",
+  "brand": "베넬리",
+  "model": "레온치노250"
+ },
+ {
+  "nameKo": "베넬리 레온치노500",
+  "brand": "베넬리",
+  "model": "레온치노500"
+ },
+ {
+  "nameKo": "베넬리 레온치노800",
+  "brand": "베넬리",
+  "model": "레온치노800"
+ },
+ {
+  "nameKo": "베넬리 비에스테250XDV",
+  "brand": "베넬리",
+  "model": "비에스테250XDV"
+ },
+ {
+  "nameKo": "베넬리 임페리알레400",
+  "brand": "베넬리",
+  "model": "임페리알레400"
+ },
+ {
+  "nameKo": "베넬리 파나레아125",
+  "brand": "베넬리",
+  "model": "파나레아125"
+ },
+ {
+  "nameKo": "베넬리 RKF125",
+  "brand": "베넬리",
+  "model": "RKF125"
+ },
+ {
+  "nameKo": "베넬리 SR125",
+  "brand": "베넬리",
+  "model": "SR125"
+ },
+ {
+  "nameKo": "베넬리 TNT1130",
+  "brand": "베넬리",
+  "model": "TNT1130",
+  "aliases": [
+   "TNT1130"
+  ]
+ },
+ {
+  "nameKo": "베넬리 TNT125",
+  "brand": "베넬리",
+  "model": "TNT125"
+ },
+ {
+  "nameKo": "베넬리 TNT899",
+  "brand": "베넬리",
+  "model": "TNT899",
+  "aliases": [
+   "TNT899"
+  ]
+ },
+ {
+  "nameKo": "베넬리 TRK502",
+  "brand": "베넬리",
+  "model": "TRK502"
+ },
+ {
+  "nameKo": "베넬리 TRK502X",
+  "brand": "베넬리",
+  "model": "TRK502X"
+ },
+ {
+  "nameKo": "베넬리 VIESTE125",
+  "brand": "베넬리",
+  "model": "VIESTE125"
+ },
+ {
+  "nameKo": "베스파 946",
+  "brand": "베스파",
+  "model": "946"
+ },
+ {
+  "nameKo": "베스파 스프린트125",
+  "brand": "베스파",
+  "model": "스프린트125"
+ },
+ {
+  "nameKo": "베스파 스프린트150",
+  "brand": "베스파",
+  "model": "스프린트150"
+ },
+ {
+  "nameKo": "베스파 프리마베라125",
+  "brand": "베스파",
+  "model": "프리마베라125"
+ },
+ {
+  "nameKo": "베스파 프리마베라150",
+  "brand": "베스파",
+  "model": "프리마베라150"
+ },
+ {
+  "nameKo": "베스파 GTS125",
+  "brand": "베스파",
+  "model": "GTS125"
+ },
+ {
+  "nameKo": "베스파 GTS300",
+  "brand": "베스파",
+  "model": "GTS300",
+  "aliases": [
+   "SEI GIORNI"
+  ]
+ },
+ {
+  "nameKo": "베스파 GTV300",
+  "brand": "베스파",
+  "model": "GTV300",
+  "aliases": [
+   "GTV"
+  ]
+ },
+ {
+  "nameKo": "베스파 LX125",
+  "brand": "베스파",
+  "model": "LX125"
+ },
+ {
+  "nameKo": "블루샤크 솔로에라",
+  "brand": "블루샤크",
+  "model": "솔로에라",
+  "aliases": [
+   "솔로에라"
+  ]
+ },
+ {
+  "nameKo": "블루샤크 H1",
+  "brand": "블루샤크",
+  "model": "H1",
+  "aliases": [
+   "H1"
+  ]
+ },
+ {
+  "nameKo": "블루샤크 R1",
+  "brand": "블루샤크",
+  "model": "R1",
+  "aliases": [
+   "R1"
+  ]
+ },
+ {
+  "nameKo": "블루샤크 R1 라이트",
+  "brand": "블루샤크",
+  "model": "R1 라이트",
+  "aliases": [
+   "R1 Lite"
+  ]
+ },
+ {
+  "nameKo": "블루샤크 R1K",
+  "brand": "블루샤크",
+  "model": "R1K",
+  "aliases": [
+   "R1K"
+  ]
+ },
+ {
+  "nameKo": "비엘챠퍼스 BL118B",
+  "brand": "비엘챠퍼스",
+  "model": "BL118B",
+  "aliases": [
+   "비엘일일팔비"
+  ]
+ },
+ {
+  "nameKo": "비엘챠퍼스 BL1345D",
+  "brand": "비엘챠퍼스",
+  "model": "BL1345D",
+  "aliases": [
+   "비엘일삼사오디"
+  ]
+ },
+ {
+  "nameKo": "비엘챠퍼스 BL318R",
+  "brand": "비엘챠퍼스",
+  "model": "BL318R",
+  "aliases": [
+   "비엘삼일팔알"
+  ]
+ },
+ {
+  "nameKo": "비엘챠퍼스 BL518SP",
+  "brand": "비엘챠퍼스",
+  "model": "BL518SP",
+  "aliases": [
+   "비엘오일팔에스피"
+  ]
+ },
+ {
+  "nameKo": "비엘챠퍼스 BL618S",
+  "brand": "비엘챠퍼스",
+  "model": "BL618S",
+  "aliases": [
+   "비엘육일팔에스"
+  ]
+ },
+ {
+  "nameKo": "비엘챠퍼스 BL918",
+  "brand": "비엘챠퍼스",
+  "model": "BL918",
+  "aliases": [
+   "BL918",
+   "비엘구일팔"
+  ]
+ },
+ {
+  "nameKo": "비엘챠퍼스 BL918GR",
+  "brand": "비엘챠퍼스",
+  "model": "BL918GR",
+  "aliases": [
+   "비엘구일팔지알"
+  ]
+ },
+ {
+  "nameKo": "비엘챠퍼스 BL918MS",
+  "brand": "비엘챠퍼스",
+  "model": "BL918MS",
+  "aliases": [
+   "비엘구일팔엠에스"
+  ]
+ },
+ {
+  "nameKo": "비엘챠퍼스 BL918RH",
+  "brand": "비엘챠퍼스",
+  "model": "BL918RH",
+  "aliases": [
+   "비엘구일팔알에이치"
+  ]
+ },
+ {
+  "nameKo": "비엘챠퍼스 BLHC",
+  "brand": "비엘챠퍼스",
+  "model": "BLHC",
+  "aliases": [
+   "비엘에이치씨"
+  ]
+ },
+ {
+  "nameKo": "비엘챠퍼스 BLST",
+  "brand": "비엘챠퍼스",
+  "model": "BLST",
+  "aliases": [
+   "비엘에스티"
+  ]
+ },
+ {
+  "nameKo": "샤오다오 잉",
+  "brand": "샤오다오",
+  "model": "잉",
+  "aliases": [
+   "잉"
+  ]
+ },
+ {
+  "nameKo": "세븐모빌리티 이노",
+  "brand": "세븐모빌리티",
+  "model": "이노",
+  "aliases": [
+   "이노"
+  ]
+ },
+ {
+  "nameKo": "수퍼렉스 i6",
+  "brand": "수퍼렉스",
+  "model": "i6",
+  "aliases": [
+   "에이치아이아이식스",
+   "에이치아이 아이식스"
+  ]
+ },
+ {
+  "nameKo": "슈퍼소코 CPX",
+  "brand": "슈퍼소코",
+  "model": "CPX",
+  "aliases": [
+   "SUPER SOCO CPX"
+  ]
+ },
+ {
+  "nameKo": "슈퍼소코 TC",
+  "brand": "슈퍼소코",
+  "model": "TC",
+  "aliases": [
+   "SUPER SOCO TC1"
+  ]
+ },
+ {
+  "nameKo": "슈퍼소코 TC맥스",
+  "brand": "슈퍼소코",
+  "model": "TC맥스",
+  "aliases": [
+   "슈퍼 쏘코 티씨 맥스"
+  ]
+ },
+ {
+  "nameKo": "스즈키 버그만 스트리트125",
+  "brand": "스즈키",
+  "model": "버그만 스트리트125"
+ },
+ {
+  "nameKo": "스즈키 버그만125",
+  "brand": "스즈키",
+  "model": "버그만125"
+ },
+ {
+  "nameKo": "스즈키 버그만200",
+  "brand": "스즈키",
+  "model": "버그만200"
+ },
+ {
+  "nameKo": "스즈키 버그만400",
+  "brand": "스즈키",
+  "model": "버그만400"
+ },
+ {
+  "nameKo": "스즈키 버그만650",
+  "brand": "스즈키",
+  "model": "버그만650"
+ },
+ {
+  "nameKo": "스즈키 브이스트롬1000",
+  "brand": "스즈키",
+  "model": "브이스트롬1000"
+ },
+ {
+  "nameKo": "스즈키 브이스트롬1050",
+  "brand": "스즈키",
+  "model": "브이스트롬1050"
+ },
+ {
+  "nameKo": "스즈키 브이스트롬250",
+  "brand": "스즈키",
+  "model": "브이스트롬250"
+ },
+ {
+  "nameKo": "스즈키 브이스트롬250SX",
+  "brand": "스즈키",
+  "model": "브이스트롬250SX"
+ },
+ {
+  "nameKo": "스즈키 브이스트롬650",
+  "brand": "스즈키",
+  "model": "브이스트롬650"
+ },
+ {
+  "nameKo": "스즈키 브이스트롬800DE",
+  "brand": "스즈키",
+  "model": "브이스트롬800DE"
+ },
+ {
+  "nameKo": "스즈키 아베니스125",
+  "brand": "스즈키",
+  "model": "아베니스125"
+ },
+ {
+  "nameKo": "스즈키 어드레스125",
+  "brand": "스즈키",
+  "model": "어드레스125"
+ },
+ {
+  "nameKo": "스즈키 카타나",
+  "brand": "스즈키",
+  "model": "카타나"
+ },
+ {
+  "nameKo": "스즈키 하야부사",
+  "brand": "스즈키",
+  "model": "하야부사"
+ },
+ {
+  "nameKo": "스즈키 DR-Z125L",
+  "brand": "스즈키",
+  "model": "DR-Z125L"
+ },
+ {
+  "nameKo": "스즈키 DR-Z4S",
+  "brand": "스즈키",
+  "model": "DR-Z4S"
+ },
+ {
+  "nameKo": "스즈키 DR-Z4SM",
+  "brand": "스즈키",
+  "model": "DR-Z4SM"
+ },
+ {
+  "nameKo": "스즈키 DR-Z70",
+  "brand": "스즈키",
+  "model": "DR-Z70"
+ },
+ {
+  "nameKo": "스즈키 GSR600",
+  "brand": "스즈키",
+  "model": "GSR600",
+  "aliases": [
+   "GSR600A",
+   "GSR600"
+  ]
+ },
+ {
+  "nameKo": "스즈키 GSX-8R",
+  "brand": "스즈키",
+  "model": "GSX-8R"
+ },
+ {
+  "nameKo": "스즈키 GSX-8S",
+  "brand": "스즈키",
+  "model": "GSX-8S"
+ },
+ {
+  "nameKo": "스즈키 GSX-8T",
+  "brand": "스즈키",
+  "model": "GSX-8T"
+ },
+ {
+  "nameKo": "스즈키 GSX-8TT",
+  "brand": "스즈키",
+  "model": "GSX-8TT"
+ },
+ {
+  "nameKo": "스즈키 GSX-R1000",
+  "brand": "스즈키",
+  "model": "GSX-R1000"
+ },
+ {
+  "nameKo": "스즈키 GSX-R125",
+  "brand": "스즈키",
+  "model": "GSX-R125"
+ },
+ {
+  "nameKo": "스즈키 GSX-R600",
+  "brand": "스즈키",
+  "model": "GSX-R600",
+  "aliases": [
+   "GSX-R600"
+  ]
+ },
+ {
+  "nameKo": "스즈키 GSX-S1000",
+  "brand": "스즈키",
+  "model": "GSX-S1000"
+ },
+ {
+  "nameKo": "스즈키 GSX-S1000F",
+  "brand": "스즈키",
+  "model": "GSX-S1000F"
+ },
+ {
+  "nameKo": "스즈키 GSX-S1000GT",
+  "brand": "스즈키",
+  "model": "GSX-S1000GT"
+ },
+ {
+  "nameKo": "스즈키 GSX-S1000GX",
+  "brand": "스즈키",
+  "model": "GSX-S1000GX"
+ },
+ {
+  "nameKo": "스즈키 GSX-S125",
+  "brand": "스즈키",
+  "model": "GSX-S125"
+ },
+ {
+  "nameKo": "스즈키 GSX-S750",
+  "brand": "스즈키",
+  "model": "GSX-S750"
+ },
+ {
+  "nameKo": "스즈키 RM-Z250",
+  "brand": "스즈키",
+  "model": "RM-Z250"
+ },
+ {
+  "nameKo": "스즈키 RM-Z450",
+  "brand": "스즈키",
+  "model": "RM-Z450"
+ },
+ {
+  "nameKo": "스즈키 RMX450Z",
+  "brand": "스즈키",
+  "model": "RMX450Z"
+ },
+ {
+  "nameKo": "스즈키 SV650",
+  "brand": "스즈키",
+  "model": "SV650"
+ },
+ {
+  "nameKo": "시티플라이 C40",
+  "brand": "시티플라이",
+  "model": "C40",
+  "aliases": [
+   "c40",
+   "c40B"
+  ]
+ },
+ {
+  "nameKo": "시티플라이 C40A",
+  "brand": "시티플라이",
+  "model": "C40A",
+  "aliases": [
+   "c40A"
+  ]
+ },
+ {
+  "nameKo": "시티플라이 C41",
+  "brand": "시티플라이",
+  "model": "C41",
+  "aliases": [
+   "c41"
+  ]
+ },
+ {
+  "nameKo": "씨엠파트너 썬바이크3",
+  "brand": "씨엠파트너",
+  "model": "썬바이크3",
+  "aliases": [
+   "SUNBIKE3"
+  ]
+ },
+ {
+  "nameKo": "아프릴리아 돌소두로900",
+  "brand": "아프릴리아",
+  "model": "돌소두로900"
+ },
+ {
+  "nameKo": "아프릴리아 마나850",
+  "brand": "아프릴리아",
+  "model": "마나850",
+  "aliases": [
+   "마나850"
+  ]
+ },
+ {
+  "nameKo": "아프릴리아 쉬버900",
+  "brand": "아프릴리아",
+  "model": "쉬버900"
+ },
+ {
+  "nameKo": "아프릴리아 투아렉660",
+  "brand": "아프릴리아",
+  "model": "투아렉660"
+ },
+ {
+  "nameKo": "아프릴리아 투오노660",
+  "brand": "아프릴리아",
+  "model": "투오노660"
+ },
+ {
+  "nameKo": "아프릴리아 투오노V4",
+  "brand": "아프릴리아",
+  "model": "투오노V4"
+ },
+ {
+  "nameKo": "아프릴리아 RS457",
+  "brand": "아프릴리아",
+  "model": "RS457"
+ },
+ {
+  "nameKo": "아프릴리아 RS660",
+  "brand": "아프릴리아",
+  "model": "RS660"
+ },
+ {
+  "nameKo": "아프릴리아 RSV4",
+  "brand": "아프릴리아",
+  "model": "RSV4"
+ },
+ {
+  "nameKo": "아프릴리아 SR GT125",
+  "brand": "아프릴리아",
+  "model": "SR GT125"
+ },
+ {
+  "nameKo": "아프릴리아 SRV850",
+  "brand": "아프릴리아",
+  "model": "SRV850",
+  "aliases": [
+   "SRV850"
+  ]
+ },
+ {
+  "nameKo": "야디 Z3",
+  "brand": "야디",
+  "model": "Z3",
+  "aliases": [
+   "제트쓰리"
+  ]
+ },
+ {
+  "nameKo": "야마하 니켄",
+  "brand": "야마하",
+  "model": "니켄",
+  "aliases": [
+   "MXT850"
+  ]
+ },
+ {
+  "nameKo": "야마하 볼트",
+  "brand": "야마하",
+  "model": "볼트"
+ },
+ {
+  "nameKo": "야마하 비노50",
+  "brand": "야마하",
+  "model": "비노50",
+  "aliases": [
+   "XC50"
+  ]
+ },
+ {
+  "nameKo": "야마하 슈퍼테네레",
+  "brand": "야마하",
+  "model": "슈퍼테네레"
+ },
+ {
+  "nameKo": "야마하 테네레700",
+  "brand": "야마하",
+  "model": "테네레700"
+ },
+ {
+  "nameKo": "야마하 트레이서9 GT",
+  "brand": "야마하",
+  "model": "트레이서9 GT"
+ },
+ {
+  "nameKo": "야마하 트레이서900",
+  "brand": "야마하",
+  "model": "트레이서900"
+ },
+ {
+  "nameKo": "야마하 트리시티125",
+  "brand": "야마하",
+  "model": "트리시티125"
+ },
+ {
+  "nameKo": "야마하 트리시티155",
+  "brand": "야마하",
+  "model": "트리시티155",
+  "aliases": [
+   "MWS155-A"
+  ]
+ },
+ {
+  "nameKo": "야마하 FJR1300",
+  "brand": "야마하",
+  "model": "FJR1300"
+ },
+ {
+  "nameKo": "야마하 FZ1",
+  "brand": "야마하",
+  "model": "FZ1",
+  "aliases": [
+   "FZ1"
+  ]
+ },
+ {
+  "nameKo": "야마하 FZ6",
+  "brand": "야마하",
+  "model": "FZ6",
+  "aliases": [
+   "FZ6"
+  ]
+ },
+ {
+  "nameKo": "야마하 FZ8",
+  "brand": "야마하",
+  "model": "FZ8",
+  "aliases": [
+   "FZ8"
+  ]
+ },
+ {
+  "nameKo": "야마하 MT-01",
+  "brand": "야마하",
+  "model": "MT-01",
+  "aliases": [
+   "MT01"
+  ]
+ },
+ {
+  "nameKo": "야마하 MT-03",
+  "brand": "야마하",
+  "model": "MT-03",
+  "aliases": [
+   "MTN320-A",
+   "MTN320A"
+  ]
+ },
+ {
+  "nameKo": "야마하 MT-07",
+  "brand": "야마하",
+  "model": "MT-07"
+ },
+ {
+  "nameKo": "야마하 MT-09",
+  "brand": "야마하",
+  "model": "MT-09",
+  "aliases": [
+   "MTN850D",
+   "MTN850A"
+  ]
+ },
+ {
+  "nameKo": "야마하 MT-10",
+  "brand": "야마하",
+  "model": "MT-10"
+ },
+ {
+  "nameKo": "야마하 NMAX125",
+  "brand": "야마하",
+  "model": "NMAX125"
+ },
+ {
+  "nameKo": "야마하 NMAX155",
+  "brand": "야마하",
+  "model": "NMAX155",
+  "aliases": [
+   "GPD155D-A",
+   "GPD155A"
+  ]
+ },
+ {
+  "nameKo": "야마하 PW50",
+  "brand": "야마하",
+  "model": "PW50"
+ },
+ {
+  "nameKo": "야마하 TMAX530",
+  "brand": "야마하",
+  "model": "TMAX530",
+  "aliases": [
+   "XP530"
+  ]
+ },
+ {
+  "nameKo": "야마하 TMAX560",
+  "brand": "야마하",
+  "model": "TMAX560",
+  "aliases": [
+   "XP560D",
+   "XP560E"
+  ]
+ },
+ {
+  "nameKo": "야마하 VMAX",
+  "brand": "야마하",
+  "model": "VMAX"
+ },
+ {
+  "nameKo": "야마하 XJ6",
+  "brand": "야마하",
+  "model": "XJ6",
+  "aliases": [
+   "XJ6"
+  ]
+ },
+ {
+  "nameKo": "야마하 XMAX300",
+  "brand": "야마하",
+  "model": "XMAX300"
+ },
+ {
+  "nameKo": "야마하 XSR900",
+  "brand": "야마하",
+  "model": "XSR900",
+  "aliases": [
+   "MTM850"
+  ]
+ },
+ {
+  "nameKo": "야마하 XSR900GP",
+  "brand": "야마하",
+  "model": "XSR900GP"
+ },
+ {
+  "nameKo": "야마하 YZ125X",
+  "brand": "야마하",
+  "model": "YZ125X"
+ },
+ {
+  "nameKo": "야마하 YZ250F",
+  "brand": "야마하",
+  "model": "YZ250F"
+ },
+ {
+  "nameKo": "야마하 YZ450F",
+  "brand": "야마하",
+  "model": "YZ450F"
+ },
+ {
+  "nameKo": "야마하 YZ65",
+  "brand": "야마하",
+  "model": "YZ65"
+ },
+ {
+  "nameKo": "야마하 YZ85",
+  "brand": "야마하",
+  "model": "YZ85"
+ },
+ {
+  "nameKo": "야마하 YZF-R1",
+  "brand": "야마하",
+  "model": "YZF-R1"
+ },
+ {
+  "nameKo": "야마하 YZF-R3",
+  "brand": "야마하",
+  "model": "YZF-R3",
+  "aliases": [
+   "YZF320-A",
+   "YZF320A"
+  ]
+ },
+ {
+  "nameKo": "야마하 YZF-R6",
+  "brand": "야마하",
+  "model": "YZF-R6",
+  "aliases": [
+   "YZF600"
+  ]
+ },
+ {
+  "nameKo": "야마하 YZF-R7",
+  "brand": "야마하",
+  "model": "YZF-R7"
+ },
+ {
+  "nameKo": "야마하 YZF-R9",
+  "brand": "야마하",
+  "model": "YZF-R9"
+ },
+ {
+  "nameKo": "에임스 레오",
+  "brand": "에임스",
+  "model": "레오",
+  "aliases": [
+   "레오"
+  ]
+ },
+ {
+  "nameKo": "에임스 레오D",
+  "brand": "에임스",
+  "model": "레오D",
+  "aliases": [
+   "레오-디"
+  ]
+ },
+ {
+  "nameKo": "엠비아이 S",
+  "brand": "엠비아이",
+  "model": "S",
+  "aliases": [
+   "엠비아이-에스"
+  ]
+ },
+ {
+  "nameKo": "엠비아이 V",
+  "brand": "엠비아이",
+  "model": "V",
+  "aliases": [
+   "엠비아이-브이"
+  ]
+ },
+ {
+  "nameKo": "엠비아이 X",
+  "brand": "엠비아이",
+  "model": "X",
+  "aliases": [
+   "엠비아이-엑스"
+  ]
+ },
+ {
+  "nameKo": "와코 E6S",
+  "brand": "와코",
+  "model": "E6S",
+  "aliases": [
+   "2K2(E6S)"
+  ]
+ },
+ {
+  "nameKo": "와코 E7S",
+  "brand": "와코",
+  "model": "E7S",
+  "aliases": [
+   "E7S"
+  ]
+ },
+ {
+  "nameKo": "와코 X10",
+  "brand": "와코",
+  "model": "X10",
+  "aliases": [
+   "엑스텐",
+   "X10A"
+  ]
+ },
+ {
+  "nameKo": "윈드 K1",
+  "brand": "윈드",
+  "model": "K1",
+  "aliases": [
+   "WIND-K1"
+  ]
+ },
+ {
+  "nameKo": "유에코 H2",
+  "brand": "유에코",
+  "model": "H2",
+  "aliases": [
+   "UECO-H2"
+  ]
+ },
+ {
+  "nameKo": "이누리 DJ1",
+  "brand": "이누리",
+  "model": "DJ1",
+  "aliases": [
+   "디제이원"
+  ]
+ },
+ {
+  "nameKo": "이누리 OK1 쿠루",
+  "brand": "이누리",
+  "model": "OK1 쿠루",
+  "aliases": [
+   "오케이원 쿠루"
+  ]
+ },
+ {
+  "nameKo": "이누리 OK1 쿠루 프로",
+  "brand": "이누리",
+  "model": "OK1 쿠루 프로",
+  "aliases": [
+   "오케이원쿠루프로"
+  ]
+ },
+ {
+  "nameKo": "이누리 OK1 KS",
+  "brand": "이누리",
+  "model": "OK1 KS",
+  "aliases": [
+   "오케원케이에스"
+  ]
+ },
+ {
+  "nameKo": "이누리 V1",
+  "brand": "이누리",
+  "model": "V1",
+  "aliases": [
+   "브이원"
+  ]
+ },
+ {
+  "nameKo": "이누리 V2",
+  "brand": "이누리",
+  "model": "V2",
+  "aliases": [
+   "브이투"
+  ]
+ },
+ {
+  "nameKo": "이벡터 머큐리",
+  "brand": "이벡터",
+  "model": "머큐리",
+  "aliases": [
+   "머큐리"
+  ]
+ },
+ {
+  "nameKo": "이벡터 아폴로",
+  "brand": "이벡터",
+  "model": "아폴로",
+  "aliases": [
+   "아폴로"
+  ]
+ },
+ {
+  "nameKo": "이벡터 주노",
+  "brand": "이벡터",
+  "model": "주노",
+  "aliases": [
+   "주노"
+  ]
+ },
+ {
+  "nameKo": "이벡터 주피터",
+  "brand": "이벡터",
+  "model": "주피터",
+  "aliases": [
+   "주피터"
+  ]
+ },
+ {
+  "nameKo": "이쓰리모빌리티 듀스7",
+  "brand": "이쓰리모빌리티",
+  "model": "듀스7",
+  "aliases": [
+   "듀스7"
+  ]
+ },
+ {
+  "nameKo": "이오모터스 보노",
+  "brand": "이오모터스",
+  "model": "보노",
+  "aliases": [
+   "BONO",
+   "보노"
+  ]
+ },
+ {
+  "nameKo": "이오모터스 위즈",
+  "brand": "이오모터스",
+  "model": "위즈",
+  "aliases": [
+   "BWS WIZ"
+  ]
+ },
+ {
+  "nameKo": "이오모터스 투롭",
+  "brand": "이오모터스",
+  "model": "투롭",
+  "aliases": [
+   "투롭"
+  ]
+ },
+ {
+  "nameKo": "이오모터스 TI",
+  "brand": "이오모터스",
+  "model": "TI",
+  "aliases": [
+   "티아이"
+  ]
+ },
+ {
+  "nameKo": "이오모터스 TI S",
+  "brand": "이오모터스",
+  "model": "TI S",
+  "aliases": [
+   "티아이 에스"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E1 플러스",
+  "brand": "이쿠터",
+  "model": "E1 플러스",
+  "aliases": [
+   "ECOOTER E1 PLUS"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E1S",
+  "brand": "이쿠터",
+  "model": "E1S",
+  "aliases": [
+   "ECOOTER E1S",
+   "Ecooter E1S"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E1S 플러스",
+  "brand": "이쿠터",
+  "model": "E1S 플러스",
+  "aliases": [
+   "E1S Plus"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E2",
+  "brand": "이쿠터",
+  "model": "E2",
+  "aliases": [
+   "ECOOTER E2"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E2 맥스",
+  "brand": "이쿠터",
+  "model": "E2 맥스",
+  "aliases": [
+   "ECOOTER E2 MAX"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E2 맥스 카고 플러스",
+  "brand": "이쿠터",
+  "model": "E2 맥스 카고 플러스",
+  "aliases": [
+   "E2 Max Cargo Plus"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E2 맥스 플러스",
+  "brand": "이쿠터",
+  "model": "E2 맥스 플러스",
+  "aliases": [
+   "E2 Max Plus"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E2 카고",
+  "brand": "이쿠터",
+  "model": "E2 카고",
+  "aliases": [
+   "ECOOTER E2 Cargo",
+   "Ecooter E2 Cargo"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E2 플러스",
+  "brand": "이쿠터",
+  "model": "E2 플러스",
+  "aliases": [
+   "E2 Plus"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E2 플러스 카고",
+  "brand": "이쿠터",
+  "model": "E2 플러스 카고",
+  "aliases": [
+   "E2 Plus Cargo"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E2K",
+  "brand": "이쿠터",
+  "model": "E2K",
+  "aliases": [
+   "ECOOTER E2K"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E2K 카고",
+  "brand": "이쿠터",
+  "model": "E2K 카고",
+  "aliases": [
+   "ECOOTER E2K Cargo"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E3",
+  "brand": "이쿠터",
+  "model": "E3",
+  "aliases": [
+   "E3"
+  ]
+ },
+ {
+  "nameKo": "이쿠터 E5",
+  "brand": "이쿠터",
+  "model": "E5",
+  "aliases": [
+   "E5"
+  ]
+ },
+ {
+  "nameKo": "인디언 101 스카우트",
+  "brand": "인디언",
+  "model": "101 스카우트"
+ },
+ {
+  "nameKo": "인디언 로드마스터",
+  "brand": "인디언",
+  "model": "로드마스터"
+ },
+ {
+  "nameKo": "인디언 로드마스터 다크호스",
+  "brand": "인디언",
+  "model": "로드마스터 다크호스"
+ },
+ {
+  "nameKo": "인디언 로드마스터 리미티드",
+  "brand": "인디언",
+  "model": "로드마스터 리미티드"
+ },
+ {
+  "nameKo": "인디언 슈퍼 치프",
+  "brand": "인디언",
+  "model": "슈퍼 치프"
+ },
+ {
+  "nameKo": "인디언 슈퍼 치프 리미티드",
+  "brand": "인디언",
+  "model": "슈퍼 치프 리미티드"
+ },
+ {
+  "nameKo": "인디언 스카우트",
+  "brand": "인디언",
+  "model": "스카우트"
+ },
+ {
+  "nameKo": "인디언 스카우트 로그",
+  "brand": "인디언",
+  "model": "스카우트 로그"
+ },
+ {
+  "nameKo": "인디언 스카우트 바버",
+  "brand": "인디언",
+  "model": "스카우트 바버"
+ },
+ {
+  "nameKo": "인디언 스카우트 바버 트웬티",
+  "brand": "인디언",
+  "model": "스카우트 바버 트웬티"
+ },
+ {
+  "nameKo": "인디언 스카우트 식스티",
+  "brand": "인디언",
+  "model": "스카우트 식스티"
+ },
+ {
+  "nameKo": "인디언 스카우트 클래식",
+  "brand": "인디언",
+  "model": "스카우트 클래식"
+ },
+ {
+  "nameKo": "인디언 스포츠 스카우트",
+  "brand": "인디언",
+  "model": "스포츠 스카우트"
+ },
+ {
+  "nameKo": "인디언 스프링필드",
+  "brand": "인디언",
+  "model": "스프링필드"
+ },
+ {
+  "nameKo": "인디언 스프링필드 다크호스",
+  "brand": "인디언",
+  "model": "스프링필드 다크호스"
+ },
+ {
+  "nameKo": "인디언 챌린저",
+  "brand": "인디언",
+  "model": "챌린저"
+ },
+ {
+  "nameKo": "인디언 챌린저 다크호스",
+  "brand": "인디언",
+  "model": "챌린저 다크호스"
+ },
+ {
+  "nameKo": "인디언 챌린저 리미티드",
+  "brand": "인디언",
+  "model": "챌린저 리미티드"
+ },
+ {
+  "nameKo": "인디언 치프",
+  "brand": "인디언",
+  "model": "치프"
+ },
+ {
+  "nameKo": "인디언 치프 다크호스",
+  "brand": "인디언",
+  "model": "치프 다크호스"
+ },
+ {
+  "nameKo": "인디언 치프 바버 다크호스",
+  "brand": "인디언",
+  "model": "치프 바버 다크호스"
+ },
+ {
+  "nameKo": "인디언 치프 빈티지",
+  "brand": "인디언",
+  "model": "치프 빈티지"
+ },
+ {
+  "nameKo": "인디언 치프테인",
+  "brand": "인디언",
+  "model": "치프테인"
+ },
+ {
+  "nameKo": "인디언 치프테인 다크호스",
+  "brand": "인디언",
+  "model": "치프테인 다크호스"
+ },
+ {
+  "nameKo": "인디언 치프테인 리미티드",
+  "brand": "인디언",
+  "model": "치프테인 리미티드"
+ },
+ {
+  "nameKo": "인디언 퍼슈트 다크호스",
+  "brand": "인디언",
+  "model": "퍼슈트 다크호스"
+ },
+ {
+  "nameKo": "인디언 퍼슈트 리미티드",
+  "brand": "인디언",
+  "model": "퍼슈트 리미티드"
+ },
+ {
+  "nameKo": "인디언 FTR 랠리",
+  "brand": "인디언",
+  "model": "FTR 랠리"
+ },
+ {
+  "nameKo": "인디언 FTR R 카본",
+  "brand": "인디언",
+  "model": "FTR R 카본"
+ },
+ {
+  "nameKo": "인디언 FTR1200",
+  "brand": "인디언",
+  "model": "FTR1200"
+ },
+ {
+  "nameKo": "일렉사 욜로D",
+  "brand": "일렉사",
+  "model": "욜로D",
+  "aliases": [
+   "욜로디"
+  ]
+ },
+ {
+  "nameKo": "일렉사 욜로S",
+  "brand": "일렉사",
+  "model": "욜로S",
+  "aliases": [
+   "욜로에스"
+  ]
+ },
+ {
+  "nameKo": "젠트로피 제트",
+  "brand": "젠트로피",
+  "model": "제트",
+  "aliases": [
+   "젠트로피 제트"
+  ]
+ },
+ {
+  "nameKo": "존테스 125C",
+  "brand": "존테스",
+  "model": "125C"
+ },
+ {
+  "nameKo": "존테스 125D",
+  "brand": "존테스",
+  "model": "125D"
+ },
+ {
+  "nameKo": "존테스 125E",
+  "brand": "존테스",
+  "model": "125E"
+ },
+ {
+  "nameKo": "존테스 125G1",
+  "brand": "존테스",
+  "model": "125G1"
+ },
+ {
+  "nameKo": "존테스 125U1",
+  "brand": "존테스",
+  "model": "125U1"
+ },
+ {
+  "nameKo": "존테스 125X",
+  "brand": "존테스",
+  "model": "125X"
+ },
+ {
+  "nameKo": "존테스 310M",
+  "brand": "존테스",
+  "model": "310M"
+ },
+ {
+  "nameKo": "존테스 310R",
+  "brand": "존테스",
+  "model": "310R"
+ },
+ {
+  "nameKo": "존테스 310T",
+  "brand": "존테스",
+  "model": "310T"
+ },
+ {
+  "nameKo": "존테스 310X",
+  "brand": "존테스",
+  "model": "310X"
+ },
+ {
+  "nameKo": "존테스 350D",
+  "brand": "존테스",
+  "model": "350D"
+ },
+ {
+  "nameKo": "존테스 350GK",
+  "brand": "존테스",
+  "model": "350GK"
+ },
+ {
+  "nameKo": "존테스 350R",
+  "brand": "존테스",
+  "model": "350R"
+ },
+ {
+  "nameKo": "존테스 350T",
+  "brand": "존테스",
+  "model": "350T"
+ },
+ {
+  "nameKo": "존테스 368D",
+  "brand": "존테스",
+  "model": "368D",
+  "aliases": [
+   "ZT368T-D"
+  ]
+ },
+ {
+  "nameKo": "존테스 368E",
+  "brand": "존테스",
+  "model": "368E",
+  "aliases": [
+   "ZT368T-E"
+  ]
+ },
+ {
+  "nameKo": "존테스 368G",
+  "brand": "존테스",
+  "model": "368G",
+  "aliases": [
+   "ZT368T-G"
+  ]
+ },
+ {
+  "nameKo": "존테스 368K",
+  "brand": "존테스",
+  "model": "368K",
+  "aliases": [
+   "ZT368T-K"
+  ]
+ },
+ {
+  "nameKo": "지호 AE8",
+  "brand": "지호",
+  "model": "AE8",
+  "aliases": [
+   "AE8"
+  ]
+ },
+ {
+  "nameKo": "케이크 마카",
+  "brand": "케이크",
+  "model": "마카",
+  "aliases": [
+   "MAKKA"
+  ]
+ },
+ {
+  "nameKo": "케이크 오사+",
+  "brand": "케이크",
+  "model": "오사+",
+  "aliases": [
+   "OSA+"
+  ]
+ },
+ {
+  "nameKo": "코리아이브이 욜로2",
+  "brand": "코리아이브이",
+  "model": "욜로2",
+  "aliases": [
+   "욜로2"
+  ]
+ },
+ {
+  "nameKo": "코터스 비틀",
+  "brand": "코터스",
+  "model": "비틀",
+  "aliases": [
+   "비틀"
+  ]
+ },
+ {
+  "nameKo": "코터스 오디가",
+  "brand": "코터스",
+  "model": "오디가",
+  "aliases": [
+   "오디가"
+  ]
+ },
+ {
+  "nameKo": "코터스 M6",
+  "brand": "코터스",
+  "model": "M6",
+  "aliases": [
+   "M6"
+  ]
+ },
+ {
+  "nameKo": "킴스트 다이스",
+  "brand": "킴스트",
+  "model": "다이스",
+  "aliases": [
+   "다이스",
+   "DICE"
+  ]
+ },
+ {
+  "nameKo": "킴코 다운타운300i",
+  "brand": "킴코",
+  "model": "다운타운300i"
+ },
+ {
+  "nameKo": "킴코 다운타운350i",
+  "brand": "킴코",
+  "model": "다운타운350i"
+ },
+ {
+  "nameKo": "킴코 라이크125",
+  "brand": "킴코",
+  "model": "라이크125"
+ },
+ {
+  "nameKo": "킴코 레이싱킹180i",
+  "brand": "킴코",
+  "model": "레이싱킹180i",
+  "aliases": [
+   "RACING KING 180i"
+  ]
+ },
+ {
+  "nameKo": "킴코 어질리티125",
+  "brand": "킴코",
+  "model": "어질리티125"
+ },
+ {
+  "nameKo": "킴코 엑스타운300i",
+  "brand": "킴코",
+  "model": "엑스타운300i"
+ },
+ {
+  "nameKo": "킴코 익사이팅400i",
+  "brand": "킴코",
+  "model": "익사이팅400i"
+ },
+ {
+  "nameKo": "킴코 익사이팅S400",
+  "brand": "킴코",
+  "model": "익사이팅S400"
+ },
+ {
+  "nameKo": "킴코 키위50",
+  "brand": "킴코",
+  "model": "키위50",
+  "aliases": [
+   "Kiwi50"
+  ]
+ },
+ {
+  "nameKo": "킴코 피플S125",
+  "brand": "킴코",
+  "model": "피플S125"
+ },
+ {
+  "nameKo": "킴코 필리125",
+  "brand": "킴코",
+  "model": "필리125"
+ },
+ {
+  "nameKo": "킴코 AK550",
+  "brand": "킴코",
+  "model": "AK550"
+ },
+ {
+  "nameKo": "킴코 DT X360",
+  "brand": "킴코",
+  "model": "DT X360"
+ },
+ {
+  "nameKo": "킴코 GP125",
+  "brand": "킴코",
+  "model": "GP125"
+ },
+ {
+  "nameKo": "트라이엄프 데이토나660",
+  "brand": "트라이엄프",
+  "model": "데이토나660"
+ },
+ {
+  "nameKo": "트라이엄프 데이토나675",
+  "brand": "트라이엄프",
+  "model": "데이토나675"
+ },
+ {
+  "nameKo": "트라이엄프 로켓3",
+  "brand": "트라이엄프",
+  "model": "로켓3",
+  "aliases": [
+   "Rocket 3 TFC",
+   "Rocket 3GT Triple Black",
+   "Rocket 3R Black",
+   "Rocket 3 GT Triple Black",
+   "Rocket 3 R",
+   "Rocket 3 GT"
+  ]
+ },
+ {
+  "nameKo": "트라이엄프 본네빌바버",
+  "brand": "트라이엄프",
+  "model": "본네빌바버",
+  "aliases": [
+   "BONNEVILLE BOBBER",
+   "Bonneville Bobber"
+  ]
+ },
+ {
+  "nameKo": "트라이엄프 본네빌T100",
+  "brand": "트라이엄프",
+  "model": "본네빌T100"
+ },
+ {
+  "nameKo": "트라이엄프 본네빌T120",
+  "brand": "트라이엄프",
+  "model": "본네빌T120"
+ },
+ {
+  "nameKo": "트라이엄프 스럭스턴",
+  "brand": "트라이엄프",
+  "model": "스럭스턴",
+  "aliases": [
+   "Thruxton RS"
+  ]
+ },
+ {
+  "nameKo": "트라이엄프 스크램블러1200",
+  "brand": "트라이엄프",
+  "model": "스크램블러1200"
+ },
+ {
+  "nameKo": "트라이엄프 스크램블러400X",
+  "brand": "트라이엄프",
+  "model": "스크램블러400X"
+ },
+ {
+  "nameKo": "트라이엄프 스크램블러400XC",
+  "brand": "트라이엄프",
+  "model": "스크램블러400XC"
+ },
+ {
+  "nameKo": "트라이엄프 스크램블러900",
+  "brand": "트라이엄프",
+  "model": "스크램블러900"
+ },
+ {
+  "nameKo": "트라이엄프 스트리트스크램블러",
+  "brand": "트라이엄프",
+  "model": "스트리트스크램블러",
+  "aliases": [
+   "Street Scrambler",
+   "Street Scrambler Sandstorm"
+  ]
+ },
+ {
+  "nameKo": "트라이엄프 스트리트컵",
+  "brand": "트라이엄프",
+  "model": "스트리트컵"
+ },
+ {
+  "nameKo": "트라이엄프 스트리트트리플765",
+  "brand": "트라이엄프",
+  "model": "스트리트트리플765",
+  "aliases": [
+   "Street Triple RS",
+   "Street Triple MOTO2 TM Edition",
+   "Street Triple R"
+  ]
+ },
+ {
+  "nameKo": "트라이엄프 스트리트트윈",
+  "brand": "트라이엄프",
+  "model": "스트리트트윈",
+  "aliases": [
+   "StreetTwin",
+   "StreetTwin Goldline",
+   "Street Twin"
+  ]
+ },
+ {
+  "nameKo": "트라이엄프 스피드400",
+  "brand": "트라이엄프",
+  "model": "스피드400"
+ },
+ {
+  "nameKo": "트라이엄프 스피드마스터",
+  "brand": "트라이엄프",
+  "model": "스피드마스터",
+  "aliases": [
+   "BONNEVILLE SPEEDMASTER",
+   "Bonneville Speedmaster"
+  ]
+ },
+ {
+  "nameKo": "트라이엄프 스피드트리플1050",
+  "brand": "트라이엄프",
+  "model": "스피드트리플1050",
+  "aliases": [
+   "Speed Triple RS"
+  ]
+ },
+ {
+  "nameKo": "트라이엄프 스피드트리플1200",
+  "brand": "트라이엄프",
+  "model": "스피드트리플1200"
+ },
+ {
+  "nameKo": "트라이엄프 스피드트윈1200",
+  "brand": "트라이엄프",
+  "model": "스피드트윈1200",
+  "aliases": [
+   "Speed Twin",
+   "Speed Twin Breitling Edition"
+  ]
+ },
+ {
+  "nameKo": "트라이엄프 스피드트윈900",
+  "brand": "트라이엄프",
+  "model": "스피드트윈900"
+ },
+ {
+  "nameKo": "트라이엄프 타이거1200",
+  "brand": "트라이엄프",
+  "model": "타이거1200"
+ },
+ {
+  "nameKo": "트라이엄프 타이거800",
+  "brand": "트라이엄프",
+  "model": "타이거800"
+ },
+ {
+  "nameKo": "트라이엄프 타이거900",
+  "brand": "트라이엄프",
+  "model": "타이거900"
+ },
+ {
+  "nameKo": "트라이엄프 타이거스포트660",
+  "brand": "트라이엄프",
+  "model": "타이거스포트660"
+ },
+ {
+  "nameKo": "트라이엄프 트라이던트660",
+  "brand": "트라이엄프",
+  "model": "트라이던트660",
+  "aliases": [
+   "Trident"
+  ]
+ },
+ {
+  "nameKo": "푸조 스피드파이트125",
+  "brand": "푸조",
+  "model": "스피드파이트125",
+  "aliases": [
+   "스피드파이트"
+  ]
+ },
+ {
+  "nameKo": "푸조 장고125",
+  "brand": "푸조",
+  "model": "장고125",
+  "aliases": [
+   "장고"
+  ]
+ },
+ {
+  "nameKo": "플레타",
+  "brand": "플레타",
+  "model": "플레타",
+  "aliases": [
+   "플레타"
+  ]
+ },
+ {
+  "nameKo": "피아지오 리버티125",
+  "brand": "피아지오",
+  "model": "리버티125"
+ },
+ {
+  "nameKo": "피아지오 메들리125",
+  "brand": "피아지오",
+  "model": "메들리125"
+ },
+ {
+  "nameKo": "피아지오 베벌리350",
+  "brand": "피아지오",
+  "model": "베벌리350"
+ },
+ {
+  "nameKo": "피아지오 베벌리400",
+  "brand": "피아지오",
+  "model": "베벌리400"
+ },
+ {
+  "nameKo": "피아지오 MP3 300",
+  "brand": "피아지오",
+  "model": "MP3 300"
+ },
+ {
+  "nameKo": "피아지오 MP3 400",
+  "brand": "피아지오",
+  "model": "MP3 400"
+ },
+ {
+  "nameKo": "피아지오 MP3 500",
+  "brand": "피아지오",
+  "model": "MP3 500"
+ },
+ {
+  "nameKo": "피엔에이치 N1",
+  "brand": "피엔에이치",
+  "model": "N1",
+  "aliases": [
+   "PNH-N1"
+  ]
+ },
+ {
+  "nameKo": "피엔에이치 N2",
+  "brand": "피엔에이치",
+  "model": "N2",
+  "aliases": [
+   "피엔에이치 엔투"
+  ]
+ },
+ {
+  "nameKo": "필립스 딜리버",
+  "brand": "필립스",
+  "model": "딜리버",
+  "aliases": [
+   "딜리버"
+  ]
+ },
+ {
+  "nameKo": "필립스 PH-DA2",
+  "brand": "필립스",
+  "model": "PH-DA2",
+  "aliases": [
+   "PH-DA2"
+  ]
+ },
+ {
+  "nameKo": "한국모터스 뉴카빙",
+  "brand": "한국모터스",
+  "model": "뉴카빙",
+  "aliases": [
+   "뉴 카빙"
+  ]
+ },
+ {
+  "nameKo": "한국모터스 뉴카빙2",
+  "brand": "한국모터스",
+  "model": "뉴카빙2",
+  "aliases": [
+   "뉴 카빙2"
+  ]
+ },
+ {
+  "nameKo": "한국모터스 스프린트",
+  "brand": "한국모터스",
+  "model": "스프린트",
+  "aliases": [
+   "스프린트"
+  ]
+ },
+ {
+  "nameKo": "한국모터스 카빙",
+  "brand": "한국모터스",
+  "model": "카빙",
+  "aliases": [
+   "카빙"
+  ]
+ },
+ {
+  "nameKo": "한국모터스 팬시",
+  "brand": "한국모터스",
+  "model": "팬시",
+  "aliases": [
+   "팬시"
+  ]
+ },
+ {
+  "nameKo": "한국모터스 E-F10",
+  "brand": "한국모터스",
+  "model": "E-F10",
+  "aliases": [
+   "E-F10"
+  ]
+ },
+ {
+  "nameKo": "한국모터스 VS1",
+  "brand": "한국모터스",
+  "model": "VS1",
+  "aliases": [
+   "VS1"
+  ]
+ },
+ {
+  "nameKo": "한솜 미니젯",
+  "brand": "한솜",
+  "model": "미니젯",
+  "aliases": [
+   "미니젯",
+   "미니젯 FI"
+  ]
+ },
+ {
+  "nameKo": "한솜 미니젯 플러스",
+  "brand": "한솜",
+  "model": "미니젯 플러스",
+  "aliases": [
+   "미니젯 플러스"
+  ]
+ },
+ {
+  "nameKo": "한솜 버디",
+  "brand": "한솜",
+  "model": "버디",
+  "aliases": [
+   "BUDDY"
+  ]
+ },
+ {
+  "nameKo": "한솜 블랙큐",
+  "brand": "한솜",
+  "model": "블랙큐",
+  "aliases": [
+   "블랙-큐"
+  ]
+ },
+ {
+  "nameKo": "한솜 비즈젯",
+  "brand": "한솜",
+  "model": "비즈젯",
+  "aliases": [
+   "비즈젯",
+   "비즈젯 FI"
+  ]
+ },
+ {
+  "nameKo": "한솜 아이젯",
+  "brand": "한솜",
+  "model": "아이젯",
+  "aliases": [
+   "아이젯"
+  ]
+ },
+ {
+  "nameKo": "한솜 위너",
+  "brand": "한솜",
+  "model": "위너",
+  "aliases": [
+   "WINNER"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 나이트로드 스페셜",
+  "brand": "할리데이비슨",
+  "model": "나이트로드 스페셜",
+  "aliases": [
+   "HARLEY-DAVIDSON VRSCDX",
+   "Harley-Davidson VRSCDX"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 나이트스터",
+  "brand": "할리데이비슨",
+  "model": "나이트스터",
+  "aliases": [
+   "Harley-Davidson RH975"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 나이트스터 스페셜",
+  "brand": "할리데이비슨",
+  "model": "나이트스터 스페셜",
+  "aliases": [
+   "Harley-Davidson RH975S"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 나이트트레인",
+  "brand": "할리데이비슨",
+  "model": "나이트트레인",
+  "aliases": [
+   "HARLEY-DAVIDSON FXSTB"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 디럭스",
+  "brand": "할리데이비슨",
+  "model": "디럭스",
+  "aliases": [
+   "Harley-Davidson FLDE",
+   "Harley-Davidson FLSTN",
+   "Harley-Davidson FLSTN 103",
+   "HARLEY-DAVIDSON FLSTN"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 로드글라이드",
+  "brand": "할리데이비슨",
+  "model": "로드글라이드",
+  "aliases": [
+   "Harley-Davidson FLTRX",
+   "Harley-Davidson FLTRX 103"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 로드글라이드 리미티드",
+  "brand": "할리데이비슨",
+  "model": "로드글라이드 리미티드",
+  "aliases": [
+   "Harley-Davidson FLTRXL",
+   "Harley-Davidson FLTRK"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 로드글라이드 스페셜",
+  "brand": "할리데이비슨",
+  "model": "로드글라이드 스페셜",
+  "aliases": [
+   "Harley-Davidson FLTRXS ANV",
+   "Harley-Davidson FLTRXS"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 로드글라이드 울트라",
+  "brand": "할리데이비슨",
+  "model": "로드글라이드 울트라",
+  "aliases": [
+   "Harley-Davidson FLTRU",
+   "Harley-Davidson FLTRU 103"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 로드글라이드 ST",
+  "brand": "할리데이비슨",
+  "model": "로드글라이드 ST",
+  "aliases": [
+   "Harley-Davidson FLTRXST"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 로드스터",
+  "brand": "할리데이비슨",
+  "model": "로드스터"
+ },
+ {
+  "nameKo": "할리데이비슨 로드킹",
+  "brand": "할리데이비슨",
+  "model": "로드킹",
+  "aliases": [
+   "Harley-Davidson FLHR",
+   "Harley-Davidson FLHRC",
+   "Harley-Davidson FLHR 103",
+   "Harley-Davidson FLHRC 103"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 로드킹 스페셜",
+  "brand": "할리데이비슨",
+  "model": "로드킹 스페셜",
+  "aliases": [
+   "Harley-Davidson FLHRXS"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 로우라이더",
+  "brand": "할리데이비슨",
+  "model": "로우라이더",
+  "aliases": [
+   "Harley-Davidson FXLR",
+   "Harley-Davidson FXDL 103",
+   "Harley-Davidson FXDL"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 로우라이더S",
+  "brand": "할리데이비슨",
+  "model": "로우라이더S",
+  "aliases": [
+   "Harley-Davidson FXLRS",
+   "Harley-Davidson FXDLS"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 로우라이더ST",
+  "brand": "할리데이비슨",
+  "model": "로우라이더ST",
+  "aliases": [
+   "Harley-Davidson FXLRST",
+   "Harley-Davidson FXRST"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 로커",
+  "brand": "할리데이비슨",
+  "model": "로커",
+  "aliases": [
+   "HARLEY-DAVIDSON FXCW",
+   "HARLEY-DAVIDSON FXCWC"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 브레이크아웃",
+  "brand": "할리데이비슨",
+  "model": "브레이크아웃",
+  "aliases": [
+   "Harley-Davidson FXBR",
+   "Harley-Davidson FXBRS",
+   "Harley-Davidson FXBRS ANX",
+   "Harley-Davidson FXSB",
+   "Harley-Davidson FXSB 103"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 브이로드",
+  "brand": "할리데이비슨",
+  "model": "브이로드",
+  "aliases": [
+   "HARLEY-DAVIDSON VRSCAW",
+   "Harley-Davidson VRSCAW"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 브이로드 머슬",
+  "brand": "할리데이비슨",
+  "model": "브이로드 머슬",
+  "aliases": [
+   "HARLEY-DAVIDSON VRSCF",
+   "Harley-Davidson VRSCF"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 블랙라인",
+  "brand": "할리데이비슨",
+  "model": "블랙라인",
+  "aliases": [
+   "Harley-Davidson FXS 103"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 소프테일 스탠다드",
+  "brand": "할리데이비슨",
+  "model": "소프테일 스탠다드",
+  "aliases": [
+   "Harley-Davidson FXST"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 소프테일 슬림",
+  "brand": "할리데이비슨",
+  "model": "소프테일 슬림",
+  "aliases": [
+   "Harley-Davidson FLSL",
+   "Harley-Davidson FLS",
+   "Harley-Davidson FLSS",
+   "Harley-Davidson FLS 103"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 소프테일 커스텀",
+  "brand": "할리데이비슨",
+  "model": "소프테일 커스텀",
+  "aliases": [
+   "HARLEY-DAVIDSON FXSTC"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 슈퍼글라이드",
+  "brand": "할리데이비슨",
+  "model": "슈퍼글라이드",
+  "aliases": [
+   "Harley-Davidson FXD"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 슈퍼글라이드 커스텀",
+  "brand": "할리데이비슨",
+  "model": "슈퍼글라이드 커스텀",
+  "aliases": [
+   "Harley-Davidson FXDC 103",
+   "Harley-Davidson FXDC"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 스위치백",
+  "brand": "할리데이비슨",
+  "model": "스위치백",
+  "aliases": [
+   "Harley-Davidson FLD 103"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 스트리트750",
+  "brand": "할리데이비슨",
+  "model": "스트리트750"
+ },
+ {
+  "nameKo": "할리데이비슨 스트리트글라이드",
+  "brand": "할리데이비슨",
+  "model": "스트리트글라이드",
+  "aliases": [
+   "Harley-Davidson FLHX",
+   "Harley-Davidson FLHX ANV",
+   "Harley-Davidson FLHX 103"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 스트리트글라이드 리미티드",
+  "brand": "할리데이비슨",
+  "model": "스트리트글라이드 리미티드",
+  "aliases": [
+   "Harley-Davidson FLHXL"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 스트리트글라이드 스페셜",
+  "brand": "할리데이비슨",
+  "model": "스트리트글라이드 스페셜",
+  "aliases": [
+   "Harley-Davidson FLHXS ANV",
+   "Harley-Davidson FLHXS",
+   "Harley-Davidson FLHXS ANX"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 스트리트글라이드 울트라",
+  "brand": "할리데이비슨",
+  "model": "스트리트글라이드 울트라",
+  "aliases": [
+   "Harley-Davidson FLHXU"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 스트리트글라이드 ST",
+  "brand": "할리데이비슨",
+  "model": "스트리트글라이드 ST",
+  "aliases": [
+   "Harley-Davidson FLHXST"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 스트리트로드",
+  "brand": "할리데이비슨",
+  "model": "스트리트로드"
+ },
+ {
+  "nameKo": "할리데이비슨 스트리트밥",
+  "brand": "할리데이비슨",
+  "model": "스트리트밥",
+  "aliases": [
+   "Harley-Davidson FXBB",
+   "Harley-Davidson FXBBS",
+   "Harley-Davidson FXDB 103",
+   "Harley-Davidson FXDBC 103",
+   "Harley-Davidson FXDBB 103",
+   "Harley-Davidson FXDB"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 스포스터 1200 커스텀",
+  "brand": "할리데이비슨",
+  "model": "스포스터 1200 커스텀"
+ },
+ {
+  "nameKo": "할리데이비슨 스포스터S",
+  "brand": "할리데이비슨",
+  "model": "스포스터S"
+ },
+ {
+  "nameKo": "할리데이비슨 스포츠 글라이드",
+  "brand": "할리데이비슨",
+  "model": "스포츠 글라이드",
+  "aliases": [
+   "Harley-Davidson FLSB"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 아이언1200",
+  "brand": "할리데이비슨",
+  "model": "아이언1200"
+ },
+ {
+  "nameKo": "할리데이비슨 아이언883",
+  "brand": "할리데이비슨",
+  "model": "아이언883"
+ },
+ {
+  "nameKo": "할리데이비슨 와이드글라이드",
+  "brand": "할리데이비슨",
+  "model": "와이드글라이드",
+  "aliases": [
+   "Harley-Davidson FXDWG 103",
+   "Harley-Davidson FXDWG"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 울트라 리미티드",
+  "brand": "할리데이비슨",
+  "model": "울트라 리미티드",
+  "aliases": [
+   "Harley-Davidson FLHTK",
+   "Harley-Davidson FLHTK ANV",
+   "Harley-Davidson FLHTKL"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 울트라 클래식",
+  "brand": "할리데이비슨",
+  "model": "울트라 클래식",
+  "aliases": [
+   "Harley-Davidson FLHTCUL TC",
+   "Harley-Davidson FLHTCU TC",
+   "Harley-Davidson FLHTCU",
+   "Harley-Davidson FLHTCU 103"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 일렉트라글라이드",
+  "brand": "할리데이비슨",
+  "model": "일렉트라글라이드",
+  "aliases": [
+   "Harley-Davidson FLHTP",
+   "Harley-Davidson FLHT"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 일렉트라글라이드 리바이벌",
+  "brand": "할리데이비슨",
+  "model": "일렉트라글라이드 리바이벌",
+  "aliases": [
+   "Harley-Davidson FLH"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 일렉트라글라이드 하이웨이킹",
+  "brand": "할리데이비슨",
+  "model": "일렉트라글라이드 하이웨이킹",
+  "aliases": [
+   "Harley-Davidson FLHFB"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 크로스본즈",
+  "brand": "할리데이비슨",
+  "model": "크로스본즈",
+  "aliases": [
+   "HARLEY-DAVIDSON FLSTSB"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 트라이글라이드 울트라",
+  "brand": "할리데이비슨",
+  "model": "트라이글라이드 울트라",
+  "aliases": [
+   "Harley-Davidson FLHTCUTG"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 팬아메리카1250",
+  "brand": "할리데이비슨",
+  "model": "팬아메리카1250"
+ },
+ {
+  "nameKo": "할리데이비슨 팬아메리카1250 스페셜",
+  "brand": "할리데이비슨",
+  "model": "팬아메리카1250 스페셜"
+ },
+ {
+  "nameKo": "할리데이비슨 팬아메리카1250 ST",
+  "brand": "할리데이비슨",
+  "model": "팬아메리카1250 ST"
+ },
+ {
+  "nameKo": "할리데이비슨 팻밥",
+  "brand": "할리데이비슨",
+  "model": "팻밥",
+  "aliases": [
+   "Harley-Davidson FXFBS",
+   "Harley-Davidson FXFB",
+   "Harley-Davidson FXDF 103",
+   "Harley-Davidson FXDF"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 팻보이",
+  "brand": "할리데이비슨",
+  "model": "팻보이",
+  "aliases": [
+   "Harley-Davidson FLFB",
+   "Harley-Davidson FLSTFI",
+   "Harley-Davidson FLFBS",
+   "Harley-Davidson FLFBS ANV",
+   "Harley-Davidson FLFBS ANX",
+   "Harley-Davidson FLSTFB",
+   "Harley-Davidson FLSTF",
+   "Harley-Davidson FLSTFBS",
+   "Harley-Davidson FLSTFB 103",
+   "Harley-Davidson FLSTF 103",
+   "HARLEY-DAVIDSON FLSTF"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 포티에이트",
+  "brand": "할리데이비슨",
+  "model": "포티에이트"
+ },
+ {
+  "nameKo": "할리데이비슨 프리휠러",
+  "brand": "할리데이비슨",
+  "model": "프리휠러",
+  "aliases": [
+   "Harley-Davidson FLRT"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 헤리티지 클래식",
+  "brand": "할리데이비슨",
+  "model": "헤리티지 클래식",
+  "aliases": [
+   "Harley-Davidson FLHC",
+   "Harley-Davidson FLHCS",
+   "Harley-Davidson FLHCS ANV",
+   "Harley-Davidson FLSTC",
+   "Harley-Davidson FLSTC 103",
+   "HARLEY-DAVIDSON FLSTC"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 로드글라이드",
+  "brand": "할리데이비슨",
+  "model": "CVO 로드글라이드",
+  "aliases": [
+   "Harley-Davidson FLTRXSE",
+   "Harley-Davidson FLTRXSE2",
+   "Harley-Davidson FLTRSE3"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 로드글라이드 리미티드",
+  "brand": "할리데이비슨",
+  "model": "CVO 로드글라이드 리미티드",
+  "aliases": [
+   "Harley-Davidson FLTRKSE",
+   "Harley-Davidson FLTRKSE ANV"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 로드글라이드 울트라",
+  "brand": "할리데이비슨",
+  "model": "CVO 로드글라이드 울트라",
+  "aliases": [
+   "Harley-Davidson FLTRUSE"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 로드글라이드 ST",
+  "brand": "할리데이비슨",
+  "model": "CVO 로드글라이드 ST",
+  "aliases": [
+   "Harley-Davidson FLTRXSTSE"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 로드킹",
+  "brand": "할리데이비슨",
+  "model": "CVO 로드킹",
+  "aliases": [
+   "Harley-Davidson FLHRSE",
+   "Harley-Davidson FLHRSE5"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 리미티드",
+  "brand": "할리데이비슨",
+  "model": "CVO 리미티드",
+  "aliases": [
+   "Harley-Davidson FLHTKSE",
+   "Harley-Davidson FLHTKSE ANV"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 브레이크아웃",
+  "brand": "할리데이비슨",
+  "model": "CVO 브레이크아웃",
+  "aliases": [
+   "Harley-Davidson FXSBSE"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 소프테일 디럭스",
+  "brand": "할리데이비슨",
+  "model": "CVO 소프테일 디럭스",
+  "aliases": [
+   "Harley-Davidson FLSTNSE"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 스트리트글라이드",
+  "brand": "할리데이비슨",
+  "model": "CVO 스트리트글라이드",
+  "aliases": [
+   "Harley-Davidson FLHXSE",
+   "Harley-Davidson FLHXSE3",
+   "Harley-Davidson FLHXSE2"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 스트리트글라이드 리미티드",
+  "brand": "할리데이비슨",
+  "model": "CVO 스트리트글라이드 리미티드",
+  "aliases": [
+   "Harley-Davidson FLHXLSE"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 스트리트글라이드 ST",
+  "brand": "할리데이비슨",
+  "model": "CVO 스트리트글라이드 ST",
+  "aliases": [
+   "Harley-Davidson FLHXSTSE"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 울트라 클래식",
+  "brand": "할리데이비슨",
+  "model": "CVO 울트라 클래식",
+  "aliases": [
+   "Harley-Davidson FLHTCUSE7",
+   "Harley-Davidson FLHTCUSE6",
+   "Harley-Davidson FLHTCUSE8",
+   "Harley-Davidson FLHTCUSE5",
+   "Harley-Davidson FLHTCUSE4"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 팻밥",
+  "brand": "할리데이비슨",
+  "model": "CVO 팻밥",
+  "aliases": [
+   "Harley-Davidson FXDFSE2",
+   "Harley-Davidson FXDFSE"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 CVO 프로 스트리트 브레이크아웃",
+  "brand": "할리데이비슨",
+  "model": "CVO 프로 스트리트 브레이크아웃",
+  "aliases": [
+   "Harley-Davidson FXSE"
+  ]
+ },
+ {
+  "nameKo": "할리데이비슨 FXDR114",
+  "brand": "할리데이비슨",
+  "model": "FXDR114",
+  "aliases": [
+   "Harley-Davidson FXDRS"
+  ]
+ },
+ {
+  "nameKo": "허스크바나 701슈퍼모토",
+  "brand": "허스크바나",
+  "model": "701슈퍼모토"
+ },
+ {
+  "nameKo": "허스크바나 701엔듀로",
+  "brand": "허스크바나",
+  "model": "701엔듀로"
+ },
+ {
+  "nameKo": "허스크바나 노든901",
+  "brand": "허스크바나",
+  "model": "노든901"
+ },
+ {
+  "nameKo": "허스크바나 노든901익스페디션",
+  "brand": "허스크바나",
+  "model": "노든901익스페디션"
+ },
+ {
+  "nameKo": "허스크바나 비트필렌125",
+  "brand": "허스크바나",
+  "model": "비트필렌125"
+ },
+ {
+  "nameKo": "허스크바나 비트필렌401",
+  "brand": "허스크바나",
+  "model": "비트필렌401"
+ },
+ {
+  "nameKo": "허스크바나 비트필렌701",
+  "brand": "허스크바나",
+  "model": "비트필렌701"
+ },
+ {
+  "nameKo": "허스크바나 비트필렌801",
+  "brand": "허스크바나",
+  "model": "비트필렌801"
+ },
+ {
+  "nameKo": "허스크바나 스바르트필렌125",
+  "brand": "허스크바나",
+  "model": "스바르트필렌125"
+ },
+ {
+  "nameKo": "허스크바나 스바르트필렌401",
+  "brand": "허스크바나",
+  "model": "스바르트필렌401"
+ },
+ {
+  "nameKo": "허스크바나 스바르트필렌701",
+  "brand": "허스크바나",
+  "model": "스바르트필렌701"
+ },
+ {
+  "nameKo": "허스크바나 스바르트필렌801",
+  "brand": "허스크바나",
+  "model": "스바르트필렌801"
+ },
+ {
+  "nameKo": "허스크바나 FE350",
+  "brand": "허스크바나",
+  "model": "FE350"
+ },
+ {
+  "nameKo": "허스크바나 TE300",
+  "brand": "허스크바나",
+  "model": "TE300"
+ },
+ {
+  "nameKo": "혼다 골드윙",
+  "brand": "혼다",
+  "model": "골드윙"
+ },
+ {
+  "nameKo": "혼다 디오125",
+  "brand": "혼다",
+  "model": "디오125"
+ },
+ {
+  "nameKo": "혼다 레블1100",
+  "brand": "혼다",
+  "model": "레블1100"
+ },
+ {
+  "nameKo": "혼다 레블1100T",
+  "brand": "혼다",
+  "model": "레블1100T"
+ },
+ {
+  "nameKo": "혼다 레블500",
+  "brand": "혼다",
+  "model": "레블500"
+ },
+ {
+  "nameKo": "혼다 몽키125",
+  "brand": "혼다",
+  "model": "몽키125"
+ },
+ {
+  "nameKo": "혼다 벤리110",
+  "brand": "혼다",
+  "model": "벤리110"
+ },
+ {
+  "nameKo": "혼다 비전110",
+  "brand": "혼다",
+  "model": "비전110"
+ },
+ {
+  "nameKo": "혼다 슈퍼커브110",
+  "brand": "혼다",
+  "model": "슈퍼커브110"
+ },
+ {
+  "nameKo": "혼다 실버윙GT",
+  "brand": "혼다",
+  "model": "실버윙GT",
+  "aliases": [
+   "SILVER WING GT"
+  ]
+ },
+ {
+  "nameKo": "혼다 인테그라",
+  "brand": "혼다",
+  "model": "인테그라"
+ },
+ {
+  "nameKo": "혼다 투데이",
+  "brand": "혼다",
+  "model": "투데이",
+  "aliases": [
+   "TODAY"
+  ]
+ },
+ {
+  "nameKo": "혼다 포르자300",
+  "brand": "혼다",
+  "model": "포르자300"
+ },
+ {
+  "nameKo": "혼다 포르자350",
+  "brand": "혼다",
+  "model": "포르자350"
+ },
+ {
+  "nameKo": "혼다 포르자750",
+  "brand": "혼다",
+  "model": "포르자750"
+ },
+ {
   "nameKo": "혼다 ADV350",
   "brand": "혼다",
   "model": "ADV350"
@@ -77,7 +4146,11 @@
  {
   "nameKo": "혼다 CBR600RR",
   "brand": "혼다",
-  "model": "CBR600RR"
+  "model": "CBR600RR",
+  "aliases": [
+   "CBR600R3",
+   "CBR600RA"
+  ]
  },
  {
   "nameKo": "혼다 CBR650F",
@@ -170,559 +4243,45 @@
   "model": "XL750 트랜잘프"
  },
  {
-  "nameKo": "혼다 골드윙",
-  "brand": "혼다",
-  "model": "골드윙"
+  "nameKo": "효성 미라쥬125",
+  "brand": "효성",
+  "model": "미라쥬125",
+  "aliases": [
+   "미라주",
+   "미라쥬",
+   "MIRAGE"
+  ]
  },
  {
-  "nameKo": "혼다 디오125",
-  "brand": "혼다",
-  "model": "디오125"
+  "nameKo": "효성 미라쥬250",
+  "brand": "효성",
+  "model": "미라쥬250"
  },
  {
-  "nameKo": "혼다 레블1100",
-  "brand": "혼다",
-  "model": "레블1100"
+  "nameKo": "효성 미라쥬650",
+  "brand": "효성",
+  "model": "미라쥬650"
  },
  {
-  "nameKo": "혼다 레블1100T",
-  "brand": "혼다",
-  "model": "레블1100T"
+  "nameKo": "효성 코멧250",
+  "brand": "효성",
+  "model": "코멧250",
+  "aliases": [
+   "COMET"
+  ]
  },
  {
-  "nameKo": "혼다 레블500",
-  "brand": "혼다",
-  "model": "레블500"
+  "nameKo": "효성 코멧650",
+  "brand": "효성",
+  "model": "코멧650"
  },
  {
-  "nameKo": "혼다 몽키125",
-  "brand": "혼다",
-  "model": "몽키125"
- },
- {
-  "nameKo": "혼다 벤리110",
-  "brand": "혼다",
-  "model": "벤리110"
- },
- {
-  "nameKo": "혼다 비전110",
-  "brand": "혼다",
-  "model": "비전110"
- },
- {
-  "nameKo": "혼다 슈퍼커브110",
-  "brand": "혼다",
-  "model": "슈퍼커브110"
- },
- {
-  "nameKo": "혼다 인테그라",
-  "brand": "혼다",
-  "model": "인테그라"
- },
- {
-  "nameKo": "혼다 포르자300",
-  "brand": "혼다",
-  "model": "포르자300"
- },
- {
-  "nameKo": "혼다 포르자350",
-  "brand": "혼다",
-  "model": "포르자350"
- },
- {
-  "nameKo": "혼다 포르자750",
-  "brand": "혼다",
-  "model": "포르자750"
- },
- {
-  "nameKo": "야마하 FJR1300",
-  "brand": "야마하",
-  "model": "FJR1300"
- },
- {
-  "nameKo": "야마하 MT-03",
-  "brand": "야마하",
-  "model": "MT-03"
- },
- {
-  "nameKo": "야마하 MT-07",
-  "brand": "야마하",
-  "model": "MT-07"
- },
- {
-  "nameKo": "야마하 MT-09",
-  "brand": "야마하",
-  "model": "MT-09"
- },
- {
-  "nameKo": "야마하 MT-10",
-  "brand": "야마하",
-  "model": "MT-10"
- },
- {
-  "nameKo": "야마하 NMAX125",
-  "brand": "야마하",
-  "model": "NMAX125"
- },
- {
-  "nameKo": "야마하 NMAX155",
-  "brand": "야마하",
-  "model": "NMAX155"
- },
- {
-  "nameKo": "야마하 PW50",
-  "brand": "야마하",
-  "model": "PW50"
- },
- {
-  "nameKo": "야마하 TMAX530",
-  "brand": "야마하",
-  "model": "TMAX530"
- },
- {
-  "nameKo": "야마하 TMAX560",
-  "brand": "야마하",
-  "model": "TMAX560"
- },
- {
-  "nameKo": "야마하 VMAX",
-  "brand": "야마하",
-  "model": "VMAX"
- },
- {
-  "nameKo": "야마하 XMAX300",
-  "brand": "야마하",
-  "model": "XMAX300"
- },
- {
-  "nameKo": "야마하 XSR900",
-  "brand": "야마하",
-  "model": "XSR900"
- },
- {
-  "nameKo": "야마하 XSR900GP",
-  "brand": "야마하",
-  "model": "XSR900GP"
- },
- {
-  "nameKo": "야마하 YZ125X",
-  "brand": "야마하",
-  "model": "YZ125X"
- },
- {
-  "nameKo": "야마하 YZ250F",
-  "brand": "야마하",
-  "model": "YZ250F"
- },
- {
-  "nameKo": "야마하 YZ450F",
-  "brand": "야마하",
-  "model": "YZ450F"
- },
- {
-  "nameKo": "야마하 YZ65",
-  "brand": "야마하",
-  "model": "YZ65"
- },
- {
-  "nameKo": "야마하 YZ85",
-  "brand": "야마하",
-  "model": "YZ85"
- },
- {
-  "nameKo": "야마하 YZF-R1",
-  "brand": "야마하",
-  "model": "YZF-R1"
- },
- {
-  "nameKo": "야마하 YZF-R3",
-  "brand": "야마하",
-  "model": "YZF-R3"
- },
- {
-  "nameKo": "야마하 YZF-R6",
-  "brand": "야마하",
-  "model": "YZF-R6"
- },
- {
-  "nameKo": "야마하 YZF-R7",
-  "brand": "야마하",
-  "model": "YZF-R7"
- },
- {
-  "nameKo": "야마하 YZF-R9",
-  "brand": "야마하",
-  "model": "YZF-R9"
- },
- {
-  "nameKo": "야마하 니켄",
-  "brand": "야마하",
-  "model": "니켄"
- },
- {
-  "nameKo": "야마하 볼트",
-  "brand": "야마하",
-  "model": "볼트"
- },
- {
-  "nameKo": "야마하 슈퍼테네레",
-  "brand": "야마하",
-  "model": "슈퍼테네레"
- },
- {
-  "nameKo": "야마하 테네레700",
-  "brand": "야마하",
-  "model": "테네레700"
- },
- {
-  "nameKo": "야마하 트레이서9 GT",
-  "brand": "야마하",
-  "model": "트레이서9 GT"
- },
- {
-  "nameKo": "야마하 트레이서900",
-  "brand": "야마하",
-  "model": "트레이서900"
- },
- {
-  "nameKo": "야마하 트리시티125",
-  "brand": "야마하",
-  "model": "트리시티125"
- },
- {
-  "nameKo": "가와사키 KLE500",
-  "brand": "가와사키",
-  "model": "KLE500"
- },
- {
-  "nameKo": "가와사키 W800",
-  "brand": "가와사키",
-  "model": "W800"
- },
- {
-  "nameKo": "가와사키 Z H2",
-  "brand": "가와사키",
-  "model": "Z H2"
- },
- {
-  "nameKo": "가와사키 Z1000",
-  "brand": "가와사키",
-  "model": "Z1000"
- },
- {
-  "nameKo": "가와사키 Z1100",
-  "brand": "가와사키",
-  "model": "Z1100"
- },
- {
-  "nameKo": "가와사키 Z400",
-  "brand": "가와사키",
-  "model": "Z400"
- },
- {
-  "nameKo": "가와사키 Z500",
-  "brand": "가와사키",
-  "model": "Z500"
- },
- {
-  "nameKo": "가와사키 Z650",
-  "brand": "가와사키",
-  "model": "Z650"
- },
- {
-  "nameKo": "가와사키 Z650RS",
-  "brand": "가와사키",
-  "model": "Z650RS"
- },
- {
-  "nameKo": "가와사키 Z900",
-  "brand": "가와사키",
-  "model": "Z900"
- },
- {
-  "nameKo": "가와사키 Z900RS",
-  "brand": "가와사키",
-  "model": "Z900RS"
- },
- {
-  "nameKo": "가와사키 닌자 H2",
-  "brand": "가와사키",
-  "model": "닌자 H2"
- },
- {
-  "nameKo": "가와사키 닌자 H2 SX",
-  "brand": "가와사키",
-  "model": "닌자 H2 SX"
- },
- {
-  "nameKo": "가와사키 닌자 H2R",
-  "brand": "가와사키",
-  "model": "닌자 H2R"
- },
- {
-  "nameKo": "가와사키 닌자 ZX-10R",
-  "brand": "가와사키",
-  "model": "닌자 ZX-10R"
- },
- {
-  "nameKo": "가와사키 닌자 ZX-14R",
-  "brand": "가와사키",
-  "model": "닌자 ZX-14R"
- },
- {
-  "nameKo": "가와사키 닌자 ZX-4RR",
-  "brand": "가와사키",
-  "model": "닌자 ZX-4RR"
- },
- {
-  "nameKo": "가와사키 닌자 ZX-6R",
-  "brand": "가와사키",
-  "model": "닌자 ZX-6R"
- },
- {
-  "nameKo": "가와사키 닌자1000SX",
-  "brand": "가와사키",
-  "model": "닌자1000SX"
- },
- {
-  "nameKo": "가와사키 닌자1100SX",
-  "brand": "가와사키",
-  "model": "닌자1100SX"
- },
- {
-  "nameKo": "가와사키 닌자300",
-  "brand": "가와사키",
-  "model": "닌자300"
- },
- {
-  "nameKo": "가와사키 닌자400",
-  "brand": "가와사키",
-  "model": "닌자400"
- },
- {
-  "nameKo": "가와사키 닌자500",
-  "brand": "가와사키",
-  "model": "닌자500"
- },
- {
-  "nameKo": "가와사키 닌자650",
-  "brand": "가와사키",
-  "model": "닌자650"
- },
- {
-  "nameKo": "가와사키 메구로 S1",
-  "brand": "가와사키",
-  "model": "메구로 S1"
- },
- {
-  "nameKo": "가와사키 버시스1000",
-  "brand": "가와사키",
-  "model": "버시스1000"
- },
- {
-  "nameKo": "가와사키 버시스650",
-  "brand": "가와사키",
-  "model": "버시스650"
- },
- {
-  "nameKo": "가와사키 버시스X300",
-  "brand": "가와사키",
-  "model": "버시스X300"
- },
- {
-  "nameKo": "가와사키 벌칸S",
-  "brand": "가와사키",
-  "model": "벌칸S"
- },
- {
-  "nameKo": "가와사키 엘리미네이터",
-  "brand": "가와사키",
-  "model": "엘리미네이터"
- },
- {
-  "nameKo": "스즈키 DR-Z125L",
-  "brand": "스즈키",
-  "model": "DR-Z125L"
- },
- {
-  "nameKo": "스즈키 DR-Z4S",
-  "brand": "스즈키",
-  "model": "DR-Z4S"
- },
- {
-  "nameKo": "스즈키 DR-Z4SM",
-  "brand": "스즈키",
-  "model": "DR-Z4SM"
- },
- {
-  "nameKo": "스즈키 DR-Z70",
-  "brand": "스즈키",
-  "model": "DR-Z70"
- },
- {
-  "nameKo": "스즈키 GSX-8R",
-  "brand": "스즈키",
-  "model": "GSX-8R"
- },
- {
-  "nameKo": "스즈키 GSX-8S",
-  "brand": "스즈키",
-  "model": "GSX-8S"
- },
- {
-  "nameKo": "스즈키 GSX-8T",
-  "brand": "스즈키",
-  "model": "GSX-8T"
- },
- {
-  "nameKo": "스즈키 GSX-8TT",
-  "brand": "스즈키",
-  "model": "GSX-8TT"
- },
- {
-  "nameKo": "스즈키 GSX-R1000",
-  "brand": "스즈키",
-  "model": "GSX-R1000"
- },
- {
-  "nameKo": "스즈키 GSX-R125",
-  "brand": "스즈키",
-  "model": "GSX-R125"
- },
- {
-  "nameKo": "스즈키 GSX-S1000",
-  "brand": "스즈키",
-  "model": "GSX-S1000"
- },
- {
-  "nameKo": "스즈키 GSX-S1000F",
-  "brand": "스즈키",
-  "model": "GSX-S1000F"
- },
- {
-  "nameKo": "스즈키 GSX-S1000GT",
-  "brand": "스즈키",
-  "model": "GSX-S1000GT"
- },
- {
-  "nameKo": "스즈키 GSX-S1000GX",
-  "brand": "스즈키",
-  "model": "GSX-S1000GX"
- },
- {
-  "nameKo": "스즈키 GSX-S125",
-  "brand": "스즈키",
-  "model": "GSX-S125"
- },
- {
-  "nameKo": "스즈키 GSX-S750",
-  "brand": "스즈키",
-  "model": "GSX-S750"
- },
- {
-  "nameKo": "스즈키 RM-Z250",
-  "brand": "스즈키",
-  "model": "RM-Z250"
- },
- {
-  "nameKo": "스즈키 RM-Z450",
-  "brand": "스즈키",
-  "model": "RM-Z450"
- },
- {
-  "nameKo": "스즈키 RMX450Z",
-  "brand": "스즈키",
-  "model": "RMX450Z"
- },
- {
-  "nameKo": "스즈키 SV650",
-  "brand": "스즈키",
-  "model": "SV650"
- },
- {
-  "nameKo": "스즈키 버그만 스트리트125",
-  "brand": "스즈키",
-  "model": "버그만 스트리트125"
- },
- {
-  "nameKo": "스즈키 버그만125",
-  "brand": "스즈키",
-  "model": "버그만125"
- },
- {
-  "nameKo": "스즈키 버그만200",
-  "brand": "스즈키",
-  "model": "버그만200"
- },
- {
-  "nameKo": "스즈키 버그만400",
-  "brand": "스즈키",
-  "model": "버그만400"
- },
- {
-  "nameKo": "스즈키 버그만650",
-  "brand": "스즈키",
-  "model": "버그만650"
- },
- {
-  "nameKo": "스즈키 브이스트롬1000",
-  "brand": "스즈키",
-  "model": "브이스트롬1000"
- },
- {
-  "nameKo": "스즈키 브이스트롬1050",
-  "brand": "스즈키",
-  "model": "브이스트롬1050"
- },
- {
-  "nameKo": "스즈키 브이스트롬250",
-  "brand": "스즈키",
-  "model": "브이스트롬250"
- },
- {
-  "nameKo": "스즈키 브이스트롬250SX",
-  "brand": "스즈키",
-  "model": "브이스트롬250SX"
- },
- {
-  "nameKo": "스즈키 브이스트롬650",
-  "brand": "스즈키",
-  "model": "브이스트롬650"
- },
- {
-  "nameKo": "스즈키 브이스트롬800DE",
-  "brand": "스즈키",
-  "model": "브이스트롬800DE"
- },
- {
-  "nameKo": "스즈키 아베니스125",
-  "brand": "스즈키",
-  "model": "아베니스125"
- },
- {
-  "nameKo": "스즈키 어드레스125",
-  "brand": "스즈키",
-  "model": "어드레스125"
- },
- {
-  "nameKo": "스즈키 카타나",
-  "brand": "스즈키",
-  "model": "카타나"
- },
- {
-  "nameKo": "스즈키 하야부사",
-  "brand": "스즈키",
-  "model": "하야부사"
- },
- {
-  "nameKo": "베스파 프리마베라150",
-  "brand": "베스파",
-  "model": "프리마베라150"
- },
- {
-  "nameKo": "베스파 스프린트150",
-  "brand": "베스파",
-  "model": "스프린트150"
+  "nameKo": "효성 ST7",
+  "brand": "효성",
+  "model": "ST7",
+  "aliases": [
+   "ST7"
+  ]
  },
  {
   "nameKo": "BMW C400GT",
@@ -733,6 +4292,14 @@
   "nameKo": "BMW C400X",
   "brand": "BMW",
   "model": "C400X"
+ },
+ {
+  "nameKo": "BMW C600스포츠",
+  "brand": "BMW",
+  "model": "C600스포츠",
+  "aliases": [
+   "BMW C600 Sport"
+  ]
  },
  {
   "nameKo": "BMW C650GT",
@@ -815,6 +4382,35 @@
   "model": "G310R"
  },
  {
+  "nameKo": "BMW HP2메가모토",
+  "brand": "BMW",
+  "model": "HP2메가모토",
+  "aliases": [
+   "BMW HP2 Megamoto"
+  ]
+ },
+ {
+  "nameKo": "BMW HP2스포츠",
+  "brand": "BMW",
+  "model": "HP2스포츠",
+  "aliases": [
+   "BMW HP2 Sport"
+  ]
+ },
+ {
+  "nameKo": "BMW HP4",
+  "brand": "BMW",
+  "model": "HP4",
+  "aliases": [
+   "BMW HP4"
+  ]
+ },
+ {
+  "nameKo": "BMW K1600그랜드아메리카",
+  "brand": "BMW",
+  "model": "K1600그랜드아메리카"
+ },
+ {
   "nameKo": "BMW K1600B",
   "brand": "BMW",
   "model": "K1600B"
@@ -828,11 +4424,6 @@
   "nameKo": "BMW K1600GTL",
   "brand": "BMW",
   "model": "K1600GTL"
- },
- {
-  "nameKo": "BMW K1600그랜드아메리카",
-  "brand": "BMW",
-  "model": "K1600그랜드아메리카"
  },
  {
   "nameKo": "BMW M1000R",
@@ -853,36 +4444,6 @@
   "nameKo": "BMW R12",
   "brand": "BMW",
   "model": "R12"
- },
- {
-  "nameKo": "BMW R12G/S",
-  "brand": "BMW",
-  "model": "R12G/S"
- },
- {
-  "nameKo": "BMW R12나인T",
-  "brand": "BMW",
-  "model": "R12나인T"
- },
- {
-  "nameKo": "BMW R18",
-  "brand": "BMW",
-  "model": "R18"
- },
- {
-  "nameKo": "BMW R18B",
-  "brand": "BMW",
-  "model": "R18B"
- },
- {
-  "nameKo": "BMW R18클래식",
-  "brand": "BMW",
-  "model": "R18클래식"
- },
- {
-  "nameKo": "BMW R18트랜스컨티넨탈",
-  "brand": "BMW",
-  "model": "R18트랜스컨티넨탈"
  },
  {
   "nameKo": "BMW R1200GS",
@@ -935,6 +4496,16 @@
   "model": "R1250RT"
  },
  {
+  "nameKo": "BMW R12나인T",
+  "brand": "BMW",
+  "model": "R12나인T"
+ },
+ {
+  "nameKo": "BMW R12G/S",
+  "brand": "BMW",
+  "model": "R12G/S"
+ },
+ {
   "nameKo": "BMW R1300GS",
   "brand": "BMW",
   "model": "R1300GS"
@@ -960,29 +4531,66 @@
   "model": "R1300RT"
  },
  {
+  "nameKo": "BMW R18",
+  "brand": "BMW",
+  "model": "R18"
+ },
+ {
+  "nameKo": "BMW R18클래식",
+  "brand": "BMW",
+  "model": "R18클래식"
+ },
+ {
+  "nameKo": "BMW R18트랜스컨티넨탈",
+  "brand": "BMW",
+  "model": "R18트랜스컨티넨탈"
+ },
+ {
+  "nameKo": "BMW R18B",
+  "brand": "BMW",
+  "model": "R18B"
+ },
+ {
   "nameKo": "BMW R나인T",
   "brand": "BMW",
-  "model": "R나인T"
+  "model": "R나인T",
+  "aliases": [
+   "BMW R nineT"
+  ]
  },
  {
   "nameKo": "BMW R나인T레이서",
   "brand": "BMW",
-  "model": "R나인T레이서"
+  "model": "R나인T레이서",
+  "aliases": [
+   "BMW R nineT Racer"
+  ]
  },
  {
   "nameKo": "BMW R나인T스크램블러",
   "brand": "BMW",
-  "model": "R나인T스크램블러"
+  "model": "R나인T스크램블러",
+  "aliases": [
+   "BMW R nineT Scrambler",
+   "BMW R nineT Srambler"
+  ]
  },
  {
   "nameKo": "BMW R나인T어반GS",
   "brand": "BMW",
-  "model": "R나인T어반GS"
+  "model": "R나인T어반GS",
+  "aliases": [
+   "BMW R nineT Urban G/S"
+  ]
  },
  {
   "nameKo": "BMW R나인T퓨어",
   "brand": "BMW",
-  "model": "R나인T퓨어"
+  "model": "R나인T퓨어",
+  "aliases": [
+   "BMW R nineT  Pure",
+   "BMW R nineT Pure"
+  ]
  },
  {
   "nameKo": "BMW S1000R",
@@ -1000,394 +4608,354 @@
   "model": "S1000XR"
  },
  {
-  "nameKo": "두카티 데저트X",
-  "brand": "두카티",
-  "model": "데저트X"
+  "nameKo": "CFMOTO 250CL-C",
+  "brand": "CFMOTO",
+  "model": "250CL-C"
  },
  {
-  "nameKo": "두카티 디아벨1260",
-  "brand": "두카티",
-  "model": "디아벨1260"
+  "nameKo": "CFMOTO 300CL-X",
+  "brand": "CFMOTO",
+  "model": "300CL-X"
  },
  {
-  "nameKo": "두카티 디아벨V4",
-  "brand": "두카티",
-  "model": "디아벨V4"
+  "nameKo": "CFMOTO 300SR",
+  "brand": "CFMOTO",
+  "model": "300SR"
  },
  {
-  "nameKo": "두카티 멀티스트라다950",
-  "brand": "두카티",
-  "model": "멀티스트라다950"
+  "nameKo": "CFMOTO 450CL-C",
+  "brand": "CFMOTO",
+  "model": "450CL-C"
  },
  {
-  "nameKo": "두카티 멀티스트라다1200",
-  "brand": "두카티",
-  "model": "멀티스트라다1200"
+  "nameKo": "CFMOTO 450CL-C 보버",
+  "brand": "CFMOTO",
+  "model": "450CL-C 보버"
  },
  {
-  "nameKo": "두카티 멀티스트라다1260",
-  "brand": "두카티",
-  "model": "멀티스트라다1260"
+  "nameKo": "CFMOTO 450MT",
+  "brand": "CFMOTO",
+  "model": "450MT"
  },
  {
-  "nameKo": "두카티 멀티스트라다V2",
-  "brand": "두카티",
-  "model": "멀티스트라다V2"
+  "nameKo": "CFMOTO 450NK",
+  "brand": "CFMOTO",
+  "model": "450NK"
  },
  {
-  "nameKo": "두카티 멀티스트라다V4",
-  "brand": "두카티",
-  "model": "멀티스트라다V4"
+  "nameKo": "CFMOTO 450SR",
+  "brand": "CFMOTO",
+  "model": "450SR"
  },
  {
-  "nameKo": "두카티 몬스터",
-  "brand": "두카티",
-  "model": "몬스터"
+  "nameKo": "CFMOTO 650GT",
+  "brand": "CFMOTO",
+  "model": "650GT"
  },
  {
-  "nameKo": "두카티 몬스터797",
-  "brand": "두카티",
-  "model": "몬스터797"
+  "nameKo": "CFMOTO 650NK",
+  "brand": "CFMOTO",
+  "model": "650NK"
  },
  {
-  "nameKo": "두카티 몬스터821",
-  "brand": "두카티",
-  "model": "몬스터821"
+  "nameKo": "CFMOTO 675NK",
+  "brand": "CFMOTO",
+  "model": "675NK"
  },
  {
-  "nameKo": "두카티 몬스터1200",
-  "brand": "두카티",
-  "model": "몬스터1200"
+  "nameKo": "CFMOTO 675SR-R",
+  "brand": "CFMOTO",
+  "model": "675SR-R"
  },
  {
-  "nameKo": "두카티 슈퍼스포츠",
-  "brand": "두카티",
-  "model": "슈퍼스포츠"
+  "nameKo": "CFMOTO 700CL-X",
+  "brand": "CFMOTO",
+  "model": "700CL-X"
  },
  {
-  "nameKo": "두카티 슈퍼스포츠950",
-  "brand": "두카티",
-  "model": "슈퍼스포츠950"
+  "nameKo": "CFMOTO 700CL-X 스포츠",
+  "brand": "CFMOTO",
+  "model": "700CL-X 스포츠"
  },
  {
-  "nameKo": "두카티 스크램블러1100",
-  "brand": "두카티",
-  "model": "스크램블러1100"
+  "nameKo": "CFMOTO 700MT",
+  "brand": "CFMOTO",
+  "model": "700MT"
  },
  {
-  "nameKo": "두카티 스크램블러나이트시프트",
-  "brand": "두카티",
-  "model": "스크램블러나이트시프트"
+  "nameKo": "CFMOTO 800MT",
+  "brand": "CFMOTO",
+  "model": "800MT"
  },
  {
-  "nameKo": "두카티 스크램블러데저트슬레드",
-  "brand": "두카티",
-  "model": "스크램블러데저트슬레드"
+  "nameKo": "CFMOTO 파피오 XO-1",
+  "brand": "CFMOTO",
+  "model": "파피오 XO-1"
  },
  {
-  "nameKo": "두카티 스크램블러식스티2",
-  "brand": "두카티",
-  "model": "스크램블러식스티2"
+  "nameKo": "CFMOTO 파피오 XO-2",
+  "brand": "CFMOTO",
+  "model": "파피오 XO-2"
  },
  {
-  "nameKo": "두카티 스크램블러아이콘",
-  "brand": "두카티",
-  "model": "스크램블러아이콘"
+  "nameKo": "KKM 드래곤",
+  "brand": "KKM",
+  "model": "드래곤",
+  "aliases": [
+   "드래곤"
+  ]
  },
  {
-  "nameKo": "두카티 스크램블러카페레이서",
-  "brand": "두카티",
-  "model": "스크램블러카페레이서"
+  "nameKo": "KKM 요요",
+  "brand": "KKM",
+  "model": "요요",
+  "aliases": [
+   "요요"
+  ]
  },
  {
-  "nameKo": "두카티 스크램블러풀스로틀",
-  "brand": "두카티",
-  "model": "스크램블러풀스로틀"
+  "nameKo": "KKM 투유",
+  "brand": "KKM",
+  "model": "투유",
+  "aliases": [
+   "투유"
+  ]
  },
  {
-  "nameKo": "두카티 스트리트파이터V2",
-  "brand": "두카티",
-  "model": "스트리트파이터V2"
+  "nameKo": "KKM 투유데이",
+  "brand": "KKM",
+  "model": "투유데이",
+  "aliases": [
+   "투유데이",
+   "TOYOU DAY"
+  ]
  },
  {
-  "nameKo": "두카티 스트리트파이터V4",
-  "brand": "두카티",
-  "model": "스트리트파이터V4"
+  "nameKo": "KKM 투유데이2",
+  "brand": "KKM",
+  "model": "투유데이2",
+  "aliases": [
+   "TOYOUDAYⅡ"
+  ]
  },
  {
-  "nameKo": "두카티 파니갈레959",
-  "brand": "두카티",
-  "model": "파니갈레959"
+  "nameKo": "KR모터스 그란투스125",
+  "brand": "KR모터스",
+  "model": "그란투스125",
+  "aliases": [
+   "그란투스",
+   "GRANTUS"
+  ]
  },
  {
-  "nameKo": "두카티 파니갈레1299",
-  "brand": "두카티",
-  "model": "파니갈레1299"
+  "nameKo": "KR모터스 뉴티50",
+  "brand": "KR모터스",
+  "model": "뉴티50",
+  "aliases": [
+   "뉴티"
+  ]
  },
  {
-  "nameKo": "두카티 파니갈레V2",
-  "brand": "두카티",
-  "model": "파니갈레V2"
+  "nameKo": "KR모터스 델리로드100",
+  "brand": "KR모터스",
+  "model": "델리로드100",
+  "aliases": [
+   "델리로드-에이",
+   "델리로드더블유",
+   "델리로드 아이",
+   "델리로드"
+  ]
  },
  {
-  "nameKo": "두카티 파니갈레V4",
-  "brand": "두카티",
-  "model": "파니갈레V4"
+  "nameKo": "KR모터스 델리S",
+  "brand": "KR모터스",
+  "model": "델리S"
  },
  {
-  "nameKo": "두카티 파니갈레V4R",
-  "brand": "두카티",
-  "model": "파니갈레V4R"
+  "nameKo": "KR모터스 라온100",
+  "brand": "KR모터스",
+  "model": "라온100",
+  "aliases": [
+   "라온-에프"
+  ]
  },
  {
-  "nameKo": "두카티 하이퍼모타드698모노",
-  "brand": "두카티",
-  "model": "하이퍼모타드698모노"
+  "nameKo": "KR모터스 메가젯125",
+  "brand": "KR모터스",
+  "model": "메가젯125",
+  "aliases": [
+   "메가젯"
+  ]
  },
  {
-  "nameKo": "두카티 하이퍼모타드939",
-  "brand": "두카티",
-  "model": "하이퍼모타드939"
+  "nameKo": "KR모터스 비버125",
+  "brand": "KR모터스",
+  "model": "비버125",
+  "aliases": [
+   "비버-파이브",
+   "비버파이브"
+  ]
  },
  {
-  "nameKo": "두카티 하이퍼모타드950",
-  "brand": "두카티",
-  "model": "하이퍼모타드950"
+  "nameKo": "KR모터스 아이미125",
+  "brand": "KR모터스",
+  "model": "아이미125",
+  "aliases": [
+   "아이미"
+  ]
  },
  {
-  "nameKo": "두카티 X디아벨",
-  "brand": "두카티",
-  "model": "X디아벨"
+  "nameKo": "KR모터스 아퀼라125",
+  "brand": "KR모터스",
+  "model": "아퀼라125"
  },
  {
-  "nameKo": "두카티 X디아벨V4",
-  "brand": "두카티",
-  "model": "X디아벨V4"
+  "nameKo": "KR모터스 아퀼라300",
+  "brand": "KR모터스",
+  "model": "아퀼라300"
  },
  {
-  "nameKo": "트라이엄프 데이토나660",
-  "brand": "트라이엄프",
-  "model": "데이토나660"
+  "nameKo": "KR모터스 엑시브250N",
+  "brand": "KR모터스",
+  "model": "엑시브250N",
+  "aliases": [
+   "엑시브"
+  ]
  },
  {
-  "nameKo": "트라이엄프 데이토나675",
-  "brand": "트라이엄프",
-  "model": "데이토나675"
+  "nameKo": "KR모터스 엑시브250R",
+  "brand": "KR모터스",
+  "model": "엑시브250R"
  },
  {
-  "nameKo": "트라이엄프 로켓3",
-  "brand": "트라이엄프",
-  "model": "로켓3"
+  "nameKo": "KR모터스 와우2",
+  "brand": "KR모터스",
+  "model": "와우2",
+  "aliases": [
+   "와우2"
+  ]
  },
  {
-  "nameKo": "트라이엄프 본네빌T100",
-  "brand": "트라이엄프",
-  "model": "본네빌T100"
+  "nameKo": "KR모터스 욜로125",
+  "brand": "KR모터스",
+  "model": "욜로125",
+  "aliases": [
+   "YOLO"
+  ]
  },
  {
-  "nameKo": "트라이엄프 본네빌T120",
-  "brand": "트라이엄프",
-  "model": "본네빌T120"
+  "nameKo": "KR모터스 이루션",
+  "brand": "KR모터스",
+  "model": "이루션",
+  "aliases": [
+   "이루션"
+  ]
  },
  {
-  "nameKo": "트라이엄프 본네빌바버",
-  "brand": "트라이엄프",
-  "model": "본네빌바버"
+  "nameKo": "KR모터스 이스코",
+  "brand": "KR모터스",
+  "model": "이스코",
+  "aliases": [
+   "이델리로드프로",
+   "이스코알파"
+  ]
  },
  {
-  "nameKo": "트라이엄프 스크램블러400XC",
-  "brand": "트라이엄프",
-  "model": "스크램블러400XC"
+  "nameKo": "KR모터스 이스코 트리",
+  "brand": "KR모터스",
+  "model": "이스코 트리",
+  "aliases": [
+   "E-SKO TRI"
+  ]
  },
  {
-  "nameKo": "트라이엄프 스피드마스터",
-  "brand": "트라이엄프",
-  "model": "스피드마스터"
+  "nameKo": "KR모터스 케이윈125",
+  "brand": "KR모터스",
+  "model": "케이윈125"
  },
  {
-  "nameKo": "트라이엄프 스럭스턴",
-  "brand": "트라이엄프",
-  "model": "스럭스턴"
+  "nameKo": "KR모터스 큐티",
+  "brand": "KR모터스",
+  "model": "큐티",
+  "aliases": [
+   "큐티"
+  ]
  },
  {
-  "nameKo": "트라이엄프 스크램블러400X",
-  "brand": "트라이엄프",
-  "model": "스크램블러400X"
+  "nameKo": "KR모터스 토리50",
+  "brand": "KR모터스",
+  "model": "토리50",
+  "aliases": [
+   "토리50"
+  ]
  },
  {
-  "nameKo": "트라이엄프 스크램블러900",
-  "brand": "트라이엄프",
-  "model": "스크램블러900"
+  "nameKo": "KR모터스 티니110",
+  "brand": "KR모터스",
+  "model": "티니110",
+  "aliases": [
+   "티니"
+  ]
  },
  {
-  "nameKo": "트라이엄프 스크램블러1200",
-  "brand": "트라이엄프",
-  "model": "스크램블러1200"
+  "nameKo": "KR모터스 파트너100",
+  "brand": "KR모터스",
+  "model": "파트너100"
  },
  {
-  "nameKo": "트라이엄프 스트리트스크램블러",
-  "brand": "트라이엄프",
-  "model": "스트리트스크램블러"
+  "nameKo": "KR모터스 DD100",
+  "brand": "KR모터스",
+  "model": "DD100"
  },
  {
-  "nameKo": "트라이엄프 스트리트컵",
-  "brand": "트라이엄프",
-  "model": "스트리트컵"
+  "nameKo": "KR모터스 DD110",
+  "brand": "KR모터스",
+  "model": "DD110"
  },
  {
-  "nameKo": "트라이엄프 스트리트트윈",
-  "brand": "트라이엄프",
-  "model": "스트리트트윈"
+  "nameKo": "KR모터스 e-델리로드",
+  "brand": "KR모터스",
+  "model": "e-델리로드",
+  "aliases": [
+   "이델리로드"
+  ]
  },
  {
-  "nameKo": "트라이엄프 스트리트트리플765",
-  "brand": "트라이엄프",
-  "model": "스트리트트리플765"
+  "nameKo": "KTM 1090어드벤처",
+  "brand": "KTM",
+  "model": "1090어드벤처",
+  "aliases": [
+   "1090 ADVENTURE"
+  ]
  },
  {
-  "nameKo": "트라이엄프 스피드400",
-  "brand": "트라이엄프",
-  "model": "스피드400"
+  "nameKo": "KTM 1090어드벤처R",
+  "brand": "KTM",
+  "model": "1090어드벤처R",
+  "aliases": [
+   "1090 ADVENTURE R"
+  ]
  },
  {
-  "nameKo": "트라이엄프 스피드트리플1050",
-  "brand": "트라이엄프",
-  "model": "스피드트리플1050"
+  "nameKo": "KTM 1190어드벤처",
+  "brand": "KTM",
+  "model": "1190어드벤처",
+  "aliases": [
+   "1190 Adventure"
+  ]
  },
  {
-  "nameKo": "트라이엄프 스피드트윈900",
-  "brand": "트라이엄프",
-  "model": "스피드트윈900"
- },
- {
-  "nameKo": "트라이엄프 스피드트윈1200",
-  "brand": "트라이엄프",
-  "model": "스피드트윈1200"
- },
- {
-  "nameKo": "트라이엄프 스피드트리플1200",
-  "brand": "트라이엄프",
-  "model": "스피드트리플1200"
- },
- {
-  "nameKo": "트라이엄프 타이거800",
-  "brand": "트라이엄프",
-  "model": "타이거800"
- },
- {
-  "nameKo": "트라이엄프 타이거900",
-  "brand": "트라이엄프",
-  "model": "타이거900"
- },
- {
-  "nameKo": "트라이엄프 타이거1200",
-  "brand": "트라이엄프",
-  "model": "타이거1200"
- },
- {
-  "nameKo": "트라이엄프 타이거스포트660",
-  "brand": "트라이엄프",
-  "model": "타이거스포트660"
- },
- {
-  "nameKo": "트라이엄프 트라이던트660",
-  "brand": "트라이엄프",
-  "model": "트라이던트660"
+  "nameKo": "KTM 1190어드벤처R",
+  "brand": "KTM",
+  "model": "1190어드벤처R",
+  "aliases": [
+   "1190 Adventure R"
+  ]
  },
  {
   "nameKo": "KTM 125듀크",
   "brand": "KTM",
   "model": "125듀크"
- },
- {
-  "nameKo": "KTM 300EXC",
-  "brand": "KTM",
-  "model": "300EXC"
- },
- {
-  "nameKo": "KTM 390SMC R",
-  "brand": "KTM",
-  "model": "390SMC R"
- },
- {
-  "nameKo": "KTM 390듀크",
-  "brand": "KTM",
-  "model": "390듀크"
- },
- {
-  "nameKo": "KTM 390어드벤처",
-  "brand": "KTM",
-  "model": "390어드벤처"
- },
- {
-  "nameKo": "KTM 390어드벤처R",
-  "brand": "KTM",
-  "model": "390어드벤처R"
- },
- {
-  "nameKo": "KTM 390어드벤처X",
-  "brand": "KTM",
-  "model": "390어드벤처X"
- },
- {
-  "nameKo": "KTM 390엔듀로R",
-  "brand": "KTM",
-  "model": "390엔듀로R"
- },
- {
-  "nameKo": "KTM 690SMC R",
-  "brand": "KTM",
-  "model": "690SMC R"
- },
- {
-  "nameKo": "KTM 690듀크",
-  "brand": "KTM",
-  "model": "690듀크"
- },
- {
-  "nameKo": "KTM 690엔듀로R",
-  "brand": "KTM",
-  "model": "690엔듀로R"
- },
- {
-  "nameKo": "KTM 790듀크",
-  "brand": "KTM",
-  "model": "790듀크"
- },
- {
-  "nameKo": "KTM 790어드벤처",
-  "brand": "KTM",
-  "model": "790어드벤처"
- },
- {
-  "nameKo": "KTM 890SMT",
-  "brand": "KTM",
-  "model": "890SMT"
- },
- {
-  "nameKo": "KTM 890듀크R",
-  "brand": "KTM",
-  "model": "890듀크R"
- },
- {
-  "nameKo": "KTM 890어드벤처",
-  "brand": "KTM",
-  "model": "890어드벤처"
- },
- {
-  "nameKo": "KTM 890어드벤처R",
-  "brand": "KTM",
-  "model": "890어드벤처R"
- },
- {
-  "nameKo": "KTM 990RC R",
-  "brand": "KTM",
-  "model": "990RC R"
- },
- {
-  "nameKo": "KTM 990듀크",
-  "brand": "KTM",
-  "model": "990듀크"
  },
  {
   "nameKo": "KTM 1290슈퍼듀크GT",
@@ -1430,159 +4998,115 @@
   "model": "1390슈퍼어드벤처S"
  },
  {
+  "nameKo": "KTM 300EXC",
+  "brand": "KTM",
+  "model": "300EXC"
+ },
+ {
+  "nameKo": "KTM 390듀크",
+  "brand": "KTM",
+  "model": "390듀크"
+ },
+ {
+  "nameKo": "KTM 390어드벤처",
+  "brand": "KTM",
+  "model": "390어드벤처"
+ },
+ {
+  "nameKo": "KTM 390어드벤처R",
+  "brand": "KTM",
+  "model": "390어드벤처R"
+ },
+ {
+  "nameKo": "KTM 390어드벤처X",
+  "brand": "KTM",
+  "model": "390어드벤처X"
+ },
+ {
+  "nameKo": "KTM 390엔듀로R",
+  "brand": "KTM",
+  "model": "390엔듀로R"
+ },
+ {
+  "nameKo": "KTM 390SMC R",
+  "brand": "KTM",
+  "model": "390SMC R"
+ },
+ {
+  "nameKo": "KTM 690듀크",
+  "brand": "KTM",
+  "model": "690듀크"
+ },
+ {
+  "nameKo": "KTM 690엔듀로R",
+  "brand": "KTM",
+  "model": "690엔듀로R"
+ },
+ {
+  "nameKo": "KTM 690SMC R",
+  "brand": "KTM",
+  "model": "690SMC R"
+ },
+ {
+  "nameKo": "KTM 790듀크",
+  "brand": "KTM",
+  "model": "790듀크"
+ },
+ {
+  "nameKo": "KTM 790어드벤처",
+  "brand": "KTM",
+  "model": "790어드벤처"
+ },
+ {
+  "nameKo": "KTM 890듀크R",
+  "brand": "KTM",
+  "model": "890듀크R"
+ },
+ {
+  "nameKo": "KTM 890어드벤처",
+  "brand": "KTM",
+  "model": "890어드벤처"
+ },
+ {
+  "nameKo": "KTM 890어드벤처R",
+  "brand": "KTM",
+  "model": "890어드벤처R"
+ },
+ {
+  "nameKo": "KTM 890SMT",
+  "brand": "KTM",
+  "model": "890SMT"
+ },
+ {
+  "nameKo": "KTM 990듀크",
+  "brand": "KTM",
+  "model": "990듀크"
+ },
+ {
+  "nameKo": "KTM 990RC R",
+  "brand": "KTM",
+  "model": "990RC R"
+ },
+ {
   "nameKo": "KTM RC390",
   "brand": "KTM",
   "model": "RC390"
  },
  {
-  "nameKo": "허스크바나 노든901",
-  "brand": "허스크바나",
-  "model": "노든901"
- },
- {
-  "nameKo": "허스크바나 노든901익스페디션",
-  "brand": "허스크바나",
-  "model": "노든901익스페디션"
- },
- {
-  "nameKo": "허스크바나 비트필렌125",
-  "brand": "허스크바나",
-  "model": "비트필렌125"
- },
- {
-  "nameKo": "허스크바나 비트필렌401",
-  "brand": "허스크바나",
-  "model": "비트필렌401"
- },
- {
-  "nameKo": "허스크바나 비트필렌701",
-  "brand": "허스크바나",
-  "model": "비트필렌701"
- },
- {
-  "nameKo": "허스크바나 비트필렌801",
-  "brand": "허스크바나",
-  "model": "비트필렌801"
- },
- {
-  "nameKo": "허스크바나 스바르트필렌125",
-  "brand": "허스크바나",
-  "model": "스바르트필렌125"
- },
- {
-  "nameKo": "허스크바나 스바르트필렌401",
-  "brand": "허스크바나",
-  "model": "스바르트필렌401"
- },
- {
-  "nameKo": "허스크바나 스바르트필렌701",
-  "brand": "허스크바나",
-  "model": "스바르트필렌701"
- },
- {
-  "nameKo": "허스크바나 스바르트필렌801",
-  "brand": "허스크바나",
-  "model": "스바르트필렌801"
- },
- {
-  "nameKo": "허스크바나 701엔듀로",
-  "brand": "허스크바나",
-  "model": "701엔듀로"
- },
- {
-  "nameKo": "허스크바나 701슈퍼모토",
-  "brand": "허스크바나",
-  "model": "701슈퍼모토"
- },
- {
-  "nameKo": "허스크바나 FE350",
-  "brand": "허스크바나",
-  "model": "FE350"
- },
- {
-  "nameKo": "허스크바나 TE300",
-  "brand": "허스크바나",
-  "model": "TE300"
- },
- {
-  "nameKo": "아프릴리아 돌소두로900",
-  "brand": "아프릴리아",
-  "model": "돌소두로900"
- },
- {
-  "nameKo": "아프릴리아 쉬버900",
-  "brand": "아프릴리아",
-  "model": "쉬버900"
- },
- {
-  "nameKo": "아프릴리아 투아렉660",
-  "brand": "아프릴리아",
-  "model": "투아렉660"
- },
- {
-  "nameKo": "아프릴리아 투오노660",
-  "brand": "아프릴리아",
-  "model": "투오노660"
- },
- {
-  "nameKo": "아프릴리아 투오노V4",
-  "brand": "아프릴리아",
-  "model": "투오노V4"
- },
- {
-  "nameKo": "아프릴리아 RS457",
-  "brand": "아프릴리아",
-  "model": "RS457"
- },
- {
-  "nameKo": "아프릴리아 RS660",
-  "brand": "아프릴리아",
-  "model": "RS660"
- },
- {
-  "nameKo": "아프릴리아 RSV4",
-  "brand": "아프릴리아",
-  "model": "RSV4"
- },
- {
-  "nameKo": "아프릴리아 SR GT125",
-  "brand": "아프릴리아",
-  "model": "SR GT125"
- },
- {
-  "nameKo": "모토구찌 V7",
-  "brand": "모토구찌",
-  "model": "V7"
- },
- {
-  "nameKo": "모토구찌 V9로머",
-  "brand": "모토구찌",
-  "model": "V9로머"
- },
- {
-  "nameKo": "모토구찌 V9바버",
-  "brand": "모토구찌",
-  "model": "V9바버"
- },
- {
-  "nameKo": "모토구찌 V85TT",
-  "brand": "모토구찌",
-  "model": "V85TT"
- },
- {
-  "nameKo": "모토구찌 V100만델로",
-  "brand": "모토구찌",
-  "model": "V100만델로"
- },
- {
   "nameKo": "MV아구스타 드락스터800",
   "brand": "MV아구스타",
-  "model": "드락스터800"
+  "model": "드락스터800",
+  "aliases": [
+   "DRAGSTER RR"
+  ]
  },
  {
-  "nameKo": "MV아구스타 브루탈레800",
+  "nameKo": "MV아구스타 러쉬1000",
   "brand": "MV아구스타",
-  "model": "브루탈레800"
+  "model": "러쉬1000",
+  "aliases": [
+   "RUSH"
+  ]
  },
  {
   "nameKo": "MV아구스타 브루탈레1000RR",
@@ -1590,709 +5114,72 @@
   "model": "브루탈레1000RR"
  },
  {
+  "nameKo": "MV아구스타 브루탈레1090",
+  "brand": "MV아구스타",
+  "model": "브루탈레1090",
+  "aliases": [
+   "BRUTALE 1090 R",
+   "BRUTALE 1090"
+  ]
+ },
+ {
+  "nameKo": "MV아구스타 브루탈레800",
+  "brand": "MV아구스타",
+  "model": "브루탈레800",
+  "aliases": [
+   "BRUTALE RR"
+  ]
+ },
+ {
   "nameKo": "MV아구스타 슈퍼벨로체800",
   "brand": "MV아구스타",
-  "model": "슈퍼벨로체800"
+  "model": "슈퍼벨로체800",
+  "aliases": [
+   "SUPER VELOCE"
+  ]
  },
  {
   "nameKo": "MV아구스타 투리스모벨로체800",
   "brand": "MV아구스타",
-  "model": "투리스모벨로체800"
+  "model": "투리스모벨로체800",
+  "aliases": [
+   "TURISMO VELOCE LUSSO",
+   "TURISMO VELOCE ROSSO",
+   "TURISMO VELOCE"
+  ]
  },
  {
   "nameKo": "MV아구스타 F3 800",
   "brand": "MV아구스타",
-  "model": "F3 800"
+  "model": "F3 800",
+  "aliases": [
+   "F3 ROSSO",
+   "F3 RR"
+  ]
  },
  {
   "nameKo": "MV아구스타 F4",
   "brand": "MV아구스타",
-  "model": "F4"
- },
- {
-  "nameKo": "베스파 946",
-  "brand": "베스파",
-  "model": "946"
- },
- {
-  "nameKo": "베스파 GTS125",
-  "brand": "베스파",
-  "model": "GTS125"
- },
- {
-  "nameKo": "베스파 GTS300",
-  "brand": "베스파",
-  "model": "GTS300"
- },
- {
-  "nameKo": "베스파 GTV300",
-  "brand": "베스파",
-  "model": "GTV300"
- },
- {
-  "nameKo": "베스파 LX125",
-  "brand": "베스파",
-  "model": "LX125"
- },
- {
-  "nameKo": "베스파 프리마베라125",
-  "brand": "베스파",
-  "model": "프리마베라125"
- },
- {
-  "nameKo": "베스파 스프린트125",
-  "brand": "베스파",
-  "model": "스프린트125"
- },
- {
-  "nameKo": "피아지오 리버티125",
-  "brand": "피아지오",
-  "model": "리버티125"
- },
- {
-  "nameKo": "피아지오 메들리125",
-  "brand": "피아지오",
-  "model": "메들리125"
- },
- {
-  "nameKo": "피아지오 베벌리350",
-  "brand": "피아지오",
-  "model": "베벌리350"
- },
- {
-  "nameKo": "피아지오 베벌리400",
-  "brand": "피아지오",
-  "model": "베벌리400"
- },
- {
-  "nameKo": "피아지오 MP3 300",
-  "brand": "피아지오",
-  "model": "MP3 300"
- },
- {
-  "nameKo": "피아지오 MP3 400",
-  "brand": "피아지오",
-  "model": "MP3 400"
- },
- {
-  "nameKo": "피아지오 MP3 500",
-  "brand": "피아지오",
-  "model": "MP3 500"
- },
- {
-  "nameKo": "로얄엔필드 게릴라450",
-  "brand": "로얄엔필드",
-  "model": "게릴라450"
- },
- {
-  "nameKo": "로얄엔필드 고안 클래식350",
-  "brand": "로얄엔필드",
-  "model": "고안 클래식350"
- },
- {
-  "nameKo": "로얄엔필드 메테오350",
-  "brand": "로얄엔필드",
-  "model": "메테오350"
- },
- {
-  "nameKo": "로얄엔필드 베어650",
-  "brand": "로얄엔필드",
-  "model": "베어650"
- },
- {
-  "nameKo": "로얄엔필드 뷸렛350",
-  "brand": "로얄엔필드",
-  "model": "뷸렛350"
- },
- {
-  "nameKo": "로얄엔필드 슈퍼메테오650",
-  "brand": "로얄엔필드",
-  "model": "슈퍼메테오650"
- },
- {
-  "nameKo": "로얄엔필드 스크램411",
-  "brand": "로얄엔필드",
-  "model": "스크램411"
- },
- {
-  "nameKo": "로얄엔필드 인터셉터650",
-  "brand": "로얄엔필드",
-  "model": "인터셉터650"
- },
- {
-  "nameKo": "로얄엔필드 컨티넨탈GT650",
-  "brand": "로얄엔필드",
-  "model": "컨티넨탈GT650"
- },
- {
-  "nameKo": "로얄엔필드 클래식350",
-  "brand": "로얄엔필드",
-  "model": "클래식350"
- },
- {
-  "nameKo": "로얄엔필드 클래식650",
-  "brand": "로얄엔필드",
-  "model": "클래식650"
- },
- {
-  "nameKo": "로얄엔필드 헌터350",
-  "brand": "로얄엔필드",
-  "model": "헌터350"
- },
- {
-  "nameKo": "로얄엔필드 히말라얀",
-  "brand": "로얄엔필드",
-  "model": "히말라얀"
- },
- {
-  "nameKo": "로얄엔필드 히말라얀450",
-  "brand": "로얄엔필드",
-  "model": "히말라얀450"
- },
- {
-  "nameKo": "할리데이비슨 스포스터S",
-  "brand": "할리데이비슨",
-  "model": "스포스터S"
- },
- {
-  "nameKo": "할리데이비슨 나이트스터",
-  "brand": "할리데이비슨",
-  "model": "나이트스터"
- },
- {
-  "nameKo": "할리데이비슨 나이트스터 스페셜",
-  "brand": "할리데이비슨",
-  "model": "나이트스터 스페셜"
- },
- {
-  "nameKo": "할리데이비슨 아이언883",
-  "brand": "할리데이비슨",
-  "model": "아이언883"
- },
- {
-  "nameKo": "할리데이비슨 아이언1200",
-  "brand": "할리데이비슨",
-  "model": "아이언1200"
- },
- {
-  "nameKo": "할리데이비슨 포티에이트",
-  "brand": "할리데이비슨",
-  "model": "포티에이트"
- },
- {
-  "nameKo": "할리데이비슨 로드스터",
-  "brand": "할리데이비슨",
-  "model": "로드스터"
- },
- {
-  "nameKo": "할리데이비슨 스포스터 1200 커스텀",
-  "brand": "할리데이비슨",
-  "model": "스포스터 1200 커스텀"
- },
- {
-  "nameKo": "할리데이비슨 스트리트750",
-  "brand": "할리데이비슨",
-  "model": "스트리트750"
- },
- {
-  "nameKo": "할리데이비슨 스트리트로드",
-  "brand": "할리데이비슨",
-  "model": "스트리트로드"
- },
- {
-  "nameKo": "할리데이비슨 스트리트밥",
-  "brand": "할리데이비슨",
-  "model": "스트리트밥"
- },
- {
-  "nameKo": "할리데이비슨 팻밥",
-  "brand": "할리데이비슨",
-  "model": "팻밥"
- },
- {
-  "nameKo": "할리데이비슨 팻보이",
-  "brand": "할리데이비슨",
-  "model": "팻보이"
- },
- {
-  "nameKo": "할리데이비슨 브레이크아웃",
-  "brand": "할리데이비슨",
-  "model": "브레이크아웃"
- },
- {
-  "nameKo": "할리데이비슨 프리휠러",
-  "brand": "할리데이비슨",
-  "model": "프리휠러"
- },
- {
-  "nameKo": "할리데이비슨 헤리티지 클래식",
-  "brand": "할리데이비슨",
-  "model": "헤리티지 클래식"
- },
- {
-  "nameKo": "할리데이비슨 소프테일 스탠다드",
-  "brand": "할리데이비슨",
-  "model": "소프테일 스탠다드"
- },
- {
-  "nameKo": "할리데이비슨 소프테일 슬림",
-  "brand": "할리데이비슨",
-  "model": "소프테일 슬림"
- },
- {
-  "nameKo": "할리데이비슨 디럭스",
-  "brand": "할리데이비슨",
-  "model": "디럭스"
- },
- {
-  "nameKo": "할리데이비슨 스포츠 글라이드",
-  "brand": "할리데이비슨",
-  "model": "스포츠 글라이드"
- },
- {
-  "nameKo": "할리데이비슨 로우라이더",
-  "brand": "할리데이비슨",
-  "model": "로우라이더"
- },
- {
-  "nameKo": "할리데이비슨 로우라이더S",
-  "brand": "할리데이비슨",
-  "model": "로우라이더S"
- },
- {
-  "nameKo": "할리데이비슨 로우라이더ST",
-  "brand": "할리데이비슨",
-  "model": "로우라이더ST"
- },
- {
-  "nameKo": "할리데이비슨 와이드글라이드",
-  "brand": "할리데이비슨",
-  "model": "와이드글라이드"
- },
- {
-  "nameKo": "할리데이비슨 FXDR114",
-  "brand": "할리데이비슨",
-  "model": "FXDR114"
- },
- {
-  "nameKo": "할리데이비슨 브이로드 머슬",
-  "brand": "할리데이비슨",
-  "model": "브이로드 머슬"
- },
- {
-  "nameKo": "할리데이비슨 나이트로드 스페셜",
-  "brand": "할리데이비슨",
-  "model": "나이트로드 스페셜"
- },
- {
-  "nameKo": "할리데이비슨 로드킹",
-  "brand": "할리데이비슨",
-  "model": "로드킹"
- },
- {
-  "nameKo": "할리데이비슨 로드킹 스페셜",
-  "brand": "할리데이비슨",
-  "model": "로드킹 스페셜"
- },
- {
-  "nameKo": "할리데이비슨 로드글라이드",
-  "brand": "할리데이비슨",
-  "model": "로드글라이드"
- },
- {
-  "nameKo": "할리데이비슨 로드글라이드 스페셜",
-  "brand": "할리데이비슨",
-  "model": "로드글라이드 스페셜"
- },
- {
-  "nameKo": "할리데이비슨 로드글라이드 리미티드",
-  "brand": "할리데이비슨",
-  "model": "로드글라이드 리미티드"
- },
- {
-  "nameKo": "할리데이비슨 로드글라이드 ST",
-  "brand": "할리데이비슨",
-  "model": "로드글라이드 ST"
- },
- {
-  "nameKo": "할리데이비슨 로드글라이드 울트라",
-  "brand": "할리데이비슨",
-  "model": "로드글라이드 울트라"
- },
- {
-  "nameKo": "할리데이비슨 스트리트글라이드",
-  "brand": "할리데이비슨",
-  "model": "스트리트글라이드"
- },
- {
-  "nameKo": "할리데이비슨 스트리트글라이드 스페셜",
-  "brand": "할리데이비슨",
-  "model": "스트리트글라이드 스페셜"
- },
- {
-  "nameKo": "할리데이비슨 스트리트글라이드 ST",
-  "brand": "할리데이비슨",
-  "model": "스트리트글라이드 ST"
- },
- {
-  "nameKo": "할리데이비슨 스트리트글라이드 울트라",
-  "brand": "할리데이비슨",
-  "model": "스트리트글라이드 울트라"
- },
- {
-  "nameKo": "할리데이비슨 울트라 리미티드",
-  "brand": "할리데이비슨",
-  "model": "울트라 리미티드"
- },
- {
-  "nameKo": "할리데이비슨 팬아메리카1250",
-  "brand": "할리데이비슨",
-  "model": "팬아메리카1250"
- },
- {
-  "nameKo": "할리데이비슨 팬아메리카1250 스페셜",
-  "brand": "할리데이비슨",
-  "model": "팬아메리카1250 스페셜"
- },
- {
-  "nameKo": "할리데이비슨 팬아메리카1250 ST",
-  "brand": "할리데이비슨",
-  "model": "팬아메리카1250 ST"
- },
- {
-  "nameKo": "할리데이비슨 CVO 스트리트글라이드",
-  "brand": "할리데이비슨",
-  "model": "CVO 스트리트글라이드"
- },
- {
-  "nameKo": "할리데이비슨 CVO 로드글라이드",
-  "brand": "할리데이비슨",
-  "model": "CVO 로드글라이드"
- },
- {
-  "nameKo": "할리데이비슨 CVO 로드글라이드 ST",
-  "brand": "할리데이비슨",
-  "model": "CVO 로드글라이드 ST"
- },
- {
-  "nameKo": "할리데이비슨 CVO 리미티드",
-  "brand": "할리데이비슨",
-  "model": "CVO 리미티드"
- },
- {
-  "nameKo": "할리데이비슨 트라이글라이드 울트라",
-  "brand": "할리데이비슨",
-  "model": "트라이글라이드 울트라"
- },
- {
-  "nameKo": "인디언 스카우트",
-  "brand": "인디언",
-  "model": "스카우트"
- },
- {
-  "nameKo": "인디언 스카우트 바버 트웬티",
-  "brand": "인디언",
-  "model": "스카우트 바버 트웬티"
- },
- {
-  "nameKo": "인디언 스카우트 식스티",
-  "brand": "인디언",
-  "model": "스카우트 식스티"
- },
- {
-  "nameKo": "인디언 스카우트 바버",
-  "brand": "인디언",
-  "model": "스카우트 바버"
- },
- {
-  "nameKo": "인디언 스카우트 로그",
-  "brand": "인디언",
-  "model": "스카우트 로그"
- },
- {
-  "nameKo": "인디언 스카우트 클래식",
-  "brand": "인디언",
-  "model": "스카우트 클래식"
- },
- {
-  "nameKo": "인디언 101 스카우트",
-  "brand": "인디언",
-  "model": "101 스카우트"
- },
- {
-  "nameKo": "인디언 스포츠 스카우트",
-  "brand": "인디언",
-  "model": "스포츠 스카우트"
- },
- {
-  "nameKo": "인디언 치프",
-  "brand": "인디언",
-  "model": "치프"
- },
- {
-  "nameKo": "인디언 치프 다크호스",
-  "brand": "인디언",
-  "model": "치프 다크호스"
- },
- {
-  "nameKo": "인디언 치프 바버 다크호스",
-  "brand": "인디언",
-  "model": "치프 바버 다크호스"
- },
- {
-  "nameKo": "인디언 치프 빈티지",
-  "brand": "인디언",
-  "model": "치프 빈티지"
- },
- {
-  "nameKo": "인디언 슈퍼 치프",
-  "brand": "인디언",
-  "model": "슈퍼 치프"
- },
- {
-  "nameKo": "인디언 슈퍼 치프 리미티드",
-  "brand": "인디언",
-  "model": "슈퍼 치프 리미티드"
- },
- {
-  "nameKo": "인디언 치프테인",
-  "brand": "인디언",
-  "model": "치프테인"
- },
- {
-  "nameKo": "인디언 치프테인 다크호스",
-  "brand": "인디언",
-  "model": "치프테인 다크호스"
- },
- {
-  "nameKo": "인디언 치프테인 리미티드",
-  "brand": "인디언",
-  "model": "치프테인 리미티드"
- },
- {
-  "nameKo": "인디언 스프링필드",
-  "brand": "인디언",
-  "model": "스프링필드"
- },
- {
-  "nameKo": "인디언 스프링필드 다크호스",
-  "brand": "인디언",
-  "model": "스프링필드 다크호스"
- },
- {
-  "nameKo": "인디언 로드마스터",
-  "brand": "인디언",
-  "model": "로드마스터"
- },
- {
-  "nameKo": "인디언 로드마스터 다크호스",
-  "brand": "인디언",
-  "model": "로드마스터 다크호스"
- },
- {
-  "nameKo": "인디언 로드마스터 리미티드",
-  "brand": "인디언",
-  "model": "로드마스터 리미티드"
- },
- {
-  "nameKo": "인디언 챌린저",
-  "brand": "인디언",
-  "model": "챌린저"
- },
- {
-  "nameKo": "인디언 챌린저 다크호스",
-  "brand": "인디언",
-  "model": "챌린저 다크호스"
- },
- {
-  "nameKo": "인디언 챌린저 리미티드",
-  "brand": "인디언",
-  "model": "챌린저 리미티드"
- },
- {
-  "nameKo": "인디언 퍼슈트 다크호스",
-  "brand": "인디언",
-  "model": "퍼슈트 다크호스"
- },
- {
-  "nameKo": "인디언 퍼슈트 리미티드",
-  "brand": "인디언",
-  "model": "퍼슈트 리미티드"
- },
- {
-  "nameKo": "인디언 FTR1200",
-  "brand": "인디언",
-  "model": "FTR1200"
- },
- {
-  "nameKo": "인디언 FTR 랠리",
-  "brand": "인디언",
-  "model": "FTR 랠리"
- },
- {
-  "nameKo": "인디언 FTR R 카본",
-  "brand": "인디언",
-  "model": "FTR R 카본"
- },
- {
-  "nameKo": "CFMOTO 250CL-C",
-  "brand": "CFMOTO",
-  "model": "250CL-C"
- },
- {
-  "nameKo": "CFMOTO 300SR",
-  "brand": "CFMOTO",
-  "model": "300SR"
- },
- {
-  "nameKo": "CFMOTO 300CL-X",
-  "brand": "CFMOTO",
-  "model": "300CL-X"
- },
- {
-  "nameKo": "CFMOTO 450SR",
-  "brand": "CFMOTO",
-  "model": "450SR"
- },
- {
-  "nameKo": "CFMOTO 450NK",
-  "brand": "CFMOTO",
-  "model": "450NK"
- },
- {
-  "nameKo": "CFMOTO 450MT",
-  "brand": "CFMOTO",
-  "model": "450MT"
- },
- {
-  "nameKo": "CFMOTO 450CL-C",
-  "brand": "CFMOTO",
-  "model": "450CL-C"
- },
- {
-  "nameKo": "CFMOTO 450CL-C 보버",
-  "brand": "CFMOTO",
-  "model": "450CL-C 보버"
- },
- {
-  "nameKo": "CFMOTO 650NK",
-  "brand": "CFMOTO",
-  "model": "650NK"
- },
- {
-  "nameKo": "CFMOTO 650GT",
-  "brand": "CFMOTO",
-  "model": "650GT"
- },
- {
-  "nameKo": "CFMOTO 675SR-R",
-  "brand": "CFMOTO",
-  "model": "675SR-R"
- },
- {
-  "nameKo": "CFMOTO 675NK",
-  "brand": "CFMOTO",
-  "model": "675NK"
- },
- {
-  "nameKo": "CFMOTO 700CL-X",
-  "brand": "CFMOTO",
-  "model": "700CL-X"
- },
- {
-  "nameKo": "CFMOTO 700CL-X 스포츠",
-  "brand": "CFMOTO",
-  "model": "700CL-X 스포츠"
- },
- {
-  "nameKo": "CFMOTO 700MT",
-  "brand": "CFMOTO",
-  "model": "700MT"
- },
- {
-  "nameKo": "CFMOTO 800MT",
-  "brand": "CFMOTO",
-  "model": "800MT"
- },
- {
-  "nameKo": "CFMOTO 파피오 XO-1",
-  "brand": "CFMOTO",
-  "model": "파피오 XO-1"
- },
- {
-  "nameKo": "CFMOTO 파피오 XO-2",
-  "brand": "CFMOTO",
-  "model": "파피오 XO-2"
- },
- {
-  "nameKo": "베넬리 SR125",
-  "brand": "베넬리",
-  "model": "SR125"
- },
- {
-  "nameKo": "베넬리 TNT125",
-  "brand": "베넬리",
-  "model": "TNT125"
- },
- {
-  "nameKo": "베넬리 TRK502",
-  "brand": "베넬리",
-  "model": "TRK502"
- },
- {
-  "nameKo": "베넬리 TRK502X",
-  "brand": "베넬리",
-  "model": "TRK502X"
- },
- {
-  "nameKo": "베넬리 레온치노125",
-  "brand": "베넬리",
-  "model": "레온치노125"
- },
- {
-  "nameKo": "베넬리 레온치노250",
-  "brand": "베넬리",
-  "model": "레온치노250"
- },
- {
-  "nameKo": "베넬리 레온치노500",
-  "brand": "베넬리",
-  "model": "레온치노500"
- },
- {
-  "nameKo": "베넬리 레온치노800",
-  "brand": "베넬리",
-  "model": "레온치노800"
- },
- {
-  "nameKo": "베넬리 비에스테250XDV",
-  "brand": "베넬리",
-  "model": "비에스테250XDV"
- },
- {
-  "nameKo": "베넬리 임페리알레400",
-  "brand": "베넬리",
-  "model": "임페리알레400"
- },
- {
-  "nameKo": "베넬리 502C",
-  "brand": "베넬리",
-  "model": "502C"
- },
- {
-  "nameKo": "베넬리 RKF125",
-  "brand": "베넬리",
-  "model": "RKF125"
- },
- {
-  "nameKo": "베넬리 VIESTE125",
-  "brand": "베넬리",
-  "model": "VIESTE125"
- },
- {
-  "nameKo": "베넬리 파나레아125",
-  "brand": "베넬리",
-  "model": "파나레아125"
+  "model": "F4",
+  "aliases": [
+   "F4RC",
+   "F4 R",
+   "F4",
+   "F4 RR"
+  ]
+ },
+ {
+  "nameKo": "MV아구스타 RVS#1",
+  "brand": "MV아구스타",
+  "model": "RVS#1",
+  "aliases": [
+   "RVS#1"
+  ]
+ },
+ {
+  "nameKo": "QJ모터 ATR125",
+  "brand": "QJ모터",
+  "model": "ATR125"
  },
  {
   "nameKo": "QJ모터 SRK421RR",
@@ -2305,124 +5192,72 @@
   "model": "SRV300A"
  },
  {
-  "nameKo": "QJ모터 ATR125",
-  "brand": "QJ모터",
-  "model": "ATR125"
- },
- {
-  "nameKo": "존테스 125G1",
-  "brand": "존테스",
-  "model": "125G1"
- },
- {
-  "nameKo": "존테스 125C",
-  "brand": "존테스",
-  "model": "125C"
- },
- {
-  "nameKo": "존테스 125D",
-  "brand": "존테스",
-  "model": "125D"
- },
- {
-  "nameKo": "존테스 125E",
-  "brand": "존테스",
-  "model": "125E"
- },
- {
-  "nameKo": "존테스 125U1",
-  "brand": "존테스",
-  "model": "125U1"
- },
- {
-  "nameKo": "존테스 125X",
-  "brand": "존테스",
-  "model": "125X"
- },
- {
-  "nameKo": "존테스 310R",
-  "brand": "존테스",
-  "model": "310R"
- },
- {
-  "nameKo": "존테스 310T",
-  "brand": "존테스",
-  "model": "310T"
- },
- {
-  "nameKo": "존테스 310X",
-  "brand": "존테스",
-  "model": "310X"
- },
- {
-  "nameKo": "존테스 310M",
-  "brand": "존테스",
-  "model": "310M"
- },
- {
-  "nameKo": "존테스 350R",
-  "brand": "존테스",
-  "model": "350R"
- },
- {
-  "nameKo": "존테스 350T",
-  "brand": "존테스",
-  "model": "350T"
- },
- {
-  "nameKo": "존테스 350D",
-  "brand": "존테스",
-  "model": "350D"
- },
- {
-  "nameKo": "존테스 350GK",
-  "brand": "존테스",
-  "model": "350GK"
- },
- {
-  "nameKo": "존테스 368G",
-  "brand": "존테스",
-  "model": "368G"
- },
- {
-  "nameKo": "존테스 368E",
-  "brand": "존테스",
-  "model": "368E"
- },
- {
-  "nameKo": "VOGE 300ACX",
-  "brand": "VOGE",
-  "model": "300ACX"
- },
- {
-  "nameKo": "VOGE 300RALLY",
-  "brand": "VOGE",
-  "model": "300RALLY"
- },
- {
-  "nameKo": "VOGE 500AC",
-  "brand": "VOGE",
-  "model": "500AC"
- },
- {
-  "nameKo": "VOGE SR1-ADV",
-  "brand": "VOGE",
-  "model": "SR1-ADV"
- },
- {
-  "nameKo": "VOGE SR125GT",
-  "brand": "VOGE",
-  "model": "SR125GT"
- },
- {
-  "nameKo": "VOGE SR4MAX",
-  "brand": "VOGE",
-  "model": "SR4MAX"
- },
- {
-  "nameKo": "SYM 조이맥스Z300",
+  "nameKo": "SYM 맥심400i",
   "brand": "SYM",
-  "model": "조이맥스Z300"
+  "model": "맥심400i"
+ },
+ {
+  "nameKo": "SYM 맥심600",
+  "brand": "SYM",
+  "model": "맥심600",
+  "aliases": [
+   "MAXSYM600",
+   "MAXSYM600ABS"
+  ]
+ },
+ {
+  "nameKo": "SYM 미오100",
+  "brand": "SYM",
+  "model": "미오100",
+  "aliases": [
+   "미오"
+  ]
+ },
+ {
+  "nameKo": "SYM 미오115",
+  "brand": "SYM",
+  "model": "미오115",
+  "aliases": [
+   "MIO 115"
+  ]
+ },
+ {
+  "nameKo": "SYM 미오50",
+  "brand": "SYM",
+  "model": "미오50",
+  "aliases": [
+   "미오50"
+  ]
+ },
+ {
+  "nameKo": "SYM 와이드에보125",
+  "brand": "SYM",
+  "model": "와이드에보125",
+  "aliases": [
+   "와이드EVO"
+  ]
+ },
+ {
+  "nameKo": "SYM 제트14",
+  "brand": "SYM",
+  "model": "제트14",
+  "aliases": [
+   "JET14",
+   "JET14 ABS"
+  ]
+ },
+ {
+  "nameKo": "SYM 제트S",
+  "brand": "SYM",
+  "model": "제트S",
+  "aliases": [
+   "JET S"
+  ]
+ },
+ {
+  "nameKo": "SYM 조이맥스125i",
+  "brand": "SYM",
+  "model": "조이맥스125i"
  },
  {
   "nameKo": "SYM 조이맥스300i",
@@ -2430,9 +5265,27 @@
   "model": "조이맥스300i"
  },
  {
-  "nameKo": "SYM 조이맥스125i",
+  "nameKo": "SYM 조이맥스Z125",
   "brand": "SYM",
-  "model": "조이맥스125i"
+  "model": "조이맥스Z125",
+  "aliases": [
+   "JOYMAX Z"
+  ]
+ },
+ {
+  "nameKo": "SYM 조이맥스Z300",
+  "brand": "SYM",
+  "model": "조이맥스Z300"
+ },
+ {
+  "nameKo": "SYM 조이시티125",
+  "brand": "SYM",
+  "model": "조이시티125"
+ },
+ {
+  "nameKo": "SYM 조이시티300",
+  "brand": "SYM",
+  "model": "조이시티300"
  },
  {
   "nameKo": "SYM 조이심125",
@@ -2443,6 +5296,14 @@
   "nameKo": "SYM 조이심300",
   "brand": "SYM",
   "model": "조이심300"
+ },
+ {
+  "nameKo": "SYM 카미온",
+  "brand": "SYM",
+  "model": "카미온",
+  "aliases": [
+   "카미온와이드"
+  ]
  },
  {
   "nameKo": "SYM 크루심125",
@@ -2460,268 +5321,65 @@
   "model": "크루심GT"
  },
  {
-  "nameKo": "SYM 맥심400i",
-  "brand": "SYM",
-  "model": "맥심400i"
- },
- {
-  "nameKo": "SYM 조이시티300",
-  "brand": "SYM",
-  "model": "조이시티300"
- },
- {
-  "nameKo": "SYM 조이시티125",
-  "brand": "SYM",
-  "model": "조이시티125"
- },
- {
   "nameKo": "SYM 포미카125",
   "brand": "SYM",
-  "model": "포미카125"
+  "model": "포미카125",
+  "aliases": [
+   "4MICAEP"
+  ]
  },
  {
-  "nameKo": "킴코 AK550",
-  "brand": "킴코",
-  "model": "AK550"
+  "nameKo": "SYM 피들3",
+  "brand": "SYM",
+  "model": "피들3",
+  "aliases": [
+   "피들3"
+  ]
  },
  {
-  "nameKo": "킴코 익사이팅S400",
-  "brand": "킴코",
-  "model": "익사이팅S400"
+  "nameKo": "TTS 타이거",
+  "brand": "TTS",
+  "model": "타이거",
+  "aliases": [
+   "타이거"
+  ]
  },
  {
-  "nameKo": "킴코 익사이팅400i",
-  "brand": "킴코",
-  "model": "익사이팅400i"
+  "nameKo": "VOGE 300ACX",
+  "brand": "VOGE",
+  "model": "300ACX"
  },
  {
-  "nameKo": "킴코 다운타운300i",
-  "brand": "킴코",
-  "model": "다운타운300i"
+  "nameKo": "VOGE 300RALLY",
+  "brand": "VOGE",
+  "model": "300RALLY"
  },
  {
-  "nameKo": "킴코 다운타운350i",
-  "brand": "킴코",
-  "model": "다운타운350i"
+  "nameKo": "VOGE 500AC",
+  "brand": "VOGE",
+  "model": "500AC"
  },
  {
-  "nameKo": "킴코 DT X360",
-  "brand": "킴코",
-  "model": "DT X360"
+  "nameKo": "VOGE SR1",
+  "brand": "VOGE",
+  "model": "SR1",
+  "aliases": [
+   "SR1"
+  ]
  },
  {
-  "nameKo": "킴코 엑스타운300i",
-  "brand": "킴코",
-  "model": "엑스타운300i"
+  "nameKo": "VOGE SR1-ADV",
+  "brand": "VOGE",
+  "model": "SR1-ADV"
  },
  {
-  "nameKo": "킴코 피플S125",
-  "brand": "킴코",
-  "model": "피플S125"
+  "nameKo": "VOGE SR125GT",
+  "brand": "VOGE",
+  "model": "SR125GT"
  },
  {
-  "nameKo": "킴코 라이크125",
-  "brand": "킴코",
-  "model": "라이크125"
- },
- {
-  "nameKo": "킴코 어질리티125",
-  "brand": "킴코",
-  "model": "어질리티125"
- },
- {
-  "nameKo": "킴코 GP125",
-  "brand": "킴코",
-  "model": "GP125"
- },
- {
-  "nameKo": "킴코 필리125",
-  "brand": "킴코",
-  "model": "필리125"
- },
- {
-  "nameKo": "로얄엔필드 샷건650",
-  "brand": "로얄엔필드",
-  "model": "샷건650"
- },
- {
-  "nameKo": "대림 XQ300",
-  "brand": "대림",
-  "model": "XQ300"
- },
- {
-  "nameKo": "대림 시티100",
-  "brand": "대림",
-  "model": "시티100"
- },
- {
-  "nameKo": "대림 시티에이스",
-  "brand": "대림",
-  "model": "시티에이스"
- },
- {
-  "nameKo": "대림 시티베스트",
-  "brand": "대림",
-  "model": "시티베스트"
- },
- {
-  "nameKo": "대림 CA100",
-  "brand": "대림",
-  "model": "CA100"
- },
- {
-  "nameKo": "대림 베스비",
-  "brand": "대림",
-  "model": "베스비"
- },
- {
-  "nameKo": "대림 데이스타",
-  "brand": "대림",
-  "model": "데이스타"
- },
- {
-  "nameKo": "대림 로드윈125",
-  "brand": "대림",
-  "model": "로드윈125"
- },
- {
-  "nameKo": "대림 로드윈250",
-  "brand": "대림",
-  "model": "로드윈250"
- },
- {
-  "nameKo": "대림 델피노",
-  "brand": "대림",
-  "model": "델피노"
- },
- {
-  "nameKo": "대림 XQ125",
-  "brand": "대림",
-  "model": "XQ125"
- },
- {
-  "nameKo": "대림 XQ250",
-  "brand": "대림",
-  "model": "XQ250"
- },
- {
-  "nameKo": "대림 UHR125",
-  "brand": "대림",
-  "model": "UHR125"
- },
- {
-  "nameKo": "대림 UHR150",
-  "brand": "대림",
-  "model": "UHR150"
- },
- {
-  "nameKo": "대림 VX125",
-  "brand": "대림",
-  "model": "VX125"
- },
- {
-  "nameKo": "대림 VF100",
-  "brand": "대림",
-  "model": "VF100"
- },
- {
-  "nameKo": "대림 UCR100",
-  "brand": "대림",
-  "model": "UCR100"
- },
- {
-  "nameKo": "대림 M보이",
-  "brand": "대림",
-  "model": "M보이"
- },
- {
-  "nameKo": "효성 미라쥬125",
-  "brand": "효성",
-  "model": "미라쥬125"
- },
- {
-  "nameKo": "효성 미라쥬250",
-  "brand": "효성",
-  "model": "미라쥬250"
- },
- {
-  "nameKo": "효성 미라쥬650",
-  "brand": "효성",
-  "model": "미라쥬650"
- },
- {
-  "nameKo": "효성 코멧250",
-  "brand": "효성",
-  "model": "코멧250"
- },
- {
-  "nameKo": "효성 코멧650",
-  "brand": "효성",
-  "model": "코멧650"
- },
- {
-  "nameKo": "KR모터스 DD100",
-  "brand": "KR모터스",
-  "model": "DD100"
- },
- {
-  "nameKo": "KR모터스 DD110",
-  "brand": "KR모터스",
-  "model": "DD110"
- },
- {
-  "nameKo": "KR모터스 그란투스125",
-  "brand": "KR모터스",
-  "model": "그란투스125"
- },
- {
-  "nameKo": "KR모터스 델리S",
-  "brand": "KR모터스",
-  "model": "델리S"
- },
- {
-  "nameKo": "KR모터스 메가젯125",
-  "brand": "KR모터스",
-  "model": "메가젯125"
- },
- {
-  "nameKo": "KR모터스 비버125",
-  "brand": "KR모터스",
-  "model": "비버125"
- },
- {
-  "nameKo": "KR모터스 아퀼라125",
-  "brand": "KR모터스",
-  "model": "아퀼라125"
- },
- {
-  "nameKo": "KR모터스 아퀼라300",
-  "brand": "KR모터스",
-  "model": "아퀼라300"
- },
- {
-  "nameKo": "KR모터스 엑시브250N",
-  "brand": "KR모터스",
-  "model": "엑시브250N"
- },
- {
-  "nameKo": "KR모터스 엑시브250R",
-  "brand": "KR모터스",
-  "model": "엑시브250R"
- },
- {
-  "nameKo": "KR모터스 욜로125",
-  "brand": "KR모터스",
-  "model": "욜로125"
- },
- {
-  "nameKo": "KR모터스 케이윈125",
-  "brand": "KR모터스",
-  "model": "케이윈125"
- },
- {
-  "nameKo": "KR모터스 파트너100",
-  "brand": "KR모터스",
-  "model": "파트너100"
+  "nameKo": "VOGE SR4MAX",
+  "brand": "VOGE",
+  "model": "SR4MAX"
  }
 ]
