@@ -44,7 +44,7 @@ async function fetchAll(gubun) {
 
 mkdirSync('data/raw', { recursive: true });
 
-// 인증일 오름차순으로 정렬해 저장 — 커밋 diff 가 신규 인증만 드러나도록
+// 인증일 오름차순으로 정렬해 저장: 커밋 diff 에 신규 인증만 드러나도록
 const sortKey = (r) => `${r.EMIS_CERTI_DATE ?? r.NOISE_CERTI_DATE ?? ''}|${r.VEH_NM}|${r.VEH_TYPE}`;
 
 const imported = (await fetchAll(1)).sort((a, b) => sortKey(a).localeCompare(sortKey(b)));

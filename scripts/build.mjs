@@ -1,8 +1,8 @@
-// raw(KENCIS 인증) + mapping(사람이 관리) → 배포용 데이터셋 산출.
+// raw(KENCIS 인증)와 mapping(사람이 관리)을 합쳐 배포용 데이터셋을 만든다.
 //
-//   data/models.json      풀 스키마 — 기종별 인증 이력 연결
-//   data/models.min.json  경량판 — 자동완성용 한글 표기 배열
-//   data/unmapped.json    시드에 매핑되지 않은 인증 차명 — 기여 대상 목록
+//   data/models.json      풀 스키마: 기종별 인증 이력 연결
+//   data/models.min.json  경량판: 자동완성용 한글 표기 배열
+//   data/unmapped.json    시드에 매핑되지 않은 인증 차명: 기여 대상 목록
 //
 // 사용: node scripts/build.mjs
 
@@ -15,7 +15,7 @@ const seed = JSON.parse(readFileSync('mapping/models.json', 'utf8'));
 
 const rows = [...imp.map((r) => ({ ...r, _gubun: 'import' })), ...dom.map((r) => ({ ...r, _gubun: 'domestic' }))];
 
-// 비교용 정규화 — 대문자화 + 영숫자·한글만
+// 비교용 정규화: 대문자화 + 영숫자·한글만
 const norm = (s) => (s ?? '').toUpperCase().replace(/[^A-Z0-9가-힣]/g, '');
 
 // 시드 항목마다 매칭 토큰 준비: 모델부 전체 + 영숫자 토큰(3자 이상)
@@ -26,7 +26,7 @@ const entries = seed.map((s) => {
     ...s,
     _token: token,
     _alpha: alphaTokens,
-    // 사람이 매핑한 인증 차명 — 정확 일치로 우선 매칭 (형식코드 ↔ 소비자명 연결)
+    // 사람이 매핑한 인증 차명: 정확 일치로 우선 매칭 (형식코드를 소비자명에 연결)
     _aliasNorm: new Set((s.aliases ?? []).map(norm).filter(Boolean)),
     aliases: new Set(s.aliases ?? []),
     certifications: [],
@@ -76,7 +76,7 @@ const models = entries
   })
   .sort((a, b) => a.nameKo.localeCompare(b.nameKo, 'ko'));
 
-// 미매핑 인증 차명 — 업체·건수·브랜드 후보와 함께 기여 목록으로
+// 미매핑 인증 차명: 업체·건수·브랜드 후보와 함께 기여 목록으로
 const unmappedMap = new Map();
 rows.forEach((r, i) => {
   if (matchedRowIdx.has(i)) return;
