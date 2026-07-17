@@ -2,7 +2,7 @@
 
 > 한국 정발 오토바이 기종 오픈소스 API
 
-국내에 어떤 오토바이가 정식 발매됐는지 조회할 API가 없었습니다. 공공 데이터는 등록 대수 통계 아니면 개별 차량 조회만 가능하였습니다. moto-kr가 그 빈자리를 채웁니다. 키 발급도 호출 제한도 없고 필터 조회는 엣지 함수가 전체 데이터는 CDN이 응답해서 꺼질 서버도 없습니다.
+국내에 어떤 오토바이가 정식 발매됐는지 조회할 API가 없었습니다. 공공 데이터는 등록 대수 통계 아니면 개별 차량 조회만 가능하였습니다. moto-kr가 그 빈자리를 채웁니다.
 
 ## 🚀 API
 
@@ -15,7 +15,7 @@ GET /brands                                  # 브랜드 목록과 기종 수
 GET /meta                                    # 데이터 생성일과 집계
 ```
 
-파라미터 없이 `/models`를 호출하면 인증 이력까지 담긴 전체 데이터를 반환합니다. 필터 파라미터가 하나라도 붙으면 인증 이력 대신 `certificationCount`와 `offices` 요약이 담긴 가벼운 응답이 옵니다.
+파라미터 없이 `/models`를 호출하면 인증 이력까지 담긴 전체 데이터를 반환합니다.
 
 ### 필터 파라미터
 
@@ -31,18 +31,18 @@ GET /meta                                    # 데이터 생성일과 집계
 | `seatHeightMin/Max`, `weightMin/Max`, `fuelCapacityMin/Max`, `powerMin/Max` | 수치 범위 |
 | `electric`, `status`, `q`, `limit`, `offset` | 전기 여부, 검증 상태, 검색어, 페이징 |
 
-원동기 면허(125cc 이하) 기종은 `ccMax=125`로 거르면 됩니다.
+원동기 면허(125cc 이하) 기종은 `ccMax=125`로 필터링할 수 있습니다.
 
-정적 파일을 직접 쓰고 싶다면 CDN 경로도 열려 있습니다: `https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main/data/` 아래에 `models.json`(전문), `models.lite.json`(요약), `models.min.json`(이름 배열), `unmapped.json`(기여 대상)이 있습니다.
+정적 파일을 직접 쓰고 싶다면 CDN 경로도 있습니다: `https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main/data/` 아래에 `models.json`(전문), `models.lite.json`(요약), `models.min.json`(이름 배열), `unmapped.json`(매핑이 완료되지 않은 대상 <- 기여 가능)이 있습니다.
 
-### 응답 예시 (models.json / 전체 덤프)
+### 응답 예시 (models.json)
 
 ```jsonc
 {
   "meta": {
-    "generatedAt": "2026-07-16",
+    "generatedAt": "2026-07-17",
     "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
-    "counts": { "models": 808, "verified": 657, "curated": 151, "certifications": 5605, "unmapped": 96 }
+    "counts": { "models": 808, "verified": 534, "curated": 274, "certifications": 5605, "unmapped": 738 }
   },
   "models": [
     {
