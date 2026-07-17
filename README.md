@@ -6,7 +6,31 @@
 
 ## 🚀 API
 
-베이스 URL은 `https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main`입니다. CORS가 열려 있어 브라우저에서도 바로 호출할 수 있습니다.
+두 가지 방법으로 쓸 수 있습니다. 필터가 필요하면 쿼리 API, 전체 데이터가 필요하면 정적 파일입니다. 둘 다 키 없이 호출하고 CORS가 열려 있습니다.
+
+### 쿼리 API
+
+```
+GET https://moto-kr.<계정>.workers.dev/models?category=크루저&ccMin=800&fuelGrade=premium&emission=euro5
+```
+
+| 파라미터 | 설명 |
+|---|---|
+| `brand`, `category` | 콤마로 복수 지정 (예: `brand=혼다,야마하`) |
+| `ccMin`, `ccMax` | 배기량 범위 (cc) |
+| `from`, `to` | 최초 인증일 범위 (`2020`, `2020-06`, `2020-06-01`) |
+| `cylinders` | 기통수, 콤마로 복수 지정 |
+| `cooling` | `air` / `liquid` / `oil` |
+| `fuelGrade` | `regular` / `premium` |
+| `emission` | `euro5` / `euro4` / `euro3` |
+| `seatHeightMin/Max`, `weightMin/Max`, `fuelCapacityMin/Max`, `powerMin/Max` | 수치 범위 |
+| `electric`, `status`, `q`, `limit`, `offset` | 전기 여부, 검증 상태, 검색어, 페이징 |
+
+`/brands`는 브랜드 목록, `/meta`는 데이터 정보, `/`는 사용법을 반환합니다. 원동기 면허(125cc 이하) 기종은 `ccMax=125`로 거르면 됩니다.
+
+### 정적 파일 (CDN)
+
+베이스 URL은 `https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main`입니다.
 
 ### GET /data/models.min.json
 
@@ -41,6 +65,17 @@ const { names } = await fetch(
       "nameKo": "혼다 CBR650R",
       "brand": "혼다",
       "model": "CBR650R",
+      "displacement": 649,
+      "category": "스포츠",
+      "electric": false,
+      "fuelGrade": "regular",
+      "seatHeight": 810,
+      "weight": 208,
+      "cylinders": 4,
+      "cooling": "liquid",
+      "fuelCapacity": 15.4,
+      "power": 95,
+      "emissionStandard": "euro5",
       "status": "verified",
       "aliases": ["CBR650RA", "CBR650RAC"],
       "firstCertifiedAt": "2018-12-12",
@@ -66,6 +101,14 @@ const { names } = await fetch(
 |---|---|
 | `nameKo` | 한글 통용 표기. 브랜드 + 모델명 |
 | `brand` / `model` | 표기를 나눠 쓸 때 사용 |
+| `displacement` | 실배기량(cc). 전기는 null |
+| `category` | 스포츠/네이키드/크루저/투어러/어드벤처/스쿠터/언더본/오프로드/클래식/미니/3륜 |
+| `electric` | 전기 구동 여부 |
+| `fuelGrade` | `regular`(일반유) / `premium`(고급유 권장). 제조사 매뉴얼 기준 |
+| `seatHeight` / `weight` | 시트고(mm), 중량(kg, 습중량 기준) |
+| `cylinders` / `cooling` | 기통수, 냉각(`air`/`liquid`/`oil`) |
+| `fuelCapacity` / `power` | 연료탱크(L), 최고출력(PS) |
+| `emissionStandard` | `euro3`/`euro4`/`euro5`. 최신 인증의 배출허용기준에서 유도 |
 | `status` | `verified`: 인증 이력이 연결됨 / `curated`: 웹 리서치 근거만 있음 |
 | `aliases` | 이 기종으로 매핑된 인증 차명들. 형식코드 포함 |
 | `firstCertifiedAt` / `lastCertifiedAt` | 최초·최근 인증일. 판매 시기를 가늠할 수 있습니다 |
