@@ -11,7 +11,7 @@
 ### 쿼리 API
 
 ```
-GET https://moto-kr.<계정>.workers.dev/models?category=크루저&ccMin=800&fuelGrade=premium&emission=euro5
+GET https://moto-kr.starhn87.workers.dev/models?category=크루저&ccMin=800&fuelGrade=premium&emission=euro5
 ```
 
 | 파라미터 | 설명 |
