@@ -5,7 +5,10 @@
   "model": "D1",
   "aliases": [
    "D1"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "가브리엘 D2",
@@ -13,7 +16,10 @@
   "model": "D2",
   "aliases": [
    "D2"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "가브리엘 H6",
@@ -21,7 +27,10 @@
   "model": "H6",
   "aliases": [
    "에이치6"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "가브리엘 L1",
@@ -29,7 +38,10 @@
   "model": "L1",
   "aliases": [
    "엘원"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "가브리엘 M6",
@@ -37,7 +49,10 @@
   "model": "M6",
   "aliases": [
    "엠6"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "가와사키 닌자 H2",
@@ -45,7 +60,10 @@
   "model": "닌자 H2",
   "aliases": [
    "NINJA H2"
-  ]
+  ],
+  "displacement": 998,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "가와사키 닌자 H2 SX",
@@ -57,22 +75,34 @@
    "Ninja H2 SX SE +",
    "Ninja H2 SX SE+",
    "NINJA H2 SX SE"
-  ]
+  ],
+  "displacement": 998,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "가와사키 닌자 H2R",
   "brand": "가와사키",
-  "model": "닌자 H2R"
+  "model": "닌자 H2R",
+  "displacement": 998,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "가와사키 닌자 ZX-10R",
   "brand": "가와사키",
-  "model": "닌자 ZX-10R"
+  "model": "닌자 ZX-10R",
+  "displacement": 998,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "가와사키 닌자 ZX-14R",
   "brand": "가와사키",
-  "model": "닌자 ZX-14R"
+  "model": "닌자 ZX-14R",
+  "displacement": 1441,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "가와사키 닌자 ZX-4RR",
@@ -80,7 +110,10 @@
   "model": "닌자 ZX-4RR",
   "aliases": [
    "Ninja ZX-4R"
-  ]
+  ],
+  "displacement": 399,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "가와사키 닌자 ZX-6R",
@@ -88,37 +121,58 @@
   "model": "닌자 ZX-6R",
   "aliases": [
    "ZX600R"
-  ]
+  ],
+  "displacement": 636,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "가와사키 닌자1000SX",
   "brand": "가와사키",
-  "model": "닌자1000SX"
+  "model": "닌자1000SX",
+  "displacement": 1043,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "가와사키 닌자1100SX",
   "brand": "가와사키",
-  "model": "닌자1100SX"
+  "model": "닌자1100SX",
+  "displacement": 1099,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "가와사키 닌자300",
   "brand": "가와사키",
-  "model": "닌자300"
+  "model": "닌자300",
+  "displacement": 296,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "가와사키 닌자400",
   "brand": "가와사키",
-  "model": "닌자400"
+  "model": "닌자400",
+  "displacement": 399,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "가와사키 닌자500",
   "brand": "가와사키",
-  "model": "닌자500"
+  "model": "닌자500",
+  "displacement": 451,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "가와사키 닌자650",
   "brand": "가와사키",
-  "model": "닌자650"
+  "model": "닌자650",
+  "displacement": 649,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "가와사키 메구로 S1",
@@ -126,27 +180,42 @@
   "model": "메구로 S1",
   "aliases": [
    "Meguro S1"
-  ]
+  ],
+  "displacement": 232,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "가와사키 버시스1000",
   "brand": "가와사키",
-  "model": "버시스1000"
+  "model": "버시스1000",
+  "displacement": 1043,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "가와사키 버시스650",
   "brand": "가와사키",
-  "model": "버시스650"
+  "model": "버시스650",
+  "displacement": 649,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "가와사키 버시스X300",
   "brand": "가와사키",
-  "model": "버시스X300"
+  "model": "버시스X300",
+  "displacement": 296,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "가와사키 벌칸S",
   "brand": "가와사키",
-  "model": "벌칸S"
+  "model": "벌칸S",
+  "displacement": 649,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "가와사키 엘리미네이터",
@@ -154,12 +223,18 @@
   "model": "엘리미네이터",
   "aliases": [
    "ELIMINATOR"
-  ]
+  ],
+  "displacement": 451,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "가와사키 KLE500",
   "brand": "가와사키",
-  "model": "KLE500"
+  "model": "KLE500",
+  "displacement": 498,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "가와사키 W230",
@@ -167,57 +242,90 @@
   "model": "W230",
   "aliases": [
    "W230"
-  ]
+  ],
+  "displacement": 232,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "가와사키 W800",
   "brand": "가와사키",
-  "model": "W800"
+  "model": "W800",
+  "displacement": 773,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "가와사키 Z H2",
   "brand": "가와사키",
-  "model": "Z H2"
+  "model": "Z H2",
+  "displacement": 998,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "가와사키 Z1000",
   "brand": "가와사키",
-  "model": "Z1000"
+  "model": "Z1000",
+  "displacement": 1043,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "가와사키 Z1100",
   "brand": "가와사키",
-  "model": "Z1100"
+  "model": "Z1100",
+  "displacement": 1099,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "가와사키 Z400",
   "brand": "가와사키",
-  "model": "Z400"
+  "model": "Z400",
+  "displacement": 399,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "가와사키 Z500",
   "brand": "가와사키",
-  "model": "Z500"
+  "model": "Z500",
+  "displacement": 451,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "가와사키 Z650",
   "brand": "가와사키",
-  "model": "Z650"
+  "model": "Z650",
+  "displacement": 649,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "가와사키 Z650RS",
   "brand": "가와사키",
-  "model": "Z650RS"
+  "model": "Z650RS",
+  "displacement": 649,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "가와사키 Z900",
   "brand": "가와사키",
-  "model": "Z900"
+  "model": "Z900",
+  "displacement": 948,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "가와사키 Z900RS",
   "brand": "가와사키",
-  "model": "Z900RS"
+  "model": "Z900RS",
+  "displacement": 948,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "거상 리베르타S",
@@ -225,7 +333,10 @@
   "model": "리베르타S",
   "aliases": [
    "리베르타-에스"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "고고로 2 유틸리티",
@@ -233,7 +344,10 @@
   "model": "2 유틸리티",
   "aliases": [
    "gogoro2 utility"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "고고로 2 플러스",
@@ -243,7 +357,10 @@
    "gogoro2 plus",
    "gogoro 2 plus",
    "고고로2 플러스"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "고고로 크로스오버 S",
@@ -251,7 +368,10 @@
   "model": "크로스오버 S",
   "aliases": [
    "고고로 크로스오버 에스"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "고고로 S2",
@@ -259,7 +379,10 @@
   "model": "S2",
   "aliases": [
    "고고로 에스2"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "그린모빌리티 바르시아",
@@ -267,7 +390,10 @@
   "model": "바르시아",
   "aliases": [
    "VARCIA"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "그린모빌리티 발렌시아",
@@ -275,7 +401,10 @@
   "model": "발렌시아",
   "aliases": [
    "VALENCIA"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "그린모빌리티 발렌시아 프로",
@@ -283,7 +412,10 @@
   "model": "발렌시아 프로",
   "aliases": [
    "VALENCIA-PRO"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "그린모빌리티 발렌시아2",
@@ -291,7 +423,10 @@
   "model": "발렌시아2",
   "aliases": [
    "VALENCIA-II"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "그린모빌리티 세비아",
@@ -299,7 +434,10 @@
   "model": "세비아",
   "aliases": [
    "SEBIA"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "그린모빌리티 세비아 프로E",
@@ -308,7 +446,10 @@
   "aliases": [
    "세비아-프로E",
    "SEBIA-PROE"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "그린모빌리티 세비아2",
@@ -316,7 +457,10 @@
   "model": "세비아2",
   "aliases": [
    "SEBIA-II"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "그린모빌리티 GMT-V6",
@@ -324,7 +468,10 @@
   "model": "GMT-V6",
   "aliases": [
    "GMT-V6"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "그린모빌리티 GXT-CITY",
@@ -332,7 +479,10 @@
   "model": "GXT-CITY",
   "aliases": [
    "GXT-CITY"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "그린모빌리티 GXT-II",
@@ -340,7 +490,10 @@
   "model": "GXT-II",
   "aliases": [
    "GXT-II"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "그린모빌리티 GXT-PRO",
@@ -348,7 +501,10 @@
   "model": "GXT-PRO",
   "aliases": [
    "GXT-PRO"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "그린모빌리티 GXT-PROX",
@@ -356,7 +512,10 @@
   "model": "GXT-PROX",
   "aliases": [
    "GXT-PROX"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "뉴웨이 S1",
@@ -364,7 +523,10 @@
   "model": "S1",
   "aliases": [
    "뉴웨이 에스1"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "니우 N카고",
@@ -372,7 +534,10 @@
   "model": "N카고",
   "aliases": [
    "NIU-NCARGO"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "니우 NPro",
@@ -382,7 +547,10 @@
    "NIU-NPRO",
    "NIU-NPROSHARINGB26",
    "NIU-Npro"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "니우 NQi GTS",
@@ -390,7 +558,10 @@
   "model": "NQi GTS",
   "aliases": [
    "NIU-NQiGTS"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "니우 UPro",
@@ -398,7 +569,10 @@
   "model": "UPro",
   "aliases": [
    "NIU-UPRO"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "닷스테이션 EV-C1",
@@ -406,7 +580,10 @@
   "model": "EV-C1",
   "aliases": [
    "이브이-씨1"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "대동모빌리티 DDM1",
@@ -414,7 +591,10 @@
   "model": "DDM1",
   "aliases": [
    "디디엠원"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "대동모빌리티 GS140",
@@ -422,7 +602,10 @@
   "model": "GS140",
   "aliases": [
    "지에스140"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "대동모빌리티 GS143",
@@ -430,22 +613,34 @@
   "model": "GS143",
   "aliases": [
    "지에스143"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "대림 데이스타",
   "brand": "대림",
-  "model": "데이스타"
+  "model": "데이스타",
+  "displacement": 124,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "대림 델피노",
   "brand": "대림",
-  "model": "델피노"
+  "model": "델피노",
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 로드윈125",
   "brand": "대림",
-  "model": "로드윈125"
+  "model": "로드윈125",
+  "displacement": 124,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "대림 로드윈250",
@@ -453,12 +648,18 @@
   "model": "로드윈250",
   "aliases": [
    "브이제이에프이백오십제트"
-  ]
+  ],
+  "displacement": 249,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "대림 베스비",
   "brand": "대림",
-  "model": "베스비"
+  "model": "베스비",
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 비글",
@@ -466,12 +667,18 @@
   "model": "비글",
   "aliases": [
    "TS50"
-  ]
+  ],
+  "displacement": 49,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 시티100",
   "brand": "대림",
-  "model": "시티100"
+  "model": "시티100",
+  "displacement": 97,
+  "category": "언더본",
+  "electric": false
  },
  {
   "nameKo": "대림 시티베스트",
@@ -483,12 +690,18 @@
    "CB115PD",
    "CB115D",
    "CB115"
-  ]
+  ],
+  "displacement": 114,
+  "category": "언더본",
+  "electric": false
  },
  {
   "nameKo": "대림 시티에이스",
   "brand": "대림",
-  "model": "시티에이스"
+  "model": "시티에이스",
+  "displacement": 109,
+  "category": "언더본",
+  "electric": false
  },
  {
   "nameKo": "대림 에디",
@@ -497,7 +710,10 @@
   "aliases": [
    "ES50",
    "ES50D"
-  ]
+  ],
+  "displacement": 49,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 에이포",
@@ -505,7 +721,10 @@
   "model": "에이포",
   "aliases": [
    "SJ50R"
-  ]
+  ],
+  "displacement": 49,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 위티50",
@@ -515,7 +734,10 @@
    "DS50F",
    "DS50H",
    "DS50"
-  ]
+  ],
+  "displacement": 49,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 위티80",
@@ -526,7 +748,10 @@
    "DS80K",
    "DS80H",
    "DS80"
-  ]
+  ],
+  "displacement": 72,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 윌리",
@@ -534,7 +759,10 @@
   "model": "윌리",
   "aliases": [
    "ES80"
-  ]
+  ],
+  "displacement": 72,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 커플",
@@ -542,7 +770,10 @@
   "model": "커플",
   "aliases": [
    "SW50"
-  ]
+  ],
+  "displacement": 49,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 ATS50",
@@ -550,12 +781,18 @@
   "model": "ATS50",
   "aliases": [
    "AT50R"
-  ]
+  ],
+  "displacement": 49,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 CA100",
   "brand": "대림",
-  "model": "CA100"
+  "model": "CA100",
+  "displacement": 99,
+  "category": "언더본",
+  "electric": false
  },
  {
   "nameKo": "대림 e시티",
@@ -565,7 +802,10 @@
    "ED-1X",
    "ED-1B",
    "ED-1A"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "대림 EM-1",
@@ -575,12 +815,18 @@
    "EM-1S",
    "EM-1D",
    "EM-1"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "대림 M보이",
   "brand": "대림",
-  "model": "M보이"
+  "model": "M보이",
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 Q3",
@@ -588,12 +834,18 @@
   "model": "Q3",
   "aliases": [
    "에스브이이백오십"
-  ]
+  ],
+  "displacement": 249,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 UCR100",
   "brand": "대림",
-  "model": "UCR100"
+  "model": "UCR100",
+  "displacement": 99,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 UH115",
@@ -601,42 +853,66 @@
   "model": "UH115",
   "aliases": [
    "UH115"
-  ]
+  ],
+  "displacement": 114,
+  "category": "언더본",
+  "electric": false
  },
  {
   "nameKo": "대림 UHR125",
   "brand": "대림",
-  "model": "UHR125"
+  "model": "UHR125",
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 UHR150",
   "brand": "대림",
-  "model": "UHR150"
+  "model": "UHR150",
+  "displacement": 149,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 VF100",
   "brand": "대림",
-  "model": "VF100"
+  "model": "VF100",
+  "displacement": 99,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 VX125",
   "brand": "대림",
-  "model": "VX125"
+  "model": "VX125",
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 XQ125",
   "brand": "대림",
-  "model": "XQ125"
+  "model": "XQ125",
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 XQ250",
   "brand": "대림",
-  "model": "XQ250"
+  "model": "XQ250",
+  "displacement": 249,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "대림 XQ300",
   "brand": "대림",
-  "model": "XQ300"
+  "model": "XQ300",
+  "displacement": 288,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "두카티 1098",
@@ -646,7 +922,10 @@
    "1098S",
    "1098",
    "1098R"
-  ]
+  ],
+  "displacement": 1099,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 1198",
@@ -658,7 +937,10 @@
    "1198R CORSE",
    "1198",
    "1198S"
-  ]
+  ],
+  "displacement": 1198,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 749",
@@ -667,7 +949,10 @@
   "aliases": [
    "749R",
    "749"
-  ]
+  ],
+  "displacement": 748,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 848",
@@ -677,7 +962,10 @@
    "848 EVO CORSE SE",
    "848EVO",
    "848"
-  ]
+  ],
+  "displacement": 849,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 999",
@@ -687,7 +975,10 @@
    "999S Monoposto",
    "999R XEROX",
    "999S MONOPOSTO"
-  ]
+  ],
+  "displacement": 998,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 데저트X",
@@ -696,7 +987,10 @@
   "aliases": [
    "Desert X",
    "DesertX Rally"
-  ]
+  ],
+  "displacement": 937,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "두카티 디아벨1200",
@@ -710,12 +1004,18 @@
    "DIAVEL",
    "DIAVEL CARBON",
    "DIAVEL STRADA"
-  ]
+  ],
+  "displacement": 1198,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "두카티 디아벨1260",
   "brand": "두카티",
-  "model": "디아벨1260"
+  "model": "디아벨1260",
+  "displacement": 1262,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "두카티 디아벨V4",
@@ -724,17 +1024,26 @@
   "aliases": [
    "Diavel V4",
    "Diavel for Bentley Mulliner"
-  ]
+  ],
+  "displacement": 1158,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "두카티 멀티스트라다1200",
   "brand": "두카티",
-  "model": "멀티스트라다1200"
+  "model": "멀티스트라다1200",
+  "displacement": 1198,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "두카티 멀티스트라다1260",
   "brand": "두카티",
-  "model": "멀티스트라다1260"
+  "model": "멀티스트라다1260",
+  "displacement": 1262,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "두카티 멀티스트라다620",
@@ -742,12 +1051,18 @@
   "model": "멀티스트라다620",
   "aliases": [
    "MTS620"
-  ]
+  ],
+  "displacement": 618,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "두카티 멀티스트라다950",
   "brand": "두카티",
-  "model": "멀티스트라다950"
+  "model": "멀티스트라다950",
+  "displacement": 937,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "두카티 멀티스트라다V2",
@@ -756,7 +1071,10 @@
   "aliases": [
    "Multistrada V2",
    "Multistrada V2 S"
-  ]
+  ],
+  "displacement": 937,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "두카티 멀티스트라다V4",
@@ -770,7 +1088,10 @@
    "MULTISTRADA V4 PIKES PEAK",
    "MULTISTRADA V4 S",
    "MULTISTRADA V4"
-  ]
+  ],
+  "displacement": 1158,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "두카티 몬스터",
@@ -784,12 +1105,18 @@
    "Monster SP",
    "MONSTER",
    "MONSTER PLUS"
-  ]
+  ],
+  "displacement": 937,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 몬스터1200",
   "brand": "두카티",
-  "model": "몬스터1200"
+  "model": "몬스터1200",
+  "displacement": 1198,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 몬스터695",
@@ -797,7 +1124,10 @@
   "model": "몬스터695",
   "aliases": [
    "M695"
-  ]
+  ],
+  "displacement": 695,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 몬스터696",
@@ -808,7 +1138,10 @@
    "M696 Plus",
    "M696",
    "M696 PLUS"
-  ]
+  ],
+  "displacement": 696,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 몬스터796",
@@ -816,17 +1149,26 @@
   "model": "몬스터796",
   "aliases": [
    "M796 ABS"
-  ]
+  ],
+  "displacement": 803,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 몬스터797",
   "brand": "두카티",
-  "model": "몬스터797"
+  "model": "몬스터797",
+  "displacement": 803,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 몬스터821",
   "brand": "두카티",
-  "model": "몬스터821"
+  "model": "몬스터821",
+  "displacement": 821,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 몬스터S4RS",
@@ -834,7 +1176,10 @@
   "model": "몬스터S4RS",
   "aliases": [
    "S4Rs"
-  ]
+  ],
+  "displacement": 998,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 슈퍼레제라V4",
@@ -842,7 +1187,10 @@
   "model": "슈퍼레제라V4",
   "aliases": [
    "Superleggera V4"
-  ]
+  ],
+  "displacement": 998,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 슈퍼스포츠",
@@ -851,17 +1199,26 @@
   "aliases": [
    "SuperSport S",
    "SuperSport"
-  ]
+  ],
+  "displacement": 937,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 슈퍼스포츠950",
   "brand": "두카티",
-  "model": "슈퍼스포츠950"
+  "model": "슈퍼스포츠950",
+  "displacement": 937,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 스크램블러1100",
   "brand": "두카티",
-  "model": "스크램블러1100"
+  "model": "스크램블러1100",
+  "displacement": 1079,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "두카티 스크램블러나이트시프트",
@@ -870,7 +1227,10 @@
   "aliases": [
    "Scrambler Nightshift",
    "SCRAMBLER NIGHTSHIFT"
-  ]
+  ],
+  "displacement": 803,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "두카티 스크램블러데저트슬레드",
@@ -880,12 +1240,18 @@
    "SCRAMBLER FASTHOUSE",
    "SCRAMBLER DS",
    "Scrambler Desert Sled"
-  ]
+  ],
+  "displacement": 803,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "두카티 스크램블러식스티2",
   "brand": "두카티",
-  "model": "스크램블러식스티2"
+  "model": "스크램블러식스티2",
+  "displacement": 399,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "두카티 스크램블러아이콘",
@@ -901,7 +1267,10 @@
    "SCRAMBLER ICON DARK",
    "SCRAMBLER ICON BRIGHT",
    "Scrambler Italia Independent"
-  ]
+  ],
+  "displacement": 803,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "두카티 스크램블러어반모타드",
@@ -909,7 +1278,10 @@
   "model": "스크램블러어반모타드",
   "aliases": [
    "SCRAMBLER URBAN MOTARD"
-  ]
+  ],
+  "displacement": 803,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "두카티 스크램블러어반엔듀로",
@@ -917,7 +1289,10 @@
   "model": "스크램블러어반엔듀로",
   "aliases": [
    "Scrambler Urban Enduro"
-  ]
+  ],
+  "displacement": 803,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "두카티 스크램블러카페레이서",
@@ -925,7 +1300,10 @@
   "model": "스크램블러카페레이서",
   "aliases": [
    "Scrambler Cafe Racer"
-  ]
+  ],
+  "displacement": 803,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "두카티 스크램블러클래식",
@@ -933,7 +1311,10 @@
   "model": "스크램블러클래식",
   "aliases": [
    "Scrambler Classic"
-  ]
+  ],
+  "displacement": 803,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "두카티 스크램블러풀스로틀",
@@ -942,7 +1323,10 @@
   "aliases": [
    "Scrambler Full Throttle",
    "Scrambler Full throttle"
-  ]
+  ],
+  "displacement": 803,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "두카티 스크램블러플랫트랙프로",
@@ -950,7 +1334,10 @@
   "model": "스크램블러플랫트랙프로",
   "aliases": [
    "Scrambler Flat Track Pro"
-  ]
+  ],
+  "displacement": 803,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "두카티 스트리트파이터1098",
@@ -959,7 +1346,10 @@
   "aliases": [
    "STREETFIGHTER",
    "STREETFIGHTER S"
-  ]
+  ],
+  "displacement": 1099,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 스트리트파이터848",
@@ -967,7 +1357,10 @@
   "model": "스트리트파이터848",
   "aliases": [
    "STREETFIGHTER 848"
-  ]
+  ],
+  "displacement": 849,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 스트리트파이터V2",
@@ -976,7 +1369,10 @@
   "aliases": [
    "Streetfighter V2",
    "Streetfighter V2 S"
-  ]
+  ],
+  "displacement": 955,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 스트리트파이터V4",
@@ -990,7 +1386,10 @@
    "STREETFIGHTER V4 SP",
    "STREETFIGHTER V4",
    "STREETFIGHTER V4 S"
-  ]
+  ],
+  "displacement": 1103,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 파니갈레1199",
@@ -1002,12 +1401,18 @@
    "1199 PANIGALE",
    "1199 PANIGALE S",
    "1199 PANIGALE S TRICOLORE"
-  ]
+  ],
+  "displacement": 1198,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 파니갈레1299",
   "brand": "두카티",
-  "model": "파니갈레1299"
+  "model": "파니갈레1299",
+  "displacement": 1285,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 파니갈레899",
@@ -1015,12 +1420,18 @@
   "model": "파니갈레899",
   "aliases": [
    "899 PANIGALE"
-  ]
+  ],
+  "displacement": 898,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 파니갈레959",
   "brand": "두카티",
-  "model": "파니갈레959"
+  "model": "파니갈레959",
+  "displacement": 955,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 파니갈레R",
@@ -1028,7 +1439,10 @@
   "model": "파니갈레R",
   "aliases": [
    "Panigale R"
-  ]
+  ],
+  "displacement": 1198,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 파니갈레V2",
@@ -1041,7 +1455,10 @@
    "Panigale V2 S",
    "PANIGALE V2",
    "PANIGALE V2 BAYLISS"
-  ]
+  ],
+  "displacement": 955,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 파니갈레V4",
@@ -1058,12 +1475,18 @@
    "PANIGALE V4 S",
    "Panigale V4 S Corse",
    "Panigale V4 Speciale"
-  ]
+  ],
+  "displacement": 1103,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 파니갈레V4R",
   "brand": "두카티",
-  "model": "파니갈레V4R"
+  "model": "파니갈레V4R",
+  "displacement": 998,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "두카티 포뮬러73",
@@ -1071,12 +1494,18 @@
   "model": "포뮬러73",
   "aliases": [
    "Formula 73"
-  ]
+  ],
+  "displacement": 803,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "두카티 하이퍼모타드698모노",
   "brand": "두카티",
-  "model": "하이퍼모타드698모노"
+  "model": "하이퍼모타드698모노",
+  "displacement": 659,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 하이퍼모타드796",
@@ -1084,7 +1513,10 @@
   "model": "하이퍼모타드796",
   "aliases": [
    "HYM796"
-  ]
+  ],
+  "displacement": 803,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 하이퍼모타드821",
@@ -1093,17 +1525,26 @@
   "aliases": [
    "HYPERMOTARD",
    "HYPERMOTARD SP"
-  ]
+  ],
+  "displacement": 821,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 하이퍼모타드939",
   "brand": "두카티",
-  "model": "하이퍼모타드939"
+  "model": "하이퍼모타드939",
+  "displacement": 937,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 하이퍼모타드950",
   "brand": "두카티",
-  "model": "하이퍼모타드950"
+  "model": "하이퍼모타드950",
+  "displacement": 937,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 하이퍼모타드V2",
@@ -1112,7 +1553,10 @@
   "aliases": [
    "Hypermotard V2",
    "Hypermotard V2 SP"
-  ]
+  ],
+  "displacement": 890,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "두카티 하이퍼스트라다",
@@ -1120,7 +1564,10 @@
   "model": "하이퍼스트라다",
   "aliases": [
    "HYPERSTRADA"
-  ]
+  ],
+  "displacement": 821,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "두카티 ST3",
@@ -1128,7 +1575,10 @@
   "model": "ST3",
   "aliases": [
    "ST3SABS"
-  ]
+  ],
+  "displacement": 992,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "두카티 ST4S",
@@ -1136,7 +1586,10 @@
   "model": "ST4S",
   "aliases": [
    "ST4S ABS"
-  ]
+  ],
+  "displacement": 996,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "두카티 X디아벨",
@@ -1149,7 +1602,10 @@
    "XDIAVEL BLACK STAR",
    "XDiavel",
    "XDiavel S"
-  ]
+  ],
+  "displacement": 1262,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "두카티 X디아벨V4",
@@ -1157,82 +1613,130 @@
   "model": "X디아벨V4",
   "aliases": [
    "XDiavel V4"
-  ]
+  ],
+  "displacement": 1158,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 게릴라450",
   "brand": "로얄엔필드",
-  "model": "게릴라450"
+  "model": "게릴라450",
+  "displacement": 452,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 고안 클래식350",
   "brand": "로얄엔필드",
-  "model": "고안 클래식350"
+  "model": "고안 클래식350",
+  "displacement": 349,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 메테오350",
   "brand": "로얄엔필드",
-  "model": "메테오350"
+  "model": "메테오350",
+  "displacement": 349,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 베어650",
   "brand": "로얄엔필드",
-  "model": "베어650"
+  "model": "베어650",
+  "displacement": 648,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 뷸렛350",
   "brand": "로얄엔필드",
-  "model": "뷸렛350"
+  "model": "뷸렛350",
+  "displacement": 349,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 샷건650",
   "brand": "로얄엔필드",
-  "model": "샷건650"
+  "model": "샷건650",
+  "displacement": 648,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 슈퍼메테오650",
   "brand": "로얄엔필드",
-  "model": "슈퍼메테오650"
+  "model": "슈퍼메테오650",
+  "displacement": 648,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 스크램411",
   "brand": "로얄엔필드",
-  "model": "스크램411"
+  "model": "스크램411",
+  "displacement": 411,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 인터셉터650",
   "brand": "로얄엔필드",
-  "model": "인터셉터650"
+  "model": "인터셉터650",
+  "displacement": 648,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 컨티넨탈GT650",
   "brand": "로얄엔필드",
-  "model": "컨티넨탈GT650"
+  "model": "컨티넨탈GT650",
+  "displacement": 648,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 클래식350",
   "brand": "로얄엔필드",
-  "model": "클래식350"
+  "model": "클래식350",
+  "displacement": 349,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 클래식650",
   "brand": "로얄엔필드",
-  "model": "클래식650"
+  "model": "클래식650",
+  "displacement": 648,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 헌터350",
   "brand": "로얄엔필드",
-  "model": "헌터350"
+  "model": "헌터350",
+  "displacement": 349,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 히말라얀",
   "brand": "로얄엔필드",
-  "model": "히말라얀"
+  "model": "히말라얀",
+  "displacement": 411,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "로얄엔필드 히말라얀450",
   "brand": "로얄엔필드",
-  "model": "히말라얀450"
+  "model": "히말라얀450",
+  "displacement": 452,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "맥퀴엄",
@@ -1240,7 +1744,10 @@
   "model": "맥퀴엄",
   "aliases": [
    "맥퀴엄"
-  ]
+  ],
+  "displacement": 244,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "모노모빌리티 MO-1",
@@ -1248,7 +1755,10 @@
   "model": "MO-1",
   "aliases": [
    "엠오-1"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "모터하이 KGM",
@@ -1256,7 +1766,10 @@
   "model": "KGM",
   "aliases": [
    "KGM"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "모터하이 KGM2",
@@ -1264,12 +1777,18 @@
   "model": "KGM2",
   "aliases": [
    "케이지엠2"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "모토구찌 V100만델로",
   "brand": "모토구찌",
-  "model": "V100만델로"
+  "model": "V100만델로",
+  "displacement": 1042,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "모토구찌 V7",
@@ -1284,12 +1803,18 @@
    "V7III CARBON",
    "V7III MILANO",
    "V7III ROUGH"
-  ]
+  ],
+  "displacement": 853,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "모토구찌 V85TT",
   "brand": "모토구찌",
-  "model": "V85TT"
+  "model": "V85TT",
+  "displacement": 853,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "모토구찌 V9로머",
@@ -1297,7 +1822,10 @@
   "model": "V9로머",
   "aliases": [
    "V9 ROAMER"
-  ]
+  ],
+  "displacement": 853,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "모토구찌 V9바버",
@@ -1305,7 +1833,10 @@
   "model": "V9바버",
   "aliases": [
    "V9 BOBBER"
-  ]
+  ],
+  "displacement": 853,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "모토벨로 MV3",
@@ -1313,7 +1844,10 @@
   "model": "MV3",
   "aliases": [
    "MV3"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "모헤닉 UB46E",
@@ -1321,7 +1855,10 @@
   "model": "UB46E",
   "aliases": [
    "UB46E"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "모히또",
@@ -1329,7 +1866,10 @@
   "model": "모히또",
   "aliases": [
    "mojito"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "미소바이크",
@@ -1337,57 +1877,90 @@
   "model": "미소바이크",
   "aliases": [
    "미소바이크"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "베넬리 502C",
   "brand": "베넬리",
-  "model": "502C"
+  "model": "502C",
+  "displacement": 500,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "베넬리 레온치노125",
   "brand": "베넬리",
-  "model": "레온치노125"
+  "model": "레온치노125",
+  "displacement": 125,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "베넬리 레온치노250",
   "brand": "베넬리",
-  "model": "레온치노250"
+  "model": "레온치노250",
+  "displacement": 249,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "베넬리 레온치노500",
   "brand": "베넬리",
-  "model": "레온치노500"
+  "model": "레온치노500",
+  "displacement": 500,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "베넬리 레온치노800",
   "brand": "베넬리",
-  "model": "레온치노800"
+  "model": "레온치노800",
+  "displacement": 754,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "베넬리 비에스테250XDV",
   "brand": "베넬리",
-  "model": "비에스테250XDV"
+  "model": "비에스테250XDV",
+  "displacement": 250,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "베넬리 임페리알레400",
   "brand": "베넬리",
-  "model": "임페리알레400"
+  "model": "임페리알레400",
+  "displacement": 374,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "베넬리 파나레아125",
   "brand": "베넬리",
-  "model": "파나레아125"
+  "model": "파나레아125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "베넬리 RKF125",
   "brand": "베넬리",
-  "model": "RKF125"
+  "model": "RKF125",
+  "displacement": 125,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "베넬리 SR125",
   "brand": "베넬리",
-  "model": "SR125"
+  "model": "SR125",
+  "displacement": 125,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "베넬리 TNT1130",
@@ -1395,12 +1968,18 @@
   "model": "TNT1130",
   "aliases": [
    "TNT1130"
-  ]
+  ],
+  "displacement": 1131,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "베넬리 TNT125",
   "brand": "베넬리",
-  "model": "TNT125"
+  "model": "TNT125",
+  "displacement": 125,
+  "category": "미니",
+  "electric": false
  },
  {
   "nameKo": "베넬리 TNT899",
@@ -1408,52 +1987,82 @@
   "model": "TNT899",
   "aliases": [
    "TNT899"
-  ]
+  ],
+  "displacement": 898,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "베넬리 TRK502",
   "brand": "베넬리",
-  "model": "TRK502"
+  "model": "TRK502",
+  "displacement": 500,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "베넬리 TRK502X",
   "brand": "베넬리",
-  "model": "TRK502X"
+  "model": "TRK502X",
+  "displacement": 500,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "베넬리 VIESTE125",
   "brand": "베넬리",
-  "model": "VIESTE125"
+  "model": "VIESTE125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "베스파 946",
   "brand": "베스파",
-  "model": "946"
+  "model": "946",
+  "displacement": 155,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "베스파 스프린트125",
   "brand": "베스파",
-  "model": "스프린트125"
+  "model": "스프린트125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "베스파 스프린트150",
   "brand": "베스파",
-  "model": "스프린트150"
+  "model": "스프린트150",
+  "displacement": 155,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "베스파 프리마베라125",
   "brand": "베스파",
-  "model": "프리마베라125"
+  "model": "프리마베라125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "베스파 프리마베라150",
   "brand": "베스파",
-  "model": "프리마베라150"
+  "model": "프리마베라150",
+  "displacement": 155,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "베스파 GTS125",
   "brand": "베스파",
-  "model": "GTS125"
+  "model": "GTS125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "베스파 GTS300",
@@ -1461,7 +2070,10 @@
   "model": "GTS300",
   "aliases": [
    "SEI GIORNI"
-  ]
+  ],
+  "displacement": 278,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "베스파 GTV300",
@@ -1469,12 +2081,18 @@
   "model": "GTV300",
   "aliases": [
    "GTV"
-  ]
+  ],
+  "displacement": 278,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "베스파 LX125",
   "brand": "베스파",
-  "model": "LX125"
+  "model": "LX125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "블루샤크 솔로에라",
@@ -1482,7 +2100,10 @@
   "model": "솔로에라",
   "aliases": [
    "솔로에라"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "블루샤크 H1",
@@ -1490,7 +2111,10 @@
   "model": "H1",
   "aliases": [
    "H1"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "블루샤크 R1",
@@ -1498,7 +2122,10 @@
   "model": "R1",
   "aliases": [
    "R1"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "블루샤크 R1 라이트",
@@ -1506,7 +2133,10 @@
   "model": "R1 라이트",
   "aliases": [
    "R1 Lite"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "블루샤크 R1K",
@@ -1514,7 +2144,10 @@
   "model": "R1K",
   "aliases": [
    "R1K"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "비엘챠퍼스 BL118B",
@@ -1522,7 +2155,10 @@
   "model": "BL118B",
   "aliases": [
    "비엘일일팔비"
-  ]
+  ],
+  "displacement": null,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "비엘챠퍼스 BL1345D",
@@ -1530,7 +2166,10 @@
   "model": "BL1345D",
   "aliases": [
    "비엘일삼사오디"
-  ]
+  ],
+  "displacement": null,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "비엘챠퍼스 BL318R",
@@ -1538,7 +2177,10 @@
   "model": "BL318R",
   "aliases": [
    "비엘삼일팔알"
-  ]
+  ],
+  "displacement": null,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "비엘챠퍼스 BL518SP",
@@ -1546,7 +2188,10 @@
   "model": "BL518SP",
   "aliases": [
    "비엘오일팔에스피"
-  ]
+  ],
+  "displacement": null,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "비엘챠퍼스 BL618S",
@@ -1554,7 +2199,10 @@
   "model": "BL618S",
   "aliases": [
    "비엘육일팔에스"
-  ]
+  ],
+  "displacement": null,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "비엘챠퍼스 BL918",
@@ -1563,7 +2211,10 @@
   "aliases": [
    "BL918",
    "비엘구일팔"
-  ]
+  ],
+  "displacement": null,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "비엘챠퍼스 BL918GR",
@@ -1571,7 +2222,10 @@
   "model": "BL918GR",
   "aliases": [
    "비엘구일팔지알"
-  ]
+  ],
+  "displacement": null,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "비엘챠퍼스 BL918MS",
@@ -1579,7 +2233,10 @@
   "model": "BL918MS",
   "aliases": [
    "비엘구일팔엠에스"
-  ]
+  ],
+  "displacement": null,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "비엘챠퍼스 BL918RH",
@@ -1587,7 +2244,10 @@
   "model": "BL918RH",
   "aliases": [
    "비엘구일팔알에이치"
-  ]
+  ],
+  "displacement": null,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "비엘챠퍼스 BLHC",
@@ -1595,7 +2255,10 @@
   "model": "BLHC",
   "aliases": [
    "비엘에이치씨"
-  ]
+  ],
+  "displacement": null,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "비엘챠퍼스 BLST",
@@ -1603,7 +2266,10 @@
   "model": "BLST",
   "aliases": [
    "비엘에스티"
-  ]
+  ],
+  "displacement": null,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "샤오다오 잉",
@@ -1611,7 +2277,10 @@
   "model": "잉",
   "aliases": [
    "잉"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "세븐모빌리티 이노",
@@ -1619,7 +2288,10 @@
   "model": "이노",
   "aliases": [
    "이노"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "수퍼렉스 i6",
@@ -1628,7 +2300,10 @@
   "aliases": [
    "에이치아이아이식스",
    "에이치아이 아이식스"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "슈퍼소코 CPX",
@@ -1636,7 +2311,10 @@
   "model": "CPX",
   "aliases": [
    "SUPER SOCO CPX"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "슈퍼소코 TC",
@@ -1644,7 +2322,10 @@
   "model": "TC",
   "aliases": [
    "SUPER SOCO TC1"
-  ]
+  ],
+  "displacement": null,
+  "category": "클래식",
+  "electric": true
  },
  {
   "nameKo": "슈퍼소코 TC맥스",
@@ -1652,102 +2333,162 @@
   "model": "TC맥스",
   "aliases": [
    "슈퍼 쏘코 티씨 맥스"
-  ]
+  ],
+  "displacement": null,
+  "category": "클래식",
+  "electric": true
  },
  {
   "nameKo": "스즈키 버그만 스트리트125",
   "brand": "스즈키",
-  "model": "버그만 스트리트125"
+  "model": "버그만 스트리트125",
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "스즈키 버그만125",
   "brand": "스즈키",
-  "model": "버그만125"
+  "model": "버그만125",
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "스즈키 버그만200",
   "brand": "스즈키",
-  "model": "버그만200"
+  "model": "버그만200",
+  "displacement": 200,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "스즈키 버그만400",
   "brand": "스즈키",
-  "model": "버그만400"
+  "model": "버그만400",
+  "displacement": 399,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "스즈키 버그만650",
   "brand": "스즈키",
-  "model": "버그만650"
+  "model": "버그만650",
+  "displacement": 638,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "스즈키 브이스트롬1000",
   "brand": "스즈키",
-  "model": "브이스트롬1000"
+  "model": "브이스트롬1000",
+  "displacement": 1037,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "스즈키 브이스트롬1050",
   "brand": "스즈키",
-  "model": "브이스트롬1050"
+  "model": "브이스트롬1050",
+  "displacement": 1037,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "스즈키 브이스트롬250",
   "brand": "스즈키",
-  "model": "브이스트롬250"
+  "model": "브이스트롬250",
+  "displacement": 248,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "스즈키 브이스트롬250SX",
   "brand": "스즈키",
-  "model": "브이스트롬250SX"
+  "model": "브이스트롬250SX",
+  "displacement": 249,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "스즈키 브이스트롬650",
   "brand": "스즈키",
-  "model": "브이스트롬650"
+  "model": "브이스트롬650",
+  "displacement": 645,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "스즈키 브이스트롬800DE",
   "brand": "스즈키",
-  "model": "브이스트롬800DE"
+  "model": "브이스트롬800DE",
+  "displacement": 776,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "스즈키 아베니스125",
   "brand": "스즈키",
-  "model": "아베니스125"
+  "model": "아베니스125",
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "스즈키 어드레스125",
   "brand": "스즈키",
-  "model": "어드레스125"
+  "model": "어드레스125",
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "스즈키 카타나",
   "brand": "스즈키",
-  "model": "카타나"
+  "model": "카타나",
+  "displacement": 999,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "스즈키 하야부사",
   "brand": "스즈키",
-  "model": "하야부사"
+  "model": "하야부사",
+  "displacement": 1340,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "스즈키 DR-Z125L",
   "brand": "스즈키",
-  "model": "DR-Z125L"
+  "model": "DR-Z125L",
+  "displacement": 124,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "스즈키 DR-Z4S",
   "brand": "스즈키",
-  "model": "DR-Z4S"
+  "model": "DR-Z4S",
+  "displacement": 398,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "스즈키 DR-Z4SM",
   "brand": "스즈키",
-  "model": "DR-Z4SM"
+  "model": "DR-Z4SM",
+  "displacement": 398,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "스즈키 DR-Z70",
   "brand": "스즈키",
-  "model": "DR-Z70"
+  "model": "DR-Z70",
+  "displacement": 67,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSR600",
@@ -1756,37 +2497,58 @@
   "aliases": [
    "GSR600A",
    "GSR600"
-  ]
+  ],
+  "displacement": 599,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSX-8R",
   "brand": "스즈키",
-  "model": "GSX-8R"
+  "model": "GSX-8R",
+  "displacement": 776,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSX-8S",
   "brand": "스즈키",
-  "model": "GSX-8S"
+  "model": "GSX-8S",
+  "displacement": 776,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSX-8T",
   "brand": "스즈키",
-  "model": "GSX-8T"
+  "model": "GSX-8T",
+  "displacement": 776,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSX-8TT",
   "brand": "스즈키",
-  "model": "GSX-8TT"
+  "model": "GSX-8TT",
+  "displacement": 776,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSX-R1000",
   "brand": "스즈키",
-  "model": "GSX-R1000"
+  "model": "GSX-R1000",
+  "displacement": 999,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSX-R125",
   "brand": "스즈키",
-  "model": "GSX-R125"
+  "model": "GSX-R125",
+  "displacement": 124,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSX-R600",
@@ -1794,57 +2556,90 @@
   "model": "GSX-R600",
   "aliases": [
    "GSX-R600"
-  ]
+  ],
+  "displacement": 599,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSX-S1000",
   "brand": "스즈키",
-  "model": "GSX-S1000"
+  "model": "GSX-S1000",
+  "displacement": 999,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSX-S1000F",
   "brand": "스즈키",
-  "model": "GSX-S1000F"
+  "model": "GSX-S1000F",
+  "displacement": 999,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSX-S1000GT",
   "brand": "스즈키",
-  "model": "GSX-S1000GT"
+  "model": "GSX-S1000GT",
+  "displacement": 999,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSX-S1000GX",
   "brand": "스즈키",
-  "model": "GSX-S1000GX"
+  "model": "GSX-S1000GX",
+  "displacement": 999,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSX-S125",
   "brand": "스즈키",
-  "model": "GSX-S125"
+  "model": "GSX-S125",
+  "displacement": 124,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "스즈키 GSX-S750",
   "brand": "스즈키",
-  "model": "GSX-S750"
+  "model": "GSX-S750",
+  "displacement": 749,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "스즈키 RM-Z250",
   "brand": "스즈키",
-  "model": "RM-Z250"
+  "model": "RM-Z250",
+  "displacement": 249,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "스즈키 RM-Z450",
   "brand": "스즈키",
-  "model": "RM-Z450"
+  "model": "RM-Z450",
+  "displacement": 449,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "스즈키 RMX450Z",
   "brand": "스즈키",
-  "model": "RMX450Z"
+  "model": "RMX450Z",
+  "displacement": 449,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "스즈키 SV650",
   "brand": "스즈키",
-  "model": "SV650"
+  "model": "SV650",
+  "displacement": 645,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "시티플라이 C40",
@@ -1853,7 +2648,10 @@
   "aliases": [
    "c40",
    "c40B"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "시티플라이 C40A",
@@ -1861,7 +2659,10 @@
   "model": "C40A",
   "aliases": [
    "c40A"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "시티플라이 C41",
@@ -1869,7 +2670,10 @@
   "model": "C41",
   "aliases": [
    "c41"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "씨엠파트너 썬바이크3",
@@ -1877,12 +2681,18 @@
   "model": "썬바이크3",
   "aliases": [
    "SUNBIKE3"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "아프릴리아 돌소두로900",
   "brand": "아프릴리아",
-  "model": "돌소두로900"
+  "model": "돌소두로900",
+  "displacement": 896,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "아프릴리아 마나850",
@@ -1890,47 +2700,74 @@
   "model": "마나850",
   "aliases": [
    "마나850"
-  ]
+  ],
+  "displacement": 839,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "아프릴리아 쉬버900",
   "brand": "아프릴리아",
-  "model": "쉬버900"
+  "model": "쉬버900",
+  "displacement": 896,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "아프릴리아 투아렉660",
   "brand": "아프릴리아",
-  "model": "투아렉660"
+  "model": "투아렉660",
+  "displacement": 659,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "아프릴리아 투오노660",
   "brand": "아프릴리아",
-  "model": "투오노660"
+  "model": "투오노660",
+  "displacement": 659,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "아프릴리아 투오노V4",
   "brand": "아프릴리아",
-  "model": "투오노V4"
+  "model": "투오노V4",
+  "displacement": 1077,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "아프릴리아 RS457",
   "brand": "아프릴리아",
-  "model": "RS457"
+  "model": "RS457",
+  "displacement": 457,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "아프릴리아 RS660",
   "brand": "아프릴리아",
-  "model": "RS660"
+  "model": "RS660",
+  "displacement": 659,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "아프릴리아 RSV4",
   "brand": "아프릴리아",
-  "model": "RSV4"
+  "model": "RSV4",
+  "displacement": 1099,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "아프릴리아 SR GT125",
   "brand": "아프릴리아",
-  "model": "SR GT125"
+  "model": "SR GT125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "아프릴리아 SRV850",
@@ -1938,7 +2775,10 @@
   "model": "SRV850",
   "aliases": [
    "SRV850"
-  ]
+  ],
+  "displacement": 839,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "야디 Z3",
@@ -1946,7 +2786,10 @@
   "model": "Z3",
   "aliases": [
    "제트쓰리"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "야마하 니켄",
@@ -1954,12 +2797,18 @@
   "model": "니켄",
   "aliases": [
    "MXT850"
-  ]
+  ],
+  "displacement": 847,
+  "category": "3륜",
+  "electric": false
  },
  {
   "nameKo": "야마하 볼트",
   "brand": "야마하",
-  "model": "볼트"
+  "model": "볼트",
+  "displacement": 942,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "야마하 비노50",
@@ -1967,32 +2816,50 @@
   "model": "비노50",
   "aliases": [
    "XC50"
-  ]
+  ],
+  "displacement": 49,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "야마하 슈퍼테네레",
   "brand": "야마하",
-  "model": "슈퍼테네레"
+  "model": "슈퍼테네레",
+  "displacement": 1199,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "야마하 테네레700",
   "brand": "야마하",
-  "model": "테네레700"
+  "model": "테네레700",
+  "displacement": 689,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "야마하 트레이서9 GT",
   "brand": "야마하",
-  "model": "트레이서9 GT"
+  "model": "트레이서9 GT",
+  "displacement": 890,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "야마하 트레이서900",
   "brand": "야마하",
-  "model": "트레이서900"
+  "model": "트레이서900",
+  "displacement": 847,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "야마하 트리시티125",
   "brand": "야마하",
-  "model": "트리시티125"
+  "model": "트리시티125",
+  "displacement": 125,
+  "category": "3륜",
+  "electric": false
  },
  {
   "nameKo": "야마하 트리시티155",
@@ -2000,12 +2867,18 @@
   "model": "트리시티155",
   "aliases": [
    "MWS155-A"
-  ]
+  ],
+  "displacement": 155,
+  "category": "3륜",
+  "electric": false
  },
  {
   "nameKo": "야마하 FJR1300",
   "brand": "야마하",
-  "model": "FJR1300"
+  "model": "FJR1300",
+  "displacement": 1298,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "야마하 FZ1",
@@ -2013,7 +2886,10 @@
   "model": "FZ1",
   "aliases": [
    "FZ1"
-  ]
+  ],
+  "displacement": 998,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "야마하 FZ6",
@@ -2021,7 +2897,10 @@
   "model": "FZ6",
   "aliases": [
    "FZ6"
-  ]
+  ],
+  "displacement": 600,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "야마하 FZ8",
@@ -2029,7 +2908,10 @@
   "model": "FZ8",
   "aliases": [
    "FZ8"
-  ]
+  ],
+  "displacement": 779,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "야마하 MT-01",
@@ -2037,7 +2919,10 @@
   "model": "MT-01",
   "aliases": [
    "MT01"
-  ]
+  ],
+  "displacement": 1670,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "야마하 MT-03",
@@ -2046,12 +2931,18 @@
   "aliases": [
    "MTN320-A",
    "MTN320A"
-  ]
+  ],
+  "displacement": 321,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "야마하 MT-07",
   "brand": "야마하",
-  "model": "MT-07"
+  "model": "MT-07",
+  "displacement": 689,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "야마하 MT-09",
@@ -2060,17 +2951,26 @@
   "aliases": [
    "MTN850D",
    "MTN850A"
-  ]
+  ],
+  "displacement": 890,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "야마하 MT-10",
   "brand": "야마하",
-  "model": "MT-10"
+  "model": "MT-10",
+  "displacement": 998,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "야마하 NMAX125",
   "brand": "야마하",
-  "model": "NMAX125"
+  "model": "NMAX125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "야마하 NMAX155",
@@ -2079,12 +2979,18 @@
   "aliases": [
    "GPD155D-A",
    "GPD155A"
-  ]
+  ],
+  "displacement": 155,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "야마하 PW50",
   "brand": "야마하",
-  "model": "PW50"
+  "model": "PW50",
+  "displacement": 49,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "야마하 TMAX530",
@@ -2092,7 +2998,10 @@
   "model": "TMAX530",
   "aliases": [
    "XP530"
-  ]
+  ],
+  "displacement": 530,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "야마하 TMAX560",
@@ -2101,12 +3010,18 @@
   "aliases": [
    "XP560D",
    "XP560E"
-  ]
+  ],
+  "displacement": 562,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "야마하 VMAX",
   "brand": "야마하",
-  "model": "VMAX"
+  "model": "VMAX",
+  "displacement": 1679,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "야마하 XJ6",
@@ -2114,12 +3029,18 @@
   "model": "XJ6",
   "aliases": [
    "XJ6"
-  ]
+  ],
+  "displacement": 600,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "야마하 XMAX300",
   "brand": "야마하",
-  "model": "XMAX300"
+  "model": "XMAX300",
+  "displacement": 292,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "야마하 XSR900",
@@ -2127,42 +3048,66 @@
   "model": "XSR900",
   "aliases": [
    "MTM850"
-  ]
+  ],
+  "displacement": 890,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "야마하 XSR900GP",
   "brand": "야마하",
-  "model": "XSR900GP"
+  "model": "XSR900GP",
+  "displacement": 890,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "야마하 YZ125X",
   "brand": "야마하",
-  "model": "YZ125X"
+  "model": "YZ125X",
+  "displacement": 124,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "야마하 YZ250F",
   "brand": "야마하",
-  "model": "YZ250F"
+  "model": "YZ250F",
+  "displacement": 250,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "야마하 YZ450F",
   "brand": "야마하",
-  "model": "YZ450F"
+  "model": "YZ450F",
+  "displacement": 449,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "야마하 YZ65",
   "brand": "야마하",
-  "model": "YZ65"
+  "model": "YZ65",
+  "displacement": 65,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "야마하 YZ85",
   "brand": "야마하",
-  "model": "YZ85"
+  "model": "YZ85",
+  "displacement": 85,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "야마하 YZF-R1",
   "brand": "야마하",
-  "model": "YZF-R1"
+  "model": "YZF-R1",
+  "displacement": 998,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "야마하 YZF-R3",
@@ -2171,7 +3116,10 @@
   "aliases": [
    "YZF320-A",
    "YZF320A"
-  ]
+  ],
+  "displacement": 321,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "야마하 YZF-R6",
@@ -2179,17 +3127,26 @@
   "model": "YZF-R6",
   "aliases": [
    "YZF600"
-  ]
+  ],
+  "displacement": 599,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "야마하 YZF-R7",
   "brand": "야마하",
-  "model": "YZF-R7"
+  "model": "YZF-R7",
+  "displacement": 689,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "야마하 YZF-R9",
   "brand": "야마하",
-  "model": "YZF-R9"
+  "model": "YZF-R9",
+  "displacement": 890,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "에임스 레오",
@@ -2197,7 +3154,10 @@
   "model": "레오",
   "aliases": [
    "레오"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "에임스 레오D",
@@ -2205,7 +3165,10 @@
   "model": "레오D",
   "aliases": [
    "레오-디"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "엠비아이 S",
@@ -2213,7 +3176,10 @@
   "model": "S",
   "aliases": [
    "엠비아이-에스"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "엠비아이 V",
@@ -2221,7 +3187,10 @@
   "model": "V",
   "aliases": [
    "엠비아이-브이"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "엠비아이 X",
@@ -2229,7 +3198,10 @@
   "model": "X",
   "aliases": [
    "엠비아이-엑스"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "와코 E6S",
@@ -2237,7 +3209,10 @@
   "model": "E6S",
   "aliases": [
    "2K2(E6S)"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "와코 E7S",
@@ -2245,7 +3220,10 @@
   "model": "E7S",
   "aliases": [
    "E7S"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "와코 X10",
@@ -2254,7 +3232,10 @@
   "aliases": [
    "엑스텐",
    "X10A"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "윈드 K1",
@@ -2262,7 +3243,10 @@
   "model": "K1",
   "aliases": [
    "WIND-K1"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "유에코 H2",
@@ -2270,7 +3254,10 @@
   "model": "H2",
   "aliases": [
    "UECO-H2"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이누리 DJ1",
@@ -2278,7 +3265,10 @@
   "model": "DJ1",
   "aliases": [
    "디제이원"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이누리 OK1 쿠루",
@@ -2286,7 +3276,10 @@
   "model": "OK1 쿠루",
   "aliases": [
    "오케이원 쿠루"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이누리 OK1 쿠루 프로",
@@ -2294,7 +3287,10 @@
   "model": "OK1 쿠루 프로",
   "aliases": [
    "오케이원쿠루프로"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이누리 OK1 KS",
@@ -2302,7 +3298,10 @@
   "model": "OK1 KS",
   "aliases": [
    "오케원케이에스"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이누리 V1",
@@ -2310,7 +3309,10 @@
   "model": "V1",
   "aliases": [
    "브이원"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이누리 V2",
@@ -2318,7 +3320,10 @@
   "model": "V2",
   "aliases": [
    "브이투"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이벡터 머큐리",
@@ -2326,7 +3331,10 @@
   "model": "머큐리",
   "aliases": [
    "머큐리"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이벡터 아폴로",
@@ -2334,7 +3342,10 @@
   "model": "아폴로",
   "aliases": [
    "아폴로"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이벡터 주노",
@@ -2342,7 +3353,10 @@
   "model": "주노",
   "aliases": [
    "주노"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이벡터 주피터",
@@ -2350,7 +3364,10 @@
   "model": "주피터",
   "aliases": [
    "주피터"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쓰리모빌리티 듀스7",
@@ -2358,7 +3375,10 @@
   "model": "듀스7",
   "aliases": [
    "듀스7"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이오모터스 보노",
@@ -2367,7 +3387,10 @@
   "aliases": [
    "BONO",
    "보노"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이오모터스 위즈",
@@ -2375,7 +3398,10 @@
   "model": "위즈",
   "aliases": [
    "BWS WIZ"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이오모터스 투롭",
@@ -2383,7 +3409,10 @@
   "model": "투롭",
   "aliases": [
    "투롭"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이오모터스 TI",
@@ -2391,7 +3420,10 @@
   "model": "TI",
   "aliases": [
    "티아이"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이오모터스 TI S",
@@ -2399,7 +3431,10 @@
   "model": "TI S",
   "aliases": [
    "티아이 에스"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E1 플러스",
@@ -2407,7 +3442,10 @@
   "model": "E1 플러스",
   "aliases": [
    "ECOOTER E1 PLUS"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E1S",
@@ -2416,7 +3454,10 @@
   "aliases": [
    "ECOOTER E1S",
    "Ecooter E1S"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E1S 플러스",
@@ -2424,7 +3465,10 @@
   "model": "E1S 플러스",
   "aliases": [
    "E1S Plus"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E2",
@@ -2432,7 +3476,10 @@
   "model": "E2",
   "aliases": [
    "ECOOTER E2"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E2 맥스",
@@ -2440,7 +3487,10 @@
   "model": "E2 맥스",
   "aliases": [
    "ECOOTER E2 MAX"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E2 맥스 카고 플러스",
@@ -2448,7 +3498,10 @@
   "model": "E2 맥스 카고 플러스",
   "aliases": [
    "E2 Max Cargo Plus"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E2 맥스 플러스",
@@ -2456,7 +3509,10 @@
   "model": "E2 맥스 플러스",
   "aliases": [
    "E2 Max Plus"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E2 카고",
@@ -2465,7 +3521,10 @@
   "aliases": [
    "ECOOTER E2 Cargo",
    "Ecooter E2 Cargo"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E2 플러스",
@@ -2473,7 +3532,10 @@
   "model": "E2 플러스",
   "aliases": [
    "E2 Plus"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E2 플러스 카고",
@@ -2481,7 +3543,10 @@
   "model": "E2 플러스 카고",
   "aliases": [
    "E2 Plus Cargo"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E2K",
@@ -2489,7 +3554,10 @@
   "model": "E2K",
   "aliases": [
    "ECOOTER E2K"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E2K 카고",
@@ -2497,7 +3565,10 @@
   "model": "E2K 카고",
   "aliases": [
    "ECOOTER E2K Cargo"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E3",
@@ -2505,7 +3576,10 @@
   "model": "E3",
   "aliases": [
    "E3"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "이쿠터 E5",
@@ -2513,157 +3587,250 @@
   "model": "E5",
   "aliases": [
    "E5"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "인디언 101 스카우트",
   "brand": "인디언",
-  "model": "101 스카우트"
+  "model": "101 스카우트",
+  "displacement": 1250,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 로드마스터",
   "brand": "인디언",
-  "model": "로드마스터"
+  "model": "로드마스터",
+  "displacement": 1890,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "인디언 로드마스터 다크호스",
   "brand": "인디언",
-  "model": "로드마스터 다크호스"
+  "model": "로드마스터 다크호스",
+  "displacement": 1890,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "인디언 로드마스터 리미티드",
   "brand": "인디언",
-  "model": "로드마스터 리미티드"
+  "model": "로드마스터 리미티드",
+  "displacement": 1890,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "인디언 슈퍼 치프",
   "brand": "인디언",
-  "model": "슈퍼 치프"
+  "model": "슈퍼 치프",
+  "displacement": 1811,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 슈퍼 치프 리미티드",
   "brand": "인디언",
-  "model": "슈퍼 치프 리미티드"
+  "model": "슈퍼 치프 리미티드",
+  "displacement": 1890,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 스카우트",
   "brand": "인디언",
-  "model": "스카우트"
+  "model": "스카우트",
+  "displacement": 1133,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 스카우트 로그",
   "brand": "인디언",
-  "model": "스카우트 로그"
+  "model": "스카우트 로그",
+  "displacement": 1133,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 스카우트 바버",
   "brand": "인디언",
-  "model": "스카우트 바버"
+  "model": "스카우트 바버",
+  "displacement": 1133,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 스카우트 바버 트웬티",
   "brand": "인디언",
-  "model": "스카우트 바버 트웬티"
+  "model": "스카우트 바버 트웬티",
+  "displacement": 1133,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 스카우트 식스티",
   "brand": "인디언",
-  "model": "스카우트 식스티"
+  "model": "스카우트 식스티",
+  "displacement": 999,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 스카우트 클래식",
   "brand": "인디언",
-  "model": "스카우트 클래식"
+  "model": "스카우트 클래식",
+  "displacement": 1250,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 스포츠 스카우트",
   "brand": "인디언",
-  "model": "스포츠 스카우트"
+  "model": "스포츠 스카우트",
+  "displacement": 1250,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 스프링필드",
   "brand": "인디언",
-  "model": "스프링필드"
+  "model": "스프링필드",
+  "displacement": 1890,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "인디언 스프링필드 다크호스",
   "brand": "인디언",
-  "model": "스프링필드 다크호스"
+  "model": "스프링필드 다크호스",
+  "displacement": 1890,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "인디언 챌린저",
   "brand": "인디언",
-  "model": "챌린저"
+  "model": "챌린저",
+  "displacement": 1768,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "인디언 챌린저 다크호스",
   "brand": "인디언",
-  "model": "챌린저 다크호스"
+  "model": "챌린저 다크호스",
+  "displacement": 1768,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "인디언 챌린저 리미티드",
   "brand": "인디언",
-  "model": "챌린저 리미티드"
+  "model": "챌린저 리미티드",
+  "displacement": 1768,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "인디언 치프",
   "brand": "인디언",
-  "model": "치프"
+  "model": "치프",
+  "displacement": 1811,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 치프 다크호스",
   "brand": "인디언",
-  "model": "치프 다크호스"
+  "model": "치프 다크호스",
+  "displacement": 1890,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 치프 바버 다크호스",
   "brand": "인디언",
-  "model": "치프 바버 다크호스"
+  "model": "치프 바버 다크호스",
+  "displacement": 1890,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 치프 빈티지",
   "brand": "인디언",
-  "model": "치프 빈티지"
+  "model": "치프 빈티지",
+  "displacement": 1811,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "인디언 치프테인",
   "brand": "인디언",
-  "model": "치프테인"
+  "model": "치프테인",
+  "displacement": 1811,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "인디언 치프테인 다크호스",
   "brand": "인디언",
-  "model": "치프테인 다크호스"
+  "model": "치프테인 다크호스",
+  "displacement": 1890,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "인디언 치프테인 리미티드",
   "brand": "인디언",
-  "model": "치프테인 리미티드"
+  "model": "치프테인 리미티드",
+  "displacement": 1890,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "인디언 퍼슈트 다크호스",
   "brand": "인디언",
-  "model": "퍼슈트 다크호스"
+  "model": "퍼슈트 다크호스",
+  "displacement": 1768,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "인디언 퍼슈트 리미티드",
   "brand": "인디언",
-  "model": "퍼슈트 리미티드"
+  "model": "퍼슈트 리미티드",
+  "displacement": 1768,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "인디언 FTR 랠리",
   "brand": "인디언",
-  "model": "FTR 랠리"
+  "model": "FTR 랠리",
+  "displacement": 1203,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "인디언 FTR R 카본",
   "brand": "인디언",
-  "model": "FTR R 카본"
+  "model": "FTR R 카본",
+  "displacement": 1203,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "인디언 FTR1200",
   "brand": "인디언",
-  "model": "FTR1200"
+  "model": "FTR1200",
+  "displacement": 1203,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "일렉사 욜로D",
@@ -2671,7 +3838,10 @@
   "model": "욜로D",
   "aliases": [
    "욜로디"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "일렉사 욜로S",
@@ -2679,7 +3849,10 @@
   "model": "욜로S",
   "aliases": [
    "욜로에스"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "젠트로피 제트",
@@ -2687,77 +3860,122 @@
   "model": "제트",
   "aliases": [
    "젠트로피 제트"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "존테스 125C",
   "brand": "존테스",
-  "model": "125C"
+  "model": "125C",
+  "displacement": 125,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "존테스 125D",
   "brand": "존테스",
-  "model": "125D"
+  "model": "125D",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "존테스 125E",
   "brand": "존테스",
-  "model": "125E"
+  "model": "125E",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "존테스 125G1",
   "brand": "존테스",
-  "model": "125G1"
+  "model": "125G1",
+  "displacement": 125,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "존테스 125U1",
   "brand": "존테스",
-  "model": "125U1"
+  "model": "125U1",
+  "displacement": 125,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "존테스 125X",
   "brand": "존테스",
-  "model": "125X"
+  "model": "125X",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "존테스 310M",
   "brand": "존테스",
-  "model": "310M"
+  "model": "310M",
+  "displacement": 312,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "존테스 310R",
   "brand": "존테스",
-  "model": "310R"
+  "model": "310R",
+  "displacement": 312,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "존테스 310T",
   "brand": "존테스",
-  "model": "310T"
+  "model": "310T",
+  "displacement": 312,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "존테스 310X",
   "brand": "존테스",
-  "model": "310X"
+  "model": "310X",
+  "displacement": 312,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "존테스 350D",
   "brand": "존테스",
-  "model": "350D"
+  "model": "350D",
+  "displacement": 348,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "존테스 350GK",
   "brand": "존테스",
-  "model": "350GK"
+  "model": "350GK",
+  "displacement": 348,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "존테스 350R",
   "brand": "존테스",
-  "model": "350R"
+  "model": "350R",
+  "displacement": 348,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "존테스 350T",
   "brand": "존테스",
-  "model": "350T"
+  "model": "350T",
+  "displacement": 348,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "존테스 368D",
@@ -2765,7 +3983,10 @@
   "model": "368D",
   "aliases": [
    "ZT368T-D"
-  ]
+  ],
+  "displacement": 368,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "존테스 368E",
@@ -2773,7 +3994,10 @@
   "model": "368E",
   "aliases": [
    "ZT368T-E"
-  ]
+  ],
+  "displacement": 368,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "존테스 368G",
@@ -2781,7 +4005,10 @@
   "model": "368G",
   "aliases": [
    "ZT368T-G"
-  ]
+  ],
+  "displacement": 368,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "존테스 368K",
@@ -2789,7 +4016,10 @@
   "model": "368K",
   "aliases": [
    "ZT368T-K"
-  ]
+  ],
+  "displacement": 368,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "지호 AE8",
@@ -2797,7 +4027,10 @@
   "model": "AE8",
   "aliases": [
    "AE8"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "케이크 마카",
@@ -2805,7 +4038,10 @@
   "model": "마카",
   "aliases": [
    "MAKKA"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "케이크 오사+",
@@ -2813,7 +4049,10 @@
   "model": "오사+",
   "aliases": [
    "OSA+"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "코리아이브이 욜로2",
@@ -2821,7 +4060,10 @@
   "model": "욜로2",
   "aliases": [
    "욜로2"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "코터스 비틀",
@@ -2829,7 +4071,10 @@
   "model": "비틀",
   "aliases": [
    "비틀"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "코터스 오디가",
@@ -2837,7 +4082,10 @@
   "model": "오디가",
   "aliases": [
    "오디가"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "코터스 M6",
@@ -2845,7 +4093,10 @@
   "model": "M6",
   "aliases": [
    "M6"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "킴스트 다이스",
@@ -2854,22 +4105,34 @@
   "aliases": [
    "다이스",
    "DICE"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "킴코 다운타운300i",
   "brand": "킴코",
-  "model": "다운타운300i"
+  "model": "다운타운300i",
+  "displacement": 299,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "킴코 다운타운350i",
   "brand": "킴코",
-  "model": "다운타운350i"
+  "model": "다운타운350i",
+  "displacement": 321,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "킴코 라이크125",
   "brand": "킴코",
-  "model": "라이크125"
+  "model": "라이크125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "킴코 레이싱킹180i",
@@ -2877,27 +4140,42 @@
   "model": "레이싱킹180i",
   "aliases": [
    "RACING KING 180i"
-  ]
+  ],
+  "displacement": 175,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "킴코 어질리티125",
   "brand": "킴코",
-  "model": "어질리티125"
+  "model": "어질리티125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "킴코 엑스타운300i",
   "brand": "킴코",
-  "model": "엑스타운300i"
+  "model": "엑스타운300i",
+  "displacement": 276,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "킴코 익사이팅400i",
   "brand": "킴코",
-  "model": "익사이팅400i"
+  "model": "익사이팅400i",
+  "displacement": 399,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "킴코 익사이팅S400",
   "brand": "킴코",
-  "model": "익사이팅S400"
+  "model": "익사이팅S400",
+  "displacement": 399,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "킴코 키위50",
@@ -2905,42 +4183,66 @@
   "model": "키위50",
   "aliases": [
    "Kiwi50"
-  ]
+  ],
+  "displacement": 50,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "킴코 피플S125",
   "brand": "킴코",
-  "model": "피플S125"
+  "model": "피플S125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "킴코 필리125",
   "brand": "킴코",
-  "model": "필리125"
+  "model": "필리125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "킴코 AK550",
   "brand": "킴코",
-  "model": "AK550"
+  "model": "AK550",
+  "displacement": 550,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "킴코 DT X360",
   "brand": "킴코",
-  "model": "DT X360"
+  "model": "DT X360",
+  "displacement": 321,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "킴코 GP125",
   "brand": "킴코",
-  "model": "GP125"
+  "model": "GP125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 데이토나660",
   "brand": "트라이엄프",
-  "model": "데이토나660"
+  "model": "데이토나660",
+  "displacement": 660,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 데이토나675",
   "brand": "트라이엄프",
-  "model": "데이토나675"
+  "model": "데이토나675",
+  "displacement": 675,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 로켓3",
@@ -2953,7 +4255,10 @@
    "Rocket 3 GT Triple Black",
    "Rocket 3 R",
    "Rocket 3 GT"
-  ]
+  ],
+  "displacement": 2458,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 본네빌바버",
@@ -2962,17 +4267,26 @@
   "aliases": [
    "BONNEVILLE BOBBER",
    "Bonneville Bobber"
-  ]
+  ],
+  "displacement": 1200,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 본네빌T100",
   "brand": "트라이엄프",
-  "model": "본네빌T100"
+  "model": "본네빌T100",
+  "displacement": 900,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 본네빌T120",
   "brand": "트라이엄프",
-  "model": "본네빌T120"
+  "model": "본네빌T120",
+  "displacement": 1200,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스럭스턴",
@@ -2980,27 +4294,42 @@
   "model": "스럭스턴",
   "aliases": [
    "Thruxton RS"
-  ]
+  ],
+  "displacement": 1200,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스크램블러1200",
   "brand": "트라이엄프",
-  "model": "스크램블러1200"
+  "model": "스크램블러1200",
+  "displacement": 1200,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스크램블러400X",
   "brand": "트라이엄프",
-  "model": "스크램블러400X"
+  "model": "스크램블러400X",
+  "displacement": 398,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스크램블러400XC",
   "brand": "트라이엄프",
-  "model": "스크램블러400XC"
+  "model": "스크램블러400XC",
+  "displacement": 398,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스크램블러900",
   "brand": "트라이엄프",
-  "model": "스크램블러900"
+  "model": "스크램블러900",
+  "displacement": 900,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스트리트스크램블러",
@@ -3009,12 +4338,18 @@
   "aliases": [
    "Street Scrambler",
    "Street Scrambler Sandstorm"
-  ]
+  ],
+  "displacement": 900,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스트리트컵",
   "brand": "트라이엄프",
-  "model": "스트리트컵"
+  "model": "스트리트컵",
+  "displacement": 900,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스트리트트리플765",
@@ -3024,7 +4359,10 @@
    "Street Triple RS",
    "Street Triple MOTO2 TM Edition",
    "Street Triple R"
-  ]
+  ],
+  "displacement": 765,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스트리트트윈",
@@ -3034,12 +4372,18 @@
    "StreetTwin",
    "StreetTwin Goldline",
    "Street Twin"
-  ]
+  ],
+  "displacement": 900,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스피드400",
   "brand": "트라이엄프",
-  "model": "스피드400"
+  "model": "스피드400",
+  "displacement": 398,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스피드마스터",
@@ -3048,7 +4392,10 @@
   "aliases": [
    "BONNEVILLE SPEEDMASTER",
    "Bonneville Speedmaster"
-  ]
+  ],
+  "displacement": 1200,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스피드트리플1050",
@@ -3056,12 +4403,18 @@
   "model": "스피드트리플1050",
   "aliases": [
    "Speed Triple RS"
-  ]
+  ],
+  "displacement": 1050,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스피드트리플1200",
   "brand": "트라이엄프",
-  "model": "스피드트리플1200"
+  "model": "스피드트리플1200",
+  "displacement": 1160,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스피드트윈1200",
@@ -3070,32 +4423,50 @@
   "aliases": [
    "Speed Twin",
    "Speed Twin Breitling Edition"
-  ]
+  ],
+  "displacement": 1200,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 스피드트윈900",
   "brand": "트라이엄프",
-  "model": "스피드트윈900"
+  "model": "스피드트윈900",
+  "displacement": 900,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 타이거1200",
   "brand": "트라이엄프",
-  "model": "타이거1200"
+  "model": "타이거1200",
+  "displacement": 1160,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 타이거800",
   "brand": "트라이엄프",
-  "model": "타이거800"
+  "model": "타이거800",
+  "displacement": 800,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 타이거900",
   "brand": "트라이엄프",
-  "model": "타이거900"
+  "model": "타이거900",
+  "displacement": 888,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 타이거스포트660",
   "brand": "트라이엄프",
-  "model": "타이거스포트660"
+  "model": "타이거스포트660",
+  "displacement": 660,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "트라이엄프 트라이던트660",
@@ -3103,7 +4474,10 @@
   "model": "트라이던트660",
   "aliases": [
    "Trident"
-  ]
+  ],
+  "displacement": 660,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "푸조 스피드파이트125",
@@ -3111,7 +4485,10 @@
   "model": "스피드파이트125",
   "aliases": [
    "스피드파이트"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "푸조 장고125",
@@ -3119,7 +4496,10 @@
   "model": "장고125",
   "aliases": [
    "장고"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "플레타",
@@ -3127,42 +4507,66 @@
   "model": "플레타",
   "aliases": [
    "플레타"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "피아지오 리버티125",
   "brand": "피아지오",
-  "model": "리버티125"
+  "model": "리버티125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "피아지오 메들리125",
   "brand": "피아지오",
-  "model": "메들리125"
+  "model": "메들리125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "피아지오 베벌리350",
   "brand": "피아지오",
-  "model": "베벌리350"
+  "model": "베벌리350",
+  "displacement": 330,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "피아지오 베벌리400",
   "brand": "피아지오",
-  "model": "베벌리400"
+  "model": "베벌리400",
+  "displacement": 399,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "피아지오 MP3 300",
   "brand": "피아지오",
-  "model": "MP3 300"
+  "model": "MP3 300",
+  "displacement": 278,
+  "category": "3륜",
+  "electric": false
  },
  {
   "nameKo": "피아지오 MP3 400",
   "brand": "피아지오",
-  "model": "MP3 400"
+  "model": "MP3 400",
+  "displacement": 399,
+  "category": "3륜",
+  "electric": false
  },
  {
   "nameKo": "피아지오 MP3 500",
   "brand": "피아지오",
-  "model": "MP3 500"
+  "model": "MP3 500",
+  "displacement": 493,
+  "category": "3륜",
+  "electric": false
  },
  {
   "nameKo": "피엔에이치 N1",
@@ -3170,7 +4574,10 @@
   "model": "N1",
   "aliases": [
    "PNH-N1"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "피엔에이치 N2",
@@ -3178,7 +4585,10 @@
   "model": "N2",
   "aliases": [
    "피엔에이치 엔투"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "필립스 딜리버",
@@ -3186,7 +4596,10 @@
   "model": "딜리버",
   "aliases": [
    "딜리버"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "필립스 PH-DA2",
@@ -3194,7 +4607,10 @@
   "model": "PH-DA2",
   "aliases": [
    "PH-DA2"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "한국모터스 뉴카빙",
@@ -3202,7 +4618,10 @@
   "model": "뉴카빙",
   "aliases": [
    "뉴 카빙"
-  ]
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "한국모터스 뉴카빙2",
@@ -3210,7 +4629,10 @@
   "model": "뉴카빙2",
   "aliases": [
    "뉴 카빙2"
-  ]
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "한국모터스 스프린트",
@@ -3218,7 +4640,10 @@
   "model": "스프린트",
   "aliases": [
    "스프린트"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "한국모터스 카빙",
@@ -3226,7 +4651,10 @@
   "model": "카빙",
   "aliases": [
    "카빙"
-  ]
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "한국모터스 팬시",
@@ -3234,7 +4662,10 @@
   "model": "팬시",
   "aliases": [
    "팬시"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "한국모터스 E-F10",
@@ -3242,7 +4673,10 @@
   "model": "E-F10",
   "aliases": [
    "E-F10"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "한국모터스 VS1",
@@ -3250,7 +4684,10 @@
   "model": "VS1",
   "aliases": [
    "VS1"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "한솜 미니젯",
@@ -3259,7 +4696,10 @@
   "aliases": [
    "미니젯",
    "미니젯 FI"
-  ]
+  ],
+  "displacement": 97,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "한솜 미니젯 플러스",
@@ -3267,7 +4707,10 @@
   "model": "미니젯 플러스",
   "aliases": [
    "미니젯 플러스"
-  ]
+  ],
+  "displacement": 97,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "한솜 버디",
@@ -3275,7 +4718,10 @@
   "model": "버디",
   "aliases": [
    "BUDDY"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "한솜 블랙큐",
@@ -3283,7 +4729,10 @@
   "model": "블랙큐",
   "aliases": [
    "블랙-큐"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "한솜 비즈젯",
@@ -3292,7 +4741,10 @@
   "aliases": [
    "비즈젯",
    "비즈젯 FI"
-  ]
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "한솜 아이젯",
@@ -3300,7 +4752,10 @@
   "model": "아이젯",
   "aliases": [
    "아이젯"
-  ]
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "한솜 위너",
@@ -3308,7 +4763,10 @@
   "model": "위너",
   "aliases": [
    "WINNER"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 나이트로드 스페셜",
@@ -3317,7 +4775,10 @@
   "aliases": [
    "HARLEY-DAVIDSON VRSCDX",
    "Harley-Davidson VRSCDX"
-  ]
+  ],
+  "displacement": 1247,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 나이트스터",
@@ -3325,7 +4786,10 @@
   "model": "나이트스터",
   "aliases": [
    "Harley-Davidson RH975"
-  ]
+  ],
+  "displacement": 975,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 나이트스터 스페셜",
@@ -3333,7 +4797,10 @@
   "model": "나이트스터 스페셜",
   "aliases": [
    "Harley-Davidson RH975S"
-  ]
+  ],
+  "displacement": 975,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 나이트트레인",
@@ -3341,7 +4808,10 @@
   "model": "나이트트레인",
   "aliases": [
    "HARLEY-DAVIDSON FXSTB"
-  ]
+  ],
+  "displacement": 1584,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 디럭스",
@@ -3352,7 +4822,10 @@
    "Harley-Davidson FLSTN",
    "Harley-Davidson FLSTN 103",
    "HARLEY-DAVIDSON FLSTN"
-  ]
+  ],
+  "displacement": 1746,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 로드글라이드",
@@ -3361,7 +4834,10 @@
   "aliases": [
    "Harley-Davidson FLTRX",
    "Harley-Davidson FLTRX 103"
-  ]
+  ],
+  "displacement": 1923,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 로드글라이드 리미티드",
@@ -3370,7 +4846,10 @@
   "aliases": [
    "Harley-Davidson FLTRXL",
    "Harley-Davidson FLTRK"
-  ]
+  ],
+  "displacement": 1923,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 로드글라이드 스페셜",
@@ -3379,7 +4858,10 @@
   "aliases": [
    "Harley-Davidson FLTRXS ANV",
    "Harley-Davidson FLTRXS"
-  ]
+  ],
+  "displacement": 1868,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 로드글라이드 울트라",
@@ -3388,7 +4870,10 @@
   "aliases": [
    "Harley-Davidson FLTRU",
    "Harley-Davidson FLTRU 103"
-  ]
+  ],
+  "displacement": 1746,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 로드글라이드 ST",
@@ -3396,12 +4881,18 @@
   "model": "로드글라이드 ST",
   "aliases": [
    "Harley-Davidson FLTRXST"
-  ]
+  ],
+  "displacement": 1923,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 로드스터",
   "brand": "할리데이비슨",
-  "model": "로드스터"
+  "model": "로드스터",
+  "displacement": 1202,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 로드킹",
@@ -3412,7 +4903,10 @@
    "Harley-Davidson FLHRC",
    "Harley-Davidson FLHR 103",
    "Harley-Davidson FLHRC 103"
-  ]
+  ],
+  "displacement": 1746,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 로드킹 스페셜",
@@ -3420,7 +4914,10 @@
   "model": "로드킹 스페셜",
   "aliases": [
    "Harley-Davidson FLHRXS"
-  ]
+  ],
+  "displacement": 1868,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 로우라이더",
@@ -3430,7 +4927,10 @@
    "Harley-Davidson FXLR",
    "Harley-Davidson FXDL 103",
    "Harley-Davidson FXDL"
-  ]
+  ],
+  "displacement": 1746,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 로우라이더S",
@@ -3439,7 +4939,10 @@
   "aliases": [
    "Harley-Davidson FXLRS",
    "Harley-Davidson FXDLS"
-  ]
+  ],
+  "displacement": 1923,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 로우라이더ST",
@@ -3448,7 +4951,10 @@
   "aliases": [
    "Harley-Davidson FXLRST",
    "Harley-Davidson FXRST"
-  ]
+  ],
+  "displacement": 1923,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 로커",
@@ -3457,7 +4963,10 @@
   "aliases": [
    "HARLEY-DAVIDSON FXCW",
    "HARLEY-DAVIDSON FXCWC"
-  ]
+  ],
+  "displacement": 1584,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 브레이크아웃",
@@ -3469,7 +4978,10 @@
    "Harley-Davidson FXBRS ANX",
    "Harley-Davidson FXSB",
    "Harley-Davidson FXSB 103"
-  ]
+  ],
+  "displacement": 1923,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 브이로드",
@@ -3478,7 +4990,10 @@
   "aliases": [
    "HARLEY-DAVIDSON VRSCAW",
    "Harley-Davidson VRSCAW"
-  ]
+  ],
+  "displacement": 1247,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 브이로드 머슬",
@@ -3487,7 +5002,10 @@
   "aliases": [
    "HARLEY-DAVIDSON VRSCF",
    "Harley-Davidson VRSCF"
-  ]
+  ],
+  "displacement": 1247,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 블랙라인",
@@ -3495,7 +5013,10 @@
   "model": "블랙라인",
   "aliases": [
    "Harley-Davidson FXS 103"
-  ]
+  ],
+  "displacement": 1690,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 소프테일 스탠다드",
@@ -3503,7 +5024,10 @@
   "model": "소프테일 스탠다드",
   "aliases": [
    "Harley-Davidson FXST"
-  ]
+  ],
+  "displacement": 1746,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 소프테일 슬림",
@@ -3514,7 +5038,10 @@
    "Harley-Davidson FLS",
    "Harley-Davidson FLSS",
    "Harley-Davidson FLS 103"
-  ]
+  ],
+  "displacement": 1746,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 소프테일 커스텀",
@@ -3522,7 +5049,10 @@
   "model": "소프테일 커스텀",
   "aliases": [
    "HARLEY-DAVIDSON FXSTC"
-  ]
+  ],
+  "displacement": 1584,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 슈퍼글라이드",
@@ -3530,7 +5060,10 @@
   "model": "슈퍼글라이드",
   "aliases": [
    "Harley-Davidson FXD"
-  ]
+  ],
+  "displacement": 1584,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 슈퍼글라이드 커스텀",
@@ -3539,7 +5072,10 @@
   "aliases": [
    "Harley-Davidson FXDC 103",
    "Harley-Davidson FXDC"
-  ]
+  ],
+  "displacement": 1690,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 스위치백",
@@ -3547,12 +5083,18 @@
   "model": "스위치백",
   "aliases": [
    "Harley-Davidson FLD 103"
-  ]
+  ],
+  "displacement": 1690,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 스트리트750",
   "brand": "할리데이비슨",
-  "model": "스트리트750"
+  "model": "스트리트750",
+  "displacement": 749,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 스트리트글라이드",
@@ -3562,7 +5104,10 @@
    "Harley-Davidson FLHX",
    "Harley-Davidson FLHX ANV",
    "Harley-Davidson FLHX 103"
-  ]
+  ],
+  "displacement": 1923,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 스트리트글라이드 리미티드",
@@ -3570,7 +5115,10 @@
   "model": "스트리트글라이드 리미티드",
   "aliases": [
    "Harley-Davidson FLHXL"
-  ]
+  ],
+  "displacement": 1923,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 스트리트글라이드 스페셜",
@@ -3580,7 +5128,10 @@
    "Harley-Davidson FLHXS ANV",
    "Harley-Davidson FLHXS",
    "Harley-Davidson FLHXS ANX"
-  ]
+  ],
+  "displacement": 1868,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 스트리트글라이드 울트라",
@@ -3588,7 +5139,10 @@
   "model": "스트리트글라이드 울트라",
   "aliases": [
    "Harley-Davidson FLHXU"
-  ]
+  ],
+  "displacement": 1923,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 스트리트글라이드 ST",
@@ -3596,12 +5150,18 @@
   "model": "스트리트글라이드 ST",
   "aliases": [
    "Harley-Davidson FLHXST"
-  ]
+  ],
+  "displacement": 1923,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 스트리트로드",
   "brand": "할리데이비슨",
-  "model": "스트리트로드"
+  "model": "스트리트로드",
+  "displacement": 749,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 스트리트밥",
@@ -3614,17 +5174,26 @@
    "Harley-Davidson FXDBC 103",
    "Harley-Davidson FXDBB 103",
    "Harley-Davidson FXDB"
-  ]
+  ],
+  "displacement": 1868,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 스포스터 1200 커스텀",
   "brand": "할리데이비슨",
-  "model": "스포스터 1200 커스텀"
+  "model": "스포스터 1200 커스텀",
+  "displacement": 1202,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 스포스터S",
   "brand": "할리데이비슨",
-  "model": "스포스터S"
+  "model": "스포스터S",
+  "displacement": 1252,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 스포츠 글라이드",
@@ -3632,17 +5201,26 @@
   "model": "스포츠 글라이드",
   "aliases": [
    "Harley-Davidson FLSB"
-  ]
+  ],
+  "displacement": 1746,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 아이언1200",
   "brand": "할리데이비슨",
-  "model": "아이언1200"
+  "model": "아이언1200",
+  "displacement": 1202,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 아이언883",
   "brand": "할리데이비슨",
-  "model": "아이언883"
+  "model": "아이언883",
+  "displacement": 883,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 와이드글라이드",
@@ -3651,7 +5229,10 @@
   "aliases": [
    "Harley-Davidson FXDWG 103",
    "Harley-Davidson FXDWG"
-  ]
+  ],
+  "displacement": 1690,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 울트라 리미티드",
@@ -3661,7 +5242,10 @@
    "Harley-Davidson FLHTK",
    "Harley-Davidson FLHTK ANV",
    "Harley-Davidson FLHTKL"
-  ]
+  ],
+  "displacement": 1868,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 울트라 클래식",
@@ -3672,7 +5256,10 @@
    "Harley-Davidson FLHTCU TC",
    "Harley-Davidson FLHTCU",
    "Harley-Davidson FLHTCU 103"
-  ]
+  ],
+  "displacement": 1690,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 일렉트라글라이드",
@@ -3681,7 +5268,10 @@
   "aliases": [
    "Harley-Davidson FLHTP",
    "Harley-Davidson FLHT"
-  ]
+  ],
+  "displacement": 1746,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 일렉트라글라이드 리바이벌",
@@ -3689,7 +5279,10 @@
   "model": "일렉트라글라이드 리바이벌",
   "aliases": [
    "Harley-Davidson FLH"
-  ]
+  ],
+  "displacement": 1868,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 일렉트라글라이드 하이웨이킹",
@@ -3697,7 +5290,10 @@
   "model": "일렉트라글라이드 하이웨이킹",
   "aliases": [
    "Harley-Davidson FLHFB"
-  ]
+  ],
+  "displacement": 1868,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 크로스본즈",
@@ -3705,7 +5301,10 @@
   "model": "크로스본즈",
   "aliases": [
    "HARLEY-DAVIDSON FLSTSB"
-  ]
+  ],
+  "displacement": 1584,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 트라이글라이드 울트라",
@@ -3713,22 +5312,34 @@
   "model": "트라이글라이드 울트라",
   "aliases": [
    "Harley-Davidson FLHTCUTG"
-  ]
+  ],
+  "displacement": 1868,
+  "category": "3륜",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 팬아메리카1250",
   "brand": "할리데이비슨",
-  "model": "팬아메리카1250"
+  "model": "팬아메리카1250",
+  "displacement": 1252,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 팬아메리카1250 스페셜",
   "brand": "할리데이비슨",
-  "model": "팬아메리카1250 스페셜"
+  "model": "팬아메리카1250 스페셜",
+  "displacement": 1252,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 팬아메리카1250 ST",
   "brand": "할리데이비슨",
-  "model": "팬아메리카1250 ST"
+  "model": "팬아메리카1250 ST",
+  "displacement": 1252,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 팻밥",
@@ -3739,7 +5350,10 @@
    "Harley-Davidson FXFB",
    "Harley-Davidson FXDF 103",
    "Harley-Davidson FXDF"
-  ]
+  ],
+  "displacement": 1868,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 팻보이",
@@ -3757,12 +5371,18 @@
    "Harley-Davidson FLSTFB 103",
    "Harley-Davidson FLSTF 103",
    "HARLEY-DAVIDSON FLSTF"
-  ]
+  ],
+  "displacement": 1868,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 포티에이트",
   "brand": "할리데이비슨",
-  "model": "포티에이트"
+  "model": "포티에이트",
+  "displacement": 1202,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 프리휠러",
@@ -3770,7 +5390,10 @@
   "model": "프리휠러",
   "aliases": [
    "Harley-Davidson FLRT"
-  ]
+  ],
+  "displacement": 1868,
+  "category": "3륜",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 헤리티지 클래식",
@@ -3783,7 +5406,10 @@
    "Harley-Davidson FLSTC",
    "Harley-Davidson FLSTC 103",
    "HARLEY-DAVIDSON FLSTC"
-  ]
+  ],
+  "displacement": 1868,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 로드글라이드",
@@ -3793,7 +5419,10 @@
    "Harley-Davidson FLTRXSE",
    "Harley-Davidson FLTRXSE2",
    "Harley-Davidson FLTRSE3"
-  ]
+  ],
+  "displacement": 1977,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 로드글라이드 리미티드",
@@ -3802,7 +5431,10 @@
   "aliases": [
    "Harley-Davidson FLTRKSE",
    "Harley-Davidson FLTRKSE ANV"
-  ]
+  ],
+  "displacement": 1923,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 로드글라이드 울트라",
@@ -3810,7 +5442,10 @@
   "model": "CVO 로드글라이드 울트라",
   "aliases": [
    "Harley-Davidson FLTRUSE"
-  ]
+  ],
+  "displacement": 1801,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 로드글라이드 ST",
@@ -3818,7 +5453,10 @@
   "model": "CVO 로드글라이드 ST",
   "aliases": [
    "Harley-Davidson FLTRXSTSE"
-  ]
+  ],
+  "displacement": 1977,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 로드킹",
@@ -3827,7 +5465,10 @@
   "aliases": [
    "Harley-Davidson FLHRSE",
    "Harley-Davidson FLHRSE5"
-  ]
+  ],
+  "displacement": 1801,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 리미티드",
@@ -3836,7 +5477,10 @@
   "aliases": [
    "Harley-Davidson FLHTKSE",
    "Harley-Davidson FLHTKSE ANV"
-  ]
+  ],
+  "displacement": 1923,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 브레이크아웃",
@@ -3844,7 +5488,10 @@
   "model": "CVO 브레이크아웃",
   "aliases": [
    "Harley-Davidson FXSBSE"
-  ]
+  ],
+  "displacement": 1801,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 소프테일 디럭스",
@@ -3852,7 +5499,10 @@
   "model": "CVO 소프테일 디럭스",
   "aliases": [
    "Harley-Davidson FLSTNSE"
-  ]
+  ],
+  "displacement": 1801,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 스트리트글라이드",
@@ -3862,7 +5512,10 @@
    "Harley-Davidson FLHXSE",
    "Harley-Davidson FLHXSE3",
    "Harley-Davidson FLHXSE2"
-  ]
+  ],
+  "displacement": 1977,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 스트리트글라이드 리미티드",
@@ -3870,7 +5523,10 @@
   "model": "CVO 스트리트글라이드 리미티드",
   "aliases": [
    "Harley-Davidson FLHXLSE"
-  ]
+  ],
+  "displacement": 1977,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 스트리트글라이드 ST",
@@ -3878,7 +5534,10 @@
   "model": "CVO 스트리트글라이드 ST",
   "aliases": [
    "Harley-Davidson FLHXSTSE"
-  ]
+  ],
+  "displacement": 1977,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 울트라 클래식",
@@ -3890,7 +5549,10 @@
    "Harley-Davidson FLHTCUSE8",
    "Harley-Davidson FLHTCUSE5",
    "Harley-Davidson FLHTCUSE4"
-  ]
+  ],
+  "displacement": 1801,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 팻밥",
@@ -3899,7 +5561,10 @@
   "aliases": [
    "Harley-Davidson FXDFSE2",
    "Harley-Davidson FXDFSE"
-  ]
+  ],
+  "displacement": 1801,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 CVO 프로 스트리트 브레이크아웃",
@@ -3907,7 +5572,10 @@
   "model": "CVO 프로 스트리트 브레이크아웃",
   "aliases": [
    "Harley-Davidson FXSE"
-  ]
+  ],
+  "displacement": 1801,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "할리데이비슨 FXDR114",
@@ -3915,122 +5583,194 @@
   "model": "FXDR114",
   "aliases": [
    "Harley-Davidson FXDRS"
-  ]
+  ],
+  "displacement": 1868,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 701슈퍼모토",
   "brand": "허스크바나",
-  "model": "701슈퍼모토"
+  "model": "701슈퍼모토",
+  "displacement": 693,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 701엔듀로",
   "brand": "허스크바나",
-  "model": "701엔듀로"
+  "model": "701엔듀로",
+  "displacement": 693,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 노든901",
   "brand": "허스크바나",
-  "model": "노든901"
+  "model": "노든901",
+  "displacement": 889,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 노든901익스페디션",
   "brand": "허스크바나",
-  "model": "노든901익스페디션"
+  "model": "노든901익스페디션",
+  "displacement": 889,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 비트필렌125",
   "brand": "허스크바나",
-  "model": "비트필렌125"
+  "model": "비트필렌125",
+  "displacement": 125,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 비트필렌401",
   "brand": "허스크바나",
-  "model": "비트필렌401"
+  "model": "비트필렌401",
+  "displacement": 399,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 비트필렌701",
   "brand": "허스크바나",
-  "model": "비트필렌701"
+  "model": "비트필렌701",
+  "displacement": 693,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 비트필렌801",
   "brand": "허스크바나",
-  "model": "비트필렌801"
+  "model": "비트필렌801",
+  "displacement": 799,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 스바르트필렌125",
   "brand": "허스크바나",
-  "model": "스바르트필렌125"
+  "model": "스바르트필렌125",
+  "displacement": 125,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 스바르트필렌401",
   "brand": "허스크바나",
-  "model": "스바르트필렌401"
+  "model": "스바르트필렌401",
+  "displacement": 399,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 스바르트필렌701",
   "brand": "허스크바나",
-  "model": "스바르트필렌701"
+  "model": "스바르트필렌701",
+  "displacement": 693,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 스바르트필렌801",
   "brand": "허스크바나",
-  "model": "스바르트필렌801"
+  "model": "스바르트필렌801",
+  "displacement": 799,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 FE350",
   "brand": "허스크바나",
-  "model": "FE350"
+  "model": "FE350",
+  "displacement": 350,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "허스크바나 TE300",
   "brand": "허스크바나",
-  "model": "TE300"
+  "model": "TE300",
+  "displacement": 293,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "혼다 골드윙",
   "brand": "혼다",
-  "model": "골드윙"
+  "model": "골드윙",
+  "displacement": 1833,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "혼다 디오125",
   "brand": "혼다",
-  "model": "디오125"
+  "model": "디오125",
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "혼다 레블1100",
   "brand": "혼다",
-  "model": "레블1100"
+  "model": "레블1100",
+  "displacement": 1084,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "혼다 레블1100T",
   "brand": "혼다",
-  "model": "레블1100T"
+  "model": "레블1100T",
+  "displacement": 1084,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "혼다 레블500",
   "brand": "혼다",
-  "model": "레블500"
+  "model": "레블500",
+  "displacement": 471,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "혼다 몽키125",
   "brand": "혼다",
-  "model": "몽키125"
+  "model": "몽키125",
+  "displacement": 124,
+  "category": "미니",
+  "electric": false
  },
  {
   "nameKo": "혼다 벤리110",
   "brand": "혼다",
-  "model": "벤리110"
+  "model": "벤리110",
+  "displacement": 107,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "혼다 비전110",
   "brand": "혼다",
-  "model": "비전110"
+  "model": "비전110",
+  "displacement": 108,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "혼다 슈퍼커브110",
   "brand": "혼다",
-  "model": "슈퍼커브110"
+  "model": "슈퍼커브110",
+  "displacement": 109,
+  "category": "언더본",
+  "electric": false
  },
  {
   "nameKo": "혼다 실버윙GT",
@@ -4038,12 +5778,18 @@
   "model": "실버윙GT",
   "aliases": [
    "SILVER WING GT"
-  ]
+  ],
+  "displacement": 582,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "혼다 인테그라",
   "brand": "혼다",
-  "model": "인테그라"
+  "model": "인테그라",
+  "displacement": 745,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "혼다 투데이",
@@ -4051,97 +5797,154 @@
   "model": "투데이",
   "aliases": [
    "TODAY"
-  ]
+  ],
+  "displacement": 49,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "혼다 포르자300",
   "brand": "혼다",
-  "model": "포르자300"
+  "model": "포르자300",
+  "displacement": 279,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "혼다 포르자350",
   "brand": "혼다",
-  "model": "포르자350"
+  "model": "포르자350",
+  "displacement": 330,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "혼다 포르자750",
   "brand": "혼다",
-  "model": "포르자750"
+  "model": "포르자750",
+  "displacement": 745,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "혼다 ADV350",
   "brand": "혼다",
-  "model": "ADV350"
+  "model": "ADV350",
+  "displacement": 330,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "혼다 C125",
   "brand": "혼다",
-  "model": "C125"
+  "model": "C125",
+  "displacement": 124,
+  "category": "언더본",
+  "electric": false
  },
  {
   "nameKo": "혼다 CB1000 호넷",
   "brand": "혼다",
-  "model": "CB1000 호넷"
+  "model": "CB1000 호넷",
+  "displacement": 999,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "혼다 CB1000F",
   "brand": "혼다",
-  "model": "CB1000F"
+  "model": "CB1000F",
+  "displacement": 999,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "혼다 CB1000R",
   "brand": "혼다",
-  "model": "CB1000R"
+  "model": "CB1000R",
+  "displacement": 998,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "혼다 CB1100",
   "brand": "혼다",
-  "model": "CB1100"
+  "model": "CB1100",
+  "displacement": 1140,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "혼다 CB125R",
   "brand": "혼다",
-  "model": "CB125R"
+  "model": "CB125R",
+  "displacement": 125,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "혼다 CB300R",
   "brand": "혼다",
-  "model": "CB300R"
+  "model": "CB300R",
+  "displacement": 286,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "혼다 CB500X",
   "brand": "혼다",
-  "model": "CB500X"
+  "model": "CB500X",
+  "displacement": 471,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "혼다 CB650F",
   "brand": "혼다",
-  "model": "CB650F"
+  "model": "CB650F",
+  "displacement": 649,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "혼다 CB650R",
   "brand": "혼다",
-  "model": "CB650R"
+  "model": "CB650R",
+  "displacement": 649,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "혼다 CB750 호넷",
   "brand": "혼다",
-  "model": "CB750 호넷"
+  "model": "CB750 호넷",
+  "displacement": 755,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "혼다 CBR1000RR",
   "brand": "혼다",
-  "model": "CBR1000RR"
+  "model": "CBR1000RR",
+  "displacement": 999,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "혼다 CBR1000RR-R 파이어블레이드",
   "brand": "혼다",
-  "model": "CBR1000RR-R 파이어블레이드"
+  "model": "CBR1000RR-R 파이어블레이드",
+  "displacement": 1000,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "혼다 CBR500R",
   "brand": "혼다",
-  "model": "CBR500R"
+  "model": "CBR500R",
+  "displacement": 471,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "혼다 CBR600RR",
@@ -4150,97 +5953,154 @@
   "aliases": [
    "CBR600R3",
    "CBR600RA"
-  ]
+  ],
+  "displacement": 599,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "혼다 CBR650F",
   "brand": "혼다",
-  "model": "CBR650F"
+  "model": "CBR650F",
+  "displacement": 649,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "혼다 CBR650R",
   "brand": "혼다",
-  "model": "CBR650R"
+  "model": "CBR650R",
+  "displacement": 649,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "혼다 CL500",
   "brand": "혼다",
-  "model": "CL500"
+  "model": "CL500",
+  "displacement": 471,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "혼다 CRF1100L 아프리카트윈",
   "brand": "혼다",
-  "model": "CRF1100L 아프리카트윈"
+  "model": "CRF1100L 아프리카트윈",
+  "displacement": 1084,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "혼다 CRF250 랠리",
   "brand": "혼다",
-  "model": "CRF250 랠리"
+  "model": "CRF250 랠리",
+  "displacement": 249,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "혼다 CRF300L",
   "brand": "혼다",
-  "model": "CRF300L"
+  "model": "CRF300L",
+  "displacement": 286,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "혼다 CT125 헌터커브",
   "brand": "혼다",
-  "model": "CT125 헌터커브"
+  "model": "CT125 헌터커브",
+  "displacement": 124,
+  "category": "언더본",
+  "electric": false
  },
  {
   "nameKo": "혼다 GB350",
   "brand": "혼다",
-  "model": "GB350"
+  "model": "GB350",
+  "displacement": 348,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "혼다 GB350C",
   "brand": "혼다",
-  "model": "GB350C"
+  "model": "GB350C",
+  "displacement": 348,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "혼다 GB350S",
   "brand": "혼다",
-  "model": "GB350S"
+  "model": "GB350S",
+  "displacement": 348,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "혼다 MSX125 그롬",
   "brand": "혼다",
-  "model": "MSX125 그롬"
+  "model": "MSX125 그롬",
+  "displacement": 124,
+  "category": "미니",
+  "electric": false
  },
  {
   "nameKo": "혼다 NC750X",
   "brand": "혼다",
-  "model": "NC750X"
+  "model": "NC750X",
+  "displacement": 745,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "혼다 NT1100",
   "brand": "혼다",
-  "model": "NT1100"
+  "model": "NT1100",
+  "displacement": 1084,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "혼다 NX500",
   "brand": "혼다",
-  "model": "NX500"
+  "model": "NX500",
+  "displacement": 471,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "혼다 PCX125",
   "brand": "혼다",
-  "model": "PCX125"
+  "model": "PCX125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "혼다 ST125 닥스",
   "brand": "혼다",
-  "model": "ST125 닥스"
+  "model": "ST125 닥스",
+  "displacement": 124,
+  "category": "미니",
+  "electric": false
  },
  {
   "nameKo": "혼다 X-ADV",
   "brand": "혼다",
-  "model": "X-ADV"
+  "model": "X-ADV",
+  "displacement": 745,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "혼다 XL750 트랜잘프",
   "brand": "혼다",
-  "model": "XL750 트랜잘프"
+  "model": "XL750 트랜잘프",
+  "displacement": 755,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "효성 미라쥬125",
@@ -4250,17 +6110,26 @@
    "미라주",
    "미라쥬",
    "MIRAGE"
-  ]
+  ],
+  "displacement": 124,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "효성 미라쥬250",
   "brand": "효성",
-  "model": "미라쥬250"
+  "model": "미라쥬250",
+  "displacement": 249,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "효성 미라쥬650",
   "brand": "효성",
-  "model": "미라쥬650"
+  "model": "미라쥬650",
+  "displacement": 647,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "효성 코멧250",
@@ -4268,12 +6137,18 @@
   "model": "코멧250",
   "aliases": [
    "COMET"
-  ]
+  ],
+  "displacement": 249,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "효성 코멧650",
   "brand": "효성",
-  "model": "코멧650"
+  "model": "코멧650",
+  "displacement": 647,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "효성 ST7",
@@ -4281,17 +6156,26 @@
   "model": "ST7",
   "aliases": [
    "ST7"
-  ]
+  ],
+  "displacement": 678,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "BMW C400GT",
   "brand": "BMW",
-  "model": "C400GT"
+  "model": "C400GT",
+  "displacement": 350,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "BMW C400X",
   "brand": "BMW",
-  "model": "C400X"
+  "model": "C400X",
+  "displacement": 350,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "BMW C600스포츠",
@@ -4299,87 +6183,138 @@
   "model": "C600스포츠",
   "aliases": [
    "BMW C600 Sport"
-  ]
+  ],
+  "displacement": 647,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "BMW C650GT",
   "brand": "BMW",
-  "model": "C650GT"
+  "model": "C650GT",
+  "displacement": 647,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "BMW CE02",
   "brand": "BMW",
-  "model": "CE02"
+  "model": "CE02",
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "BMW CE04",
   "brand": "BMW",
-  "model": "CE04"
+  "model": "CE04",
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "BMW F700GS",
   "brand": "BMW",
-  "model": "F700GS"
+  "model": "F700GS",
+  "displacement": 798,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW F750GS",
   "brand": "BMW",
-  "model": "F750GS"
+  "model": "F750GS",
+  "displacement": 853,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW F800GS",
   "brand": "BMW",
-  "model": "F800GS"
+  "model": "F800GS",
+  "displacement": 798,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW F800GT",
   "brand": "BMW",
-  "model": "F800GT"
+  "model": "F800GT",
+  "displacement": 798,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW F800R",
   "brand": "BMW",
-  "model": "F800R"
+  "model": "F800R",
+  "displacement": 798,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "BMW F850GS",
   "brand": "BMW",
-  "model": "F850GS"
+  "model": "F850GS",
+  "displacement": 853,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW F850GS어드벤처",
   "brand": "BMW",
-  "model": "F850GS어드벤처"
+  "model": "F850GS어드벤처",
+  "displacement": 853,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW F900GS",
   "brand": "BMW",
-  "model": "F900GS"
+  "model": "F900GS",
+  "displacement": 895,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW F900GS어드벤처",
   "brand": "BMW",
-  "model": "F900GS어드벤처"
+  "model": "F900GS어드벤처",
+  "displacement": 895,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW F900R",
   "brand": "BMW",
-  "model": "F900R"
+  "model": "F900R",
+  "displacement": 895,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "BMW F900XR",
   "brand": "BMW",
-  "model": "F900XR"
+  "model": "F900XR",
+  "displacement": 895,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW G310GS",
   "brand": "BMW",
-  "model": "G310GS"
+  "model": "G310GS",
+  "displacement": 313,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW G310R",
   "brand": "BMW",
-  "model": "G310R"
+  "model": "G310R",
+  "displacement": 313,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "BMW HP2메가모토",
@@ -4387,7 +6322,10 @@
   "model": "HP2메가모토",
   "aliases": [
    "BMW HP2 Megamoto"
-  ]
+  ],
+  "displacement": 1170,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "BMW HP2스포츠",
@@ -4395,7 +6333,10 @@
   "model": "HP2스포츠",
   "aliases": [
    "BMW HP2 Sport"
-  ]
+  ],
+  "displacement": 1170,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "BMW HP4",
@@ -4403,152 +6344,242 @@
   "model": "HP4",
   "aliases": [
    "BMW HP4"
-  ]
+  ],
+  "displacement": 999,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "BMW K1600그랜드아메리카",
   "brand": "BMW",
-  "model": "K1600그랜드아메리카"
+  "model": "K1600그랜드아메리카",
+  "displacement": 1649,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW K1600B",
   "brand": "BMW",
-  "model": "K1600B"
+  "model": "K1600B",
+  "displacement": 1649,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW K1600GT",
   "brand": "BMW",
-  "model": "K1600GT"
+  "model": "K1600GT",
+  "displacement": 1649,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW K1600GTL",
   "brand": "BMW",
-  "model": "K1600GTL"
+  "model": "K1600GTL",
+  "displacement": 1649,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW M1000R",
   "brand": "BMW",
-  "model": "M1000R"
+  "model": "M1000R",
+  "displacement": 999,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "BMW M1000RR",
   "brand": "BMW",
-  "model": "M1000RR"
+  "model": "M1000RR",
+  "displacement": 999,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "BMW M1000XR",
   "brand": "BMW",
-  "model": "M1000XR"
+  "model": "M1000XR",
+  "displacement": 999,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW R12",
   "brand": "BMW",
-  "model": "R12"
+  "model": "R12",
+  "displacement": 1170,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "BMW R1200GS",
   "brand": "BMW",
-  "model": "R1200GS"
+  "model": "R1200GS",
+  "displacement": 1170,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW R1200GS어드벤처",
   "brand": "BMW",
-  "model": "R1200GS어드벤처"
+  "model": "R1200GS어드벤처",
+  "displacement": 1170,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW R1200R",
   "brand": "BMW",
-  "model": "R1200R"
+  "model": "R1200R",
+  "displacement": 1170,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "BMW R1200RS",
   "brand": "BMW",
-  "model": "R1200RS"
+  "model": "R1200RS",
+  "displacement": 1170,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW R1200RT",
   "brand": "BMW",
-  "model": "R1200RT"
+  "model": "R1200RT",
+  "displacement": 1170,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW R1250GS",
   "brand": "BMW",
-  "model": "R1250GS"
+  "model": "R1250GS",
+  "displacement": 1254,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW R1250GS어드벤처",
   "brand": "BMW",
-  "model": "R1250GS어드벤처"
+  "model": "R1250GS어드벤처",
+  "displacement": 1254,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW R1250R",
   "brand": "BMW",
-  "model": "R1250R"
+  "model": "R1250R",
+  "displacement": 1254,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "BMW R1250RS",
   "brand": "BMW",
-  "model": "R1250RS"
+  "model": "R1250RS",
+  "displacement": 1254,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW R1250RT",
   "brand": "BMW",
-  "model": "R1250RT"
+  "model": "R1250RT",
+  "displacement": 1254,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW R12나인T",
   "brand": "BMW",
-  "model": "R12나인T"
+  "model": "R12나인T",
+  "displacement": 1170,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "BMW R12G/S",
   "brand": "BMW",
-  "model": "R12G/S"
+  "model": "R12G/S",
+  "displacement": 1170,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "BMW R1300GS",
   "brand": "BMW",
-  "model": "R1300GS"
+  "model": "R1300GS",
+  "displacement": 1300,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW R1300GS어드벤처",
   "brand": "BMW",
-  "model": "R1300GS어드벤처"
+  "model": "R1300GS어드벤처",
+  "displacement": 1300,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "BMW R1300R",
   "brand": "BMW",
-  "model": "R1300R"
+  "model": "R1300R",
+  "displacement": 1300,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "BMW R1300RS",
   "brand": "BMW",
-  "model": "R1300RS"
+  "model": "R1300RS",
+  "displacement": 1300,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW R1300RT",
   "brand": "BMW",
-  "model": "R1300RT"
+  "model": "R1300RT",
+  "displacement": 1300,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW R18",
   "brand": "BMW",
-  "model": "R18"
+  "model": "R18",
+  "displacement": 1802,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "BMW R18클래식",
   "brand": "BMW",
-  "model": "R18클래식"
+  "model": "R18클래식",
+  "displacement": 1802,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "BMW R18트랜스컨티넨탈",
   "brand": "BMW",
-  "model": "R18트랜스컨티넨탈"
+  "model": "R18트랜스컨티넨탈",
+  "displacement": 1802,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW R18B",
   "brand": "BMW",
-  "model": "R18B"
+  "model": "R18B",
+  "displacement": 1802,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "BMW R나인T",
@@ -4556,7 +6587,10 @@
   "model": "R나인T",
   "aliases": [
    "BMW R nineT"
-  ]
+  ],
+  "displacement": 1170,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "BMW R나인T레이서",
@@ -4564,7 +6598,10 @@
   "model": "R나인T레이서",
   "aliases": [
    "BMW R nineT Racer"
-  ]
+  ],
+  "displacement": 1170,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "BMW R나인T스크램블러",
@@ -4573,7 +6610,10 @@
   "aliases": [
    "BMW R nineT Scrambler",
    "BMW R nineT Srambler"
-  ]
+  ],
+  "displacement": 1170,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "BMW R나인T어반GS",
@@ -4581,7 +6621,10 @@
   "model": "R나인T어반GS",
   "aliases": [
    "BMW R nineT Urban G/S"
-  ]
+  ],
+  "displacement": 1170,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "BMW R나인T퓨어",
@@ -4590,112 +6633,178 @@
   "aliases": [
    "BMW R nineT  Pure",
    "BMW R nineT Pure"
-  ]
+  ],
+  "displacement": 1170,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "BMW S1000R",
   "brand": "BMW",
-  "model": "S1000R"
+  "model": "S1000R",
+  "displacement": 999,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "BMW S1000RR",
   "brand": "BMW",
-  "model": "S1000RR"
+  "model": "S1000RR",
+  "displacement": 999,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "BMW S1000XR",
   "brand": "BMW",
-  "model": "S1000XR"
+  "model": "S1000XR",
+  "displacement": 999,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 250CL-C",
   "brand": "CFMOTO",
-  "model": "250CL-C"
+  "model": "250CL-C",
+  "displacement": 249,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 300CL-X",
   "brand": "CFMOTO",
-  "model": "300CL-X"
+  "model": "300CL-X",
+  "displacement": 292,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 300SR",
   "brand": "CFMOTO",
-  "model": "300SR"
+  "model": "300SR",
+  "displacement": 292,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 450CL-C",
   "brand": "CFMOTO",
-  "model": "450CL-C"
+  "model": "450CL-C",
+  "displacement": 450,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 450CL-C 보버",
   "brand": "CFMOTO",
-  "model": "450CL-C 보버"
+  "model": "450CL-C 보버",
+  "displacement": 450,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 450MT",
   "brand": "CFMOTO",
-  "model": "450MT"
+  "model": "450MT",
+  "displacement": 450,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 450NK",
   "brand": "CFMOTO",
-  "model": "450NK"
+  "model": "450NK",
+  "displacement": 450,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 450SR",
   "brand": "CFMOTO",
-  "model": "450SR"
+  "model": "450SR",
+  "displacement": 450,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 650GT",
   "brand": "CFMOTO",
-  "model": "650GT"
+  "model": "650GT",
+  "displacement": 649,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 650NK",
   "brand": "CFMOTO",
-  "model": "650NK"
+  "model": "650NK",
+  "displacement": 649,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 675NK",
   "brand": "CFMOTO",
-  "model": "675NK"
+  "model": "675NK",
+  "displacement": 674,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 675SR-R",
   "brand": "CFMOTO",
-  "model": "675SR-R"
+  "model": "675SR-R",
+  "displacement": 674,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 700CL-X",
   "brand": "CFMOTO",
-  "model": "700CL-X"
+  "model": "700CL-X",
+  "displacement": 693,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 700CL-X 스포츠",
   "brand": "CFMOTO",
-  "model": "700CL-X 스포츠"
+  "model": "700CL-X 스포츠",
+  "displacement": 693,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 700MT",
   "brand": "CFMOTO",
-  "model": "700MT"
+  "model": "700MT",
+  "displacement": 693,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 800MT",
   "brand": "CFMOTO",
-  "model": "800MT"
+  "model": "800MT",
+  "displacement": 799,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 파피오 XO-1",
   "brand": "CFMOTO",
-  "model": "파피오 XO-1"
+  "model": "파피오 XO-1",
+  "displacement": 126,
+  "category": "미니",
+  "electric": false
  },
  {
   "nameKo": "CFMOTO 파피오 XO-2",
   "brand": "CFMOTO",
-  "model": "파피오 XO-2"
+  "model": "파피오 XO-2",
+  "displacement": 126,
+  "category": "미니",
+  "electric": false
  },
  {
   "nameKo": "KKM 드래곤",
@@ -4703,7 +6812,10 @@
   "model": "드래곤",
   "aliases": [
    "드래곤"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KKM 요요",
@@ -4711,7 +6823,10 @@
   "model": "요요",
   "aliases": [
    "요요"
-  ]
+  ],
+  "displacement": 50,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KKM 투유",
@@ -4719,7 +6834,10 @@
   "model": "투유",
   "aliases": [
    "투유"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KKM 투유데이",
@@ -4728,7 +6846,10 @@
   "aliases": [
    "투유데이",
    "TOYOU DAY"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KKM 투유데이2",
@@ -4736,7 +6857,10 @@
   "model": "투유데이2",
   "aliases": [
    "TOYOUDAYⅡ"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 그란투스125",
@@ -4745,7 +6869,10 @@
   "aliases": [
    "그란투스",
    "GRANTUS"
-  ]
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 뉴티50",
@@ -4753,7 +6880,10 @@
   "model": "뉴티50",
   "aliases": [
    "뉴티"
-  ]
+  ],
+  "displacement": 49,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 델리로드100",
@@ -4764,12 +6894,18 @@
    "델리로드더블유",
    "델리로드 아이",
    "델리로드"
-  ]
+  ],
+  "displacement": 99,
+  "category": "언더본",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 델리S",
   "brand": "KR모터스",
-  "model": "델리S"
+  "model": "델리S",
+  "displacement": 100,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 라온100",
@@ -4777,7 +6913,10 @@
   "model": "라온100",
   "aliases": [
    "라온-에프"
-  ]
+  ],
+  "displacement": 99,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 메가젯125",
@@ -4785,7 +6924,10 @@
   "model": "메가젯125",
   "aliases": [
    "메가젯"
-  ]
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 비버125",
@@ -4794,7 +6936,10 @@
   "aliases": [
    "비버-파이브",
    "비버파이브"
-  ]
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 아이미125",
@@ -4802,17 +6947,26 @@
   "model": "아이미125",
   "aliases": [
    "아이미"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 아퀼라125",
   "brand": "KR모터스",
-  "model": "아퀼라125"
+  "model": "아퀼라125",
+  "displacement": 124,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 아퀼라300",
   "brand": "KR모터스",
-  "model": "아퀼라300"
+  "model": "아퀼라300",
+  "displacement": 296,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 엑시브250N",
@@ -4820,12 +6974,18 @@
   "model": "엑시브250N",
   "aliases": [
    "엑시브"
-  ]
+  ],
+  "displacement": 249,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 엑시브250R",
   "brand": "KR모터스",
-  "model": "엑시브250R"
+  "model": "엑시브250R",
+  "displacement": 249,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 와우2",
@@ -4833,7 +6993,10 @@
   "model": "와우2",
   "aliases": [
    "와우2"
-  ]
+  ],
+  "displacement": 100,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 욜로125",
@@ -4841,7 +7004,10 @@
   "model": "욜로125",
   "aliases": [
    "YOLO"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 이루션",
@@ -4849,7 +7015,10 @@
   "model": "이루션",
   "aliases": [
    "이루션"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "KR모터스 이스코",
@@ -4858,7 +7027,10 @@
   "aliases": [
    "이델리로드프로",
    "이스코알파"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "KR모터스 이스코 트리",
@@ -4866,12 +7038,18 @@
   "model": "이스코 트리",
   "aliases": [
    "E-SKO TRI"
-  ]
+  ],
+  "displacement": null,
+  "category": "3륜",
+  "electric": true
  },
  {
   "nameKo": "KR모터스 케이윈125",
   "brand": "KR모터스",
-  "model": "케이윈125"
+  "model": "케이윈125",
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 큐티",
@@ -4879,7 +7057,10 @@
   "model": "큐티",
   "aliases": [
    "큐티"
-  ]
+  ],
+  "displacement": 80,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 토리50",
@@ -4887,7 +7068,10 @@
   "model": "토리50",
   "aliases": [
    "토리50"
-  ]
+  ],
+  "displacement": 49,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 티니110",
@@ -4895,22 +7079,34 @@
   "model": "티니110",
   "aliases": [
    "티니"
-  ]
+  ],
+  "displacement": 111,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 파트너100",
   "brand": "KR모터스",
-  "model": "파트너100"
+  "model": "파트너100",
+  "displacement": 99,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 DD100",
   "brand": "KR모터스",
-  "model": "DD100"
+  "model": "DD100",
+  "displacement": 99,
+  "category": "언더본",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 DD110",
   "brand": "KR모터스",
-  "model": "DD110"
+  "model": "DD110",
+  "displacement": 108,
+  "category": "언더본",
+  "electric": false
  },
  {
   "nameKo": "KR모터스 e-델리로드",
@@ -4918,7 +7114,10 @@
   "model": "e-델리로드",
   "aliases": [
    "이델리로드"
-  ]
+  ],
+  "displacement": null,
+  "category": "언더본",
+  "electric": true
  },
  {
   "nameKo": "KTM 1090어드벤처",
@@ -4926,7 +7125,10 @@
   "model": "1090어드벤처",
   "aliases": [
    "1090 ADVENTURE"
-  ]
+  ],
+  "displacement": 1050,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 1090어드벤처R",
@@ -4934,7 +7136,10 @@
   "model": "1090어드벤처R",
   "aliases": [
    "1090 ADVENTURE R"
-  ]
+  ],
+  "displacement": 1050,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 1190어드벤처",
@@ -4942,7 +7147,10 @@
   "model": "1190어드벤처",
   "aliases": [
    "1190 Adventure"
-  ]
+  ],
+  "displacement": 1195,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 1190어드벤처R",
@@ -4950,147 +7158,234 @@
   "model": "1190어드벤처R",
   "aliases": [
    "1190 Adventure R"
-  ]
+  ],
+  "displacement": 1195,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 125듀크",
   "brand": "KTM",
-  "model": "125듀크"
+  "model": "125듀크",
+  "displacement": 125,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "KTM 1290슈퍼듀크GT",
   "brand": "KTM",
-  "model": "1290슈퍼듀크GT"
+  "model": "1290슈퍼듀크GT",
+  "displacement": 1301,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "KTM 1290슈퍼듀크R",
   "brand": "KTM",
-  "model": "1290슈퍼듀크R"
+  "model": "1290슈퍼듀크R",
+  "displacement": 1301,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "KTM 1290슈퍼어드벤처R",
   "brand": "KTM",
-  "model": "1290슈퍼어드벤처R"
+  "model": "1290슈퍼어드벤처R",
+  "displacement": 1301,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 1290슈퍼어드벤처S",
   "brand": "KTM",
-  "model": "1290슈퍼어드벤처S"
+  "model": "1290슈퍼어드벤처S",
+  "displacement": 1301,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 1390슈퍼듀크R",
   "brand": "KTM",
-  "model": "1390슈퍼듀크R"
+  "model": "1390슈퍼듀크R",
+  "displacement": 1350,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "KTM 1390슈퍼듀크RR",
   "brand": "KTM",
-  "model": "1390슈퍼듀크RR"
+  "model": "1390슈퍼듀크RR",
+  "displacement": 1350,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "KTM 1390슈퍼어드벤처R",
   "brand": "KTM",
-  "model": "1390슈퍼어드벤처R"
+  "model": "1390슈퍼어드벤처R",
+  "displacement": 1350,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 1390슈퍼어드벤처S",
   "brand": "KTM",
-  "model": "1390슈퍼어드벤처S"
+  "model": "1390슈퍼어드벤처S",
+  "displacement": 1350,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 300EXC",
   "brand": "KTM",
-  "model": "300EXC"
+  "model": "300EXC",
+  "displacement": 293,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "KTM 390듀크",
   "brand": "KTM",
-  "model": "390듀크"
+  "model": "390듀크",
+  "displacement": 399,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "KTM 390어드벤처",
   "brand": "KTM",
-  "model": "390어드벤처"
+  "model": "390어드벤처",
+  "displacement": 373,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 390어드벤처R",
   "brand": "KTM",
-  "model": "390어드벤처R"
+  "model": "390어드벤처R",
+  "displacement": 399,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 390어드벤처X",
   "brand": "KTM",
-  "model": "390어드벤처X"
+  "model": "390어드벤처X",
+  "displacement": 399,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 390엔듀로R",
   "brand": "KTM",
-  "model": "390엔듀로R"
+  "model": "390엔듀로R",
+  "displacement": 399,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "KTM 390SMC R",
   "brand": "KTM",
-  "model": "390SMC R"
+  "model": "390SMC R",
+  "displacement": 399,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "KTM 690듀크",
   "brand": "KTM",
-  "model": "690듀크"
+  "model": "690듀크",
+  "displacement": 693,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "KTM 690엔듀로R",
   "brand": "KTM",
-  "model": "690엔듀로R"
+  "model": "690엔듀로R",
+  "displacement": 693,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "KTM 690SMC R",
   "brand": "KTM",
-  "model": "690SMC R"
+  "model": "690SMC R",
+  "displacement": 693,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "KTM 790듀크",
   "brand": "KTM",
-  "model": "790듀크"
+  "model": "790듀크",
+  "displacement": 799,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "KTM 790어드벤처",
   "brand": "KTM",
-  "model": "790어드벤처"
+  "model": "790어드벤처",
+  "displacement": 799,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 890듀크R",
   "brand": "KTM",
-  "model": "890듀크R"
+  "model": "890듀크R",
+  "displacement": 889,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "KTM 890어드벤처",
   "brand": "KTM",
-  "model": "890어드벤처"
+  "model": "890어드벤처",
+  "displacement": 889,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 890어드벤처R",
   "brand": "KTM",
-  "model": "890어드벤처R"
+  "model": "890어드벤처R",
+  "displacement": 889,
+  "category": "어드벤처",
+  "electric": false
  },
  {
   "nameKo": "KTM 890SMT",
   "brand": "KTM",
-  "model": "890SMT"
+  "model": "890SMT",
+  "displacement": 889,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "KTM 990듀크",
   "brand": "KTM",
-  "model": "990듀크"
+  "model": "990듀크",
+  "displacement": 947,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "KTM 990RC R",
   "brand": "KTM",
-  "model": "990RC R"
+  "model": "990RC R",
+  "displacement": 947,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "KTM RC390",
   "brand": "KTM",
-  "model": "RC390"
+  "model": "RC390",
+  "displacement": 373,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "MV아구스타 드락스터800",
@@ -5098,7 +7393,10 @@
   "model": "드락스터800",
   "aliases": [
    "DRAGSTER RR"
-  ]
+  ],
+  "displacement": 798,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "MV아구스타 러쉬1000",
@@ -5106,12 +7404,18 @@
   "model": "러쉬1000",
   "aliases": [
    "RUSH"
-  ]
+  ],
+  "displacement": 998,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "MV아구스타 브루탈레1000RR",
   "brand": "MV아구스타",
-  "model": "브루탈레1000RR"
+  "model": "브루탈레1000RR",
+  "displacement": 998,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "MV아구스타 브루탈레1090",
@@ -5120,7 +7424,10 @@
   "aliases": [
    "BRUTALE 1090 R",
    "BRUTALE 1090"
-  ]
+  ],
+  "displacement": 1078,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "MV아구스타 브루탈레800",
@@ -5128,7 +7435,10 @@
   "model": "브루탈레800",
   "aliases": [
    "BRUTALE RR"
-  ]
+  ],
+  "displacement": 798,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "MV아구스타 슈퍼벨로체800",
@@ -5136,7 +7446,10 @@
   "model": "슈퍼벨로체800",
   "aliases": [
    "SUPER VELOCE"
-  ]
+  ],
+  "displacement": 798,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "MV아구스타 투리스모벨로체800",
@@ -5146,7 +7459,10 @@
    "TURISMO VELOCE LUSSO",
    "TURISMO VELOCE ROSSO",
    "TURISMO VELOCE"
-  ]
+  ],
+  "displacement": 798,
+  "category": "투어러",
+  "electric": false
  },
  {
   "nameKo": "MV아구스타 F3 800",
@@ -5155,7 +7471,10 @@
   "aliases": [
    "F3 ROSSO",
    "F3 RR"
-  ]
+  ],
+  "displacement": 798,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "MV아구스타 F4",
@@ -5166,7 +7485,10 @@
    "F4 R",
    "F4",
    "F4 RR"
-  ]
+  ],
+  "displacement": 998,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "MV아구스타 RVS#1",
@@ -5174,27 +7496,42 @@
   "model": "RVS#1",
   "aliases": [
    "RVS#1"
-  ]
+  ],
+  "displacement": 798,
+  "category": "네이키드",
+  "electric": false
  },
  {
   "nameKo": "QJ모터 ATR125",
   "brand": "QJ모터",
-  "model": "ATR125"
+  "model": "ATR125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "QJ모터 SRK421RR",
   "brand": "QJ모터",
-  "model": "SRK421RR"
+  "model": "SRK421RR",
+  "displacement": 421,
+  "category": "스포츠",
+  "electric": false
  },
  {
   "nameKo": "QJ모터 SRV300A",
   "brand": "QJ모터",
-  "model": "SRV300A"
+  "model": "SRV300A",
+  "displacement": 296,
+  "category": "크루저",
+  "electric": false
  },
  {
   "nameKo": "SYM 맥심400i",
   "brand": "SYM",
-  "model": "맥심400i"
+  "model": "맥심400i",
+  "displacement": 399,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 맥심600",
@@ -5203,7 +7540,10 @@
   "aliases": [
    "MAXSYM600",
    "MAXSYM600ABS"
-  ]
+  ],
+  "displacement": 565,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 미오100",
@@ -5211,7 +7551,10 @@
   "model": "미오100",
   "aliases": [
    "미오"
-  ]
+  ],
+  "displacement": 101,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 미오115",
@@ -5219,7 +7562,10 @@
   "model": "미오115",
   "aliases": [
    "MIO 115"
-  ]
+  ],
+  "displacement": 115,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 미오50",
@@ -5227,7 +7573,10 @@
   "model": "미오50",
   "aliases": [
    "미오50"
-  ]
+  ],
+  "displacement": 50,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 와이드에보125",
@@ -5235,7 +7584,10 @@
   "model": "와이드에보125",
   "aliases": [
    "와이드EVO"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 제트14",
@@ -5244,7 +7596,10 @@
   "aliases": [
    "JET14",
    "JET14 ABS"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 제트S",
@@ -5252,17 +7607,26 @@
   "model": "제트S",
   "aliases": [
    "JET S"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 조이맥스125i",
   "brand": "SYM",
-  "model": "조이맥스125i"
+  "model": "조이맥스125i",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 조이맥스300i",
   "brand": "SYM",
-  "model": "조이맥스300i"
+  "model": "조이맥스300i",
+  "displacement": 278,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 조이맥스Z125",
@@ -5270,32 +7634,50 @@
   "model": "조이맥스Z125",
   "aliases": [
    "JOYMAX Z"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 조이맥스Z300",
   "brand": "SYM",
-  "model": "조이맥스Z300"
+  "model": "조이맥스Z300",
+  "displacement": 278,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 조이시티125",
   "brand": "SYM",
-  "model": "조이시티125"
+  "model": "조이시티125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 조이시티300",
   "brand": "SYM",
-  "model": "조이시티300"
+  "model": "조이시티300",
+  "displacement": 278,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 조이심125",
   "brand": "SYM",
-  "model": "조이심125"
+  "model": "조이심125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 조이심300",
   "brand": "SYM",
-  "model": "조이심300"
+  "model": "조이심300",
+  "displacement": 278,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 카미온",
@@ -5303,22 +7685,34 @@
   "model": "카미온",
   "aliases": [
    "카미온와이드"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 크루심125",
   "brand": "SYM",
-  "model": "크루심125"
+  "model": "크루심125",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 크루심300",
   "brand": "SYM",
-  "model": "크루심300"
+  "model": "크루심300",
+  "displacement": 278,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 크루심GT",
   "brand": "SYM",
-  "model": "크루심GT"
+  "model": "크루심GT",
+  "displacement": 399,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "SYM 포미카125",
@@ -5326,7 +7720,10 @@
   "model": "포미카125",
   "aliases": [
    "4MICAEP"
-  ]
+  ],
+  "displacement": 125,
+  "category": "언더본",
+  "electric": false
  },
  {
   "nameKo": "SYM 피들3",
@@ -5334,7 +7731,10 @@
   "model": "피들3",
   "aliases": [
    "피들3"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "TTS 타이거",
@@ -5342,22 +7742,34 @@
   "model": "타이거",
   "aliases": [
    "타이거"
-  ]
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true
  },
  {
   "nameKo": "VOGE 300ACX",
   "brand": "VOGE",
-  "model": "300ACX"
+  "model": "300ACX",
+  "displacement": 292,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "VOGE 300RALLY",
   "brand": "VOGE",
-  "model": "300RALLY"
+  "model": "300RALLY",
+  "displacement": 292,
+  "category": "오프로드",
+  "electric": false
  },
  {
   "nameKo": "VOGE 500AC",
   "brand": "VOGE",
-  "model": "500AC"
+  "model": "500AC",
+  "displacement": 471,
+  "category": "클래식",
+  "electric": false
  },
  {
   "nameKo": "VOGE SR1",
@@ -5365,21 +7777,33 @@
   "model": "SR1",
   "aliases": [
    "SR1"
-  ]
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "VOGE SR1-ADV",
   "brand": "VOGE",
-  "model": "SR1-ADV"
+  "model": "SR1-ADV",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "VOGE SR125GT",
   "brand": "VOGE",
-  "model": "SR125GT"
+  "model": "SR125GT",
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false
  },
  {
   "nameKo": "VOGE SR4MAX",
   "brand": "VOGE",
-  "model": "SR4MAX"
+  "model": "SR4MAX",
+  "displacement": 350,
+  "category": "스쿠터",
+  "electric": false
  }
 ]
