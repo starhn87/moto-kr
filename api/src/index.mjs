@@ -43,11 +43,18 @@ const USAGE = {
         to: '최초 인증일 상한',
         status: 'verified | curated',
         electric: 'true | false',
+        fuelGrade: 'regular | premium (권장 연료)',
+        emission: 'euro5 | euro4 | euro3 (배출 기준, 최신 인증 기준)',
+        seatHeightMin: '시트고 하한 (mm)',
+        seatHeightMax: '시트고 상한 (mm)',
+        weightMin: '중량 하한 (kg)',
+        weightMax: '중량 상한 (kg)',
         q: '이름·인증 차명 부분 일치 검색',
         limit: '최대 반환 수 (기본 전체)',
         offset: '건너뛸 수',
       },
-      example: '/models?brand=혼다&ccMin=250&ccMax=800&category=스포츠',
+      example: '/models?category=크루저&ccMin=800&fuelGrade=premium&emission=euro5&seatHeightMax=750',
+      tip: '원동기 면허(125cc 이하) 기종은 ccMax=125 로 거른다',
       note: '인증 이력 전문은 정적 파일에서: https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main/data/models.json',
     },
     'GET /brands': '브랜드 목록과 기종 수',
@@ -82,6 +89,13 @@ export default {
       const to = normDate(p.get('to'), true);
       const status = p.get('status');
       const electric = p.has('electric') ? p.get('electric') === 'true' : null;
+      const fuelGrade = p.get('fuelGrade');
+      const emission = p.get('emission');
+      const numOrNull = (k) => (p.has(k) ? Number(p.get(k)) : null);
+      const seatHeightMin = numOrNull('seatHeightMin');
+      const seatHeightMax = numOrNull('seatHeightMax');
+      const weightMin = numOrNull('weightMin');
+      const weightMax = numOrNull('weightMax');
       const q = p.get('q')?.trim();
 
       if ((ccMin !== null && Number.isNaN(ccMin)) || (ccMax !== null && Number.isNaN(ccMax))) {
@@ -92,6 +106,15 @@ export default {
       }
       if (status && status !== 'verified' && status !== 'curated') {
         return json({ error: 'status 는 verified 또는 curated 입니다' }, 400);
+      }
+      if (fuelGrade && fuelGrade !== 'regular' && fuelGrade !== 'premium') {
+        return json({ error: 'fuelGrade 는 regular 또는 premium 입니다' }, 400);
+      }
+      if (emission && !['euro5', 'euro4', 'euro3'].includes(emission)) {
+        return json({ error: 'emission 은 euro5, euro4, euro3 중 하나입니다' }, 400);
+      }
+      for (const [k, v] of [['seatHeightMin', seatHeightMin], ['seatHeightMax', seatHeightMax], ['weightMin', weightMin], ['weightMax', weightMax]]) {
+        if (v !== null && Number.isNaN(v)) return json({ error: `${k} 는 숫자여야 합니다` }, 400);
       }
 
       const qNorm = q?.toUpperCase().replace(/[^A-Z0-9가-힣]/g, '');
@@ -105,6 +128,12 @@ export default {
         if (to && (!m.firstCertifiedAt || m.firstCertifiedAt > to)) return false;
         if (status && m.status !== status) return false;
         if (electric !== null && m.electric !== electric) return false;
+        if (fuelGrade && m.fuelGrade !== fuelGrade) return false;
+        if (emission && m.emissionStandard !== emission) return false;
+        if (seatHeightMin !== null && (m.seatHeight === null || m.seatHeight < seatHeightMin)) return false;
+        if (seatHeightMax !== null && (m.seatHeight === null || m.seatHeight > seatHeightMax)) return false;
+        if (weightMin !== null && (m.weight === null || m.weight < weightMin)) return false;
+        if (weightMax !== null && (m.weight === null || m.weight > weightMax)) return false;
         if (qNorm) {
           const hay = [m.nameKo, ...(m.aliases ?? [])]
             .join('|')

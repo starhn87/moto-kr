@@ -47,6 +47,11 @@ rows.forEach((r, i) => {
       (e._alpha.length > 0 && e._alpha.every((t) => nm.includes(t)));
     if (hit) {
       e.aliases.add(r.VEH_NM);
+      e._emissions ??= [];
+      e._emissions.push({
+        date: (r.EMIS_CERTI_DATE ?? r.NOISE_CERTI_DATE ?? '').replaceAll('/', '-'),
+        mustard: r.MUSTARD ?? null,
+      });
       e.certifications.push({
         no: r.EMIS_CERTI_NO ?? r.NOISE_CERTI_NO,
         date: (r.EMIS_CERTI_DATE ?? r.NOISE_CERTI_DATE ?? '').replaceAll('/', '-') || null,
@@ -61,6 +66,20 @@ rows.forEach((r, i) => {
   }
 });
 
+// 배출 기준 유도: 최신 인증의 배출허용기준(예: "2020년 1월 기준" = 유로5)을 우선하고
+// 미기재면 인증일로 근사한다 (유로4 2017.1, 유로5 2020.1 시행)
+const euroOf = (mustard, date) => {
+  const y = Number((mustard?.match(/(20\d{2})년/) ?? [])[1] ?? 0);
+  if (y >= 2020) return 'euro5';
+  if (y >= 2017) return 'euro4';
+  if (y >= 2006) return 'euro3';
+  const dy = Number((date ?? '').slice(0, 4)) || 0;
+  if (dy >= 2021) return 'euro5';
+  if (dy >= 2017) return 'euro4';
+  if (dy >= 2008) return 'euro3';
+  return null;
+};
+
 const models = entries
   .map((e) => {
     const dates = e.certifications.map((c) => c.date).filter(Boolean).sort();
@@ -71,6 +90,15 @@ const models = entries
       displacement: e.displacement ?? null,
       category: e.category ?? null,
       electric: e.electric ?? false,
+      fuelGrade: e.fuelGrade ?? null,
+      seatHeight: e.seatHeight ?? null,
+      weight: e.weight ?? null,
+      emissionStandard: (() => {
+        const latest = (e._emissions ?? [])
+          .filter((x) => x.date)
+          .sort((a, b) => b.date.localeCompare(a.date))[0];
+        return latest ? euroOf(latest.mustard, latest.date) : null;
+      })(),
       status: e.certifications.length ? 'verified' : 'curated',
       aliases: [...e.aliases].sort(),
       firstCertifiedAt: dates[0] ?? null,

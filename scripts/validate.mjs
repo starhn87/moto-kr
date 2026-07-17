@@ -22,6 +22,13 @@ for (const s of seed) {
     err(`displacement 이상: ${s.nameKo} (${s.displacement})`);
   }
   if (s.electric === true && s.displacement != null) err(`전기인데 배기량 존재: ${s.nameKo}`);
+  if (s.fuelGrade != null && s.fuelGrade !== 'regular' && s.fuelGrade !== 'premium') {
+    err(`fuelGrade 이상: ${s.nameKo} (${s.fuelGrade})`);
+  }
+  if (s.electric === true && s.fuelGrade != null) err(`전기인데 fuelGrade 존재: ${s.nameKo}`);
+  for (const k of ['seatHeight', 'weight']) {
+    if (s[k] != null && (!Number.isInteger(s[k]) || s[k] <= 0)) err(`${k} 이상: ${s.nameKo} (${s[k]})`);
+  }
 }
 
 const built = JSON.parse(readFileSync('data/models.json', 'utf8'));
