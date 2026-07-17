@@ -1,0 +1,6 @@
+# moto-kr 쿼리 API. 배포: cd api && npx wrangler deploy
+# 데이터(../data/models.json)를 번들에 임베드하므로 데이터 갱신 후엔 재배포한다.
+name = "moto-kr"
+main = "src/index.mjs"
+compatibility_date = "2026-07-01"
+workers_dev = true

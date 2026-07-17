@@ -1,8 +1,9 @@
 // raw(KENCIS 인증)와 mapping(사람이 관리)을 합쳐 배포용 데이터셋을 만든다.
 //
-//   data/models.json      풀 스키마: 기종별 인증 이력 연결
-//   data/models.min.json  경량판: 자동완성용 한글 표기 배열
-//   data/unmapped.json    시드에 매핑되지 않은 인증 차명: 기여 대상 목록
+//   data/models.json       풀 스키마: 기종별 인증 이력 전문
+//   data/models.lite.json   경량판: 인증 이력 대신 요약(건수·업체). 쿼리 API 가 임베드
+//   data/models.min.json    최소판: 자동완성용 한글 표기 배열
+//   data/unmapped.json      시드에 매핑되지 않은 인증 차명: 기여 대상 목록
 //
 // 사용: node scripts/build.mjs
 
@@ -67,6 +68,9 @@ const models = entries
       nameKo: e.nameKo,
       brand: e.brand,
       model: e.model,
+      displacement: e.displacement ?? null,
+      category: e.category ?? null,
+      electric: e.electric ?? false,
       status: e.certifications.length ? 'verified' : 'curated',
       aliases: [...e.aliases].sort(),
       firstCertifiedAt: dates[0] ?? null,
@@ -108,6 +112,12 @@ const meta = {
 };
 
 writeFileSync('data/models.json', JSON.stringify({ meta, models }, null, 1));
+const lite = models.map(({ certifications, ...rest }) => ({
+  ...rest,
+  certificationCount: certifications.length,
+  offices: [...new Set(certifications.map((c) => c.office))],
+}));
+writeFileSync('data/models.lite.json', JSON.stringify({ meta, models: lite }));
 writeFileSync(
   'data/models.min.json',
   JSON.stringify({ meta: { generatedAt: meta.generatedAt, models: models.length }, names: models.map((m) => m.nameKo) }),
