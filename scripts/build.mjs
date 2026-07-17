@@ -22,7 +22,10 @@ const norm = (s) => (s ?? '').toUpperCase().replace(/[^A-Z0-9가-힣]/g, '');
 // 시드 항목마다 매칭 토큰 준비: 모델부 전체 + 영숫자 토큰(3자 이상)
 const entries = seed.map((s) => {
   const token = norm(s.model);
-  const alphaTokens = (s.model.match(/[A-Za-z0-9-]{3,}/g) ?? []).map(norm).filter((t) => t.length >= 3);
+  // 순수 숫자 토큰은 배기량 숫자라 다른 브랜드 차명까지 흡수한다("650" → AN650, C650...) — 제외
+  const alphaTokens = (s.model.match(/[A-Za-z0-9-]{3,}/g) ?? [])
+    .map(norm)
+    .filter((t) => t.length >= 3 && !/^[0-9]+$/.test(t));
   return {
     ...s,
     _token: token,
@@ -40,11 +43,22 @@ rows.forEach((r, i) => {
   if (!nm) return;
   for (const e of entries) {
     // 인증 차명이 모델 토큰을 포함하거나(예: CBR650RA ⊇ CBR650R),
-    // 모델의 영숫자 토큰이 모두 차명에 있으면 매칭
+    // 모델의 영숫자 토큰이 모두 차명에 있으면 매칭.
+    // 단 토큰이 숫자로 끝나면 바로 뒤 문자가 숫자가 아니어야 한다 — R12 가
+    // R1250GS 를, 닌자400 이 ...4000 을 흡수하는 오매칭 방지 (사양 접미 문자는 허용)
+    const boundedIncludes = (hay, needle) => {
+      let idx = hay.indexOf(needle);
+      while (idx !== -1) {
+        const nextCh = hay[idx + needle.length];
+        if (!(/[0-9]$/.test(needle) && nextCh && /[0-9]/.test(nextCh))) return true;
+        idx = hay.indexOf(needle, idx + 1);
+      }
+      return false;
+    };
     const hit =
       e._aliasNorm.has(nm) ||
-      (e._token.length >= 3 && nm.includes(e._token)) ||
-      (e._alpha.length > 0 && e._alpha.every((t) => nm.includes(t)));
+      (e._token.length >= 3 && boundedIncludes(nm, e._token)) ||
+      (e._alpha.length > 0 && e._alpha.every((t) => boundedIncludes(nm, t)));
     if (hit) {
       e.aliases.add(r.VEH_NM);
       e._emissions ??= [];
