@@ -42,7 +42,7 @@ GET /meta                                    # 데이터 생성일과 집계
   "meta": {
     "generatedAt": "2026-07-17",
     "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
-    "counts": { "models": 808, "verified": 534, "curated": 274, "certifications": 5605, "unmapped": 738 }
+    "counts": { "models": 1040, "verified": 877, "curated": 163, "certifications": 5605, "unmapped": 112 }
   },
   "models": [
     {

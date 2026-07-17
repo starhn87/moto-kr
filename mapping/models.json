@@ -157,7 +157,11 @@
   "cylinders": 4,
   "cooling": "liquid",
   "fuelCapacity": 17,
-  "power": 203
+  "power": 203,
+  "aliases": [
+   "ZX1000F",
+   "ZX1000E"
+  ]
  },
  {
   "nameKo": "가와사키 닌자 ZX-14R",
@@ -172,7 +176,12 @@
   "cylinders": 4,
   "cooling": "liquid",
   "fuelCapacity": 22,
-  "power": 200
+  "power": 200,
+  "aliases": [
+   "ZZR1400 ABS",
+   "ZZR1400",
+   "ZX1400D"
+  ]
  },
  {
   "nameKo": "가와사키 닌자 ZX-4RR",
@@ -253,7 +262,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 17,
-  "power": 39
+  "power": 39,
+  "aliases": [
+   "NINJA 300 ABS",
+   "NINJA 300"
+  ]
  },
  {
   "nameKo": "가와사키 닌자400",
@@ -268,7 +281,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 14,
-  "power": 45
+  "power": 45,
+  "aliases": [
+   "Ninja 400"
+  ]
  },
  {
   "nameKo": "가와사키 닌자500",
@@ -283,7 +299,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 14,
-  "power": 45
+  "power": 45,
+  "aliases": [
+   "Ninja 500"
+  ]
  },
  {
   "nameKo": "가와사키 닌자650",
@@ -298,7 +317,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 15,
-  "power": 68
+  "power": 68,
+  "aliases": [
+   "Ninja 650",
+   "NINJA 650 ABS"
+  ]
  },
  {
   "nameKo": "가와사키 메구로 S1",
@@ -331,7 +354,11 @@
   "cylinders": 4,
   "cooling": "liquid",
   "fuelCapacity": 21,
-  "power": 120
+  "power": 120,
+  "aliases": [
+   "VERSYS 1000",
+   "VERSYS 1000 SE"
+  ]
  },
  {
   "nameKo": "가와사키 버시스650",
@@ -472,7 +499,10 @@
   "cylinders": 4,
   "cooling": "liquid",
   "fuelCapacity": 17,
-  "power": 142
+  "power": 142,
+  "aliases": [
+   "ZR1000E"
+  ]
  },
  {
   "nameKo": "가와사키 Z1100",
@@ -1065,7 +1095,13 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 15.5,
-  "power": 13
+  "power": 13,
+  "aliases": [
+   "VL125P",
+   "VL125K",
+   "VL125Z",
+   "VL125"
+  ]
  },
  {
   "nameKo": "대림 델피노",
@@ -1080,7 +1116,10 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 7.8,
-  "power": null
+  "power": null,
+  "aliases": [
+   "SU125V"
+  ]
  },
  {
   "nameKo": "대림 로드윈125",
@@ -1095,14 +1134,20 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 15,
-  "power": 13
+  "power": 13,
+  "aliases": [
+   "VJ125",
+   "VJ125B",
+   "VJF125"
+  ]
  },
  {
   "nameKo": "대림 로드윈250",
   "brand": "대림",
   "model": "로드윈250",
   "aliases": [
-   "브이제이에프이백오십제트"
+   "브이제이에프이백오십제트",
+   "VJF250"
   ],
   "displacement": 249,
   "category": "스포츠",
@@ -1198,7 +1243,14 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 4,
-  "power": null
+  "power": null,
+  "aliases": [
+   "CA110F",
+   "CA110V",
+   "CA110B",
+   "CA110S",
+   "XA110"
+  ]
  },
  {
   "nameKo": "대림 에디",
@@ -1345,7 +1397,10 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 4,
-  "power": null
+  "power": null,
+  "aliases": [
+   "DA100"
+  ]
  },
  {
   "nameKo": "대림 e시티",
@@ -1400,14 +1455,19 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 6.5,
-  "power": 9
+  "power": 9,
+  "aliases": [
+   "UL125P",
+   "UL125"
+  ]
  },
  {
   "nameKo": "대림 Q3",
   "brand": "대림",
   "model": "Q3",
   "aliases": [
-   "에스브이이백오십"
+   "에스브이이백오십",
+   "SV250"
   ],
   "displacement": 249,
   "category": "스쿠터",
@@ -1715,7 +1775,12 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 17,
-  "power": 159
+  "power": 159,
+  "aliases": [
+   "DIAVEL 1260",
+   "DIAVEL 1260 S",
+   "DIAVEL 1260 LAMBORGHINI"
+  ]
  },
  {
   "nameKo": "두카티 디아벨V4",
@@ -1749,7 +1814,15 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 150
+  "power": 150,
+  "aliases": [
+   "MTS1200S TOURING",
+   "MTS1200",
+   "MTS1200S PIKES PEAK",
+   "MTS1200S GRANTURISMO",
+   "MTS1200S SPORT",
+   "MTS1200 ABS"
+  ]
  },
  {
   "nameKo": "두카티 멀티스트라다1260",
@@ -1879,7 +1952,14 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 16.5,
-  "power": 150
+  "power": 150,
+  "aliases": [
+   "Monster 1200",
+   "Monster 1200 S",
+   "M1200 S Stripe",
+   "M1200",
+   "M1200 S"
+  ]
  },
  {
   "nameKo": "두카티 몬스터695",
@@ -1951,7 +2031,10 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 16.5,
-  "power": 73
+  "power": 73,
+  "aliases": [
+   "Monster 797"
+  ]
  },
  {
   "nameKo": "두카티 몬스터821",
@@ -1966,7 +2049,14 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 16.5,
-  "power": 109
+  "power": 109,
+  "aliases": [
+   "Monster 821",
+   "Monster 821 Stealth",
+   "Monster 821 Stripe",
+   "M821 Stripe",
+   "M821"
+  ]
  },
  {
   "nameKo": "두카티 몬스터S4RS",
@@ -2036,7 +2126,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 16,
-  "power": 110
+  "power": 110,
+  "aliases": [
+   "SUPERSPORT 950",
+   "SUPERSPORT 950 S"
+  ]
  },
  {
   "nameKo": "두카티 스크램블러1100",
@@ -2051,7 +2145,15 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 15,
-  "power": 86
+  "power": 86,
+  "aliases": [
+   "SCRAMBLER 1100 PRO",
+   "SCRAMBLER 1100 SPORT PRO",
+   "SCRAMBLER 1100 PRO DARK",
+   "Scrambler 1100",
+   "Scrambler 1100 Special",
+   "Scrambler 1100 Sport"
+  ]
  },
  {
   "nameKo": "두카티 스크램블러나이트시프트",
@@ -2105,7 +2207,10 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 14,
-  "power": 41
+  "power": 41,
+  "aliases": [
+   "Scrambler 400 Sixty2"
+  ]
  },
  {
   "nameKo": "두카티 스크램블러아이콘",
@@ -2357,7 +2462,13 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 17,
-  "power": 205
+  "power": 205,
+  "aliases": [
+   "1299 Panigale Final Edition",
+   "1299Superleggera",
+   "1299 Panigale S",
+   "1299 Panigale"
+  ]
  },
  {
   "nameKo": "두카티 파니갈레899",
@@ -2390,7 +2501,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 17,
-  "power": 157
+  "power": 157,
+  "aliases": [
+   "959 Panigale",
+   "959 Panigale Corse"
+  ]
  },
  {
   "nameKo": "두카티 파니갈레R",
@@ -2506,7 +2621,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 12,
-  "power": 78
+  "power": 78,
+  "aliases": [
+   "Hypermotard 698 Mono",
+   "Hypermotard 698 Mono RVE"
+  ]
  },
  {
   "nameKo": "두카티 하이퍼모타드796",
@@ -2558,7 +2677,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 16,
-  "power": 113
+  "power": 113,
+  "aliases": [
+   "Hypermotard 939",
+   "Hypermotard 939 SP"
+  ]
  },
  {
   "nameKo": "두카티 하이퍼모타드950",
@@ -2573,7 +2696,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 14.5,
-  "power": 114
+  "power": 114,
+  "aliases": [
+   "HYPERMOTARD 950",
+   "HYPERMOTARD 950 SP"
+  ]
  },
  {
   "nameKo": "두카티 하이퍼모타드V2",
@@ -2599,7 +2726,8 @@
   "brand": "두카티",
   "model": "하이퍼스트라다",
   "aliases": [
-   "HYPERSTRADA"
+   "HYPERSTRADA",
+   "Hyperstrada 939"
   ],
   "displacement": 821,
   "category": "투어러",
@@ -3408,7 +3536,12 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 8,
-  "power": 12
+  "power": 12,
+  "aliases": [
+   "Vespa 946 150",
+   "Vespa 946 150 CHRISTIAN DIOR",
+   "Vespa 946 150 Rabbit"
+  ]
  },
  {
   "nameKo": "베스파 스프린트125",
@@ -3423,7 +3556,14 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 8,
-  "power": 11
+  "power": 11,
+  "aliases": [
+   "VESPA SPRINT 125",
+   "VESPA SPRINT TECH 125",
+   "SPRINT 125 ABS",
+   "베스파 Sprint 125 ABS",
+   "베스파 Sprint 125"
+  ]
  },
  {
   "nameKo": "베스파 스프린트150",
@@ -3453,7 +3593,13 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 8,
-  "power": 11
+  "power": 11,
+  "aliases": [
+   "VESPA PRIMAVERA 125",
+   "PRIMAVERA 125 ABS",
+   "베스파 Primavera 125 ABS",
+   "베스파 Primavera 125"
+  ]
  },
  {
   "nameKo": "베스파 프리마베라150",
@@ -3483,7 +3629,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 8.5,
-  "power": 14
+  "power": 14,
+  "aliases": [
+   "베스파 GTS 125 3V"
+  ]
  },
  {
   "nameKo": "베스파 GTS300",
@@ -3534,7 +3683,10 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 8.3,
-  "power": 11
+  "power": 11,
+  "aliases": [
+   "베스파 LXV125"
+  ]
  },
  {
   "nameKo": "블루샤크 솔로에라",
@@ -3947,7 +4099,10 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 5.5,
-  "power": 9
+  "power": 9,
+  "aliases": [
+   "UB125L"
+  ]
  },
  {
   "nameKo": "스즈키 버그만125",
@@ -3962,7 +4117,16 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 10.5,
-  "power": 12
+  "power": 12,
+  "aliases": [
+   "UG125SEA",
+   "UG125SED",
+   "UH125A",
+   "UH125",
+   "UH125G",
+   "UH125Z",
+   "UH125 RACING"
+  ]
  },
  {
   "nameKo": "스즈키 버그만200",
@@ -3977,7 +4141,15 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 10.5,
-  "power": 18
+  "power": 18,
+  "aliases": [
+   "UH200A",
+   "UH200",
+   "UH200G",
+   "UH200Z",
+   "UH200 EXCUTIVE",
+   "UH200 RACING"
+  ]
  },
  {
   "nameKo": "스즈키 버그만400",
@@ -3992,7 +4164,13 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 13.5,
-  "power": 31
+  "power": 31,
+  "aliases": [
+   "AN400A",
+   "AN400ZA",
+   "AN400",
+   "AN400Z"
+  ]
  },
  {
   "nameKo": "스즈키 버그만650",
@@ -4007,7 +4185,13 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 15,
-  "power": 55
+  "power": 55,
+  "aliases": [
+   "AN650Z",
+   "AN650A",
+   "AN650AZ",
+   "AN650"
+  ]
  },
  {
   "nameKo": "스즈키 브이스트롬1000",
@@ -4022,7 +4206,12 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 101
+  "power": 101,
+  "aliases": [
+   "DL1000A",
+   "DL1000XA",
+   "DL1000"
+  ]
  },
  {
   "nameKo": "스즈키 브이스트롬1050",
@@ -4037,7 +4226,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 107
+  "power": 107,
+  "aliases": [
+   "DL1050RJ",
+   "DL1050RC"
+  ]
  },
  {
   "nameKo": "스즈키 브이스트롬250",
@@ -4052,7 +4245,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 17.3,
-  "power": 25
+  "power": 25,
+  "aliases": [
+   "DL250A"
+  ]
  },
  {
   "nameKo": "스즈키 브이스트롬250SX",
@@ -4082,7 +4278,12 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 71
+  "power": 71,
+  "aliases": [
+   "DL650XA",
+   "DL650XAUE",
+   "DL650A"
+  ]
  },
  {
   "nameKo": "스즈키 브이스트롬800DE",
@@ -4097,7 +4298,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 84
+  "power": 84,
+  "aliases": [
+   "DL800"
+  ]
  },
  {
   "nameKo": "스즈키 아베니스125",
@@ -4112,7 +4316,10 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 5.2,
-  "power": 9
+  "power": 9,
+  "aliases": [
+   "UN125"
+  ]
  },
  {
   "nameKo": "스즈키 어드레스125",
@@ -4127,7 +4334,10 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 5,
-  "power": 9
+  "power": 9,
+  "aliases": [
+   "UU125"
+  ]
  },
  {
   "nameKo": "스즈키 카타나",
@@ -4157,7 +4367,12 @@
   "cylinders": 4,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 190
+  "power": 190,
+  "aliases": [
+   "GSX1300RRQ",
+   "GSX1300RA",
+   "GSX1300R"
+  ]
  },
  {
   "nameKo": "스즈키 DR-Z125L",
@@ -4251,7 +4466,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 14,
-  "power": 83
+  "power": 83,
+  "aliases": [
+   "GSX800F"
+  ]
  },
  {
   "nameKo": "스즈키 GSX-8S",
@@ -4266,7 +4484,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 14,
-  "power": 83
+  "power": 83,
+  "aliases": [
+   "GSX800"
+  ]
  },
  {
   "nameKo": "스즈키 GSX-8T",
@@ -4281,7 +4502,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 16.5,
-  "power": 83
+  "power": 83,
+  "aliases": [
+   "GSX800T"
+  ]
  },
  {
   "nameKo": "스즈키 GSX-8TT",
@@ -4296,7 +4520,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 16.5,
-  "power": 83
+  "power": 83,
+  "aliases": [
+   "GSX800TTB"
+  ]
  },
  {
   "nameKo": "스즈키 GSX-R1000",
@@ -4630,7 +4857,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 18,
-  "power": 80
+  "power": 80,
+  "aliases": [
+   "TUAREG 660"
+  ]
  },
  {
   "nameKo": "아프릴리아 투오노660",
@@ -4645,7 +4875,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 15,
-  "power": 95
+  "power": 95,
+  "aliases": [
+   "TUONO 660"
+  ]
  },
  {
   "nameKo": "아프릴리아 투오노V4",
@@ -4789,7 +5022,12 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 13,
-  "power": 54
+  "power": 54,
+  "aliases": [
+   "XVS950CU",
+   "XVS950CUD",
+   "XVS950CR"
+  ]
  },
  {
   "nameKo": "야마하 비노50",
@@ -4822,7 +5060,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 23,
-  "power": 112
+  "power": 112,
+  "aliases": [
+   "XT1200ZE",
+   "XT1200Z"
+  ]
  },
  {
   "nameKo": "야마하 테네레700",
@@ -4852,7 +5094,11 @@
   "cylinders": 3,
   "cooling": "liquid",
   "fuelCapacity": 18.7,
-  "power": 119
+  "power": 119,
+  "aliases": [
+   "MTT890",
+   "MTT890D"
+  ]
  },
  {
   "nameKo": "야마하 트레이서900",
@@ -4882,7 +5128,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 7.2,
-  "power": 12
+  "power": 12,
+  "aliases": [
+   "MW125"
+  ]
  },
  {
   "nameKo": "야마하 트리시티155",
@@ -5021,7 +5270,12 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 14,
-  "power": 73
+  "power": 73,
+  "aliases": [
+   "MTN690",
+   "MTN690-S",
+   "MTN690A"
+  ]
  },
  {
   "nameKo": "야마하 MT-09",
@@ -5029,7 +5283,9 @@
   "model": "MT-09",
   "aliases": [
    "MTN850D",
-   "MTN850A"
+   "MTN850A",
+   "MTN890",
+   "MTN890D"
   ],
   "displacement": 890,
   "category": "네이키드",
@@ -5055,7 +5311,11 @@
   "cylinders": 4,
   "cooling": "liquid",
   "fuelCapacity": 17,
-  "power": 166
+  "power": 166,
+  "aliases": [
+   "MTN1000",
+   "MTN1000D"
+  ]
  },
  {
   "nameKo": "야마하 NMAX125",
@@ -5070,7 +5330,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 7.1,
-  "power": 12
+  "power": 12,
+  "aliases": [
+   "GPD125-A",
+   "GPD125"
+  ]
  },
  {
   "nameKo": "야마하 NMAX155",
@@ -5189,14 +5453,19 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 13,
-  "power": 28
+  "power": 28,
+  "aliases": [
+   "CZD300D-A",
+   "CZD300-A"
+  ]
  },
  {
   "nameKo": "야마하 XSR900",
   "brand": "야마하",
   "model": "XSR900",
   "aliases": [
-   "MTM850"
+   "MTM850",
+   "MTM890"
   ],
   "displacement": 890,
   "category": "클래식",
@@ -5222,7 +5491,10 @@
   "cylinders": 3,
   "cooling": "liquid",
   "fuelCapacity": 14,
-  "power": 119
+  "power": 119,
+  "aliases": [
+   "MTM890D"
+  ]
  },
  {
   "nameKo": "야마하 YZ125X",
@@ -5312,7 +5584,11 @@
   "cylinders": 4,
   "cooling": "liquid",
   "fuelCapacity": 17,
-  "power": 200
+  "power": 200,
+  "aliases": [
+   "YZF1000D",
+   "YZF1000"
+  ]
  },
  {
   "nameKo": "야마하 YZF-R3",
@@ -5364,7 +5640,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 13,
-  "power": 73
+  "power": 73,
+  "aliases": [
+   "YZF690"
+  ]
  },
  {
   "nameKo": "야마하 YZF-R9",
@@ -5379,7 +5658,10 @@
   "cylinders": 3,
   "cooling": "liquid",
   "fuelCapacity": 14,
-  "power": 119
+  "power": 119,
+  "aliases": [
+   "YZF890"
+  ]
  },
  {
   "nameKo": "에임스 레오",
@@ -6637,7 +6919,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 10,
-  "power": 14
+  "power": 14,
+  "aliases": [
+   "ZT125T-D"
+  ]
  },
  {
   "nameKo": "존테스 125E",
@@ -6652,7 +6937,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 10,
-  "power": 14
+  "power": 14,
+  "aliases": [
+   "ZT125T-E"
+  ]
  },
  {
   "nameKo": "존테스 125G1",
@@ -6697,7 +6985,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 12.5,
-  "power": 14
+  "power": 14,
+  "aliases": [
+   "ZT125T-X"
+  ]
  },
  {
   "nameKo": "존테스 310M",
@@ -7023,7 +7314,9 @@
   "model": "다이스",
   "aliases": [
    "다이스",
-   "DICE"
+   "DICE",
+   "DICE PLUS",
+   "DICE TRUCK"
   ],
   "displacement": null,
   "category": "스쿠터",
@@ -7265,7 +7558,10 @@
   "cylinders": 3,
   "cooling": "liquid",
   "fuelCapacity": 14,
-  "power": 95
+  "power": 95,
+  "aliases": [
+   "Daytona 660"
+  ]
  },
  {
   "nameKo": "트라이엄프 데이토나675",
@@ -7385,7 +7681,12 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 16,
-  "power": 90
+  "power": 90,
+  "aliases": [
+   "Scrambler 1200 XE",
+   "Scrambler 1200 X",
+   "Scrambler 1200 XC"
+  ]
  },
  {
   "nameKo": "트라이엄프 스크램블러400X",
@@ -7430,7 +7731,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 12,
-  "power": 65
+  "power": 65,
+  "aliases": [
+   "Scrambler 900"
+  ]
  },
  {
   "nameKo": "트라이엄프 스트리트스크램블러",
@@ -7571,7 +7875,11 @@
   "cylinders": 3,
   "cooling": "liquid",
   "fuelCapacity": 15.5,
-  "power": 180
+  "power": 180,
+  "aliases": [
+   "Speed Triple 1200 RS",
+   "Speed Triple 1200 RR"
+  ]
  },
  {
   "nameKo": "트라이엄프 스피드트윈1200",
@@ -7605,7 +7913,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 12,
-  "power": 65
+  "power": 65,
+  "aliases": [
+   "Speed Twin 900"
+  ]
  },
  {
   "nameKo": "트라이엄프 타이거1200",
@@ -7620,7 +7931,15 @@
   "cylinders": 3,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 150
+  "power": 150,
+  "aliases": [
+   "Tiger 1200 GT Pro",
+   "Tiger 1200 GT Explorer",
+   "TIGER 1200 SE-Desert",
+   "Tiger 1200 XCA",
+   "Tiger 1200 XRT",
+   "Tiger 1200 SE-Alpine"
+  ]
  },
  {
   "nameKo": "트라이엄프 타이거800",
@@ -7650,7 +7969,16 @@
   "cylinders": 3,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 108
+  "power": 108,
+  "aliases": [
+   "TIGER 900 RALLY PRO",
+   "TIGER 900 GT PRO",
+   "Tiger 900 Rally Aragon Edition",
+   "Tiger 900 GT Aragon Edition",
+   "Tiger 900 James Bond Edition",
+   "Tiger 900 Rally",
+   "Tiger 900 GT(LRH)"
+  ]
  },
  {
   "nameKo": "트라이엄프 타이거스포트660",
@@ -7665,7 +7993,10 @@
   "cylinders": 3,
   "cooling": "liquid",
   "fuelCapacity": 17.2,
-  "power": 81
+  "power": 81,
+  "aliases": [
+   "TIGER SPORT 660"
+  ]
  },
  {
   "nameKo": "트라이엄프 트라이던트660",
@@ -7752,7 +8083,10 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 6,
-  "power": 11
+  "power": 11,
+  "aliases": [
+   "PIAGGIO LIBERTY 125"
+  ]
  },
  {
   "nameKo": "피아지오 메들리125",
@@ -7767,7 +8101,12 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 7,
-  "power": 15
+  "power": 15,
+  "aliases": [
+   "PIAGGIO MEDLEY 125",
+   "MEDLEY 125 S HPE ABS",
+   "MEDLEY 125 ABS"
+  ]
  },
  {
   "nameKo": "피아지오 베벌리350",
@@ -7782,7 +8121,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 12.5,
-  "power": 33
+  "power": 33,
+  "aliases": [
+   "BEVERLY 350 SPORT TOURING ABS",
+   "비버리 350 스포츠투어링"
+  ]
  },
  {
   "nameKo": "피아지오 베벌리400",
@@ -7797,7 +8140,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 12,
-  "power": 35
+  "power": 35,
+  "aliases": [
+   "Beverly 400 HPE SPORT"
+  ]
  },
  {
   "nameKo": "피아지오 MP3 300",
@@ -8371,7 +8717,10 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 12.5,
-  "power": null
+  "power": null,
+  "aliases": [
+   "Harley-Davidson XL1200CX"
+  ]
  },
  {
   "nameKo": "할리데이비슨 로드킹",
@@ -8692,7 +9041,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 13.2,
-  "power": 56
+  "power": 56,
+  "aliases": [
+   "Harley-Davidson XG750"
+  ]
  },
  {
   "nameKo": "할리데이비슨 스트리트글라이드",
@@ -8801,7 +9153,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 13.2,
-  "power": 68
+  "power": 68,
+  "aliases": [
+   "Harley-Davidson XG750A"
+  ]
  },
  {
   "nameKo": "할리데이비슨 스트리트밥",
@@ -8839,7 +9194,12 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 12.5,
-  "power": null
+  "power": null,
+  "aliases": [
+   "Harley-Davidson XL1200C",
+   "Harley-Davidson XL1200CA",
+   "Harley-Davidson XL1200CB"
+  ]
  },
  {
   "nameKo": "할리데이비슨 스포스터S",
@@ -8854,7 +9214,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 11.7,
-  "power": 121
+  "power": 121,
+  "aliases": [
+   "Harley-Davidson RH1250S"
+  ]
  },
  {
   "nameKo": "할리데이비슨 스포츠 글라이드",
@@ -8887,7 +9250,10 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 12.5,
-  "power": null
+  "power": null,
+  "aliases": [
+   "Harley-Davidson XL1200NS"
+  ]
  },
  {
   "nameKo": "할리데이비슨 아이언883",
@@ -8902,7 +9268,10 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 12.5,
-  "power": null
+  "power": null,
+  "aliases": [
+   "Harley-Davidson XL883N"
+  ]
  },
  {
   "nameKo": "할리데이비슨 와이드글라이드",
@@ -9068,7 +9437,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 21.2,
-  "power": 152
+  "power": 152,
+  "aliases": [
+   "Harley-Davidson RA1250"
+  ]
  },
  {
   "nameKo": "할리데이비슨 팬아메리카1250 스페셜",
@@ -9083,7 +9455,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 21.2,
-  "power": 152
+  "power": 152,
+  "aliases": [
+   "Harley-Davidson RA1250S"
+  ]
  },
  {
   "nameKo": "할리데이비슨 팬아메리카1250 ST",
@@ -9098,7 +9473,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 21.2,
-  "power": 152
+  "power": 152,
+  "aliases": [
+   "Harley-Davidson RA1250ST"
+  ]
  },
  {
   "nameKo": "할리데이비슨 팻밥",
@@ -9162,7 +9540,12 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 7.9,
-  "power": null
+  "power": null,
+  "aliases": [
+   "Harley-Davidson XL1200XS",
+   "Harley-Davidson XL1200X ANX",
+   "Harley-Davidson XL1200X"
+  ]
  },
  {
   "nameKo": "할리데이비슨 프리휠러",
@@ -9710,7 +10093,13 @@
   "cylinders": 6,
   "cooling": "liquid",
   "fuelCapacity": 21,
-  "power": 126
+  "power": 126,
+  "aliases": [
+   "GL1800",
+   "GL1800DA",
+   "GL1800B",
+   "GL1800C"
+  ]
  },
  {
   "nameKo": "혼다 디오125",
@@ -9725,7 +10114,10 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 5.3,
-  "power": 8
+  "power": 8,
+  "aliases": [
+   "SCV125S"
+  ]
  },
  {
   "nameKo": "혼다 레블1100",
@@ -9740,7 +10132,12 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 13.6,
-  "power": 87
+  "power": 87,
+  "aliases": [
+   "CMX1100D2",
+   "CMX1100A",
+   "CMX1100D3"
+  ]
  },
  {
   "nameKo": "혼다 레블1100T",
@@ -9770,7 +10167,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 11.2,
-  "power": 46
+  "power": 46,
+  "aliases": [
+   "CMX500A"
+  ]
  },
  {
   "nameKo": "혼다 몽키125",
@@ -9800,7 +10200,11 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 10,
-  "power": 8
+  "power": 8,
+  "aliases": [
+   "MW1101WH",
+   "MW110WH"
+  ]
  },
  {
   "nameKo": "혼다 비전110",
@@ -9815,7 +10219,11 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 4.8,
-  "power": 9
+  "power": 9,
+  "aliases": [
+   "NSC110",
+   "NSC110WH"
+  ]
  },
  {
   "nameKo": "혼다 슈퍼커브110",
@@ -9830,7 +10238,13 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 4.1,
-  "power": 8
+  "power": 8,
+  "aliases": [
+   "NBC110MSB",
+   "NBC110MCB",
+   "NBC110MCF",
+   "NBC110"
+  ]
  },
  {
   "nameKo": "혼다 실버윙GT",
@@ -9863,7 +10277,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 14.1,
-  "power": 55
+  "power": 55,
+  "aliases": [
+   "NC750D",
+   "NC700D"
+  ]
  },
  {
   "nameKo": "혼다 투데이",
@@ -9896,7 +10314,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 11.5,
-  "power": 25
+  "power": 25,
+  "aliases": [
+   "NSS300A",
+   "NSS300"
+  ]
  },
  {
   "nameKo": "혼다 포르자350",
@@ -9911,7 +10333,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 11.7,
-  "power": 29
+  "power": 29,
+  "aliases": [
+   "NSS350A"
+  ]
  },
  {
   "nameKo": "혼다 포르자750",
@@ -9926,7 +10351,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 13.2,
-  "power": 59
+  "power": 59,
+  "aliases": [
+   "NSS750"
+  ]
  },
  {
   "nameKo": "혼다 ADV350",
@@ -10031,7 +10459,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 10.1,
-  "power": 15
+  "power": 15,
+  "aliases": [
+   "CBF125NA"
+  ]
  },
  {
   "nameKo": "혼다 CB300R",
@@ -10046,7 +10477,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 10.1,
-  "power": 31
+  "power": 31,
+  "aliases": [
+   "CBF300NA"
+  ]
  },
  {
   "nameKo": "혼다 CB500X",
@@ -10121,7 +10555,11 @@
   "cylinders": 4,
   "cooling": "liquid",
   "fuelCapacity": 16.1,
-  "power": 192
+  "power": 192,
+  "aliases": [
+   "CBR1000RA",
+   "CBR1000S1"
+  ]
  },
  {
   "nameKo": "혼다 CBR1000RR-R 파이어블레이드",
@@ -10136,7 +10574,11 @@
   "cylinders": 4,
   "cooling": "liquid",
   "fuelCapacity": 16.1,
-  "power": 218
+  "power": 218,
+  "aliases": [
+   "CBR1000ST",
+   "CBR1000SP"
+  ]
  },
  {
   "nameKo": "혼다 CBR500R",
@@ -10230,7 +10672,13 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 18.8,
-  "power": 102
+  "power": 102,
+  "aliases": [
+   "CRF1100D4",
+   "CRF1100D2",
+   "CRF1100A",
+   "CRF1100D"
+  ]
  },
  {
   "nameKo": "혼다 CRF250 랠리",
@@ -10395,7 +10843,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 8.1,
-  "power": 13
+  "power": 13,
+  "aliases": [
+   "WW125A",
+   "WW125"
+  ]
  },
  {
   "nameKo": "혼다 ST125 닥스",
@@ -10425,7 +10877,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 13.2,
-  "power": 59
+  "power": 59,
+  "aliases": [
+   "ADV750L",
+   "ADV750"
+  ]
  },
  {
   "nameKo": "혼다 XL750 트랜잘프",
@@ -10490,7 +10946,12 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 16,
-  "power": 72
+  "power": 72,
+  "aliases": [
+   "미라쥬 프로그레스",
+   "미라쥬 프로그레시브",
+   "MIRAGE650EI"
+  ]
  },
  {
   "nameKo": "효성 코멧250",
@@ -10523,7 +10984,12 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 17,
-  "power": 79
+  "power": 79,
+  "aliases": [
+   "COMET650EI",
+   "COMET650REI",
+   "COMET650SEI"
+  ]
  },
  {
   "nameKo": "효성 ST7",
@@ -11273,7 +11739,10 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 16,
-  "power": 91
+  "power": 91,
+  "aliases": [
+   "BMW R 18 100 Year Anniversary Model"
+  ]
  },
  {
   "nameKo": "BMW R18클래식",
@@ -11896,7 +12365,8 @@
   "brand": "KR모터스",
   "model": "라온100",
   "aliases": [
-   "라온-에프"
+   "라온-에프",
+   "RN100W"
   ],
   "displacement": 99,
   "category": "스쿠터",
@@ -11933,7 +12403,8 @@
   "model": "비버125",
   "aliases": [
    "비버-파이브",
-   "비버파이브"
+   "비버파이브",
+   "BEAVER125"
   ],
   "displacement": 124,
   "category": "스쿠터",
@@ -11992,7 +12463,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 12.5,
-  "power": 30
+  "power": 30,
+  "aliases": [
+   "Aquila300"
+  ]
  },
  {
   "nameKo": "KR모터스 엑시브250N",
@@ -12131,7 +12605,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 9.3,
-  "power": 15
+  "power": 15,
+  "aliases": [
+   "K-WIN125"
+  ]
  },
  {
   "nameKo": "KR모터스 큐티",
@@ -12215,7 +12692,10 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 4,
-  "power": null
+  "power": null,
+  "aliases": [
+   "디디100"
+  ]
  },
  {
   "nameKo": "KR모터스 DD110",
@@ -12350,7 +12830,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 23,
-  "power": 175
+  "power": 175,
+  "aliases": [
+   "1290 SUPER DUKE GT"
+  ]
  },
  {
   "nameKo": "KTM 1290슈퍼듀크R",
@@ -12365,7 +12848,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 16,
-  "power": 180
+  "power": 180,
+  "aliases": [
+   "1290 SUPER DUKE R",
+   "1290 SUPERDUKE R S.E"
+  ]
  },
  {
   "nameKo": "KTM 1290슈퍼어드벤처R",
@@ -12380,7 +12867,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 23,
-  "power": 160
+  "power": 160,
+  "aliases": [
+   "1290 SUPER ADVENTURE R"
+  ]
  },
  {
   "nameKo": "KTM 1290슈퍼어드벤처S",
@@ -12395,7 +12885,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 23,
-  "power": 160
+  "power": 160,
+  "aliases": [
+   "1290 SUPER ADVENTURE S",
+   "1290 Super Adventure"
+  ]
  },
  {
   "nameKo": "KTM 1390슈퍼듀크R",
@@ -12410,7 +12904,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 17.5,
-  "power": 190
+  "power": 190,
+  "aliases": [
+   "1390 SUPER DUKE R"
+  ]
  },
  {
   "nameKo": "KTM 1390슈퍼듀크RR",
@@ -12485,7 +12982,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 15,
-  "power": 45
+  "power": 45,
+  "aliases": [
+   "390 DUKE"
+  ]
  },
  {
   "nameKo": "KTM 390어드벤처",
@@ -12500,7 +13000,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 14.5,
-  "power": 44
+  "power": 44,
+  "aliases": [
+   "390 ADVENTURE"
+  ]
  },
  {
   "nameKo": "KTM 390어드벤처R",
@@ -12515,7 +13018,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 14.5,
-  "power": 45
+  "power": 45,
+  "aliases": [
+   "390 ADVENTURE R"
+  ]
  },
  {
   "nameKo": "KTM 390어드벤처X",
@@ -12530,7 +13036,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 14.5,
-  "power": 45
+  "power": 45,
+  "aliases": [
+   "390 ADVENTURE X"
+  ]
  },
  {
   "nameKo": "KTM 390엔듀로R",
@@ -12545,7 +13054,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 9,
-  "power": 45
+  "power": 45,
+  "aliases": [
+   "390 ENDURO R"
+  ]
  },
  {
   "nameKo": "KTM 390SMC R",
@@ -12575,7 +13087,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 14,
-  "power": 73
+  "power": 73,
+  "aliases": [
+   "690 DUKE R",
+   "690 DUKE"
+  ]
  },
  {
   "nameKo": "KTM 690엔듀로R",
@@ -12590,7 +13106,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 13.5,
-  "power": 74
+  "power": 74,
+  "aliases": [
+   "690Enduro",
+   "690Enduro R"
+  ]
  },
  {
   "nameKo": "KTM 690SMC R",
@@ -12620,7 +13140,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 14,
-  "power": 105
+  "power": 105,
+  "aliases": [
+   "790 DUKE"
+  ]
  },
  {
   "nameKo": "KTM 790어드벤처",
@@ -12635,7 +13158,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 95
+  "power": 95,
+  "aliases": [
+   "790 ADVENTURE",
+   "790 ADVENTURE R"
+  ]
  },
  {
   "nameKo": "KTM 890듀크R",
@@ -12650,7 +13177,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 14,
-  "power": 121
+  "power": 121,
+  "aliases": [
+   "890 DUKE R"
+  ]
  },
  {
   "nameKo": "KTM 890어드벤처",
@@ -12665,7 +13195,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 105
+  "power": 105,
+  "aliases": [
+   "890 ADVENTURE"
+  ]
  },
  {
   "nameKo": "KTM 890어드벤처R",
@@ -12680,7 +13213,12 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 105
+  "power": 105,
+  "aliases": [
+   "890 ADVENTURE R",
+   "890 ADVENTURE R Rally",
+   "KTM 890 ADVENTURE R"
+  ]
  },
  {
   "nameKo": "KTM 890SMT",
@@ -12710,7 +13248,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 14.8,
-  "power": 123
+  "power": 123,
+  "aliases": [
+   "990 DUKE",
+   "990 DUKE R"
+  ]
  },
  {
   "nameKo": "KTM 990RC R",
@@ -12747,7 +13289,9 @@
   "brand": "MV아구스타",
   "model": "드락스터800",
   "aliases": [
-   "DRAGSTER RR"
+   "DRAGSTER RR",
+   "BRUTALE 800 DRAGSTER RR",
+   "BRUTALE 800 DRAGSTER"
   ],
   "displacement": 798,
   "category": "네이키드",
@@ -12765,7 +13309,8 @@
   "brand": "MV아구스타",
   "model": "러쉬1000",
   "aliases": [
-   "RUSH"
+   "RUSH",
+   "RUSH 1000"
   ],
   "displacement": 998,
   "category": "네이키드",
@@ -12791,7 +13336,13 @@
   "cylinders": 4,
   "cooling": "liquid",
   "fuelCapacity": 16,
-  "power": 208
+  "power": 208,
+  "aliases": [
+   "BRUTALE 1000 RS",
+   "BRUTALE 1000 NURBURGRING",
+   "BRUTALE 1000 RC",
+   "BRUTALE 1000 SERIE ORO"
+  ]
  },
  {
   "nameKo": "MV아구스타 브루탈레1090",
@@ -12817,7 +13368,9 @@
   "brand": "MV아구스타",
   "model": "브루탈레800",
   "aliases": [
-   "BRUTALE RR"
+   "BRUTALE RR",
+   "BRUTALE 800 RR",
+   "BRUTALE 800"
   ],
   "displacement": 798,
   "category": "네이키드",
@@ -12835,7 +13388,9 @@
   "brand": "MV아구스타",
   "model": "슈퍼벨로체800",
   "aliases": [
-   "SUPER VELOCE"
+   "SUPER VELOCE",
+   "SUPERVELOCE 800 SERIE ORO",
+   "SUPERVELOCE 800"
   ],
   "displacement": 798,
   "category": "클래식",
@@ -12855,7 +13410,10 @@
   "aliases": [
    "TURISMO VELOCE LUSSO",
    "TURISMO VELOCE ROSSO",
-   "TURISMO VELOCE"
+   "TURISMO VELOCE",
+   "TV 800 RC",
+   "TV 800 LUSSO",
+   "TV 800"
   ],
   "displacement": 798,
   "category": "투어러",
@@ -12984,7 +13542,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 13,
-  "power": 34
+  "power": 34,
+  "aliases": [
+   "MAXSYM400EFI ABS",
+   "MAXSYM400 EFI"
+  ]
  },
  {
   "nameKo": "SYM 맥심600",
@@ -13127,7 +13689,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 9,
-  "power": 13
+  "power": 13,
+  "aliases": [
+   "JOYMAX125",
+   "JOYMAX125R"
+  ]
  },
  {
   "nameKo": "SYM 조이맥스300i",
@@ -13175,7 +13741,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 13,
-  "power": 27
+  "power": 27,
+  "aliases": [
+   "JOYMAX Z PLUS300"
+  ]
  },
  {
   "nameKo": "SYM 조이시티125",
@@ -13268,7 +13837,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 9,
-  "power": 13
+  "power": 13,
+  "aliases": [
+   "CRUISYM ALPHA125",
+   "CRUiSYM125"
+  ]
  },
  {
   "nameKo": "SYM 크루심300",
@@ -13283,7 +13856,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 12.5,
-  "power": 27
+  "power": 27,
+  "aliases": [
+   "CRUISYM ALPHA300",
+   "CRUiSYM300"
+  ]
  },
  {
   "nameKo": "SYM 크루심GT",
@@ -13298,7 +13875,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 12.5,
-  "power": 27
+  "power": 27,
+  "aliases": [
+   "크루심 지티400"
+  ]
  },
  {
   "nameKo": "SYM 포미카125",
@@ -13461,5 +14041,4092 @@
   "cooling": "liquid",
   "fuelCapacity": 14,
   "power": 33
+ },
+ {
+  "nameKo": "대림 LM125",
+  "brand": "대림",
+  "model": "LM125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "윈드 WT1",
+  "brand": "윈드",
+  "model": "WT1",
+  "aliases": [
+   "WIND-WT1"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "BMW F450GS",
+  "brand": "BMW",
+  "model": "F450GS",
+  "aliases": [
+   "BMW F 450 GS"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "에너인포 M24",
+  "brand": "에너인포",
+  "model": "M24",
+  "aliases": [
+   "엠24"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "나이스 투엘",
+  "brand": "나이스",
+  "model": "투엘",
+  "aliases": [
+   "나이스 투엘"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 VNEX125",
+  "brand": "KR모터스",
+  "model": "VNEX125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "브라부스 1400R",
+  "brand": "브라부스",
+  "model": "1400R",
+  "aliases": [
+   "BRABUS 1400 R"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대동모빌리티 GS150",
+  "brand": "대동모빌리티",
+  "model": "GS150",
+  "aliases": [
+   "지에스150"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "앨비 트레바이",
+  "brand": "앨비",
+  "model": "트레바이",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "모노모빌리티 MO-3",
+  "brand": "모노모빌리티",
+  "model": "MO-3",
+  "aliases": [
+   "엠오-쓰리"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 로디125",
+  "brand": "KR모터스",
+  "model": "로디125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KTM 1390슈퍼듀크GT",
+  "brand": "KTM",
+  "model": "1390슈퍼듀크GT",
+  "aliases": [
+   "1390 SUPER DUKE GT"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "클랜헌트 뉴트로M",
+  "brand": "클랜헌트",
+  "model": "뉴트로M",
+  "aliases": [
+   "newtro M"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "윈드 K2",
+  "brand": "윈드",
+  "model": "K2",
+  "aliases": [
+   "WIND-K2T",
+   "WIND-K2B-1",
+   "WIND-K2B",
+   "WIND-K2N",
+   "WIND-K2"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 VY125",
+  "brand": "대림",
+  "model": "VY125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대동모빌리티 GS100 라이트",
+  "brand": "대동모빌리티",
+  "model": "GS100 라이트",
+  "aliases": [
+   "지에스100라이트 플러그인"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "하우주 UFR125",
+  "brand": "하우주",
+  "model": "UFR125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "그린모빌리티 장보리2",
+  "brand": "그린모빌리티",
+  "model": "장보리2",
+  "aliases": [
+   "JANGBORI-II"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대동모빌리티 GS110",
+  "brand": "대동모빌리티",
+  "model": "GS110",
+  "aliases": [
+   "지에스110"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 SJ-125",
+  "brand": "KR모터스",
+  "model": "SJ-125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 SC-300",
+  "brand": "KR모터스",
+  "model": "SC-300",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 SJ-300",
+  "brand": "KR모터스",
+  "model": "SJ-300",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 MT-25",
+  "brand": "야마하",
+  "model": "MT-25",
+  "aliases": [
+   "MTN250A"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 M보이 미니",
+  "brand": "대림",
+  "model": "M보이 미니",
+  "aliases": [
+   "UM125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "킴코 DT X125",
+  "brand": "킴코",
+  "model": "DT X125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 CB500F",
+  "brand": "혼다",
+  "model": "CB500F",
+  "aliases": [
+   "CB500FA"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "에이치엠지 델리D5",
+  "brand": "에이치엠지",
+  "model": "델리D5",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "이퀄 로파이",
+  "brand": "이퀄",
+  "model": "로파이",
+  "aliases": [
+   "LO-FI"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "에코타 CL100",
+  "brand": "에코타",
+  "model": "CL100",
+  "aliases": [
+   "ECOTA-CL100"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "평안모터스 스마일3",
+  "brand": "평안모터스",
+  "model": "스마일3",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "시엔케이 듀오 맥스",
+  "brand": "시엔케이",
+  "model": "듀오 맥스",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "시엔케이 트리오",
+  "brand": "시엔케이",
+  "model": "트리오",
+  "aliases": [
+   "TRIO"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "시엔케이 트리오 와이드",
+  "brand": "시엔케이",
+  "model": "트리오 와이드",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "평안모터스 해피",
+  "brand": "평안모터스",
+  "model": "해피",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "에이치비 타고타",
+  "brand": "에이치비",
+  "model": "타고타",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "윈드 K4",
+  "brand": "윈드",
+  "model": "K4",
+  "aliases": [
+   "WIND-K4N"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "더스윙 E110L",
+  "brand": "더스윙",
+  "model": "E110L",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "에이치비 HB-200",
+  "brand": "에이치비",
+  "model": "HB-200",
+  "aliases": [
+   "에이치비-200"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "에코타 SL100",
+  "brand": "에코타",
+  "model": "SL100",
+  "aliases": [
+   "ECOTA-SL100"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 EG400",
+  "brand": "대림",
+  "model": "EG400",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "평안모터스 S-CAR",
+  "brand": "평안모터스",
+  "model": "S-CAR",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "평안모터스 파파",
+  "brand": "평안모터스",
+  "model": "파파",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "테서렉트 트리니티",
+  "brand": "테서렉트",
+  "model": "트리니티",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "그린모빌리티 마실이",
+  "brand": "그린모빌리티",
+  "model": "마실이",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "카버 카고",
+  "brand": "카버",
+  "model": "카고",
+  "aliases": [
+   "카버 카고"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "카버 크루저",
+  "brand": "카버",
+  "model": "크루저",
+  "aliases": [
+   "카버 크루저"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "베노디 베노에스",
+  "brand": "베노디",
+  "model": "베노에스",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "이브이모터스 V28",
+  "brand": "이브이모터스",
+  "model": "V28",
+  "aliases": [
+   "S-V28",
+   "에스-브이28"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "평안모터스 스마일1",
+  "brand": "평안모터스",
+  "model": "스마일1",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 EG400K",
+  "brand": "대림",
+  "model": "EG400K",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "그린모빌리티 델리D4E",
+  "brand": "그린모빌리티",
+  "model": "델리D4E",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "평안모터스 할리1500",
+  "brand": "평안모터스",
+  "model": "할리1500",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "나이스 EV1L",
+  "brand": "나이스",
+  "model": "EV1L",
+  "aliases": [
+   "Nice-ev1L"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "앨비 세마K3",
+  "brand": "앨비",
+  "model": "세마K3",
+  "aliases": [
+   "SEMMA-K3"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "코리아하이테크 H4프로",
+  "brand": "코리아하이테크",
+  "model": "H4프로",
+  "aliases": [
+   "에이치4프로"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "엠디엠 윈디",
+  "brand": "엠디엠",
+  "model": "윈디",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대풍EV 에코EV3",
+  "brand": "대풍EV",
+  "model": "에코EV3",
+  "aliases": [
+   "에코-이브이쓰리"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 재피2",
+  "brand": "대림",
+  "model": "재피2",
+  "aliases": [
+   "EG300N"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "그린모빌리티 모츠K7",
+  "brand": "그린모빌리티",
+  "model": "모츠K7",
+  "aliases": [
+   "MOTZ-K7"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "이지모터스 이지300",
+  "brand": "이지모터스",
+  "model": "이지300",
+  "aliases": [
+   "이지-300N"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "이지모터스 이지500",
+  "brand": "이지모터스",
+  "model": "이지500",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "평안모터스 S2H1",
+  "brand": "평안모터스",
+  "model": "S2H1",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "그린모빌리티 장보리",
+  "brand": "그린모빌리티",
+  "model": "장보리",
+  "aliases": [
+   "JANGBORI"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "나이스 EV3L",
+  "brand": "나이스",
+  "model": "EV3L",
+  "aliases": [
+   "나이스이브이3L"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 루피100",
+  "brand": "KR모터스",
+  "model": "루피100",
+  "aliases": [
+   "루피100더블유"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 댄디100",
+  "brand": "KR모터스",
+  "model": "댄디100",
+  "aliases": [
+   "댄디100더블유"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 미즈110",
+  "brand": "KR모터스",
+  "model": "미즈110",
+  "aliases": [
+   "미즈110더블유"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 트로이125",
+  "brand": "KR모터스",
+  "model": "트로이125",
+  "aliases": [
+   "트로이125엠"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 서포터100",
+  "brand": "KR모터스",
+  "model": "서포터100",
+  "aliases": [
+   "SUPPORTER100W"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 필라100",
+  "brand": "KR모터스",
+  "model": "필라100",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "시엔케이 듀오 알파",
+  "brand": "시엔케이",
+  "model": "듀오 알파",
+  "aliases": [
+   "DUO-Alpha"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "그린모빌리티 모츠트럭",
+  "brand": "그린모빌리티",
+  "model": "모츠트럭",
+  "aliases": [
+   "MOTZ-TRUCK"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "그린모빌리티 델리Q3",
+  "brand": "그린모빌리티",
+  "model": "델리Q3",
+  "aliases": [
+   "DELI-Q3"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "그린모빌리티 델리T",
+  "brand": "그린모빌리티",
+  "model": "델리T",
+  "aliases": [
+   "DELI-T"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 재피",
+  "brand": "대림",
+  "model": "재피",
+  "aliases": [
+   "EG300"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "FB몬디알 파가니125",
+  "brand": "FB몬디알",
+  "model": "파가니125",
+  "aliases": [
+   "PAGANI 125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "MV아구스타 F3 675",
+  "brand": "MV아구스타",
+  "model": "F3 675",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "평안모터스 스마일",
+  "brand": "평안모터스",
+  "model": "스마일",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "지오산업 ZB-703",
+  "brand": "지오산업",
+  "model": "ZB-703",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "디에스글로벌 T9",
+  "brand": "디에스글로벌",
+  "model": "T9",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 네오포르테",
+  "brand": "대림",
+  "model": "네오포르테",
+  "aliases": [
+   "SL125G",
+   "SL125F",
+   "SL125K"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "킴코 G딩크125",
+  "brand": "킴코",
+  "model": "G딩크125",
+  "aliases": [
+   "G-DINK 125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 SH모드125",
+  "brand": "혼다",
+  "model": "SH모드125",
+  "aliases": [
+   "NSC1255SH"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "킴코 레이싱S150",
+  "brand": "킴코",
+  "model": "레이싱S150",
+  "aliases": [
+   "RACING S 150"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "람브레타 V125 스페셜",
+  "brand": "람브레타",
+  "model": "V125 스페셜",
+  "aliases": [
+   "V125K Special",
+   "V125K Special Flex"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 에이글125",
+  "brand": "KR모터스",
+  "model": "에이글125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 SCR950",
+  "brand": "야마하",
+  "model": "SCR950",
+  "aliases": [
+   "XVS950XR-A",
+   "XVS950XR"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "그린모빌리티 델리D4",
+  "brand": "그린모빌리티",
+  "model": "델리D4",
+  "aliases": [
+   "DELI-D4"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "브릭스톤 BX125",
+  "brand": "브릭스톤",
+  "model": "BX125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "브릭스톤 BX125H",
+  "brand": "브릭스톤",
+  "model": "BX125H",
+  "aliases": [
+   "BX 125 에이치"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "브릭스톤 BX125R",
+  "brand": "브릭스톤",
+  "model": "BX125R",
+  "aliases": [
+   "BX 125 알"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "브릭스톤 BX125X",
+  "brand": "브릭스톤",
+  "model": "BX125X",
+  "aliases": [
+   "BX 125 엑스"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 VD125",
+  "brand": "대림",
+  "model": "VD125",
+  "aliases": [
+   "VD125F"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 디오110",
+  "brand": "혼다",
+  "model": "디오110",
+  "aliases": [
+   "SCR1105WH"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "SYM 조이라이드125",
+  "brand": "SYM",
+  "model": "조이라이드125",
+  "aliases": [
+   "JOYRIDE125 S",
+   "JOYRIDE125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 CRF1000L 아프리카트윈",
+  "brand": "혼다",
+  "model": "CRF1000L 아프리카트윈",
+  "aliases": [
+   "CRF1000D",
+   "CRF1000A",
+   "CRF1000D2"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "SYM 우100",
+  "brand": "SYM",
+  "model": "우100",
+  "aliases": [
+   "WOO 100"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 VN100",
+  "brand": "대림",
+  "model": "VN100",
+  "aliases": [
+   "VN100F"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "BMW C650스포츠",
+  "brand": "BMW",
+  "model": "C650스포츠",
+  "aliases": [
+   "BMW C 650 Sport"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "할리데이비슨 슈퍼로우",
+  "brand": "할리데이비슨",
+  "model": "슈퍼로우",
+  "aliases": [
+   "Harley-Davidson XL883L"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "시엔케이 듀오",
+  "brand": "시엔케이",
+  "model": "듀오",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 채트110",
+  "brand": "KR모터스",
+  "model": "채트110",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 에이온125",
+  "brand": "KR모터스",
+  "model": "에이온125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 DX250",
+  "brand": "대림",
+  "model": "DX250",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 TR150",
+  "brand": "대림",
+  "model": "TR150",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 VA125",
+  "brand": "대림",
+  "model": "VA125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "모토구찌 캘리포니아1400",
+  "brand": "모토구찌",
+  "model": "캘리포니아1400",
+  "aliases": [
+   "모토구찌 캘리포니아 1400 투어링",
+   "모토구찌 캘리포니아 1400 엘도라도",
+   "모토구찌 캘리포니아 1400 커스텀",
+   "모토구찌 캘리포니아 1400 오다치"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 스티져",
+  "brand": "대림",
+  "model": "스티져",
+  "aliases": [
+   "QL125B",
+   "QL125BS",
+   "QL125A",
+   "QL125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 위티100",
+  "brand": "대림",
+  "model": "위티100",
+  "aliases": [
+   "DS100B",
+   "DS100"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "SYM 조이라이드200",
+  "brand": "SYM",
+  "model": "조이라이드200",
+  "aliases": [
+   "JOYRIDE200 EVO",
+   "JOYRIDE200 EFI"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "한솜 드림젯100",
+  "brand": "한솜",
+  "model": "드림젯100",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "한솜 드림젯110",
+  "brand": "한솜",
+  "model": "드림젯110",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 아띠100",
+  "brand": "KR모터스",
+  "model": "아띠100",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 인트루더M1800R",
+  "brand": "스즈키",
+  "model": "인트루더M1800R",
+  "aliases": [
+   "VZR1800Z",
+   "VZR1800"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 GSR750",
+  "brand": "스즈키",
+  "model": "GSR750",
+  "aliases": [
+   "GSR750ZA",
+   "GSR750A"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "가와사키 1400GTR",
+  "brand": "가와사키",
+  "model": "1400GTR",
+  "aliases": [
+   "ZG1400C"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "MV아구스타 스트라달레800",
+  "brand": "MV아구스타",
+  "model": "스트라달레800",
+  "aliases": [
+   "STRADALE 800"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 CBR125R",
+  "brand": "혼다",
+  "model": "CBR125R",
+  "aliases": [
+   "CBR125RW"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "MV아구스타 브루탈레675",
+  "brand": "MV아구스타",
+  "model": "브루탈레675",
+  "aliases": [
+   "BRUTALE 675"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "MV아구스타 리발레800",
+  "brand": "MV아구스타",
+  "model": "리발레800",
+  "aliases": [
+   "RIVALE 800"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 XVS1300",
+  "brand": "야마하",
+  "model": "XVS1300",
+  "aliases": [
+   "XVS1300CU",
+   "XVS1300A"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "아프릴리아 SR모타드125",
+  "brand": "아프릴리아",
+  "model": "SR모타드125",
+  "aliases": [
+   "SRMT 125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "아프릴리아 RS4 125",
+  "brand": "아프릴리아",
+  "model": "RS4 125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 SR400",
+  "brand": "야마하",
+  "model": "SR400",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 CTX1300",
+  "brand": "혼다",
+  "model": "CTX1300",
+  "aliases": [
+   "CTX1300A"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 CBR300R",
+  "brand": "혼다",
+  "model": "CBR300R",
+  "aliases": [
+   "CBR300RA"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "SYM Z1 125",
+  "brand": "SYM",
+  "model": "Z1 125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "할리데이비슨 스포스터883",
+  "brand": "할리데이비슨",
+  "model": "스포스터883",
+  "aliases": [
+   "Harley-Davidson XL883R",
+   "Harley-Davidson XL883",
+   "Harley-Davidson XL883C"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 CTX700",
+  "brand": "혼다",
+  "model": "CTX700",
+  "aliases": [
+   "CTX700A"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "LML 스타오토매틱125",
+  "brand": "LML",
+  "model": "스타오토매틱125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "가와사키 벌칸900",
+  "brand": "가와사키",
+  "model": "벌칸900",
+  "aliases": [
+   "VN900 CLASSIC",
+   "VN900 Custom"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "가와사키 벌칸1700",
+  "brand": "가와사키",
+  "model": "벌칸1700",
+  "aliases": [
+   "VN1700 VOYAGER",
+   "VN1700 CLASSIC TOURER",
+   "VN1700B"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KTM 500EXC",
+  "brand": "KTM",
+  "model": "500EXC",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KTM 450EXC",
+  "brand": "KTM",
+  "model": "450EXC",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KTM 프리라이드350",
+  "brand": "KTM",
+  "model": "프리라이드350",
+  "aliases": [
+   "350 FREERIDE"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 데이스타250",
+  "brand": "대림",
+  "model": "데이스타250",
+  "aliases": [
+   "VL250"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 인트루더C1500",
+  "brand": "스즈키",
+  "model": "인트루더C1500",
+  "aliases": [
+   "VL1500",
+   "VL1500BT"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KTM 200듀크",
+  "brand": "KTM",
+  "model": "200듀크",
+  "aliases": [
+   "200 Duke"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 REV125",
+  "brand": "KR모터스",
+  "model": "REV125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KTM 250EXC-F",
+  "brand": "KTM",
+  "model": "250EXC-F",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KTM 350EXC-F",
+  "brand": "KTM",
+  "model": "350EXC-F",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "BMW G650GS",
+  "brand": "BMW",
+  "model": "G650GS",
+  "aliases": [
+   "BMW G650GS",
+   "BMW G650GS Sertao"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 TMAX500",
+  "brand": "야마하",
+  "model": "TMAX500",
+  "aliases": [
+   "XP500A"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 VFR1200F",
+  "brand": "혼다",
+  "model": "VFR1200F",
+  "aliases": [
+   "VFR1200FD"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 Q2",
+  "brand": "대림",
+  "model": "Q2",
+  "aliases": [
+   "SV125B",
+   "SV125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 VFR1200X",
+  "brand": "혼다",
+  "model": "VFR1200X",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "킴코 캡처125",
+  "brand": "킴코",
+  "model": "캡처125",
+  "aliases": [
+   "CAPTURE 125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 SCR110",
+  "brand": "혼다",
+  "model": "SCR110",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 NC700X",
+  "brand": "혼다",
+  "model": "NC700X",
+  "aliases": [
+   "NC700XA"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "한국모터스 매직125",
+  "brand": "한국모터스",
+  "model": "매직125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "두카티 몬스터1100",
+  "brand": "두카티",
+  "model": "몬스터1100",
+  "aliases": [
+   "M1100 EVO",
+   "M1100S ABS",
+   "M1100 ABS",
+   "M1100",
+   "M1100S"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KTM 990어드벤처",
+  "brand": "KTM",
+  "model": "990어드벤처",
+  "aliases": [
+   "990 어드벤처 다카르"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KTM 990어드벤처R",
+  "brand": "KTM",
+  "model": "990어드벤처R",
+  "aliases": [
+   "990 어드벤처 알"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KTM 990SMT",
+  "brand": "KTM",
+  "model": "990SMT",
+  "aliases": [
+   "990 SM T ABS"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KTM 990SMR",
+  "brand": "KTM",
+  "model": "990SMR",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 식스틴125",
+  "brand": "스즈키",
+  "model": "식스틴125",
+  "aliases": [
+   "UX125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 T110",
+  "brand": "야마하",
+  "model": "T110",
+  "aliases": [
+   "T110C"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 GSX-R750",
+  "brand": "스즈키",
+  "model": "GSX-R750",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "할리데이비슨 스포스터1200",
+  "brand": "할리데이비슨",
+  "model": "스포스터1200",
+  "aliases": [
+   "Harley-Davidson XL1200V",
+   "Harley-Davidson XL1200T",
+   "Harley-Davidson XL1200L",
+   "Harley-Davidson XL1200N"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 카이트",
+  "brand": "대림",
+  "model": "카이트",
+  "aliases": [
+   "NY125",
+   "NY125B"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "킴코 익사이팅500i",
+  "brand": "킴코",
+  "model": "익사이팅500i",
+  "aliases": [
+   "XCITING R 500i",
+   "XCITING500Ri"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "한국모터스 미니125",
+  "brand": "한국모터스",
+  "model": "미니125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "SYM 아비드",
+  "brand": "SYM",
+  "model": "아비드",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 VT1300",
+  "brand": "혼다",
+  "model": "VT1300",
+  "aliases": [
+   "VT1300CR",
+   "VT1300CRA",
+   "VT1300CSA",
+   "VT1300CXA"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "킴코 VJR100i",
+  "brand": "킴코",
+  "model": "VJR100i",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "SYM 피들2",
+  "brand": "SYM",
+  "model": "피들2",
+  "aliases": [
+   "뉴피들125",
+   "FIDDLE 125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "할리데이비슨 XR1200",
+  "brand": "할리데이비슨",
+  "model": "XR1200",
+  "aliases": [
+   "Harley-Davidson XR1200X",
+   "HARLEY-DAVIDSON XR1200"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "KR모터스 에스코트110",
+  "brand": "KR모터스",
+  "model": "에스코트110",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 인트루더M800",
+  "brand": "스즈키",
+  "model": "인트루더M800",
+  "aliases": [
+   "VZ800",
+   "VZ800Z"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 인트루더C800",
+  "brand": "스즈키",
+  "model": "인트루더C800",
+  "aliases": [
+   "VL800C",
+   "VL800"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "SYM 제트4",
+  "brand": "SYM",
+  "model": "제트4",
+  "aliases": [
+   "제트4 125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 GSX1250FA",
+  "brand": "스즈키",
+  "model": "GSX1250FA",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 BWS125",
+  "brand": "야마하",
+  "model": "BWS125",
+  "aliases": [
+   "YW125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 YZF-R125",
+  "brand": "야마하",
+  "model": "YZF-R125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 XT660",
+  "brand": "야마하",
+  "model": "XT660",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "두카티 하이퍼모타드1100",
+  "brand": "두카티",
+  "model": "하이퍼모타드1100",
+  "aliases": [
+   "HYM1100 EVO",
+   "HYM1100 EVO SP",
+   "HYM1100S",
+   "HYM1100"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 글라디우스",
+  "brand": "스즈키",
+  "model": "글라디우스",
+  "aliases": [
+   "SFV650A",
+   "SFV650"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 섀도우750",
+  "brand": "혼다",
+  "model": "섀도우750",
+  "aliases": [
+   "VT750CS",
+   "VT750C"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 마제스티400",
+  "brand": "야마하",
+  "model": "마제스티400",
+  "aliases": [
+   "YP400"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "한솜 허브110",
+  "brand": "한솜",
+  "model": "허브110",
+  "aliases": [
+   "HUB110"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "데르비 테라어드벤처125",
+  "brand": "데르비",
+  "model": "테라어드벤처125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "효성 MS3 125",
+  "brand": "효성",
+  "model": "MS3 125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "효성 MS3 250",
+  "brand": "효성",
+  "model": "MS3 250",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "빅토리 잭팟",
+  "brand": "빅토리",
+  "model": "잭팟",
+  "aliases": [
+   "JACKPOT"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 YBR125",
+  "brand": "야마하",
+  "model": "YBR125",
+  "aliases": [
+   "YB125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "말라구티 센트로125",
+  "brand": "말라구티",
+  "model": "센트로125",
+  "aliases": [
+   "센트로"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "한국모터스 메가빅스",
+  "brand": "한국모터스",
+  "model": "메가빅스",
+  "aliases": [
+   "메가빅스(MV125)"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "두카티 GT1000",
+  "brand": "두카티",
+  "model": "GT1000",
+  "aliases": [
+   "GT1000 TOURING"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "LML 스타디럭스125",
+  "brand": "LML",
+  "model": "스타디럭스125",
+  "aliases": [
+   "Star Deluxe 125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "한국모터스 칼리125",
+  "brand": "한국모터스",
+  "model": "칼리125",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "말라구티 스파이더맥스RS500",
+  "brand": "말라구티",
+  "model": "스파이더맥스RS500",
+  "aliases": [
+   "Spidermax RS 500"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "피아지오 플라이125",
+  "brand": "피아지오",
+  "model": "플라이125",
+  "aliases": [
+   "피아지오 플라이 125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 XV1900",
+  "brand": "야마하",
+  "model": "XV1900",
+  "aliases": [
+   "XV1900A"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 인트루더C1800R",
+  "brand": "스즈키",
+  "model": "인트루더C1800R",
+  "aliases": [
+   "VLR1800"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 XVS950",
+  "brand": "야마하",
+  "model": "XVS950",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "야마하 WR250R",
+  "brand": "야마하",
+  "model": "WR250R",
+  "aliases": [
+   "WR250"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "SYM GTS250",
+  "brand": "SYM",
+  "model": "GTS250",
+  "aliases": [
+   "GTS250 EVO",
+   "GTS250 EFI"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "두카티 스포트1000",
+  "brand": "두카티",
+  "model": "스포트1000",
+  "aliases": [
+   "SPORT1000S",
+   "SPORT1000 BIPOSTO",
+   "SPORT1000"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 B-KING",
+  "brand": "스즈키",
+  "model": "B-KING",
+  "aliases": [
+   "GSX1300BKA",
+   "GSX1300BK"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "두카티 멀티스트라다1100",
+  "brand": "두카티",
+  "model": "멀티스트라다1100",
+  "aliases": [
+   "MTS1100",
+   "MTS1100S"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "킴코 비비오125",
+  "brand": "킴코",
+  "model": "비비오125",
+  "aliases": [
+   "VIVIO 125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 포르테",
+  "brand": "대림",
+  "model": "포르테",
+  "aliases": [
+   "SL125S",
+   "SL125U"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 프리윙",
+  "brand": "대림",
+  "model": "프리윙",
+  "aliases": [
+   "SQ125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "대림 비본",
+  "brand": "대림",
+  "model": "비본",
+  "aliases": [
+   "SN125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "SYM 씨유비",
+  "brand": "SYM",
+  "model": "씨유비",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "킴코 그랜드딩크125",
+  "brand": "킴코",
+  "model": "그랜드딩크125",
+  "aliases": [
+   "GRAND DINK 125L"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "킴코 딩크125",
+  "brand": "킴코",
+  "model": "딩크125",
+  "aliases": [
+   "DINK 125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "SYM 심플리125",
+  "brand": "SYM",
+  "model": "심플리125",
+  "aliases": [
+   "SYMPLY 125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 에이프100",
+  "brand": "혼다",
+  "model": "에이프100",
+  "aliases": [
+   "XZ100"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "아프릴리아 돌소두로750",
+  "brand": "아프릴리아",
+  "model": "돌소두로750",
+  "aliases": [
+   "도르소두로750"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "SYM 레전드125",
+  "brand": "SYM",
+  "model": "레전드125",
+  "aliases": [
+   "레전드-R",
+   "레전드"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "BMW K1300GT",
+  "brand": "BMW",
+  "model": "K1300GT",
+  "aliases": [
+   "BMW K1300GT"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "BMW K1300R",
+  "brand": "BMW",
+  "model": "K1300R",
+  "aliases": [
+   "BMW K1300R"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "BMW K1300S",
+  "brand": "BMW",
+  "model": "K1300S",
+  "aliases": [
+   "BMW K1300S"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "가와사키 닌자250R",
+  "brand": "가와사키",
+  "model": "닌자250R",
+  "aliases": [
+   "EX250K"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "두카티 몬스터S2R800",
+  "brand": "두카티",
+  "model": "몬스터S2R800",
+  "aliases": [
+   "S2R 800"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "킴코 딩크200i",
+  "brand": "킴코",
+  "model": "딩크200i",
+  "aliases": [
+   "DINK200i"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "두카티 몬스터S2R1000",
+  "brand": "두카티",
+  "model": "몬스터S2R1000",
+  "aliases": [
+   "S2R 1000"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "두카티 폴스마트1000",
+  "brand": "두카티",
+  "model": "폴스마트1000",
+  "aliases": [
+   "PAUL SMART 1000 LE"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "두카티 멀티스트라다1000",
+  "brand": "두카티",
+  "model": "멀티스트라다1000",
+  "aliases": [
+   "MTS1000S"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "킴코 키위100",
+  "brand": "킴코",
+  "model": "키위100",
+  "aliases": [
+   "Kiwi100"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 밴밴125",
+  "brand": "스즈키",
+  "model": "밴밴125",
+  "aliases": [
+   "RV125"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 CB1300",
+  "brand": "혼다",
+  "model": "CB1300",
+  "aliases": [
+   "CB1300 SUPER BOLD\\'OR"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 DN-01",
+  "brand": "혼다",
+  "model": "DN-01",
+  "aliases": [
+   "NSA700A"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "가와사키 벌칸2000",
+  "brand": "가와사키",
+  "model": "벌칸2000",
+  "aliases": [
+   "VN2000H"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "BMW R1200S",
+  "brand": "BMW",
+  "model": "R1200S",
+  "aliases": [
+   "BMW R1200S"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "BMW R1200ST",
+  "brand": "BMW",
+  "model": "R1200ST",
+  "aliases": [
+   "BMW R1200ST"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "BMW F650GS",
+  "brand": "BMW",
+  "model": "F650GS",
+  "aliases": [
+   "BMW F650GS"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "BMW G650X",
+  "brand": "BMW",
+  "model": "G650X",
+  "aliases": [
+   "BMW G650X"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "BMW F800S",
+  "brand": "BMW",
+  "model": "F800S",
+  "aliases": [
+   "BMW F800S"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "BMW F800ST",
+  "brand": "BMW",
+  "model": "F800ST",
+  "aliases": [
+   "BMW F800ST"
+  ],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 ST1300",
+  "brand": "혼다",
+  "model": "ST1300",
+  "aliases": [],
+  "displacement": null,
+  "category": null,
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
  }
 ]
