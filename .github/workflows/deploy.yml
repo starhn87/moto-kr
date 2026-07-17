@@ -1,0 +1,19 @@
+# main 의 데이터나 API 코드가 바뀌면 Workers 를 재배포한다.
+# 쿼리 API 는 데이터를 번들에 임베드하므로 sync PR 머지 후 이 배포가 있어야 반영된다.
+name: deploy-api
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/models.lite.json'
+      - 'api/**'
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          workingDirectory: api
