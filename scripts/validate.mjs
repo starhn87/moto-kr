@@ -26,8 +26,18 @@ for (const s of seed) {
     err(`fuelGrade 이상: ${s.nameKo} (${s.fuelGrade})`);
   }
   if (s.electric === true && s.fuelGrade != null) err(`전기인데 fuelGrade 존재: ${s.nameKo}`);
-  for (const k of ['seatHeight', 'weight']) {
+  for (const k of ['seatHeight', 'weight', 'power']) {
     if (s[k] != null && (!Number.isInteger(s[k]) || s[k] <= 0)) err(`${k} 이상: ${s.nameKo} (${s[k]})`);
+  }
+  if (s.cylinders != null && ![1, 2, 3, 4, 6].includes(s.cylinders)) err(`cylinders 이상: ${s.nameKo} (${s.cylinders})`);
+  if (s.cooling != null && !['air', 'liquid', 'oil'].includes(s.cooling)) err(`cooling 이상: ${s.nameKo} (${s.cooling})`);
+  if (s.fuelCapacity != null && (!Number.isFinite(s.fuelCapacity) || s.fuelCapacity <= 0)) {
+    err(`fuelCapacity 이상: ${s.nameKo} (${s.fuelCapacity})`);
+  }
+  if (s.electric === true) {
+    for (const k of ['cylinders', 'cooling', 'fuelCapacity', 'power']) {
+      if (s[k] != null) err(`전기인데 ${k} 존재: ${s.nameKo}`);
+    }
   }
 }
 

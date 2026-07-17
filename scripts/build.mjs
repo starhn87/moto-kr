@@ -93,6 +93,10 @@ const models = entries
       fuelGrade: e.fuelGrade ?? null,
       seatHeight: e.seatHeight ?? null,
       weight: e.weight ?? null,
+      cylinders: e.cylinders ?? null,
+      cooling: e.cooling ?? null,
+      fuelCapacity: e.fuelCapacity ?? null,
+      power: e.power ?? null,
       emissionStandard: (() => {
         const latest = (e._emissions ?? [])
           .filter((x) => x.date)

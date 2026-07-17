@@ -49,6 +49,12 @@ const USAGE = {
         seatHeightMax: '시트고 상한 (mm)',
         weightMin: '중량 하한 (kg)',
         weightMax: '중량 상한 (kg)',
+        cylinders: '기통수. 콤마로 복수 지정 (예: 1,2)',
+        cooling: 'air | liquid | oil (냉각 방식)',
+        fuelCapacityMin: '연료탱크 하한 (L)',
+        fuelCapacityMax: '연료탱크 상한 (L)',
+        powerMin: '최고출력 하한 (PS)',
+        powerMax: '최고출력 상한 (PS)',
         q: '이름·인증 차명 부분 일치 검색',
         limit: '최대 반환 수 (기본 전체)',
         offset: '건너뛸 수',
@@ -96,6 +102,12 @@ export default {
       const seatHeightMax = numOrNull('seatHeightMax');
       const weightMin = numOrNull('weightMin');
       const weightMax = numOrNull('weightMax');
+      const cylinders = p.get('cylinders')?.split(',').map(Number).filter((n) => !Number.isNaN(n));
+      const cooling = p.get('cooling');
+      const fuelCapacityMin = numOrNull('fuelCapacityMin');
+      const fuelCapacityMax = numOrNull('fuelCapacityMax');
+      const powerMin = numOrNull('powerMin');
+      const powerMax = numOrNull('powerMax');
       const q = p.get('q')?.trim();
 
       if ((ccMin !== null && Number.isNaN(ccMin)) || (ccMax !== null && Number.isNaN(ccMax))) {
@@ -113,8 +125,11 @@ export default {
       if (emission && !['euro5', 'euro4', 'euro3'].includes(emission)) {
         return json({ error: 'emission 은 euro5, euro4, euro3 중 하나입니다' }, 400);
       }
-      for (const [k, v] of [['seatHeightMin', seatHeightMin], ['seatHeightMax', seatHeightMax], ['weightMin', weightMin], ['weightMax', weightMax]]) {
+      for (const [k, v] of [['seatHeightMin', seatHeightMin], ['seatHeightMax', seatHeightMax], ['weightMin', weightMin], ['weightMax', weightMax], ['fuelCapacityMin', fuelCapacityMin], ['fuelCapacityMax', fuelCapacityMax], ['powerMin', powerMin], ['powerMax', powerMax]]) {
         if (v !== null && Number.isNaN(v)) return json({ error: `${k} 는 숫자여야 합니다` }, 400);
+      }
+      if (cooling && !['air', 'liquid', 'oil'].includes(cooling)) {
+        return json({ error: 'cooling 은 air, liquid, oil 중 하나입니다' }, 400);
       }
 
       const qNorm = q?.toUpperCase().replace(/[^A-Z0-9가-힣]/g, '');
@@ -134,6 +149,12 @@ export default {
         if (seatHeightMax !== null && (m.seatHeight === null || m.seatHeight > seatHeightMax)) return false;
         if (weightMin !== null && (m.weight === null || m.weight < weightMin)) return false;
         if (weightMax !== null && (m.weight === null || m.weight > weightMax)) return false;
+        if (cylinders?.length && !cylinders.includes(m.cylinders)) return false;
+        if (cooling && m.cooling !== cooling) return false;
+        if (fuelCapacityMin !== null && (m.fuelCapacity === null || m.fuelCapacity < fuelCapacityMin)) return false;
+        if (fuelCapacityMax !== null && (m.fuelCapacity === null || m.fuelCapacity > fuelCapacityMax)) return false;
+        if (powerMin !== null && (m.power === null || m.power < powerMin)) return false;
+        if (powerMax !== null && (m.power === null || m.power > powerMax)) return false;
         if (qNorm) {
           const hay = [m.nameKo, ...(m.aliases ?? [])]
             .join('|')
