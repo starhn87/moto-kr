@@ -4,9 +4,12 @@
 // 번들에 임베드하므로 런타임 외부 의존이 없다. 데이터가 갱신되면 재배포한다.
 //
 //   GET /            사용법
-//   GET /models      필터 조회 (brand, category, ccMin, ccMax, from, to, status, electric, q, ...)
+//   GET /models      파라미터 없으면 전체 덤프(인증 이력 포함), 있으면 필터 조회(요약 스키마)
 //   GET /brands      브랜드 목록과 기종 수
 //   GET /meta        데이터 정보
+//
+// 전체 덤프는 GitHub raw 의 풀 JSON(10MB)을 스트리밍 프록시한다. 모든 GET 응답은
+// 엣지 캐시(Cache API)에 얹히고, 캐시 키에 데이터 생성일이 들어가 재배포 시 자연 무효화된다.
 
 import dataset from '../../data/models.lite.json' with { type: 'json' };
 
@@ -61,22 +64,32 @@ const USAGE = {
       },
       example: '/models?category=크루저&ccMin=800&fuelGrade=premium&emission=euro5&seatHeightMax=750',
       tip: '원동기 면허(125cc 이하) 기종은 ccMax=125 로 거른다',
-      note: '인증 이력 전문은 정적 파일에서: https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main/data/models.json',
+      note: '파라미터 없이 /models 를 호출하면 인증 이력까지 포함한 전체 덤프를 반환한다. 필터 응답은 인증 이력 대신 certificationCount·offices 요약을 담는다',
     },
     'GET /brands': '브랜드 목록과 기종 수',
     'GET /meta': '데이터 생성일·집계',
   },
 };
 
-export default {
-  fetch(request) {
-    const url = new URL(request.url);
-    const path = url.pathname.replace(/\/+$/, '') || '/';
-    const p = url.searchParams;
+const RAW_FULL = 'https://raw.githubusercontent.com/starhn87/moto-kr/main/data/models.json';
 
-    if (path === '/') return json(USAGE);
-    if (path === '/meta') return json(dataset.meta);
+async function handle(url) {
+  const path = url.pathname.replace(/\/+$/, '') || '/';
+  const p = url.searchParams;
 
+  if (path === '/') return json(USAGE);
+
+  // 파라미터 없는 /models = 인증 이력 포함 전체 덤프 (풀 JSON 스트리밍 프록시)
+  if (path === '/models' && [...p.keys()].length === 0) {
+    const r = await fetch(RAW_FULL);
+    if (!r.ok) return json({ error: '전체 데이터를 가져오지 못했습니다. 잠시 후 다시 시도해 주세요' }, 502);
+    return new Response(r.body, { headers: HEADERS });
+  }
+  {
+  }
+  if (path === '/meta') return json(dataset.meta);
+
+  {
     if (path === '/brands') {
       const counts = new Map();
       for (const m of dataset.models) counts.set(m.brand, (counts.get(m.brand) ?? 0) + 1);
@@ -176,6 +189,32 @@ export default {
       });
     }
 
-    return json({ error: 'not found', usage: '/' }, 404);
+  }
+  return json({ error: 'not found', usage: '/' }, 404);
+}
+
+export default {
+  async fetch(request, env, ctx) {
+    if (request.method !== 'GET' && request.method !== 'HEAD') {
+      return json({ error: 'GET only' }, 405);
+    }
+    const url = new URL(request.url);
+    // 엣지 캐시: 키에 데이터 생성일을 넣어 재배포(데이터 갱신) 시 자연 무효화
+    const cacheKey = new Request(
+      `https://cache.moto-kr/${dataset.meta.generatedAt}${url.pathname}${url.search}`,
+    );
+    const cache = globalThis.caches?.default;
+    if (cache) {
+      const hit = await cache.match(cacheKey);
+      if (hit) {
+        const res = new Response(hit.body, hit);
+        res.headers.set('x-cache', 'HIT');
+        return res;
+      }
+    }
+    const res = await handle(url);
+    res.headers.set('x-cache', 'MISS');
+    if (cache && res.status === 200) ctx?.waitUntil?.(cache.put(cacheKey, res.clone()));
+    return res;
   },
 };

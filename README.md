@@ -6,13 +6,18 @@
 
 ## 🚀 API
 
-두 가지 방법으로 쓸 수 있습니다. 필터가 필요하면 쿼리 API, 전체 데이터가 필요하면 정적 파일입니다. 둘 다 키 없이 호출하고 CORS가 열려 있습니다.
-
-### 쿼리 API
+베이스 URL은 `https://moto-kr.starhn87.workers.dev`입니다. 키 없이 호출하고 CORS가 열려 있으며 응답은 엣지 캐시를 탑니다.
 
 ```
-GET https://moto-kr.starhn87.workers.dev/models?category=크루저&ccMin=800&fuelGrade=premium&emission=euro5
+GET /models                                  # 전체 덤프 (인증 이력 포함)
+GET /models?category=크루저&ccMin=800         # 필터 조회 (요약 스키마)
+GET /brands                                  # 브랜드 목록과 기종 수
+GET /meta                                    # 데이터 생성일과 집계
 ```
+
+파라미터 없이 `/models`를 호출하면 인증 이력까지 담긴 전체 데이터를 반환합니다. 필터 파라미터가 하나라도 붙으면 인증 이력 대신 `certificationCount`와 `offices` 요약이 담긴 가벼운 응답이 옵니다.
+
+### 필터 파라미터
 
 | 파라미터 | 설명 |
 |---|---|
@@ -26,32 +31,11 @@ GET https://moto-kr.starhn87.workers.dev/models?category=크루저&ccMin=800&fue
 | `seatHeightMin/Max`, `weightMin/Max`, `fuelCapacityMin/Max`, `powerMin/Max` | 수치 범위 |
 | `electric`, `status`, `q`, `limit`, `offset` | 전기 여부, 검증 상태, 검색어, 페이징 |
 
-`/brands`는 브랜드 목록, `/meta`는 데이터 정보, `/`는 사용법을 반환합니다. 원동기 면허(125cc 이하) 기종은 `ccMax=125`로 거르면 됩니다.
+원동기 면허(125cc 이하) 기종은 `ccMax=125`로 거르면 됩니다.
 
-### 정적 파일 (CDN)
+정적 파일을 직접 쓰고 싶다면 CDN 경로도 열려 있습니다: `https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main/data/` 아래에 `models.json`(전문), `models.lite.json`(요약), `models.min.json`(이름 배열), `unmapped.json`(기여 대상)이 있습니다.
 
-베이스 URL은 `https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main`입니다.
-
-### GET /data/models.min.json
-
-자동완성처럼 이름 목록만 필요할 때 씁니다.
-
-```js
-const { names } = await fetch(
-  'https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main/data/models.min.json'
-).then((r) => r.json());
-```
-
-```jsonc
-{
-  "meta": { "generatedAt": "2026-07-16", "models": 808 },
-  "names": ["가와사키 W230", "가와사키 닌자 H2", "가와사키 닌자 H2 SX", /* ... */]
-}
-```
-
-### GET /data/models.json
-
-기종별 상세와 인증 이력까지 담긴 풀 데이터입니다.
+### 응답 예시 (models.json / 전체 덤프)
 
 ```jsonc
 {
