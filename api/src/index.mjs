@@ -71,9 +71,12 @@ const USAGE = {
   },
 };
 
-const RAW_FULL = 'https://raw.githubusercontent.com/starhn87/moto-kr/main/data/models.json';
+// 전체 덤프 원본. 배포 시 GIT_SHA(커밋 고정)를 주입하면 jsDelivr 영구 캐시를 타고
+// 미주입(로컬 wrangler deploy)이면 @main 으로 폴백한다 (jsDelivr 캐시 최대 12시간)
+const fullUrl = (env) =>
+  `https://cdn.jsdelivr.net/gh/starhn87/moto-kr@${env?.GIT_SHA ?? 'main'}/data/models.json`;
 
-async function handle(url) {
+async function handle(url, env) {
   const path = url.pathname.replace(/\/+$/, '') || '/';
   const p = url.searchParams;
 
@@ -81,8 +84,10 @@ async function handle(url) {
 
   // 파라미터 없는 /models = 인증 이력 포함 전체 덤프 (풀 JSON 스트리밍 프록시)
   if (path === '/models' && [...p.keys()].length === 0) {
-    const r = await fetch(RAW_FULL);
-    if (!r.ok) return json({ error: '전체 데이터를 가져오지 못했습니다. 잠시 후 다시 시도해 주세요' }, 502);
+    const r = await fetch(fullUrl(env));
+    if (!r.ok) {
+      return json({ error: `전체 데이터를 가져오지 못했습니다 (upstream ${r.status}). 잠시 후 다시 시도해 주세요` }, 502);
+    }
     return new Response(r.body, { headers: HEADERS });
   }
   {
@@ -212,7 +217,7 @@ export default {
         return res;
       }
     }
-    const res = await handle(url);
+    const res = await handle(url, env);
     res.headers.set('x-cache', 'MISS');
     if (cache && res.status === 200) ctx?.waitUntil?.(cache.put(cacheKey, res.clone()));
     return res;

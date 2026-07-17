@@ -18,3 +18,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           workingDirectory: api
           wranglerVersion: "4.111.0"
+          command: deploy --var GIT_SHA:${{ github.sha }}
