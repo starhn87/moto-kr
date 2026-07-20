@@ -45,12 +45,16 @@ async function fetchAll(gubun) {
 mkdirSync('data/raw', { recursive: true });
 
 // 인증일 오름차순으로 정렬해 저장: 커밋 diff 에 신규 인증만 드러나도록
-const sortKey = (r) => `${r.EMIS_CERTI_DATE ?? r.NOISE_CERTI_DATE ?? ''}|${r.VEH_NM}|${r.VEH_TYPE}`;
+// 코드포인트 비교(cmp)로 정렬 — localeCompare 는 실행 환경(ICU)에 따라 순서가
+// 달라져 주간 sync 에서 내용 없는 diff 를 만든다. 키에 인증번호까지 넣어 동률 제거.
+const sortKey = (r) =>
+  `${r.EMIS_CERTI_DATE ?? r.NOISE_CERTI_DATE ?? ''}|${r.VEH_NM}|${r.VEH_TYPE}|${r.EMIS_CERTI_NO ?? r.NOISE_CERTI_NO ?? ''}`;
+const cmp = (a, b) => (sortKey(a) < sortKey(b) ? -1 : sortKey(a) > sortKey(b) ? 1 : 0);
 
-const imported = (await fetchAll(1)).sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
+const imported = (await fetchAll(1)).sort(cmp);
 writeFileSync('data/raw/kencis-import.json', JSON.stringify(imported, null, 1));
 console.log(`수입제작 이륜 ${imported.length}건 → data/raw/kencis-import.json`);
 
-const domestic = (await fetchAll(2)).sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
+const domestic = (await fetchAll(2)).sort(cmp);
 writeFileSync('data/raw/kencis-domestic.json', JSON.stringify(domestic, null, 1));
 console.log(`국내제작 이륜 ${domestic.length}건 → data/raw/kencis-domestic.json`);

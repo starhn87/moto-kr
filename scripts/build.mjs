@@ -114,17 +114,17 @@ const models = entries
       emissionStandard: (() => {
         const latest = (e._emissions ?? [])
           .filter((x) => x.date)
-          .sort((a, b) => b.date.localeCompare(a.date))[0];
+          .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))[0];
         return latest ? euroOf(latest.mustard, latest.date) : null;
       })(),
       status: e.certifications.length ? 'verified' : 'curated',
       aliases: [...e.aliases].sort(),
       firstCertifiedAt: dates[0] ?? null,
       lastCertifiedAt: dates[dates.length - 1] ?? null,
-      certifications: e.certifications.sort((a, b) => (a.date ?? '').localeCompare(b.date ?? '')),
+      certifications: e.certifications.sort((a, b) => ((a.date ?? '') < (b.date ?? '') ? -1 : (a.date ?? '') > (b.date ?? '') ? 1 : 0)),
     };
   })
-  .sort((a, b) => a.nameKo.localeCompare(b.nameKo, 'ko'));
+  .sort((a, b) => (a.nameKo < b.nameKo ? -1 : a.nameKo > b.nameKo ? 1 : 0));
 
 // 미매핑 인증 차명: 업체·건수·브랜드 후보와 함께 기여 목록으로
 const unmappedMap = new Map();
@@ -143,7 +143,12 @@ rows.forEach((r, i) => {
   if (d && (!cur.lastDate || d > cur.lastDate)) cur.lastDate = d;
   unmappedMap.set(key, cur);
 });
-const unmapped = [...unmappedMap.values()].sort((a, b) => (b.lastDate ?? '').localeCompare(a.lastDate ?? ''));
+const unmapped = [...unmappedMap.values()].sort((a, b) => {
+  const da = a.lastDate ?? '';
+  const db = b.lastDate ?? '';
+  if (da !== db) return da < db ? 1 : -1;
+  return a.vehNm < b.vehNm ? -1 : a.vehNm > b.vehNm ? 1 : 0;
+});
 
 const meta = {
   generatedAt: new Date().toISOString().slice(0, 10),
