@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generatedAt": "2026-07-17",
+  "generatedAt": "2026-07-20",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1040,
@@ -96,14 +96,14 @@
    "lastDate": "2023-12-12"
   },
   {
-   "vehNm": "HJ125T-32P",
+   "vehNm": "HJ125T-31",
    "office": "(주)다빈월드",
    "brandHint": null,
    "count": 3,
    "lastDate": "2023-12-12"
   },
   {
-   "vehNm": "HJ125T-31",
+   "vehNm": "HJ125T-32P",
    "office": "(주)다빈월드",
    "brandHint": null,
    "count": 3,
@@ -217,21 +217,7 @@
    "lastDate": "2019-03-04"
   },
   {
-   "vehNm": "HJ125T-26A",
-   "office": "(주)다빈월드",
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2018-04-20"
-  },
-  {
    "vehNm": "HJ100T-5A",
-   "office": "(주)다빈월드",
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2018-04-20"
-  },
-  {
-   "vehNm": "HJ125T-20A",
    "office": "(주)다빈월드",
    "brandHint": null,
    "count": 1,
@@ -246,6 +232,20 @@
   },
   {
    "vehNm": "HJ125T-19A",
+   "office": "(주)다빈월드",
+   "brandHint": null,
+   "count": 1,
+   "lastDate": "2018-04-20"
+  },
+  {
+   "vehNm": "HJ125T-20A",
+   "office": "(주)다빈월드",
+   "brandHint": null,
+   "count": 1,
+   "lastDate": "2018-04-20"
+  },
+  {
+   "vehNm": "HJ125T-26A",
    "office": "(주)다빈월드",
    "brandHint": null,
    "count": 1,
@@ -385,13 +385,6 @@
    "lastDate": "2012-04-30"
   },
   {
-   "vehNm": "카발로",
-   "office": "(주)썬로드트레이딩",
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2011-12-30"
-  },
-  {
    "vehNm": "감바",
    "office": "(주)썬로드트레이딩",
    "brandHint": null,
@@ -400,6 +393,13 @@
   },
   {
    "vehNm": "제미니",
+   "office": "(주)썬로드트레이딩",
+   "brandHint": null,
+   "count": 1,
+   "lastDate": "2011-12-30"
+  },
+  {
+   "vehNm": "카발로",
    "office": "(주)썬로드트레이딩",
    "brandHint": null,
    "count": 1,
@@ -472,14 +472,14 @@
    "lastDate": "2011-01-11"
   },
   {
-   "vehNm": "씨알에스125S",
+   "vehNm": "돌핀110S",
    "office": "(주)케이에스비",
    "brandHint": null,
    "count": 1,
    "lastDate": "2011-01-06"
   },
   {
-   "vehNm": "돌핀110S",
+   "vehNm": "씨알에스125S",
    "office": "(주)케이에스비",
    "brandHint": null,
    "count": 1,
@@ -534,14 +534,14 @@
    "lastDate": "2010-07-27"
   },
   {
-   "vehNm": "HJ125T-16D",
+   "vehNm": "HJ125T-10A",
    "office": "(주)다빈월드",
    "brandHint": null,
    "count": 1,
    "lastDate": "2010-07-20"
   },
   {
-   "vehNm": "HJ125T-10A",
+   "vehNm": "HJ125T-16D",
    "office": "(주)다빈월드",
    "brandHint": null,
    "count": 1,
@@ -656,9 +656,12 @@
    "lastDate": "2008-07-22"
   },
   {
-   "vehNm": "팔콘",
-   "office": "진일엔지니어링(주)",
-   "brandHint": null,
+   "vehNm": "SS101",
+   "office": "모토스타코리아(주)",
+   "brandHint": [
+    "존테스",
+    "SYM"
+   ],
    "count": 1,
    "lastDate": "2008-07-22"
   },
@@ -670,12 +673,9 @@
    "lastDate": "2008-07-22"
   },
   {
-   "vehNm": "SS101",
-   "office": "모토스타코리아(주)",
-   "brandHint": [
-    "존테스",
-    "SYM"
-   ],
+   "vehNm": "팔콘",
+   "office": "진일엔지니어링(주)",
+   "brandHint": null,
    "count": 1,
    "lastDate": "2008-07-22"
   },
@@ -727,15 +727,6 @@
    "lastDate": "2008-01-07"
   },
   {
-   "vehNm": "AT150R",
-   "office": "디앤에이모터스(주)",
-   "brandHint": [
-    "대림"
-   ],
-   "count": 1,
-   "lastDate": "2008-01-07"
-  },
-  {
    "vehNm": "AT125W",
    "office": "디앤에이모터스(주)",
    "brandHint": [
@@ -745,15 +736,24 @@
    "lastDate": "2008-01-07"
   },
   {
-   "vehNm": "아이월",
-   "office": "(주)티지알",
+   "vehNm": "AT150R",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2008-01-07"
+  },
+  {
+   "vehNm": "MXD-125",
+   "office": "(주)에이치에스알씨",
    "brandHint": null,
    "count": 1,
    "lastDate": "2008-01-04"
   },
   {
-   "vehNm": "MXD-125",
-   "office": "(주)에이치에스알씨",
+   "vehNm": "아이월",
+   "office": "(주)티지알",
    "brandHint": null,
    "count": 1,
    "lastDate": "2008-01-04"
