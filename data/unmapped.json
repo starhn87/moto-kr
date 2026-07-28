@@ -6,7 +6,7 @@
    "models": 1040,
    "verified": 877,
    "curated": 163,
-   "certifications": 5613,
+   "certifications": 4913,
    "unmapped": 113
   }
  },
@@ -17,7 +17,7 @@
    "brandHint": [
     "할리데이비슨"
    ],
-   "count": 4,
+   "count": 2,
    "lastDate": "2026-07-22"
   },
   {
@@ -319,7 +319,7 @@
    "vehNm": "test0830",
    "office": "나이스정보테크",
    "brandHint": null,
-   "count": 6,
+   "count": 2,
    "lastDate": "2015-08-30"
   },
   {
@@ -358,7 +358,7 @@
    "vehNm": "테스트1015",
    "office": null,
    "brandHint": null,
-   "count": 6,
+   "count": 1,
    "lastDate": "2013-10-15"
   },
   {
