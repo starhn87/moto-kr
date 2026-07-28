@@ -1,25 +1,16 @@
 {
  "meta": {
-  "generatedAt": "2026-07-26",
+  "generatedAt": "2026-07-28",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1040,
    "verified": 877,
    "curated": 163,
    "certifications": 5613,
-   "unmapped": 114
+   "unmapped": 113
   }
  },
  "unmapped": [
-  {
-   "vehNm": "UB125",
-   "office": "(주)스즈키 씨엠씨",
-   "brandHint": [
-    "스즈키"
-   ],
-   "count": 2,
-   "lastDate": "2026-07-24"
-  },
   {
    "vehNm": "Harley-Davidson FLTRXP",
    "office": "(유)기흥모터스",

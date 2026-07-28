@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generatedAt": "2026-07-26",
+  "generatedAt": "2026-07-28",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1040,
    "verified": 877,
    "curated": 163,
    "certifications": 5613,
-   "unmapped": 114
+   "unmapped": 113
   }
  },
  "models": [
@@ -53686,10 +53686,11 @@
    "emissionStandard": "euro5",
    "status": "verified",
    "aliases": [
+    "UB125",
     "UB125L"
    ],
    "firstCertifiedAt": "2023-02-09",
-   "lastCertifiedAt": "2025-03-11",
+   "lastCertifiedAt": "2026-07-24",
    "certifications": [
     {
      "no": "PMC-HC-1",
@@ -53724,6 +53725,24 @@
      "office": "(주)스즈키 씨엠씨",
      "vehNm": "UB125L",
      "vehType": "EA",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-HC-3",
+     "date": "2026-07-24",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "UB125",
+     "vehType": "ES",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-HC-3",
+     "date": "2026-07-24",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "UB125",
+     "vehType": "ES",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
