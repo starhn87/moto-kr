@@ -51,10 +51,22 @@ const sortKey = (r) =>
   `${r.EMIS_CERTI_DATE ?? r.NOISE_CERTI_DATE ?? ''}|${r.VEH_NM}|${r.VEH_TYPE}|${r.EMIS_CERTI_NO ?? r.NOISE_CERTI_NO ?? ''}`;
 const cmp = (a, b) => (sortKey(a) < sortKey(b) ? -1 : sortKey(a) > sortKey(b) ? 1 : 0);
 
-const imported = (await fetchAll(1)).sort(cmp);
+// API 가 같은 행을 그대로 중복 반환한다(2026-07 실측: 수입 5,204건 중 689건).
+// 완전 동일 행은 정보가 없으므로 걸러 저장한다 — 인증 건수도 이만큼 정직해진다.
+function dedupe(rows) {
+  const seen = new Set();
+  return rows.filter((r) => {
+    const key = JSON.stringify(r, Object.keys(r).sort());
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+const imported = dedupe(await fetchAll(1)).sort(cmp);
 writeFileSync('data/raw/kencis-import.json', JSON.stringify(imported, null, 1));
 console.log(`수입제작 이륜 ${imported.length}건 → data/raw/kencis-import.json`);
 
-const domestic = (await fetchAll(2)).sort(cmp);
+const domestic = dedupe(await fetchAll(2)).sort(cmp);
 writeFileSync('data/raw/kencis-domestic.json', JSON.stringify(domestic, null, 1));
 console.log(`국내제작 이륜 ${domestic.length}건 → data/raw/kencis-domestic.json`);
