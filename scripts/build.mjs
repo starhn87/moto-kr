@@ -150,8 +150,24 @@ const unmapped = [...unmappedMap.values()].sort((a, b) => {
   return a.vehNm < b.vehNm ? -1 : a.vehNm > b.vehNm ? 1 : 0;
 });
 
+// 내용이 그대로면 기존 날짜를 유지한다 — 같은 입력이면 출력도 같아야
+// CI 의 "build output committed" 검증이 다음 날 날짜만으로 깨지지 않는다.
+let prev = null;
+let prevUnmapped = null;
+try {
+  prev = JSON.parse(readFileSync('data/models.json', 'utf8'));
+  prevUnmapped = JSON.parse(readFileSync('data/unmapped.json', 'utf8'));
+} catch {
+  // 첫 빌드 — 오늘 날짜로 간다
+}
+const unchanged =
+  prev &&
+  prevUnmapped &&
+  JSON.stringify(prev.models) === JSON.stringify(models) &&
+  JSON.stringify(prevUnmapped.unmapped) === JSON.stringify(unmapped);
+
 const meta = {
-  generatedAt: new Date().toISOString().slice(0, 10),
+  generatedAt: unchanged ? prev.meta.generatedAt : new Date().toISOString().slice(0, 10),
   source: 'KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)',
   counts: {
     models: models.length,
