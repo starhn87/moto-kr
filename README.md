@@ -1,11 +1,4 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/logo-dark.png">
-    <img src="docs/logo.png" width="128" alt="moto-kr 로고">
-  </picture>
-</p>
-
-# 🏍️ moto-kr
+# <picture><source media="(prefers-color-scheme: dark)" srcset="docs/logo-dark.png"><img src="docs/logo.png" height="32" alt=""></picture> moto-kr
 
 > 한국 정발 오토바이 기종 오픈소스 API
 
