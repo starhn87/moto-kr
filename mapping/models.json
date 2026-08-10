@@ -5461,6 +5461,24 @@
   ]
  },
  {
+  "nameKo": "야마하 XSR125",
+  "brand": "야마하",
+  "model": "XSR125",
+  "aliases": [
+   "MTM125"
+  ],
+  "displacement": 124,
+  "category": "클래식",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": 810,
+  "weight": 137,
+  "cylinders": 1,
+  "cooling": "liquid",
+  "fuelCapacity": 10,
+  "power": 15
+ },
+ {
   "nameKo": "야마하 XSR900",
   "brand": "야마하",
   "model": "XSR900",
@@ -13981,6 +13999,24 @@
   "power": 47
  },
  {
+  "nameKo": "VOGE DS625X",
+  "brand": "VOGE",
+  "model": "DS625X",
+  "aliases": [
+   "DS625X"
+  ],
+  "displacement": 581,
+  "category": "어드벤처",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": 835,
+  "weight": 206,
+  "cylinders": 2,
+  "cooling": "liquid",
+  "fuelCapacity": 17.6,
+  "power": 64
+ },
+ {
   "nameKo": "VOGE SR1",
   "brand": "VOGE",
   "model": "SR1",
@@ -14027,6 +14063,24 @@
   "cooling": "liquid",
   "fuelCapacity": 7,
   "power": 13
+ },
+ {
+  "nameKo": "VOGE SR3",
+  "brand": "VOGE",
+  "model": "SR3",
+  "aliases": [
+   "SR3"
+  ],
+  "displacement": 244,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": 770,
+  "weight": 165,
+  "cylinders": 1,
+  "cooling": "liquid",
+  "fuelCapacity": 14,
+  "power": 26
  },
  {
   "nameKo": "VOGE SR4MAX",
