@@ -206,7 +206,11 @@
   "brand": "가와사키",
   "model": "닌자 ZX-6R",
   "aliases": [
-   "ZX600R"
+   "ZX600R",
+   "Ninja ZX-6R",
+   "ZX-6R",
+   "ZX-6R 636",
+   "ZX-6R 636 ABS"
   ],
   "displacement": 636,
   "category": "스포츠",
@@ -232,7 +236,12 @@
   "cylinders": 4,
   "cooling": "liquid",
   "fuelCapacity": 19,
-  "power": 142
+  "power": 142,
+  "aliases": [
+   "Ninja 1000SX",
+   "Z1000SX",
+   "Z1000SX ABS"
+  ]
  },
  {
   "nameKo": "가와사키 닌자1100SX",
@@ -388,7 +397,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 17,
-  "power": 40
+  "power": 40,
+  "aliases": [
+   "VERSYS-X 300 ABS",
+   "VERSYS-X 300 ABS TOURER"
+  ]
  },
  {
   "nameKo": "가와사키 벌칸S",
@@ -1821,7 +1834,12 @@
    "MTS1200S PIKES PEAK",
    "MTS1200S GRANTURISMO",
    "MTS1200S SPORT",
-   "MTS1200 ABS"
+   "MTS1200 ABS",
+   "Multistrada 1200",
+   "Multistrada 1200 S",
+   "Multistrada 1200  Pikes Peak",
+   "Multistrada 1200 Enduro",
+   "Multistrada 1200 Enduro Pro"
   ]
  },
  {
@@ -1837,7 +1855,14 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 158
+  "power": 158,
+  "aliases": [
+   "Multistrada 1260",
+   "Multistrada 1260 S",
+   "Multistrada 1260 Pikes Peak",
+   "Multistrada 1260 Enduro",
+   "Multistrada 1260 S Grand Tour"
+  ]
  },
  {
   "nameKo": "두카티 멀티스트라다620",
@@ -1870,7 +1895,13 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 113
+  "power": 113,
+  "aliases": [
+   "Multistrada 950",
+   "Multistrada 950 S",
+   "MULTISTRADA 950",
+   "MULTISTRADA 950 S"
+  ]
  },
  {
   "nameKo": "두카티 멀티스트라다V2",
@@ -1902,7 +1933,9 @@
    "Multistrada V4 S Grand Tour",
    "MULTISTRADA V4 PIKES PEAK",
    "MULTISTRADA V4 S",
-   "MULTISTRADA V4"
+   "MULTISTRADA V4",
+   "Multistrada V4 Rally",
+   "Multistrada V4 RS"
   ],
   "displacement": 1158,
   "category": "어드벤처",
@@ -1958,7 +1991,8 @@
    "Monster 1200 S",
    "M1200 S Stripe",
    "M1200",
-   "M1200 S"
+   "M1200 S",
+   "Monster 1200 R"
   ]
  },
  {
@@ -2152,7 +2186,8 @@
    "SCRAMBLER 1100 PRO DARK",
    "Scrambler 1100",
    "Scrambler 1100 Special",
-   "Scrambler 1100 Sport"
+   "Scrambler 1100 Sport",
+   "SCRAMBLER 1100 TRIBUTE PRO"
   ]
  },
  {
@@ -2588,7 +2623,10 @@
   "cylinders": 4,
   "cooling": "liquid",
   "fuelCapacity": 16,
-  "power": 221
+  "power": 221,
+  "aliases": [
+   "Panigale V4 R"
+  ]
  },
  {
   "nameKo": "두카티 포뮬러73",
@@ -3127,7 +3165,12 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 17,
-  "power": 115
+  "power": 115,
+  "aliases": [
+   "V100 Mandello",
+   "V100 Mandello S",
+   "V100 Mandello Aviazione Navale"
+  ]
  },
  {
   "nameKo": "모토구찌 V7",
@@ -3540,7 +3583,9 @@
   "aliases": [
    "Vespa 946 150",
    "Vespa 946 150 CHRISTIAN DIOR",
-   "Vespa 946 150 Rabbit"
+   "Vespa 946 150 Rabbit",
+   "Vespa 946",
+   "베스파 946"
   ]
  },
  {
@@ -3562,7 +3607,8 @@
    "VESPA SPRINT TECH 125",
    "SPRINT 125 ABS",
    "베스파 Sprint 125 ABS",
-   "베스파 Sprint 125"
+   "베스파 Sprint 125",
+   "VESPA SPRINT S 125"
   ]
  },
  {
@@ -3598,7 +3644,8 @@
    "VESPA PRIMAVERA 125",
    "PRIMAVERA 125 ABS",
    "베스파 Primavera 125 ABS",
-   "베스파 Primavera 125"
+   "베스파 Primavera 125",
+   "VESPA PRIMAVERA S 125"
   ]
  },
  {
@@ -3617,6 +3664,26 @@
   "power": 13
  },
  {
+  "nameKo": "베스파 S125",
+  "brand": "베스파",
+  "model": "S125",
+  "aliases": [
+   "S 125",
+   "베스파 S125ie",
+   "베스파 S125ie 3V"
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
   "nameKo": "베스파 GTS125",
   "brand": "베스파",
   "model": "GTS125",
@@ -3631,7 +3698,9 @@
   "fuelCapacity": 8.5,
   "power": 14,
   "aliases": [
-   "베스파 GTS 125 3V"
+   "베스파 GTS 125 3V",
+   "GTS 125 ABS",
+   "GTS 125 HPE ABS"
   ]
  },
  {
@@ -3685,7 +3754,11 @@
   "fuelCapacity": 8.3,
   "power": 11,
   "aliases": [
-   "베스파 LXV125"
+   "베스파 LXV125",
+   "LX 125",
+   "LX 125 ABS",
+   "베스파 LXV125ie 3V",
+   "베스파 LT125ie 3V"
   ]
  },
  {
@@ -4337,7 +4410,12 @@
   "fuelCapacity": 5,
   "power": 9,
   "aliases": [
-   "UU125"
+   "UU125",
+   "UZ125D2K",
+   "UZ125D5K",
+   "UZ125",
+   "UZ125Q",
+   "UZ125SDK"
   ]
  },
  {
@@ -4388,6 +4466,25 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 4.8,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 DR-Z400",
+  "brand": "스즈키",
+  "model": "DR-Z400",
+  "aliases": [
+   "DR-Z400S",
+   "DR-Z400SM"
+  ],
+  "displacement": 398,
+  "category": "오프로드",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": "liquid",
+  "fuelCapacity": null,
   "power": null
  },
  {
@@ -5131,7 +5228,11 @@
   "fuelCapacity": 7.2,
   "power": 12,
   "aliases": [
-   "MW125"
+   "MW125",
+   "MWS125",
+   "MWS125A",
+   "MWS125-A",
+   "MWS125-C"
   ]
  },
  {
@@ -6923,7 +7024,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 12.5,
-  "power": 14
+  "power": 14,
+  "aliases": [
+   "ZT125-C",
+   "ZT125-C2"
+  ]
  },
  {
   "nameKo": "존테스 125D",
@@ -6974,7 +7079,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 12.5,
-  "power": 14
+  "power": 14,
+  "aliases": [
+   "ZT125-G1"
+  ]
  },
  {
   "nameKo": "존테스 125U1",
@@ -7127,7 +7235,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 40
+  "power": 40,
+  "aliases": [
+   "ZT350T-D"
+  ]
  },
  {
   "nameKo": "존테스 368D",
@@ -7349,6 +7460,24 @@
   "power": null
  },
  {
+  "nameKo": "킴코 다운타운ST125",
+  "brand": "킴코",
+  "model": "다운타운ST125",
+  "aliases": [
+   "DOWNTOWN ST 125"
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": 165,
+  "cylinders": 1,
+  "cooling": "liquid",
+  "fuelCapacity": null,
+  "power": 14
+ },
+ {
   "nameKo": "킴코 다운타운300i",
   "brand": "킴코",
   "model": "다운타운300i",
@@ -7361,7 +7490,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 12.5,
-  "power": 30
+  "power": 30,
+  "aliases": [
+   "DOWNTOWN300i"
+  ]
  },
  {
   "nameKo": "킴코 다운타운350i",
@@ -7439,7 +7571,29 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 12.8,
-  "power": 24
+  "power": 24,
+  "aliases": [
+   "X-TOWN 300i"
+  ]
+ },
+ {
+  "nameKo": "킴코 익사이팅300i",
+  "brand": "킴코",
+  "model": "익사이팅300i",
+  "aliases": [
+   "Xciting300i",
+   "XCITING R 300i"
+  ],
+  "displacement": 298,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": "liquid",
+  "fuelCapacity": null,
+  "power": null
  },
  {
   "nameKo": "킴코 익사이팅400i",
@@ -7454,7 +7608,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 12.5,
-  "power": 36
+  "power": 36,
+  "aliases": [
+   "XCITING 400i"
+  ]
  },
  {
   "nameKo": "킴코 익사이팅S400",
@@ -7469,7 +7626,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 12.5,
-  "power": 36
+  "power": 36,
+  "aliases": [
+   "XCITING S 400i",
+   "XCITING S 400"
+  ]
  },
  {
   "nameKo": "킴코 키위50",
@@ -7652,7 +7813,12 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 14.5,
-  "power": 65
+  "power": 65,
+  "aliases": [
+   "BONNEVILLE T100",
+   "Bonneville T100 Black",
+   "Bonneville T100 Bud Ekins SE"
+  ]
  },
  {
   "nameKo": "트라이엄프 본네빌T120",
@@ -7667,7 +7833,14 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 14.5,
-  "power": 80
+  "power": 80,
+  "aliases": [
+   "BONNEVILLE T120",
+   "BONNEVILLE T120 BLACK",
+   "BONNEVILLE T120C",
+   "Bonneville T120 Black DGR Edition",
+   "Bonneville T120 Bud Ekins SE"
+  ]
  },
  {
   "nameKo": "트라이엄프 스럭스턴",
@@ -7957,7 +8130,9 @@
    "TIGER 1200 SE-Desert",
    "Tiger 1200 XCA",
    "Tiger 1200 XRT",
-   "Tiger 1200 SE-Alpine"
+   "Tiger 1200 SE-Alpine",
+   "Tiger 1200 Rally Explorer",
+   "Tiger 1200 Rally Pro"
   ]
  },
  {
@@ -8124,7 +8299,8 @@
   "aliases": [
    "PIAGGIO MEDLEY 125",
    "MEDLEY 125 S HPE ABS",
-   "MEDLEY 125 ABS"
+   "MEDLEY 125 ABS",
+   "MEDLEY S 125 ABS"
   ]
  },
  {
@@ -10204,7 +10380,10 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 5.6,
-  "power": 9
+  "power": 9,
+  "aliases": [
+   "Z125MA"
+  ]
  },
  {
   "nameKo": "혼다 벤리110",
@@ -10865,7 +11044,8 @@
   "power": 13,
   "aliases": [
    "WW125A",
-   "WW125"
+   "WW125",
+   "WW125EX2"
   ]
  },
  {
@@ -10881,7 +11061,10 @@
   "cylinders": 1,
   "cooling": "air",
   "fuelCapacity": 3.8,
-  "power": 9
+  "power": 9,
+  "aliases": [
+   "ST125A"
+  ]
  },
  {
   "nameKo": "혼다 X-ADV",
@@ -11209,7 +11392,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 15,
-  "power": 95
+  "power": 95,
+  "aliases": [
+   "BMW F 850 GS"
+  ]
  },
  {
   "nameKo": "BMW F850GS어드벤처",
@@ -11224,7 +11410,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 23,
-  "power": 95
+  "power": 95,
+  "aliases": [
+   "BMW F 850 GS Adventure"
+  ]
  },
  {
   "nameKo": "BMW F900GS",
@@ -11239,7 +11428,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 14.5,
-  "power": 105
+  "power": 105,
+  "aliases": [
+   "BMW F 900 GS",
+   "BMW F 900 GS-P"
+  ]
  },
  {
   "nameKo": "BMW F900GS어드벤처",
@@ -11254,7 +11447,10 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 23,
-  "power": 105
+  "power": 105,
+  "aliases": [
+   "BMW F 900 GS Adventure"
+  ]
  },
  {
   "nameKo": "BMW F900R",
@@ -11488,7 +11684,10 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 14,
-  "power": 95
+  "power": 95,
+  "aliases": [
+   "BMW R 12"
+  ]
  },
  {
   "nameKo": "BMW R1200GS",
@@ -11503,7 +11702,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 125
+  "power": 125,
+  "aliases": [
+   "BMW R 1200 GS",
+   "BMW R1200GS"
+  ]
  },
  {
   "nameKo": "BMW R1200GS어드벤처",
@@ -11518,7 +11721,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 30,
-  "power": 125
+  "power": 125,
+  "aliases": [
+   "BMW R 1200 GS Adventure",
+   "BMW R1200GS Adventure"
+  ]
  },
  {
   "nameKo": "BMW R1200R",
@@ -11578,7 +11785,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 20,
-  "power": 136
+  "power": 136,
+  "aliases": [
+   "BMW R 1250 GS",
+   "BMW R1250 GS"
+  ]
  },
  {
   "nameKo": "BMW R1250GS어드벤처",
@@ -11593,7 +11804,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 30,
-  "power": 136
+  "power": 136,
+  "aliases": [
+   "BMW R 1250 GS Adventure",
+   "BMW R1250 GS Adventure"
+  ]
  },
  {
   "nameKo": "BMW R1250R",
@@ -11653,7 +11868,10 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 16,
-  "power": 109
+  "power": 109,
+  "aliases": [
+   "BMW R 12 nineT"
+  ]
  },
  {
   "nameKo": "BMW R12G/S",
@@ -11683,7 +11901,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 19,
-  "power": 145
+  "power": 145,
+  "aliases": [
+   "BMW R 1300 GS",
+   "BMW R 1300 GS ASA"
+  ]
  },
  {
   "nameKo": "BMW R1300GS어드벤처",
@@ -11698,7 +11920,11 @@
   "cylinders": 2,
   "cooling": "liquid",
   "fuelCapacity": 30,
-  "power": 145
+  "power": 145,
+  "aliases": [
+   "BMW R 1300 GS Adventure",
+   "BMW R 1300 GS Adventure ASA"
+  ]
  },
  {
   "nameKo": "BMW R1300R",
@@ -11746,6 +11972,24 @@
   "power": 145
  },
  {
+  "nameKo": "BMW R12S",
+  "brand": "BMW",
+  "model": "R12S",
+  "aliases": [
+   "BMW R 12 S"
+  ],
+  "displacement": 1170,
+  "category": "클래식",
+  "electric": false,
+  "fuelGrade": "premium",
+  "seatHeight": 795,
+  "weight": 220,
+  "cylinders": 2,
+  "cooling": "air",
+  "fuelCapacity": 16,
+  "power": 109
+ },
+ {
   "nameKo": "BMW R18",
   "brand": "BMW",
   "model": "R18",
@@ -11760,8 +12004,27 @@
   "fuelCapacity": 16,
   "power": 91,
   "aliases": [
-   "BMW R 18 100 Year Anniversary Model"
+   "BMW R 18 100 Year Anniversary Model",
+   "BMW R 18"
   ]
+ },
+ {
+  "nameKo": "BMW R18록테인",
+  "brand": "BMW",
+  "model": "R18록테인",
+  "aliases": [
+   "BMW R 18 Roctane"
+  ],
+  "displacement": 1802,
+  "category": "크루저",
+  "electric": false,
+  "fuelGrade": "premium",
+  "seatHeight": 720,
+  "weight": 374,
+  "cylinders": 2,
+  "cooling": "air",
+  "fuelCapacity": 16,
+  "power": 91
  },
  {
   "nameKo": "BMW R18클래식",
@@ -11776,7 +12039,10 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 16,
-  "power": 91
+  "power": 91,
+  "aliases": [
+   "BMW R 18 Classic"
+  ]
  },
  {
   "nameKo": "BMW R18트랜스컨티넨탈",
@@ -11791,7 +12057,10 @@
   "cylinders": 2,
   "cooling": "air",
   "fuelCapacity": 24,
-  "power": 91
+  "power": 91,
+  "aliases": [
+   "BMW R 18 Transcontinental"
+  ]
  },
  {
   "nameKo": "BMW R18B",
@@ -12518,7 +12787,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 11,
-  "power": 28
+  "power": 28,
+  "aliases": [
+   "엑시브"
+  ]
  },
  {
   "nameKo": "KR모터스 와우2",
@@ -12834,7 +13106,11 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 13.4,
-  "power": 15
+  "power": 15,
+  "aliases": [
+   "125Duke",
+   "125 DUKE"
+  ]
  },
  {
   "nameKo": "KTM 1290슈퍼듀크GT",
@@ -13144,7 +13420,10 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 13.5,
-  "power": 75
+  "power": 75,
+  "aliases": [
+   "690 SMC"
+  ]
  },
  {
   "nameKo": "KTM 790듀크",
@@ -13360,7 +13639,8 @@
    "BRUTALE 1000 RS",
    "BRUTALE 1000 NURBURGRING",
    "BRUTALE 1000 RC",
-   "BRUTALE 1000 SERIE ORO"
+   "BRUTALE 1000 SERIE ORO",
+   "BRUTALE 1000 RR"
   ]
  },
  {
@@ -13711,7 +13991,12 @@
   "power": 13,
   "aliases": [
    "JOYMAX125",
-   "JOYMAX125R"
+   "JOYMAX125R",
+   "GTS125",
+   "GTS125 EVO",
+   "GTS125 EFI",
+   "GTS125 S",
+   "JOYMAX125EFI"
   ]
  },
  {
@@ -13727,14 +14012,22 @@
   "cylinders": 1,
   "cooling": "liquid",
   "fuelCapacity": 12,
-  "power": 27
+  "power": 27,
+  "aliases": [
+   "JOYMAX300",
+   "JOYMAX300ABS",
+   "GTS300 EFI",
+   "GTS300 EVO"
+  ]
  },
  {
   "nameKo": "SYM 조이맥스Z125",
   "brand": "SYM",
   "model": "조이맥스Z125",
   "aliases": [
-   "JOYMAX Z"
+   "JOYMAX Z",
+   "JOYMAX Z125",
+   "JOYMAX Z PLUS125"
   ],
   "displacement": 125,
   "category": "스쿠터",
@@ -14098,20 +14391,22 @@
   "power": 33
  },
  {
-  "nameKo": "대림 LM125",
+  "nameKo": "대림 루미",
   "brand": "대림",
-  "model": "LM125",
-  "aliases": [],
-  "displacement": null,
-  "category": null,
+  "model": "루미",
+  "aliases": [
+   "LM125"
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
+  "fuelGrade": "regular",
+  "seatHeight": 740,
+  "weight": 115,
   "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "cooling": "air",
+  "fuelCapacity": 5.7,
+  "power": 9
  },
  {
   "nameKo": "윈드 WT1",
@@ -14138,16 +14433,16 @@
   "aliases": [
    "BMW F 450 GS"
   ],
-  "displacement": null,
-  "category": null,
+  "displacement": 420,
+  "category": "어드벤처",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
-  "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "fuelGrade": "premium",
+  "seatHeight": 845,
+  "weight": 178,
+  "cylinders": 2,
+  "cooling": "liquid",
+  "fuelCapacity": 14,
+  "power": 48
  },
  {
   "nameKo": "에너인포 M24",
@@ -14186,20 +14481,22 @@
   "power": null
  },
  {
-  "nameKo": "KR모터스 VNEX125",
+  "nameKo": "KR모터스 브이넥스125",
   "brand": "KR모터스",
-  "model": "VNEX125",
-  "aliases": [],
-  "displacement": null,
-  "category": null,
+  "model": "브이넥스125",
+  "aliases": [
+   "VNEX125"
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
+  "fuelGrade": "regular",
+  "seatHeight": 750,
+  "weight": 115,
   "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "cooling": "air",
+  "fuelCapacity": 6.8,
+  "power": 9
  },
  {
   "nameKo": "브라부스 1400R",
@@ -14208,16 +14505,16 @@
   "aliases": [
    "BRABUS 1400 R"
   ],
-  "displacement": null,
-  "category": null,
+  "displacement": 1350,
+  "category": "네이키드",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
-  "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "fuelGrade": "premium",
+  "seatHeight": 834,
+  "weight": 200,
+  "cylinders": 2,
+  "cooling": "liquid",
+  "fuelCapacity": 17.5,
+  "power": 190
  },
  {
   "nameKo": "대동모빌리티 GS150",
@@ -14276,16 +14573,16 @@
   "brand": "KR모터스",
   "model": "로디125",
   "aliases": [],
-  "displacement": null,
-  "category": null,
+  "displacement": 124,
+  "category": "스쿠터",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
-  "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "fuelGrade": "regular",
+  "seatHeight": 750,
+  "weight": 120,
+  "cylinders": 1,
+  "cooling": "air",
+  "fuelCapacity": 6.5,
+  "power": 10
  },
  {
   "nameKo": "KTM 1390슈퍼듀크GT",
@@ -14294,16 +14591,16 @@
   "aliases": [
    "1390 SUPER DUKE GT"
   ],
-  "displacement": null,
-  "category": null,
+  "displacement": 1350,
+  "category": "투어러",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
-  "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "fuelGrade": "premium",
+  "seatHeight": 834,
+  "weight": 213,
+  "cylinders": 2,
+  "cooling": "liquid",
+  "fuelCapacity": 19.5,
+  "power": 190
  },
  {
   "nameKo": "클랜헌트 뉴트로M",
@@ -14384,16 +14681,16 @@
   "brand": "하우주",
   "model": "UFR125",
   "aliases": [],
-  "displacement": null,
-  "category": null,
+  "displacement": 124,
+  "category": "스쿠터",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
-  "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "fuelGrade": "regular",
+  "seatHeight": 760,
+  "weight": 145,
+  "cylinders": 1,
+  "cooling": "liquid",
+  "fuelCapacity": 8,
+  "power": 12
  },
  {
   "nameKo": "그린모빌리티 장보리2",
@@ -15725,12 +16022,34 @@
   "power": null
  },
  {
+  "nameKo": "SYM GT125",
+  "brand": "SYM",
+  "model": "GT125",
+  "aliases": [
+   "GT125",
+   "GT125 EFI"
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
   "nameKo": "SYM 조이라이드125",
   "brand": "SYM",
   "model": "조이라이드125",
   "aliases": [
    "JOYRIDE125 S",
-   "JOYRIDE125"
+   "JOYRIDE125",
+   "JOYRIDE S125",
+   "JOYRIDE125 EVO",
+   "JOYRIDE125EVO"
   ],
   "displacement": null,
   "category": null,
@@ -17534,6 +17853,26 @@
   "power": null
  },
  {
+  "nameKo": "야마하 시그너스X",
+  "brand": "야마하",
+  "model": "시그너스X",
+  "aliases": [
+   "XC125E",
+   "NXC125",
+   "XC125RR"
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
   "nameKo": "SYM GTS250",
   "brand": "SYM",
   "model": "GTS250",
@@ -18180,6 +18519,25 @@
   "seatHeight": null,
   "weight": null,
   "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 CBR250R",
+  "brand": "혼다",
+  "model": "CBR250R",
+  "aliases": [
+   "CBR250R",
+   "CBR250RA"
+  ],
+  "displacement": 249,
+  "category": "스포츠",
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
   "cooling": null,
   "fuelCapacity": null,
   "power": null

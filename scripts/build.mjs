@@ -16,16 +16,24 @@ const seed = JSON.parse(readFileSync('mapping/models.json', 'utf8'));
 
 const rows = [...imp.map((r) => ({ ...r, _gubun: 'import' })), ...dom.map((r) => ({ ...r, _gubun: 'domestic' }))];
 
-// 비교용 정규화: 대문자화 + 영숫자·한글만
-const norm = (s) => (s ?? '').toUpperCase().replace(/[^A-Z0-9가-힣]/g, '');
+// 비교용 정규화: 대문자화 + 영숫자·한글만. 로마숫자(Ⅱ 등)는 아라비아 숫자로
+// 바꾼다 — 그냥 지우면 "TOYOUDAYⅡ"가 "TOYOUDAY"와 같아져 별칭이 충돌한다.
+const ROMAN_BASE = 0x2160; // Ⅰ
+const norm = (s) =>
+  (s ?? '')
+    .toUpperCase()
+    .replace(/[Ⅰ-Ⅻ]/g, (c) => String(c.codePointAt(0) - ROMAN_BASE + 1))
+    .replace(/[^A-Z0-9가-힣]/g, '');
 
 // 시드 항목마다 매칭 토큰 준비: 모델부 전체 + 영숫자 토큰(3자 이상)
 const entries = seed.map((s) => {
   const token = norm(s.model);
-  // 순수 숫자 토큰은 배기량 숫자라 다른 브랜드 차명까지 흡수한다("650" → AN650, C650...) — 제외
+  // 짧거나 숫자로 시작하는 토큰은 증거력이 없어 제외한다 — "S125"가 VESPA SPRINT S 125 를,
+  // "250R"이 타사 250R 차명을, "125i"가 온갖 125i 스쿠터를 흡수하는 오매칭 방지.
+  // 그런 기종은 별칭(정확 일치)으로 사람이 확정한다.
   const alphaTokens = (s.model.match(/[A-Za-z0-9-]{3,}/g) ?? [])
     .map(norm)
-    .filter((t) => t.length >= 3 && !/^[0-9]+$/.test(t));
+    .filter((t) => t.length >= 5 && !/^[0-9]/.test(t));
   return {
     ...s,
     _token: token,
@@ -37,47 +45,121 @@ const entries = seed.map((s) => {
   };
 });
 
+// 인증 차명이 모델 토큰을 포함하면(예: CBR650RA ⊇ CBR650R) 매칭 후보가 된다.
+// 경계 규칙 둘:
+//  - 오른쪽: 토큰이 숫자로 끝나면 바로 뒤가 숫자면 안 된다 — R12 가 R1250GS 를,
+//    닌자400 이 ...4000 을 흡수하는 오매칭 방지 (사양 접미 문자는 허용)
+//  - 왼쪽: 매칭은 원문 단어의 시작에서만 인정한다 — T100 이 AT100R(대림)을,
+//    C125 가 NXC125(야마하)를 단어 중간에서 흡수하는 오매칭 방지.
+//    "BMW R 1250 GS" 처럼 띄어 쓴 차명은 각 단어 시작이 경계가 된다.
+const boundedIncludes = (hay, needle, wordStarts) => {
+  let idx = hay.indexOf(needle);
+  while (idx !== -1) {
+    const nextCh = hay[idx + needle.length];
+    const rightOk = !(/[0-9]$/.test(needle) && nextCh && /[0-9]/.test(nextCh));
+    const leftOk = !wordStarts || wordStarts.has(idx);
+    if (rightOk && leftOk) return true;
+    idx = hay.indexOf(needle, idx + 1);
+  }
+  return false;
+};
+
+// 정규화된 차명에서 "원문 단어의 시작"에 해당하는 인덱스 집합.
+// 공백·기호가 경계이고, 한글↔영숫자 전환도 경계로 본다("메가빅스MV125"의 MV 등).
+const wordStartsOf = (raw) => {
+  const expanded = (raw ?? '').toUpperCase().replace(/[Ⅰ-Ⅻ]/g, (c) => String(c.codePointAt(0) - ROMAN_BASE + 1));
+  const starts = new Set();
+  let pos = 0;
+  let prev = null; // null=경계, 'L'=영숫자, 'K'=한글
+  for (const ch of expanded) {
+    const type = /[A-Z0-9]/.test(ch) ? 'L' : /[가-힣]/.test(ch) ? 'K' : null;
+    if (type === null) {
+      prev = null;
+      continue;
+    }
+    if (prev !== type) starts.add(pos);
+    prev = type;
+    pos++;
+  }
+  return starts;
+};
+
+// 한 인증은 정확히 한 기종에만 귀속한다. 포함 매칭을 후보 전원에 뿌리면
+// "BMW R 1250 R"이 250R 토큰의 닌자250R에도 계상되는 식으로 중복이 쌓인다.
+// 우선순위: 사람이 확정한 별칭 정확 일치 > 더 길게(구체적으로) 일치한 토큰.
+// 동점이면 어느 쪽도 갖지 않고 검토 목록(ambiguous)으로 보낸다 — 별칭을
+// 추가해 사람이 확정하는 게 이 저장소의 매핑 절차다.
+const ALIAS_SCORE = 1000;
+const scoreOf = (e, nm, wordStarts) => {
+  if (e._aliasNorm.has(nm)) return ALIAS_SCORE;
+  let score = -1;
+  // 순수 숫자 모델명("848")의 포함 매칭은 배기량 숫자까지 흡수하므로 정확 일치만 허용
+  if (e._token.length >= 3 && (/[^0-9]/.test(e._token) ? boundedIncludes(nm, e._token, wordStarts) : nm === e._token)) {
+    score = e._token.length;
+  }
+  if (e._alpha.length > 0 && e._alpha.every((t) => boundedIncludes(nm, t, wordStarts))) {
+    score = Math.max(score, e._alpha.reduce((a, t) => a + t.length, 0));
+  }
+  return score;
+};
+
 const matchedRowIdx = new Set();
+const ambiguousMap = new Map();
 rows.forEach((r, i) => {
   const nm = norm(r.VEH_NM);
   if (!nm) return;
+  const wordStarts = wordStartsOf(r.VEH_NM);
+  let bestScore = -1;
+  let best = [];
   for (const e of entries) {
-    // 인증 차명이 모델 토큰을 포함하거나(예: CBR650RA ⊇ CBR650R),
-    // 모델의 영숫자 토큰이 모두 차명에 있으면 매칭.
-    // 단 토큰이 숫자로 끝나면 바로 뒤 문자가 숫자가 아니어야 한다 — R12 가
-    // R1250GS 를, 닌자400 이 ...4000 을 흡수하는 오매칭 방지 (사양 접미 문자는 허용)
-    const boundedIncludes = (hay, needle) => {
-      let idx = hay.indexOf(needle);
-      while (idx !== -1) {
-        const nextCh = hay[idx + needle.length];
-        if (!(/[0-9]$/.test(needle) && nextCh && /[0-9]/.test(nextCh))) return true;
-        idx = hay.indexOf(needle, idx + 1);
-      }
-      return false;
-    };
-    const hit =
-      e._aliasNorm.has(nm) ||
-      (e._token.length >= 3 && boundedIncludes(nm, e._token)) ||
-      (e._alpha.length > 0 && e._alpha.every((t) => boundedIncludes(nm, t)));
-    if (hit) {
-      e.aliases.add(r.VEH_NM);
-      e._emissions ??= [];
-      e._emissions.push({
-        date: (r.EMIS_CERTI_DATE ?? r.NOISE_CERTI_DATE ?? '').replaceAll('/', '-'),
-        mustard: r.MUSTARD ?? null,
-      });
-      e.certifications.push({
-        no: r.EMIS_CERTI_NO ?? r.NOISE_CERTI_NO,
-        date: (r.EMIS_CERTI_DATE ?? r.NOISE_CERTI_DATE ?? '').replaceAll('/', '-') || null,
-        office: r.OFFICE_NM,
-        vehNm: r.VEH_NM,
-        vehType: r.VEH_TYPE,
-        fuel: r.FUELTYPE,
-        gubun: r._gubun,
-      });
-      matchedRowIdx.add(i);
+    const score = scoreOf(e, nm, wordStarts);
+    if (score < 0) continue;
+    if (score > bestScore) {
+      bestScore = score;
+      best = [e];
+    } else if (score === bestScore) {
+      best.push(e);
     }
   }
+  if (best.length === 0) return; // 미매핑 — unmapped 로
+  if (best.length > 1) {
+    matchedRowIdx.add(i); // unmapped 와 이중 계상 방지
+    const cur = ambiguousMap.get(r.VEH_NM) ?? {
+      vehNm: r.VEH_NM,
+      office: r.OFFICE_NM,
+      candidates: best.map((e) => e.nameKo).sort(),
+      count: 0,
+      lastDate: null,
+    };
+    cur.count++;
+    const d = (r.EMIS_CERTI_DATE ?? r.NOISE_CERTI_DATE ?? '').replaceAll('/', '-');
+    if (d && (!cur.lastDate || d > cur.lastDate)) cur.lastDate = d;
+    ambiguousMap.set(r.VEH_NM, cur);
+    return;
+  }
+  const e = best[0];
+  e.aliases.add(r.VEH_NM);
+  e._emissions ??= [];
+  e._emissions.push({
+    date: (r.EMIS_CERTI_DATE ?? r.NOISE_CERTI_DATE ?? '').replaceAll('/', '-'),
+    mustard: r.MUSTARD ?? null,
+  });
+  e.certifications.push({
+    no: r.EMIS_CERTI_NO ?? r.NOISE_CERTI_NO,
+    date: (r.EMIS_CERTI_DATE ?? r.NOISE_CERTI_DATE ?? '').replaceAll('/', '-') || null,
+    office: r.OFFICE_NM,
+    vehNm: r.VEH_NM,
+    vehType: r.VEH_TYPE,
+    fuel: r.FUELTYPE,
+    gubun: r._gubun,
+  });
+  matchedRowIdx.add(i);
+});
+const ambiguous = [...ambiguousMap.values()].sort((a, b) => {
+  const da = a.lastDate ?? '';
+  const db = b.lastDate ?? '';
+  if (da !== db) return da < db ? 1 : -1;
+  return a.vehNm < b.vehNm ? -1 : a.vehNm > b.vehNm ? 1 : 0;
 });
 
 // 배출 기준 유도: 최신 인증의 배출허용기준(예: "2020년 1월 기준" = 유로5)을 우선하고
@@ -164,7 +246,8 @@ const unchanged =
   prev &&
   prevUnmapped &&
   JSON.stringify(prev.models) === JSON.stringify(models) &&
-  JSON.stringify(prevUnmapped.unmapped) === JSON.stringify(unmapped);
+  JSON.stringify(prevUnmapped.unmapped) === JSON.stringify(unmapped) &&
+  JSON.stringify(prevUnmapped.ambiguous ?? []) === JSON.stringify(ambiguous);
 
 const meta = {
   generatedAt: unchanged ? prev.meta.generatedAt : new Date().toISOString().slice(0, 10),
@@ -175,6 +258,7 @@ const meta = {
     curated: models.filter((m) => m.status === 'curated').length,
     certifications: rows.length,
     unmapped: unmapped.length,
+    ambiguous: ambiguous.length,
   },
 };
 
@@ -189,7 +273,8 @@ writeFileSync(
   'data/models.min.json',
   JSON.stringify({ meta: { generatedAt: meta.generatedAt, models: models.length }, names: models.map((m) => m.nameKo) }),
 );
-writeFileSync('data/unmapped.json', JSON.stringify({ meta, unmapped }, null, 1));
+writeFileSync('data/unmapped.json', JSON.stringify({ meta, unmapped, ambiguous }, null, 1));
 
 console.log(`models: ${meta.counts.models} (verified ${meta.counts.verified} / curated ${meta.counts.curated})`);
 console.log(`인증 원본 ${meta.counts.certifications}건 중 미매핑 차명 ${meta.counts.unmapped}개 → data/unmapped.json`);
+console.log(`매칭 동점으로 보류된 차명 ${meta.counts.ambiguous}개 → data/unmapped.json (ambiguous) — 별칭 추가로 확정 필요`);

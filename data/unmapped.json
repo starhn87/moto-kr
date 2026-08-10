@@ -3,11 +3,12 @@
   "generatedAt": "2026-08-10",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
-   "models": 1043,
-   "verified": 880,
-   "curated": 163,
+   "models": 1052,
+   "verified": 884,
+   "curated": 168,
    "certifications": 4921,
-   "unmapped": 113
+   "unmapped": 166,
+   "ambiguous": 1
   }
  },
  "unmapped": [
@@ -84,6 +85,18 @@
    "lastDate": "2025-01-09"
   },
   {
+   "vehNm": "SC-125",
+   "office": "케이알모터스(주)",
+   "brandHint": [
+    "KR모터스",
+    "SYM",
+    "푸조",
+    "효성"
+   ],
+   "count": 2,
+   "lastDate": "2023-12-29"
+  },
+  {
    "vehNm": "HJ150T-28",
    "office": "(주)다빈월드",
    "brandHint": null,
@@ -119,6 +132,15 @@
    "lastDate": "2023-12-12"
   },
   {
+   "vehNm": "AT125DP",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 2,
+   "lastDate": "2023-11-24"
+  },
+  {
    "vehNm": "해피",
    "office": "(주)평안모터스",
    "brandHint": null,
@@ -138,6 +160,15 @@
    "brandHint": null,
    "count": 1,
    "lastDate": "2021-08-18"
+  },
+  {
+   "vehNm": "E-AT100",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2021-06-29"
   },
   {
    "vehNm": "동일차_1",
@@ -191,6 +222,24 @@
    "lastDate": "2020-01-09"
   },
   {
+   "vehNm": "AT100DF",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 2,
+   "lastDate": "2019-11-07"
+  },
+  {
+   "vehNm": "AT100F",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 2,
+   "lastDate": "2019-11-07"
+  },
+  {
    "vehNm": "HJ125T-32A",
    "office": "(주)다빈월드",
    "brandHint": null,
@@ -212,6 +261,16 @@
    "lastDate": "2019-04-22"
   },
   {
+   "vehNm": "X-TOWN 125i",
+   "office": "(주)바이크코리아",
+   "brandHint": [
+    "트라이엄프",
+    "킴코"
+   ],
+   "count": 2,
+   "lastDate": "2019-03-08"
+  },
+  {
    "vehNm": "T9",
    "office": "디에스글로벌",
    "brandHint": null,
@@ -224,6 +283,42 @@
    "brandHint": null,
    "count": 2,
    "lastDate": "2019-03-04"
+  },
+  {
+   "vehNm": "HPS 125",
+   "office": "(주)에이비케이",
+   "brandHint": null,
+   "count": 2,
+   "lastDate": "2018-12-17"
+  },
+  {
+   "vehNm": "FILLY 125i",
+   "office": "(주)바이크코리아",
+   "brandHint": [
+    "트라이엄프",
+    "킴코"
+   ],
+   "count": 2,
+   "lastDate": "2018-08-22"
+  },
+  {
+   "vehNm": "DOWNTOWN 125i",
+   "office": "(주)바이크코리아",
+   "brandHint": [
+    "트라이엄프",
+    "킴코"
+   ],
+   "count": 3,
+   "lastDate": "2018-07-18"
+  },
+  {
+   "vehNm": "LTS125",
+   "office": "(주)한국모터트레이딩",
+   "brandHint": [
+    "야마하"
+   ],
+   "count": 2,
+   "lastDate": "2018-06-19"
   },
   {
    "vehNm": "HJ100T-5A",
@@ -261,6 +356,15 @@
    "lastDate": "2018-04-20"
   },
   {
+   "vehNm": "AT125DF",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2018-01-24"
+  },
+  {
    "vehNm": "AT125F",
    "office": "디앤에이모터스(주)",
    "brandHint": [
@@ -279,6 +383,24 @@
    "lastDate": "2017-12-12"
   },
   {
+   "vehNm": "FC125K",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2017-09-13"
+  },
+  {
+   "vehNm": "LC125",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2017-07-28"
+  },
+  {
    "vehNm": "듀오",
    "office": "(주)시엔케이",
    "brandHint": null,
@@ -291,6 +413,15 @@
    "brandHint": null,
    "count": 1,
    "lastDate": "2016-12-29"
+  },
+  {
+   "vehNm": "FC125",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 2,
+   "lastDate": "2016-12-19"
   },
   {
    "vehNm": "AT125T",
@@ -316,6 +447,51 @@
    "lastDate": "2016-08-12"
   },
   {
+   "vehNm": "SV125D",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2016-02-02"
+  },
+  {
+   "vehNm": "NC125B1",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2015-09-24"
+  },
+  {
+   "vehNm": "YC125",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 2,
+   "lastDate": "2015-09-14"
+  },
+  {
+   "vehNm": "NC125A",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 2,
+   "lastDate": "2015-09-10"
+  },
+  {
+   "vehNm": "NC125B",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 2,
+   "lastDate": "2015-09-10"
+  },
+  {
    "vehNm": "test0830",
    "office": "나이스정보테크",
    "brandHint": null,
@@ -339,11 +515,95 @@
    "lastDate": "2015-04-22"
   },
   {
+   "vehNm": "NC125M",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 2,
+   "lastDate": "2015-02-27"
+  },
+  {
+   "vehNm": "NC125",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 2,
+   "lastDate": "2015-02-24"
+  },
+  {
+   "vehNm": "ANC125",
+   "office": "혼다코리아(주)",
+   "brandHint": [
+    "혼다"
+   ],
+   "count": 2,
+   "lastDate": "2015-02-06"
+  },
+  {
+   "vehNm": "DOWNTOWN125i",
+   "office": "(주)바이크코리아",
+   "brandHint": [
+    "트라이엄프",
+    "킴코"
+   ],
+   "count": 2,
+   "lastDate": "2015-02-03"
+  },
+  {
+   "vehNm": "MEGA G5 125i",
+   "office": "(주)바이크코리아",
+   "brandHint": [
+    "트라이엄프",
+    "킴코"
+   ],
+   "count": 1,
+   "lastDate": "2015-01-29"
+  },
+  {
+   "vehNm": "G6 125i",
+   "office": "(주)바이크코리아",
+   "brandHint": [
+    "트라이엄프",
+    "킴코"
+   ],
+   "count": 1,
+   "lastDate": "2015-01-08"
+  },
+  {
    "vehNm": "테스트0610",
    "office": "나이스정보테크",
    "brandHint": null,
    "count": 2,
    "lastDate": "2014-06-10"
+  },
+  {
+   "vehNm": "AT100D",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2014-06-09"
+  },
+  {
+   "vehNm": "JETPOWER125 EVO",
+   "office": "모토스타코리아(주)",
+   "brandHint": [
+    "존테스",
+    "SYM",
+    "말라구티"
+   ],
+   "count": 1,
+   "lastDate": "2014-03-24"
+  },
+  {
+   "vehNm": "SR MAX300",
+   "office": "(주)에이비케이",
+   "brandHint": null,
+   "count": 1,
+   "lastDate": "2013-11-26"
   },
   {
    "vehNm": "에이티백이십오디",
@@ -376,7 +636,43 @@
    "lastDate": "2013-05-29"
   },
   {
+   "vehNm": "QS125T-2A",
+   "office": "(주)스즈키 씨엠씨",
+   "brandHint": [
+    "스즈키"
+   ],
+   "count": 1,
+   "lastDate": "2012-04-30"
+  },
+  {
+   "vehNm": "QS125T-3A",
+   "office": "(주)스즈키 씨엠씨",
+   "brandHint": [
+    "스즈키"
+   ],
+   "count": 1,
+   "lastDate": "2012-04-30"
+  },
+  {
+   "vehNm": "QS125T-4",
+   "office": "(주)스즈키 씨엠씨",
+   "brandHint": [
+    "스즈키"
+   ],
+   "count": 1,
+   "lastDate": "2012-04-30"
+  },
+  {
    "vehNm": "UA125",
+   "office": "(주)스즈키 씨엠씨",
+   "brandHint": [
+    "스즈키"
+   ],
+   "count": 1,
+   "lastDate": "2012-04-30"
+  },
+  {
+   "vehNm": "UA125XQ",
    "office": "(주)스즈키 씨엠씨",
    "brandHint": [
     "스즈키"
@@ -422,6 +718,16 @@
    "lastDate": "2011-12-30"
   },
   {
+   "vehNm": "GRAND DINK125i",
+   "office": "(주)바이크코리아",
+   "brandHint": [
+    "트라이엄프",
+    "킴코"
+   ],
+   "count": 1,
+   "lastDate": "2011-12-12"
+  },
+  {
    "vehNm": "막스",
    "office": "(주)그린모터스",
    "brandHint": null,
@@ -436,6 +742,15 @@
    "lastDate": "2011-11-15"
   },
   {
+   "vehNm": "AT125D",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2011-09-29"
+  },
+  {
    "vehNm": "엔죠이250",
    "office": "(주)에스엠에스케이",
    "brandHint": null,
@@ -447,7 +762,8 @@
    "office": "모토스타코리아(주)",
    "brandHint": [
     "존테스",
-    "SYM"
+    "SYM",
+    "말라구티"
    ],
    "count": 2,
    "lastDate": "2011-07-15"
@@ -474,6 +790,24 @@
    "lastDate": "2011-05-26"
   },
   {
+   "vehNm": "UH125 EXCUTIVE",
+   "office": "(주)스즈키 씨엠씨",
+   "brandHint": [
+    "스즈키"
+   ],
+   "count": 1,
+   "lastDate": "2011-05-23"
+  },
+  {
+   "vehNm": "NY125D",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2011-02-09"
+  },
+  {
    "vehNm": "ATV(NF125)",
    "office": "(주)세인비앤티",
    "brandHint": null,
@@ -498,16 +832,28 @@
    "vehNm": "JJ50",
    "office": "유로모토코리아(주)",
    "brandHint": [
-    "베넬리"
+    "베넬리",
+    "VOGE"
    ],
    "count": 1,
    "lastDate": "2010-10-15"
   },
   {
+   "vehNm": "G5 125i",
+   "office": "(주)바이크코리아",
+   "brandHint": [
+    "트라이엄프",
+    "킴코"
+   ],
+   "count": 1,
+   "lastDate": "2010-09-17"
+  },
+  {
    "vehNm": "ZEMN125",
    "office": "유로모토코리아(주)",
    "brandHint": [
-    "베넬리"
+    "베넬리",
+    "VOGE"
    ],
    "count": 1,
    "lastDate": "2010-09-08"
@@ -537,7 +883,8 @@
    "vehNm": "ZENE125",
    "office": "유로모토코리아(주)",
    "brandHint": [
-    "베넬리"
+    "베넬리",
+    "VOGE"
    ],
    "count": 1,
    "lastDate": "2010-07-27"
@@ -564,11 +911,32 @@
    "lastDate": "2010-06-23"
   },
   {
+   "vehNm": "JETPOWER125 EFI",
+   "office": "모토스타코리아(주)",
+   "brandHint": [
+    "존테스",
+    "SYM",
+    "말라구티"
+   ],
+   "count": 1,
+   "lastDate": "2010-04-06"
+  },
+  {
    "vehNm": "해커125",
    "office": "에이치케이엠엔에스(주)",
    "brandHint": null,
    "count": 2,
    "lastDate": "2009-10-09"
+  },
+  {
+   "vehNm": "RACING125i",
+   "office": "(주)바이크코리아",
+   "brandHint": [
+    "트라이엄프",
+    "킴코"
+   ],
+   "count": 1,
+   "lastDate": "2009-09-28"
   },
   {
    "vehNm": "싸 커",
@@ -585,6 +953,20 @@
    "lastDate": "2009-06-18"
   },
   {
+   "vehNm": "SPT350-i",
+   "office": "(주)바이크인",
+   "brandHint": null,
+   "count": 1,
+   "lastDate": "2009-06-16"
+  },
+  {
+   "vehNm": "SPYDER350i",
+   "office": "(주)바이크인",
+   "brandHint": null,
+   "count": 1,
+   "lastDate": "2009-06-10"
+  },
+  {
    "vehNm": "제이디125",
    "office": "(주)케이앤지모터사이클",
    "brandHint": null,
@@ -592,11 +974,49 @@
    "lastDate": "2009-06-03"
   },
   {
+   "vehNm": "DAYTONA350i",
+   "office": "(주)바이크인",
+   "brandHint": null,
+   "count": 1,
+   "lastDate": "2009-05-26"
+  },
+  {
    "vehNm": "아웃랜더 500",
    "office": "(주)오엠케이",
    "brandHint": null,
    "count": 1,
    "lastDate": "2009-05-08"
+  },
+  {
+   "vehNm": "GR125 EFI",
+   "office": "모토스타코리아(주)",
+   "brandHint": [
+    "존테스",
+    "SYM",
+    "말라구티"
+   ],
+   "count": 1,
+   "lastDate": "2009-04-09"
+  },
+  {
+   "vehNm": "RADARX125",
+   "office": "모토스타코리아(주)",
+   "brandHint": [
+    "존테스",
+    "SYM",
+    "말라구티"
+   ],
+   "count": 1,
+   "lastDate": "2009-03-30"
+  },
+  {
+   "vehNm": "UT125XK",
+   "office": "(주)스즈키 씨엠씨",
+   "brandHint": [
+    "스즈키"
+   ],
+   "count": 1,
+   "lastDate": "2009-03-30"
   },
   {
    "vehNm": "VENERI125",
@@ -634,6 +1054,24 @@
    "lastDate": "2009-02-16"
   },
   {
+   "vehNm": "SC125C",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2009-01-15"
+  },
+  {
+   "vehNm": "SC125N",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2009-01-15"
+  },
+  {
    "vehNm": "HJ125T-16",
    "office": "(주)다빈월드",
    "brandHint": null,
@@ -648,6 +1086,13 @@
    "lastDate": "2008-11-04"
   },
   {
+   "vehNm": "CRS125",
+   "office": "(주)케이에스비",
+   "brandHint": null,
+   "count": 1,
+   "lastDate": "2008-10-13"
+  },
+  {
    "vehNm": "MXER125",
    "office": "(주)바이크코리아",
    "brandHint": [
@@ -658,11 +1103,23 @@
    "lastDate": "2008-09-17"
   },
   {
+   "vehNm": "SPIKE FIGHTER125 EFI",
+   "office": "모토스타코리아(주)",
+   "brandHint": [
+    "존테스",
+    "SYM",
+    "말라구티"
+   ],
+   "count": 1,
+   "lastDate": "2008-08-07"
+  },
+  {
    "vehNm": "SS101",
    "office": "모토스타코리아(주)",
    "brandHint": [
     "존테스",
-    "SYM"
+    "SYM",
+    "말라구티"
    ],
    "count": 1,
    "lastDate": "2008-07-22"
@@ -689,11 +1146,31 @@
    "lastDate": "2008-07-22"
   },
   {
+   "vehNm": "BS125",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2008-07-01"
+  },
+  {
    "vehNm": "MXU 300",
    "office": "(주)바이크코리아",
    "brandHint": [
     "트라이엄프",
     "킴코"
+   ],
+   "count": 1,
+   "lastDate": "2008-07-01"
+  },
+  {
+   "vehNm": "VS125",
+   "office": "모토스타코리아(주)",
+   "brandHint": [
+    "존테스",
+    "SYM",
+    "말라구티"
    ],
    "count": 1,
    "lastDate": "2008-07-01"
@@ -727,6 +1204,15 @@
    "lastDate": "2008-02-22"
   },
   {
+   "vehNm": "AT100R",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 1,
+   "lastDate": "2008-01-07"
+  },
+  {
    "vehNm": "AT125R",
    "office": "디앤에이모터스(주)",
    "brandHint": [
@@ -756,6 +1242,13 @@
   {
    "vehNm": "MXD-125",
    "office": "(주)에이치에스알씨",
+   "brandHint": null,
+   "count": 1,
+   "lastDate": "2008-01-04"
+  },
+  {
+   "vehNm": "RS125",
+   "office": "올바이크",
    "brandHint": null,
    "count": 1,
    "lastDate": "2008-01-04"
@@ -843,6 +1336,18 @@
    "brandHint": null,
    "count": 1,
    "lastDate": "2006-06-16"
+  }
+ ],
+ "ambiguous": [
+  {
+   "vehNm": "엑시브",
+   "office": "케이알모터스(주)",
+   "candidates": [
+    "KR모터스 엑시브250N",
+    "KR모터스 엑시브250R"
+   ],
+   "count": 2,
+   "lastDate": "2014-08-27"
   }
  ]
 }
