@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generatedAt": "2026-08-09",
+  "generatedAt": "2026-08-10",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
-   "models": 1040,
-   "verified": 877,
+   "models": 1043,
+   "verified": 880,
    "curated": 163,
    "certifications": 4921,
-   "unmapped": 116
+   "unmapped": 113
   }
  },
  "models": [
@@ -20405,6 +20405,48 @@
    "certifications": []
   },
   {
+   "nameKo": "VOGE DS625X",
+   "brand": "VOGE",
+   "model": "DS625X",
+   "displacement": 581,
+   "category": "어드벤처",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 835,
+   "weight": 206,
+   "cylinders": 2,
+   "cooling": "liquid",
+   "fuelCapacity": 17.6,
+   "power": 64,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "DS625X"
+   ],
+   "firstCertifiedAt": "2026-08-03",
+   "lastCertifiedAt": "2026-08-03",
+   "certifications": [
+    {
+     "no": "TMC-BL-2",
+     "date": "2026-08-03",
+     "office": "유로모토코리아(주)",
+     "vehNm": "DS625X",
+     "vehType": "LX600-D",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-BL-2",
+     "date": "2026-08-03",
+     "office": "유로모토코리아(주)",
+     "vehNm": "DS625X",
+     "vehType": "LX600-D",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "VOGE SR1",
    "brand": "VOGE",
    "model": "SR1",
@@ -20545,6 +20587,48 @@
    "firstCertifiedAt": null,
    "lastCertifiedAt": null,
    "certifications": []
+  },
+  {
+   "nameKo": "VOGE SR3",
+   "brand": "VOGE",
+   "model": "SR3",
+   "displacement": 244,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 770,
+   "weight": 165,
+   "cylinders": 1,
+   "cooling": "liquid",
+   "fuelCapacity": 14,
+   "power": 26,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "SR3"
+   ],
+   "firstCertifiedAt": "2026-08-03",
+   "lastCertifiedAt": "2026-08-03",
+   "certifications": [
+    {
+     "no": "TMC-BL-1",
+     "date": "2026-08-03",
+     "office": "유로모토코리아(주)",
+     "vehNm": "SR3",
+     "vehType": "LX250T-D",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-BL-1",
+     "date": "2026-08-03",
+     "office": "유로모토코리아(주)",
+     "vehNm": "SR3",
+     "vehType": "LX250T-D",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
   },
   {
    "nameKo": "VOGE SR4MAX",
@@ -48961,6 +49045,48 @@
      "office": "(주)한국모터트레이딩",
      "vehNm": "CZD300D-A",
      "vehType": "SH23",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "야마하 XSR125",
+   "brand": "야마하",
+   "model": "XSR125",
+   "displacement": 124,
+   "category": "클래식",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 810,
+   "weight": 137,
+   "cylinders": 1,
+   "cooling": "liquid",
+   "fuelCapacity": 10,
+   "power": 15,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "MTM125"
+   ],
+   "firstCertifiedAt": "2026-08-06",
+   "lastCertifiedAt": "2026-08-06",
+   "certifications": [
+    {
+     "no": "TMC-HM-3",
+     "date": "2026-08-06",
+     "office": "(주)한국모터트레이딩",
+     "vehNm": "MTM125",
+     "vehType": "RE46",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-HM-3",
+     "date": "2026-08-06",
+     "office": "(주)한국모터트레이딩",
+     "vehNm": "MTM125",
+     "vehType": "RE46",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
