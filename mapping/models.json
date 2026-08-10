@@ -11981,13 +11981,13 @@
   "displacement": 1170,
   "category": "클래식",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
+  "fuelGrade": "premium",
+  "seatHeight": 795,
+  "weight": 220,
   "cylinders": 2,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "cooling": "air",
+  "fuelCapacity": 16,
+  "power": 109
  },
  {
   "nameKo": "BMW R18",
@@ -12018,13 +12018,13 @@
   "displacement": 1802,
   "category": "크루저",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
+  "fuelGrade": "premium",
+  "seatHeight": 720,
+  "weight": 374,
   "cylinders": 2,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "cooling": "air",
+  "fuelCapacity": 16,
+  "power": 91
  },
  {
   "nameKo": "BMW R18클래식",
@@ -14391,20 +14391,22 @@
   "power": 33
  },
  {
-  "nameKo": "대림 LM125",
+  "nameKo": "대림 루미",
   "brand": "대림",
-  "model": "LM125",
-  "aliases": [],
-  "displacement": null,
-  "category": null,
+  "model": "루미",
+  "aliases": [
+   "LM125"
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
+  "fuelGrade": "regular",
+  "seatHeight": 740,
+  "weight": 115,
   "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "cooling": "air",
+  "fuelCapacity": 5.7,
+  "power": 9
  },
  {
   "nameKo": "윈드 WT1",
@@ -14431,16 +14433,16 @@
   "aliases": [
    "BMW F 450 GS"
   ],
-  "displacement": null,
-  "category": null,
+  "displacement": 420,
+  "category": "어드벤처",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
-  "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "fuelGrade": "premium",
+  "seatHeight": 845,
+  "weight": 178,
+  "cylinders": 2,
+  "cooling": "liquid",
+  "fuelCapacity": 14,
+  "power": 48
  },
  {
   "nameKo": "에너인포 M24",
@@ -14479,20 +14481,22 @@
   "power": null
  },
  {
-  "nameKo": "KR모터스 VNEX125",
+  "nameKo": "KR모터스 브이넥스125",
   "brand": "KR모터스",
-  "model": "VNEX125",
-  "aliases": [],
-  "displacement": null,
-  "category": null,
+  "model": "브이넥스125",
+  "aliases": [
+   "VNEX125"
+  ],
+  "displacement": 124,
+  "category": "스쿠터",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
+  "fuelGrade": "regular",
+  "seatHeight": 750,
+  "weight": 115,
   "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "cooling": "air",
+  "fuelCapacity": 6.8,
+  "power": 9
  },
  {
   "nameKo": "브라부스 1400R",
@@ -14501,16 +14505,16 @@
   "aliases": [
    "BRABUS 1400 R"
   ],
-  "displacement": null,
-  "category": null,
+  "displacement": 1350,
+  "category": "네이키드",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
-  "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "fuelGrade": "premium",
+  "seatHeight": 834,
+  "weight": 200,
+  "cylinders": 2,
+  "cooling": "liquid",
+  "fuelCapacity": 17.5,
+  "power": 190
  },
  {
   "nameKo": "대동모빌리티 GS150",
@@ -14569,16 +14573,16 @@
   "brand": "KR모터스",
   "model": "로디125",
   "aliases": [],
-  "displacement": null,
-  "category": null,
+  "displacement": 124,
+  "category": "스쿠터",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
-  "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "fuelGrade": "regular",
+  "seatHeight": 750,
+  "weight": 120,
+  "cylinders": 1,
+  "cooling": "air",
+  "fuelCapacity": 6.5,
+  "power": 10
  },
  {
   "nameKo": "KTM 1390슈퍼듀크GT",
@@ -14587,16 +14591,16 @@
   "aliases": [
    "1390 SUPER DUKE GT"
   ],
-  "displacement": null,
-  "category": null,
+  "displacement": 1350,
+  "category": "투어러",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
-  "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "fuelGrade": "premium",
+  "seatHeight": 834,
+  "weight": 213,
+  "cylinders": 2,
+  "cooling": "liquid",
+  "fuelCapacity": 19.5,
+  "power": 190
  },
  {
   "nameKo": "클랜헌트 뉴트로M",
@@ -14677,16 +14681,16 @@
   "brand": "하우주",
   "model": "UFR125",
   "aliases": [],
-  "displacement": null,
-  "category": null,
+  "displacement": 124,
+  "category": "스쿠터",
   "electric": false,
-  "fuelGrade": null,
-  "seatHeight": null,
-  "weight": null,
-  "cylinders": null,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
+  "fuelGrade": "regular",
+  "seatHeight": 760,
+  "weight": 145,
+  "cylinders": 1,
+  "cooling": "liquid",
+  "fuelCapacity": 8,
+  "power": 12
  },
  {
   "nameKo": "그린모빌리티 장보리2",
