@@ -3106,7 +3106,7 @@
    "엠오-1"
   ],
   "displacement": null,
-  "category": "스쿠터",
+  "category": "3륜",
   "electric": true,
   "fuelGrade": null,
   "seatHeight": null,
@@ -12617,13 +12617,15 @@
   "brand": "KR모터스",
   "model": "델리로드100",
   "aliases": [
-   "델리로드-에이",
-   "델리로드더블유",
+   "델리S",
+   "델리로드",
    "델리로드 아이",
-   "델리로드"
+   "델리로드 프로",
+   "델리로드-에이",
+   "델리로드더블유"
   ],
-  "displacement": 99,
-  "category": "언더본",
+  "displacement": 100,
+  "category": "스쿠터",
   "electric": false,
   "fuelGrade": "regular",
   "seatHeight": 710,
@@ -12632,21 +12634,6 @@
   "cooling": "air",
   "fuelCapacity": 7,
   "power": 7
- },
- {
-  "nameKo": "KR모터스 델리S",
-  "brand": "KR모터스",
-  "model": "델리S",
-  "displacement": 100,
-  "category": "스쿠터",
-  "electric": false,
-  "fuelGrade": "regular",
-  "seatHeight": null,
-  "weight": null,
-  "cylinders": 1,
-  "cooling": null,
-  "fuelCapacity": null,
-  "power": null
  },
  {
   "nameKo": "KR모터스 라온100",
@@ -13011,7 +12998,7 @@
    "이델리로드"
   ],
   "displacement": null,
-  "category": "언더본",
+  "category": "스쿠터",
   "electric": true,
   "fuelGrade": null,
   "seatHeight": null,
