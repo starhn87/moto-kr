@@ -248,12 +248,28 @@ rows.forEach((r, i) => {
   if (d && (!cur.lastDate || d > cur.lastDate)) cur.lastDate = d;
   unmappedMap.set(key, cur);
 });
-const unmapped = [...unmappedMap.values()].sort((a, b) => {
+// 원본에는 실차가 아닌 행이 섞여 있다. KENCIS 가 같은 인증의 후속 차량을
+// 채워 넣는 자리표시자("동일차_1")와, 운영사가 남긴 시험 등록분이다.
+// 매핑할 대상이 아니므로 기여 목록에서 빼되, 조용히 버리면 원본 건수와
+// 산출물 건수가 어긋나므로 사유를 달아 excluded 로 남긴다.
+const nonVehicle = (vehNm) => {
+  const s = (vehNm ?? '').trim();
+  if (/^동일차_\d+$/.test(s)) return 'KENCIS 자리표시자';
+  if (/^(test|테스트)/i.test(s)) return '시험 등록분';
+  return null;
+};
+const byRecency = (a, b) => {
   const da = a.lastDate ?? '';
   const db = b.lastDate ?? '';
   if (da !== db) return da < db ? 1 : -1;
   return a.vehNm < b.vehNm ? -1 : a.vehNm > b.vehNm ? 1 : 0;
-});
+};
+const all = [...unmappedMap.values()];
+const unmapped = all.filter((x) => !nonVehicle(x.vehNm)).sort(byRecency);
+const excluded = all
+  .filter((x) => nonVehicle(x.vehNm))
+  .map((x) => ({ ...x, reason: nonVehicle(x.vehNm) }))
+  .sort(byRecency);
 
 // 내용이 그대로면 기존 날짜를 유지한다 — 같은 입력이면 출력도 같아야
 // CI 의 "build output committed" 검증이 다음 날 날짜만으로 깨지지 않는다.
@@ -270,7 +286,8 @@ const unchanged =
   prevUnmapped &&
   JSON.stringify(prev.models) === JSON.stringify(models) &&
   JSON.stringify(prevUnmapped.unmapped) === JSON.stringify(unmapped) &&
-  JSON.stringify(prevUnmapped.ambiguous ?? []) === JSON.stringify(ambiguous);
+  JSON.stringify(prevUnmapped.ambiguous ?? []) === JSON.stringify(ambiguous) &&
+  JSON.stringify(prevUnmapped.excluded ?? []) === JSON.stringify(excluded);
 
 const meta = {
   generatedAt: unchanged ? prev.meta.generatedAt : new Date().toISOString().slice(0, 10),
@@ -282,6 +299,7 @@ const meta = {
     certifications: rows.length,
     unmapped: unmapped.length,
     ambiguous: ambiguous.length,
+    excluded: excluded.length,
   },
 };
 
@@ -296,8 +314,9 @@ writeFileSync(
   'data/models.min.json',
   JSON.stringify({ meta: { generatedAt: meta.generatedAt, models: models.length }, names: models.map((m) => m.nameKo) }),
 );
-writeFileSync('data/unmapped.json', JSON.stringify({ meta, unmapped, ambiguous }, null, 1));
+writeFileSync('data/unmapped.json', JSON.stringify({ meta, unmapped, ambiguous, excluded }, null, 1));
 
 console.log(`models: ${meta.counts.models} (verified ${meta.counts.verified} / curated ${meta.counts.curated})`);
 console.log(`인증 원본 ${meta.counts.certifications}건 중 미매핑 차명 ${meta.counts.unmapped}개 → data/unmapped.json`);
+console.log(`실차 아닌 차명 ${meta.counts.excluded}개는 excluded 로 분리 (자리표시자·시험 등록분)`);
 console.log(`매칭 동점으로 보류된 차명 ${meta.counts.ambiguous}개 → data/unmapped.json (ambiguous) — 별칭 추가로 확정 필요`);

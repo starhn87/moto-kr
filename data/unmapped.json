@@ -7,95 +7,12 @@
    "verified": 984,
    "curated": 158,
    "certifications": 4921,
-   "unmapped": 26,
-   "ambiguous": 0
+   "unmapped": 14,
+   "ambiguous": 0,
+   "excluded": 12
   }
  },
  "unmapped": [
-  {
-   "vehNm": "동일차_1",
-   "office": "에너인포(주)",
-   "brandHint": null,
-   "count": 2,
-   "lastDate": "2026-01-21"
-  },
-  {
-   "vehNm": "동일차_1",
-   "office": "(주)젠트로피",
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2021-08-18"
-  },
-  {
-   "vehNm": "동일차_1",
-   "office": "피엔에이치(PNH)",
-   "brandHint": null,
-   "count": 2,
-   "lastDate": "2021-04-29"
-  },
-  {
-   "vehNm": "동일차_1",
-   "office": "(주)태인아이씨티",
-   "brandHint": null,
-   "count": 2,
-   "lastDate": "2020-12-16"
-  },
-  {
-   "vehNm": "동일차_1",
-   "office": "(주)모헤닉모터스",
-   "brandHint": null,
-   "count": 2,
-   "lastDate": "2020-08-27"
-  },
-  {
-   "vehNm": "동일차_1",
-   "office": "명원아이앤씨(주)",
-   "brandHint": null,
-   "count": 2,
-   "lastDate": "2020-07-09"
-  },
-  {
-   "vehNm": "동일차_2",
-   "office": "명원아이앤씨(주)",
-   "brandHint": null,
-   "count": 2,
-   "lastDate": "2020-07-09"
-  },
-  {
-   "vehNm": "동일차_1",
-   "office": "(주)대풍이브이자동차(EV)",
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2019-04-22"
-  },
-  {
-   "vehNm": "동일차_1",
-   "office": "디에스글로벌",
-   "brandHint": null,
-   "count": 2,
-   "lastDate": "2019-03-04"
-  },
-  {
-   "vehNm": "test0830",
-   "office": "나이스정보테크",
-   "brandHint": null,
-   "count": 2,
-   "lastDate": "2015-08-30"
-  },
-  {
-   "vehNm": "테스트0610",
-   "office": "나이스정보테크",
-   "brandHint": null,
-   "count": 2,
-   "lastDate": "2014-06-10"
-  },
-  {
-   "vehNm": "테스트1015",
-   "office": null,
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2013-10-15"
-  },
   {
    "vehNm": "감바",
    "office": "(주)썬로드트레이딩",
@@ -204,5 +121,103 @@
    "lastDate": "2008-07-22"
   }
  ],
- "ambiguous": []
+ "ambiguous": [],
+ "excluded": [
+  {
+   "vehNm": "동일차_1",
+   "office": "에너인포(주)",
+   "brandHint": null,
+   "count": 2,
+   "lastDate": "2026-01-21",
+   "reason": "KENCIS 자리표시자"
+  },
+  {
+   "vehNm": "동일차_1",
+   "office": "(주)젠트로피",
+   "brandHint": null,
+   "count": 1,
+   "lastDate": "2021-08-18",
+   "reason": "KENCIS 자리표시자"
+  },
+  {
+   "vehNm": "동일차_1",
+   "office": "피엔에이치(PNH)",
+   "brandHint": null,
+   "count": 2,
+   "lastDate": "2021-04-29",
+   "reason": "KENCIS 자리표시자"
+  },
+  {
+   "vehNm": "동일차_1",
+   "office": "(주)태인아이씨티",
+   "brandHint": null,
+   "count": 2,
+   "lastDate": "2020-12-16",
+   "reason": "KENCIS 자리표시자"
+  },
+  {
+   "vehNm": "동일차_1",
+   "office": "(주)모헤닉모터스",
+   "brandHint": null,
+   "count": 2,
+   "lastDate": "2020-08-27",
+   "reason": "KENCIS 자리표시자"
+  },
+  {
+   "vehNm": "동일차_1",
+   "office": "명원아이앤씨(주)",
+   "brandHint": null,
+   "count": 2,
+   "lastDate": "2020-07-09",
+   "reason": "KENCIS 자리표시자"
+  },
+  {
+   "vehNm": "동일차_2",
+   "office": "명원아이앤씨(주)",
+   "brandHint": null,
+   "count": 2,
+   "lastDate": "2020-07-09",
+   "reason": "KENCIS 자리표시자"
+  },
+  {
+   "vehNm": "동일차_1",
+   "office": "(주)대풍이브이자동차(EV)",
+   "brandHint": null,
+   "count": 1,
+   "lastDate": "2019-04-22",
+   "reason": "KENCIS 자리표시자"
+  },
+  {
+   "vehNm": "동일차_1",
+   "office": "디에스글로벌",
+   "brandHint": null,
+   "count": 2,
+   "lastDate": "2019-03-04",
+   "reason": "KENCIS 자리표시자"
+  },
+  {
+   "vehNm": "test0830",
+   "office": "나이스정보테크",
+   "brandHint": null,
+   "count": 2,
+   "lastDate": "2015-08-30",
+   "reason": "시험 등록분"
+  },
+  {
+   "vehNm": "테스트0610",
+   "office": "나이스정보테크",
+   "brandHint": null,
+   "count": 2,
+   "lastDate": "2014-06-10",
+   "reason": "시험 등록분"
+  },
+  {
+   "vehNm": "테스트1015",
+   "office": null,
+   "brandHint": null,
+   "count": 1,
+   "lastDate": "2013-10-15",
+   "reason": "시험 등록분"
+  }
+ ]
 }
