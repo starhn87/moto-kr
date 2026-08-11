@@ -3,11 +3,11 @@
   "generatedAt": "2026-08-11",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
-   "models": 1130,
-   "verified": 972,
+   "models": 1132,
+   "verified": 974,
    "curated": 158,
    "certifications": 4921,
-   "unmapped": 39,
+   "unmapped": 37,
    "ambiguous": 0
   }
  },
@@ -23924,6 +23924,39 @@
    ]
   },
   {
+   "nameKo": "대림 XA125",
+   "brand": "대림",
+   "model": "XA125",
+   "displacement": 125,
+   "category": "언더본",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": 9,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "XA125"
+   ],
+   "firstCertifiedAt": "2015-04-22",
+   "lastCertifiedAt": "2015-04-22",
+   "certifications": [
+    {
+     "no": "FMY-DL-24-11",
+     "date": "2015-04-22",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "XA125",
+     "vehType": "CA2",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "domestic"
+    }
+   ]
+  },
+  {
    "nameKo": "대림 XQ125",
    "brand": "대림",
    "model": "XQ125",
@@ -24734,6 +24767,39 @@
      "vehType": "SAV",
      "fuel": "휘발유(Gasoline)",
      "gubun": "domestic"
+    }
+   ]
+  },
+  {
+   "nameKo": "대림 마리오",
+   "brand": "대림",
+   "model": "마리오",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 740,
+   "weight": 115,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 7.5,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "BS125"
+   ],
+   "firstCertifiedAt": "2008-07-01",
+   "lastCertifiedAt": "2008-07-01",
+   "certifications": [
+    {
+     "no": "8MY-DL-1",
+     "date": "2008-07-01",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "BS125",
+     "vehType": "SAA",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
     }
    ]
   },

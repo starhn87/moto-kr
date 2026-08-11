@@ -19169,6 +19169,42 @@
   "power": null
  },
  {
+  "nameKo": "대림 마리오",
+  "brand": "대림",
+  "model": "마리오",
+  "aliases": [
+   "BS125"
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": 740,
+  "weight": 115,
+  "cylinders": 1,
+  "cooling": "air",
+  "fuelCapacity": 7.5,
+  "power": null
+ },
+ {
+  "nameKo": "대림 XA125",
+  "brand": "대림",
+  "model": "XA125",
+  "aliases": [
+   "XA125"
+  ],
+  "displacement": 125,
+  "category": "언더본",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": 110,
+  "cylinders": 1,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": 9
+ },
+ {
   "nameKo": "SYM 씨유비",
   "brand": "SYM",
   "model": "씨유비",

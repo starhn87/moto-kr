@@ -3,11 +3,11 @@
   "generatedAt": "2026-08-11",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
-   "models": 1130,
-   "verified": 972,
+   "models": 1132,
+   "verified": 974,
    "curated": 158,
    "certifications": 4921,
-   "unmapped": 39,
+   "unmapped": 37,
    "ambiguous": 0
   }
  },
@@ -100,15 +100,6 @@
    "brandHint": null,
    "count": 2,
    "lastDate": "2015-08-30"
-  },
-  {
-   "vehNm": "XA125",
-   "office": "디앤에이모터스(주)",
-   "brandHint": [
-    "대림"
-   ],
-   "count": 1,
-   "lastDate": "2015-04-22"
   },
   {
    "vehNm": "테스트0610",
@@ -272,15 +263,6 @@
    "brandHint": null,
    "count": 1,
    "lastDate": "2008-07-22"
-  },
-  {
-   "vehNm": "BS125",
-   "office": "디앤에이모터스(주)",
-   "brandHint": [
-    "대림"
-   ],
-   "count": 1,
-   "lastDate": "2008-07-01"
   },
   {
    "vehNm": "프리맨",
