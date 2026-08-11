@@ -34,12 +34,32 @@ const entries = seed.map((s) => {
   const alphaTokens = (s.model.match(/[A-Za-z0-9-]{3,}/g) ?? [])
     .map(norm)
     .filter((t) => t.length >= 5 && !/^[0-9]/.test(t));
+  // 별칭은 두 형태를 받는다.
+  //   "UZ125Q"        차명만 — 그 차명의 인증을 전부 가져온다
+  //   "엑시브@GD250N"  차명+형식코드 — 같은 차명이 형식코드로만 갈리는 세대를 나눈다
+  //                   (KR모터스 엑시브는 GD250N/GD250R 두 모델이 차명을 공유한다)
+  const aliasNorm = new Set();
+  const aliasTyped = new Map(); // 차명 → 형식코드 Set
+  for (const a of s.aliases ?? []) {
+    const at = a.indexOf('@');
+    if (at === -1) {
+      const n = norm(a);
+      if (n) aliasNorm.add(n);
+      continue;
+    }
+    const n = norm(a.slice(0, at));
+    const type = a.slice(at + 1).trim().toUpperCase();
+    if (!n || !type) continue;
+    if (!aliasTyped.has(n)) aliasTyped.set(n, new Set());
+    aliasTyped.get(n).add(type);
+  }
   return {
     ...s,
     _token: token,
     _alpha: alphaTokens,
     // 사람이 매핑한 인증 차명: 정확 일치로 우선 매칭 (형식코드를 소비자명에 연결)
-    _aliasNorm: new Set((s.aliases ?? []).map(norm).filter(Boolean)),
+    _aliasNorm: aliasNorm,
+    _aliasTyped: aliasTyped,
     aliases: new Set(s.aliases ?? []),
     certifications: [],
   };
@@ -90,7 +110,9 @@ const wordStartsOf = (raw) => {
 // 동점이면 어느 쪽도 갖지 않고 검토 목록(ambiguous)으로 보낸다 — 별칭을
 // 추가해 사람이 확정하는 게 이 저장소의 매핑 절차다.
 const ALIAS_SCORE = 1000;
-const scoreOf = (e, nm, wordStarts) => {
+const TYPED_ALIAS_SCORE = 2000; // 형식코드까지 맞춘 별칭이 차명만 맞춘 별칭을 이긴다
+const scoreOf = (e, nm, wordStarts, vehType) => {
+  if (vehType && e._aliasTyped.get(nm)?.has(vehType)) return TYPED_ALIAS_SCORE;
   if (e._aliasNorm.has(nm)) return ALIAS_SCORE;
   let score = -1;
   // 순수 숫자 모델명("848")의 포함 매칭은 배기량 숫자까지 흡수하므로 정확 일치만 허용
@@ -109,10 +131,11 @@ rows.forEach((r, i) => {
   const nm = norm(r.VEH_NM);
   if (!nm) return;
   const wordStarts = wordStartsOf(r.VEH_NM);
+  const vehType = (r.VEH_TYPE ?? '').trim().toUpperCase();
   let bestScore = -1;
   let best = [];
   for (const e of entries) {
-    const score = scoreOf(e, nm, wordStarts);
+    const score = scoreOf(e, nm, wordStarts, vehType);
     if (score < 0) continue;
     if (score > bestScore) {
       bestScore = score;

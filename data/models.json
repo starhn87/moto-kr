@@ -3,15 +3,48 @@
   "generatedAt": "2026-08-11",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
-   "models": 1048,
-   "verified": 881,
-   "curated": 167,
+   "models": 1132,
+   "verified": 974,
+   "curated": 158,
    "certifications": 4921,
-   "unmapped": 166,
-   "ambiguous": 1
+   "unmapped": 37,
+   "ambiguous": 0
   }
  },
  "models": [
+  {
+   "nameKo": "BMSG 베네리125",
+   "brand": "BMSG",
+   "model": "베네리125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "VENERI125"
+   ],
+   "firstCertifiedAt": "2009-03-25",
+   "lastCertifiedAt": "2009-03-25",
+   "certifications": [
+    {
+     "no": "9MY-KM-2",
+     "date": "2009-03-25",
+     "office": "(주)비엠에스지",
+     "vehNm": "VENERI125",
+     "vehType": "JS125T-5X",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
   {
    "nameKo": "BMW C400GT",
    "brand": "BMW",
@@ -7449,6 +7482,48 @@
    "certifications": []
   },
   {
+   "nameKo": "FB몬디알 HPS125",
+   "brand": "FB몬디알",
+   "model": "HPS125",
+   "displacement": 125,
+   "category": "클래식",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 790,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "liquid",
+   "fuelCapacity": 9.5,
+   "power": 15,
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "HPS 125"
+   ],
+   "firstCertifiedAt": "2018-12-17",
+   "lastCertifiedAt": "2018-12-17",
+   "certifications": [
+    {
+     "no": "JMC-AB-5",
+     "date": "2018-12-17",
+     "office": "(주)에이비케이",
+     "vehNm": "HPS 125",
+     "vehType": "CR",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "JMY-AB-5",
+     "date": "2018-12-17",
+     "office": "(주)에이비케이",
+     "vehNm": "HPS 125",
+     "vehType": "CR",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "FB몬디알 파가니125",
    "brand": "FB몬디알",
    "model": "파가니125",
@@ -7491,6 +7566,279 @@
    ]
   },
   {
+   "nameKo": "GMK 쥬드에볼루션",
+   "brand": "GMK",
+   "model": "쥬드에볼루션",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": null,
+   "status": "verified",
+   "aliases": [
+    "에볼루션"
+   ],
+   "firstCertifiedAt": "2007-05-18",
+   "lastCertifiedAt": "2007-05-18",
+   "certifications": [
+    {
+     "no": "6MY-GM-02",
+     "date": "2007-05-18",
+     "office": "(주)GMK",
+     "vehNm": "에볼루션",
+     "vehType": "스쿠터",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "GMK 후크125",
+   "brand": "GMK",
+   "model": "후크125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": null,
+   "status": "verified",
+   "aliases": [
+    "후크"
+   ],
+   "firstCertifiedAt": "2007-05-18",
+   "lastCertifiedAt": "2007-05-18",
+   "certifications": [
+    {
+     "no": "6MY-GM-01",
+     "date": "2007-05-18",
+     "office": "(주)GMK",
+     "vehNm": "후크",
+     "vehType": "HK125T-15",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "HSRC TM125T-8",
+   "brand": "HSRC",
+   "model": "TM125T-8",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "TM125T-8"
+   ],
+   "firstCertifiedAt": "2008-06-16",
+   "lastCertifiedAt": "2008-06-16",
+   "certifications": [
+    {
+     "no": "8MY-HS-6",
+     "date": "2008-06-16",
+     "office": "(주)에이치에스알씨",
+     "vehNm": "TM125T-8",
+     "vehType": "HS-F4",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "HSRC 겔랑디지털125",
+   "brand": "HSRC",
+   "model": "겔랑디지털125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 100,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5,
+   "power": null,
+   "emissionStandard": null,
+   "status": "verified",
+   "aliases": [
+    "GLD-125"
+   ],
+   "firstCertifiedAt": "2007-12-12",
+   "lastCertifiedAt": "2007-12-12",
+   "certifications": [
+    {
+     "no": "7MY-HS-11",
+     "date": "2007-12-12",
+     "office": "(주)에이치에스알씨",
+     "vehNm": "GLD-125",
+     "vehType": "HS-Z2",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "HSRC 엑스로드125",
+   "brand": "HSRC",
+   "model": "엑스로드125",
+   "displacement": 124,
+   "category": "네이키드",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 120,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 11,
+   "power": 13,
+   "emissionStandard": null,
+   "status": "verified",
+   "aliases": [
+    "X-ROAD125"
+   ],
+   "firstCertifiedAt": "2007-06-07",
+   "lastCertifiedAt": "2007-08-29",
+   "certifications": [
+    {
+     "no": "7MC-HS-5",
+     "date": "2007-06-07",
+     "office": "(주)에이치에스알씨",
+     "vehNm": "X-ROAD125",
+     "vehType": "FY125G",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "7MY-HS-7",
+     "date": "2007-08-29",
+     "office": "(주)에이치에스알씨",
+     "vehNm": "X-ROAD125",
+     "vehType": "FY125G",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "HSRC 와이저125",
+   "brand": "HSRC",
+   "model": "와이저125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5,
+   "power": null,
+   "emissionStandard": null,
+   "status": "verified",
+   "aliases": [
+    "WISER 125"
+   ],
+   "firstCertifiedAt": "2007-08-29",
+   "lastCertifiedAt": "2007-08-29",
+   "certifications": [
+    {
+     "no": "7MY-HS-9",
+     "date": "2007-08-29",
+     "office": "(주)에이치에스알씨",
+     "vehNm": "WISER 125",
+     "vehType": "HS-Z1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "HSRC 젠더125",
+   "brand": "HSRC",
+   "model": "젠더125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 150,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 11,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "MXD-125"
+   ],
+   "firstCertifiedAt": "2008-01-04",
+   "lastCertifiedAt": "2008-01-04",
+   "certifications": [
+    {
+     "no": "8MY-HS-1",
+     "date": "2008-01-04",
+     "office": "(주)에이치에스알씨",
+     "vehNm": "MXD-125",
+     "vehType": "HS-Z3",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "HSRC 펜싱125",
+   "brand": "HSRC",
+   "model": "펜싱125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 105,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5,
+   "power": 10,
+   "emissionStandard": null,
+   "status": "verified",
+   "aliases": [
+    "FENCING 125"
+   ],
+   "firstCertifiedAt": "2007-06-07",
+   "lastCertifiedAt": "2007-06-07",
+   "certifications": [
+    {
+     "no": "7MY-HS-6",
+     "date": "2007-06-07",
+     "office": "(주)에이치에스알씨",
+     "vehNm": "FENCING 125",
+     "vehType": "HS-R3",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "KKM 드래곤",
    "brand": "KKM",
    "model": "드래곤",
@@ -7518,6 +7866,48 @@
      "office": "(주)케이케이엠모터코리아",
      "vehNm": "드래곤",
      "vehType": "DY125T-10",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "KKM 아이언125T",
+   "brand": "KKM",
+   "model": "아이언125T",
+   "displacement": 125,
+   "category": null,
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "아이언125T"
+   ],
+   "firstCertifiedAt": "2008-02-12",
+   "lastCertifiedAt": "2008-07-22",
+   "certifications": [
+    {
+     "no": "8MY-KK-3",
+     "date": "2008-02-12",
+     "office": "(주)케이케이엠모터코리아",
+     "vehNm": "아이언125T",
+     "vehType": "DY125-7",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "8MC-KK-3",
+     "date": "2008-07-22",
+     "office": "(주)케이케이엠모터코리아",
+     "vehNm": "아이언125T",
+     "vehType": "DY125-7",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -9028,14 +9418,25 @@
    "cooling": "liquid",
    "fuelCapacity": 11,
    "power": 28,
-   "emissionStandard": null,
-   "status": "curated",
+   "emissionStandard": "euro3",
+   "status": "verified",
    "aliases": [
-    "엑시브"
+    "엑시브",
+    "엑시브@GD250N"
    ],
-   "firstCertifiedAt": null,
-   "lastCertifiedAt": null,
-   "certifications": []
+   "firstCertifiedAt": "2013-10-31",
+   "lastCertifiedAt": "2013-10-31",
+   "certifications": [
+    {
+     "no": "DMY-S&T-24-23",
+     "date": "2013-10-31",
+     "office": "케이알모터스(주)",
+     "vehNm": "엑시브",
+     "vehType": "GD250N",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "domestic"
+    }
+   ]
   },
   {
    "nameKo": "KR모터스 엑시브250R",
@@ -9051,14 +9452,25 @@
    "cooling": "liquid",
    "fuelCapacity": 11,
    "power": 28,
-   "emissionStandard": null,
-   "status": "curated",
+   "emissionStandard": "euro3",
+   "status": "verified",
    "aliases": [
-    "엑시브"
+    "엑시브",
+    "엑시브@GD250R"
    ],
-   "firstCertifiedAt": null,
-   "lastCertifiedAt": null,
-   "certifications": []
+   "firstCertifiedAt": "2014-08-27",
+   "lastCertifiedAt": "2014-08-27",
+   "certifications": [
+    {
+     "no": "DMY-S&T-24-23",
+     "date": "2014-08-27",
+     "office": "케이알모터스(주)",
+     "vehNm": "엑시브",
+     "vehType": "GD250R",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "domestic"
+    }
+   ]
   },
   {
    "nameKo": "KR모터스 와우2",
@@ -13037,6 +13449,200 @@
    "certifications": []
   },
   {
+   "nameKo": "SMC CRS125",
+   "brand": "SMC",
+   "model": "CRS125",
+   "displacement": 125,
+   "category": "4륜",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "CRS125"
+   ],
+   "firstCertifiedAt": "2008-10-13",
+   "lastCertifiedAt": "2008-10-13",
+   "certifications": [
+    {
+     "no": "8MY-KS-1",
+     "date": "2008-10-13",
+     "office": "(주)케이에스비",
+     "vehNm": "CRS125",
+     "vehType": "CRS125",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "SMC 돌핀110",
+   "brand": "SMC",
+   "model": "돌핀110",
+   "displacement": 110,
+   "category": "4륜",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "돌핀110",
+    "돌핀110S"
+   ],
+   "firstCertifiedAt": "2008-11-04",
+   "lastCertifiedAt": "2011-01-06",
+   "certifications": [
+    {
+     "no": "8MY-KS-2",
+     "date": "2008-11-04",
+     "office": "(주)케이에스비",
+     "vehNm": "돌핀110",
+     "vehType": "DN110",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "8MY-KS-2",
+     "date": "2011-01-06",
+     "office": "(주)케이에스비",
+     "vehNm": "돌핀110S",
+     "vehType": "DN110S",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "SRT 제미니125",
+   "brand": "SRT",
+   "model": "제미니125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "제미니"
+   ],
+   "firstCertifiedAt": "2011-12-30",
+   "lastCertifiedAt": "2011-12-30",
+   "certifications": [
+    {
+     "no": "BMY-SR-1",
+     "date": "2011-12-30",
+     "office": "(주)썬로드트레이딩",
+     "vehNm": "제미니",
+     "vehType": "스쿠터",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "SRT 피닉스125",
+   "brand": "SRT",
+   "model": "피닉스125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "피닉스"
+   ],
+   "firstCertifiedAt": "2015-07-09",
+   "lastCertifiedAt": "2015-07-09",
+   "certifications": [
+    {
+     "no": "BMY-SR-1",
+     "date": "2015-07-09",
+     "office": "(주)썬로드트레이딩",
+     "vehNm": "피닉스",
+     "vehType": "스쿠터",
+     "fuel": null,
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "SYM GR125",
+   "brand": "SYM",
+   "model": "GR125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "GR125",
+    "GR125 EFI"
+   ],
+   "firstCertifiedAt": "2009-04-09",
+   "lastCertifiedAt": "2011-07-15",
+   "certifications": [
+    {
+     "no": "9MY-MS-4",
+     "date": "2009-04-09",
+     "office": "모토스타코리아(주)",
+     "vehNm": "GR125 EFI",
+     "vehType": "FB12V",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "AMY-MS-4",
+     "date": "2010-09-08",
+     "office": "모토스타코리아(주)",
+     "vehNm": "GR125",
+     "vehType": "XS125T-2C",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "AMY-MS-4",
+     "date": "2011-07-15",
+     "office": "모토스타코리아(주)",
+     "vehNm": "GR125",
+     "vehType": "XS125T-1C",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "SYM GT125",
    "brand": "SYM",
    "model": "GT125",
@@ -13132,6 +13738,39 @@
    ]
   },
   {
+   "nameKo": "SYM VS125",
+   "brand": "SYM",
+   "model": "VS125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 133,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 6,
+   "power": 11,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "VS125"
+   ],
+   "firstCertifiedAt": "2008-07-01",
+   "lastCertifiedAt": "2008-07-01",
+   "certifications": [
+    {
+     "no": "8MY-MS-4",
+     "date": "2008-07-01",
+     "office": "모토스타코리아(주)",
+     "vehNm": "VS125",
+     "vehType": "HV12W",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "SYM Z1 125",
    "brand": "SYM",
    "model": "Z1 125",
@@ -13159,6 +13798,39 @@
      "office": "모토스타코리아(주)",
      "vehNm": "Z1 125",
      "vehType": "FG12V1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "SYM 레이더X125",
+   "brand": "SYM",
+   "model": "레이더X125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "RADARX125"
+   ],
+   "firstCertifiedAt": "2009-03-30",
+   "lastCertifiedAt": "2009-03-30",
+   "certifications": [
+    {
+     "no": "9MY-MS-2",
+     "date": "2009-03-30",
+     "office": "모토스타코리아(주)",
+     "vehNm": "RADARX125",
+     "vehType": "AU12F",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -13310,10 +13982,11 @@
    "emissionStandard": "euro3",
    "status": "verified",
    "aliases": [
+    "SS101",
     "미오"
    ],
    "firstCertifiedAt": "2007-01-05",
-   "lastCertifiedAt": "2008-06-04",
+   "lastCertifiedAt": "2008-07-22",
    "certifications": [
     {
      "no": "7MY-MS-02",
@@ -13330,6 +14003,15 @@
      "office": "모토스타코리아(주)",
      "vehNm": "미오",
      "vehType": "HU10W",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "8MY-MS-5",
+     "date": "2008-07-22",
+     "office": "모토스타코리아(주)",
+     "vehNm": "SS101",
+     "vehType": "HU10W1",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -13396,6 +14078,39 @@
      "office": "모토스타코리아(주)",
      "vehNm": "미오50",
      "vehType": "HU05",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "SYM 스파이크파이터125",
+   "brand": "SYM",
+   "model": "스파이크파이터125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 780,
+   "weight": 123,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5.5,
+   "power": 11,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "SPIKE FIGHTER125 EFI"
+   ],
+   "firstCertifiedAt": "2008-08-07",
+   "lastCertifiedAt": "2008-08-07",
+   "certifications": [
+    {
+     "no": "8MY-MS-6",
+     "date": "2008-08-07",
+     "office": "모토스타코리아(주)",
+     "vehNm": "SPIKE FIGHTER125 EFI",
+     "vehType": "HV12",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -13751,6 +14466,49 @@
      "office": "모토스타코리아(주)",
      "vehNm": "JET S",
      "vehType": "FK12V1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "SYM 제트파워125",
+   "brand": "SYM",
+   "model": "제트파워125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 106,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "JETPOWER125 EFI",
+    "JETPOWER125 EVO"
+   ],
+   "firstCertifiedAt": "2010-04-06",
+   "lastCertifiedAt": "2014-03-24",
+   "certifications": [
+    {
+     "no": "AMY-MS-1",
+     "date": "2010-04-06",
+     "office": "모토스타코리아(주)",
+     "vehNm": "JETPOWER125 EFI",
+     "vehType": "FF12V",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "AMY-MS-1",
+     "date": "2014-03-24",
+     "office": "모토스타코리아(주)",
+     "vehNm": "JETPOWER125 EVO",
+     "vehType": "FF12V",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -14976,6 +15734,105 @@
      "office": "모토스타코리아(주)",
      "vehNm": "피들3",
      "vehType": "XA12W",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "TGB 블레이드250",
+   "brand": "TGB",
+   "model": "블레이드250",
+   "displacement": 250,
+   "category": "4륜",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "블레이드250"
+   ],
+   "firstCertifiedAt": "2008-03-31",
+   "lastCertifiedAt": "2008-03-31",
+   "certifications": [
+    {
+     "no": "8MY-TN-1",
+     "date": "2008-03-31",
+     "office": "티원네트웍스(주)",
+     "vehNm": "블레이드250",
+     "vehType": "FCB",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "TGB 플랫폼125",
+   "brand": "TGB",
+   "model": "플랫폼125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": null,
+   "status": "verified",
+   "aliases": [
+    "플랫폼125"
+   ],
+   "firstCertifiedAt": "2007-07-02",
+   "lastCertifiedAt": "2007-07-02",
+   "certifications": [
+    {
+     "no": "7MY-TN-1",
+     "date": "2007-07-02",
+     "office": "티원네트웍스(주)",
+     "vehNm": "플랫폼125",
+     "vehType": "BK8",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "TGR 아이월125",
+   "brand": "TGR",
+   "model": "아이월125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "아이월"
+   ],
+   "firstCertifiedAt": "2008-01-04",
+   "lastCertifiedAt": "2008-01-04",
+   "certifications": [
+    {
+     "no": "8MY-TG-01",
+     "date": "2008-01-04",
+     "office": "(주)티지알",
+     "vehNm": "아이월",
+     "vehType": "LB125T10",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -21961,6 +22818,58 @@
    ]
   },
   {
+   "nameKo": "대림 FC125",
+   "brand": "대림",
+   "model": "FC125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 735,
+   "weight": 113,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5.9,
+   "power": null,
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "FC125",
+    "FC125K"
+   ],
+   "firstCertifiedAt": "2016-05-10",
+   "lastCertifiedAt": "2017-09-13",
+   "certifications": [
+    {
+     "no": "GMY-DL-1",
+     "date": "2016-05-10",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "FC125",
+     "vehType": "SAG",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "GMY-DL-1",
+     "date": "2016-12-19",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "FC125",
+     "vehType": "SAG",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "HMY-DL-6",
+     "date": "2017-09-13",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "FC125K",
+     "vehType": "SAG",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "대림 M보이",
    "brand": "대림",
    "model": "M보이",
@@ -22171,10 +23080,11 @@
    "status": "verified",
    "aliases": [
     "SV125",
-    "SV125B"
+    "SV125B",
+    "SV125D"
    ],
    "firstCertifiedAt": "2010-03-15",
-   "lastCertifiedAt": "2011-12-27",
+   "lastCertifiedAt": "2016-02-02",
    "certifications": [
     {
      "no": "AMY-DL-24-08",
@@ -22192,6 +23102,15 @@
      "vehNm": "SV125B",
      "vehType": "SAB",
      "fuel": "휘발유(Gasoline)",
+     "gubun": "domestic"
+    },
+    {
+     "no": "AMY-DL-24-08",
+     "date": "2016-02-02",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "SV125D",
+     "vehType": "SAB",
+     "fuel": null,
      "gubun": "domestic"
     }
    ]
@@ -22532,7 +23451,8 @@
    "emissionStandard": "euro5",
    "status": "verified",
    "aliases": [
-    "UHR150"
+    "UHR150",
+    "UHR150@D7RA"
    ],
    "firstCertifiedAt": "2025-06-16",
    "lastCertifiedAt": "2025-06-16",
@@ -23004,6 +23924,39 @@
    ]
   },
   {
+   "nameKo": "대림 XA125",
+   "brand": "대림",
+   "model": "XA125",
+   "displacement": 125,
+   "category": "언더본",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": 9,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "XA125"
+   ],
+   "firstCertifiedAt": "2015-04-22",
+   "lastCertifiedAt": "2015-04-22",
+   "certifications": [
+    {
+     "no": "FMY-DL-24-11",
+     "date": "2015-04-22",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "XA125",
+     "vehType": "CA2",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "domestic"
+    }
+   ]
+  },
+  {
    "nameKo": "대림 XQ125",
    "brand": "대림",
    "model": "XQ125",
@@ -23302,6 +24255,39 @@
    ]
   },
   {
+   "nameKo": "대림 e올코트100",
+   "brand": "대림",
+   "model": "e올코트100",
+   "displacement": null,
+   "category": "4륜",
+   "electric": true,
+   "fuelGrade": null,
+   "seatHeight": null,
+   "weight": 135,
+   "cylinders": null,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "E-AT100"
+   ],
+   "firstCertifiedAt": "2021-06-29",
+   "lastCertifiedAt": "2021-06-29",
+   "certifications": [
+    {
+     "no": "MMY-DL-21-4",
+     "date": "2021-06-29",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "E-AT100",
+     "vehType": "MJ1",
+     "fuel": "전기(EV)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "대림 네오포르테",
    "brand": "대림",
    "model": "네오포르테",
@@ -23360,6 +24346,115 @@
      "vehType": "SA7",
      "fuel": "휘발유(Gasoline)",
      "gubun": "domestic"
+    }
+   ]
+  },
+  {
+   "nameKo": "대림 다트",
+   "brand": "대림",
+   "model": "다트",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 735,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5.9,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "NC125",
+    "NC125A",
+    "NC125B",
+    "NC125B1",
+    "NC125M"
+   ],
+   "firstCertifiedAt": "2014-04-29",
+   "lastCertifiedAt": "2015-09-24",
+   "certifications": [
+    {
+     "no": "EMY-DL-24-11",
+     "date": "2014-04-29",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "NC125",
+     "vehType": "SAC",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "domestic"
+    },
+    {
+     "no": "BMY-DL-1",
+     "date": "2014-08-19",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "NC125A",
+     "vehType": "SAC",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "BMY-DL-1",
+     "date": "2015-02-03",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "NC125B",
+     "vehType": "SAC",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "FMY-DL-24-5",
+     "date": "2015-02-23",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "NC125M",
+     "vehType": "SAF",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "domestic"
+    },
+    {
+     "no": "BMY-DL-1",
+     "date": "2015-02-24",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "NC125",
+     "vehType": "SAC",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "FMY-DL-2",
+     "date": "2015-02-27",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "NC125M",
+     "vehType": "SAF",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "FMY-DL-6",
+     "date": "2015-09-10",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "NC125A",
+     "vehType": "SAC",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "FMY-DL-6",
+     "date": "2015-09-10",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "NC125B",
+     "vehType": "SAC",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "FMY-DL-9",
+     "date": "2015-09-24",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "NC125B1",
+     "vehType": "SAF",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
     }
    ]
   },
@@ -23676,6 +24771,39 @@
    ]
   },
   {
+   "nameKo": "대림 마리오",
+   "brand": "대림",
+   "model": "마리오",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 740,
+   "weight": 115,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 7.5,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "BS125"
+   ],
+   "firstCertifiedAt": "2008-07-01",
+   "lastCertifiedAt": "2008-07-01",
+   "certifications": [
+    {
+     "no": "8MY-DL-1",
+     "date": "2008-07-01",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "BS125",
+     "vehType": "SAA",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "대림 베스비",
    "brand": "대림",
    "model": "베스비",
@@ -23689,12 +24817,44 @@
    "cooling": "air",
    "fuelCapacity": 6,
    "power": 9,
-   "emissionStandard": null,
-   "status": "curated",
-   "aliases": [],
-   "firstCertifiedAt": null,
-   "lastCertifiedAt": null,
-   "certifications": []
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "LC125",
+    "SC125C",
+    "SC125N"
+   ],
+   "firstCertifiedAt": "2009-01-15",
+   "lastCertifiedAt": "2017-07-28",
+   "certifications": [
+    {
+     "no": "9MY-DL-2",
+     "date": "2009-01-15",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "SC125C",
+     "vehType": "SA5",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "9MY-DL-2",
+     "date": "2009-01-15",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "SC125N",
+     "vehType": "SA5",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "HMY-DL-5",
+     "date": "2017-07-28",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "LC125",
+     "vehType": "STE",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
   },
   {
    "nameKo": "대림 비글",
@@ -23768,6 +24928,39 @@
      "vehType": "SA8",
      "fuel": "휘발유(Gasoline)",
      "gubun": "domestic"
+    }
+   ]
+  },
+  {
+   "nameKo": "대림 수퍼리드",
+   "brand": "대림",
+   "model": "수퍼리드",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 730,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5.9,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "NY125D"
+   ],
+   "firstCertifiedAt": "2011-02-09",
+   "lastCertifiedAt": "2011-02-09",
+   "certifications": [
+    {
+     "no": "BMY-DL-1",
+     "date": "2011-02-09",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "NY125D",
+     "vehType": "SAC",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
     }
    ]
   },
@@ -24254,6 +25447,48 @@
    ]
   },
   {
+   "nameKo": "대림 아로마",
+   "brand": "대림",
+   "model": "아로마",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 740,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5.3,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "YC125"
+   ],
+   "firstCertifiedAt": "2014-09-19",
+   "lastCertifiedAt": "2015-09-14",
+   "certifications": [
+    {
+     "no": "BMY-DL-1",
+     "date": "2014-09-19",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "YC125",
+     "vehType": "SAC",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "FMY-DL-7",
+     "date": "2015-09-14",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "YC125",
+     "vehType": "SA5",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "대림 에디",
    "brand": "대림",
    "model": "에디",
@@ -24335,6 +25570,242 @@
      "vehType": "SE7",
      "fuel": "휘발유(Gasoline)",
      "gubun": "domestic"
+    }
+   ]
+  },
+  {
+   "nameKo": "대림 올코트100",
+   "brand": "대림",
+   "model": "올코트100",
+   "displacement": 96,
+   "category": "4륜",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 700,
+   "weight": 130,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 4.5,
+   "power": 7,
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "AT100D",
+    "AT100DF",
+    "AT100F",
+    "AT100R"
+   ],
+   "firstCertifiedAt": "2008-01-07",
+   "lastCertifiedAt": "2019-11-07",
+   "certifications": [
+    {
+     "no": "7MY-DL-04",
+     "date": "2008-01-07",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT100R",
+     "vehType": "AB1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "EMY-DL-1",
+     "date": "2014-06-09",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT100D",
+     "vehType": "AB1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "JMY-DL-5",
+     "date": "2018-02-26",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT100DF",
+     "vehType": "AB1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "JMY-DL-4",
+     "date": "2018-02-26",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT100F",
+     "vehType": "AB1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "JMY-DL-5",
+     "date": "2019-11-07",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT100DF",
+     "vehType": "AB1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "JMY-DL-4",
+     "date": "2019-11-07",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT100F",
+     "vehType": "AB1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "대림 올코트125",
+   "brand": "대림",
+   "model": "올코트125",
+   "displacement": 124,
+   "category": "4륜",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 800,
+   "weight": 205,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 8.2,
+   "power": null,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "AT125D",
+    "AT125DF",
+    "AT125DP",
+    "AT125F",
+    "AT125R",
+    "AT125T",
+    "AT125TF",
+    "AT125W",
+    "에이티백이십오디"
+   ],
+   "firstCertifiedAt": "2008-01-07",
+   "lastCertifiedAt": "2023-11-24",
+   "certifications": [
+    {
+     "no": "7MY-DL-05",
+     "date": "2008-01-07",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT125R",
+     "vehType": "AA1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "7MY-DL-05",
+     "date": "2008-01-07",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT125W",
+     "vehType": "AA1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "BMY-DL-3",
+     "date": "2011-09-29",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT125D",
+     "vehType": "AA1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "BMY-DL-3",
+     "date": "2013-10-21",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "에이티백이십오디",
+     "vehType": "에이에이일",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "GMY-DL-7",
+     "date": "2016-08-17",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT125T",
+     "vehType": "AA1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "HMY-DL-8",
+     "date": "2017-12-12",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT125F",
+     "vehType": "AA1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "HMY-DL-8",
+     "date": "2017-12-12",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT125TF",
+     "vehType": "AA1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "JMY-DL-2",
+     "date": "2018-01-24",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT125DF",
+     "vehType": "AA1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "PMY-DL-2",
+     "date": "2023-08-24",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT125DP",
+     "vehType": "AA1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "PMY-DL-2",
+     "date": "2023-11-24",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT125DP",
+     "vehType": "AA1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "대림 올코트150",
+   "brand": "대림",
+   "model": "올코트150",
+   "displacement": 149,
+   "category": "4륜",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "AT150R"
+   ],
+   "firstCertifiedAt": "2008-01-07",
+   "lastCertifiedAt": "2008-01-07",
+   "certifications": [
+    {
+     "no": "7MY-DL-06",
+     "date": "2008-01-07",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "AT150R",
+     "vehType": "AY1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
     }
    ]
   },
@@ -32381,12 +33852,75 @@
    "cooling": null,
    "fuelCapacity": null,
    "power": null,
-   "emissionStandard": null,
-   "status": "curated",
-   "aliases": [],
-   "firstCertifiedAt": null,
-   "lastCertifiedAt": null,
-   "certifications": []
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "T9"
+   ],
+   "firstCertifiedAt": "2019-03-04",
+   "lastCertifiedAt": "2019-03-04",
+   "certifications": [
+    {
+     "no": "KMEV-DS-1",
+     "date": "2019-03-04",
+     "office": "디에스글로벌",
+     "vehNm": "T9",
+     "vehType": "E-5000W",
+     "fuel": "전기(EV)",
+     "gubun": "import"
+    },
+    {
+     "no": "KMY-DS-24-1",
+     "date": "2019-03-04",
+     "office": "디에스글로벌",
+     "vehNm": "T9",
+     "vehType": "E-5000W",
+     "fuel": "전기(EV)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "라라클래식 마이크로레이서",
+   "brand": "라라클래식",
+   "model": "마이크로레이서",
+   "displacement": null,
+   "category": "4륜",
+   "electric": true,
+   "fuelGrade": null,
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": null,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "마이크로레이서"
+   ],
+   "firstCertifiedAt": "2026-07-09",
+   "lastCertifiedAt": "2026-07-09",
+   "certifications": [
+    {
+     "no": "TLC-EV-21-26",
+     "date": "2026-07-09",
+     "office": "(주)라라클래식모터스",
+     "vehNm": "마이크로레이서",
+     "vehType": "LMP204",
+     "fuel": "전기(EV)",
+     "gubun": "domestic"
+    },
+    {
+     "no": "TMY-LC-21-26",
+     "date": "2026-07-09",
+     "office": "(주)라라클래식모터스",
+     "vehNm": "마이크로레이서",
+     "vehType": "LMP204",
+     "fuel": "전기(EV)",
+     "gubun": "domestic"
+    }
+   ]
   },
   {
    "nameKo": "람브레타 V125 스페셜",
@@ -32868,6 +34402,115 @@
      "office": "(주)모터유나이티드",
      "vehNm": "맥퀴엄",
      "vehType": "CF250T-1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "멕겔리 125M",
+   "brand": "멕겔리",
+   "model": "125M",
+   "displacement": 125,
+   "category": "오프로드",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": 11,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "맥겔리125m"
+   ],
+   "firstCertifiedAt": "2009-02-16",
+   "lastCertifiedAt": "2009-02-16",
+   "certifications": [
+    {
+     "no": "9MY-TN-1",
+     "date": "2009-02-16",
+     "office": "티원네트웍스(주)",
+     "vehNm": "맥겔리125m",
+     "vehType": "피씨제이",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "멕겔리 125R",
+   "brand": "멕겔리",
+   "model": "125R",
+   "displacement": 125,
+   "category": "스포츠",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 800,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": 11,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "맥겔리125r"
+   ],
+   "firstCertifiedAt": "2009-02-16",
+   "lastCertifiedAt": "2009-02-16",
+   "certifications": [
+    {
+     "no": "9MY-TN-1",
+     "date": "2009-02-16",
+     "office": "티원네트웍스(주)",
+     "vehNm": "맥겔리125r",
+     "vehType": "에스씨제이",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "멕겔리 125S",
+   "brand": "멕겔리",
+   "model": "125S",
+   "displacement": 125,
+   "category": "네이키드",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": 11,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "맥겔리125s",
+    "씨알에스125S"
+   ],
+   "firstCertifiedAt": "2009-02-16",
+   "lastCertifiedAt": "2011-01-06",
+   "certifications": [
+    {
+     "no": "9MY-TN-1",
+     "date": "2009-02-16",
+     "office": "티원네트웍스(주)",
+     "vehNm": "맥겔리125s",
+     "vehType": "에스씨제이",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "8MY-KS-1",
+     "date": "2011-01-06",
+     "office": "(주)케이에스비",
+     "vehNm": "씨알에스125S",
+     "vehType": "CRS125S",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -33758,6 +35401,133 @@
      "vehType": "MS-3000",
      "fuel": "전기(EV)",
      "gubun": "domestic"
+    }
+   ]
+  },
+  {
+   "nameKo": "바스맨 비모빌리티",
+   "brand": "바스맨",
+   "model": "비모빌리티",
+   "displacement": null,
+   "category": "3륜",
+   "electric": true,
+   "fuelGrade": null,
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": null,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "바스맨비모빌리티"
+   ],
+   "firstCertifiedAt": "2026-07-08",
+   "lastCertifiedAt": "2026-07-08",
+   "certifications": [
+    {
+     "no": "TMY-BT-21-1",
+     "date": "2026-07-08",
+     "office": "(주)바스맨테크놀러지",
+     "vehNm": "바스맨비모빌리티",
+     "vehType": "BASMAN Bee420",
+     "fuel": "전기(EV)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMEV-BT-1",
+     "date": "2026-07-08",
+     "office": "(주)바스맨테크놀러지",
+     "vehNm": "바스맨비모빌리티",
+     "vehType": "기타형(3륜형)",
+     "fuel": "전기(EV)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "바이크보이 사커125",
+   "brand": "바이크보이",
+   "model": "사커125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "싸 커"
+   ],
+   "firstCertifiedAt": "2009-07-13",
+   "lastCertifiedAt": "2009-07-13",
+   "certifications": [
+    {
+     "no": "9MY-JI-2",
+     "date": "2009-07-13",
+     "office": "진일엔지니어링(주)",
+     "vehNm": "싸 커",
+     "vehType": "WY125T-12",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "바이크보이 팔콘125",
+   "brand": "바이크보이",
+   "model": "팔콘125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "팔 콘",
+    "팔콘"
+   ],
+   "firstCertifiedAt": "2008-01-30",
+   "lastCertifiedAt": "2008-07-22",
+   "certifications": [
+    {
+     "no": "8MY-JI-01",
+     "date": "2008-01-30",
+     "office": "진일엔지니어링(주)",
+     "vehNm": "팔 콘",
+     "vehType": "WY125T-2",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "8MY-JI-03",
+     "date": "2008-02-22",
+     "office": "진일엔지니어링(주)",
+     "vehNm": "팔 콘",
+     "vehType": "WY150T-2",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "8MC-JI-02",
+     "date": "2008-07-22",
+     "office": "진일엔지니어링(주)",
+     "vehNm": "팔콘",
+     "vehType": "WY125T-2",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
     }
    ]
   },
@@ -38455,6 +40225,39 @@
    ]
   },
   {
+   "nameKo": "스즈키 넥스125",
+   "brand": "스즈키",
+   "model": "넥스125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 740,
+   "weight": 117,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 6,
+   "power": 9,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "UT125XK"
+   ],
+   "firstCertifiedAt": "2009-03-30",
+   "lastCertifiedAt": "2009-03-30",
+   "certifications": [
+    {
+     "no": "9MY-HC-2",
+     "date": "2009-03-30",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "UT125XK",
+     "vehType": "UTD44",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "스즈키 밴밴125",
    "brand": "스즈키",
    "model": "밴밴125",
@@ -38586,6 +40389,7 @@
     "UG125SEA",
     "UG125SED",
     "UH125",
+    "UH125 EXCUTIVE",
     "UH125 RACING",
     "UH125A",
     "UH125G",
@@ -38594,6 +40398,15 @@
    "firstCertifiedAt": "2011-05-23",
    "lastCertifiedAt": "2019-01-11",
    "certifications": [
+    {
+     "no": "BMY-HC-4",
+     "date": "2011-05-23",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "UH125 EXCUTIVE",
+     "vehType": "CC",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
     {
      "no": "BMY-HC-4",
      "date": "2011-05-23",
@@ -39619,6 +41432,7 @@
    "emissionStandard": "euro5",
    "status": "verified",
    "aliases": [
+    "QS125T-2A",
     "UU125",
     "UZ125",
     "UZ125D2K",
@@ -39635,6 +41449,15 @@
      "office": "(주)스즈키 씨엠씨",
      "vehNm": "UZ125D2K",
      "vehType": "UZD45",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "CMY-HC-2",
+     "date": "2012-04-30",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "QS125T-2A",
+     "vehType": "L1UN",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     },
@@ -39689,6 +41512,49 @@
      "office": "(주)스즈키 씨엠씨",
      "vehNm": "UZ125",
      "vehType": "EN",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "스즈키 익사이트125",
+   "brand": "스즈키",
+   "model": "익사이트125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 730,
+   "weight": 113,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": 9,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "QS125T-4",
+    "UM125Q"
+   ],
+   "firstCertifiedAt": "2012-04-30",
+   "lastCertifiedAt": "2012-04-30",
+   "certifications": [
+    {
+     "no": "CMY-HC-2",
+     "date": "2012-04-30",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "QS125T-4",
+     "vehType": "L1UN",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "CMY-HC-2",
+     "date": "2012-04-30",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "UM125Q",
+     "vehType": "L1UN",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -39939,6 +41805,59 @@
    "certifications": []
   },
   {
+   "nameKo": "스즈키 플랙스타125",
+   "brand": "스즈키",
+   "model": "플랙스타125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 730,
+   "weight": 120,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 6.9,
+   "power": 9,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "QS125T-3A",
+    "UA125",
+    "UA125XQ"
+   ],
+   "firstCertifiedAt": "2012-04-30",
+   "lastCertifiedAt": "2012-04-30",
+   "certifications": [
+    {
+     "no": "CMY-HC-1",
+     "date": "2012-04-30",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "QS125T-3A",
+     "vehType": "L1AN",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "CMY-HC-1",
+     "date": "2012-04-30",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "UA125XQ",
+     "vehType": "L1AN",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "CMY-HC-1",
+     "date": "2012-04-30",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "UA125",
+     "vehType": "L1AN",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "스즈키 하야부사",
    "brand": "스즈키",
    "model": "하야부사",
@@ -40086,12 +42005,33 @@
    "cooling": null,
    "fuelCapacity": null,
    "power": null,
-   "emissionStandard": null,
-   "status": "curated",
-   "aliases": [],
-   "firstCertifiedAt": null,
-   "lastCertifiedAt": null,
-   "certifications": []
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "듀오"
+   ],
+   "firstCertifiedAt": "2017-04-20",
+   "lastCertifiedAt": "2017-04-20",
+   "certifications": [
+    {
+     "no": "HCN-EV-24-24",
+     "date": "2017-04-20",
+     "office": "(주)시엔케이",
+     "vehNm": "듀오",
+     "vehType": "CMS-1",
+     "fuel": "전기(EV)",
+     "gubun": "domestic"
+    },
+    {
+     "no": "HMY-CN-24-24",
+     "date": "2017-04-20",
+     "office": "(주)시엔케이",
+     "vehNm": "듀오",
+     "vehType": "CMS-1",
+     "fuel": "전기(EV)",
+     "gubun": "domestic"
+    }
+   ]
   },
   {
    "nameKo": "시엔케이 듀오 맥스",
@@ -40918,6 +42858,39 @@
    ]
   },
   {
+   "nameKo": "아프릴리아 SR맥스300",
+   "brand": "아프릴리아",
+   "model": "SR맥스300",
+   "displacement": 278,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 780,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "liquid",
+   "fuelCapacity": null,
+   "power": 22,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "SR MAX300"
+   ],
+   "firstCertifiedAt": "2013-11-26",
+   "lastCertifiedAt": "2013-11-26",
+   "certifications": [
+    {
+     "no": "DMY-AB-2",
+     "date": "2013-11-26",
+     "office": "(주)에이비케이",
+     "vehNm": "SR MAX300",
+     "vehType": "M35",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "아프릴리아 SR모타드125",
    "brand": "아프릴리아",
    "model": "SR모타드125",
@@ -41597,6 +43570,48 @@
      "office": "(주)한국모터트레이딩",
      "vehNm": "FZ8",
      "vehType": "RN25",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "야마하 LTS125",
+   "brand": "야마하",
+   "model": "LTS125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "LTS125"
+   ],
+   "firstCertifiedAt": "2018-06-19",
+   "lastCertifiedAt": "2018-06-19",
+   "certifications": [
+    {
+     "no": "JMC-HM-5",
+     "date": "2018-06-19",
+     "office": "(주)한국모터트레이딩",
+     "vehNm": "LTS125",
+     "vehType": "SED7",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "JMY-HM-5",
+     "date": "2018-06-19",
+     "office": "(주)한국모터트레이딩",
+     "vehNm": "LTS125",
+     "vehType": "SED7",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -44872,12 +46887,33 @@
    "cooling": null,
    "fuelCapacity": null,
    "power": null,
-   "emissionStandard": null,
-   "status": "curated",
-   "aliases": [],
-   "firstCertifiedAt": null,
-   "lastCertifiedAt": null,
-   "certifications": []
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "윈디"
+   ],
+   "firstCertifiedAt": "2021-01-15",
+   "lastCertifiedAt": "2021-01-15",
+   "certifications": [
+    {
+     "no": "MMD-EV-21-02",
+     "date": "2021-01-15",
+     "office": "엠디엠",
+     "vehNm": "윈디",
+     "vehType": "WINDY20",
+     "fuel": "전기(EV)",
+     "gubun": "domestic"
+    },
+    {
+     "no": "MMY-MD-21-02",
+     "date": "2021-01-15",
+     "office": "엠디엠",
+     "vehNm": "윈디",
+     "vehType": "WINDY20",
+     "fuel": "전기(EV)",
+     "gubun": "domestic"
+    }
+   ]
   },
   {
    "nameKo": "엠비아이 S",
@@ -47348,6 +49384,105 @@
    ]
   },
   {
+   "nameKo": "이탈젯 SPT350",
+   "brand": "이탈젯",
+   "model": "SPT350",
+   "displacement": null,
+   "category": null,
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": null,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "SPT350-i"
+   ],
+   "firstCertifiedAt": "2009-06-16",
+   "lastCertifiedAt": "2009-06-16",
+   "certifications": [
+    {
+     "no": "9MY-BN-3",
+     "date": "2009-06-16",
+     "office": "(주)바이크인",
+     "vehNm": "SPT350-i",
+     "vehType": "SPT",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "이탈젯 데이토나350i",
+   "brand": "이탈젯",
+   "model": "데이토나350i",
+   "displacement": 320,
+   "category": "크루저",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 2,
+   "cooling": "liquid",
+   "fuelCapacity": null,
+   "power": 23,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "DAYTONA350i"
+   ],
+   "firstCertifiedAt": "2009-05-26",
+   "lastCertifiedAt": "2009-05-26",
+   "certifications": [
+    {
+     "no": "9MY-BN-1",
+     "date": "2009-05-26",
+     "office": "(주)바이크인",
+     "vehNm": "DAYTONA350i",
+     "vehType": "DD350E-6C",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "이탈젯 스파이더350i",
+   "brand": "이탈젯",
+   "model": "스파이더350i",
+   "displacement": 320,
+   "category": "크루저",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 190,
+   "cylinders": 2,
+   "cooling": "liquid",
+   "fuelCapacity": 13.5,
+   "power": 23,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "SPYDER350i"
+   ],
+   "firstCertifiedAt": "2009-06-10",
+   "lastCertifiedAt": "2009-06-10",
+   "certifications": [
+    {
+     "no": "9MY-BN-2",
+     "date": "2009-06-10",
+     "office": "(주)바이크인",
+     "vehNm": "SPYDER350i",
+     "vehType": "DD350E-6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "인디언 101 스카우트",
    "brand": "인디언",
    "model": "101 스카우트",
@@ -48951,6 +51086,39 @@
    ]
   },
   {
+   "nameKo": "캔암 아웃랜더500",
+   "brand": "캔암",
+   "model": "아웃랜더500",
+   "displacement": null,
+   "category": "4륜",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": null,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "아웃랜더 500"
+   ],
+   "firstCertifiedAt": "2009-05-08",
+   "lastCertifiedAt": "2009-05-08",
+   "certifications": [
+    {
+     "no": "9MY-OM-1",
+     "date": "2009-05-08",
+     "office": "(주)오엠케이",
+     "vehNm": "아웃랜더 500",
+     "vehType": "E Outlander 490",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "케이크 마카",
    "brand": "케이크",
    "model": "마카",
@@ -49341,6 +51509,90 @@
    ]
   },
   {
+   "nameKo": "키웨이 아웃룩125",
+   "brand": "키웨이",
+   "model": "아웃룩125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 125,
+   "cylinders": 1,
+   "cooling": "liquid",
+   "fuelCapacity": 7.4,
+   "power": 12,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "아웃룩125 FI"
+   ],
+   "firstCertifiedAt": "2010-07-27",
+   "lastCertifiedAt": "2010-09-02",
+   "certifications": [
+    {
+     "no": "AMY-HH-1",
+     "date": "2010-07-27",
+     "office": "에이치케이엠엔에스(주)",
+     "vehNm": "아웃룩125 FI",
+     "vehType": "T13",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "AMY-HH-1",
+     "date": "2010-09-02",
+     "office": "에이치케이엠엔에스(주)",
+     "vehNm": "아웃룩125 FI",
+     "vehType": "T13",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "키웨이 해커125",
+   "brand": "키웨이",
+   "model": "해커125",
+   "displacement": 125,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 115,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 7.5,
+   "power": 10,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "해커125"
+   ],
+   "firstCertifiedAt": "2009-10-09",
+   "lastCertifiedAt": "2009-10-09",
+   "certifications": [
+    {
+     "no": "9MC-HH-1",
+     "date": "2009-10-09",
+     "office": "에이치케이엠엔에스(주)",
+     "vehNm": "해커125",
+     "vehType": "T42",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "9MY-HH-1",
+     "date": "2009-10-09",
+     "office": "에이치케이엠엔에스(주)",
+     "vehNm": "해커125",
+     "vehType": "T42",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "킴스트 다이스",
    "brand": "킴스트",
    "model": "다이스",
@@ -49692,6 +51944,72 @@
    ]
   },
   {
+   "nameKo": "킴코 G5 125i",
+   "brand": "킴코",
+   "model": "G5 125i",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "G5 125i"
+   ],
+   "firstCertifiedAt": "2010-09-17",
+   "lastCertifiedAt": "2010-09-17",
+   "certifications": [
+    {
+     "no": "AMY-BI-1",
+     "date": "2010-09-17",
+     "office": "(주)바이크코리아",
+     "vehNm": "G5 125i",
+     "vehType": "SR25AD",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "킴코 G6 125i",
+   "brand": "킴코",
+   "model": "G6 125i",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 120,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 6,
+   "power": 12,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "G6 125i"
+   ],
+   "firstCertifiedAt": "2015-01-08",
+   "lastCertifiedAt": "2015-01-08",
+   "certifications": [
+    {
+     "no": "FMY-BI-1",
+     "date": "2015-01-08",
+     "office": "(주)바이크코리아",
+     "vehNm": "G6 125i",
+     "vehType": "SR25FC",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "킴코 GP125",
    "brand": "킴코",
    "model": "GP125",
@@ -49787,6 +52105,81 @@
    ]
   },
   {
+   "nameKo": "킴코 MXER125",
+   "brand": "킴코",
+   "model": "MXER125",
+   "displacement": 124,
+   "category": "4륜",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 165,
+   "cylinders": 1,
+   "cooling": "liquid",
+   "fuelCapacity": 8,
+   "power": 10,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "MXER125"
+   ],
+   "firstCertifiedAt": "2008-09-17",
+   "lastCertifiedAt": "2008-09-17",
+   "certifications": [
+    {
+     "no": "8MC-BI-5",
+     "date": "2008-09-17",
+     "office": "(주)바이크코리아",
+     "vehNm": "MXER125",
+     "vehType": "LA25CD",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "8MY-BI-5",
+     "date": "2008-09-17",
+     "office": "(주)바이크코리아",
+     "vehNm": "MXER125",
+     "vehType": "LA25CD",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "킴코 MXU300",
+   "brand": "킴코",
+   "model": "MXU300",
+   "displacement": 270,
+   "category": "4륜",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 808,
+   "weight": 220,
+   "cylinders": 1,
+   "cooling": "liquid",
+   "fuelCapacity": 12.5,
+   "power": 18,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "MXU 300"
+   ],
+   "firstCertifiedAt": "2008-07-01",
+   "lastCertifiedAt": "2008-07-01",
+   "certifications": [
+    {
+     "no": "8MY-BI-6",
+     "date": "2008-07-01",
+     "office": "(주)바이크코리아",
+     "vehNm": "MXU 300",
+     "vehType": "LA60AD",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "킴코 VJR100i",
    "brand": "킴코",
    "model": "VJR100i",
@@ -49836,10 +52229,11 @@
    "emissionStandard": "euro3",
    "status": "verified",
    "aliases": [
-    "GRAND DINK 125L"
+    "GRAND DINK 125L",
+    "GRAND DINK125i"
    ],
    "firstCertifiedAt": "2008-11-04",
-   "lastCertifiedAt": "2008-11-04",
+   "lastCertifiedAt": "2011-12-12",
    "certifications": [
     {
      "no": "8MY-BI-11",
@@ -49847,6 +52241,85 @@
      "office": "(주)바이크코리아",
      "vehNm": "GRAND DINK 125L",
      "vehType": "SH25DK",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "BMY-BI-3",
+     "date": "2011-12-12",
+     "office": "(주)바이크코리아",
+     "vehNm": "GRAND DINK125i",
+     "vehType": "SP25AB",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "킴코 다운타운125i",
+   "brand": "킴코",
+   "model": "다운타운125i",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 165,
+   "cylinders": 1,
+   "cooling": "liquid",
+   "fuelCapacity": 12.5,
+   "power": 15,
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "DOWNTOWN 125i",
+    "DOWNTOWN125i"
+   ],
+   "firstCertifiedAt": "2009-04-09",
+   "lastCertifiedAt": "2018-07-18",
+   "certifications": [
+    {
+     "no": "9MY-BI-1",
+     "date": "2009-04-09",
+     "office": "(주)바이크코리아",
+     "vehNm": "DOWNTOWN125i",
+     "vehType": "SK25AA",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "9MY-BI-1",
+     "date": "2015-02-03",
+     "office": "(주)바이크코리아",
+     "vehNm": "DOWNTOWN125i",
+     "vehType": "SK25CA",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "JMY-BI-1",
+     "date": "2018-03-20",
+     "office": "(주)바이크코리아",
+     "vehNm": "DOWNTOWN 125i",
+     "vehType": "SK25GA",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "JMY-BI-1",
+     "date": "2018-07-18",
+     "office": "(주)바이크코리아",
+     "vehNm": "DOWNTOWN 125i",
+     "vehType": "SK25GA",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "JMY-BI-1",
+     "date": "2018-07-18",
+     "office": "(주)바이크코리아",
+     "vehNm": "DOWNTOWN 125i",
+     "vehType": "SK25GA",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -50063,6 +52536,39 @@
    "certifications": []
   },
   {
+   "nameKo": "킴코 레이싱125i",
+   "brand": "킴코",
+   "model": "레이싱125i",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 120,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 7.3,
+   "power": 12,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "RACING125i"
+   ],
+   "firstCertifiedAt": "2009-09-28",
+   "lastCertifiedAt": "2009-09-28",
+   "certifications": [
+    {
+     "no": "9MY-BI-2",
+     "date": "2009-09-28",
+     "office": "(주)바이크코리아",
+     "vehNm": "RACING125i",
+     "vehType": "SR25BA",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "킴코 레이싱S150",
    "brand": "킴코",
    "model": "레이싱S150",
@@ -50156,6 +52662,39 @@
    ]
   },
   {
+   "nameKo": "킴코 메가G5 125i",
+   "brand": "킴코",
+   "model": "메가G5 125i",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 6,
+   "power": 12,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "MEGA G5 125i"
+   ],
+   "firstCertifiedAt": "2015-01-29",
+   "lastCertifiedAt": "2015-01-29",
+   "certifications": [
+    {
+     "no": "FMY-BI-2",
+     "date": "2015-01-29",
+     "office": "(주)바이크코리아",
+     "vehNm": "MEGA G5 125i",
+     "vehType": "SR25EA",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "킴코 비비오125",
    "brand": "킴코",
    "model": "비비오125",
@@ -50208,6 +52747,48 @@
    "firstCertifiedAt": null,
    "lastCertifiedAt": null,
    "certifications": []
+  },
+  {
+   "nameKo": "킴코 엑스타운125i",
+   "brand": "킴코",
+   "model": "엑스타운125i",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 170,
+   "cylinders": 1,
+   "cooling": "liquid",
+   "fuelCapacity": 13,
+   "power": 14,
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "X-TOWN 125i"
+   ],
+   "firstCertifiedAt": "2019-03-08",
+   "lastCertifiedAt": "2019-03-08",
+   "certifications": [
+    {
+     "no": "KMC-BI-3",
+     "date": "2019-03-08",
+     "office": "(주)바이크코리아",
+     "vehNm": "X-TOWN 125i",
+     "vehType": "KS25AD",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "KMY-BI-3",
+     "date": "2019-03-08",
+     "office": "(주)바이크코리아",
+     "vehNm": "X-TOWN 125i",
+     "vehType": "KS25AD",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
   },
   {
    "nameKo": "킴코 엑스타운300i",
@@ -50592,12 +53173,33 @@
    "cooling": "air",
    "fuelCapacity": 5,
    "power": 8,
-   "emissionStandard": null,
-   "status": "curated",
-   "aliases": [],
-   "firstCertifiedAt": null,
-   "lastCertifiedAt": null,
-   "certifications": []
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "FILLY 125i"
+   ],
+   "firstCertifiedAt": "2018-08-22",
+   "lastCertifiedAt": "2018-08-22",
+   "certifications": [
+    {
+     "no": "JMC-BI-2",
+     "date": "2018-08-22",
+     "office": "(주)바이크코리아",
+     "vehNm": "FILLY 125i",
+     "vehType": "SJ25XE",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "JMY-BI-2",
+     "date": "2018-08-22",
+     "office": "(주)바이크코리아",
+     "vehNm": "FILLY 125i",
+     "vehType": "SJ25XE",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
   },
   {
    "nameKo": "테서렉트 트리니티",
@@ -52918,12 +55520,24 @@
    "cooling": null,
    "fuelCapacity": null,
    "power": null,
-   "emissionStandard": null,
-   "status": "curated",
-   "aliases": [],
-   "firstCertifiedAt": null,
-   "lastCertifiedAt": null,
-   "certifications": []
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "파파"
+   ],
+   "firstCertifiedAt": "2022-05-23",
+   "lastCertifiedAt": "2022-05-23",
+   "certifications": [
+    {
+     "no": "NMY-PM-21-2",
+     "date": "2022-05-23",
+     "office": "(주)평안모터스",
+     "vehNm": "파파",
+     "vehType": "PAPA",
+     "fuel": "전기(EV)",
+     "gubun": "import"
+    }
+   ]
   },
   {
    "nameKo": "평안모터스 할리1500",
@@ -52981,12 +55595,24 @@
    "cooling": null,
    "fuelCapacity": null,
    "power": null,
-   "emissionStandard": null,
-   "status": "curated",
-   "aliases": [],
-   "firstCertifiedAt": null,
-   "lastCertifiedAt": null,
-   "certifications": []
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "해피"
+   ],
+   "firstCertifiedAt": "2023-03-20",
+   "lastCertifiedAt": "2023-03-20",
+   "certifications": [
+    {
+     "no": "PMY-PM-21-1",
+     "date": "2023-03-20",
+     "office": "(주)평안모터스",
+     "vehNm": "해피",
+     "vehType": "happy",
+     "fuel": "전기(EV)",
+     "gubun": "import"
+    }
+   ]
   },
   {
    "nameKo": "푸조 스피드파이트125",
@@ -53691,6 +56317,255 @@
    ]
   },
   {
+   "nameKo": "하우주 ADX125",
+   "brand": "하우주",
+   "model": "ADX125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 760,
+   "weight": 120,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 6.5,
+   "power": 9,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-58"
+   ],
+   "firstCertifiedAt": "2025-05-23",
+   "lastCertifiedAt": "2025-05-23",
+   "certifications": [
+    {
+     "no": "SMC-DW-6",
+     "date": "2025-05-23",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-58",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-DW-6",
+     "date": "2025-05-23",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-58",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 AFR125 시티호크",
+   "brand": "하우주",
+   "model": "AFR125 시티호크",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 740,
+   "weight": 120,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 6.5,
+   "power": 9,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-27"
+   ],
+   "firstCertifiedAt": "2022-11-28",
+   "lastCertifiedAt": "2025-01-24",
+   "certifications": [
+    {
+     "no": "NMC-DW-2",
+     "date": "2022-11-28",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-27",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "NMY-DW-2",
+     "date": "2022-11-28",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-27",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "NMC-DW-2",
+     "date": "2023-11-24",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-27",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "NMY-DW-2",
+     "date": "2023-11-24",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-27",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "NMY-DW-2",
+     "date": "2023-12-21",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-27",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMC-DW-2",
+     "date": "2025-01-24",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-27",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-DW-2",
+     "date": "2025-01-24",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-27",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 NFR125",
+   "brand": "하우주",
+   "model": "NFR125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 740,
+   "weight": 115,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 6.5,
+   "power": 9,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-57"
+   ],
+   "firstCertifiedAt": "2023-12-29",
+   "lastCertifiedAt": "2025-01-24",
+   "certifications": [
+    {
+     "no": "PMC-DW-1",
+     "date": "2023-12-29",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-57",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "PMY-DW-1",
+     "date": "2023-12-29",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-57",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMC-DW-3",
+     "date": "2025-01-24",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-57",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-DW-3",
+     "date": "2025-01-24",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-57",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 U100",
+   "brand": "하우주",
+   "model": "U100",
+   "displacement": 100,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 730,
+   "weight": 100,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5.5,
+   "power": 7,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "HJ100T-11"
+   ],
+   "firstCertifiedAt": "2023-10-05",
+   "lastCertifiedAt": "2025-01-09",
+   "certifications": [
+    {
+     "no": "MMC-DW-2",
+     "date": "2023-10-05",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-11",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "MMY-DW-2",
+     "date": "2023-10-05",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-11",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMC-DW-1",
+     "date": "2025-01-09",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-11",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-DW-1",
+     "date": "2025-01-09",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-11",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "하우주 UFR125",
    "brand": "하우주",
    "model": "UFR125",
@@ -53726,6 +56601,863 @@
      "date": "2025-02-28",
      "office": "(주)다빈월드",
      "vehNm": "UFR125",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 UFR150",
+   "brand": "하우주",
+   "model": "UFR150",
+   "displacement": 149,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 760,
+   "weight": 145,
+   "cylinders": 1,
+   "cooling": "liquid",
+   "fuelCapacity": 8,
+   "power": 14,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "HJ150T-29"
+   ],
+   "firstCertifiedAt": "2025-05-23",
+   "lastCertifiedAt": "2025-05-23",
+   "certifications": [
+    {
+     "no": "SMC-DW-7",
+     "date": "2025-05-23",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ150T-29",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-DW-7",
+     "date": "2025-05-23",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ150T-29",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 UHR150",
+   "brand": "하우주",
+   "model": "UHR150",
+   "displacement": 149,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 760,
+   "weight": 140,
+   "cylinders": 1,
+   "cooling": "liquid",
+   "fuelCapacity": 8,
+   "power": 13,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "HJ150T-28"
+   ],
+   "firstCertifiedAt": "2022-02-07",
+   "lastCertifiedAt": "2023-12-21",
+   "certifications": [
+    {
+     "no": "NMC-DW-1",
+     "date": "2022-02-07",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ150T-28",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "NMY-DW-1",
+     "date": "2022-02-07",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ150T-28",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "NMY-DW-1",
+     "date": "2023-12-21",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ150T-28",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 USR125",
+   "brand": "하우주",
+   "model": "USR125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 740,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 6.5,
+   "power": 9,
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-21"
+   ],
+   "firstCertifiedAt": "2019-06-28",
+   "lastCertifiedAt": "2019-06-28",
+   "certifications": [
+    {
+     "no": "KMC-DW-1",
+     "date": "2019-06-28",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-21",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "KMY-DW-1",
+     "date": "2019-06-28",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-21",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 USR125 프라임",
+   "brand": "하우주",
+   "model": "USR125 프라임",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 740,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 6.5,
+   "power": 9,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-21P"
+   ],
+   "firstCertifiedAt": "2021-03-23",
+   "lastCertifiedAt": "2025-01-24",
+   "certifications": [
+    {
+     "no": "MMC-DW-3",
+     "date": "2021-03-23",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-21P",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "MMY-DW-3",
+     "date": "2021-03-23",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-21P",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "NMC-DW-2",
+     "date": "2023-04-11",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-21P",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "NMY-DW-2",
+     "date": "2023-04-11",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-21P",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "MMY-DW-3",
+     "date": "2023-12-12",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-21P",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMC-DW-4",
+     "date": "2025-01-24",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-21P",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-DW-4",
+     "date": "2025-01-24",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-21P",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 VE125",
+   "brand": "하우주",
+   "model": "VE125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 730,
+   "weight": 112,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5.6,
+   "power": 8,
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-26A"
+   ],
+   "firstCertifiedAt": "2018-04-20",
+   "lastCertifiedAt": "2018-04-20",
+   "certifications": [
+    {
+     "no": "JMY-DW-3",
+     "date": "2018-04-20",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-26A",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 VH125",
+   "brand": "하우주",
+   "model": "VH125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 740,
+   "weight": 112,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 6.5,
+   "power": 8,
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-20A"
+   ],
+   "firstCertifiedAt": "2018-04-20",
+   "lastCertifiedAt": "2018-04-20",
+   "certifications": [
+    {
+     "no": "JMY-DW-4",
+     "date": "2018-04-20",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-20A",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 VM100",
+   "brand": "하우주",
+   "model": "VM100",
+   "displacement": 102,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 720,
+   "weight": 104,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5.5,
+   "power": 7,
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "HJ100T-5A"
+   ],
+   "firstCertifiedAt": "2018-04-20",
+   "lastCertifiedAt": "2018-04-20",
+   "certifications": [
+    {
+     "no": "JMY-DW-5",
+     "date": "2018-04-20",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-5A",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 VM100N",
+   "brand": "하우주",
+   "model": "VM100N",
+   "displacement": 100,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 730,
+   "weight": 104,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5.5,
+   "power": 7,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "HJ100T-12"
+   ],
+   "firstCertifiedAt": "2021-03-23",
+   "lastCertifiedAt": "2023-12-12",
+   "certifications": [
+    {
+     "no": "MMC-DW-2",
+     "date": "2021-03-23",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-12",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "MMY-DW-2",
+     "date": "2021-03-23",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-12",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "MMY-DW-2",
+     "date": "2023-12-12",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-12",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 VR125",
+   "brand": "하우주",
+   "model": "VR125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 740,
+   "weight": 120,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5.9,
+   "power": 9,
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-19",
+    "HJ125T-19A"
+   ],
+   "firstCertifiedAt": "2016-08-12",
+   "lastCertifiedAt": "2018-04-20",
+   "certifications": [
+    {
+     "no": "GMY-DW-1",
+     "date": "2016-08-12",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-19",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "JMY-DW-1",
+     "date": "2018-04-20",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-19A",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 디보125",
+   "brand": "하우주",
+   "model": "디보125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 740,
+   "weight": 119,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 6.5,
+   "power": 9,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-31"
+   ],
+   "firstCertifiedAt": "2021-07-13",
+   "lastCertifiedAt": "2023-12-12",
+   "certifications": [
+    {
+     "no": "MMC-DW-5",
+     "date": "2021-07-13",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-31",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "MMY-DW-5",
+     "date": "2021-07-13",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-31",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "MMY-DW-5",
+     "date": "2023-12-12",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-31",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 로시",
+   "brand": "하우주",
+   "model": "로시",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": null,
+   "status": "verified",
+   "aliases": [
+    "HJ125T-7"
+   ],
+   "firstCertifiedAt": "2006-12-21",
+   "lastCertifiedAt": "2006-12-21",
+   "certifications": [
+    {
+     "no": "6MY-DW-02",
+     "date": "2006-12-21",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-7",
+     "vehType": "HJ125T-7",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 로시III",
+   "brand": "하우주",
+   "model": "로시III",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-10A"
+   ],
+   "firstCertifiedAt": "2010-07-20",
+   "lastCertifiedAt": "2010-07-20",
+   "certifications": [
+    {
+     "no": "AMY-DW-1",
+     "date": "2010-07-20",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-10A",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 린디Q",
+   "brand": "하우주",
+   "model": "린디Q",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5.8,
+   "power": 9,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-18A"
+   ],
+   "firstCertifiedAt": "2013-07-23",
+   "lastCertifiedAt": "2013-07-23",
+   "certifications": [
+    {
+     "no": "DMY-DW-1",
+     "date": "2013-07-23",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-18A",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 린디R",
+   "brand": "하우주",
+   "model": "린디R",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5.8,
+   "power": 9,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-18"
+   ],
+   "firstCertifiedAt": "2013-05-29",
+   "lastCertifiedAt": "2013-05-29",
+   "certifications": [
+    {
+     "no": "DMY-DW-1",
+     "date": "2013-05-29",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-18",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 벨라",
+   "brand": "하우주",
+   "model": "벨라",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 747,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 7,
+   "power": 12,
+   "emissionStandard": null,
+   "status": "verified",
+   "aliases": [
+    "HJ125T-3"
+   ],
+   "firstCertifiedAt": "2006-12-21",
+   "lastCertifiedAt": "2006-12-21",
+   "certifications": [
+    {
+     "no": "6MY-DW-02",
+     "date": "2006-12-21",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-3",
+     "vehType": "HJ125T-3",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 슈퍼이글125",
+   "brand": "하우주",
+   "model": "슈퍼이글125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 740,
+   "weight": 110,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 5.9,
+   "power": 9,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-32A",
+    "HJ125T-32P"
+   ],
+   "firstCertifiedAt": "2019-10-18",
+   "lastCertifiedAt": "2023-12-12",
+   "certifications": [
+    {
+     "no": "KMC-DW-2",
+     "date": "2019-10-18",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-32A",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "KMY-DW-2",
+     "date": "2019-10-18",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-32A",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "MMC-DW-4",
+     "date": "2021-07-13",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-32P",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "MMY-DW-4",
+     "date": "2021-07-13",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-32P",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "MMY-DW-4",
+     "date": "2023-12-12",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-32P",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 스카이호크125",
+   "brand": "하우주",
+   "model": "스카이호크125",
+   "displacement": 124,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": null,
+   "power": 9,
+   "emissionStandard": "euro3",
+   "status": "verified",
+   "aliases": [
+    "HJ125T-16",
+    "HJ125T-16D"
+   ],
+   "firstCertifiedAt": "2008-12-24",
+   "lastCertifiedAt": "2010-07-20",
+   "certifications": [
+    {
+     "no": "8MY-DW-1",
+     "date": "2008-12-24",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-16",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "AMY-DW-2",
+     "date": "2010-07-20",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ125T-16D",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 조이스타",
+   "brand": "하우주",
+   "model": "조이스타",
+   "displacement": 100,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 720,
+   "weight": 104,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 6.2,
+   "power": 7,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "HJ100T-7C",
+    "HJ100T-7E",
+    "HJ100T-7F"
+   ],
+   "firstCertifiedAt": "2011-03-14",
+   "lastCertifiedAt": "2023-12-12",
+   "certifications": [
+    {
+     "no": "BMY-DW-1",
+     "date": "2011-03-14",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-7C",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "BMY-DW-1",
+     "date": "2016-08-12",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-7C",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "JMY-DW-2",
+     "date": "2018-04-20",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-7E",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "MMC-DW-1",
+     "date": "2021-03-23",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-7F",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "MMY-DW-1",
+     "date": "2021-03-23",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-7F",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "MMY-DW-1",
+     "date": "2023-12-12",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-7F",
+     "vehType": "LC6",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "하우주 트렌디",
+   "brand": "하우주",
+   "model": "트렌디",
+   "displacement": 102,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": "regular",
+   "seatHeight": 720,
+   "weight": 101,
+   "cylinders": 1,
+   "cooling": "air",
+   "fuelCapacity": 7,
+   "power": 7,
+   "emissionStandard": null,
+   "status": "verified",
+   "aliases": [
+    "HJ100T-3"
+   ],
+   "firstCertifiedAt": "2006-06-16",
+   "lastCertifiedAt": "2006-06-16",
+   "certifications": [
+    {
+     "no": "6MY-DW-01",
+     "date": "2006-06-16",
+     "office": "(주)다빈월드",
+     "vehNm": "HJ100T-3",
      "vehType": "LC6",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
@@ -56346,6 +60078,48 @@
      "office": "(유)기흥모터스",
      "vehNm": "Harley-Davidson FLTRU",
      "vehType": "FLTRU",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "할리데이비슨 로드글라이드 폴리스",
+   "brand": "할리데이비슨",
+   "model": "로드글라이드 폴리스",
+   "displacement": 1977,
+   "category": "투어러",
+   "electric": false,
+   "fuelGrade": "premium",
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 2,
+   "cooling": "liquid",
+   "fuelCapacity": 22.7,
+   "power": null,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "Harley-Davidson FLTRXP"
+   ],
+   "firstCertifiedAt": "2026-07-22",
+   "lastCertifiedAt": "2026-07-22",
+   "certifications": [
+    {
+     "no": "TMC-HD-1",
+     "date": "2026-07-22",
+     "office": "(유)기흥모터스",
+     "vehNm": "Harley-Davidson FLTRXP",
+     "vehType": "FLTRXP",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-HD-1",
+     "date": "2026-07-22",
+     "office": "(유)기흥모터스",
+     "vehNm": "Harley-Davidson FLTRXP",
+     "vehType": "FLTRXP",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -64761,11 +68535,30 @@
    "emissionStandard": "euro4",
    "status": "verified",
    "aliases": [
+    "ANC125",
     "NSC1255SH"
    ],
-   "firstCertifiedAt": "2017-03-22",
+   "firstCertifiedAt": "2013-07-08",
    "lastCertifiedAt": "2018-09-03",
    "certifications": [
+    {
+     "no": "DMY-HK-8",
+     "date": "2013-07-08",
+     "office": "혼다코리아(주)",
+     "vehNm": "ANC125",
+     "vehType": "JF51",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "DMY-HK-8",
+     "date": "2015-02-06",
+     "office": "혼다코리아(주)",
+     "vehNm": "ANC125",
+     "vehType": "JF51",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
     {
      "no": "HMY-HK-1",
      "date": "2017-03-22",
@@ -66258,6 +70051,48 @@
      "vehNm": "MW1101WH",
      "vehType": "JA09",
      "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "혼다 벤리e: II",
+   "brand": "혼다",
+   "model": "벤리e: II",
+   "displacement": null,
+   "category": "스쿠터",
+   "electric": true,
+   "fuelGrade": null,
+   "seatHeight": 735,
+   "weight": null,
+   "cylinders": null,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro4",
+   "status": "verified",
+   "aliases": [
+    "EVN4"
+   ],
+   "firstCertifiedAt": "2020-01-09",
+   "lastCertifiedAt": "2020-01-09",
+   "certifications": [
+    {
+     "no": "LMEV-HK-1",
+     "date": "2020-01-09",
+     "office": "혼다코리아(주)",
+     "vehNm": "EVN4",
+     "vehType": "EF10",
+     "fuel": "전기(EV)",
+     "gubun": "import"
+    },
+    {
+     "no": "LMY-HK-24-1",
+     "date": "2020-01-09",
+     "office": "혼다코리아(주)",
+     "vehNm": "EVN4",
+     "vehType": "EF10",
+     "fuel": "전기(EV)",
      "gubun": "import"
     }
    ]
