@@ -7,8 +7,9 @@
    "verified": 984,
    "curated": 158,
    "certifications": 4921,
-   "unmapped": 26,
-   "ambiguous": 0
+   "unmapped": 14,
+   "ambiguous": 0,
+   "excluded": 12
   }
  },
  "models": [

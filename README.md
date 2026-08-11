@@ -49,7 +49,7 @@ GET /meta                                    # 데이터 생성일과 집계
   "meta": {
     "generatedAt": "2026-07-17",
     "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
-    "counts": { "models": 1040, "verified": 877, "curated": 163, "certifications": 4913, "unmapped": 113 }
+    "counts": { "models": 1142, "verified": 984, "curated": 158, "certifications": 4921, "unmapped": 14, "ambiguous": 0, "excluded": 12 }
   },
   "models": [
     {
@@ -116,9 +116,19 @@ GET /meta                                    # 데이터 생성일과 집계
 {
   "unmapped": [
     { "vehNm": "마이크로레이서", "office": "(주)라라클래식모터스", "brandHint": null, "count": 2, "lastDate": "2026-07-09" }
+  ],
+  // 차명은 같은데 형식코드로만 갈려 어느 기종인지 확정하지 못한 건
+  "ambiguous": [
+    { "vehNm": "엑시브", "office": "케이알모터스(주)", "candidates": ["KR모터스 엑시브250N", "KR모터스 엑시브250R"], "count": 2, "lastDate": "2014-08-27" }
+  ],
+  // 실차가 아니라 매핑 대상에서 제외한 건 (원본 대비 건수를 맞추기 위해 남겨 둡니다)
+  "excluded": [
+    { "vehNm": "동일차_1", "office": "디에스글로벌", "count": 2, "lastDate": "2019-03-04", "reason": "KENCIS 자리표시자" }
   ]
 }
 ```
+
+`certifications`(원본 행 수)는 `모델이 보유한 인증 + unmapped + excluded`와 항상 일치합니다.
 
 ### 알아둘 것
 
