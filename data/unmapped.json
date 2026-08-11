@@ -3,11 +3,11 @@
   "generatedAt": "2026-08-11",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
-   "models": 1132,
-   "verified": 974,
+   "models": 1142,
+   "verified": 984,
    "curated": 158,
    "certifications": 4921,
-   "unmapped": 37,
+   "unmapped": 26,
    "ambiguous": 0
   }
  },
@@ -18,18 +18,6 @@
    "brandHint": null,
    "count": 2,
    "lastDate": "2026-01-21"
-  },
-  {
-   "vehNm": "SC-125",
-   "office": "케이알모터스(주)",
-   "brandHint": [
-    "KR모터스",
-    "SYM",
-    "푸조",
-    "효성"
-   ],
-   "count": 2,
-   "lastDate": "2023-12-29"
   },
   {
    "vehNm": "동일차_1",
@@ -88,13 +76,6 @@
    "lastDate": "2019-03-04"
   },
   {
-   "vehNm": "JY100T-2WM",
-   "office": "(주)엠베이코퍼레이션",
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2016-12-29"
-  },
-  {
    "vehNm": "test0830",
    "office": "나이스정보테크",
    "brandHint": null,
@@ -137,13 +118,6 @@
    "lastDate": "2011-12-30"
   },
   {
-   "vehNm": "막스",
-   "office": "(주)그린모터스",
-   "brandHint": null,
-   "count": 2,
-   "lastDate": "2011-12-02"
-  },
-  {
    "vehNm": "에스알원",
    "office": "(주)썬로드트레이딩",
    "brandHint": null,
@@ -158,13 +132,6 @@
    "lastDate": "2011-08-26"
   },
   {
-   "vehNm": "포리125",
-   "office": "(주)그린모터스",
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2011-06-24"
-  },
-  {
    "vehNm": "YB125T -32",
    "office": "(주)에스엠에스케이",
    "brandHint": null,
@@ -177,13 +144,6 @@
    "brandHint": null,
    "count": 1,
    "lastDate": "2011-05-26"
-  },
-  {
-   "vehNm": "ATV(NF125)",
-   "office": "(주)세인비앤티",
-   "brandHint": null,
-   "count": 2,
-   "lastDate": "2011-01-11"
   },
   {
    "vehNm": "JJ50",
@@ -213,13 +173,6 @@
    "lastDate": "2010-09-01"
   },
   {
-   "vehNm": "GN125T-5",
-   "office": "(주)그린모터스",
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2010-08-25"
-  },
-  {
    "vehNm": "ZENE125",
    "office": "유로모토코리아(주)",
    "brandHint": [
@@ -244,46 +197,11 @@
    "lastDate": "2009-06-18"
   },
   {
-   "vehNm": "제이디125",
-   "office": "(주)케이앤지모터사이클",
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2009-06-03"
-  },
-  {
-   "vehNm": "버팔로125",
-   "office": "엔에프모터스(주)",
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2009-02-16"
-  },
-  {
    "vehNm": "래쿤",
    "office": "진일엔지니어링(주)",
    "brandHint": null,
    "count": 1,
    "lastDate": "2008-07-22"
-  },
-  {
-   "vehNm": "프리맨",
-   "office": "엔에프모터스(주)",
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2008-05-14"
-  },
-  {
-   "vehNm": "RS125",
-   "office": "올바이크",
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2008-01-04"
-  },
-  {
-   "vehNm": "CF125T-16",
-   "office": "(주)모터유나이티드",
-   "brandHint": null,
-   "count": 1,
-   "lastDate": "2006-10-12"
   }
  ],
  "ambiguous": []

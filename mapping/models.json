@@ -1,5 +1,113 @@
 [
  {
+  "nameKo": "엠베이코퍼레이션 JY100T-2WM",
+  "brand": "엠베이코퍼레이션",
+  "model": "JY100T-2WM",
+  "aliases": [
+   "JY100T-2WM"
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": "air",
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "엔에프모터스 버팔로125",
+  "brand": "엔에프모터스",
+  "model": "버팔로125",
+  "aliases": [
+   "버팔로125"
+  ],
+  "displacement": 125,
+  "category": null,
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": "air",
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "제이디 JD125",
+  "brand": "제이디",
+  "model": "JD125",
+  "aliases": [
+   "제이디125"
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": "air",
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "뉴포스 NF125",
+  "brand": "뉴포스",
+  "model": "NF125",
+  "aliases": [
+   "ATV(NF125)"
+  ],
+  "displacement": 125,
+  "category": "4륜",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": "air",
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "그린모터스 막스125",
+  "brand": "그린모터스",
+  "model": "막스125",
+  "aliases": [
+   "막스"
+  ],
+  "displacement": 125,
+  "category": null,
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "그린모터스 포리125",
+  "brand": "그린모터스",
+  "model": "포리125",
+  "aliases": [
+   "포리125"
+  ],
+  "displacement": 125,
+  "category": null,
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
   "nameKo": "GMK 쥬드에볼루션",
   "brand": "GMK",
   "model": "쥬드에볼루션",
@@ -13021,6 +13129,24 @@
   "power": 9
  },
  {
+  "nameKo": "CFMOTO CF125T-16",
+  "brand": "CFMOTO",
+  "model": "CF125T-16",
+  "aliases": [
+   "CF125T-16"
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": "liquid",
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
   "nameKo": "KKM 드래곤",
   "brand": "KKM",
   "model": "드래곤",
@@ -14700,7 +14826,8 @@
   "power": 13,
   "aliases": [
    "CRUISYM ALPHA125",
-   "CRUiSYM125"
+   "CRUiSYM125",
+   "SC-125"
   ]
  },
  {
@@ -19330,6 +19457,24 @@
   "power": 22
  },
  {
+  "nameKo": "아프릴리아 RS125",
+  "brand": "아프릴리아",
+  "model": "RS125",
+  "aliases": [
+   "RS125"
+  ],
+  "displacement": 125,
+  "category": "스포츠",
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": 805,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": "liquid",
+  "fuelCapacity": 14,
+  "power": null
+ },
+ {
   "nameKo": "SYM 레전드125",
   "brand": "SYM",
   "model": "레전드125",
@@ -19839,6 +19984,42 @@
   "cooling": "air",
   "fuelCapacity": 6,
   "power": 9
+ },
+ {
+  "nameKo": "스즈키 프리맨",
+  "brand": "스즈키",
+  "model": "프리맨",
+  "aliases": [
+   "프리맨"
+  ],
+  "displacement": 125,
+  "category": null,
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": "air",
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "스즈키 GN125T-5",
+  "brand": "스즈키",
+  "model": "GN125T-5",
+  "aliases": [
+   "GN125T-5"
+  ],
+  "displacement": 125,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": "regular",
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 1,
+  "cooling": "air",
+  "fuelCapacity": null,
+  "power": null
  },
  {
   "nameKo": "혼다 CB1300",
