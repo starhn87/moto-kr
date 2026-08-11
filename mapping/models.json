@@ -12800,7 +12800,7 @@
    "와우2"
   ],
   "displacement": 100,
-  "category": "스쿠터",
+  "category": "4륜",
   "electric": false,
   "fuelGrade": "regular",
   "seatHeight": 666,
@@ -14096,12 +14096,15 @@
   "category": "스쿠터",
   "electric": false,
   "fuelGrade": "regular",
-  "seatHeight": null,
-  "weight": 135,
+  "seatHeight": 770,
+  "weight": 170,
   "cylinders": 1,
   "cooling": "liquid",
-  "fuelCapacity": 9,
-  "power": 13
+  "fuelCapacity": 12,
+  "power": 13,
+  "aliases": [
+   "SJ-125"
+  ]
  },
  {
   "nameKo": "SYM 조이심300",
@@ -14111,12 +14114,15 @@
   "category": "스쿠터",
   "electric": false,
   "fuelGrade": "regular",
-  "seatHeight": 760,
+  "seatHeight": 770,
   "weight": 185,
   "cylinders": 1,
   "cooling": "liquid",
-  "fuelCapacity": 12.5,
-  "power": 27
+  "fuelCapacity": 12,
+  "power": 24,
+  "aliases": [
+   "SJ-300"
+  ]
  },
  {
   "nameKo": "SYM 카미온",
@@ -14167,11 +14173,12 @@
   "weight": 195,
   "cylinders": 1,
   "cooling": "liquid",
-  "fuelCapacity": 12.5,
-  "power": 27,
+  "fuelCapacity": 12,
+  "power": 24,
   "aliases": [
    "CRUISYM ALPHA300",
-   "CRUiSYM300"
+   "CRUiSYM300",
+   "SC-300"
   ]
  },
  {
@@ -14610,7 +14617,7 @@
    "newtro M"
   ],
   "displacement": null,
-  "category": null,
+  "category": "4륜",
   "electric": true,
   "fuelGrade": null,
   "seatHeight": null,
@@ -14727,54 +14734,6 @@
   "cooling": null,
   "fuelCapacity": null,
   "power": null
- },
- {
-  "nameKo": "KR모터스 SJ-125",
-  "brand": "KR모터스",
-  "model": "SJ-125",
-  "aliases": [],
-  "displacement": 125,
-  "category": "스쿠터",
-  "electric": false,
-  "fuelGrade": "regular",
-  "seatHeight": 770,
-  "weight": 170,
-  "cylinders": 1,
-  "cooling": "liquid",
-  "fuelCapacity": 12,
-  "power": 13
- },
- {
-  "nameKo": "KR모터스 SC-300",
-  "brand": "KR모터스",
-  "model": "SC-300",
-  "aliases": [],
-  "displacement": 278,
-  "category": "스쿠터",
-  "electric": false,
-  "fuelGrade": "regular",
-  "seatHeight": 760,
-  "weight": 195,
-  "cylinders": 1,
-  "cooling": "liquid",
-  "fuelCapacity": 12,
-  "power": 24
- },
- {
-  "nameKo": "KR모터스 SJ-300",
-  "brand": "KR모터스",
-  "model": "SJ-300",
-  "aliases": [],
-  "displacement": 278,
-  "category": "스쿠터",
-  "electric": false,
-  "fuelGrade": "regular",
-  "seatHeight": 770,
-  "weight": 185,
-  "cylinders": 1,
-  "cooling": "liquid",
-  "fuelCapacity": 12,
-  "power": 24
  },
  {
   "nameKo": "야마하 MT-25",
@@ -15868,7 +15827,7 @@
   "model": "에이글125",
   "aliases": [],
   "displacement": 125,
-  "category": null,
+  "category": "4륜",
   "electric": false,
   "fuelGrade": "regular",
   "seatHeight": null,

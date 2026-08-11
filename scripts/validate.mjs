@@ -5,9 +5,11 @@ let fail = 0;
 const err = (m) => { console.error('✗ ' + m); fail++; };
 
 const seed = JSON.parse(readFileSync('mapping/models.json', 'utf8'));
+// 3륜·4륜은 차체 형태 분류다 — 이륜차 인증을 받지만 바퀴가 셋(화물 삼륜 등)
+// 또는 넷(ATV, 사이클카트)인 차종이라 나머지 장르 분류로는 표현할 수 없다.
 const CATEGORIES = new Set([
   '스포츠', '네이키드', '크루저', '투어러', '어드벤처', '스쿠터',
-  '언더본', '오프로드', '클래식', '미니', '3륜',
+  '언더본', '오프로드', '클래식', '미니', '3륜', '4륜',
 ]);
 const seen = new Set();
 for (const s of seed) {

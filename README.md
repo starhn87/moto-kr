@@ -93,7 +93,7 @@ GET /meta                                    # 데이터 생성일과 집계
 | `nameKo` | 한글 통용 표기. 브랜드 + 모델명 |
 | `brand` / `model` | 표기를 나눠 쓸 때 사용 |
 | `displacement` | 실배기량(cc). 전기는 null |
-| `category` | 스포츠/네이키드/크루저/투어러/어드벤처/스쿠터/언더본/오프로드/클래식/미니/3륜 |
+| `category` | 스포츠/네이키드/크루저/투어러/어드벤처/스쿠터/언더본/오프로드/클래식/미니/3륜/4륜 |
 | `electric` | 전기 구동 여부 |
 | `fuelGrade` | `regular`(일반유) / `premium`(고급유 권장). 제조사 매뉴얼 기준 |
 | `seatHeight` / `weight` | 시트고(mm), 중량(kg, 습중량 기준) |
