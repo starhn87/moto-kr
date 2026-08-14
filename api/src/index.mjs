@@ -8,8 +8,8 @@
 //   GET /brands      브랜드 목록과 기종 수
 //   GET /meta        데이터 정보
 //
-// 전체 덤프는 GitHub raw 의 풀 JSON(10MB)을 스트리밍 프록시한다. 모든 GET 응답은
-// 엣지 캐시(Cache API)에 얹히고, 캐시 키에 데이터 생성일이 들어가 재배포 시 자연 무효화된다.
+// 전체 덤프는 jsDelivr의 풀 JSON을 스트리밍 프록시한다. 모든 GET 응답은
+// 엣지 캐시(Cache API)에 얹히고, 캐시 키에 데이터 생성일과 배포 커밋을 넣는다.
 
 import dataset from '../../data/models.lite.json' with { type: 'json' };
 
@@ -22,13 +22,56 @@ const HEADERS = {
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: HEADERS });
 
+const CATEGORIES = new Set([
+  '스포츠', '네이키드', '크루저', '투어러', '어드벤처', '스쿠터',
+  '언더본', '오프로드', '클래식', '미니', '3륜', '4륜',
+]);
+const KNOWN_PARAMS = new Set([
+  'brand', 'category', 'ccMin', 'ccMax', 'from', 'to', 'status', 'electric',
+  'fuelGrade', 'emission', 'seatHeightMin', 'seatHeightMax', 'weightMin',
+  'weightMax', 'cylinders', 'cooling', 'fuelCapacityMin', 'fuelCapacityMax',
+  'powerMin', 'powerMax', 'q', 'limit', 'offset',
+]);
+
 // from=2020 → 2020-01-01, to=2022 → 2022-12-31 로 보정해 날짜 문자열 비교
 const normDate = (s, isTo) => {
-  if (!s) return null;
+  if (s === null) return null;
   if (/^\d{4}$/.test(s)) return isTo ? `${s}-12-31` : `${s}-01-01`;
-  if (/^\d{4}-\d{2}$/.test(s)) return isTo ? `${s}-31` : `${s}-01`;
-  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
-  return undefined; // 형식 오류
+  const month = s.match(/^(\d{4})-(\d{2})$/);
+  if (month) {
+    const year = Number(month[1]);
+    const value = Number(month[2]);
+    if (value < 1 || value > 12) return undefined;
+    const day = isTo ? new Date(Date.UTC(year, value, 0)).getUTCDate() : 1;
+    return `${month[1]}-${month[2]}-${String(day).padStart(2, '0')}`;
+  }
+  const day = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (day) {
+    const year = Number(day[1]);
+    const monthValue = Number(day[2]);
+    const dayValue = Number(day[3]);
+    if (monthValue < 1 || monthValue > 12) return undefined;
+    const lastDay = new Date(Date.UTC(year, monthValue, 0)).getUTCDate();
+    if (dayValue < 1 || dayValue > lastDay) return undefined;
+    return s;
+  }
+  return undefined;
+};
+
+const numberParam = (params, key, { integer = false } = {}) => {
+  if (!params.has(key)) return { value: null };
+  const raw = params.get(key)?.trim() ?? '';
+  const value = Number(raw);
+  if (!raw || !Number.isFinite(value) || value < 0 || (integer && !Number.isSafeInteger(value))) {
+    return { error: `${key} 는 0 이상의 ${integer ? '정수' : '숫자'}여야 합니다` };
+  }
+  return { value };
+};
+
+const csvParam = (params, key) => {
+  if (!params.has(key)) return { value: null };
+  const value = params.get(key).split(',').map((s) => s.trim()).filter(Boolean);
+  return value.length ? { value } : { error: `${key} 값이 비어 있습니다` };
 };
 
 const USAGE = {
@@ -90,110 +133,142 @@ async function handle(url, env) {
     }
     return new Response(r.body, { headers: HEADERS });
   }
-  {
-  }
   if (path === '/meta') return json(dataset.meta);
 
-  {
-    if (path === '/brands') {
-      const counts = new Map();
-      for (const m of dataset.models) counts.set(m.brand, (counts.get(m.brand) ?? 0) + 1);
-      const brands = [...counts.entries()]
-        .map(([brand, count]) => ({ brand, count }))
-        .sort((a, b) => b.count - a.count || a.brand.localeCompare(b.brand, 'ko'));
-      return json({ total: brands.length, brands });
+  if (path === '/brands') {
+    const counts = new Map();
+    for (const m of dataset.models) counts.set(m.brand, (counts.get(m.brand) ?? 0) + 1);
+    const brands = [...counts.entries()]
+      .map(([brand, count]) => ({ brand, count }))
+      .sort((a, b) => b.count - a.count || a.brand.localeCompare(b.brand, 'ko'));
+    return json({ total: brands.length, brands });
+  }
+
+  if (path === '/models') {
+    for (const key of p.keys()) {
+      if (!KNOWN_PARAMS.has(key)) return json({ error: `지원하지 않는 파라미터입니다: ${key}` }, 400);
     }
 
-    if (path === '/models') {
-      const brands = p.get('brand')?.split(',').map((s) => s.trim()).filter(Boolean);
-      const categories = p.get('category')?.split(',').map((s) => s.trim()).filter(Boolean);
-      const ccMin = p.has('ccMin') ? Number(p.get('ccMin')) : null;
-      const ccMax = p.has('ccMax') ? Number(p.get('ccMax')) : null;
-      const from = normDate(p.get('from'), false);
-      const to = normDate(p.get('to'), true);
-      const status = p.get('status');
-      const electric = p.has('electric') ? p.get('electric') === 'true' : null;
-      const fuelGrade = p.get('fuelGrade');
-      const emission = p.get('emission');
-      const numOrNull = (k) => (p.has(k) ? Number(p.get(k)) : null);
-      const seatHeightMin = numOrNull('seatHeightMin');
-      const seatHeightMax = numOrNull('seatHeightMax');
-      const weightMin = numOrNull('weightMin');
-      const weightMax = numOrNull('weightMax');
-      const cylinders = p.get('cylinders')?.split(',').map(Number).filter((n) => !Number.isNaN(n));
-      const cooling = p.get('cooling');
-      const fuelCapacityMin = numOrNull('fuelCapacityMin');
-      const fuelCapacityMax = numOrNull('fuelCapacityMax');
-      const powerMin = numOrNull('powerMin');
-      const powerMax = numOrNull('powerMax');
-      const q = p.get('q')?.trim();
-
-      if ((ccMin !== null && Number.isNaN(ccMin)) || (ccMax !== null && Number.isNaN(ccMax))) {
-        return json({ error: 'ccMin/ccMax 는 숫자여야 합니다' }, 400);
-      }
-      if (from === undefined || to === undefined) {
-        return json({ error: 'from/to 형식은 YYYY, YYYY-MM, YYYY-MM-DD 입니다' }, 400);
-      }
-      if (status && status !== 'verified' && status !== 'curated') {
-        return json({ error: 'status 는 verified 또는 curated 입니다' }, 400);
-      }
-      if (fuelGrade && fuelGrade !== 'regular' && fuelGrade !== 'premium') {
-        return json({ error: 'fuelGrade 는 regular 또는 premium 입니다' }, 400);
-      }
-      if (emission && !['euro5', 'euro4', 'euro3'].includes(emission)) {
-        return json({ error: 'emission 은 euro5, euro4, euro3 중 하나입니다' }, 400);
-      }
-      for (const [k, v] of [['seatHeightMin', seatHeightMin], ['seatHeightMax', seatHeightMax], ['weightMin', weightMin], ['weightMax', weightMax], ['fuelCapacityMin', fuelCapacityMin], ['fuelCapacityMax', fuelCapacityMax], ['powerMin', powerMin], ['powerMax', powerMax]]) {
-        if (v !== null && Number.isNaN(v)) return json({ error: `${k} 는 숫자여야 합니다` }, 400);
-      }
-      if (cooling && !['air', 'liquid', 'oil'].includes(cooling)) {
-        return json({ error: 'cooling 은 air, liquid, oil 중 하나입니다' }, 400);
-      }
-
-      const qNorm = q?.toUpperCase().replace(/[^A-Z0-9가-힣]/g, '');
-
-      let out = dataset.models.filter((m) => {
-        if (brands && !brands.includes(m.brand)) return false;
-        if (categories && !categories.includes(m.category)) return false;
-        if (ccMin !== null && (m.displacement === null || m.displacement < ccMin)) return false;
-        if (ccMax !== null && (m.displacement === null || m.displacement > ccMax)) return false;
-        if (from && (!m.firstCertifiedAt || m.firstCertifiedAt < from)) return false;
-        if (to && (!m.firstCertifiedAt || m.firstCertifiedAt > to)) return false;
-        if (status && m.status !== status) return false;
-        if (electric !== null && m.electric !== electric) return false;
-        if (fuelGrade && m.fuelGrade !== fuelGrade) return false;
-        if (emission && m.emissionStandard !== emission) return false;
-        if (seatHeightMin !== null && (m.seatHeight === null || m.seatHeight < seatHeightMin)) return false;
-        if (seatHeightMax !== null && (m.seatHeight === null || m.seatHeight > seatHeightMax)) return false;
-        if (weightMin !== null && (m.weight === null || m.weight < weightMin)) return false;
-        if (weightMax !== null && (m.weight === null || m.weight > weightMax)) return false;
-        if (cylinders?.length && !cylinders.includes(m.cylinders)) return false;
-        if (cooling && m.cooling !== cooling) return false;
-        if (fuelCapacityMin !== null && (m.fuelCapacity === null || m.fuelCapacity < fuelCapacityMin)) return false;
-        if (fuelCapacityMax !== null && (m.fuelCapacity === null || m.fuelCapacity > fuelCapacityMax)) return false;
-        if (powerMin !== null && (m.power === null || m.power < powerMin)) return false;
-        if (powerMax !== null && (m.power === null || m.power > powerMax)) return false;
-        if (qNorm) {
-          const hay = [m.nameKo, ...(m.aliases ?? [])]
-            .join('|')
-            .toUpperCase()
-            .replace(/[^A-Z0-9가-힣|]/g, '');
-          if (!hay.includes(qNorm)) return false;
-        }
-        return true;
-      });
-
-      const total = out.length;
-      const offset = Math.max(0, Number(p.get('offset') ?? 0) || 0);
-      const limit = p.has('limit') ? Math.max(0, Number(p.get('limit')) || 0) : null;
-      out = limit === null ? out.slice(offset) : out.slice(offset, offset + limit);
-
-      return json({
-        meta: { generatedAt: dataset.meta.generatedAt, total, returned: out.length },
-        models: out,
-      });
+    const brandParam = csvParam(p, 'brand');
+    const categoryParam = csvParam(p, 'category');
+    if (brandParam.error) return json({ error: brandParam.error }, 400);
+    if (categoryParam.error) return json({ error: categoryParam.error }, 400);
+    const brands = brandParam.value;
+    const categories = categoryParam.value;
+    if (categories) {
+      const invalid = categories.filter((category) => !CATEGORIES.has(category));
+      if (invalid.length) return json({ error: `지원하지 않는 category: ${invalid.join(', ')}` }, 400);
     }
 
+    const numericKeys = [
+      'ccMin', 'ccMax', 'seatHeightMin', 'seatHeightMax', 'weightMin', 'weightMax',
+      'fuelCapacityMin', 'fuelCapacityMax', 'powerMin', 'powerMax',
+    ];
+    const numbers = {};
+    for (const key of numericKeys) {
+      const parsed = numberParam(p, key);
+      if (parsed.error) return json({ error: parsed.error }, 400);
+      numbers[key] = parsed.value;
+    }
+    const offsetParam = numberParam(p, 'offset', { integer: true });
+    const limitParam = numberParam(p, 'limit', { integer: true });
+    if (offsetParam.error) return json({ error: offsetParam.error }, 400);
+    if (limitParam.error) return json({ error: limitParam.error }, 400);
+    const offset = offsetParam.value ?? 0;
+    const limit = limitParam.value;
+
+    const {
+      ccMin, ccMax, seatHeightMin, seatHeightMax, weightMin, weightMax,
+      fuelCapacityMin, fuelCapacityMax, powerMin, powerMax,
+    } = numbers;
+    const from = normDate(p.get('from'), false);
+    const to = normDate(p.get('to'), true);
+    const status = p.get('status');
+    const electricRaw = p.get('electric');
+    if (electricRaw !== null && electricRaw !== 'true' && electricRaw !== 'false') {
+      return json({ error: 'electric 은 true 또는 false 입니다' }, 400);
+    }
+    const electric = electricRaw === null ? null : electricRaw === 'true';
+    const fuelGrade = p.get('fuelGrade');
+    const emission = p.get('emission');
+    const cylinderParam = csvParam(p, 'cylinders');
+    if (cylinderParam.error) return json({ error: cylinderParam.error }, 400);
+    let cylinders = null;
+    if (cylinderParam.value) {
+      cylinders = cylinderParam.value.map(Number);
+      if (cylinders.some((n) => ![1, 2, 3, 4, 6].includes(n))) {
+        return json({ error: 'cylinders 는 1, 2, 3, 4, 6 중 하나 이상이어야 합니다' }, 400);
+      }
+    }
+    const cooling = p.get('cooling');
+    const q = p.get('q')?.trim();
+
+    if (from === undefined || to === undefined) {
+      return json({ error: 'from/to 는 유효한 YYYY, YYYY-MM, YYYY-MM-DD 날짜여야 합니다' }, 400);
+    }
+    if (from && to && from > to) return json({ error: 'from 은 to 보다 늦을 수 없습니다' }, 400);
+    if (status !== null && status !== 'verified' && status !== 'curated') {
+      return json({ error: 'status 는 verified 또는 curated 입니다' }, 400);
+    }
+    if (fuelGrade !== null && fuelGrade !== 'regular' && fuelGrade !== 'premium') {
+      return json({ error: 'fuelGrade 는 regular 또는 premium 입니다' }, 400);
+    }
+    if (emission !== null && !['euro5', 'euro4', 'euro3'].includes(emission)) {
+      return json({ error: 'emission 은 euro5, euro4, euro3 중 하나입니다' }, 400);
+    }
+    if (cooling !== null && !['air', 'liquid', 'oil'].includes(cooling)) {
+      return json({ error: 'cooling 은 air, liquid, oil 중 하나입니다' }, 400);
+    }
+    if (p.has('q') && !q) return json({ error: 'q 값이 비어 있습니다' }, 400);
+    for (const [minKey, maxKey] of [
+      ['ccMin', 'ccMax'], ['seatHeightMin', 'seatHeightMax'], ['weightMin', 'weightMax'],
+      ['fuelCapacityMin', 'fuelCapacityMax'], ['powerMin', 'powerMax'],
+    ]) {
+      if (numbers[minKey] !== null && numbers[maxKey] !== null && numbers[minKey] > numbers[maxKey]) {
+        return json({ error: `${minKey} 은 ${maxKey} 보다 클 수 없습니다` }, 400);
+      }
+    }
+
+    const qNorm = q?.toUpperCase().replace(/[^A-Z0-9가-힣]/g, '');
+
+    let out = dataset.models.filter((m) => {
+      if (brands && !brands.includes(m.brand)) return false;
+      if (categories && !categories.includes(m.category)) return false;
+      if (ccMin !== null && (m.displacement === null || m.displacement < ccMin)) return false;
+      if (ccMax !== null && (m.displacement === null || m.displacement > ccMax)) return false;
+      if (from && (!m.firstCertifiedAt || m.firstCertifiedAt < from)) return false;
+      if (to && (!m.firstCertifiedAt || m.firstCertifiedAt > to)) return false;
+      if (status && m.status !== status) return false;
+      if (electric !== null && m.electric !== electric) return false;
+      if (fuelGrade && m.fuelGrade !== fuelGrade) return false;
+      if (emission && m.emissionStandard !== emission) return false;
+      if (seatHeightMin !== null && (m.seatHeight === null || m.seatHeight < seatHeightMin)) return false;
+      if (seatHeightMax !== null && (m.seatHeight === null || m.seatHeight > seatHeightMax)) return false;
+      if (weightMin !== null && (m.weight === null || m.weight < weightMin)) return false;
+      if (weightMax !== null && (m.weight === null || m.weight > weightMax)) return false;
+      if (cylinders?.length && !cylinders.includes(m.cylinders)) return false;
+      if (cooling && m.cooling !== cooling) return false;
+      if (fuelCapacityMin !== null && (m.fuelCapacity === null || m.fuelCapacity < fuelCapacityMin)) return false;
+      if (fuelCapacityMax !== null && (m.fuelCapacity === null || m.fuelCapacity > fuelCapacityMax)) return false;
+      if (powerMin !== null && (m.power === null || m.power < powerMin)) return false;
+      if (powerMax !== null && (m.power === null || m.power > powerMax)) return false;
+      if (qNorm) {
+        const hay = [m.nameKo, ...(m.aliases ?? [])]
+          .join('|')
+          .toUpperCase()
+          .replace(/[^A-Z0-9가-힣|]/g, '');
+        if (!hay.includes(qNorm)) return false;
+      }
+      return true;
+    });
+
+    const total = out.length;
+    out = limit === null ? out.slice(offset) : out.slice(offset, offset + limit);
+
+    return json({
+      meta: { generatedAt: dataset.meta.generatedAt, total, returned: out.length },
+      models: out,
+    });
   }
   return json({ error: 'not found', usage: '/' }, 404);
 }
@@ -204,9 +279,11 @@ export default {
       return json({ error: 'GET only' }, 405);
     }
     const url = new URL(request.url);
-    // 엣지 캐시: 키에 데이터 생성일을 넣어 재배포(데이터 갱신) 시 자연 무효화
+    // 데이터 생성일과 배포 커밋을 모두 키에 넣는다. 데이터가 같아도 API 로직만
+    // 바뀐 배포라면 이전 응답을 재사용하지 않는다.
+    const cacheVersion = env?.GIT_SHA ?? dataset.meta.generatedAt;
     const cacheKey = new Request(
-      `https://cache.moto-kr/${dataset.meta.generatedAt}${url.pathname}${url.search}`,
+      `https://cache.moto-kr/${dataset.meta.generatedAt}/${cacheVersion}${url.pathname}${url.search}`,
     );
     const cache = globalThis.caches?.default;
     if (cache) {

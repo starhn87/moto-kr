@@ -21,7 +21,7 @@ jobs:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: node scripts/fetch-kencis.mjs
       - name: build
-        run: node scripts/build.mjs && node scripts/validate.mjs
+        run: npm run check
       - name: create PR if changed
         uses: peter-evans/create-pull-request@v6
         with:
