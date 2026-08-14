@@ -7,7 +7,7 @@
 // API: https://www.data.go.kr/data/15000988/openapi.do (무료, 개발계정 월 1만 건)
 // 주의: 차종(이륜) 필터 파라미터가 없어 전량 페이징 후 CARTYPE 로 걸러낸다.
 
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, renameSync, rmSync } from 'node:fs';
 
 const KEY = process.env.DATA_GO_KR_KEY;
 if (!KEY) {
@@ -17,26 +17,67 @@ if (!KEY) {
 
 const BASE = 'https://apis.data.go.kr/1480523/Kencis/getVems';
 const ROWS = 1000;
+const MAX_ATTEMPTS = 3;
+
+const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function fetchPage(url, page) {
+  let lastError;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) {
+        const error = new Error(`HTTP ${res.status} (page ${page}, attempt ${attempt})`);
+        if (res.status !== 429 && res.status < 500) {
+          error.retryable = false;
+          throw error;
+        }
+        lastError = error;
+      } else {
+        return await res.json();
+      }
+    } catch (error) {
+      if (error?.retryable === false) throw error;
+      lastError = error;
+      if (attempt === MAX_ATTEMPTS) break;
+    }
+    if (attempt < MAX_ATTEMPTS) await wait(500 * 2 ** (attempt - 1));
+  }
+  throw lastError;
+}
 
 async function fetchAll(gubun) {
   const out = [];
   let total = null;
+  let fetched = 0;
   for (let page = 1; ; page++) {
     const url = `${BASE}?serviceKey=${KEY}&pageNo=${page}&numOfRows=${ROWS}&resultType=json&gubun=${gubun}`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`HTTP ${res.status} (page ${page})`);
-    const body = await res.json();
+    const body = await fetchPage(url, page);
     const v = body.getVems;
     if (v?.header?.code && v.header.code !== '00') {
       throw new Error(`API error: ${v.header.code} ${v.header.message}`);
     }
-    total ??= v.totalCount;
-    const items = v.item ?? [];
+    const pageTotal = Number(v?.totalCount);
+    if (!Number.isSafeInteger(pageTotal) || pageTotal < 0) {
+      throw new Error(`API totalCount 이상: ${v?.totalCount} (gubun=${gubun}, page=${page})`);
+    }
+    if (total === null) total = pageTotal;
+    if (pageTotal !== total) {
+      throw new Error(`수집 중 totalCount 변경: ${total} → ${pageTotal} (gubun=${gubun}, page=${page})`);
+    }
+    const items = Array.isArray(v.item) ? v.item : v.item ? [v.item] : [];
+    fetched += items.length;
+    if (fetched > total) {
+      throw new Error(`totalCount 초과 수집: ${fetched}/${total} (gubun=${gubun})`);
+    }
     for (const it of items) {
       if ((it.CARTYPE ?? '').includes('이륜')) out.push(it);
     }
-    process.stdout.write(`\rgubun=${gubun} ${Math.min(page * ROWS, total)}/${total} (이륜 ${out.length})`);
-    if (page * ROWS >= total || items.length < ROWS) break;
+    process.stdout.write(`\rgubun=${gubun} ${fetched}/${total} (이륜 ${out.length})`);
+    if (fetched === total) break;
+    if (items.length < ROWS) {
+      throw new Error(`페이지가 중간에 잘렸습니다: ${fetched}/${total} (gubun=${gubun}, page=${page})`);
+    }
   }
   console.log();
   return out;
@@ -63,10 +104,46 @@ function dedupe(rows) {
   });
 }
 
-const imported = dedupe(await fetchAll(1)).sort(cmp);
-writeFileSync('data/raw/kencis-import.json', JSON.stringify(imported, null, 1));
-console.log(`수입제작 이륜 ${imported.length}건 → data/raw/kencis-import.json`);
+const previousCount = (file) => {
+  try {
+    const value = JSON.parse(readFileSync(file, 'utf8'));
+    return Array.isArray(value) ? value.length : null;
+  } catch {
+    return null;
+  }
+};
 
+const assertNoUnexpectedShrink = (label, file, rows) => {
+  const previous = previousCount(file);
+  if (previous !== null && rows.length < previous && process.env.ALLOW_KENCIS_SHRINK !== '1') {
+    throw new Error(
+      `${label} 인증이 ${previous}건에서 ${rows.length}건으로 감소했습니다. ` +
+      'API 이상이 아닌 의도된 감소라면 ALLOW_KENCIS_SHRINK=1 로 다시 실행하세요.',
+    );
+  }
+};
+
+const writeAtomically = (file, rows) => {
+  const temp = `${file}.tmp-${process.pid}`;
+  try {
+    writeFileSync(temp, JSON.stringify(rows, null, 1));
+    renameSync(temp, file);
+  } catch (error) {
+    rmSync(temp, { force: true });
+    throw error;
+  }
+};
+
+// 두 API를 모두 끝까지 받은 뒤 기존 파일과 비교한다. 한쪽 수집만 성공한 상태로
+// 원본을 덮어쓰거나, 일시적인 부분 응답이 대량 삭제 PR로 이어지는 것을 막는다.
+const imported = dedupe(await fetchAll(1)).sort(cmp);
 const domestic = dedupe(await fetchAll(2)).sort(cmp);
-writeFileSync('data/raw/kencis-domestic.json', JSON.stringify(domestic, null, 1));
+
+assertNoUnexpectedShrink('수입제작', 'data/raw/kencis-import.json', imported);
+assertNoUnexpectedShrink('국내제작', 'data/raw/kencis-domestic.json', domestic);
+
+writeAtomically('data/raw/kencis-import.json', imported);
+writeAtomically('data/raw/kencis-domestic.json', domestic);
+
+console.log(`수입제작 이륜 ${imported.length}건 → data/raw/kencis-import.json`);
 console.log(`국내제작 이륜 ${domestic.length}건 → data/raw/kencis-domestic.json`);

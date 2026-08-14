@@ -6,7 +6,9 @@
   "scripts": {
     "fetch": "node scripts/fetch-kencis.mjs",
     "build": "node scripts/build.mjs",
-    "validate": "node scripts/validate.mjs"
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run build && npm run validate && npm test"
   },
   "license": "MIT"
 }

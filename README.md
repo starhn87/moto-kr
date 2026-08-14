@@ -39,6 +39,7 @@ GET /meta                                    # 데이터 생성일과 집계
 | `electric`, `status`, `q`, `limit`, `offset` | 전기 여부, 검증 상태, 검색어, 페이징 |
 
 원동기 면허(125cc 이하) 기종은 `ccMax=125`로 필터링할 수 있습니다.
+지원하지 않는 파라미터나 잘못된 숫자·날짜·enum 값은 `400` 오류를 반환합니다.
 
 정적 파일을 직접 쓰고 싶다면 CDN 경로도 있습니다: `https://cdn.jsdelivr.net/gh/starhn87/moto-kr@main/data/` 아래에 `models.json`(전문), `models.lite.json`(요약), `models.min.json`(이름 배열), `unmapped.json`(매핑이 완료되지 않은 대상 <- 기여 가능)이 있습니다.
 
@@ -128,7 +129,7 @@ GET /meta                                    # 데이터 생성일과 집계
 }
 ```
 
-`certifications`(원본 행 수)는 `모델이 보유한 인증 + unmapped + excluded`와 항상 일치합니다.
+`certifications`(원본 행 수)는 `모델이 보유한 인증 + unmapped + ambiguous + excluded`의 각 `count` 합계와 항상 일치하며 CI가 이를 검증합니다.
 
 ### 알아둘 것
 
@@ -152,8 +153,11 @@ GET /meta                                    # 데이터 생성일과 집계
 
 ```bash
 DATA_GO_KR_KEY=<공공데이터포털 인증키> npm run fetch   # 인증 전량 재수집
+# KENCIS가 실제로 행을 삭제한 것이 확인된 경우에만 ALLOW_KENCIS_SHRINK=1 추가
 npm run build      # data/models*.json 산출
 npm run validate   # 무결성 검증
+npm test           # API 입력·캐시 동작 테스트
+npm run check      # 위 세 검증을 한 번에 실행
 ```
 
 ## 📜 출처와 라이선스
@@ -161,4 +165,3 @@ npm run validate   # 무결성 검증
 - 코드: MIT
 - 인증 원본(`data/raw/`): [공공데이터포털 15000988](https://www.data.go.kr/data/15000988/openapi.do) (환경부·국립환경과학원)
 - 매핑·정제 데이터: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ko), 출처(moto-kr)를 밝히고 자유롭게 쓸 수 있습니다
-
