@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generatedAt": "2026-08-11",
+  "generatedAt": "2026-08-16",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1142,
    "verified": 984,
    "curated": 158,
-   "certifications": 4921,
-   "unmapped": 14,
+   "certifications": 4949,
+   "unmapped": 15,
    "ambiguous": 0,
    "excluded": 12
   }
@@ -503,7 +503,7 @@
     "BMW F 450 GS"
    ],
    "firstCertifiedAt": "2026-03-25",
-   "lastCertifiedAt": "2026-03-25",
+   "lastCertifiedAt": "2026-08-11",
    "certifications": [
     {
      "no": "TMC-BK-1",
@@ -517,6 +517,15 @@
     {
      "no": "TMY-BK-1",
      "date": "2026-03-25",
+     "office": "BMW Korea",
+     "vehNm": "BMW F 450 GS",
+     "vehType": "0R31",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-BK-1",
+     "date": "2026-08-11",
      "office": "BMW Korea",
      "vehNm": "BMW F 450 GS",
      "vehType": "0R31",
@@ -16672,7 +16681,7 @@
     "W230"
    ],
    "firstCertifiedAt": "2026-02-11",
-   "lastCertifiedAt": "2026-02-24",
+   "lastCertifiedAt": "2026-08-11",
    "certifications": [
     {
      "no": "TMC-DJ-1",
@@ -16704,6 +16713,24 @@
     {
      "no": "TMY-DJ-1",
      "date": "2026-02-24",
+     "office": "대전기계공업(주)",
+     "vehNm": "W230",
+     "vehType": "BJ230A",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-DJ-1",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "W230",
+     "vehType": "BJ230A",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-DJ-1",
+     "date": "2026-08-11",
      "office": "대전기계공업(주)",
      "vehNm": "W230",
      "vehType": "BJ230A",
@@ -17394,7 +17421,7 @@
     "Z500"
    ],
    "firstCertifiedAt": "2026-04-13",
-   "lastCertifiedAt": "2026-05-26",
+   "lastCertifiedAt": "2026-08-11",
    "certifications": [
     {
      "no": "SMC-DJ-1",
@@ -17426,6 +17453,33 @@
     {
      "no": "SMY-DJ-1",
      "date": "2026-05-26",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z500",
+     "vehType": "ER500F",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMC-DJ-1",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z500",
+     "vehType": "ER500E",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-DJ-1",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z500",
+     "vehType": "ER500E",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMC-DJ-1",
+     "date": "2026-08-11",
      "office": "대전기계공업(주)",
      "vehNm": "Z500",
      "vehType": "ER500F",
@@ -17900,7 +17954,7 @@
     "Z900RS SE"
    ],
    "firstCertifiedAt": "2018-01-23",
-   "lastCertifiedAt": "2024-01-26",
+   "lastCertifiedAt": "2026-08-14",
    "certifications": [
     {
      "no": "JMY-DJ-1",
@@ -18079,6 +18133,78 @@
      "office": "대전기계공업(주)",
      "vehNm": "Z900RS",
      "vehType": "ZR900K",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-DJ-4",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z900RS SE",
+     "vehType": "ZR902B",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-DJ-4",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z900RS SE",
+     "vehType": "ZR902B",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-DJ-4",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z900RS",
+     "vehType": "ZR902A",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-DJ-4",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z900RS",
+     "vehType": "ZR902A",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-DJ-4",
+     "date": "2026-08-14",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z900RS SE",
+     "vehType": "ZR902B",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-DJ-4",
+     "date": "2026-08-14",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z900RS SE",
+     "vehType": "ZR902B",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-DJ-4",
+     "date": "2026-08-14",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z900RS",
+     "vehType": "ZR902A",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-DJ-4",
+     "date": "2026-08-14",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z900RS",
+     "vehType": "ZR902A",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -18946,7 +19072,7 @@
     "ZX600R"
    ],
    "firstCertifiedAt": "2010-09-16",
-   "lastCertifiedAt": "2025-11-24",
+   "lastCertifiedAt": "2026-08-11",
    "certifications": [
     {
      "no": "AMY-CI-5",
@@ -19050,6 +19176,24 @@
     {
      "no": "RMY-DJ-1",
      "date": "2025-11-24",
+     "office": "대전기계공업(주)",
+     "vehNm": "Ninja ZX-6R",
+     "vehType": "ZX636J",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMC-DJ-1",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "Ninja ZX-6R",
+     "vehType": "ZX636J",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMY-DJ-1",
+     "date": "2026-08-11",
      "office": "대전기계공업(주)",
      "vehNm": "Ninja ZX-6R",
      "vehType": "ZX636J",
@@ -19442,7 +19586,7 @@
     "Ninja 500"
    ],
    "firstCertifiedAt": "2025-02-21",
-   "lastCertifiedAt": "2025-11-24",
+   "lastCertifiedAt": "2026-08-11",
    "certifications": [
     {
      "no": "SMC-DJ-1",
@@ -19546,6 +19690,42 @@
     {
      "no": "SMY-DJ-1",
      "date": "2025-11-24",
+     "office": "대전기계공업(주)",
+     "vehNm": "Ninja 500",
+     "vehType": "EX500J",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMC-DJ-1",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "Ninja 500",
+     "vehType": "EX500G",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-DJ-1",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "Ninja 500",
+     "vehType": "EX500G",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMC-DJ-1",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "Ninja 500",
+     "vehType": "EX500J",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-DJ-1",
+     "date": "2026-08-11",
      "office": "대전기계공업(주)",
      "vehNm": "Ninja 500",
      "vehType": "EX500J",
@@ -19698,7 +19878,7 @@
     "Meguro S1"
    ],
    "firstCertifiedAt": "2026-02-11",
-   "lastCertifiedAt": "2026-02-24",
+   "lastCertifiedAt": "2026-08-11",
    "certifications": [
     {
      "no": "TMC-DJ-1",
@@ -19730,6 +19910,24 @@
     {
      "no": "TMY-DJ-1",
      "date": "2026-02-24",
+     "office": "대전기계공업(주)",
+     "vehNm": "Meguro S1",
+     "vehType": "BJ230B",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-DJ-1",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "Meguro S1",
+     "vehType": "BJ230B",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-DJ-1",
+     "date": "2026-08-11",
      "office": "대전기계공업(주)",
      "vehNm": "Meguro S1",
      "vehType": "BJ230B",
@@ -20187,7 +20385,7 @@
     "ELIMINATOR"
    ],
    "firstCertifiedAt": "2024-12-04",
-   "lastCertifiedAt": "2025-11-24",
+   "lastCertifiedAt": "2026-08-11",
    "certifications": [
     {
      "no": "RMC-DJ-3",
@@ -20291,6 +20489,42 @@
     {
      "no": "RMY-DJ-3",
      "date": "2025-11-24",
+     "office": "대전기계공업(주)",
+     "vehNm": "ELIMINATOR",
+     "vehType": "EL450B",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMC-DJ-3",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "ELIMINATOR",
+     "vehType": "EL450A",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMY-DJ-3",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "ELIMINATOR",
+     "vehType": "EL450A",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMC-DJ-3",
+     "date": "2026-08-11",
+     "office": "대전기계공업(주)",
+     "vehNm": "ELIMINATOR",
+     "vehType": "EL450B",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMY-DJ-3",
+     "date": "2026-08-11",
      "office": "대전기계공업(주)",
      "vehNm": "ELIMINATOR",
      "vehType": "EL450B",
@@ -51392,18 +51626,18 @@
    "lastCertifiedAt": "2022-03-03",
    "certifications": [
     {
-     "no": "NDS-EV-21-08",
+     "no": "NDS-EV-21--8",
      "date": "2022-03-03",
-     "office": "(주)디에스이브이",
+     "office": "(주)이앤아이모빌리티",
      "vehNm": "카버 카고",
      "vehType": "BR1",
      "fuel": "전기(EV)",
      "gubun": "domestic"
     },
     {
-     "no": "NMY-DS-21-08",
+     "no": "NMY-DS-21--8",
      "date": "2022-03-03",
-     "office": "(주)디에스이브이",
+     "office": "(주)이앤아이모빌리티",
      "vehNm": "카버 카고",
      "vehType": "BR1",
      "fuel": "전기(EV)",
@@ -51434,18 +51668,18 @@
    "lastCertifiedAt": "2022-01-18",
    "certifications": [
     {
-     "no": "NDS-EV-21-03",
+     "no": "NDS-EV-21--3",
      "date": "2022-01-18",
-     "office": "(주)디에스이브이",
+     "office": "(주)이앤아이모빌리티",
      "vehNm": "카버 크루저",
      "vehType": "BR1",
      "fuel": "전기(EV)",
      "gubun": "domestic"
     },
     {
-     "no": "NMY-DS-21-03",
+     "no": "NMY-DS-21--3",
      "date": "2022-01-18",
-     "office": "(주)디에스이브이",
+     "office": "(주)이앤아이모빌리티",
      "vehNm": "카버 크루저",
      "vehType": "BR1",
      "fuel": "전기(EV)",
