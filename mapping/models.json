@@ -20235,5 +20235,24 @@
   "cooling": null,
   "fuelCapacity": null,
   "power": null
+ },
+ {
+  "nameKo": "에스피모빌리티 캄페온",
+  "brand": "에스피모빌리티",
+  "model": "캄페온",
+  "aliases": [
+   "캄페온",
+   "CAMPEON"
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
  }
 ]

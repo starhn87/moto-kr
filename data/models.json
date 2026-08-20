@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generatedAt": "2026-08-16",
+  "generatedAt": "2026-08-20",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
-   "models": 1142,
-   "verified": 984,
+   "models": 1143,
+   "verified": 985,
    "curated": 158,
    "certifications": 4949,
-   "unmapped": 15,
+   "unmapped": 14,
    "ambiguous": 0,
    "excluded": 12
   }
@@ -47124,6 +47124,49 @@
      "vehType": "EV-251612",
      "fuel": "전기(EV)",
      "gubun": "domestic"
+    }
+   ]
+  },
+  {
+   "nameKo": "에스피모빌리티 캄페온",
+   "brand": "에스피모빌리티",
+   "model": "캄페온",
+   "displacement": null,
+   "category": "스쿠터",
+   "electric": true,
+   "fuelGrade": null,
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": null,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "CAMPEON",
+    "캄페온"
+   ],
+   "firstCertifiedAt": "2026-08-12",
+   "lastCertifiedAt": "2026-08-12",
+   "certifications": [
+    {
+     "no": "TMEV-SP-1",
+     "date": "2026-08-12",
+     "office": "(주)에스피모빌리티",
+     "vehNm": "캄페온",
+     "vehType": "R750ZFYW",
+     "fuel": "전기(EV)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-SP-21-1",
+     "date": "2026-08-12",
+     "office": "(주)에스피모빌리티",
+     "vehNm": "캄페온",
+     "vehType": "R750ZFYW",
+     "fuel": "전기(EV)",
+     "gubun": "import"
     }
    ]
   },

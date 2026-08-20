@@ -1,25 +1,18 @@
 {
  "meta": {
-  "generatedAt": "2026-08-16",
+  "generatedAt": "2026-08-20",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
-   "models": 1142,
-   "verified": 984,
+   "models": 1143,
+   "verified": 985,
    "curated": 158,
    "certifications": 4949,
-   "unmapped": 15,
+   "unmapped": 14,
    "ambiguous": 0,
    "excluded": 12
   }
  },
  "unmapped": [
-  {
-   "vehNm": "캄페온",
-   "office": "(주)에스피모빌리티",
-   "brandHint": null,
-   "count": 2,
-   "lastDate": "2026-08-12"
-  },
   {
    "vehNm": "감바",
    "office": "(주)썬로드트레이딩",
