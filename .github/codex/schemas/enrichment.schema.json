@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["summary", "operations"],
+  "properties": {
+    "summary": { "type": "string" },
+    "operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bucket", "vehNm", "office", "action", "targetNameKo", "model",
+          "confidence", "reason", "sources"
+        ],
+        "properties": {
+          "bucket": { "enum": ["unmapped", "ambiguous"] },
+          "vehNm": { "type": "string" },
+          "office": { "type": "string" },
+          "action": { "enum": ["alias", "new", "unresolved"] },
+          "targetNameKo": { "type": ["string", "null"] },
+          "model": {
+            "anyOf": [
+              { "type": "null" },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "nameKo", "brand", "model", "aliases", "displacement", "category",
+                  "electric", "fuelGrade", "seatHeight", "weight", "cylinders",
+                  "cooling", "fuelCapacity", "power"
+                ],
+                "properties": {
+                  "nameKo": { "type": "string" },
+                  "brand": { "type": "string" },
+                  "model": { "type": "string" },
+                  "aliases": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  },
+                  "displacement": { "type": ["integer", "null"] },
+                  "category": {
+                    "type": ["string", "null"],
+                    "enum": [
+                      "스포츠", "네이키드", "크루저", "투어러", "어드벤처", "스쿠터",
+                      "언더본", "오프로드", "클래식", "미니", "3륜", "4륜", null
+                    ]
+                  },
+                  "electric": { "type": "boolean" },
+                  "fuelGrade": { "type": ["string", "null"], "enum": ["regular", "premium", null] },
+                  "seatHeight": { "type": ["integer", "null"] },
+                  "weight": { "type": ["integer", "null"] },
+                  "cylinders": { "type": ["integer", "null"], "enum": [1, 2, 3, 4, 6, null] },
+                  "cooling": { "type": ["string", "null"], "enum": ["air", "liquid", "oil", null] },
+                  "fuelCapacity": { "type": ["number", "null"] },
+                  "power": { "type": ["integer", "null"] }
+                }
+              }
+            ]
+          },
+          "confidence": { "enum": ["high", "medium", "low"] },
+          "reason": { "type": "string" },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["title", "url"],
+              "properties": {
+                "title": { "type": "string" },
+                "url": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
