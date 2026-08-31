@@ -1,18 +1,56 @@
 {
  "meta": {
-  "generatedAt": "2026-08-20",
+  "generatedAt": "2026-08-31",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1143,
    "verified": 985,
    "curated": 158,
-   "certifications": 4949,
-   "unmapped": 14,
+   "certifications": 4959,
+   "unmapped": 18,
    "ambiguous": 0,
    "excluded": 12
   }
  },
  "unmapped": [
+  {
+   "vehNm": "SPEED TWIN 1200",
+   "office": "(주)바이크코리아",
+   "brandHint": [
+    "트라이엄프",
+    "킴코"
+   ],
+   "count": 2,
+   "lastDate": "2026-08-26"
+  },
+  {
+   "vehNm": "SPEED TWIN 1200 RS",
+   "office": "(주)바이크코리아",
+   "brandHint": [
+    "트라이엄프",
+    "킴코"
+   ],
+   "count": 2,
+   "lastDate": "2026-08-26"
+  },
+  {
+   "vehNm": "CB500ZAC",
+   "office": "혼다코리아(주)",
+   "brandHint": [
+    "혼다"
+   ],
+   "count": 2,
+   "lastDate": "2026-08-25"
+  },
+  {
+   "vehNm": "CBR500ZAC",
+   "office": "혼다코리아(주)",
+   "brandHint": [
+    "혼다"
+   ],
+   "count": 2,
+   "lastDate": "2026-08-25"
+  },
   {
    "vehNm": "감바",
    "office": "(주)썬로드트레이딩",

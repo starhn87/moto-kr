@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generatedAt": "2026-08-20",
+  "generatedAt": "2026-08-31",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1143,
    "verified": 985,
    "curated": 158,
-   "certifications": 4949,
-   "unmapped": 14,
+   "certifications": 4959,
+   "unmapped": 18,
    "ambiguous": 0,
    "excluded": 12
   }
@@ -55350,10 +55350,11 @@
    "emissionStandard": "euro5",
    "status": "verified",
    "aliases": [
+    "SPEED TWIN 900",
     "Speed Twin 900"
    ],
    "firstCertifiedAt": "2022-07-01",
-   "lastCertifiedAt": "2022-07-01",
+   "lastCertifiedAt": "2026-08-25",
    "certifications": [
     {
      "no": "MMC-BI-1",
@@ -55370,6 +55371,24 @@
      "office": "(주)바이크코리아",
      "vehNm": "Speed Twin 900",
      "vehType": "DPZ",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-BI-4",
+     "date": "2026-08-25",
+     "office": "(주)바이크코리아",
+     "vehNm": "SPEED TWIN 900",
+     "vehType": "DP50",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-BI-5",
+     "date": "2026-08-25",
+     "office": "(주)바이크코리아",
+     "vehNm": "SPEED TWIN 900",
+     "vehType": "DP50",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
