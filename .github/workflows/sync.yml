@@ -1,22 +1,33 @@
-# 주 1회 KENCIS 인증 데이터를 다시 수집해 신규 인증을 감지한다.
-# 변경이 있으면 PR 을 만들어 사람이 매핑(한글 표기) 확정 후 머지한다.
+# 주 1회 KENCIS 인증을 수집한다. 신규 미매핑은 읽기 전용 Codex가 조사하고,
+# 검증된 고신뢰 제안만 결정론적 스크립트로 반영한 뒤 PR을 만든다.
 name: sync-kencis
+
 on:
   schedule:
     - cron: '0 21 * * 0' # 매주 월요일 06:00 KST
   workflow_dispatch:
+
+concurrency:
+  group: sync-kencis
+  cancel-in-progress: false
+
 jobs:
-  sync:
+  prepare:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      pull-requests: write
+      contents: read
+    outputs:
+      candidate-count: ${{ steps.candidates.outputs.count }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
-      - name: fetch
+      - name: preserve previous review list
+        run: cp data/unmapped.json "$RUNNER_TEMP/unmapped-before.json"
+      - name: fetch KENCIS with retries
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: |
@@ -42,14 +53,280 @@ jobs:
             echo "::warning::KENCIS fetch attempt ${attempt}/${max_attempts} failed; retrying in ${delay}s"
             sleep "$delay"
           done
-      - name: build
+      - name: build and validate raw sync
         run: npm run check
-      - name: create PR if changed
-        uses: peter-evans/create-pull-request@v6
+      - name: find new or changed unmapped and ambiguous names
+        id: candidates
+        run: |
+          count=$(node scripts/find-new-unmapped.mjs \
+            "$RUNNER_TEMP/unmapped-before.json" \
+            data/unmapped.json \
+            sync-candidates.json)
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+          echo "New review candidates: $count"
+      - name: upload raw sync
+        uses: actions/upload-artifact@v7
         with:
+          name: raw-sync
+          retention-days: 1
+          if-no-files-found: error
+          path: |
+            data/raw/kencis-import.json
+            data/raw/kencis-domestic.json
+            data/models.json
+            data/models.lite.json
+            data/models.min.json
+            data/unmapped.json
+            mapping/models.json
+      - name: upload AI candidates
+        uses: actions/upload-artifact@v7
+        with:
+          name: sync-candidates
+          retention-days: 1
+          if-no-files-found: error
+          path: sync-candidates.json
+
+  enrich:
+    needs: prepare
+    if: needs.prepare.outputs.candidate-count != '0'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      proposal: ${{ steps.codex.outputs.final-message }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v8
+        with:
+          name: raw-sync
+          path: .
+      - uses: actions/download-artifact@v8
+        with:
+          name: sync-candidates
+          path: .
+      # 보안 경계: 이 잡은 쓰기 토큰이 없고 Codex도 read-only다. 반드시 마지막 단계로 둔다.
+      - name: research mapping proposals
+        id: codex
+        continue-on-error: true
+        uses: openai/codex-action@v1
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          prompt-file: .github/codex/prompts/enrich-kencis.md
+          output-schema-file: .github/codex/schemas/enrichment.schema.json
+          sandbox: read-only
+          codex-args: '["--search", "--ephemeral"]'
+          effort: high
+          allow-bots: true
+
+  publish:
+    needs: [prepare, enrich]
+    if: always() && needs.prepare.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    outputs:
+      pull-request-number: ${{ steps.pr.outputs.pull-request-number }}
+      pull-request-url: ${{ steps.pr.outputs.pull-request-url }}
+      pull-request-head-sha: ${{ steps.pr.outputs.pull-request-head-sha }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v8
+        with:
+          name: raw-sync
+          path: .
+      - uses: actions/download-artifact@v8
+        with:
+          name: sync-candidates
+          path: .
+      - name: apply validated AI proposal with raw-sync fallback
+        id: apply
+        env:
+          AI_PROPOSAL: ${{ needs.enrich.outputs.proposal }}
+          CANDIDATE_COUNT: ${{ needs.prepare.outputs.candidate-count }}
+        run: |
+          cp mapping/models.json "$RUNNER_TEMP/models-before-ai.json"
+          status=not-needed
+
+          if [[ "$CANDIDATE_COUNT" != "0" ]]; then
+            if [[ -n "$AI_PROPOSAL" ]]; then
+              AI_PROPOSAL_PATH="$RUNNER_TEMP/ai-proposal.json" \
+                node -e 'require("node:fs").writeFileSync(process.env.AI_PROPOSAL_PATH, process.env.AI_PROPOSAL)'
+              if node scripts/apply-ai-mappings.mjs \
+                sync-candidates.json \
+                "$RUNNER_TEMP/ai-proposal.json" \
+                "$RUNNER_TEMP/ai-enrichment.md"; then
+                status=applied
+              else
+                cp "$RUNNER_TEMP/models-before-ai.json" mapping/models.json
+                status=fallback-invalid-proposal
+              fi
+            else
+              status=fallback-ai-unavailable
+            fi
+          fi
+
+          if ! npm run check; then
+            if [[ "$status" == "applied" ]]; then
+              echo "::warning::AI mapping failed repository checks; reverting to raw sync"
+              cp "$RUNNER_TEMP/models-before-ai.json" mapping/models.json
+              npm run check
+              status=fallback-check-failed
+              rm -f "$RUNNER_TEMP/ai-enrichment.md"
+            else
+              exit 1
+            fi
+          fi
+
+          if [[ ! -s "$RUNNER_TEMP/ai-enrichment.md" ]]; then
+            printf '%s\n' \
+              '### AI 사전 보완' \
+              '' \
+              "- 결과: ${status}" \
+              "- 신규 검토 후보: ${CANDIDATE_COUNT}건" \
+              > "$RUNNER_TEMP/ai-enrichment.md"
+          fi
+
+          rm -f sync-candidates.json
+          unexpected=$(git status --porcelain | awk '{print $2}' | grep -Ev \
+            '^(mapping/models\.json|data/raw/kencis-(import|domestic)\.json|data/models(\.lite|\.min)?\.json|data/unmapped\.json)$' || true)
+          if [[ -n "$unexpected" ]]; then
+            echo "::error::Unexpected changed paths:"
+            echo "$unexpected"
+            exit 1
+          fi
+
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+      - name: compose pull request body
+        env:
+          AI_STATUS: ${{ steps.apply.outputs.status }}
+        run: |
+          {
+            echo '주간 자동 수집으로 감지된 KENCIS 인증 데이터 변경입니다.'
+            echo
+            cat "$RUNNER_TEMP/ai-enrichment.md"
+            echo
+            echo "자동 보완 상태: \`$AI_STATUS\`"
+            echo
+            echo 'PR 생성 후 별도의 읽기 전용 AI 검증이 실제 HEAD를 다시 확인하고 상태 코멘트를 남깁니다.'
+          } > "$RUNNER_TEMP/pr-body.md"
+      - name: create or update sync PR
+        id: pr
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ github.token }}
           branch: sync/kencis
+          delete-branch: true
           title: 'sync: 신규 KENCIS 인증 반영'
-          commit-message: 'sync: refresh KENCIS certification data'
-          body: |
-            주간 자동 수집으로 감지된 인증 데이터 변경입니다.
-            `data/unmapped.json` 에 새 차명이 늘었다면 `mapping/models.json` 에 한글 표기를 추가해 주세요.
+          commit-message: |
+            sync: refresh KENCIS certification data
+
+            Co-authored-by: Codex <noreply@openai.com>
+          author: 'starhn87 <36434219+starhn87@users.noreply.github.com>'
+          committer: 'starhn87 <36434219+starhn87@users.noreply.github.com>'
+          body-path: ${{ runner.temp }}/pr-body.md
+          add-paths: |
+            mapping/models.json
+            data/raw/kencis-import.json
+            data/raw/kencis-domestic.json
+            data/models.json
+            data/models.lite.json
+            data/models.min.json
+            data/unmapped.json
+
+  review:
+    needs: publish
+    if: needs.publish.outputs.pull-request-number != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      result: ${{ steps.codex.outputs.final-message }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ needs.publish.outputs.pull-request-head-sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      # 보안 경계: 생성된 PR HEAD를 읽기만 하며 이 잡은 쓰기 토큰이 없다. 반드시 마지막 단계로 둔다.
+      - name: independently review sync PR
+        id: codex
+        continue-on-error: true
+        uses: openai/codex-action@v1
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          prompt-file: .github/codex/prompts/review-kencis.md
+          output-schema-file: .github/codex/schemas/review.schema.json
+          sandbox: read-only
+          codex-args: '["--search", "--ephemeral"]'
+          effort: medium
+          allow-bots: true
+
+  comment:
+    needs: [publish, review]
+    if: always() && needs.publish.outputs.pull-request-number != ''
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: create or update AI verdict comment
+        uses: actions/github-script@v9
+        env:
+          PR_NUMBER: ${{ needs.publish.outputs.pull-request-number }}
+          REVIEW_JSON: ${{ needs.review.outputs.result }}
+          REVIEW_JOB_RESULT: ${{ needs.review.result }}
+        with:
+          script: |
+            const marker = '<!-- codex-kencis-sync-review -->';
+            const number = Number(process.env.PR_NUMBER);
+            let body;
+
+            try {
+              if (process.env.REVIEW_JOB_RESULT !== 'success' || !process.env.REVIEW_JSON) {
+                throw new Error('AI review job did not return a result');
+              }
+              const review = JSON.parse(process.env.REVIEW_JSON);
+              const ready = review.verdict === 'ready';
+              const findings = review.findings.length
+                ? review.findings.map((item) => `- **${item.severity} · ${item.title}** — ${item.detail}`).join('\n')
+                : '- 조치가 필요한 발견 사항 없음';
+              const checks = review.checks.length
+                ? review.checks.map((item) => `- ${item}`).join('\n')
+                : '- 기록된 검증 없음';
+              body = `${marker}\n## ${ready ? '✅ AI 검증: 이대로 머지 가능' : '⚠️ AI 검증: 추가 조치 필요'}\n\n${review.summary}\n\n### 발견 사항\n\n${findings}\n\n### 확인 내용\n\n${checks}`;
+            } catch (error) {
+              body = `${marker}\n## ⚠️ AI 검증을 완료하지 못함\n\n자동 검증 결과를 만들지 못했습니다. 이 PR은 수동 확인 후 머지해 주세요.\n\n- 사유: ${error.message}`;
+            }
+
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: number,
+              per_page: 100,
+            });
+            const previous = comments.find((comment) =>
+              comment.user?.login === 'github-actions[bot]' && comment.body?.includes(marker),
+            );
+
+            if (previous) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: previous.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: number,
+                body,
+              });
+            }
