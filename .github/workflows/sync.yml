@@ -19,7 +19,29 @@ jobs:
       - name: fetch
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
-        run: node scripts/fetch-kencis.mjs
+        run: |
+          retry_delays=(300 900 1800)
+          max_attempts=$((${#retry_delays[@]} + 1))
+
+          for ((attempt = 1; attempt <= max_attempts; attempt++)); do
+            echo "::group::KENCIS fetch attempt ${attempt}/${max_attempts}"
+            if node scripts/fetch-kencis.mjs; then
+              echo "::endgroup::"
+              exit 0
+            else
+              status=$?
+            fi
+            echo "::endgroup::"
+
+            if ((attempt == max_attempts)); then
+              echo "::error::KENCIS fetch failed after ${max_attempts} attempts"
+              exit "$status"
+            fi
+
+            delay=${retry_delays[$((attempt - 1))]}
+            echo "::warning::KENCIS fetch attempt ${attempt}/${max_attempts} failed; retrying in ${delay}s"
+            sleep "$delay"
+          done
       - name: build
         run: npm run check
       - name: create PR if changed

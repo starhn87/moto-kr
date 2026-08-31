@@ -17,9 +17,17 @@ if (!KEY) {
 
 const BASE = 'https://apis.data.go.kr/1480523/Kencis/getVems';
 const ROWS = 1000;
-const MAX_ATTEMPTS = 3;
+const MAX_ATTEMPTS = 5;
+const RETRY_BASE_MS = 2_000;
+const RETRY_MAX_MS = 30_000;
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+function describeError(error) {
+  const cause = error?.cause;
+  if (cause?.code) return `${cause.code}: ${cause.message}`;
+  return error?.message ?? String(error);
+}
 
 async function fetchPage(url, page) {
   let lastError;
@@ -41,7 +49,14 @@ async function fetchPage(url, page) {
       lastError = error;
       if (attempt === MAX_ATTEMPTS) break;
     }
-    if (attempt < MAX_ATTEMPTS) await wait(500 * 2 ** (attempt - 1));
+    if (attempt < MAX_ATTEMPTS) {
+      const delay = Math.min(RETRY_BASE_MS * 2 ** (attempt - 1), RETRY_MAX_MS);
+      console.warn(
+        `KENCIS 요청 실패 (page=${page}, attempt=${attempt}/${MAX_ATTEMPTS}): ` +
+          `${describeError(lastError)} — ${delay / 1000}초 후 재시도`,
+      );
+      await wait(delay);
+    }
   }
   throw lastError;
 }
