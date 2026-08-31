@@ -3,11 +3,11 @@
   "generatedAt": "2026-08-31",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
-   "models": 1143,
-   "verified": 985,
+   "models": 1145,
+   "verified": 987,
    "curated": 158,
    "certifications": 4959,
-   "unmapped": 18,
+   "unmapped": 14,
    "ambiguous": 0,
    "excluded": 12
   }
@@ -55280,11 +55280,13 @@
    "emissionStandard": "euro5",
    "status": "verified",
    "aliases": [
+    "SPEED TWIN 1200",
+    "SPEED TWIN 1200 RS",
     "Speed Twin",
     "Speed Twin Breitling Edition"
    ],
    "firstCertifiedAt": "2021-08-02",
-   "lastCertifiedAt": "2023-12-27",
+   "lastCertifiedAt": "2026-08-26",
    "certifications": [
     {
      "no": "MMC-BI-9",
@@ -55328,6 +55330,42 @@
      "office": "(주)바이크코리아",
      "vehNm": "Speed Twin",
      "vehType": "DD4",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-BI-5",
+     "date": "2026-08-26",
+     "office": "(주)바이크코리아",
+     "vehNm": "SPEED TWIN 1200 RS",
+     "vehType": "DH50",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-BI-6",
+     "date": "2026-08-26",
+     "office": "(주)바이크코리아",
+     "vehNm": "SPEED TWIN 1200 RS",
+     "vehType": "DH50",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-BI-5",
+     "date": "2026-08-26",
+     "office": "(주)바이크코리아",
+     "vehNm": "SPEED TWIN 1200",
+     "vehType": "DD50",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-BI-6",
+     "date": "2026-08-26",
+     "office": "(주)바이크코리아",
+     "vehNm": "SPEED TWIN 1200",
+     "vehType": "DD50",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -66073,6 +66111,48 @@
    ]
   },
   {
+   "nameKo": "혼다 CB500 SUPER FOUR",
+   "brand": "혼다",
+   "model": "CB500 SUPER FOUR",
+   "displacement": 502,
+   "category": "네이키드",
+   "electric": false,
+   "fuelGrade": null,
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 4,
+   "cooling": "liquid",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "CB500ZAC"
+   ],
+   "firstCertifiedAt": "2026-08-25",
+   "lastCertifiedAt": "2026-08-25",
+   "certifications": [
+    {
+     "no": "TMC-HK-1",
+     "date": "2026-08-25",
+     "office": "혼다코리아(주)",
+     "vehNm": "CB500ZAC",
+     "vehType": "PC79",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-HK-1",
+     "date": "2026-08-25",
+     "office": "혼다코리아(주)",
+     "vehNm": "CB500ZAC",
+     "vehType": "PC79",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "혼다 CB500F",
    "brand": "혼다",
    "model": "CB500F",
@@ -67405,6 +67485,48 @@
      "office": "혼다코리아(주)",
      "vehNm": "CBR500RAC",
      "vehType": "PC70",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "혼다 CBR500R FOUR",
+   "brand": "혼다",
+   "model": "CBR500R FOUR",
+   "displacement": 502,
+   "category": "스포츠",
+   "electric": false,
+   "fuelGrade": null,
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": 4,
+   "cooling": "liquid",
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "CBR500ZAC"
+   ],
+   "firstCertifiedAt": "2026-08-25",
+   "lastCertifiedAt": "2026-08-25",
+   "certifications": [
+    {
+     "no": "TMC-HK-1",
+     "date": "2026-08-25",
+     "office": "혼다코리아(주)",
+     "vehNm": "CBR500ZAC",
+     "vehType": "PC79",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-HK-1",
+     "date": "2026-08-25",
+     "office": "혼다코리아(주)",
+     "vehNm": "CBR500ZAC",
+     "vehType": "PC79",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }

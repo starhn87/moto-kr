@@ -8722,6 +8722,8 @@
   "brand": "트라이엄프",
   "model": "스피드트윈1200",
   "aliases": [
+   "SPEED TWIN 1200",
+   "SPEED TWIN 1200 RS",
    "Speed Twin",
    "Speed Twin Breitling Edition"
   ],
@@ -11426,6 +11428,11 @@
   "nameKo": "혼다 CBR500R",
   "brand": "혼다",
   "model": "CBR500R",
+  "aliases": [
+   "CBR500R",
+   "CBR500RA",
+   "CBR500RAC"
+  ],
   "displacement": 471,
   "category": "스포츠",
   "electric": false,
@@ -20252,6 +20259,42 @@
   "weight": null,
   "cylinders": null,
   "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 CB500 SUPER FOUR",
+  "brand": "혼다",
+  "model": "CB500 SUPER FOUR",
+  "aliases": [
+   "CB500ZAC"
+  ],
+  "displacement": 502,
+  "category": "네이키드",
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 4,
+  "cooling": "liquid",
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
+  "nameKo": "혼다 CBR500R FOUR",
+  "brand": "혼다",
+  "model": "CBR500R FOUR",
+  "aliases": [
+   "CBR500ZAC"
+  ],
+  "displacement": 502,
+  "category": "스포츠",
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": 4,
+  "cooling": "liquid",
   "fuelCapacity": null,
   "power": null
  }
