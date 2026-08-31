@@ -138,6 +138,17 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 22
+      - name: preserve base data for PR summary
+        run: |
+          mkdir -p \
+            "$RUNNER_TEMP/sync-base/data/raw" \
+            "$RUNNER_TEMP/sync-base/data" \
+            "$RUNNER_TEMP/sync-base/mapping"
+          cp data/raw/kencis-import.json "$RUNNER_TEMP/sync-base/data/raw/kencis-import.json"
+          cp data/raw/kencis-domestic.json "$RUNNER_TEMP/sync-base/data/raw/kencis-domestic.json"
+          cp data/models.json "$RUNNER_TEMP/sync-base/data/models.json"
+          cp data/unmapped.json "$RUNNER_TEMP/sync-base/data/unmapped.json"
+          cp mapping/models.json "$RUNNER_TEMP/sync-base/mapping/models.json"
       - uses: actions/download-artifact@v8
         with:
           name: raw-sync
@@ -204,12 +215,20 @@ jobs:
           fi
 
           echo "status=$status" >> "$GITHUB_OUTPUT"
+      - name: summarize actual data changes
+        run: |
+          node scripts/summarize-sync.mjs \
+            "$RUNNER_TEMP/sync-base" \
+            . \
+            "$RUNNER_TEMP/sync-summary.md"
       - name: compose pull request body
         env:
           AI_STATUS: ${{ steps.apply.outputs.status }}
         run: |
           {
             echo '주간 자동 수집으로 감지된 KENCIS 인증 데이터 변경입니다.'
+            echo
+            cat "$RUNNER_TEMP/sync-summary.md"
             echo
             cat "$RUNNER_TEMP/ai-enrichment.md"
             echo
