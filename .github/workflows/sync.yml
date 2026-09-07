@@ -1,5 +1,5 @@
-# 매주 월요일 오후 KENCIS 인증 수집을 시도한다. 앞선 복구 슬롯의 API 장애는
-# 경고로 남기고, 마지막 슬롯까지 실패할 때만 워크플로를 실패 처리한다.
+# 매주 월요일 오후 KENCIS 인증 수집을 시도한다. 한 슬롯이 성공하면 이후 슬롯은
+# 건너뛰고, 앞선 슬롯의 API 장애는 마지막 슬롯까지 복구 기회를 남긴다.
 name: sync-kencis
 
 on:
@@ -17,6 +17,7 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     permissions:
+      actions: read
       contents: read
     outputs:
       fetch-succeeded: ${{ steps.fetch.outputs.succeeded }}
@@ -25,12 +26,70 @@ jobs:
       - uses: actions/checkout@v7
         with:
           persist-credentials: false
+      - name: check earlier successful sync slot
+        id: recovery
+        uses: actions/github-script@v9
+        with:
+          script: |
+            if (context.eventName !== 'schedule') {
+              core.setOutput('should-run', 'true');
+              return;
+            }
+
+            const { pathToFileURL } = require('node:url');
+            const recovery = await import(pathToFileURL(
+              `${process.env.GITHUB_WORKSPACE}/scripts/sync-recovery.mjs`,
+            ).href);
+
+            try {
+              const current = await github.rest.actions.getWorkflowRun({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                run_id: context.runId,
+              });
+              const recoveryDate = recovery.kstDate(current.data.created_at);
+              const runs = await github.paginate(github.rest.actions.listWorkflowRuns, {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                workflow_id: 'sync.yml',
+                status: 'completed',
+                per_page: 100,
+              });
+
+              for (const run of runs) {
+                if (!recovery.isPriorSyncCandidate(run, context.runId, recoveryDate)) continue;
+
+                const jobs = await github.paginate(github.rest.actions.listJobsForWorkflowRun, {
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  run_id: run.id,
+                  filter: 'latest',
+                  per_page: 100,
+                });
+                if (!recovery.hasValidatedSync(jobs)) continue;
+
+                core.setOutput('should-run', 'false');
+                core.notice(`오늘 동기화가 이미 성공해 이 복구 슬롯을 건너뜁니다: ${run.html_url}`);
+                await core.summary
+                  .addHeading('KENCIS 동기화 생략')
+                  .addRaw(`오늘 성공한 [이전 실행 #${run.run_number}](${run.html_url})이 있어 중복 수집을 건너뜁니다.`)
+                  .write();
+                return;
+              }
+            } catch (error) {
+              core.warning(`이전 실행 확인 실패; 동기화를 계속합니다: ${error.message}`);
+            }
+
+            core.setOutput('should-run', 'true');
       - uses: actions/setup-node@v7
+        if: steps.recovery.outputs.should-run == 'true'
         with:
           node-version: 22
       - name: preserve previous review list
+        if: steps.recovery.outputs.should-run == 'true'
         run: cp data/unmapped.json "$RUNNER_TEMP/unmapped-before.json"
       - name: fetch KENCIS with short retries
+        if: steps.recovery.outputs.should-run == 'true'
         id: fetch
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
