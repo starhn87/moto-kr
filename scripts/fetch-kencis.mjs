@@ -17,7 +17,7 @@ if (!KEY) {
 
 const BASE = 'https://apis.data.go.kr/1480523/Kencis/getVems';
 const ROWS = 1000;
-const MAX_ATTEMPTS = 5;
+const MAX_ATTEMPTS = 3;
 const RETRY_BASE_MS = 2_000;
 const RETRY_MAX_MS = 30_000;
 
