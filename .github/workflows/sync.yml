@@ -1,10 +1,12 @@
-# 주 1회 KENCIS 인증을 수집한다. 신규 미매핑은 읽기 전용 Codex가 조사하고,
-# 검증된 고신뢰 제안만 결정론적 스크립트로 반영한 뒤 PR을 만든다.
+# 매주 월요일 오후 KENCIS 인증 수집을 시도한다. 앞선 복구 슬롯의 API 장애는
+# 경고로 남기고, 마지막 슬롯까지 실패할 때만 워크플로를 실패 처리한다.
 name: sync-kencis
 
 on:
   schedule:
-    - cron: '0 21 * * 0' # 매주 월요일 06:00 KST
+    - cron: '17 4 * * 1' # 매주 월요일 13:17 KST
+    - cron: '17 7 * * 1' # 매주 월요일 16:17 KST
+    - cron: '17 10 * * 1' # 매주 월요일 19:17 KST (최종 시도)
   workflow_dispatch:
 
 concurrency:
@@ -17,6 +19,7 @@ jobs:
     permissions:
       contents: read
     outputs:
+      fetch-succeeded: ${{ steps.fetch.outputs.succeeded }}
       candidate-count: ${{ steps.candidates.outputs.count }}
     steps:
       - uses: actions/checkout@v7
@@ -27,35 +30,41 @@ jobs:
           node-version: 22
       - name: preserve previous review list
         run: cp data/unmapped.json "$RUNNER_TEMP/unmapped-before.json"
-      - name: fetch KENCIS with retries
+      - name: fetch KENCIS with short retries
+        id: fetch
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+          EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+          FINAL_SCHEDULE: '17 10 * * 1'
         run: |
-          retry_delays=(300 900 1800)
-          max_attempts=$((${#retry_delays[@]} + 1))
+          if node scripts/fetch-kencis.mjs; then
+            echo "succeeded=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          else
+            status=$?
+          fi
 
-          for ((attempt = 1; attempt <= max_attempts; attempt++)); do
-            echo "::group::KENCIS fetch attempt ${attempt}/${max_attempts}"
-            if node scripts/fetch-kencis.mjs; then
-              echo "::endgroup::"
-              exit 0
-            else
-              status=$?
-            fi
-            echo "::endgroup::"
+          echo "succeeded=false" >> "$GITHUB_OUTPUT"
+          if [[ "$EVENT_NAME" == "schedule" && "$SCHEDULE" != "$FINAL_SCHEDULE" ]]; then
+            echo "::warning::KENCIS API 연결 실패; 다음 복구 슬롯에서 다시 시도합니다."
+            {
+              echo '## KENCIS 동기화 연기'
+              echo
+              echo "- 예약: \`$SCHEDULE\`"
+              echo '- 결과: 공공데이터 API 연결 실패'
+              echo '- 조치: 이번 실행의 빌드·AI·PR 생성을 건너뛰고 다음 복구 슬롯에서 재시도'
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
 
-            if ((attempt == max_attempts)); then
-              echo "::error::KENCIS fetch failed after ${max_attempts} attempts"
-              exit "$status"
-            fi
-
-            delay=${retry_delays[$((attempt - 1))]}
-            echo "::warning::KENCIS fetch attempt ${attempt}/${max_attempts} failed; retrying in ${delay}s"
-            sleep "$delay"
-          done
+          echo "::error::KENCIS API 연결이 최종 시도까지 실패했습니다."
+          exit "$status"
       - name: build and validate raw sync
+        if: steps.fetch.outputs.succeeded == 'true'
         run: npm run check
       - name: find new or changed unmapped and ambiguous names
+        if: steps.fetch.outputs.succeeded == 'true'
         id: candidates
         run: |
           count=$(node scripts/find-new-unmapped.mjs \
@@ -65,6 +74,7 @@ jobs:
           echo "count=$count" >> "$GITHUB_OUTPUT"
           echo "New review candidates: $count"
       - name: upload raw sync
+        if: steps.fetch.outputs.succeeded == 'true'
         uses: actions/upload-artifact@v7
         with:
           name: raw-sync
@@ -79,6 +89,7 @@ jobs:
             data/unmapped.json
             mapping/models.json
       - name: upload AI candidates
+        if: steps.fetch.outputs.succeeded == 'true'
         uses: actions/upload-artifact@v7
         with:
           name: sync-candidates
@@ -88,7 +99,7 @@ jobs:
 
   enrich:
     needs: prepare
-    if: needs.prepare.outputs.candidate-count != '0'
+    if: needs.prepare.outputs.fetch-succeeded == 'true' && needs.prepare.outputs.candidate-count != '0'
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -122,7 +133,7 @@ jobs:
 
   publish:
     needs: [prepare, enrich]
-    if: always() && needs.prepare.result == 'success'
+    if: always() && needs.prepare.result == 'success' && needs.prepare.outputs.fetch-succeeded == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: write
