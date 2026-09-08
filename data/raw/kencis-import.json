@@ -68383,5 +68383,35 @@
   "OFFICE_NM": "(주)바이크코리아",
   "VEH_NM": "SPEED TWIN 1200",
   "VEH_TYPE": "DD50"
+ },
+ {
+  "CARTYPE": "이륜",
+  "EMIS_CERTI_NO": null,
+  "EMIS_CERTI_DATE": null,
+  "FUELTYPE": "휘발유(Gasoline)",
+  "GUBUN1": "배출",
+  "GUBUN2": "소음",
+  "MUSTARD": null,
+  "MUSTARD2": "2018년 기준",
+  "NOISE_CERTI_DATE": "2026/09/02",
+  "NOISE_CERTI_NO": "TMC-HD-2",
+  "OFFICE_NM": "(유)기흥모터스",
+  "VEH_NM": "Harley-Davidson FLHLTSE",
+  "VEH_TYPE": "FLHLTSE"
+ },
+ {
+  "CARTYPE": "이륜",
+  "EMIS_CERTI_NO": "TMY-HD-2",
+  "EMIS_CERTI_DATE": "2026/09/02",
+  "FUELTYPE": "휘발유(Gasoline)",
+  "GUBUN1": "배출",
+  "GUBUN2": "소음",
+  "MUSTARD": "2020년 1월 기준",
+  "MUSTARD2": null,
+  "NOISE_CERTI_DATE": null,
+  "NOISE_CERTI_NO": null,
+  "OFFICE_NM": "(유)기흥모터스",
+  "VEH_NM": "Harley-Davidson FLHLTSE",
+  "VEH_TYPE": "FLHLTSE"
  }
 ]
