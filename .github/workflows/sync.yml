@@ -186,7 +186,7 @@ jobs:
           prompt-file: .github/codex/prompts/enrich-kencis.md
           output-schema-file: .github/codex/schemas/enrichment.schema.json
           sandbox: read-only
-          codex-args: '["--search", "--ephemeral"]'
+          codex-args: '["-c", "web_search=\"live\"", "--ephemeral"]'
           effort: high
           allow-bots: true
 
@@ -354,7 +354,7 @@ jobs:
           prompt-file: .github/codex/prompts/review-kencis.md
           output-schema-file: .github/codex/schemas/review.schema.json
           sandbox: read-only
-          codex-args: '["--search", "--ephemeral"]'
+          codex-args: '["-c", "web_search=\"live\"", "--ephemeral"]'
           effort: medium
           allow-bots: true
 
