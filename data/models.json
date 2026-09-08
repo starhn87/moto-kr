@@ -3,11 +3,11 @@
   "generatedAt": "2026-09-08",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
-   "models": 1145,
-   "verified": 987,
+   "models": 1146,
+   "verified": 988,
    "curated": 158,
    "certifications": 4961,
-   "unmapped": 15,
+   "unmapped": 14,
    "ambiguous": 0,
    "excluded": 12
   }
@@ -59728,6 +59728,48 @@
      "office": "(유)기흥모터스",
      "vehNm": "Harley-Davidson FLHXSE",
      "vehType": "FLHXSE",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "할리데이비슨 CVO 스트리트글라이드 3 리미티드",
+   "brand": "할리데이비슨",
+   "model": "CVO 스트리트글라이드 3 리미티드",
+   "displacement": 1977,
+   "category": "3륜",
+   "electric": false,
+   "fuelGrade": "premium",
+   "seatHeight": 735,
+   "weight": 582,
+   "cylinders": 2,
+   "cooling": "liquid",
+   "fuelCapacity": 22.7,
+   "power": 115,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "Harley-Davidson FLHLTSE"
+   ],
+   "firstCertifiedAt": "2026-09-02",
+   "lastCertifiedAt": "2026-09-02",
+   "certifications": [
+    {
+     "no": "TMC-HD-2",
+     "date": "2026-09-02",
+     "office": "(유)기흥모터스",
+     "vehNm": "Harley-Davidson FLHLTSE",
+     "vehType": "FLHLTSE",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-HD-2",
+     "date": "2026-09-02",
+     "office": "(유)기흥모터스",
+     "vehNm": "Harley-Davidson FLHLTSE",
+     "vehType": "FLHLTSE",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }

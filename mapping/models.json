@@ -10599,6 +10599,24 @@
   "power": 115
  },
  {
+  "nameKo": "할리데이비슨 CVO 스트리트글라이드 3 리미티드",
+  "brand": "할리데이비슨",
+  "model": "CVO 스트리트글라이드 3 리미티드",
+  "aliases": [
+   "Harley-Davidson FLHLTSE"
+  ],
+  "displacement": 1977,
+  "category": "3륜",
+  "electric": false,
+  "fuelGrade": "premium",
+  "seatHeight": 735,
+  "weight": 582,
+  "cylinders": 2,
+  "cooling": "liquid",
+  "fuelCapacity": 22.7,
+  "power": 115
+ },
+ {
   "nameKo": "할리데이비슨 CVO 스트리트글라이드 리미티드",
   "brand": "할리데이비슨",
   "model": "CVO 스트리트글라이드 리미티드",
