@@ -31,56 +31,11 @@ jobs:
         uses: actions/github-script@v9
         with:
           script: |
-            if (context.eventName !== 'schedule') {
-              core.setOutput('should-run', 'true');
-              return;
-            }
-
             const { pathToFileURL } = require('node:url');
-            const recovery = await import(pathToFileURL(
-              `${process.env.GITHUB_WORKSPACE}/scripts/sync-recovery.mjs`,
+            const workflow = await import(pathToFileURL(
+              `${process.env.GITHUB_WORKSPACE}/scripts/sync-workflow.mjs`,
             ).href);
-
-            try {
-              const current = await github.rest.actions.getWorkflowRun({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                run_id: context.runId,
-              });
-              const recoveryDate = recovery.kstDate(current.data.created_at);
-              const runs = await github.paginate(github.rest.actions.listWorkflowRuns, {
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                workflow_id: 'sync.yml',
-                status: 'completed',
-                per_page: 100,
-              });
-
-              for (const run of runs) {
-                if (!recovery.isPriorSyncCandidate(run, context.runId, recoveryDate)) continue;
-
-                const jobs = await github.paginate(github.rest.actions.listJobsForWorkflowRun, {
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  run_id: run.id,
-                  filter: 'latest',
-                  per_page: 100,
-                });
-                if (!recovery.hasValidatedSync(jobs)) continue;
-
-                core.setOutput('should-run', 'false');
-                core.notice(`오늘 동기화가 이미 성공해 이 복구 슬롯을 건너뜁니다: ${run.html_url}`);
-                await core.summary
-                  .addHeading('KENCIS 동기화 생략')
-                  .addRaw(`오늘 성공한 [이전 실행 #${run.run_number}](${run.html_url})이 있어 중복 수집을 건너뜁니다.`)
-                  .write();
-                return;
-              }
-            } catch (error) {
-              core.warning(`이전 실행 확인 실패; 동기화를 계속합니다: ${error.message}`);
-            }
-
-            core.setOutput('should-run', 'true');
+            await workflow.checkEarlierSuccessfulSync({ github, context, core });
       - uses: actions/setup-node@v7
         if: steps.recovery.outputs.should-run == 'true'
         with:
@@ -295,17 +250,11 @@ jobs:
         env:
           AI_STATUS: ${{ steps.apply.outputs.status }}
         run: |
-          {
-            echo '주간 자동 수집으로 감지된 KENCIS 인증 데이터 변경입니다.'
-            echo
-            cat "$RUNNER_TEMP/sync-summary.md"
-            echo
-            cat "$RUNNER_TEMP/ai-enrichment.md"
-            echo
-            echo "자동 보완 상태: \`$AI_STATUS\`"
-            echo
-            echo 'PR 생성 후 별도의 읽기 전용 AI 검증이 실제 HEAD를 다시 확인하고 상태 코멘트를 남깁니다.'
-          } > "$RUNNER_TEMP/pr-body.md"
+          node scripts/sync-workflow.mjs \
+            "$RUNNER_TEMP/sync-summary.md" \
+            "$RUNNER_TEMP/ai-enrichment.md" \
+            "$AI_STATUS" \
+            "$RUNNER_TEMP/pr-body.md"
       - name: create or update sync PR
         id: pr
         uses: peter-evans/create-pull-request@v8
@@ -373,49 +322,14 @@ jobs:
           REVIEW_JOB_RESULT: ${{ needs.review.result }}
         with:
           script: |
-            const marker = '<!-- codex-kencis-sync-review -->';
-            const number = Number(process.env.PR_NUMBER);
-            let body;
-
-            try {
-              if (process.env.REVIEW_JOB_RESULT !== 'success' || !process.env.REVIEW_JSON) {
-                throw new Error('AI review job did not return a result');
-              }
-              const review = JSON.parse(process.env.REVIEW_JSON);
-              const ready = review.verdict === 'ready';
-              const findings = review.findings.length
-                ? review.findings.map((item) => `- **${item.severity} · ${item.title}** — ${item.detail}`).join('\n')
-                : '- 조치가 필요한 발견 사항 없음';
-              const checks = review.checks.length
-                ? review.checks.map((item) => `- ${item}`).join('\n')
-                : '- 기록된 검증 없음';
-              body = `${marker}\n## ${ready ? '✅ AI 검증: 이대로 머지 가능' : '⚠️ AI 검증: 추가 조치 필요'}\n\n${review.summary}\n\n### 발견 사항\n\n${findings}\n\n### 확인 내용\n\n${checks}`;
-            } catch (error) {
-              body = `${marker}\n## ⚠️ AI 검증을 완료하지 못함\n\n자동 검증 결과를 만들지 못했습니다. 이 PR은 수동 확인 후 머지해 주세요.\n\n- 사유: ${error.message}`;
-            }
-
-            const comments = await github.paginate(github.rest.issues.listComments, {
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: number,
-              per_page: 100,
+            const { pathToFileURL } = require('node:url');
+            const workflow = await import(pathToFileURL(
+              `${process.env.GITHUB_WORKSPACE}/scripts/sync-workflow.mjs`,
+            ).href);
+            await workflow.upsertReviewComment({
+              github,
+              context,
+              pullRequestNumber: Number(process.env.PR_NUMBER),
+              reviewJson: process.env.REVIEW_JSON,
+              reviewJobResult: process.env.REVIEW_JOB_RESULT,
             });
-            const previous = comments.find((comment) =>
-              comment.user?.login === 'github-actions[bot]' && comment.body?.includes(marker),
-            );
-
-            if (previous) {
-              await github.rest.issues.updateComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                comment_id: previous.id,
-                body,
-              });
-            } else {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: number,
-                body,
-              });
-            }
