@@ -1,6 +1,17 @@
 // 매핑·산출물 무결성 검증 (CI 에서 실행)
 import { readFileSync } from 'node:fs';
 
+import {
+  isAllowedCategory,
+  isAllowedCooling,
+  isAllowedCylinderCount,
+  isAllowedFuelGrade,
+  isCanonicalModelName,
+  isPositiveIntegerOrNull,
+  isPositiveNumberOrNull,
+  normalizeVehicleName,
+} from '../lib/model-rules.mjs';
+
 let fail = 0;
 const err = (m) => { console.error('✗ ' + m); fail++; };
 const load = (file) => JSON.parse(readFileSync(file, 'utf8'));
@@ -14,18 +25,6 @@ const lite = load('data/models.lite.json');
 const min = load('data/models.min.json');
 const review = load('data/unmapped.json');
 
-// 3륜·4륜은 차체 형태 분류다 — 이륜차 인증을 받지만 바퀴가 셋(화물 삼륜 등)
-// 또는 넷(ATV, 사이클카트)인 차종이라 나머지 장르 분류로는 표현할 수 없다.
-const CATEGORIES = new Set([
-  '스포츠', '네이키드', '크루저', '투어러', '어드벤처', '스쿠터',
-  '언더본', '오프로드', '클래식', '미니', '3륜', '4륜',
-]);
-const ROMAN_BASE = 0x2160;
-const norm = (s) =>
-  s.toUpperCase()
-    .replace(/[Ⅰ-Ⅻ]/g, (c) => String(c.codePointAt(0) - ROMAN_BASE + 1))
-    .replace(/[^A-Z0-9가-힣]/g, '');
-
 const seen = new Set();
 const aliasOwners = new Map();
 for (const s of seed) {
@@ -35,26 +34,25 @@ for (const s of seed) {
     continue;
   }
   // 단일어 상품(브랜드=제품명, 예: 플레타)은 nameKo === brand === model 을 허용
-  const single = s.nameKo === s.brand && s.model === s.brand;
-  if (!single && s.nameKo !== `${s.brand} ${s.model}`) err(`nameKo 불일치: ${s.nameKo}`);
+  if (!isCanonicalModelName(s)) err(`nameKo 불일치: ${s.nameKo}`);
   if (seen.has(s.nameKo)) err(`중복: ${s.nameKo}`);
   seen.add(s.nameKo);
-  if (s.category != null && !CATEGORIES.has(s.category)) err(`허용 밖 category: ${s.nameKo} (${s.category})`);
+  if (!isAllowedCategory(s.category)) err(`허용 밖 category: ${s.nameKo} (${s.category})`);
   if (typeof s.electric !== 'boolean') err(`electric 타입 오류: ${s.nameKo} (${s.electric})`);
-  if (s.displacement != null && (!Number.isInteger(s.displacement) || s.displacement <= 0)) {
+  if (!isPositiveIntegerOrNull(s.displacement)) {
     err(`displacement 이상: ${s.nameKo} (${s.displacement})`);
   }
   if (s.electric === true && s.displacement != null) err(`전기인데 배기량 존재: ${s.nameKo}`);
-  if (s.fuelGrade != null && s.fuelGrade !== 'regular' && s.fuelGrade !== 'premium') {
+  if (!isAllowedFuelGrade(s.fuelGrade)) {
     err(`fuelGrade 이상: ${s.nameKo} (${s.fuelGrade})`);
   }
   if (s.electric === true && s.fuelGrade != null) err(`전기인데 fuelGrade 존재: ${s.nameKo}`);
   for (const k of ['seatHeight', 'weight', 'power']) {
-    if (s[k] != null && (!Number.isInteger(s[k]) || s[k] <= 0)) err(`${k} 이상: ${s.nameKo} (${s[k]})`);
+    if (!isPositiveIntegerOrNull(s[k])) err(`${k} 이상: ${s.nameKo} (${s[k]})`);
   }
-  if (s.cylinders != null && ![1, 2, 3, 4, 6].includes(s.cylinders)) err(`cylinders 이상: ${s.nameKo} (${s.cylinders})`);
-  if (s.cooling != null && !['air', 'liquid', 'oil'].includes(s.cooling)) err(`cooling 이상: ${s.nameKo} (${s.cooling})`);
-  if (s.fuelCapacity != null && (!Number.isFinite(s.fuelCapacity) || s.fuelCapacity <= 0)) {
+  if (!isAllowedCylinderCount(s.cylinders)) err(`cylinders 이상: ${s.nameKo} (${s.cylinders})`);
+  if (!isAllowedCooling(s.cooling)) err(`cooling 이상: ${s.nameKo} (${s.cooling})`);
+  if (!isPositiveNumberOrNull(s.fuelCapacity)) {
     err(`fuelCapacity 이상: ${s.nameKo} (${s.fuelCapacity})`);
   }
   if (s.electric === true) {
@@ -76,7 +74,7 @@ for (const s of seed) {
         err(`aliases 형식 오류: ${s.nameKo} (${alias})`);
         continue;
       }
-      const aliasNorm = norm(parts[0]);
+      const aliasNorm = normalizeVehicleName(parts[0]);
       if (!aliasNorm) {
         err(`aliases 정규화 결과가 비어 있음: ${s.nameKo} (${alias})`);
         continue;
