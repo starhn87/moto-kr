@@ -13,6 +13,13 @@
 
 import dataset from '../../data/models.lite.json' with { type: 'json' };
 
+import {
+  CATEGORIES,
+  COOLING_TYPES,
+  CYLINDER_COUNTS,
+  FUEL_GRADES,
+} from '../../lib/model-rules.mjs';
+
 const HEADERS = {
   'Content-Type': 'application/json; charset=utf-8',
   'Access-Control-Allow-Origin': '*',
@@ -22,10 +29,6 @@ const HEADERS = {
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: HEADERS });
 
-const CATEGORIES = new Set([
-  '스포츠', '네이키드', '크루저', '투어러', '어드벤처', '스쿠터',
-  '언더본', '오프로드', '클래식', '미니', '3륜', '4륜',
-]);
 const KNOWN_PARAMS = new Set([
   'brand', 'category', 'ccMin', 'ccMax', 'from', 'to', 'status', 'electric',
   'fuelGrade', 'emission', 'seatHeightMin', 'seatHeightMax', 'weightMin',
@@ -156,7 +159,7 @@ async function handle(url, env) {
     const brands = brandParam.value;
     const categories = categoryParam.value;
     if (categories) {
-      const invalid = categories.filter((category) => !CATEGORIES.has(category));
+      const invalid = categories.filter((category) => !CATEGORIES.includes(category));
       if (invalid.length) return json({ error: `지원하지 않는 category: ${invalid.join(', ')}` }, 400);
     }
 
@@ -196,7 +199,7 @@ async function handle(url, env) {
     let cylinders = null;
     if (cylinderParam.value) {
       cylinders = cylinderParam.value.map(Number);
-      if (cylinders.some((n) => ![1, 2, 3, 4, 6].includes(n))) {
+      if (cylinders.some((n) => !CYLINDER_COUNTS.includes(n))) {
         return json({ error: 'cylinders 는 1, 2, 3, 4, 6 중 하나 이상이어야 합니다' }, 400);
       }
     }
@@ -210,13 +213,13 @@ async function handle(url, env) {
     if (status !== null && status !== 'verified' && status !== 'curated') {
       return json({ error: 'status 는 verified 또는 curated 입니다' }, 400);
     }
-    if (fuelGrade !== null && fuelGrade !== 'regular' && fuelGrade !== 'premium') {
+    if (fuelGrade !== null && !FUEL_GRADES.includes(fuelGrade)) {
       return json({ error: 'fuelGrade 는 regular 또는 premium 입니다' }, 400);
     }
     if (emission !== null && !['euro5', 'euro4', 'euro3'].includes(emission)) {
       return json({ error: 'emission 은 euro5, euro4, euro3 중 하나입니다' }, 400);
     }
-    if (cooling !== null && !['air', 'liquid', 'oil'].includes(cooling)) {
+    if (cooling !== null && !COOLING_TYPES.includes(cooling)) {
       return json({ error: 'cooling 은 air, liquid, oil 중 하나입니다' }, 400);
     }
     if (p.has('q') && !q) return json({ error: 'q 값이 비어 있습니다' }, 400);

@@ -5,17 +5,17 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 
-const CATEGORIES = new Set([
-  '스포츠', '네이키드', '크루저', '투어러', '어드벤처', '스쿠터',
-  '언더본', '오프로드', '클래식', '미니', '3륜', '4륜',
-]);
-const FUEL_GRADES = new Set(['regular', 'premium']);
-const COOLING = new Set(['air', 'liquid', 'oil']);
-const CYLINDERS = new Set([1, 2, 3, 4, 6]);
-const REQUIRED_MODEL_KEYS = [
-  'nameKo', 'brand', 'model', 'aliases', 'displacement', 'category', 'electric',
-  'fuelGrade', 'seatHeight', 'weight', 'cylinders', 'cooling', 'fuelCapacity', 'power',
-];
+import {
+  MODEL_KEYS,
+  isAllowedCategory,
+  isAllowedCooling,
+  isAllowedCylinderCount,
+  isAllowedFuelGrade,
+  isCanonicalModelName,
+  isPositiveIntegerOrNull,
+  isPositiveNumberOrNull,
+} from '../lib/model-rules.mjs';
+
 const OPERATION_KEYS = [
   'bucket', 'vehNm', 'office', 'action', 'targetNameKo', 'model', 'confidence', 'reason', 'sources',
 ];
@@ -24,30 +24,26 @@ const candidateKey = (item) => `${item.bucket}\0${item.office ?? ''}\0${item.veh
 const assert = (condition, message) => {
   if (!condition) throw new Error(message);
 };
-const positiveIntegerOrNull = (value) => value == null || (Number.isInteger(value) && value > 0);
-const positiveNumberOrNull = (value) => value == null || (Number.isFinite(value) && value > 0);
-
 export const validateProposedModel = (model, vehNm) => {
   assert(model && typeof model === 'object' && !Array.isArray(model), `${vehNm}: model 객체가 필요합니다`);
-  for (const key of REQUIRED_MODEL_KEYS) assert(Object.hasOwn(model, key), `${vehNm}: model.${key} 누락`);
-  assert(Object.keys(model).every((key) => REQUIRED_MODEL_KEYS.includes(key)), `${vehNm}: model에 허용되지 않은 필드가 있습니다`);
+  for (const key of MODEL_KEYS) assert(Object.hasOwn(model, key), `${vehNm}: model.${key} 누락`);
+  assert(Object.keys(model).every((key) => MODEL_KEYS.includes(key)), `${vehNm}: model에 허용되지 않은 필드가 있습니다`);
   assert(typeof model.nameKo === 'string' && model.nameKo.trim(), `${vehNm}: nameKo 오류`);
   assert(typeof model.brand === 'string' && model.brand.trim(), `${vehNm}: brand 오류`);
   assert(typeof model.model === 'string' && model.model.trim(), `${vehNm}: model명 오류`);
-  const single = model.nameKo === model.brand && model.model === model.brand;
-  assert(single || model.nameKo === `${model.brand} ${model.model}`, `${vehNm}: nameKo는 brand + model이어야 합니다`);
+  assert(isCanonicalModelName(model), `${vehNm}: nameKo는 brand + model이어야 합니다`);
   assert(Array.isArray(model.aliases) && model.aliases.includes(vehNm), `${vehNm}: aliases에 인증 차명이 필요합니다`);
   assert(model.aliases.every((alias) => typeof alias === 'string' && alias.trim()), `${vehNm}: aliases 오류`);
-  assert(positiveIntegerOrNull(model.displacement), `${vehNm}: displacement 오류`);
-  assert(model.category == null || CATEGORIES.has(model.category), `${vehNm}: category 오류`);
+  assert(isPositiveIntegerOrNull(model.displacement), `${vehNm}: displacement 오류`);
+  assert(isAllowedCategory(model.category), `${vehNm}: category 오류`);
   assert(typeof model.electric === 'boolean', `${vehNm}: electric 오류`);
-  assert(model.fuelGrade == null || FUEL_GRADES.has(model.fuelGrade), `${vehNm}: fuelGrade 오류`);
+  assert(isAllowedFuelGrade(model.fuelGrade), `${vehNm}: fuelGrade 오류`);
   for (const key of ['seatHeight', 'weight', 'power']) {
-    assert(positiveIntegerOrNull(model[key]), `${vehNm}: ${key} 오류`);
+    assert(isPositiveIntegerOrNull(model[key]), `${vehNm}: ${key} 오류`);
   }
-  assert(model.cylinders == null || CYLINDERS.has(model.cylinders), `${vehNm}: cylinders 오류`);
-  assert(model.cooling == null || COOLING.has(model.cooling), `${vehNm}: cooling 오류`);
-  assert(positiveNumberOrNull(model.fuelCapacity), `${vehNm}: fuelCapacity 오류`);
+  assert(isAllowedCylinderCount(model.cylinders), `${vehNm}: cylinders 오류`);
+  assert(isAllowedCooling(model.cooling), `${vehNm}: cooling 오류`);
+  assert(isPositiveNumberOrNull(model.fuelCapacity), `${vehNm}: fuelCapacity 오류`);
   if (model.electric) {
     for (const key of ['displacement', 'fuelGrade', 'cylinders', 'cooling', 'fuelCapacity', 'power']) {
       assert(model[key] == null, `${vehNm}: 전기 모델의 ${key}는 null이어야 합니다`);

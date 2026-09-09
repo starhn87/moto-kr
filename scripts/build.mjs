@@ -9,6 +9,8 @@
 
 import { readFileSync, writeFileSync } from 'node:fs';
 
+import { normalizeVehicleName } from '../lib/model-rules.mjs';
+
 const imp = JSON.parse(readFileSync('data/raw/kencis-import.json', 'utf8'));
 const dom = JSON.parse(readFileSync('data/raw/kencis-domestic.json', 'utf8'));
 const offices = JSON.parse(readFileSync('mapping/offices.json', 'utf8'));
@@ -18,12 +20,7 @@ const rows = [...imp.map((r) => ({ ...r, _gubun: 'import' })), ...dom.map((r) =>
 
 // 비교용 정규화: 대문자화 + 영숫자·한글만. 로마숫자(Ⅱ 등)는 아라비아 숫자로
 // 바꾼다 — 그냥 지우면 "TOYOUDAYⅡ"가 "TOYOUDAY"와 같아져 별칭이 충돌한다.
-const ROMAN_BASE = 0x2160; // Ⅰ
-const norm = (s) =>
-  (s ?? '')
-    .toUpperCase()
-    .replace(/[Ⅰ-Ⅻ]/g, (c) => String(c.codePointAt(0) - ROMAN_BASE + 1))
-    .replace(/[^A-Z0-9가-힣]/g, '');
+const norm = normalizeVehicleName;
 
 // 시드 항목마다 매칭 토큰 준비: 모델부 전체 + 영숫자 토큰(3자 이상)
 const entries = seed.map((s) => {
@@ -87,7 +84,7 @@ const boundedIncludes = (hay, needle, wordStarts) => {
 // 정규화된 차명에서 "원문 단어의 시작"에 해당하는 인덱스 집합.
 // 공백·기호가 경계이고, 한글↔영숫자 전환도 경계로 본다("메가빅스MV125"의 MV 등).
 const wordStartsOf = (raw) => {
-  const expanded = (raw ?? '').toUpperCase().replace(/[Ⅰ-Ⅻ]/g, (c) => String(c.codePointAt(0) - ROMAN_BASE + 1));
+  const expanded = (raw ?? '').toUpperCase().replace(/[Ⅰ-Ⅻ]/g, (c) => normalizeVehicleName(c));
   const starts = new Set();
   let pos = 0;
   let prev = null; // null=경계, 'L'=영숫자, 'K'=한글
