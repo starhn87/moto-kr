@@ -9,4 +9,7 @@ test('CI는 PR 브랜치 push를 중복 실행하지 않고 main push만 직접 
   assert.match(workflow, /push:\n\s+branches: \[main\]/);
   assert.match(workflow, /\n\s+pull_request:/);
   assert.doesNotMatch(workflow, /on:\s*\[push,\s*pull_request\]/);
+  assert.equal(workflow.split('actions/checkout@v7').length - 1, 2);
+  assert.match(workflow, /actions\/setup-node@v7/);
+  assert.doesNotMatch(workflow, /actions\/(checkout|setup-node)@v4/);
 });
