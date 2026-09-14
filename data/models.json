@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generatedAt": "2026-09-08",
+  "generatedAt": "2026-09-14",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1146,
-   "verified": 988,
-   "curated": 158,
-   "certifications": 4961,
-   "unmapped": 14,
+   "verified": 989,
+   "curated": 157,
+   "certifications": 4973,
+   "unmapped": 18,
    "ambiguous": 0,
    "excluded": 12
   }
@@ -17333,12 +17333,52 @@
    "cooling": "liquid",
    "fuelCapacity": 17,
    "power": 136,
-   "emissionStandard": null,
-   "status": "curated",
-   "aliases": [],
-   "firstCertifiedAt": null,
-   "lastCertifiedAt": null,
-   "certifications": []
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "Z1100",
+    "Z1100 SE"
+   ],
+   "firstCertifiedAt": "2026-09-10",
+   "lastCertifiedAt": "2026-09-10",
+   "certifications": [
+    {
+     "no": "TMC-DJ-5",
+     "date": "2026-09-10",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z1100 SE",
+     "vehType": "ZRT10H",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-DJ-5",
+     "date": "2026-09-10",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z1100 SE",
+     "vehType": "ZRT10H",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-DJ-5",
+     "date": "2026-09-10",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z1100",
+     "vehType": "ZRT10G",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-DJ-5",
+     "date": "2026-09-10",
+     "office": "대전기계공업(주)",
+     "vehNm": "Z1100",
+     "vehType": "ZRT10G",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
   },
   {
    "nameKo": "가와사키 Z400",
