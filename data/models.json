@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generatedAt": "2026-09-14",
+  "generatedAt": "2026-09-17",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
-   "models": 1146,
-   "verified": 989,
-   "curated": 157,
+   "models": 1148,
+   "verified": 992,
+   "curated": 156,
    "certifications": 4973,
-   "unmapped": 18,
+   "unmapped": 14,
    "ambiguous": 0,
    "excluded": 12
   }
@@ -19444,12 +19444,52 @@
    "cooling": "liquid",
    "fuelCapacity": 19,
    "power": 136,
-   "emissionStandard": null,
-   "status": "curated",
-   "aliases": [],
-   "firstCertifiedAt": null,
-   "lastCertifiedAt": null,
-   "certifications": []
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "Ninja 1100SX",
+    "Ninja 1100SX SE"
+   ],
+   "firstCertifiedAt": "2026-09-10",
+   "lastCertifiedAt": "2026-09-10",
+   "certifications": [
+    {
+     "no": "TMC-DJ-5",
+     "date": "2026-09-10",
+     "office": "대전기계공업(주)",
+     "vehNm": "Ninja 1100SX SE",
+     "vehType": "ZXT10J",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-DJ-5",
+     "date": "2026-09-10",
+     "office": "대전기계공업(주)",
+     "vehNm": "Ninja 1100SX SE",
+     "vehType": "ZXT10J",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-DJ-5",
+     "date": "2026-09-10",
+     "office": "대전기계공업(주)",
+     "vehNm": "Ninja 1100SX",
+     "vehType": "ZXT10H",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-DJ-5",
+     "date": "2026-09-10",
+     "office": "대전기계공업(주)",
+     "vehNm": "Ninja 1100SX",
+     "vehType": "ZXT10H",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
   },
   {
    "nameKo": "가와사키 닌자250R",
@@ -56005,6 +56045,48 @@
    ]
   },
   {
+   "nameKo": "트라이엄프 타이거스포트800",
+   "brand": "트라이엄프",
+   "model": "타이거스포트800",
+   "displacement": 798,
+   "category": "투어러",
+   "electric": false,
+   "fuelGrade": null,
+   "seatHeight": 835,
+   "weight": 214,
+   "cylinders": 3,
+   "cooling": "liquid",
+   "fuelCapacity": 18.6,
+   "power": 115,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "TIGER SPORT 800"
+   ],
+   "firstCertifiedAt": "2026-09-09",
+   "lastCertifiedAt": "2026-09-09",
+   "certifications": [
+    {
+     "no": "TMC-BI-6",
+     "date": "2026-09-09",
+     "office": "(주)바이크코리아",
+     "vehNm": "TIGER SPORT 800",
+     "vehType": "LP20",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-BI-7",
+     "date": "2026-09-09",
+     "office": "(주)바이크코리아",
+     "vehNm": "TIGER SPORT 800",
+     "vehType": "LP20",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
    "nameKo": "트라이엄프 트라이던트660",
    "brand": "트라이엄프",
    "model": "트라이던트660",
@@ -56050,6 +56132,48 @@
      "office": "(주)바이크코리아",
      "vehNm": "Trident",
      "vehType": "LG1",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "트라이엄프 트라이던트800",
+   "brand": "트라이엄프",
+   "model": "트라이던트800",
+   "displacement": 798,
+   "category": "네이키드",
+   "electric": false,
+   "fuelGrade": null,
+   "seatHeight": 810,
+   "weight": 198,
+   "cylinders": 3,
+   "cooling": "liquid",
+   "fuelCapacity": 14,
+   "power": 115,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "TRIDENT 800"
+   ],
+   "firstCertifiedAt": "2026-09-09",
+   "lastCertifiedAt": "2026-09-09",
+   "certifications": [
+    {
+     "no": "TMC-BI-6",
+     "date": "2026-09-09",
+     "office": "(주)바이크코리아",
+     "vehNm": "TRIDENT 800",
+     "vehType": "LN20",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-BI-7",
+     "date": "2026-09-09",
+     "office": "(주)바이크코리아",
+     "vehNm": "TRIDENT 800",
+     "vehType": "LN20",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
