@@ -4,12 +4,14 @@ import { readFile } from 'node:fs/promises';
 
 const workflowPath = new URL('../.github/workflows/sync.yml', import.meta.url);
 
-test('Codex 동기화 단계는 codex exec 호환 설정으로 실시간 웹 검색을 켠다', async () => {
+test('읽기 전용 Codex는 별도 수집된 근거를 쓰며 직접 네트워크 검색을 하지 않는다', async () => {
   const workflow = await readFile(workflowPath, 'utf8');
-  const expectedArgs = 'codex-args: \'["-c", "web_search=\\"live\\"", "--ephemeral"]\'';
+  const expectedArgs = 'codex-args: \'["-c", "web_search=\\"disabled\\"", "--ephemeral"]\'';
 
   assert.equal(workflow.split(expectedArgs).length - 1, 2);
   assert.doesNotMatch(workflow, /codex-args:.*"--search"/);
+  assert.equal(workflow.split('sandbox: read-only').length - 1, 2);
+  assert.match(workflow, /if: steps\.evidence\.outputs\.usable == 'true'/);
 });
 
 test('AI 모델을 고정하고 continue-on-error 전의 실제 결과를 전달한다', async () => {
@@ -34,6 +36,21 @@ test('재검증 전용 실행은 prepare를 건너뛰고 최신 sync PR HEAD를 
   assert.match(workflow, /review-only:[\s\S]*type: boolean/);
   assert.match(workflow, /prepare:\n\s+if: \$\{\{ !inputs\.review-only \}\}/);
   assert.match(workflow, /review-target:[\s\S]*if: always\(\) && \(inputs\.review-only/);
-  assert.match(workflow, /review:\n\s+needs: review-target\n\s+if: always\(\) && needs\.review-target\.result == 'success'/);
+  assert.match(workflow, /review:\n\s+needs: \[review-target, review-evidence\]\n\s+if: always\(\) && needs\.review-target\.result == 'success' && needs\.review-evidence\.outputs\.usable == 'true'/);
   assert.match(workflow, /ref: \$\{\{ needs\.review-target\.outputs\.head-sha \}\}/);
+});
+
+test('웹 수집기는 PR 코드를 실행하지 않고 키를 해당 단계에만 주입한다', async () => {
+  const workflow = await readFile(workflowPath, 'utf8');
+  const evidence = workflow.split('\n  review-evidence:')[1].split('\n  review:')[0];
+  assert.match(evidence, /ref: \$\{\{ github\.sha \}\}/);
+  assert.doesNotMatch(evidence, /ref:.*head-sha|contents: write|pull-requests: write|npm /);
+  assert.match(evidence, /REVIEW_HEAD_SHA: \$\{\{ needs\.review-target\.outputs\.head-sha \}\}/);
+  assert.match(evidence, /run: node scripts\/collect-sync-evidence\.mjs review sync-evidence\.json/);
+  assert.equal(workflow.split('timeout-minutes: 9').length - 1, 2);
+  const review = workflow.split('\n  review:')[1].split('\n  comment:')[0];
+  assert.match(review, /prompt-file: \$\{\{ runner\.temp \}\}\/review-kencis.md/);
+  assert.match(review, /name: review-evidence/);
+  assert.ok(review.indexOf('preserve trusted review instructions') < review.indexOf('ref: ${{ needs.review-target'));
+  assert.doesNotMatch(review, /OPENAI_API_KEY:/); // 원본 키는 Codex Action의 보호 프록시만 수신
 });

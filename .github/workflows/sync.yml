@@ -137,9 +137,31 @@ jobs:
         with:
           name: sync-candidates
           path: .
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: collect hosted web evidence for candidates
+        id: evidence
+        timeout-minutes: 9
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          EVIDENCE_MODEL: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-astra' }}
+        run: node scripts/collect-sync-evidence.mjs enrich sync-evidence.json
+      - uses: actions/upload-artifact@v7
+        with:
+          name: enrichment-evidence
+          path: sync-evidence.json
+          retention-days: 7
+          if-no-files-found: error
+      - name: report unavailable enrichment evidence
+        if: steps.evidence.outputs.usable != 'true'
+        run: |
+          echo '::error::웹 근거 수집 실패; 원본 동기화 PR만 게시하고 자동 보완은 생략합니다.'
+          exit 1
       # 보안 경계: 이 잡은 쓰기 토큰이 없고 Codex도 read-only다. 반드시 마지막 단계로 둔다.
       - name: research mapping proposals
         id: codex
+        if: steps.evidence.outputs.usable == 'true'
         continue-on-error: true
         uses: openai/codex-action@v1
         with:
@@ -148,7 +170,7 @@ jobs:
           prompt-file: .github/codex/prompts/enrich-kencis.md
           output-schema-file: .github/codex/schemas/enrichment.schema.json
           sandbox: read-only
-          codex-args: '["-c", "web_search=\"live\"", "--ephemeral"]'
+          codex-args: '["-c", "web_search=\"disabled\"", "--ephemeral"]'
           effort: high
           allow-bots: true
 
@@ -314,9 +336,47 @@ jobs:
             core.setOutput('number', target.number);
             core.setOutput('head-sha', target.headSha);
 
-  review:
+  review-evidence:
     needs: review-target
     if: always() && needs.review-target.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      usable: ${{ steps.evidence.outputs.usable }}
+    steps:
+      # API 키를 쓰는 코드는 PR이 아니라 실행 시점의 신뢰된 워크플로에서만 가져온다.
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: collect independent hosted web evidence for PR HEAD
+        id: evidence
+        timeout-minutes: 9
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          EVIDENCE_MODEL: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-astra' }}
+          REVIEW_HEAD_SHA: ${{ needs.review-target.outputs.head-sha }}
+        run: node scripts/collect-sync-evidence.mjs review sync-evidence.json
+      - uses: actions/upload-artifact@v7
+        with:
+          name: review-evidence
+          path: sync-evidence.json
+          retention-days: 7
+          if-no-files-found: error
+      - name: report unavailable review evidence
+        if: steps.evidence.outputs.usable != 'true'
+        run: |
+          echo '::error::웹 근거 수집 실패; 머지 가능 판정을 내리지 않습니다. artifact와 수동 검토가 필요합니다.'
+          exit 1
+
+  review:
+    needs: [review-target, review-evidence]
+    if: always() && needs.review-target.result == 'success' && needs.review-evidence.outputs.usable == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -326,9 +386,21 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: preserve trusted review instructions
+        run: |
+          cp .github/codex/prompts/review-kencis.md "$RUNNER_TEMP/review-kencis.md"
+          cp .github/codex/schemas/review.schema.json "$RUNNER_TEMP/review.schema.json"
+      - uses: actions/checkout@v7
+        with:
           ref: ${{ needs.review-target.outputs.head-sha }}
           fetch-depth: 0
           persist-credentials: false
+      - uses: actions/download-artifact@v8
+        with:
+          name: review-evidence
+          path: .
       # 보안 경계: 생성된 PR HEAD를 읽기만 하며 이 잡은 쓰기 토큰이 없다. 반드시 마지막 단계로 둔다.
       - name: independently review sync PR
         id: codex
@@ -337,10 +409,10 @@ jobs:
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
           model: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-astra' }}
-          prompt-file: .github/codex/prompts/review-kencis.md
-          output-schema-file: .github/codex/schemas/review.schema.json
+          prompt-file: ${{ runner.temp }}/review-kencis.md
+          output-schema-file: ${{ runner.temp }}/review.schema.json
           sandbox: read-only
-          codex-args: '["-c", "web_search=\"live\"", "--ephemeral"]'
+          codex-args: '["-c", "web_search=\"disabled\"", "--ephemeral"]'
           effort: medium
           allow-bots: true
 
