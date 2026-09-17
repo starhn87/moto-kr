@@ -6,6 +6,7 @@ import {
   checkEarlierSuccessfulSync,
   composeSyncPrBody,
   renderReviewComment,
+  resolveSyncReviewTarget,
   upsertReviewComment,
 } from '../scripts/sync-workflow.mjs';
 
@@ -44,9 +45,13 @@ test('오늘 이미 검증된 동기화가 있으면 예약 복구 슬롯을 건
     },
     paginate: async (endpoint) => {
       if (endpoint === github.rest.actions.listWorkflowRuns) {
-        return [{ id: 1, conclusion: 'success', event: 'schedule', created_at: '2026-09-07T04:17:00Z', html_url: 'https://example.test/run', run_number: 1 }];
+        return [{ id: 1, conclusion: 'failure', event: 'schedule', created_at: '2026-09-07T04:17:00Z', html_url: 'https://example.test/run', run_number: 1 }];
       }
-      return [{ name: 'prepare', steps: [{ name: 'build and validate raw sync', conclusion: 'success' }] }];
+      return [
+        { name: 'prepare', steps: [{ name: 'build and validate raw sync', conclusion: 'success' }] },
+        { name: 'publish', conclusion: 'success', steps: [{ name: 'create or update sync PR', conclusion: 'success' }] },
+        { name: 'comment', conclusion: 'failure' },
+      ];
     },
   };
   github.rest.actions.getWorkflowRun = async () => ({ data: { created_at: '2026-09-07T07:17:00Z' } });
@@ -59,13 +64,17 @@ test('오늘 이미 검증된 동기화가 있으면 예약 복구 슬롯을 건
 test('기존 AI 코멘트가 있으면 새 코멘트를 만들지 않고 갱신한다', async () => {
   const calls = [];
   const github = {
-    rest: { issues: { listComments: {}, updateComment: async (args) => calls.push(['update', args]), createComment: async (args) => calls.push(['create', args]) } },
+    rest: {
+      pulls: { get: async () => ({ data: { state: 'open', head: { sha: 'abc123' } } }) },
+      issues: { listComments: {}, updateComment: async (args) => calls.push(['update', args]), createComment: async (args) => calls.push(['create', args]) },
+    },
     paginate: async () => [{ id: 10, user: { login: 'github-actions[bot]' }, body: REVIEW_COMMENT_MARKER }],
   };
   await upsertReviewComment({
     github,
     context: { repo: { owner: 'owner', repo: 'repo' } },
     pullRequestNumber: 7,
+    reviewedHeadSha: 'abc123',
     reviewJobResult: 'success',
     reviewJson: JSON.stringify({ verdict: 'action_required', summary: '보완 필요', findings: [], checks: [] }),
   });
@@ -73,4 +82,41 @@ test('기존 AI 코멘트가 있으면 새 코멘트를 만들지 않고 갱신�
   assert.equal(calls[0][0], 'update');
   assert.equal(calls[0][1].comment_id, 10);
   assert.match(calls[0][1].body, /추가 조치 필요/);
+  assert.match(calls[0][1].body, /검증 대상: `abc123`/);
+});
+
+test('재검증 대상은 같은 저장소의 열린 sync/kencis → main PR 하나로 제한한다', async () => {
+  let prs = [{ number: 23, head: { ref: 'sync/kencis', sha: 'abc123', repo: { full_name: 'owner/repo' } }, base: { ref: 'main' } }];
+  const github = { rest: { pulls: { list: {} } }, paginate: async () => prs };
+  const context = { repo: { owner: 'owner', repo: 'repo' } };
+  assert.deepEqual(await resolveSyncReviewTarget({ github, context }), { number: 23, headSha: 'abc123' });
+  prs = [prs[0], { ...prs[0], number: 24 }];
+  await assert.rejects(resolveSyncReviewTarget({ github, context }));
+  prs = [{ ...prs[0], head: { ...prs[0].head, repo: { full_name: 'fork/repo' } } }];
+  await assert.rejects(resolveSyncReviewTarget({ github, context }));
+  prs = [];
+  await assert.rejects(resolveSyncReviewTarget({ github, context }));
+});
+
+test('검토 도중 HEAD가 바뀌면 오래된 ready를 게시하지 않는다', async () => {
+  const calls = [];
+  const github = {
+    rest: {
+      pulls: { get: async () => ({ data: { state: 'open', head: { sha: 'new-head' } } }) },
+      issues: { listComments: {}, createComment: async (args) => calls.push(args) },
+    },
+    paginate: async () => [],
+  };
+  await upsertReviewComment({
+    github, context: { repo: { owner: 'owner', repo: 'repo' } }, pullRequestNumber: 23,
+    reviewedHeadSha: 'old-head', reviewJobResult: 'success',
+    reviewJson: JSON.stringify({ verdict: 'ready', summary: '문제없음', findings: [], checks: [] }),
+  });
+  assert.match(calls[0].body, /재검증 필요/);
+  assert.doesNotMatch(calls[0].body, /이대로 머지 가능/);
+});
+
+test('닫힌 PR에는 뒤늦은 검증 코멘트를 남기지 않는다', async () => {
+  const github = { rest: { pulls: { get: async () => ({ data: { state: 'closed' } }) } } };
+  assert.equal(await upsertReviewComment({ github, context: { repo: {} }, pullRequestNumber: 23 }), null);
 });
