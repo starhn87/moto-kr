@@ -878,6 +878,10 @@
   "nameKo": "가와사키 닌자1100SX",
   "brand": "가와사키",
   "model": "닌자1100SX",
+  "aliases": [
+   "Ninja 1100SX",
+   "Ninja 1100SX SE"
+  ],
   "displacement": 1099,
   "category": "투어러",
   "electric": false,
@@ -8839,6 +8843,24 @@
   ]
  },
  {
+  "nameKo": "트라이엄프 타이거스포트800",
+  "brand": "트라이엄프",
+  "model": "타이거스포트800",
+  "aliases": [
+   "TIGER SPORT 800"
+  ],
+  "displacement": 798,
+  "category": "투어러",
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": 835,
+  "weight": 214,
+  "cylinders": 3,
+  "cooling": "liquid",
+  "fuelCapacity": 18.6,
+  "power": 115
+ },
+ {
   "nameKo": "트라이엄프 트라이던트660",
   "brand": "트라이엄프",
   "model": "트라이던트660",
@@ -8855,6 +8877,24 @@
   "cooling": "liquid",
   "fuelCapacity": 14,
   "power": 81
+ },
+ {
+  "nameKo": "트라이엄프 트라이던트800",
+  "brand": "트라이엄프",
+  "model": "트라이던트800",
+  "aliases": [
+   "TRIDENT 800"
+  ],
+  "displacement": 798,
+  "category": "네이키드",
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": 810,
+  "weight": 198,
+  "cylinders": 3,
+  "cooling": "liquid",
+  "fuelCapacity": 14,
+  "power": 115
  },
  {
   "nameKo": "푸조 스피드파이트125",
