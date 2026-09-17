@@ -8,6 +8,11 @@ on:
     - cron: '17 7 * * 1' # 매주 월요일 16:17 KST
     - cron: '17 10 * * 1' # 매주 월요일 19:17 KST (최종 시도)
   workflow_dispatch:
+    inputs:
+      review-only:
+        description: '열린 sync/kencis PR만 재검증 (재수집·매핑·PR 갱신 없음)'
+        type: boolean
+        default: false
 
 concurrency:
   group: sync-kencis
@@ -15,6 +20,7 @@ concurrency:
 
 jobs:
   prepare:
+    if: ${{ !inputs.review-only }}
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -138,6 +144,7 @@ jobs:
         uses: openai/codex-action@v1
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          model: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-astra' }}
           prompt-file: .github/codex/prompts/enrich-kencis.md
           output-schema-file: .github/codex/schemas/enrichment.schema.json
           sandbox: read-only
@@ -279,18 +286,47 @@ jobs:
             data/models.min.json
             data/unmapped.json
 
-  review:
+  review-target:
     needs: publish
-    if: needs.publish.outputs.pull-request-number != ''
+    if: always() && (inputs.review-only || needs.publish.outputs.pull-request-number != '')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      number: ${{ steps.target.outputs.number }}
+      head-sha: ${{ steps.target.outputs.head-sha }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: resolve current sync PR
+        id: target
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const { pathToFileURL } = require('node:url');
+            const workflow = await import(pathToFileURL(
+              `${process.env.GITHUB_WORKSPACE}/scripts/sync-workflow.mjs`,
+            ).href);
+            const target = await workflow.resolveSyncReviewTarget({ github, context });
+            core.setOutput('number', target.number);
+            core.setOutput('head-sha', target.headSha);
+
+  review:
+    needs: review-target
+    if: always() && needs.review-target.result == 'success'
     runs-on: ubuntu-latest
     permissions:
       contents: read
     outputs:
       result: ${{ steps.codex.outputs.final-message }}
+      outcome: ${{ steps.codex.outcome }}
     steps:
       - uses: actions/checkout@v7
         with:
-          ref: ${{ needs.publish.outputs.pull-request-head-sha }}
+          ref: ${{ needs.review-target.outputs.head-sha }}
           fetch-depth: 0
           persist-credentials: false
       # 보안 경계: 생성된 PR HEAD를 읽기만 하며 이 잡은 쓰기 토큰이 없다. 반드시 마지막 단계로 둔다.
@@ -300,6 +336,7 @@ jobs:
         uses: openai/codex-action@v1
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          model: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-astra' }}
           prompt-file: .github/codex/prompts/review-kencis.md
           output-schema-file: .github/codex/schemas/review.schema.json
           sandbox: read-only
@@ -308,18 +345,25 @@ jobs:
           allow-bots: true
 
   comment:
-    needs: [publish, review]
-    if: always() && needs.publish.outputs.pull-request-number != ''
+    needs: [review-target, review]
+    if: always() && needs.review-target.outputs.number != ''
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       pull-requests: write
     steps:
+      # 쓰기 토큰을 가진 잡에서는 PR 코드가 아닌 실행 시점의 신뢰된 워크플로 코드를 사용한다.
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
       - name: create or update AI verdict comment
         uses: actions/github-script@v9
         env:
-          PR_NUMBER: ${{ needs.publish.outputs.pull-request-number }}
+          PR_NUMBER: ${{ needs.review-target.outputs.number }}
+          REVIEWED_HEAD_SHA: ${{ needs.review-target.outputs.head-sha }}
           REVIEW_JSON: ${{ needs.review.outputs.result }}
-          REVIEW_JOB_RESULT: ${{ needs.review.result }}
+          REVIEW_JOB_RESULT: ${{ needs.review.outputs.outcome || needs.review.result }}
         with:
           script: |
             const { pathToFileURL } = require('node:url');
@@ -332,4 +376,5 @@ jobs:
               pullRequestNumber: Number(process.env.PR_NUMBER),
               reviewJson: process.env.REVIEW_JSON,
               reviewJobResult: process.env.REVIEW_JOB_RESULT,
+              reviewedHeadSha: process.env.REVIEWED_HEAD_SHA,
             });
