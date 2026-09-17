@@ -92,8 +92,30 @@ export const checkEarlierSuccessfulSync = async ({ github, context, core, workfl
   return true;
 };
 
-export const upsertReviewComment = async ({ github, context, pullRequestNumber, reviewJson, reviewJobResult }) => {
-  const body = renderReviewComment({ reviewJson, reviewJobResult });
+export const resolveSyncReviewTarget = async ({ github, context }) => {
+  const prs = await github.paginate(github.rest.pulls.list, {
+    ...context.repo,
+    state: 'open',
+    head: `${context.repo.owner}:sync/kencis`,
+    base: 'main',
+    per_page: 100,
+  });
+  const targets = prs.filter((pr) =>
+    pr.head.ref === 'sync/kencis' && pr.base.ref === 'main' &&
+    pr.head.repo?.full_name === `${context.repo.owner}/${context.repo.repo}`,
+  );
+  if (targets.length !== 1) throw new Error('열린 sync/kencis → main PR을 하나로 특정할 수 없습니다');
+  return { number: targets[0].number, headSha: targets[0].head.sha };
+};
+
+export const upsertReviewComment = async ({ github, context, pullRequestNumber, reviewJson, reviewJobResult, reviewedHeadSha }) => {
+  const { data: pr } = await github.rest.pulls.get({ ...context.repo, pull_number: pullRequestNumber });
+  if (pr.state !== 'open') return null;
+  const current = reviewedHeadSha && pr.head.sha === reviewedHeadSha;
+  const result = current
+    ? renderReviewComment({ reviewJson, reviewJobResult })
+    : `${REVIEW_COMMENT_MARKER}\n## ⚠️ AI 재검증 필요\n\n검증 대상 HEAD가 현재 PR과 다릅니다. 최신 커밋을 재검증하기 전에는 이전 판정을 머지 근거로 사용하지 마세요.`;
+  const body = `${result}\n\n- 검증 대상: \`${reviewedHeadSha ?? 'unknown'}\``;
   const comments = await github.paginate(github.rest.issues.listComments, {
     owner: context.repo.owner,
     repo: context.repo.repo,
