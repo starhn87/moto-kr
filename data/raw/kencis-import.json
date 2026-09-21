@@ -68593,5 +68593,35 @@
   "OFFICE_NM": "대전기계공업(주)",
   "VEH_NM": "Z1100",
   "VEH_TYPE": "ZRT10G"
+ },
+ {
+  "CARTYPE": "이륜",
+  "EMIS_CERTI_NO": null,
+  "EMIS_CERTI_DATE": null,
+  "FUELTYPE": "휘발유(Gasoline)",
+  "GUBUN1": "배출",
+  "GUBUN2": "소음",
+  "MUSTARD": null,
+  "MUSTARD2": "2018년 기준",
+  "NOISE_CERTI_DATE": "2026/09/17",
+  "NOISE_CERTI_NO": "TMC-BL-3",
+  "OFFICE_NM": "유로모토코리아(주)",
+  "VEH_NM": "SR450X",
+  "VEH_TYPE": "LX400T-A"
+ },
+ {
+  "CARTYPE": "이륜",
+  "EMIS_CERTI_NO": "TMY-BL-3",
+  "EMIS_CERTI_DATE": "2026/09/17",
+  "FUELTYPE": "휘발유(Gasoline)",
+  "GUBUN1": "배출",
+  "GUBUN2": "소음",
+  "MUSTARD": "2020년 1월 기준",
+  "MUSTARD2": null,
+  "NOISE_CERTI_DATE": null,
+  "NOISE_CERTI_NO": null,
+  "OFFICE_NM": "유로모토코리아(주)",
+  "VEH_NM": "SR450X",
+  "VEH_TYPE": "LX400T-A"
  }
 ]
