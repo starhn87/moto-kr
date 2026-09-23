@@ -50,6 +50,7 @@ test('Astra hosted web_search만 제공하고 저장·토큰·호출 수를 제�
   assert.equal(request.max_tool_calls, LIMITS.toolCalls);
   assert.equal(request.max_output_tokens, LIMITS.outputTokens);
   assert.deepEqual(request.include, ['web_search_call.action.sources']);
+  assert.match(request.instructions, /The legacy kencis\.me\.go\.kr host is no longer a working citation target: do not cite its URLs/);
 });
 
 test('실제 검색 출처와 전체 대상의 id가 확인돼야 완료로 저장한다', async () => {
