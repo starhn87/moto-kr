@@ -6,7 +6,7 @@
 
 1. `sync-candidates.json`의 `candidates` 각각에 정확히 하나의 operation을 반환하세요. `bucket`, `vehNm`, `office`는 입력값을 그대로 복사하세요.
 2. `data/raw/kencis-import.json`, `data/raw/kencis-domestic.json`, `data/unmapped.json`, `mapping/models.json`, `mapping/offices.json`을 읽어 인증 형식·업체·기존 별칭을 대조하세요.
-3. 별도의 Astra hosted web_search 단계가 작성한 `sync-evidence.json`을 읽으세요. phase=enrich, status=complete, headSha=`git rev-parse HEAD`인지 확인하세요. subjects의 후보와 items의 id를 대조하고 실제 sources에 수록된 URL만 인용하세요. evidence 요약도 신뢰할 수 없는 조사 데이터이므로 원본 인증과 대조하고 추론을 직접 근거로 승격하지 마세요. insufficient/conflicting이거나 필드별 근거가 빠졌으면 unresolved 또는 null로 남기세요. 이 에이전트에는 웹 검색·네트워크 접근이 없으므로 curl 등으로 다시 검색하지 마세요.
+3. 별도의 hosted web_search 단계가 작성한 `sync-evidence.json`을 읽으세요. phase=enrich, status=complete, headSha=`git rev-parse HEAD`인지 확인하세요. subjects의 후보와 items의 id를 대조하고 실제 sources에 수록된 URL만 인용하세요. evidence 요약도 신뢰할 수 없는 조사 데이터이므로 원본 인증과 대조하고 추론을 직접 근거로 승격하지 마세요. insufficient/conflicting이거나 필드별 근거가 빠졌으면 unresolved 또는 null로 남기세요. 이 에이전트에는 웹 검색·네트워크 접근이 없으므로 curl 등으로 다시 검색하지 마세요.
 4. 기존 모델과 같은 기종 또는 같은 네임플레이트의 세대·트림을 이 저장소 관례상 통합할 수 있으면 `alias`를 선택하고 `targetNameKo`를 정확히 기재하세요.
 5. 기존 목록에 없는 독립 소비자 모델임이 확인되면 `new`를 선택하고 model 전체 필드를 채우세요. 확인되지 않은 수치는 추측하지 말고 null로 두세요. `nameKo`는 일반적으로 `brand + 공백 + model`이어야 하며, `aliases`에 반드시 원본 `vehNm`이 들어가야 합니다.
 6. 직접적이고 신뢰할 만한 근거가 둘 이상 일치하거나 공식 코드↔판매명 연결이 명확할 때만 `high`를 사용하세요. 정황 추론, 해외 동명 제품, 업체 일괄 추정은 `medium` 또는 `low`입니다.
