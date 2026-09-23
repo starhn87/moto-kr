@@ -173,6 +173,8 @@ export const renderReport = (proposal, result) => {
   return `${lines.join('\n')}\n`;
 };
 
+export const enrichmentStatus = (result) => result.applied.length > 0 ? 'applied' : 'reviewed-no-change';
+
 const main = () => {
   const [, , candidatesPath, proposalPath, reportPath] = process.argv;
   if (!candidatesPath || !proposalPath || !reportPath) {
@@ -184,6 +186,7 @@ const main = () => {
   const result = applyProposal(models, candidates, proposal);
   writeFileSync('mapping/models.json', `${JSON.stringify(result.models, null, 1)}\n`);
   writeFileSync(reportPath, renderReport(proposal, result));
+  process.stdout.write(`${enrichmentStatus(result)}\n`);
 };
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main();

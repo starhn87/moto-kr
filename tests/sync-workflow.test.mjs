@@ -16,9 +16,17 @@ test('읽기 전용 Codex는 별도 수집된 근거를 쓰며 직접 네트워�
 
 test('AI 모델을 고정하고 continue-on-error 전의 실제 결과를 전달한다', async () => {
   const workflow = await readFile(workflowPath, 'utf8');
-  assert.equal(workflow.split("model: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-astra' }}").length - 1, 2);
+  assert.equal(workflow.split("model: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-sol' }}").length - 1, 2);
+  assert.equal(workflow.split("EVIDENCE_MODEL: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-sol' }}").length - 1, 2);
+  assert.doesNotMatch(workflow, /gpt-6-astra/);
   assert.match(workflow, /outcome: \$\{\{ steps\.codex\.outcome \}\}/);
   assert.match(workflow, /REVIEW_JOB_RESULT: \$\{\{ needs\.review\.outputs\.outcome \|\| needs\.review\.result \}\}/);
+});
+
+test('AI 보완 상태는 스크립트가 출력한 실제 반영 결과를 사용한다', async () => {
+  const workflow = await readFile(workflowPath, 'utf8');
+  assert.match(workflow, /if status=\$\(node scripts\/apply-ai-mappings\.mjs/);
+  assert.doesNotMatch(workflow, /status=applied/);
 });
 
 test('코멘트 잡은 쓰기 토큰으로 PR 코드를 실행하지 않고 신뢰된 스크립트를 체크아웃한다', async () => {

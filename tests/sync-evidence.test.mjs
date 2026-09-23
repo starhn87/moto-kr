@@ -42,14 +42,17 @@ test('사전 수집은 업체+차명 모두 일치하는 인증만 후보와 묶
   assert.deepEqual(enrichmentSubjects([candidate], rows)[0].certifications, [rows[0]]);
 });
 
-test('Astra hosted web_search만 제공하고 저장·토큰·호출 수를 제한한다', () => {
-  const request = evidenceRequest(subjects, 'gpt-6-astra');
-  assert.equal(request.model, 'gpt-6-astra');
+test('Sol hosted web_search만 제공하고 저장·토큰·호출 수를 제한한다', () => {
+  const request = evidenceRequest(subjects, 'gpt-6-sol');
+  assert.equal(request.model, 'gpt-6-sol');
   assert.equal(request.store, false);
   assert.deepEqual(request.tools, [{ type: 'web_search' }]);
   assert.equal(request.max_tool_calls, LIMITS.toolCalls);
   assert.equal(request.max_output_tokens, LIMITS.outputTokens);
   assert.deepEqual(request.include, ['web_search_call.action.sources']);
+  assert.match(request.instructions, /The legacy kencis\.me\.go\.kr host is no longer a working citation target: do not cite its URLs/);
+  assert.match(request.instructions, /search its unsuffixed base code in official manufacturer or regulator records/);
+  assert.match(request.instructions, /distinguish a verified base-platform identity from an unverified market suffix/);
 });
 
 test('실제 검색 출처와 전체 대상의 id가 확인돼야 완료로 저장한다', async () => {
@@ -57,12 +60,14 @@ test('실제 검색 출처와 전체 대상의 id가 확인돼야 완료로 저�
   const result = await collectEvidence({ ...options, fetchImpl: async (endpoint, request) => {
     calls++;
     assert.equal(endpoint, 'https://api.openai.com/v1/responses');
+    assert.equal(JSON.parse(request.body).model, 'gpt-6-sol');
     assert.equal(request.redirect, 'error');
     assert.equal(request.headers.Authorization, 'Bearer secret-canary');
     assert.equal(request.signal.aborted, false);
     return { ok: true, json: async () => responseBody() };
   } });
   assert.equal(calls, 1);
+  assert.equal(result.model, 'gpt-6-sol');
   assert.equal(result.status, 'complete');
   assert.equal(result.webSearchCalls, 1);
   assert.equal(result.usage.inputTokens, 40);

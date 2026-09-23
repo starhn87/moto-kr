@@ -145,7 +145,7 @@ jobs:
         timeout-minutes: 9
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          EVIDENCE_MODEL: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-astra' }}
+          EVIDENCE_MODEL: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-sol' }}
         run: node scripts/collect-sync-evidence.mjs enrich sync-evidence.json
       - uses: actions/upload-artifact@v7
         with:
@@ -166,7 +166,7 @@ jobs:
         uses: openai/codex-action@v1
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
-          model: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-astra' }}
+          model: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-sol' }}
           prompt-file: .github/codex/prompts/enrich-kencis.md
           output-schema-file: .github/codex/schemas/enrichment.schema.json
           sandbox: read-only
@@ -224,11 +224,10 @@ jobs:
             if [[ -n "$AI_PROPOSAL" ]]; then
               AI_PROPOSAL_PATH="$RUNNER_TEMP/ai-proposal.json" \
                 node -e 'require("node:fs").writeFileSync(process.env.AI_PROPOSAL_PATH, process.env.AI_PROPOSAL)'
-              if node scripts/apply-ai-mappings.mjs \
+              if status=$(node scripts/apply-ai-mappings.mjs \
                 sync-candidates.json \
                 "$RUNNER_TEMP/ai-proposal.json" \
-                "$RUNNER_TEMP/ai-enrichment.md"; then
-                status=applied
+                "$RUNNER_TEMP/ai-enrichment.md"); then
               else
                 cp "$RUNNER_TEMP/models-before-ai.json" mapping/models.json
                 status=fallback-invalid-proposal
@@ -359,7 +358,7 @@ jobs:
         timeout-minutes: 9
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          EVIDENCE_MODEL: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-astra' }}
+          EVIDENCE_MODEL: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-sol' }}
           REVIEW_HEAD_SHA: ${{ needs.review-target.outputs.head-sha }}
         run: node scripts/collect-sync-evidence.mjs review sync-evidence.json
       - uses: actions/upload-artifact@v7
@@ -408,7 +407,7 @@ jobs:
         uses: openai/codex-action@v1
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
-          model: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-astra' }}
+          model: ${{ vars.CODEX_SYNC_MODEL || 'gpt-6-sol' }}
           prompt-file: ${{ runner.temp }}/review-kencis.md
           output-schema-file: ${{ runner.temp }}/review.schema.json
           sandbox: read-only
