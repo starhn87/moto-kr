@@ -224,11 +224,10 @@ jobs:
             if [[ -n "$AI_PROPOSAL" ]]; then
               AI_PROPOSAL_PATH="$RUNNER_TEMP/ai-proposal.json" \
                 node -e 'require("node:fs").writeFileSync(process.env.AI_PROPOSAL_PATH, process.env.AI_PROPOSAL)'
-              if node scripts/apply-ai-mappings.mjs \
+              if status=$(node scripts/apply-ai-mappings.mjs \
                 sync-candidates.json \
                 "$RUNNER_TEMP/ai-proposal.json" \
-                "$RUNNER_TEMP/ai-enrichment.md"; then
-                status=applied
+                "$RUNNER_TEMP/ai-enrichment.md"); then
               else
                 cp "$RUNNER_TEMP/models-before-ai.json" mapping/models.json
                 status=fallback-invalid-proposal

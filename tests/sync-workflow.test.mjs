@@ -21,6 +21,12 @@ test('AI 모델을 고정하고 continue-on-error 전의 실제 결과를 전달
   assert.match(workflow, /REVIEW_JOB_RESULT: \$\{\{ needs\.review\.outputs\.outcome \|\| needs\.review\.result \}\}/);
 });
 
+test('AI 보완 상태는 스크립트가 출력한 실제 반영 결과를 사용한다', async () => {
+  const workflow = await readFile(workflowPath, 'utf8');
+  assert.match(workflow, /if status=\$\(node scripts\/apply-ai-mappings\.mjs/);
+  assert.doesNotMatch(workflow, /status=applied/);
+});
+
 test('코멘트 잡은 쓰기 토큰으로 PR 코드를 실행하지 않고 신뢰된 스크립트를 체크아웃한다', async () => {
   const workflow = await readFile(workflowPath, 'utf8');
   const comment = workflow.split('\n  comment:')[1];

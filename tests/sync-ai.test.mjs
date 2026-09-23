@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import { findNewReviewItems } from '../scripts/find-new-unmapped.mjs';
-import { applyProposal } from '../scripts/apply-ai-mappings.mjs';
+import { applyProposal, enrichmentStatus } from '../scripts/apply-ai-mappings.mjs';
 
 const baseModel = {
   nameKo: '혼다 PCX125', brand: '혼다', model: 'PCX125', aliases: ['PCX'],
@@ -50,12 +50,14 @@ test('고신뢰 alias만 기존 모델에 반영한다', () => {
   const result = applyProposal([baseModel], document, proposal([operation()]));
   assert.deepEqual(result.models[0].aliases, ['PCX', 'PCX125K']);
   assert.equal(result.applied.length, 1);
+  assert.equal(enrichmentStatus(result), 'applied');
 });
 
 test('중간 신뢰 제안은 매핑하지 않는다', () => {
   const result = applyProposal([baseModel], document, proposal([operation({ confidence: 'medium' })]));
   assert.deepEqual(result.models[0].aliases, ['PCX']);
   assert.equal(result.skipped.length, 1);
+  assert.equal(enrichmentStatus(result), 'reviewed-no-change');
 });
 
 test('이번 동기화 후보가 아닌 작업을 거부한다', () => {
