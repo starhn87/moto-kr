@@ -105,7 +105,7 @@ export const parseEvidence = (response, subjects) => {
     usage: { inputTokens: response.usage?.input_tokens ?? null, outputTokens: response.usage?.output_tokens ?? null } };
 };
 
-export const collectEvidence = async ({ phase, subjects, headSha, baseSha = null, model = 'gpt-6-astra', apiKey, fetchImpl = fetch }) => {
+export const collectEvidence = async ({ phase, subjects, headSha, baseSha = null, model = 'gpt-6-sol', apiKey, fetchImpl = fetch }) => {
   const result = { version: 1, phase, headSha, baseSha, model, inputHash: digest(subjects), subjects, status: 'failed', items: [], sources: [] };
   if (!subjects.length) return { ...result, status: 'not_needed' };
   if (subjects.length > LIMITS.subjects || stable(subjects).length > LIMITS.inputCharacters) return { ...result, error: 'input-budget-exceeded' };
@@ -144,7 +144,7 @@ const main = async () => {
     : enrichmentSubjects(readJson('sync-candidates.json').candidates,
       [...readJson('data/raw/kencis-import.json'), ...readJson('data/raw/kencis-domestic.json')]);
   const result = await collectEvidence({ phase, subjects, headSha, baseSha,
-    model: process.env.EVIDENCE_MODEL || 'gpt-6-astra', apiKey: process.env.OPENAI_API_KEY });
+    model: process.env.EVIDENCE_MODEL || 'gpt-6-sol', apiKey: process.env.OPENAI_API_KEY });
   writeFileSync(outputPath, `${JSON.stringify(result, null, 2)}\n`);
   const usable = evidenceUsable(result, { phase, headSha });
   if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, `usable=${usable}\n`);
