@@ -15132,6 +15132,24 @@
   "power": 33
  },
  {
+  "nameKo": "VOGE SR450X",
+  "brand": "VOGE",
+  "model": "SR450X",
+  "aliases": [
+   "SR450X"
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
   "nameKo": "대림 루미",
   "brand": "대림",
   "model": "루미",
