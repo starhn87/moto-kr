@@ -1,6 +1,6 @@
 {
   "name": "@starhn87/jev-decisions",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "type": "module",
   "description": "Response validation and observation utilities for the official TypeSafe SDK",
   "license": "MIT",
