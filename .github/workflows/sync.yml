@@ -214,7 +214,7 @@ jobs:
         with:
           name: jev-mapping-audit
           path: jev-mapping-audit.json
-          retention-days: 7
+          retention-days: 30
           if-no-files-found: error
 
   publish:
