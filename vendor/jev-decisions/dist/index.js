@@ -12,42 +12,65 @@ var sameJson = (expected, value) => {
   return record(expected) && record(value) && sameKeys(value, Object.keys(expected)) && Object.keys(expected).every((key) => sameJson(expected[key], value[key]));
 };
 function validateAnswers(questions, value) {
-  if (!record(value) || !Object.keys(questions).length || !sameKeys(value, Object.keys(questions))) return null;
+  const issues = [];
+  const issue = (path, code) => {
+    issues.push({ path, code });
+  };
+  if (!Object.keys(questions).length) return { ok: false, issues: [{ path: [], code: "invalid_question" }] };
+  if (!record(value)) return { ok: false, issues: [{ path: [], code: "invalid_answers" }] };
+  if (Object.keys(value).some((id) => !Object.hasOwn(questions, id))) issue([], "unexpected_answer");
   for (const [id, question] of Object.entries(questions)) {
-    const answer = value[id];
-    if (!record(answer) || answer.type !== question.type) return null;
-    if (question.type === "noul") {
-      if (!probability(answer.noul)) return null;
+    if (!Object.hasOwn(value, id)) {
+      issue([id], "missing_answer");
       continue;
     }
-    if (question.type !== "choice" && question.type !== "score") return null;
-    if (question.type === "choice" && (!record(question.criteria) || !Object.keys(question.criteria).length)) return null;
-    if (question.type === "score" && (!Array.isArray(question.criteria) || question.criteria.length < 2)) return null;
-    if (!probability(answer.confidence) || !record(answer.probabilities)) return null;
+    const answer = value[id];
+    if (!record(answer) || answer.type !== question.type) {
+      issue([id, "type"], "invalid_answer_type");
+      continue;
+    }
+    if (question.type === "noul") {
+      if (!probability(answer.noul)) issue([id, "noul"], "invalid_probability");
+      continue;
+    }
+    if (question.type !== "choice" && question.type !== "score" || question.type === "choice" && (!record(question.criteria) || !Object.keys(question.criteria).length) || question.type === "score" && (!Array.isArray(question.criteria) || question.criteria.length < 2)) {
+      issue([id], "invalid_question");
+      continue;
+    }
+    if (!probability(answer.confidence)) issue([id, "confidence"], "invalid_confidence");
     const keys = question.type === "choice" ? Object.keys(question.criteria) : question.criteria.map((_, i) => String(i));
-    if (!sameKeys(answer.probabilities, keys)) return null;
+    if (!record(answer.probabilities) || !sameKeys(answer.probabilities, keys)) {
+      issue([id, "probabilities"], "invalid_probabilities");
+      continue;
+    }
     const probs = keys.map((key) => answer.probabilities[key]);
-    if (!probs.every(probability)) return null;
-    if (Math.abs(probs.reduce((sum, p) => sum + p, 0) - 1) > keys.length * 5e-3 + 1e-8) return null;
+    keys.forEach((key, i) => {
+      if (!probability(probs[i])) issue([id, "probabilities", key], "invalid_probability");
+    });
+    if (!probs.every(probability)) continue;
+    if (Math.abs(probs.reduce((sum, p) => sum + p, 0) - 1) > keys.length * 5e-3 + 1e-8) issue([id, "probabilities"], "invalid_probability_sum");
     if (question.type === "choice") {
-      if (typeof answer.choice !== "string" || !keys.includes(answer.choice)) return null;
-      if (answer.probabilities[answer.choice] !== Math.max(...probs)) return null;
+      if (typeof answer.choice !== "string" || !keys.includes(answer.choice)) issue([id, "choice"], "invalid_choice");
+      else if (answer.probabilities[answer.choice] !== Math.max(...probs)) issue([id, "choice"], "choice_probability_mismatch");
     } else {
-      if (!record(answer.legend) || !sameKeys(answer.legend, keys) || !keys.every((key, i) => sameJson(question.criteria[i], answer.legend[key]))) return null;
-      if (typeof answer.score !== "number" || !Number.isFinite(answer.score) || answer.score < 0 || answer.score > keys.length - 1) return null;
+      if (!record(answer.legend) || !sameKeys(answer.legend, keys) || !keys.every((key, i) => sameJson(question.criteria[i], answer.legend[key]))) issue([id, "legend"], "invalid_legend");
+      if (typeof answer.score !== "number" || !Number.isFinite(answer.score) || answer.score < 0 || answer.score > keys.length - 1) {
+        issue([id, "score"], "invalid_score");
+        continue;
+      }
       const expected = probs.reduce((sum, p, i) => sum + p * i, 0);
       const tolerance = 5e-3 + keys.reduce((sum, _, i) => sum + i * 5e-3, 0);
-      if (Math.abs(expected - answer.score) > tolerance + 1e-8) return null;
+      if (Math.abs(expected - answer.score) > tolerance + 1e-8) issue([id, "score"], "score_probability_mismatch");
     }
   }
-  return value;
+  return issues.length ? { ok: false, issues } : { ok: true, answers: value };
 }
-function toObservation(questions, outcome, context) {
+function toObservation(questions, outcome, context = {}) {
   const meta = {
-    definitionId: context.definitionId,
-    definitionVersion: context.definitionVersion,
-    requestedModel: context.requestedModel,
-    durationMs: context.durationMs,
+    definitionId: context.definitionId ?? null,
+    definitionVersion: context.definitionVersion ?? null,
+    requestedModel: context.requestedModel ?? null,
+    durationMs: typeof context.durationMs === "number" && Number.isFinite(context.durationMs) && context.durationMs >= 0 ? context.durationMs : null,
     model: null,
     requestId: null,
     inputTokens: null,
@@ -68,10 +91,22 @@ function toObservation(questions, outcome, context) {
       meta.outputTokens = tokenCount(raw.usage.output_tokens);
     }
   }
-  const answers = record(raw) ? validateAnswers(questions, raw.answers) : null;
-  return answers ? { ok: true, answers, meta } : { ok: false, error: { kind: "invalid_response" }, meta };
+  const checked = validateAnswers(questions, record(raw) ? raw.answers : void 0);
+  return checked.ok ? { ok: true, answers: checked.answers, meta } : { ok: false, error: { kind: "invalid_response", issues: checked.issues }, meta };
+}
+async function observe({ questions, run, context = {} }) {
+  const started = performance.now();
+  let outcome;
+  try {
+    outcome = await run();
+  } catch (error) {
+    outcome = { error };
+  }
+  const result = toObservation(questions, outcome, context);
+  return { ...result, meta: { ...result.meta, durationMs: performance.now() - started } };
 }
 export {
+  observe,
   toObservation,
   validateAnswers
 };

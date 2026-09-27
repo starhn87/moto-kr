@@ -60,8 +60,24 @@ test('shadow는 분포·제안 hash·run·질문 버전을 기록하며 매핑/�
   assert.equal(report.runId, '123');
   assert.equal(report.rows[0].result.answers.link.choice, 'base_only');
   assert.equal(report.rows[0].result.meta.definitionVersion, '1');
+  assert.ok(report.rows[0].result.meta.durationMs >= 0);
   assert.equal(JSON.stringify(input), before);
   assert.doesNotMatch(JSON.stringify(report), /canary-secret|공식 표/);
+});
+
+test('형식이 잘못된 응답은 위치·이유만 기록하고 기존 제안은 유지한다', async () => {
+  const before = JSON.stringify(input);
+  let calls = 0;
+  const report = await auditMappings(input, { mode: 'shadow', apiKey: 'mock', fetch: async () => {
+    calls++;
+    return Response.json({ answers: { link: { type: 'choice', choice: 'private-label', confidence: 1,
+      probabilities: { direct: 1, base_only: 0, contradictory: 0, insufficient: 0 } } } });
+  } });
+  assert.equal(calls, 1);
+  assert.equal(report.status, 'partial');
+  assert.deepEqual(report.rows[0].result.error, { kind: 'invalid_response', issues: [{ path: ['link', 'choice'], code: 'invalid_choice' }] });
+  assert.equal(JSON.stringify(input), before);
+  assert.doesNotMatch(JSON.stringify(report), /private-label/);
 });
 
 test('비활성·키 없음·잘못된 근거는 과금하지 않고 공급자 실패도 기존 매핑에 영향 없다', async () => {
