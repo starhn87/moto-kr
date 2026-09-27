@@ -167,3 +167,5 @@ CI는 원본 인증 행 수가 모델에 연결된 인증 수와 `unmapped`·`am
 - 코드: [MIT](LICENSE)
 - 인증 원본(`data/raw/`): [공공데이터포털 15000988](https://www.data.go.kr/data/15000988/openapi.do) (환경부·국립환경과학원)
 - 매핑·정제 데이터: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ko). 사용 시 출처를 moto-kr로 표기해 주세요.
+
+주간 매핑의 공통 Jev 패키지·근거 검증·비활성 기본값은 [Jev 매핑 관찰](docs/jev-mapping-audit.md)에 설명한다.

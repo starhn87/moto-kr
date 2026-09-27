@@ -1,9 +1,11 @@
 // Codex가 제안한 구조화 JSON을 검증한 뒤, 고신뢰 매핑만 결정론적으로 반영한다.
 // AI에는 파일 쓰기 권한을 주지 않고 이 스크립트만 mapping/models.json을 변경한다.
-// 사용: node scripts/apply-ai-mappings.mjs <candidates> <proposal> <report>
+// 사용: node scripts/apply-ai-mappings.mjs <candidates> <proposal> <report> <evidence>
 
 import { readFileSync, writeFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
+import { execFileSync } from 'node:child_process';
+import { bindProposalEvidence } from './mapping-evidence.mjs';
 
 import {
   MODEL_KEYS,
@@ -61,7 +63,7 @@ const validateSources = (operation) => {
   }
 };
 
-export const applyProposal = (modelsInput, candidateDocument, proposal) => {
+export const applyProposal = (modelsInput, candidateDocument, proposal, evidenceContext) => {
   assert(Array.isArray(modelsInput), 'models는 배열이어야 합니다');
   assert(Array.isArray(candidateDocument.candidates), 'candidates 배열이 필요합니다');
   assert(Array.isArray(candidateDocument.reviewItems), 'reviewItems 배열이 필요합니다');
@@ -99,6 +101,8 @@ export const applyProposal = (modelsInput, candidateDocument, proposal) => {
     operations.set(key, operation);
   }
   for (const key of candidates.keys()) assert(operations.has(key), `${candidates.get(key).vehNm}: operation 누락`);
+
+  if (evidenceContext) bindProposalEvidence(candidateDocument, proposal, evidenceContext.evidence, evidenceContext);
 
   const reviewOccurrences = new Map();
   for (const item of candidateDocument.reviewItems) {
@@ -176,14 +180,17 @@ export const renderReport = (proposal, result) => {
 export const enrichmentStatus = (result) => result.applied.length > 0 ? 'applied' : 'reviewed-no-change';
 
 const main = () => {
-  const [, , candidatesPath, proposalPath, reportPath] = process.argv;
-  if (!candidatesPath || !proposalPath || !reportPath) {
-    throw new Error('사용법: node scripts/apply-ai-mappings.mjs <candidates> <proposal> <report>');
+  const [, , candidatesPath, proposalPath, reportPath, evidencePath] = process.argv;
+  if (!candidatesPath || !proposalPath || !reportPath || !evidencePath) {
+    throw new Error('사용법: node scripts/apply-ai-mappings.mjs <candidates> <proposal> <report> <evidence>');
   }
   const candidates = JSON.parse(readFileSync(candidatesPath, 'utf8'));
   const proposal = JSON.parse(readFileSync(proposalPath, 'utf8'));
   const models = JSON.parse(readFileSync('mapping/models.json', 'utf8'));
-  const result = applyProposal(models, candidates, proposal);
+  const evidence = JSON.parse(readFileSync(evidencePath, 'utf8'));
+  const raw = [...JSON.parse(readFileSync('data/raw/kencis-import.json', 'utf8')), ...JSON.parse(readFileSync('data/raw/kencis-domestic.json', 'utf8'))];
+  const headSha = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+  const result = applyProposal(models, candidates, proposal, { evidence, raw, headSha });
   writeFileSync('mapping/models.json', `${JSON.stringify(result.models, null, 1)}\n`);
   writeFileSync(reportPath, renderReport(proposal, result));
   process.stdout.write(`${enrichmentStatus(result)}\n`);

@@ -116,3 +116,11 @@ test('HTTP·타임아웃·파싱 실패는 재시도나 키·API 본문 노출 �
     assert.doesNotMatch(JSON.stringify(result), /secret-canary/);
   }
 });
+
+test('동일 업체·차명·형식코드의 인증 재발급과 파생 날짜만 갱신되면 웹 조사를 반복하지 않는다', () => {
+  const before = { ...model, status: 'verified', emissionStandard: 'euro4', lastCertifiedAt: '2025-01-01' };
+  const after = { ...before, emissionStandard: 'euro5', lastCertifiedAt: '2026-01-01', certifications: [{ ...cert, no: 'REISSUED', date: '2026-01-01' }] };
+  assert.deepEqual(reviewSubjects({ models: [before] }, { models: [after] }), []);
+  assert.equal(reviewSubjects({ models: [before] }, { models: [{ ...after, certifications: [{ ...cert, vehType: 'NEW-TYPE' }] }] }).length, 1);
+  assert.equal(reviewSubjects({ models: [before] }, { models: [{ ...after, displacement: 150 }] }).length, 1);
+});
