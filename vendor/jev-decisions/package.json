@@ -1,0 +1,12 @@
+{
+  "name": "@starhn87/jev-decisions",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Validated Jev decisions for Workers, Deno and Node",
+  "license": "MIT",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "LICENSE", "THIRD_PARTY_LICENSES", "README.md"],
+  "sideEffects": false,
+  "scripts": { "build": "node ../../scripts/build-decisions.mjs" }
+}

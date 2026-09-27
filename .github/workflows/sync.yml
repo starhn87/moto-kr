@@ -46,6 +46,8 @@ jobs:
         if: steps.recovery.outputs.should-run == 'true'
         with:
           node-version: 22
+      - run: npm ci
+        if: steps.recovery.outputs.should-run == 'true'
       - name: preserve previous review list
         if: steps.recovery.outputs.should-run == 'true'
         run: cp data/unmapped.json "$RUNNER_TEMP/unmapped-before.json"
@@ -174,6 +176,47 @@ jobs:
           effort: high
           allow-bots: true
 
+  # 별도 읽기 전용 관찰. 기존 Codex의 마지막 단계 경계와 publish 의존성을 유지한다.
+  jev-audit:
+    needs: [prepare, enrich]
+    if: needs.prepare.outputs.fetch-succeeded == 'true' && needs.enrich.outputs.proposal != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - run: npm ci
+      - uses: actions/download-artifact@v8
+        with:
+          name: raw-sync
+          path: .
+      - uses: actions/download-artifact@v8
+        with:
+          name: sync-candidates
+          path: .
+      - uses: actions/download-artifact@v8
+        with:
+          name: enrichment-evidence
+          path: .
+      - name: observe proposal evidence with Jev
+        env:
+          AI_PROPOSAL: ${{ needs.enrich.outputs.proposal }}
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+          JEV_MAPPING_MODE: ${{ vars.JEV_MAPPING_MODE || 'off' }}
+        run: node scripts/audit-jev-mappings.mjs jev-mapping-audit.json
+      - uses: actions/upload-artifact@v7
+        with:
+          name: jev-mapping-audit
+          path: jev-mapping-audit.json
+          retention-days: 30
+          if-no-files-found: error
+
   publish:
     needs: [prepare, enrich]
     if: always() && needs.prepare.result == 'success' && needs.prepare.outputs.fetch-succeeded == 'true'
@@ -192,6 +235,7 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 22
+      - run: npm ci
       - name: preserve base data for PR summary
         run: |
           mkdir -p \
@@ -211,6 +255,12 @@ jobs:
         with:
           name: sync-candidates
           path: .
+      - uses: actions/download-artifact@v8
+        if: needs.enrich.outputs.proposal != ''
+        continue-on-error: true
+        with:
+          name: enrichment-evidence
+          path: ${{ runner.temp }}/enrichment-evidence
       - name: apply validated AI proposal with raw-sync fallback
         id: apply
         env:
@@ -227,7 +277,8 @@ jobs:
               if status=$(node scripts/apply-ai-mappings.mjs \
                 sync-candidates.json \
                 "$RUNNER_TEMP/ai-proposal.json" \
-                "$RUNNER_TEMP/ai-enrichment.md"); then
+                "$RUNNER_TEMP/ai-enrichment.md" \
+                "$RUNNER_TEMP/enrichment-evidence/sync-evidence.json"); then
               else
                 cp "$RUNNER_TEMP/models-before-ai.json" mapping/models.json
                 status=fallback-invalid-proposal
@@ -387,6 +438,10 @@ jobs:
         with:
           ref: ${{ github.sha }}
           persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - run: npm ci
       - name: preserve trusted review instructions
         run: |
           cp .github/codex/prompts/review-kencis.md "$RUNNER_TEMP/review-kencis.md"

@@ -10,5 +10,8 @@
     "test": "node --test tests/*.test.mjs",
     "check": "npm run build && npm run validate && npm test"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@starhn87/jev-decisions": "file:vendor/jev-decisions"
+  }
 }

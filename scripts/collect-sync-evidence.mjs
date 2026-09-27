@@ -4,6 +4,7 @@ import { readFileSync, writeFileSync, appendFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
+import { MODEL_KEYS } from '../lib/model-rules.mjs';
 import { findNewReviewItems } from './find-new-unmapped.mjs';
 
 export const LIMITS = { subjects: 20, inputCharacters: 60_000, toolCalls: 12, outputTokens: 8_000, timeoutMs: 480_000 };
@@ -18,13 +19,17 @@ export const reviewSubjects = (before, after, beforeReview = {}, afterReview = {
     const old = previous.get(model.nameKo);
     previous.delete(model.nameKo);
     if (stable(old) === stable(model)) continue;
-    const oldCerts = new Set((old?.certifications ?? []).map(stable));
+    const identity = cert => stable([cert.office ?? '', cert.vehNm ?? '', cert.vehType ?? '']);
+    const oldCerts = new Set((old?.certifications ?? []).map(identity));
+    const addedCertifications = (model.certifications ?? []).filter(cert => !oldCerts.has(identity(cert)));
+    const identityOrSpecs = value => value ? Object.fromEntries(MODEL_KEYS.map(key => [key, value[key]])) : null;
+    if (old && !addedCertifications.length && stable(identityOrSpecs(old)) === stable(identityOrSpecs(model))) continue;
     const { certifications, ...fields } = model;
     const { certifications: ignored, ...oldFields } = old ?? {};
     subjects.push({
       id: idOf('model', model.nameKo), kind: 'model',
       before: old ? oldFields : null, after: fields,
-      addedCertifications: certifications.filter((cert) => !oldCerts.has(stable(cert))),
+      addedCertifications,
     });
   }
   for (const model of previous.values()) {
