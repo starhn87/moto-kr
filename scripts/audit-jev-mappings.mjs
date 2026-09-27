@@ -2,7 +2,8 @@
 import { appendFileSync, readFileSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
-import { createDecisionClient } from '@starhn87/jev-decisions';
+import { TypeSafeClient } from '@typesafe-ai/sdk';
+import { toObservation } from '@starhn87/jev-decisions';
 import { applyProposal } from './apply-ai-mappings.mjs';
 import { bindProposalEvidence, candidateKey, hashJson } from './mapping-evidence.mjs';
 
@@ -36,10 +37,18 @@ export async function auditMappings({ candidates, proposal, evidence, models, ra
     return { operation, ...match, target: operation.model ?? models.find(model => model.nameKo === operation.targetNameKo) ?? proposal.operations.find(other => other.action === 'new' && other.model.nameKo === operation.targetNameKo)?.model };
   });
   if (JSON.stringify(inputs).length > 60_000) return { ...report, reason: 'input-budget-exceeded' };
-  const client = createDecisionClient({ apiKey, model: 'jev-1.13.0', fetch: fetchImpl });
+  const client = new TypeSafeClient({ apiKey, baseURL: 'https://api.typesafe.ai', defaultModel: 'jev-1.13.0', fetch: fetchImpl,
+    retry: { maxRetries: 0 }, logLevel: 'off' });
   for (const input of inputs) {
-    const result = await client.decide({ definitionId: 'kencis-mapping-link', definitionVersion: '1',
-      state: input, questions: MAPPING_QUESTIONS }, { timeoutMs: 2000 });
+    const started = performance.now();
+    let outcome;
+    try { outcome = await client.systemOne({ state: input, questions: MAPPING_QUESTIONS }, { timeout: 2000 }).withResponse(); }
+    catch (error) { outcome = { error }; }
+    const result = toObservation(MAPPING_QUESTIONS, outcome, {
+      definitionId: 'kencis-mapping-link', definitionVersion: '1', requestedModel: client.defaultModel,
+      durationMs: performance.now() - started,
+    });
+    result.meta.durationMs = performance.now() - started;
     report.rows.push({ subjectId: input.subject.id, action: input.operation.action, confidence: input.operation.confidence, result });
   }
   return { ...report, status: report.rows.some(row => !row.result.ok) ? 'partial' : 'complete' };

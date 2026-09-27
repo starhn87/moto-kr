@@ -6,9 +6,9 @@ PR HEAD에 대한 독립 검토와 사람의 최종 머지 판단을 유지한�
 
 ## 공통 패키지
 
-`@starhn87/jev-decisions@0.1.0`의 SDK 포함 ESM artifact를 `vendor/jev-decisions`에
+`@starhn87/jev-decisions@0.2.1`의 응답 유틸리티 artifact를 `vendor/jev-decisions`에
 고정했다. CI는 이 저장소만 checkout한 후 `npm ci`로 설치할 수 있다. 원본은
-jev-decision-kit의 `packages/decisions`이며 `provenance.json`에 원본 커밋과
+jev-utils의 `packages/decisions`이며 `provenance.json`에 원본 커밋과
 각 파일의 SHA-256을 기록한다. 원본의 vendor 스크립트로 갱신하고 수동 편집하지 않는다.
 
 ## 근거와 실제 반영의 경계
@@ -44,3 +44,7 @@ run ID·evidence 입력 해시를 남긴다. 키·조사 원문은 남기지 않
 독립 리뷰 대체에 Jev 결과를 사용하지 않는다.
 
 2026-09-27부터 저장소 변수는 shadow로 설정했다. 신규/변경 후보가 있는 동기화 실행에서만 측정하며, 감사 artifact를 30일 보관한다. 공통 저장소의 주간 이슈가 관측 결과와 수집 공백을 추적한다.
+
+호출은 공식 `@typesafe-ai/sdk@0.6.0`의 `TypeSafeClient.systemOne()`으로 수행하고,
+받은 응답과 SDK 오류를 공통 `toObservation` 유틸리티로 변환한다. 질문·예산·2초
+timeout·재시도 0·Shadow 기록은 이 저장소가 소유한다. 기존 매핑과 공개 API 동작은 유지한다.

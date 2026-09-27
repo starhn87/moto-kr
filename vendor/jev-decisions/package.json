@@ -1,12 +1,46 @@
 {
   "name": "@starhn87/jev-decisions",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "type": "module",
-  "description": "Validated Jev decisions for Workers, Deno and Node",
+  "description": "Response validation and observation utilities for the official TypeSafe SDK",
   "license": "MIT",
-  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starhn87/jev-utils.git",
+    "directory": "packages/decisions"
+  },
+  "homepage": "https://github.com/starhn87/jev-utils/tree/main/packages/decisions#readme",
+  "bugs": "https://github.com/starhn87/jev-utils/issues",
+  "keywords": [
+    "jev",
+    "typesafe",
+    "decisions",
+    "cloudflare-workers",
+    "deno"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
   "types": "./dist/index.d.ts",
-  "files": ["dist", "LICENSE", "THIRD_PARTY_LICENSES", "README.md"],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "sideEffects": false,
-  "scripts": { "build": "node ../../scripts/build-decisions.mjs" }
+  "scripts": {
+    "build": "node ../../scripts/build-decisions.mjs",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "@typesafe-ai/sdk": "0.6.0"
+  }
 }
