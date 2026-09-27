@@ -12,6 +12,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@starhn87/jev-decisions": "file:vendor/jev-decisions"
+    "@starhn87/jev-decisions": "file:vendor/jev-decisions",
+    "@typesafe-ai/sdk": "0.6.0"
   }
 }

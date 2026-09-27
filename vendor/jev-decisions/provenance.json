@@ -1,15 +1,13 @@
 {
   "package": "@starhn87/jev-decisions",
-  "version": "0.1.0",
-  "sourceCommit": "db9bd8adcc5a83a1d6808f2e1538ad12b403491b",
+  "version": "0.2.0",
+  "sourceCommit": "93de1e0cda05b20ae493654f071a586b19bce874",
   "files": {
-    "dist/index.js": "4382271e91f8035e3ece4b58a7f1eb6c2c44312c7c71979133a8ed2f6ea9d4a2",
-    "dist/index.d.ts": "11660acdda91b0ffaeac036f891ceb7577fd1f4bbc93f5e72651f1f3c832378c",
-    "dist/types.d.ts": "540485fb8281110ea756808cf4501e8ffa6cd6c80738a8068cafca4f865dd300",
-    "dist/validation.d.ts": "1475d8802a14667321345d00291ec66f9568cdd8da25e6240a03c21b4f4ebadb",
-    "package.json": "6319d65ab4c97445457c4414fda07cbad22173f26cb92e11180a3fa976b8a43f",
+    "dist/index.js": "94e8c8f1cf25299998c55fa546495b5029a22dc338b360c088bec80c1b977734",
+    "dist/index.d.ts": "d6c0b1be17db6c5d3aa8d2a9e29df5cdb2722b862fe6dc0b0e9f3879e02a0f91",
+    "dist/build.json": "0aa9f63f8fd83c49fbcdf60ea32fb1f106697eb36a33016dcc8d36936a571e5b",
+    "package.json": "148717879ab8af697f39a9524a3e0e0f94f647d76a45609b6cb0c7c893c07618",
     "LICENSE": "819536c829e0eefdf2357a803691bf4b179121c9a9e3b7ff77acf6e85e2ea113",
-    "THIRD_PARTY_LICENSES": "f7c12f055628204172796b98c08c910b521ab8278e6217fa8af622140e618d94",
-    "README.md": "f801b53c254a8c8e7a43e7c605783be730d11a72d8dda2a6e4fa49980229b14e"
+    "README.md": "4ee6d27b1b257486fd6c49dd42dcb2f8c32c2a2e489eed2e1d51f5212f1c7d60"
   }
 }
