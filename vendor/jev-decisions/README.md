@@ -4,9 +4,9 @@ Use the official `@typesafe-ai/sdk` for requests, question builders, types, canc
 
 ## Install in an existing project
 
-From a Jev Decision Kit clone, `npm run connect -- ../my-app` installs the official SDK, these utilities, a local CLI and project skills. See [exact installation scope](https://github.com/starhn87/jev-decision-kit/blob/main/docs/integration.md).
+From a Jev Utils clone, `npm run connect -- ../my-app` installs the official SDK, these utilities, a local CLI and project skills. See [exact installation scope](https://github.com/starhn87/jev-utils/blob/main/docs/integration.md).
 
-For library-only installation, copy `artifacts/starhn87-jev-decisions-0.2.0.tgz` from the clone to your project's vendor folder, then install that local package and `@typesafe-ai/sdk@0.6.0` using your package manager. Commit the vendor file, manifest and lockfile. npm registry publication is pending.
+For library-only installation, copy `artifacts/starhn87-jev-decisions-0.2.1.tgz` from the clone to your project's vendor folder, then install that local package and `@typesafe-ai/sdk@0.6.0` using your package manager. Commit the vendor file, manifest and lockfile. npm registry publication is pending.
 
 ## Validate an official SDK response
 
@@ -62,4 +62,4 @@ Each app chooses its questions, request limits, timeout/retry settings, threshol
 
 ## Workers and Deno
 
-Workers use the same imports through the application's bundler. Deno/Supabase can map `@typesafe-ai/sdk` to `npm:@typesafe-ai/sdk@0.6.0` in their Deno configuration and import the vendored utility's `dist/index.js`. Its adjacent `index.d.ts` uses the official SDK types. Keep the SDK version and lockfile in the app's execution environment. [Runtime verification and release procedure](https://github.com/starhn87/jev-decision-kit/blob/main/docs/releases.md).
+Workers use the same imports through the application's bundler. Deno/Supabase can map `@typesafe-ai/sdk` to `npm:@typesafe-ai/sdk@0.6.0` in their Deno configuration and import the vendored utility's `dist/index.js`. Its adjacent `index.d.ts` uses the official SDK types. Keep the SDK version and lockfile in the app's execution environment. [Runtime verification and release procedure](https://github.com/starhn87/jev-utils/blob/main/docs/releases.md).

@@ -1,16 +1,16 @@
 {
   "name": "@starhn87/jev-decisions",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "description": "Response validation and observation utilities for the official TypeSafe SDK",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/starhn87/jev-decision-kit.git",
+    "url": "git+https://github.com/starhn87/jev-utils.git",
     "directory": "packages/decisions"
   },
-  "homepage": "https://github.com/starhn87/jev-decision-kit/tree/main/packages/decisions#readme",
-  "bugs": "https://github.com/starhn87/jev-decision-kit/issues",
+  "homepage": "https://github.com/starhn87/jev-utils/tree/main/packages/decisions#readme",
+  "bugs": "https://github.com/starhn87/jev-utils/issues",
   "keywords": [
     "jev",
     "typesafe",

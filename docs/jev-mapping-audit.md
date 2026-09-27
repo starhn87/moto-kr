@@ -6,9 +6,9 @@ PR HEAD에 대한 독립 검토와 사람의 최종 머지 판단을 유지한�
 
 ## 공통 패키지
 
-`@starhn87/jev-decisions@0.2.0`의 응답 유틸리티 artifact를 `vendor/jev-decisions`에
+`@starhn87/jev-decisions@0.2.1`의 응답 유틸리티 artifact를 `vendor/jev-decisions`에
 고정했다. CI는 이 저장소만 checkout한 후 `npm ci`로 설치할 수 있다. 원본은
-jev-decision-kit의 `packages/decisions`이며 `provenance.json`에 원본 커밋과
+jev-utils의 `packages/decisions`이며 `provenance.json`에 원본 커밋과
 각 파일의 SHA-256을 기록한다. 원본의 vendor 스크립트로 갱신하고 수동 편집하지 않는다.
 
 ## 근거와 실제 반영의 경계
