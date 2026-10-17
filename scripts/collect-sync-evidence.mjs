@@ -81,6 +81,11 @@ const safeUrl = (value) => {
   } catch { return null; }
 };
 
+const evidenceFailureReasons = new Set([
+  'incomplete-response', 'no-web-search', 'missing-subjects', 'invalid-item',
+  'missing-source', 'unretrieved-source',
+]);
+
 export const parseEvidence = (response, subjects) => {
   if (response.status !== 'completed' || !Array.isArray(response.output)) throw new Error('incomplete-response');
   const searches = response.output.filter((item) => item.type === 'web_search_call' && item.status === 'completed');
@@ -126,7 +131,11 @@ export const collectEvidence = async ({ phase, subjects, headSha, baseSha = null
     let body;
     try { body = await response.json(); } catch { return { ...result, error: 'invalid-api-response' }; }
     try { return { ...result, ...parseEvidence(body, subjects), status: 'complete' }; }
-    catch { return { ...result, error: 'unverified-api-evidence' }; }
+    catch (error) {
+      // Only emit our own fixed error codes; parser messages may contain model output.
+      const reason = evidenceFailureReasons.has(error?.message) ? error.message : 'invalid-structured-output';
+      return { ...result, error: 'unverified-api-evidence', reason };
+    }
   } catch { return { ...result, error: 'request-failed-or-timed-out' }; }
 };
 
@@ -153,7 +162,7 @@ const main = async () => {
   writeFileSync(outputPath, `${JSON.stringify(result, null, 2)}\n`);
   const usable = evidenceUsable(result, { phase, headSha });
   if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, `usable=${usable}\n`);
-  const summary = `Web evidence (${phase}): ${result.status}; subjects=${subjects.length}; calls=${result.webSearchCalls ?? 0}; inputTokens=${result.usage?.inputTokens ?? 0}; outputTokens=${result.usage?.outputTokens ?? 0}; error=${result.error ?? 'none'}`;
+  const summary = `Web evidence (${phase}): ${result.status}; subjects=${subjects.length}; calls=${result.webSearchCalls ?? 0}; inputTokens=${result.usage?.inputTokens ?? 0}; outputTokens=${result.usage?.outputTokens ?? 0}; error=${result.error ?? 'none'}; reason=${result.reason ?? 'none'}`;
   console.log(summary);
   if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, `${summary}\n`);
 };

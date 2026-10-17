@@ -117,6 +117,21 @@ test('HTTP·타임아웃·파싱 실패는 재시도나 키·API 본문 노출 �
   }
 });
 
+test('근거 검증 실패는 안전한 세부 원인만 기록한다', async () => {
+  const cases = [
+    [{ ...responseBody(), status: 'incomplete' }, 'incomplete-response'],
+    [responseBody([{ ...reportItem, sourceUrls: ['https://invented.example'] }]), 'unretrieved-source'],
+    [{ ...responseBody(), output: [{ type: 'web_search_call', status: 'completed', action: { sources: [{ url }] } },
+      { type: 'message', content: [{ type: 'output_text', text: 'secret-canary' }] }] }, 'invalid-structured-output'],
+  ];
+  for (const [body, reason] of cases) {
+    const result = await collectEvidence({ ...options, fetchImpl: async () => ({ ok: true, json: async () => body }) });
+    assert.equal(result.error, 'unverified-api-evidence');
+    assert.equal(result.reason, reason);
+    assert.doesNotMatch(JSON.stringify(result), /secret-canary/);
+  }
+});
+
 test('동일 업체·차명·형식코드의 인증 재발급과 파생 날짜만 갱신되면 웹 조사를 반복하지 않는다', () => {
   const before = { ...model, status: 'verified', emissionStandard: 'euro4', lastCertifiedAt: '2025-01-01' };
   const after = { ...before, emissionStandard: 'euro5', lastCertifiedAt: '2026-01-01', certifications: [{ ...cert, no: 'REISSUED', date: '2026-01-01' }] };

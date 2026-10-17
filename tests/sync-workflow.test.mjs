@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
 import { readFile } from 'node:fs/promises';
 
 const workflowPath = new URL('../.github/workflows/sync.yml', import.meta.url);
@@ -27,6 +28,19 @@ test('AI 보완 상태는 스크립트가 출력한 실제 반영 결과를 사�
   const workflow = await readFile(workflowPath, 'utf8');
   assert.match(workflow, /if status=\$\(node scripts\/apply-ai-mappings\.mjs/);
   assert.doesNotMatch(workflow, /status=applied/);
+});
+
+test('원본 동기화 fallback을 포함한 PR 게시 셸 블록은 유효한 Bash다', async () => {
+  const workflow = await readFile(workflowPath, 'utf8');
+  const start = workflow.indexOf('      - name: apply validated AI proposal with raw-sync fallback\n');
+  assert.notEqual(start, -1);
+  const end = workflow.indexOf('\n      - name:', start + 1);
+  assert.notEqual(end, -1);
+  const run = workflow.slice(start, end).split('        run: |\n')[1];
+  assert.ok(run);
+  const shell = run.split('\n').map((line) => line.startsWith('          ') ? line.slice(10) : line).join('\n');
+  const result = spawnSync('bash', ['-n'], { input: shell, encoding: 'utf8' });
+  assert.equal(result.status, 0, result.stderr);
 });
 
 test('코멘트 잡은 쓰기 토큰으로 PR 코드를 실행하지 않고 신뢰된 스크립트를 체크아웃한다', async () => {

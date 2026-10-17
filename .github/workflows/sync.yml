@@ -279,6 +279,7 @@ jobs:
                 "$RUNNER_TEMP/ai-proposal.json" \
                 "$RUNNER_TEMP/ai-enrichment.md" \
                 "$RUNNER_TEMP/enrichment-evidence/sync-evidence.json"); then
+                : # status already contains the applied result
               else
                 cp "$RUNNER_TEMP/models-before-ai.json" mapping/models.json
                 status=fallback-invalid-proposal
