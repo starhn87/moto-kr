@@ -1,14 +1,14 @@
 {
  "meta": {
-  "generatedAt": "2026-09-23",
+  "generatedAt": "2026-10-17",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1149,
    "verified": 993,
    "curated": 156,
-   "certifications": 4975,
-   "unmapped": 14,
-   "ambiguous": 0,
+   "certifications": 5011,
+   "unmapped": 25,
+   "ambiguous": 1,
    "excluded": 12
   }
  },
@@ -4683,7 +4683,7 @@
     "BMW R 1300 GS ASA"
    ],
    "firstCertifiedAt": "2023-10-06",
-   "lastCertifiedAt": "2025-08-05",
+   "lastCertifiedAt": "2026-10-13",
    "certifications": [
     {
      "no": "PMC-BK-3",
@@ -4792,6 +4792,24 @@
      "vehType": "0M21",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
+    },
+    {
+     "no": "PMY-BK-3",
+     "date": "2026-10-13",
+     "office": "BMW Korea",
+     "vehNm": "BMW R 1300 GS ASA",
+     "vehType": "0M21",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "PMY-BK-3",
+     "date": "2026-10-13",
+     "office": "BMW Korea",
+     "vehNm": "BMW R 1300 GS",
+     "vehType": "0M21",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
     }
    ]
   },
@@ -4816,7 +4834,7 @@
     "BMW R 1300 GS Adventure ASA"
    ],
    "firstCertifiedAt": "2024-09-24",
-   "lastCertifiedAt": "2025-08-05",
+   "lastCertifiedAt": "2026-10-13",
    "certifications": [
     {
      "no": "RMC-BK-6",
@@ -4866,6 +4884,24 @@
     {
      "no": "RMY-BK-6",
      "date": "2025-08-05",
+     "office": "BMW Korea",
+     "vehNm": "BMW R 1300 GS Adventure",
+     "vehType": "0M31",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMY-BK-6",
+     "date": "2026-10-13",
+     "office": "BMW Korea",
+     "vehNm": "BMW R 1300 GS Adventure ASA",
+     "vehType": "0M31",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMY-BK-6",
+     "date": "2026-10-13",
      "office": "BMW Korea",
      "vehNm": "BMW R 1300 GS Adventure",
      "vehType": "0M31",
@@ -4895,7 +4931,7 @@
     "BMW R 1300 R ASA"
    ],
    "firstCertifiedAt": "2025-07-10",
-   "lastCertifiedAt": "2025-07-10",
+   "lastCertifiedAt": "2026-10-13",
    "certifications": [
     {
      "no": "SMC-BK-5",
@@ -4927,6 +4963,24 @@
     {
      "no": "SMY-BK-5",
      "date": "2025-07-10",
+     "office": "BMW Korea",
+     "vehNm": "BMW R 1300 R",
+     "vehType": "0M51",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-BK-5",
+     "date": "2026-10-13",
+     "office": "BMW Korea",
+     "vehNm": "BMW R 1300 R ASA",
+     "vehType": "0M51",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-BK-5",
+     "date": "2026-10-13",
      "office": "BMW Korea",
      "vehNm": "BMW R 1300 R",
      "vehType": "0M51",
@@ -4956,7 +5010,7 @@
     "BMW R 1300 RS ASA"
    ],
    "firstCertifiedAt": "2025-07-10",
-   "lastCertifiedAt": "2025-07-10",
+   "lastCertifiedAt": "2026-10-13",
    "certifications": [
     {
      "no": "SMC-BK-5",
@@ -4988,6 +5042,24 @@
     {
      "no": "SMY-BK-5",
      "date": "2025-07-10",
+     "office": "BMW Korea",
+     "vehNm": "BMW R 1300 RS",
+     "vehType": "0M61",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-BK-5",
+     "date": "2026-10-13",
+     "office": "BMW Korea",
+     "vehNm": "BMW R 1300 RS ASA",
+     "vehType": "0M61",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-BK-5",
+     "date": "2026-10-13",
      "office": "BMW Korea",
      "vehNm": "BMW R 1300 RS",
      "vehType": "0M61",
@@ -5017,7 +5089,7 @@
     "BMW R 1300 RT ASA"
    ],
    "firstCertifiedAt": "2025-05-21",
-   "lastCertifiedAt": "2025-08-05",
+   "lastCertifiedAt": "2026-10-13",
    "certifications": [
     {
      "no": "RMY-BK-6",
@@ -5085,6 +5157,24 @@
     {
      "no": "RMY-BK-6",
      "date": "2025-08-05",
+     "office": "BMW Korea",
+     "vehNm": "BMW R 1300 RT",
+     "vehType": "0M41",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMY-BK-6",
+     "date": "2026-10-13",
+     "office": "BMW Korea",
+     "vehNm": "BMW R 1300 RT ASA",
+     "vehType": "0M41",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMY-BK-6",
+     "date": "2026-10-13",
      "office": "BMW Korea",
      "vehNm": "BMW R 1300 RT",
      "vehType": "0M41",
@@ -23855,7 +23945,7 @@
    "electric": false,
    "fuelGrade": "regular",
    "seatHeight": 760,
-   "weight": 140,
+   "weight": 145,
    "cylinders": 1,
    "cooling": "liquid",
    "fuelCapacity": 8,
@@ -23863,10 +23953,11 @@
    "emissionStandard": "euro5",
    "status": "verified",
    "aliases": [
-    "UHR125"
+    "UHR125",
+    "UHR125T"
    ],
    "firstCertifiedAt": "2021-12-29",
-   "lastCertifiedAt": "2025-06-17",
+   "lastCertifiedAt": "2026-10-07",
    "certifications": [
     {
      "no": "MMC-DL-5",
@@ -23957,6 +24048,24 @@
      "vehType": "D7RA",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
+    },
+    {
+     "no": "TDL-GS-14-03",
+     "date": "2026-10-07",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "UHR125T",
+     "vehType": "SAP",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "domestic"
+    },
+    {
+     "no": "TMY-DL-14-03",
+     "date": "2026-10-07",
+     "office": "디앤에이모터스(주)",
+     "vehNm": "UHR125T",
+     "vehType": "SAP",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "domestic"
     }
    ]
   },
@@ -50871,7 +50980,7 @@
     {
      "no": "SMEV-EX-2",
      "date": "2025-11-10",
-     "office": "(주)일렉사",
+     "office": "(주)이누리",
      "vehNm": "욜로디",
      "vehType": "YOLO",
      "fuel": "전기(EV)",
@@ -50880,7 +50989,7 @@
     {
      "no": "SMY-EX-21-2",
      "date": "2025-11-10",
-     "office": "(주)일렉사",
+     "office": "(주)이누리",
      "vehNm": "욜로디",
      "vehType": "YOLO",
      "fuel": "전기(EV)",
@@ -50913,7 +51022,7 @@
     {
      "no": "SMEV-EX-1",
      "date": "2025-11-10",
-     "office": "(주)일렉사",
+     "office": "(주)이누리",
      "vehNm": "욜로에스",
      "vehType": "YOLO",
      "fuel": "전기(EV)",
@@ -50922,7 +51031,7 @@
     {
      "no": "SMY-EX-21-1",
      "date": "2025-11-10",
-     "office": "(주)일렉사",
+     "office": "(주)이누리",
      "vehNm": "욜로에스",
      "vehType": "YOLO",
      "fuel": "전기(EV)",
@@ -66144,7 +66253,7 @@
     "CBF125NA"
    ],
    "firstCertifiedAt": "2017-10-31",
-   "lastCertifiedAt": "2023-12-18",
+   "lastCertifiedAt": "2026-10-01",
    "certifications": [
     {
      "no": "HMY-HK-11",
@@ -66221,6 +66330,24 @@
     {
      "no": "MMY-HK-4",
      "date": "2023-12-18",
+     "office": "혼다코리아(주)",
+     "vehNm": "CBF125NA",
+     "vehType": "JC91",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "PMY-HK-5",
+     "date": "2026-09-30",
+     "office": "혼다코리아(주)",
+     "vehNm": "CBF125NA",
+     "vehType": "JC91",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "PMC-HK-5",
+     "date": "2026-10-01",
      "office": "혼다코리아(주)",
      "vehNm": "CBF125NA",
      "vehType": "JC91",
