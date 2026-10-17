@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generatedAt": "2026-10-16",
+  "generatedAt": "2026-10-17",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1149,
@@ -23945,7 +23945,7 @@
    "electric": false,
    "fuelGrade": "regular",
    "seatHeight": 760,
-   "weight": 140,
+   "weight": 145,
    "cylinders": 1,
    "cooling": "liquid",
    "fuelCapacity": 8,
