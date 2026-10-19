@@ -1,12 +1,12 @@
 {
  "meta": {
-  "generatedAt": "2026-10-17",
+  "generatedAt": "2026-10-19",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1149,
    "verified": 993,
    "curated": 156,
-   "certifications": 5011,
+   "certifications": 5012,
    "unmapped": 25,
    "ambiguous": 1,
    "excluded": 12
@@ -21941,13 +21941,14 @@
    "cooling": null,
    "fuelCapacity": null,
    "power": null,
-   "emissionStandard": "euro4",
+   "emissionStandard": "euro5",
    "status": "verified",
    "aliases": [
-    "JANGBORI"
+    "JANGBORI",
+    "장보리-3"
    ],
    "firstCertifiedAt": "2020-06-16",
-   "lastCertifiedAt": "2020-06-16",
+   "lastCertifiedAt": "2026-10-19",
    "certifications": [
     {
      "no": "LMY-GR-21-38",
@@ -21955,6 +21956,15 @@
      "office": "그린모빌리티",
      "vehNm": "JANGBORI",
      "vehType": "ETDJ-1.0",
+     "fuel": "전기(EV)",
+     "gubun": "domestic"
+    },
+    {
+     "no": "TMY-GM-21-37",
+     "date": "2026-10-19",
+     "office": "(주)지엠티엔지니어링",
+     "vehNm": "장보리-3",
+     "vehType": "ETSJ-3.0",
      "fuel": "전기(EV)",
      "gubun": "domestic"
     }

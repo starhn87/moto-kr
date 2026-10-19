@@ -6178,5 +6178,20 @@
   "OFFICE_NM": "디앤에이모터스(주)",
   "VEH_NM": "UHR150T",
   "VEH_TYPE": "SY0"
+ },
+ {
+  "CARTYPE": "이륜",
+  "EMIS_CERTI_NO": "TMY-GM-21-37",
+  "EMIS_CERTI_DATE": "2026/10/19",
+  "FUELTYPE": "전기(EV)",
+  "GUBUN1": "배출",
+  "GUBUN2": "소음",
+  "MUSTARD": null,
+  "MUSTARD2": null,
+  "NOISE_CERTI_DATE": null,
+  "NOISE_CERTI_NO": null,
+  "OFFICE_NM": "(주)지엠티엔지니어링",
+  "VEH_NM": "장보리-3",
+  "VEH_TYPE": "ETSJ-3.0"
  }
 ]

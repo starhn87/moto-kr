@@ -1,12 +1,12 @@
 {
  "meta": {
-  "generatedAt": "2026-10-17",
+  "generatedAt": "2026-10-19",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1149,
    "verified": 993,
    "curated": 156,
-   "certifications": 5011,
+   "certifications": 5012,
    "unmapped": 25,
    "ambiguous": 1,
    "excluded": 12
