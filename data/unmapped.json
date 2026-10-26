@@ -1,18 +1,59 @@
 {
  "meta": {
-  "generatedAt": "2026-10-17",
+  "generatedAt": "2026-10-26",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1149,
    "verified": 993,
    "curated": 156,
-   "certifications": 5011,
-   "unmapped": 25,
+   "certifications": 5025,
+   "unmapped": 28,
    "ambiguous": 1,
    "excluded": 12
   }
  },
  "unmapped": [
+  {
+   "vehNm": "젠트로피 제트 케이 코어",
+   "office": "(주)젠트로피",
+   "brandHint": null,
+   "count": 2,
+   "lastDate": "2026-10-26"
+  },
+  {
+   "vehNm": "큐울트라",
+   "office": "(주)큐모터스",
+   "brandHint": null,
+   "count": 2,
+   "lastDate": "2026-10-26"
+  },
+  {
+   "vehNm": "BMW F 450 R",
+   "office": "BMW Korea",
+   "brandHint": [
+    "BMW"
+   ],
+   "count": 2,
+   "lastDate": "2026-10-23"
+  },
+  {
+   "vehNm": "BMW F 450 RR",
+   "office": "BMW Korea",
+   "brandHint": [
+    "BMW"
+   ],
+   "count": 2,
+   "lastDate": "2026-10-23"
+  },
+  {
+   "vehNm": "UL125T",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 2,
+   "lastDate": "2026-10-21"
+  },
   {
    "vehNm": "SPEED TWIN 1200 TFC",
    "office": "(주)바이크코리아",
@@ -31,24 +72,6 @@
    ],
    "count": 2,
    "lastDate": "2026-10-08"
-  },
-  {
-   "vehNm": "BMW F 450 R",
-   "office": "BMW Korea",
-   "brandHint": [
-    "BMW"
-   ],
-   "count": 1,
-   "lastDate": "2026-10-06"
-  },
-  {
-   "vehNm": "BMW F 450 RR",
-   "office": "BMW Korea",
-   "brandHint": [
-    "BMW"
-   ],
-   "count": 1,
-   "lastDate": "2026-10-06"
   },
   {
    "vehNm": "Harley-Davidson FLHLT",

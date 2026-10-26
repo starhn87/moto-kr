@@ -68983,5 +68983,50 @@
   "OFFICE_NM": "BMW Korea",
   "VEH_NM": "BMW R 1300 R",
   "VEH_TYPE": "0M51"
+ },
+ {
+  "CARTYPE": "이륜",
+  "EMIS_CERTI_NO": null,
+  "EMIS_CERTI_DATE": null,
+  "FUELTYPE": "휘발유(Gasoline)",
+  "GUBUN1": "배출",
+  "GUBUN2": "소음",
+  "MUSTARD": null,
+  "MUSTARD2": "2018년 기준",
+  "NOISE_CERTI_DATE": "2026/10/23",
+  "NOISE_CERTI_NO": "TMC-BK-1",
+  "OFFICE_NM": "BMW Korea",
+  "VEH_NM": "BMW F 450 RR",
+  "VEH_TYPE": "0R51"
+ },
+ {
+  "CARTYPE": "이륜",
+  "EMIS_CERTI_NO": "TMY-BK-1",
+  "EMIS_CERTI_DATE": "2026/10/23",
+  "FUELTYPE": "휘발유(Gasoline)",
+  "GUBUN1": "배출",
+  "GUBUN2": "소음",
+  "MUSTARD": null,
+  "MUSTARD2": null,
+  "NOISE_CERTI_DATE": null,
+  "NOISE_CERTI_NO": null,
+  "OFFICE_NM": "BMW Korea",
+  "VEH_NM": "BMW F 450 R",
+  "VEH_TYPE": "0R41"
+ },
+ {
+  "CARTYPE": "이륜",
+  "EMIS_CERTI_NO": "TMY-XD-21-1",
+  "EMIS_CERTI_DATE": "2026/10/26",
+  "FUELTYPE": "전기(EV)",
+  "GUBUN1": "배출",
+  "GUBUN2": "소음",
+  "MUSTARD": null,
+  "MUSTARD2": null,
+  "NOISE_CERTI_DATE": null,
+  "NOISE_CERTI_NO": null,
+  "OFFICE_NM": "샤오다오코리아(주)",
+  "VEH_NM": "잉",
+  "VEH_TYPE": "D09"
  }
 ]
