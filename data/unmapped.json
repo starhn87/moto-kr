@@ -7,7 +7,7 @@
    "verified": 995,
    "curated": 156,
    "certifications": 5027,
-   "unmapped": 26,
+   "unmapped": 29,
    "ambiguous": 1,
    "excluded": 12
   }
@@ -28,6 +28,24 @@
    "lastDate": "2026-10-26"
   },
   {
+   "vehNm": "VF100T",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 2,
+   "lastDate": "2026-10-23"
+  },
+  {
+   "vehNm": "VX125T",
+   "office": "디앤에이모터스(주)",
+   "brandHint": [
+    "대림"
+   ],
+   "count": 2,
+   "lastDate": "2026-10-23"
+  },
+  {
    "vehNm": "UL125T",
    "office": "디앤에이모터스(주)",
    "brandHint": [
@@ -35,6 +53,13 @@
    ],
    "count": 2,
    "lastDate": "2026-10-21"
+  },
+  {
+   "vehNm": "장보리-3",
+   "office": "(주)지엠티엔지니어링",
+   "brandHint": null,
+   "count": 1,
+   "lastDate": "2026-10-19"
   },
   {
    "vehNm": "SPEED TWIN 1200 TFC",

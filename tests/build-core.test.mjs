@@ -42,6 +42,23 @@ test('같은 점수의 후보는 임의 매핑하지 않고 ambiguous로 보낸�
   assert.equal(result.full.meta.counts.unmapped, 0);
 });
 
+test('차단 별칭은 토큰 포함 매칭만 끊고 같은 모델의 다른 차명과 명시 별칭은 유지한다', () => {
+  const result = build({
+    imported: [row('VF100P', 'TCG'), row('VF100T', 'SB6'), row('JANGBORI', 'ETDJ-1.0'), row('장보리-3', 'ETSJ-3.0')],
+    seed: [
+      model('대림 VF100', ['!VF100T']),
+      model('그린모빌리티 장보리', ['JANGBORI', '!장보리-3']),
+    ],
+  });
+  const vf100 = result.full.models.find((item) => item.nameKo === '대림 VF100');
+  const jangbori = result.full.models.find((item) => item.nameKo === '그린모빌리티 장보리');
+  assert.deepEqual(vf100.certifications.map((item) => item.vehNm), ['VF100P']);
+  assert.deepEqual(vf100.aliases, ['VF100P']);
+  assert.deepEqual(jangbori.certifications.map((item) => item.vehNm), ['JANGBORI']);
+  assert.deepEqual(jangbori.aliases, ['JANGBORI']);
+  assert.deepEqual(result.review.unmapped.map((item) => item.vehNm).sort(), ['VF100T', '장보리-3']);
+});
+
 test('숫자로 끝나는 모델 토큰은 더 긴 숫자의 일부로 매칭되지 않는다', () => {
   const normalized = 'BMWR1250GS';
   assert.equal(boundedIncludes(normalized, 'R12', wordStartsOf('BMW R1250GS')), false);

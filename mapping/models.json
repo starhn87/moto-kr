@@ -2203,6 +2203,9 @@
   "nameKo": "대림 VF100",
   "brand": "대림",
   "model": "VF100",
+  "aliases": [
+   "!VF100T"
+  ],
   "displacement": 99,
   "category": "스쿠터",
   "electric": false,
@@ -2218,6 +2221,9 @@
   "nameKo": "대림 VX125",
   "brand": "대림",
   "model": "VX125",
+  "aliases": [
+   "!VX125T"
+  ],
   "displacement": 124,
   "category": "스쿠터",
   "electric": false,
@@ -16596,7 +16602,8 @@
   "brand": "그린모빌리티",
   "model": "장보리",
   "aliases": [
-   "JANGBORI"
+   "JANGBORI",
+   "!장보리-3"
   ],
   "displacement": null,
   "category": "3륜",

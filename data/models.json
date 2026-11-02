@@ -7,7 +7,7 @@
    "verified": 995,
    "curated": 156,
    "certifications": 5027,
-   "unmapped": 26,
+   "unmapped": 29,
    "ambiguous": 1,
    "excluded": 12
   }
@@ -22025,14 +22025,13 @@
    "cooling": null,
    "fuelCapacity": null,
    "power": null,
-   "emissionStandard": "euro5",
+   "emissionStandard": "euro4",
    "status": "verified",
    "aliases": [
-    "JANGBORI",
-    "장보리-3"
+    "JANGBORI"
    ],
    "firstCertifiedAt": "2020-06-16",
-   "lastCertifiedAt": "2026-10-19",
+   "lastCertifiedAt": "2020-06-16",
    "certifications": [
     {
      "no": "LMY-GR-21-38",
@@ -22040,15 +22039,6 @@
      "office": "그린모빌리티",
      "vehNm": "JANGBORI",
      "vehType": "ETDJ-1.0",
-     "fuel": "전기(EV)",
-     "gubun": "domestic"
-    },
-    {
-     "no": "TMY-GM-21-37",
-     "date": "2026-10-19",
-     "office": "(주)지엠티엔지니어링",
-     "vehNm": "장보리-3",
-     "vehType": "ETSJ-3.0",
      "fuel": "전기(EV)",
      "gubun": "domestic"
     }
@@ -24302,11 +24292,10 @@
     "VF100",
     "VF100F",
     "VF100P",
-    "VF100R",
-    "VF100T"
+    "VF100R"
    ],
    "firstCertifiedAt": "2016-06-29",
-   "lastCertifiedAt": "2026-10-23",
+   "lastCertifiedAt": "2024-11-13",
    "certifications": [
     {
      "no": "GMY-DL-3",
@@ -24469,24 +24458,6 @@
      "vehType": "TCG",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
-    },
-    {
-     "no": "TDL-GS-14-06",
-     "date": "2026-10-23",
-     "office": "디앤에이모터스(주)",
-     "vehNm": "VF100T",
-     "vehType": "SB6",
-     "fuel": "휘발유(Gasoline)",
-     "gubun": "domestic"
-    },
-    {
-     "no": "TMY-DL-14-06",
-     "date": "2026-10-23",
-     "office": "디앤에이모터스(주)",
-     "vehNm": "VF100T",
-     "vehType": "SB6",
-     "fuel": "휘발유(Gasoline)",
-     "gubun": "domestic"
     }
    ]
   },
@@ -24550,11 +24521,10 @@
    "emissionStandard": "euro5",
    "status": "verified",
    "aliases": [
-    "VX125",
-    "VX125T"
+    "VX125"
    ],
    "firstCertifiedAt": "2023-05-18",
-   "lastCertifiedAt": "2026-10-23",
+   "lastCertifiedAt": "2024-10-14",
    "certifications": [
     {
      "no": "PMC-DL-1",
@@ -24627,24 +24597,6 @@
      "vehType": "TCJ",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
-    },
-    {
-     "no": "TDL-GS-14-07",
-     "date": "2026-10-23",
-     "office": "디앤에이모터스(주)",
-     "vehNm": "VX125T",
-     "vehType": "SAT",
-     "fuel": "휘발유(Gasoline)",
-     "gubun": "domestic"
-    },
-    {
-     "no": "TMY-DL-14-07",
-     "date": "2026-10-23",
-     "office": "디앤에이모터스(주)",
-     "vehNm": "VX125T",
-     "vehType": "SAT",
-     "fuel": "휘발유(Gasoline)",
-     "gubun": "domestic"
     }
    ]
   },
