@@ -69,7 +69,9 @@ for (const s of seed) {
         err(`빈 aliases 값: ${s.nameKo}`);
         continue;
       }
-      const parts = alias.split('@');
+      const blocked = alias.startsWith('!');
+      const body = blocked ? alias.slice(1) : alias;
+      const parts = body.split('@');
       if (parts.length > 2 || !parts[0].trim() || (parts.length === 2 && !parts[1].trim())) {
         err(`aliases 형식 오류: ${s.nameKo} (${alias})`);
         continue;
@@ -79,6 +81,8 @@ for (const s of seed) {
         err(`aliases 정규화 결과가 비어 있음: ${s.nameKo} (${alias})`);
         continue;
       }
+      // 차단 별칭은 토큰 포함을 막을 뿐 차명을 소유하지 않는다.
+      if (blocked) continue;
       const key = `${aliasNorm}@${(parts[1] ?? '').trim().toUpperCase()}`;
       const owner = aliasOwners.get(key);
       if (owner && owner !== s.nameKo) err(`aliases 충돌: ${alias} (${owner}, ${s.nameKo})`);

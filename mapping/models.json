@@ -2203,6 +2203,9 @@
   "nameKo": "대림 VF100",
   "brand": "대림",
   "model": "VF100",
+  "aliases": [
+   "!VF100T"
+  ],
   "displacement": 99,
   "category": "스쿠터",
   "electric": false,
@@ -2218,6 +2221,9 @@
   "nameKo": "대림 VX125",
   "brand": "대림",
   "model": "VX125",
+  "aliases": [
+   "!VX125T"
+  ],
   "displacement": 124,
   "category": "스쿠터",
   "electric": false,
@@ -16596,7 +16602,8 @@
   "brand": "그린모빌리티",
   "model": "장보리",
   "aliases": [
-   "JANGBORI"
+   "JANGBORI",
+   "!장보리-3"
   ],
   "displacement": null,
   "category": "3륜",
@@ -20373,5 +20380,41 @@
   "cooling": "liquid",
   "fuelCapacity": null,
   "power": null
+ },
+ {
+  "nameKo": "BMW F450R",
+  "brand": "BMW",
+  "model": "F450R",
+  "aliases": [
+   "BMW F 450 R"
+  ],
+  "displacement": 420,
+  "category": "네이키드",
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": 790,
+  "weight": 175,
+  "cylinders": 2,
+  "cooling": null,
+  "fuelCapacity": 14,
+  "power": 48
+ },
+ {
+  "nameKo": "BMW F450RR",
+  "brand": "BMW",
+  "model": "F450RR",
+  "aliases": [
+   "BMW F 450 RR"
+  ],
+  "displacement": 420,
+  "category": "스포츠",
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": 790,
+  "weight": 177,
+  "cylinders": 2,
+  "cooling": "liquid",
+  "fuelCapacity": 14,
+  "power": 48
  }
 ]

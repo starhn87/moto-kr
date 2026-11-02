@@ -50,18 +50,29 @@ const prepareEntries = (seed) =>
       .filter((candidate) => candidate.length >= 5 && !/^[0-9]/.test(candidate));
     const aliasNorm = new Set();
     const aliasTyped = new Map();
+    const blockedNorm = new Set();
+    const blockedTyped = new Map();
     for (const alias of model.aliases ?? []) {
-      const separator = alias.indexOf('@');
-      if (separator === -1) {
-        const normalized = normalizeVehicleName(alias);
-        if (normalized) aliasNorm.add(normalized);
+      // `!차명` / `!차명@형식`은 이 모델의 토큰 포함 매칭만 끊는다. 배포 aliases에는 넣지 않는다.
+      const blocked = alias.startsWith('!');
+      const body = blocked ? alias.slice(1) : alias;
+      const separator = body.indexOf('@');
+      const normalized = normalizeVehicleName(separator === -1 ? body : body.slice(0, separator));
+      const vehicleType = separator === -1 ? '' : body.slice(separator + 1).trim().toUpperCase();
+      if (!normalized || (separator !== -1 && !vehicleType)) continue;
+      if (blocked) {
+        if (!vehicleType) blockedNorm.add(normalized);
+        else {
+          if (!blockedTyped.has(normalized)) blockedTyped.set(normalized, new Set());
+          blockedTyped.get(normalized).add(vehicleType);
+        }
         continue;
       }
-      const normalized = normalizeVehicleName(alias.slice(0, separator));
-      const vehicleType = alias.slice(separator + 1).trim().toUpperCase();
-      if (!normalized || !vehicleType) continue;
-      if (!aliasTyped.has(normalized)) aliasTyped.set(normalized, new Set());
-      aliasTyped.get(normalized).add(vehicleType);
+      if (!vehicleType) aliasNorm.add(normalized);
+      else {
+        if (!aliasTyped.has(normalized)) aliasTyped.set(normalized, new Set());
+        aliasTyped.get(normalized).add(vehicleType);
+      }
     }
     return {
       ...model,
@@ -69,14 +80,21 @@ const prepareEntries = (seed) =>
       _alpha: alphaTokens,
       _aliasNorm: aliasNorm,
       _aliasTyped: aliasTyped,
-      aliases: new Set(model.aliases ?? []),
+      _blockedNorm: blockedNorm,
+      _blockedTyped: blockedTyped,
+      aliases: new Set((model.aliases ?? []).filter((alias) => !alias.startsWith('!'))),
       certifications: [],
     };
   });
 
+const isBlocked = (entry, normalizedName, vehicleType) =>
+  entry._blockedNorm?.has(normalizedName) ||
+  (vehicleType && entry._blockedTyped?.get(normalizedName)?.has(vehicleType));
+
 export const scoreEntry = (entry, normalizedName, wordStarts, vehicleType) => {
   if (vehicleType && entry._aliasTyped.get(normalizedName)?.has(vehicleType)) return TYPED_ALIAS_SCORE;
   if (entry._aliasNorm.has(normalizedName)) return ALIAS_SCORE;
+  if (isBlocked(entry, normalizedName, vehicleType)) return -1;
   let score = -1;
   if (
     entry._token.length >= 3 &&

@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generatedAt": "2026-10-17",
+  "generatedAt": "2026-11-02",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
-   "models": 1149,
-   "verified": 993,
+   "models": 1151,
+   "verified": 995,
    "curated": 156,
-   "certifications": 5011,
-   "unmapped": 25,
+   "certifications": 5027,
+   "unmapped": 29,
    "ambiguous": 1,
    "excluded": 12
   }
@@ -529,6 +529,90 @@
      "office": "BMW Korea",
      "vehNm": "BMW F 450 GS",
      "vehType": "0R31",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "BMW F450R",
+   "brand": "BMW",
+   "model": "F450R",
+   "displacement": 420,
+   "category": "네이키드",
+   "electric": false,
+   "fuelGrade": null,
+   "seatHeight": 790,
+   "weight": 175,
+   "cylinders": 2,
+   "cooling": null,
+   "fuelCapacity": 14,
+   "power": 48,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "BMW F 450 R"
+   ],
+   "firstCertifiedAt": "2026-10-06",
+   "lastCertifiedAt": "2026-10-23",
+   "certifications": [
+    {
+     "no": "TMC-BK-1",
+     "date": "2026-10-06",
+     "office": "BMW Korea",
+     "vehNm": "BMW F 450 R",
+     "vehType": "0R41",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-BK-1",
+     "date": "2026-10-23",
+     "office": "BMW Korea",
+     "vehNm": "BMW F 450 R",
+     "vehType": "0R41",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    }
+   ]
+  },
+  {
+   "nameKo": "BMW F450RR",
+   "brand": "BMW",
+   "model": "F450RR",
+   "displacement": 420,
+   "category": "스포츠",
+   "electric": false,
+   "fuelGrade": null,
+   "seatHeight": 790,
+   "weight": 177,
+   "cylinders": 2,
+   "cooling": "liquid",
+   "fuelCapacity": 14,
+   "power": 48,
+   "emissionStandard": "euro5",
+   "status": "verified",
+   "aliases": [
+    "BMW F 450 RR"
+   ],
+   "firstCertifiedAt": "2026-10-06",
+   "lastCertifiedAt": "2026-10-23",
+   "certifications": [
+    {
+     "no": "TMY-BK-1",
+     "date": "2026-10-06",
+     "office": "BMW Korea",
+     "vehNm": "BMW F 450 RR",
+     "vehType": "0R51",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-BK-1",
+     "date": "2026-10-23",
+     "office": "BMW Korea",
+     "vehNm": "BMW F 450 RR",
+     "vehType": "0R51",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
     }
@@ -38752,7 +38836,7 @@
     "잉"
    ],
    "firstCertifiedAt": "2026-03-26",
-   "lastCertifiedAt": "2026-03-26",
+   "lastCertifiedAt": "2026-10-26",
    "certifications": [
     {
      "no": "TMEV-XD-1",
@@ -38766,6 +38850,15 @@
     {
      "no": "TMY-XD-21-1",
      "date": "2026-03-26",
+     "office": "샤오다오코리아(주)",
+     "vehNm": "잉",
+     "vehType": "D09",
+     "fuel": "전기(EV)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-XD-21-1",
+     "date": "2026-10-26",
      "office": "샤오다오코리아(주)",
      "vehNm": "잉",
      "vehType": "D09",
@@ -68654,7 +68747,7 @@
     "CRF300LA"
    ],
    "firstCertifiedAt": "2020-11-10",
-   "lastCertifiedAt": "2025-01-09",
+   "lastCertifiedAt": "2026-10-29",
    "certifications": [
     {
      "no": "LMC-HK-7",
@@ -68758,6 +68851,24 @@
     {
      "no": "SMY-HK-2",
      "date": "2025-01-09",
+     "office": "혼다코리아(주)",
+     "vehNm": "CRF300LA",
+     "vehType": "ND16",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMC-HK-2",
+     "date": "2026-10-29",
+     "office": "혼다코리아(주)",
+     "vehNm": "CRF300LA",
+     "vehType": "ND16",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-HK-2",
+     "date": "2026-10-29",
      "office": "혼다코리아(주)",
      "vehNm": "CRF300LA",
      "vehType": "ND16",
