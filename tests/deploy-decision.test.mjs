@@ -10,6 +10,7 @@ import {
   changedPathsBetween,
   decideDeploy,
   parseNameStatus,
+  selectRange,
 } from '../.github/deploy-decision.mjs';
 
 const scriptPath = fileURLToPath(new URL('../.github/deploy-decision.mjs', import.meta.url));
@@ -197,24 +198,67 @@ test('범위를 확인하지 못하면 배포 출력을 쓰지 않는다', async
     });
     assert.equal(success.status, 0, success.stderr);
     assert.equal(await readFile(output, 'utf8'), 'deploy=false\n');
+
+    await rm(output);
+    const pullRequest = spawnSync(process.execPath, [scriptPath], {
+      cwd,
+      encoding: 'utf8',
+      env: {
+        ...process.env,
+        GIT_TERMINAL_PROMPT: '0',
+        GITHUB_EVENT_NAME: 'pull_request',
+        PR_BASE_SHA: present,
+        PR_HEAD_SHA: configOnly,
+        DEPLOY_BEFORE: zeros,
+        DEPLOY_AFTER: zeros,
+        GITHUB_OUTPUT: output,
+      },
+    });
+    assert.equal(pullRequest.status, 0, pullRequest.stderr);
+    assert.equal(await readFile(output, 'utf8'), 'deploy=false\n');
   });
 });
 
-test('검증 잡은 항상 실행되고 배포 잡은 main push의 판정이 true일 때만 Wrangler를 실행한다', async () => {
+test('pull_request는 base/head를 보고 그 외 이벤트는 배포 판정을 만들지 않는다', () => {
+  assert.deepEqual(selectRange({
+    GITHUB_EVENT_NAME: 'pull_request',
+    PR_BASE_SHA: 'base',
+    PR_HEAD_SHA: 'head',
+    DEPLOY_BEFORE: 'before',
+    DEPLOY_AFTER: 'after',
+  }), { before: 'base', after: 'head' });
+  assert.deepEqual(selectRange({
+    GITHUB_EVENT_NAME: 'push',
+    DEPLOY_BEFORE: 'before',
+    DEPLOY_AFTER: 'after',
+  }), { before: 'before', after: 'after' });
+  assert.throws(() => selectRange({ GITHUB_EVENT_NAME: 'workflow_dispatch' }), /배포하지 않습니다/);
+});
+
+test('검증은 항상 실행되고 판정이 true인 main push가 아니면 deploy 잡 자체가 시작하지 않는다', async () => {
   const workflow = await readFile(workflowPath, 'utf8');
   const onBlock = workflow.slice(0, workflow.indexOf('jobs:'));
-  const validate = workflow.slice(workflow.indexOf('\n  validate:'), workflow.indexOf('\n  deploy:'));
+  const validate = workflow.slice(workflow.indexOf('\n  validate:'), workflow.indexOf('\n  classify:'));
+  const classify = workflow.slice(workflow.indexOf('\n  classify:'), workflow.indexOf('\n  deploy:'));
   const deploy = workflow.slice(workflow.indexOf('\n  deploy:'));
   assert.doesNotMatch(onBlock, /paths-ignore|^\s+paths:/m);
   assert.match(validate, /npm run check/);
-  assert.doesNotMatch(validate, /deploy-decision|wrangler-action/);
+  assert.doesNotMatch(validate, /\n\s+if:|deploy-decision|wrangler-action/);
+  assert.doesNotMatch(classify, /wrangler-action/);
+  assert.match(classify, /fetch-depth: 0/);
+  assert.match(classify, /DEPLOY_BEFORE: \$\{\{ github\.event\.before \}\}/);
+  assert.match(classify, /DEPLOY_AFTER: \$\{\{ github\.event\.after \}\}/);
+  assert.match(classify, /PR_BASE_SHA: \$\{\{ github\.event\.pull_request\.base\.sha \}\}/);
+  assert.match(classify, /PR_HEAD_SHA: \$\{\{ github\.event\.pull_request\.head\.sha \}\}/);
+  assert.match(classify, /node \.github\/deploy-decision\.mjs/);
+  assert.match(classify, /steps\.decision\.outputs\.deploy != 'true' && steps\.decision\.outputs\.deploy != 'false'/);
+  assert.match(deploy, /needs: \[validate, classify\]/);
+  assert.match(deploy, /needs\.validate\.result == 'success'/);
+  assert.match(deploy, /needs\.classify\.result == 'success'/);
+  assert.match(deploy, /needs\.classify\.outputs\.deploy == 'true'/);
   assert.match(deploy, /github\.event_name == 'push' && github\.ref == 'refs\/heads\/main'/);
-  assert.match(deploy, /fetch-depth: 0/);
-  assert.match(deploy, /DEPLOY_BEFORE: \$\{\{ github\.event\.before \}\}/);
-  assert.match(deploy, /DEPLOY_AFTER: \$\{\{ github\.event\.after \}\}/);
-  assert.match(deploy, /node \.github\/deploy-decision\.mjs/);
-  assert.match(deploy, /steps\.decision\.outputs\.deploy != 'true' && steps\.decision\.outputs\.deploy != 'false'/);
-  assert.match(deploy, /if: steps\.decision\.outputs\.deploy == 'true'\n\s+uses: cloudflare\/wrangler-action@v4/);
+  assert.doesNotMatch(deploy, /if: steps\.decision/);
+  assert.match(deploy, /uses: cloudflare\/wrangler-action@v4/);
 });
 
 const head = (cwd) => git(cwd, ['rev-parse', 'HEAD']);

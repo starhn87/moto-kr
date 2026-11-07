@@ -1,4 +1,5 @@
-// main push의 before/after 트리 diff로 Wrangler 배포 여부를 정한다.
+// push는 before/after, pull_request는 base/head 트리 diff로 배포 여부를 정한다.
+// deploy=false면 워크플로의 deploy 잡 자체가 실행되지 않는다.
 // 워커가 실제로 읽는 경로는 배포한다: api 소스, lib, 빌드 입력(mapping, scripts, data).
 // .github, docs, tests와 루트 문서는 배포하지 않는다. 확장자로 통째로 면제하지 않는다.
 // diff를 구하지 못하면 배포 판정을 true로 쓰지 않고 실패한다.
@@ -99,6 +100,16 @@ export const changedPathsBetween = (before, after, git = gitResult, cwd) => {
   return parseNameStatus(diff.stdout).map(normalizeChangedPath);
 };
 
+export const selectRange = (env) => {
+  if (env.GITHUB_EVENT_NAME === 'pull_request') {
+    return { before: env.PR_BASE_SHA, after: env.PR_HEAD_SHA };
+  }
+  if (env.GITHUB_EVENT_NAME && env.GITHUB_EVENT_NAME !== 'push') {
+    throw new Error(`지원하지 않는 이벤트 ${env.GITHUB_EVENT_NAME}입니다. 배포하지 않습니다.`);
+  }
+  return { before: env.DEPLOY_BEFORE, after: env.DEPLOY_AFTER };
+};
+
 const writeDecision = (decision) => {
   const line = `deploy=${decision.deploy ? 'true' : 'false'}\n`;
   if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, line);
@@ -125,7 +136,8 @@ const writeDecision = (decision) => {
 
 const main = () => {
   try {
-    const decision = decideDeploy(changedPathsBetween(process.env.DEPLOY_BEFORE, process.env.DEPLOY_AFTER));
+    const range = selectRange(process.env);
+    const decision = decideDeploy(changedPathsBetween(range.before, range.after));
     writeDecision(decision);
   } catch (error) {
     console.error(`::error::${error.message}`);
