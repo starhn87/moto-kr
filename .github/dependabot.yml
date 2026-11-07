@@ -1,0 +1,40 @@
+# 버전 업데이트만 연다. 자동 머지는 설정하지 않는다.
+# open-pull-requests-limit는 저장소 전체가 아니라 생태계 항목마다 적용된다.
+# npm 2 + github-actions 1이 버전 업데이트 PR 상한 3이다.
+# 보안 업데이트 PR은 이 한도에 들어가지 않는다.
+# vendor/jev-decisions는 file: 스냅샷이라 별도 npm 대상으로 두지 않는다.
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Seoul"
+    open-pull-requests-limit: 2
+    groups:
+      npm-non-major:
+        applies-to: "version-updates"
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Seoul"
+    open-pull-requests-limit: 1
+    groups:
+      actions-non-major:
+        applies-to: "version-updates"
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
