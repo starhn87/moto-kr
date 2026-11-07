@@ -56,6 +56,14 @@ const commit = async (cwd, files, message) => {
 
 const pathsOf = (before, after, cwd) => changedPathsBetween(before, after, undefined, cwd);
 
+const cliEnv = (overrides) => {
+  const env = { ...process.env, GIT_TERMINAL_PROMPT: '0', ...overrides };
+  if (!Object.hasOwn(overrides, 'GITHUB_EVENT_NAME')) delete env.GITHUB_EVENT_NAME;
+  if (!Object.hasOwn(overrides, 'PR_BASE_SHA')) delete env.PR_BASE_SHA;
+  if (!Object.hasOwn(overrides, 'PR_HEAD_SHA')) delete env.PR_HEAD_SHA;
+  return env;
+};
+
 test('설정·문서·테스트만 있으면 배포하지 않고 런타임·빌드 입력·데이터는 배포한다', () => {
   const configOnly = [
     '.github/dependabot.yml',
@@ -157,13 +165,11 @@ test('범위를 확인하지 못하면 배포 출력을 쓰지 않는다', async
     const failed = spawnSync(process.execPath, [scriptPath], {
       cwd,
       encoding: 'utf8',
-      env: {
-        ...process.env,
-        GIT_TERMINAL_PROMPT: '0',
+      env: cliEnv({
         DEPLOY_BEFORE: missing,
         DEPLOY_AFTER: present,
         GITHUB_OUTPUT: output,
-      },
+      }),
     });
     assert.notEqual(failed.status, 0);
     assert.match(failed.stderr, /배포하지 않습니다/);
@@ -172,13 +178,11 @@ test('범위를 확인하지 못하면 배포 출력을 쓰지 않는다', async
     const skipped = spawnSync(process.execPath, [scriptPath], {
       cwd,
       encoding: 'utf8',
-      env: {
-        ...process.env,
-        GIT_TERMINAL_PROMPT: '0',
+      env: cliEnv({
         DEPLOY_BEFORE: zeros,
         DEPLOY_AFTER: present,
         GITHUB_OUTPUT: output,
-      },
+      }),
     });
     assert.notEqual(skipped.status, 0);
     assert.match(skipped.stderr, /이전 커밋을 알 수 없습니다/);
@@ -188,13 +192,11 @@ test('범위를 확인하지 못하면 배포 출력을 쓰지 않는다', async
     const success = spawnSync(process.execPath, [scriptPath], {
       cwd,
       encoding: 'utf8',
-      env: {
-        ...process.env,
-        GIT_TERMINAL_PROMPT: '0',
+      env: cliEnv({
         DEPLOY_BEFORE: present,
         DEPLOY_AFTER: configOnly,
         GITHUB_OUTPUT: output,
-      },
+      }),
     });
     assert.equal(success.status, 0, success.stderr);
     assert.equal(await readFile(output, 'utf8'), 'deploy=false\n');
@@ -203,16 +205,14 @@ test('범위를 확인하지 못하면 배포 출력을 쓰지 않는다', async
     const pullRequest = spawnSync(process.execPath, [scriptPath], {
       cwd,
       encoding: 'utf8',
-      env: {
-        ...process.env,
-        GIT_TERMINAL_PROMPT: '0',
+      env: cliEnv({
         GITHUB_EVENT_NAME: 'pull_request',
         PR_BASE_SHA: present,
         PR_HEAD_SHA: configOnly,
         DEPLOY_BEFORE: zeros,
         DEPLOY_AFTER: zeros,
         GITHUB_OUTPUT: output,
-      },
+      }),
     });
     assert.equal(pullRequest.status, 0, pullRequest.stderr);
     assert.equal(await readFile(output, 'utf8'), 'deploy=false\n');
