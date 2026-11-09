@@ -1,18 +1,78 @@
 {
  "meta": {
-  "generatedAt": "2026-11-02",
+  "generatedAt": "2026-11-09",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1151,
    "verified": 995,
    "curated": 156,
-   "certifications": 5027,
-   "unmapped": 29,
+   "certifications": 5038,
+   "unmapped": 34,
    "ambiguous": 1,
    "excluded": 12
   }
  },
  "unmapped": [
+  {
+   "vehNm": "VESPA PRIMAVERA 180",
+   "office": "이탈로모토(유)",
+   "brandHint": [
+    "베스파",
+    "피아지오",
+    "아프릴리아",
+    "모토구찌"
+   ],
+   "count": 2,
+   "lastDate": "2026-11-09"
+  },
+  {
+   "vehNm": "VESPA PRIMAVERA S 180",
+   "office": "이탈로모토(유)",
+   "brandHint": [
+    "베스파",
+    "피아지오",
+    "아프릴리아",
+    "모토구찌"
+   ],
+   "count": 2,
+   "lastDate": "2026-11-09"
+  },
+  {
+   "vehNm": "VESPA SPRINT 180",
+   "office": "이탈로모토(유)",
+   "brandHint": [
+    "베스파",
+    "피아지오",
+    "아프릴리아",
+    "모토구찌"
+   ],
+   "count": 2,
+   "lastDate": "2026-11-09"
+  },
+  {
+   "vehNm": "VESPA SPRINT S 180",
+   "office": "이탈로모토(유)",
+   "brandHint": [
+    "베스파",
+    "피아지오",
+    "아프릴리아",
+    "모토구찌"
+   ],
+   "count": 2,
+   "lastDate": "2026-11-09"
+  },
+  {
+   "vehNm": "VESPA SPRINT TECH 180",
+   "office": "이탈로모토(유)",
+   "brandHint": [
+    "베스파",
+    "피아지오",
+    "아프릴리아",
+    "모토구찌"
+   ],
+   "count": 2,
+   "lastDate": "2026-11-09"
+  },
   {
    "vehNm": "젠트로피 제트 케이 코어",
    "office": "(주)젠트로피",
