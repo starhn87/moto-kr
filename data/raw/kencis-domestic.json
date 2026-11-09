@@ -6343,5 +6343,20 @@
   "OFFICE_NM": "(주)큐모터스",
   "VEH_NM": "큐울트라",
   "VEH_TYPE": "BLUT0"
+ },
+ {
+  "CARTYPE": "이륜",
+  "EMIS_CERTI_NO": "TMY-KI-21-41",
+  "EMIS_CERTI_DATE": "2026/11/04",
+  "FUELTYPE": "전기(EV)",
+  "GUBUN1": "배출",
+  "GUBUN2": "소음",
+  "MUSTARD": null,
+  "MUSTARD2": null,
+  "NOISE_CERTI_DATE": null,
+  "NOISE_CERTI_NO": null,
+  "OFFICE_NM": "(주)킴스트",
+  "VEH_NM": "다이스 버스",
+  "VEH_TYPE": "DB1"
  }
 ]

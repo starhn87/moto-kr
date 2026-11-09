@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generatedAt": "2026-11-02",
+  "generatedAt": "2026-11-09",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1151,
    "verified": 995,
    "curated": 156,
-   "certifications": 5027,
-   "unmapped": 29,
+   "certifications": 5038,
+   "unmapped": 34,
    "ambiguous": 1,
    "excluded": 12
   }
@@ -52581,10 +52581,11 @@
     "DICE",
     "DICE PLUS",
     "DICE TRUCK",
-    "다이스"
+    "다이스",
+    "다이스 버스"
    ],
    "firstCertifiedAt": "2021-03-19",
-   "lastCertifiedAt": "2025-12-01",
+   "lastCertifiedAt": "2026-11-04",
    "certifications": [
     {
      "no": "MKST-EV-21-13",
@@ -52736,6 +52737,15 @@
      "office": "(주)킴스트",
      "vehNm": "DICE",
      "vehType": "KSTD02",
+     "fuel": "전기(EV)",
+     "gubun": "domestic"
+    },
+    {
+     "no": "TMY-KI-21-41",
+     "date": "2026-11-04",
+     "office": "(주)킴스트",
+     "vehNm": "다이스 버스",
+     "vehType": "DB1",
      "fuel": "전기(EV)",
      "gubun": "domestic"
     }
