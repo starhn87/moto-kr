@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generatedAt": "2026-11-02",
+  "generatedAt": "2026-11-23",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
    "models": 1151,
    "verified": 995,
    "curated": 156,
-   "certifications": 5027,
-   "unmapped": 29,
+   "certifications": 5053,
+   "unmapped": 35,
    "ambiguous": 1,
    "excluded": 12
   }
@@ -40733,6 +40733,7 @@
    "emissionStandard": "euro5",
    "status": "verified",
    "aliases": [
+    "SV650",
     "SV650A",
     "SV650AU",
     "SV650GX",
@@ -40740,7 +40741,7 @@
     "SV650XAU"
    ],
    "firstCertifiedAt": "2018-01-17",
-   "lastCertifiedAt": "2026-06-08",
+   "lastCertifiedAt": "2026-11-18",
    "certifications": [
     {
      "no": "JMY-HC-1",
@@ -40936,6 +40937,24 @@
      "date": "2026-06-08",
      "office": "(주)스즈키 씨엠씨",
      "vehNm": "SV650GX",
+     "vehType": "ET",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMC-HC-2",
+     "date": "2026-11-18",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "SV650",
+     "vehType": "ET",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "TMY-HC-2",
+     "date": "2026-11-18",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "SV650",
      "vehType": "ET",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
@@ -42202,7 +42221,7 @@
     "UZ125SDK"
    ],
    "firstCertifiedAt": "2009-03-30",
-   "lastCertifiedAt": "2025-03-05",
+   "lastCertifiedAt": "2026-11-18",
    "certifications": [
     {
      "no": "9MY-HC-1",
@@ -42270,6 +42289,24 @@
     {
      "no": "SMY-HC-1",
      "date": "2025-03-05",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "UZ125",
+     "vehType": "EN",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMC-HC-1",
+     "date": "2026-11-10",
+     "office": "(주)스즈키 씨엠씨",
+     "vehNm": "UZ125",
+     "vehType": "EN",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "SMY-HC-1",
+     "date": "2026-11-18",
      "office": "(주)스즈키 씨엠씨",
      "vehNm": "UZ125",
      "vehType": "EN",
@@ -52581,10 +52618,11 @@
     "DICE",
     "DICE PLUS",
     "DICE TRUCK",
-    "다이스"
+    "다이스",
+    "다이스 버스"
    ],
    "firstCertifiedAt": "2021-03-19",
-   "lastCertifiedAt": "2025-12-01",
+   "lastCertifiedAt": "2026-11-19",
    "certifications": [
     {
      "no": "MKST-EV-21-13",
@@ -52736,6 +52774,24 @@
      "office": "(주)킴스트",
      "vehNm": "DICE",
      "vehType": "KSTD02",
+     "fuel": "전기(EV)",
+     "gubun": "domestic"
+    },
+    {
+     "no": "TMY-KI-21-41",
+     "date": "2026-11-04",
+     "office": "(주)킴스트",
+     "vehNm": "다이스 버스",
+     "vehType": "DB1",
+     "fuel": "전기(EV)",
+     "gubun": "domestic"
+    },
+    {
+     "no": "TMY-KI-21-46",
+     "date": "2026-11-19",
+     "office": "(주)킴스트",
+     "vehNm": "DICE TRUCK",
+     "vehType": "DT2",
      "fuel": "전기(EV)",
      "gubun": "domestic"
     }
@@ -69201,7 +69257,7 @@
     "MSX125A"
    ],
    "firstCertifiedAt": "2013-03-08",
-   "lastCertifiedAt": "2024-07-01",
+   "lastCertifiedAt": "2026-11-17",
    "certifications": [
     {
      "no": "DMY-HK-3",
@@ -69296,6 +69352,24 @@
     {
      "no": "RMY-HK-3",
      "date": "2024-07-01",
+     "office": "혼다코리아(주)",
+     "vehNm": "MSX125A",
+     "vehType": "JC92",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMC-HK-3",
+     "date": "2026-11-10",
+     "office": "혼다코리아(주)",
+     "vehNm": "MSX125A",
+     "vehType": "JC92",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMY-HK-3",
+     "date": "2026-11-17",
      "office": "혼다코리아(주)",
      "vehNm": "MSX125A",
      "vehType": "JC92",
@@ -69573,7 +69647,7 @@
     "WW125EX2"
    ],
    "firstCertifiedAt": "2010-05-18",
-   "lastCertifiedAt": "2024-09-25",
+   "lastCertifiedAt": "2026-11-17",
    "certifications": [
     {
      "no": "AMY-HK-3",
@@ -69745,6 +69819,24 @@
      "vehType": "JK05",
      "fuel": "휘발유(Gasoline)",
      "gubun": "import"
+    },
+    {
+     "no": "RMC-HK-10",
+     "date": "2026-11-10",
+     "office": "혼다코리아(주)",
+     "vehNm": "WW125A",
+     "vehType": "JK05",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMY-HK-10",
+     "date": "2026-11-17",
+     "office": "혼다코리아(주)",
+     "vehNm": "WW125A",
+     "vehType": "JK05",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
     }
    ]
   },
@@ -69880,7 +69972,7 @@
     "ST125A"
    ],
    "firstCertifiedAt": "2024-11-27",
-   "lastCertifiedAt": "2024-11-27",
+   "lastCertifiedAt": "2026-11-17",
    "certifications": [
     {
      "no": "RMC-HK-17",
@@ -69894,6 +69986,24 @@
     {
      "no": "RMY-HK-17",
      "date": "2024-11-27",
+     "office": "혼다코리아(주)",
+     "vehNm": "ST125A",
+     "vehType": "JB06",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMC-HK-17",
+     "date": "2026-11-10",
+     "office": "혼다코리아(주)",
+     "vehNm": "ST125A",
+     "vehType": "JB06",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMY-HK-17",
+     "date": "2026-11-17",
      "office": "혼다코리아(주)",
      "vehNm": "ST125A",
      "vehType": "JB06",
@@ -71181,7 +71291,7 @@
     "Z125MA"
    ],
    "firstCertifiedAt": "2021-06-01",
-   "lastCertifiedAt": "2024-11-27",
+   "lastCertifiedAt": "2026-11-17",
    "certifications": [
     {
      "no": "MMC-HK-6",
@@ -71249,6 +71359,24 @@
     {
      "no": "RMY-HK-16",
      "date": "2024-11-27",
+     "office": "혼다코리아(주)",
+     "vehNm": "Z125MA",
+     "vehType": "JB05",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMC-HK-16",
+     "date": "2026-11-10",
+     "office": "혼다코리아(주)",
+     "vehNm": "Z125MA",
+     "vehType": "JB05",
+     "fuel": "휘발유(Gasoline)",
+     "gubun": "import"
+    },
+    {
+     "no": "RMY-HK-16",
+     "date": "2026-11-17",
      "office": "혼다코리아(주)",
      "vehNm": "Z125MA",
      "vehType": "JB05",
