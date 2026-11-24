@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generatedAt": "2026-11-02",
+  "generatedAt": "2026-11-24",
   "source": "KENCIS 자동차 배출가스·소음 인증 (data.go.kr 15000988)",
   "counts": {
-   "models": 1151,
+   "models": 1154,
    "verified": 995,
-   "curated": 156,
+   "curated": 159,
    "certifications": 5027,
    "unmapped": 29,
    "ambiguous": 1,
@@ -37734,6 +37734,33 @@
    "certifications": []
   },
   {
+   "nameKo": "베스파 스프린트180",
+   "brand": "베스파",
+   "model": "스프린트180",
+   "displacement": null,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": null,
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": null,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": null,
+   "status": "curated",
+   "aliases": [
+    "SPRINT S 180",
+    "SPRINT TECH 180",
+    "VESPA SPRINT 180",
+    "VESPA SPRINT S 180",
+    "VESPA SPRINT TECH 180"
+   ],
+   "firstCertifiedAt": null,
+   "lastCertifiedAt": null,
+   "certifications": []
+  },
+  {
    "nameKo": "베스파 프리마베라125",
    "brand": "베스파",
    "model": "프리마베라125",
@@ -37914,6 +37941,30 @@
    "emissionStandard": null,
    "status": "curated",
    "aliases": [],
+   "firstCertifiedAt": null,
+   "lastCertifiedAt": null,
+   "certifications": []
+  },
+  {
+   "nameKo": "베스파 프리마베라180",
+   "brand": "베스파",
+   "model": "프리마베라180",
+   "displacement": null,
+   "category": "스쿠터",
+   "electric": false,
+   "fuelGrade": null,
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": null,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": null,
+   "status": "curated",
+   "aliases": [
+    "VESPA PRIMAVERA 180",
+    "VESPA PRIMAVERA S 180"
+   ],
    "firstCertifiedAt": null,
    "lastCertifiedAt": null,
    "certifications": []
@@ -48593,6 +48644,29 @@
      "gubun": "import"
     }
    ]
+  },
+  {
+   "nameKo": "이누리 EM06 KS",
+   "brand": "이누리",
+   "model": "EM06 KS",
+   "displacement": null,
+   "category": "스쿠터",
+   "electric": true,
+   "fuelGrade": null,
+   "seatHeight": null,
+   "weight": null,
+   "cylinders": null,
+   "cooling": null,
+   "fuelCapacity": null,
+   "power": null,
+   "emissionStandard": null,
+   "status": "curated",
+   "aliases": [
+    "이엠공육케이에스"
+   ],
+   "firstCertifiedAt": null,
+   "lastCertifiedAt": null,
+   "certifications": []
   },
   {
    "nameKo": "이누리 OK1 KS",

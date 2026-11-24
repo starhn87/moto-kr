@@ -4276,6 +4276,28 @@
   "power": 13
  },
  {
+  "nameKo": "베스파 스프린트180",
+  "brand": "베스파",
+  "model": "스프린트180",
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null,
+  "aliases": [
+   "VESPA SPRINT 180",
+   "VESPA SPRINT S 180",
+   "VESPA SPRINT TECH 180",
+   "SPRINT S 180",
+   "SPRINT TECH 180"
+  ]
+ },
+ {
   "nameKo": "베스파 프리마베라125",
   "brand": "베스파",
   "model": "프리마베라125",
@@ -4311,6 +4333,25 @@
   "cooling": "air",
   "fuelCapacity": 8,
   "power": 13
+ },
+ {
+  "nameKo": "베스파 프리마베라180",
+  "brand": "베스파",
+  "model": "프리마베라180",
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": false,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null,
+  "aliases": [
+   "VESPA PRIMAVERA 180",
+   "VESPA PRIMAVERA S 180"
+  ]
  },
  {
   "nameKo": "베스파 S125",
@@ -6724,6 +6765,24 @@
   "power": null
  },
  {
+  "nameKo": "이누리 EM06 KS",
+  "brand": "이누리",
+  "model": "EM06 KS",
+  "aliases": [
+   "이엠공육케이에스"
+  ],
+  "displacement": null,
+  "category": "스쿠터",
+  "electric": true,
+  "fuelGrade": null,
+  "seatHeight": null,
+  "weight": null,
+  "cylinders": null,
+  "cooling": null,
+  "fuelCapacity": null,
+  "power": null
+ },
+ {
   "nameKo": "이벡터 머큐리",
   "brand": "이벡터",
   "model": "머큐리",
@@ -8097,7 +8156,8 @@
    "다이스",
    "DICE",
    "DICE PLUS",
-   "DICE TRUCK"
+   "DICE TRUCK",
+   "!다이스 버스"
   ],
   "displacement": null,
   "category": "스쿠터",
