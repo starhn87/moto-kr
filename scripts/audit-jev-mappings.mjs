@@ -38,7 +38,7 @@ export async function auditMappings({ candidates, proposal, evidence, models, ra
   });
   if (JSON.stringify(inputs).length > 60_000) return { ...report, reason: 'input-budget-exceeded' };
   const client = new TypeSafeClient({ apiKey, baseURL: 'https://api.typesafe.ai', defaultModel: 'jev-1.13.0', fetch: fetchImpl,
-    retry: { maxRetries: 0 }, logLevel: 'off' });
+    compression: false, retry: { maxRetries: 0 }, logLevel: 'off' });
   for (const input of inputs) {
     const result = await observe({ questions: MAPPING_QUESTIONS,
       run: () => client.systemOne({ state: input, questions: MAPPING_QUESTIONS }, { timeout: 2000 }).withResponse(), context: {
